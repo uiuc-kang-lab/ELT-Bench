@@ -1,0 +1,9 @@
+column_name,column_description
+user_id,the unique id number identifying which user
+user_yelping_since_year,the time when the user join Yelp
+user_average_stars,the average ratings of all review
+user_votes_funny,total number of funny votes sent by the user
+user_votes_useful,how many useful votes created by the user
+user_votes_cool,how many cool votes created by the user
+user_review_count,total number of reviews the user has written
+user_fans,total number of fans / followers the user has

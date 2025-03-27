@@ -1,0 +1,22 @@
+column_name,column_description
+id,The unique identifier of the
+_fivetran_synced,Timestamp of when a record was last synced.
+_fivetran_deleted,Boolean identifiying whether the record was deleted in the source.
+account_id,The id of the account associated with this order.
+bill_to_contact_id,The id of the contact associated with the billing address for this order.
+category,"The category of the order, such as NewSubscription or Amendment."
+created_by_id,The id of the user who created this order.
+created_date,The date and time when this order was created.
+default_payment_method_id,The id of the default payment method used for this order.
+description,A brief description of this order.
+error_code,"The error code associated with this order, if any."
+error_message,"The error message associated with this order, if any."
+order_date,The date and time when this order was placed.
+order_number,The unique identifier for this order.
+response,"The response associated with this order, if any."
+scheduled_date,The date and time when this order is scheduled to be processed.
+sold_to_contact_id,The id of the contact associated with the shipping address for this order.
+state,"The state of this order, such as Draft or Processing."
+status,"The status of this order, such as Pending or Completed."
+updated_by_id,The id of the user who last updated this order.
+updated_date,The date and time when this order was last updated.

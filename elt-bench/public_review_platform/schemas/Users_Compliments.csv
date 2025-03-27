@@ -1,0 +1,4 @@
+column_name,column_description
+compliment_id,the id number indicating the compliment
+user_id,the id number indicating the user
+number_of_compliments,how many compliments a user has received from other users

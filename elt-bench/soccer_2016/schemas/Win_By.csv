@@ -1,0 +1,3 @@
+column_name,column_description
+win_id,the unique id for the winning
+win_type,the winning type

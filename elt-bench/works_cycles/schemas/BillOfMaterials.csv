@@ -1,0 +1,10 @@
+column_name,column_description
+billofmaterialsid,The unique number identifying bill of materials.
+productassemblyid,Parent product identification number.
+componentid,Component identification number.
+startdate,Date the component started being used in the assembly item.
+enddate,Date the component stopped being used in the assembly item.
+unitmeasurecode,Standard code identifying the unit of measure for the quantity.
+bomlevel,Indicates the depth the component is from its parent (column2)(AssemblyID).
+perassemblyqty,Quantity of the component needed to create the assembly.
+modifieddate,Date and time the record was last updated. 

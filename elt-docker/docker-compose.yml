@@ -1,0 +1,79 @@
+version: "3.8"
+services:
+  postgres:
+    image: postgres:16
+    container_name: elt-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: testelt
+      POSTGRES_DB: mydb
+    ports:
+      - "5433:5432"
+    networks:
+      - elt_network
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  mongodb:
+    image: mongo:8.0
+    container_name: elt-mongodb
+    command: ["--replSet", "rs0", "--bind_ip_all", "--port", "27017"]
+    ports:
+      - 27017:27017
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    healthcheck:
+      test: echo "try { rs.status() } catch (err) { rs.initiate({_id:'rs0',members:[{_id:0,host:'host.docker.internal:27017'}]}) }" | mongosh --port 27017 --quiet
+      interval: 5s
+      timeout: 30s
+      start_period: 0s
+      start_interval: 1s
+      retries: 30
+    networks:
+      - elt_network
+    volumes:
+      - "mongodb_data:/data/db"
+      - "mongodb_config:/data/configdb"
+
+  localstack:
+    image: localstack/localstack:latest
+    container_name: elt-localstack
+    environment:
+      - SERVICES=s3,lambda,dynamodb,cloudwatch
+      - DEBUG=1
+      - LAMBDA_EXECUTOR=docker
+    ports:
+      - "4566:4566" # LocalStack main port
+      - "4572:4572" # S3 service port (if needed)
+    networks:
+      - elt_network
+    volumes:
+      - localstack_data:/var/lib/localstack
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  python-rest-api:
+    image: python:3.11-slim
+    container_name: elt-api
+    working_dir: /app
+    volumes:
+      - ./rest_api:/app  # Mount your local REST API code
+    command: >
+      sh -c "pip install -r requirements.txt && python app.py"
+    environment:
+      - FLASK_ENV=development
+      - APP_PORT=5005
+    ports:
+      - "5005:5005" # Expose the REST API port
+    networks:
+      - elt_network
+
+
+volumes:
+  postgres_data:
+  mongodb_data:
+  mongodb_config:
+  localstack_data:
+
+networks:
+  elt_network:
+    driver: bridge

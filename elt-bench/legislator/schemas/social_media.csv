@@ -1,0 +1,12 @@
+column_name,column_description
+bioguide,The unique alphanumeric ID for this legislator 
+facebook,The username of the current official Facebook presence of the legislator.
+facebook_id,The numeric ID of the current official Facebook presence of the legislator.
+govtrack,The numeric ID for this legislator on GovTrack.us
+instagram,The current official Instagram handle of the legislator.
+instagram_id,The numeric ID of the current official Instagram handle of the legislator.
+thomas,The numeric ID for this legislator on http://thomas.gov and http://beta.congress.gov. 
+twitter,The current official Twitter handle of the legislator.
+twitter_id,The numeric ID of the current official twitter handle of the legislator.
+youtube,The current official YouTube username of the legislator.
+youtube_id,The current official YouTube channel ID of the legislator.

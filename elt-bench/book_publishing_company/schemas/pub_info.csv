@@ -1,0 +1,4 @@
+column_name,column_description
+pub_id,unique id number identifying publications
+logo,logo of publications
+pr_info,publisher's information

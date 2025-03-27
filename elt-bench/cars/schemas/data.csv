@@ -1,0 +1,10 @@
+column_name,column_description
+id,unique ID for each car 
+mpg,mileage of the car in miles per gallon
+cylinders,the number of cylinders present in the car
+displacement,engine displacement in cubic mm
+horsepower,horse power associated with the car
+weight,weight of the car in lbs
+acceleration,acceleration of the car in miles per squared hour
+model,the year when the car model was introduced in the market
+car_name,name of the car

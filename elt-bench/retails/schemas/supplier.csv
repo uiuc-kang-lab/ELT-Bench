@@ -1,0 +1,8 @@
+column_name,column_description
+s_suppkey,unique id number identifying the supply
+s_nationkey,nation key of the supply
+s_comment,comment description of the comment
+s_name,name of the supplier
+s_address,address of the supplier
+s_phone,phone number of the supplier
+s_acctbal,account balance of the supplier

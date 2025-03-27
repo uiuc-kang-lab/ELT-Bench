@@ -1,0 +1,4 @@
+column_name,column_description
+unitmeasurecode,The unique identifying numbers for measure.
+name,Unit of measure description.
+modifieddate,Date and time the record was last updated. 

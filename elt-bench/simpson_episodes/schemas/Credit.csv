@@ -1,0 +1,6 @@
+column_name,column_description
+episode_id,A unique identifier for episodes
+category,the category of the credit
+person,the name of cast and crew members
+role,the role of the person
+credited,whether the person is credited 

@@ -1,0 +1,13 @@
+column_name,column_description
+id,the unique number to determine one row of the data
+draftyear,which year does this draft happens
+draftround,the Round number of this draft
+draftselection,the position that the player was picked
+draftoverall,The player's overall draft position for the year
+tmid,team name
+firstname,the first name of the player
+lastname,the last name of the player
+suffixname,the suffix name of the player
+playerid,ID number identifying the unique number of the player
+draftfrom,the university that the drafted players come from
+lgid,the league name

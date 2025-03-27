@@ -1,0 +1,4 @@
+column_name,column_description
+id,Application ID.
+name,Application Name.
+is_enabled,Boolean indicator for whether application is enabled or not.

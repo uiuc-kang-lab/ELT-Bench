@@ -1,0 +1,6 @@
+column_name,column_description
+id,the unique identifier of the person
+full_name,the full name of the person
+gender,the gender of the person
+height,the height of the person
+weight,the weight of the person

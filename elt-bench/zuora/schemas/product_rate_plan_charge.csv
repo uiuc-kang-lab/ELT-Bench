@@ -1,0 +1,41 @@
+column_name,column_description
+id,Unique identifier of the product rate plan charge.
+_fivetran_synced,Timestamp of when a record was last synced.
+_fivetran_deleted,Boolean identifiying whether the record was deleted in the source.
+account_receivable_accounting_code_id,The id of the accounting code for the accounts receivable account.
+accounting_code,The accounting code for the charge.
+apply_discount_to,The type of charge to which discounts apply.
+bill_cycle_day,The day of the bill cycle on which the charge should be billed.
+bill_cycle_type,The type of bill cycle for the charge.
+billing_period,The billing period for the charge.
+charge_model,The charge model for the charge.
+charge_type,The type of charge.
+created_by_id,The id of the user who created the charge.
+created_date,The date on which the charge was created.
+default_quantity,The default quantity for the charge.
+deferred_revenue_accounting_code_id,The id of the accounting code for deferred revenue.
+description,A description of the charge.
+discount_class_id,The id of the discount class for the charge.
+discount_level,The level at which the discount is applied.
+end_date_condition,The condition that determines when the charge ends.
+exclude_item_billing_from_revenue_accounting,Indicates whether the charge should be excluded from revenue accounting.
+exclude_item_booking_from_revenue_accounting,Indicates whether the charge should be excluded from booking revenue accounting.
+included_units,The number of units included in the charge.
+is_stacked_discount,Indicates whether the discount is a stacked discount. Values are true or false.
+list_price_base,The price used to calculate the charge.
+max_quantity,The maximum number of units allowed for this charge.
+min_quantity,The minimum number of units required for this charge.
+name,The name of the product rate plan charge.
+product_id,The unique identifier of the product associated with the product rate plan charge.
+product_rate_plan_id,The unique identifier of the product rate plan associated with the product rate plan charge.
+specific_billing_period,"The billing period for this product rate plan charge. Values are DAY, WEEK, MONTH, and YEAR."
+tax_mode,"Indicates how the charge is taxed. Values are TAXABLE, NON-TAXABLE, and TAXED_INCLUSIVE."
+taxable,Indicates whether the charge is taxable. Values are true or false.
+trigger_event,"The event that triggers the charge. Values are SERVICE_ACTIVATION, CONTRACT_EFFECTIVE, CUSTOMER_ACCEPTANCE, or SERVICE_USAGE."
+uom,The unit of measure for the charge.
+up_to_periods,The maximum number of billing periods allowed for this charge.
+up_to_periods_type,"The billing period type for the up to periods setting. Values are DAY, WEEK, MONTH, and YEAR."
+updated_by_id,The unique identifier of the user who last updated the product rate plan charge.
+updated_date,The date and time when the product rate plan charge was last updated.
+use_discount_specific_accounting_code,Indicates whether the discount uses a specific accounting code. Values are true or false.
+weekly_bill_cycle_day,"The day of the week when the bill cycle starts for a weekly billing period. Values are MON, TUE, WED, THU, FRI, SAT, and SUN."

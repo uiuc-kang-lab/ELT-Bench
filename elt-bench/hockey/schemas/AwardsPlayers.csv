@@ -1,0 +1,7 @@
+column_name,column_description
+playerid,string ID of players
+award,award name
+year,year of award
+lgid,league abbreviated name
+note,note if needed
+pos,position of players

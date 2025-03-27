@@ -1,0 +1,5 @@
+column_name,column_description
+n_nationkey,unique id number identifying the nation
+n_name,name of the nation
+n_regionkey,region key number of the nation
+n_comment,comment description of nation

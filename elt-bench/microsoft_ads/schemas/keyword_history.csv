@@ -1,0 +1,7 @@
+column_name,column_description
+id,The ID of the keyword.
+name,The keyword(s) associated with this record.
+modified_time,"The time each version of the object was last modified, i.e. when that version of the object was 'created'."
+ad_group_id,The ID of the corresponding ad group.
+match_type,"The match type associated with this record; values contain but may not be limited to 'Broad', 'Exact', 'Phrase'. Please refer to Microsoft Ad's [documentation](https://help.ads.microsoft.com/#apex/ads/en/50822/1)."
+status,The status of this keyword

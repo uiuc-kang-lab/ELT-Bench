@@ -1,0 +1,6 @@
+column_name,column_description
+date,the date of the immunization
+patient,the patient id
+encounter,the medical encounter id
+code,the code of the immunization 
+description,the description of the immunization

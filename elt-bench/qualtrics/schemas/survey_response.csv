@@ -1,0 +1,20 @@
+column_name,column_description
+_fivetran_synced,The time when a record was last updated by Fivetran.
+distribution_channel,The method by which the survey was distributed to respondents.
+duration_in_seconds,How long it took for the respondent to finish the survey in seconds.
+end_date,The point in time when the survey response was finished.
+finished,"Boolean (stored as int) indicating if the respondent finished and submitted the survey, the value will be 1, otherwise it will be 0."
+id,The unique ID for the SURVEY_RESPONSE.
+ip_address,IP address of the recipient.
+last_modified_date,The point in time when the record was last modified.
+location_latitude,The approximate location of the respondent at the time the survey was taken.
+location_longitude,The approximate location of the respondent at the time the survey was taken.
+progress,How far the respondent has progressed through the survey as a percentage out of 100.
+recipient_email,Email of the [recipient](https://api.qualtrics.com/ZG9jOjg3NzY2OQ-getting-information-about-distributions#the-recipients-object) if they are a single recipient (not a mailing list or sample).
+recipient_first_name,First name of the [recipient](https://api.qualtrics.com/ZG9jOjg3NzY2OQ-getting-information-about-distributions#the-recipients-object) if they are a single recipient (not a mailing list or sample).
+recipient_last_name,Last name of the [recipient](https://api.qualtrics.com/ZG9jOjg3NzY2OQ-getting-information-about-distributions#the-recipients-object) if they are a single recipient (not a mailing list or sample).
+recorded_date,The point in time when the survey response was recorded.
+start_date,The point in time when the survey response was recorded.
+status,The type of response.
+survey_id,"The unique identifier for this survey. Match pattern = ^SV_[a-zA-Z0-9]{11,15}$"
+user_language,The language of the respondent.

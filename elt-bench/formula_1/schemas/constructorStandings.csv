@@ -1,0 +1,8 @@
+column_name,column_description
+constructorStandingsId,unique identification of the constructor standing records 
+raceId,id number identifying which races 
+constructorId,id number identifying which id 
+points,how many points acquired in each race 
+position,position or track of circuits 
+positionText,
+wins,wins 

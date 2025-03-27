@@ -1,0 +1,11 @@
+column_name,column_description
+episode_id,A unique identifier for episodes
+season,the season of the episode
+episode,the episode number of the episode
+number_in_series,the number in series
+title,the title of the episode
+summary,the summary of the episode
+air_date,the air date of the episode
+episode_image,the image of episode
+rating,the rating of episode
+votes,the votes of episode

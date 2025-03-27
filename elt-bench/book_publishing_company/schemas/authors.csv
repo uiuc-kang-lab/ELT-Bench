@@ -1,0 +1,10 @@
+column_name,column_description
+au_id,unique number identifying authors
+au_lname,author last name
+au_fname,author first name
+phone,phone number
+address,address
+city,city 
+state,state 
+zip,zip code
+contract,contract status

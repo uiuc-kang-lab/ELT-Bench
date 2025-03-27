@@ -1,0 +1,4 @@
+column_name,column_description
+atom_id,id of the first atom
+atom_id2,id of the second atom
+bond_id,bond id representing bond between two atoms

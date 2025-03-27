@@ -1,0 +1,7 @@
+column_name,column_description
+line_id,the unique identifier of the order line
+order_id,"the id of the order
+Maps to cust_order(order_id)"
+book_id,"the id of the book
+Maps to book(book_id)"
+price,the price of the order

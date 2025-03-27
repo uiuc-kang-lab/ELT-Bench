@@ -1,0 +1,30 @@
+column_name,column_description
+id,Unique identifier.
+_fivetran_deleted,Indicates if the record was soft-deleted by Fivetran.
+_fivetran_synced,Timestamp the record was synced by Fivetran.
+availability_date,Date when the organization becomes available.
+available_for_hire,Flag indicating whether the organization is available for hiring.
+code,Code assigned to the organization for reference and categorization.
+description,The description of the organization.
+external_url,External URL associated with the organization.
+hiring_freeze,Flag indicating whether the organization is under a hiring freeze.
+inactive,Flag indicating whether this is inactive.
+inactive_date,Date when the organization becomes inactive
+include_manager_in_name,Flag indicating whether to include the manager in the organization name.
+include_organization_code_in_name,Flag indicating whether to include the organization code in the name.
+last_updated_date_time,Date and time when the organization record was last updated.
+location,Location associated with the organization.
+manager_id,Identifier for the manager associated with the organization.
+name,Name of the organization.
+organization_code,Code associated with the organization.
+organization_owner_id,Identifier for the owner of the organization.
+staffing_model,Staffing model associated with the organization
+sub_type,Subtype or classification of the organization.
+superior_organization_id,"Identifier for the superior organization, if applicable."
+supervisory_position_availability_date,Availability date for supervisory positions within the organization.
+supervisory_position_earliest_hire_date,Earliest hire date for supervisory positions within the organization.
+supervisory_position_time_type,Time type associated with supervisory positions.
+supervisory_position_worker_type,Worker type associated with supervisory positions.
+top_level_organization_id,"Identifier for the top-level organization, if applicable."
+type,Type or category of the organization.
+visibility,Visibility level of the organization.

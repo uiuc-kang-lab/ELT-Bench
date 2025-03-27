@@ -1,0 +1,6 @@
+column_name,column_description
+shiftid,The unique number identifying the shift.
+name,Shift description.
+starttime,Shift start time.
+endtime,Shift end time.
+modifieddate,Date and time the record was last updated. 

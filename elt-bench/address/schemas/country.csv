@@ -1,0 +1,4 @@
+column_name,column_description
+zip_code,the zip code of the state in the country
+county,the country 
+state,the state of the country

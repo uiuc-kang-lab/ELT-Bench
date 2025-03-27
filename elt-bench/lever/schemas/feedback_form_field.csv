@@ -1,0 +1,11 @@
+column_name,column_description
+feedback_form_id,Foreign key referencing the FEEDBACK_FORM that this field is found in.
+field_index,Numerical index of the field's position in the feedback form.
+value_index,Index of the value(s) provided for this field. This is relevant if the field is an array. todo
+code_language,Programming language if the interview assessed coding.
+currency,The three-character ISO 4217 Currency Code specifying what currency this field captures.
+value_date,"If the field is a date-type, this is the value."
+value_decimal,"If the field is a decimal, this is the value."
+value_file_id,Foreign key referencing the FILE that was provided as the field value.
+value_number,"If the field is a numeric, this is the value."
+value_text,"If the field is a text field, this is the content of the value."

@@ -1,0 +1,82 @@
+column_name,column_description
+_fivetran_deleted,Boolean representing whether the record was soft-deleted in Qualtrics.
+_fivetran_synced,The time when a record was last updated by Fivetran.
+data_export_tag,The tag to identify the question in exported data.
+data_visibility_hidden,Boolean that represents whether the embedded data is hidden.
+data_visibility_private,Boolean that represents whether the embedded data is private.
+id,The unique identifier for the question. Match pattern = ^QID[a-zA-Z0-9]+$
+next_answer_id,"For Matrix questions, the vertical options are denoted as ""Answers"" in the question's structure. 
+ID of the next answer for this question. ?"
+next_choice_id,"For Matrix questions, the horizontal options are denoted as ""Choices"" in the question's structure. 
+
+ID of the next choice for this question. ?"
+question_description,Label to identify the question.
+question_description_option,"An optional user-provided field for question descriptions. Accepted values = `UseText`, `SpecifyLabel`"
+question_text,Text for the question.
+question_text_unsafe,Un-paresed version of the question text.
+question_type,"The type of question. Can be -
+`MC`,`Matrix`,`Captcha`,`CS`,`DB`,`DD`,`Draw`,`DynamicMatrix`,`FileUpload`,`GAP`,`HeatMap`,`HL`,`HotSpot`,`Meta`,`PGR`,`RO`,`SBS`,`Slider`,`SS`,`TE`,`Timing`,`TreeSelect`"
+selector,"How answers are selected such as single answer, multiple answer, etc. Accepted values - 
+- `Bipolar`
+- `Browser`
+- `Captcha`
+- `CompactView`
+- `CS`
+- `D`
+- `DL`
+- `DND`
+- `DragAndDrop`
+- `ESTB`
+- `FORM`
+- `FileUpload`
+- `GRB`
+- `HBAR`
+- `HR`
+- `HSLIDER`
+- `I`
+- `Image`
+- `LikeDislike`
+- `Likert`
+- `MACOL`
+- `MAHR`
+- `MAVR`
+- `ML`
+- `MSB`
+- `MaxDiff`
+- `NPS`
+- `OH`
+- `OnOff`
+- `POS`
+- `PTB`
+- `PW`
+- `PageTimer`
+- `Profile`
+- `RB`
+- `RO`
+- `SACOL`
+- `SAHR`
+- `SAVR`
+- `SB`
+- `SBSMatrix`
+- `SL`
+- `STAR`
+- `ScreenCapture`
+- `SearchOnly`
+- `Signature`
+- `TA`
+- `TB`
+- `TBelow`
+- `TE`
+- `TL`
+- `TRight`
+- `Text`
+- `V1`
+- `V2`
+- `VR`
+- `VRTL`
+- `WTXB`"
+sub_selector,"How subquestion answers are selected. Allowed values - SingleAnswer, DL, GR, DND, Long, Medium, MultipleAnswer, Columns, NoColumns, Short, TX, TXOT, WOTXB, WOTB, WTB, WTXB, WVTB."
+survey_id,"The unique identifier for this survey. Match pattern = ^SV_[a-zA-Z0-9]{11,15}$"
+validation_setting_force_response,The response from forcing respondents to answer a question or request that they consider answering the question before leaving the page
+validation_setting_force_response_type,The type of response from forcing respondents to answer a question or request that they consider answering the question before leaving the page
+validation_setting_type,The type of forced response validation that is set.

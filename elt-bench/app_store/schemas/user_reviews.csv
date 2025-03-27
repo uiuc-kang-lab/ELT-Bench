@@ -1,0 +1,6 @@
+column_name,column_description
+App,Name of app
+Translated_Review,User review (Preprocessed and translated to English)
+Sentiment,Overall user rating of the app (as when scraped)
+Sentiment_Polarity,Sentiment polarity score
+Sentiment_Subjectivity,Sentiment subjectivity score

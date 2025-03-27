@@ -1,0 +1,17 @@
+column_name,column_description
+recipe_id,the id of the recipe
+protein,the protein content in the recipe
+carbo,the carbo content in the recipe
+alcohol,the alcohol content in the recipe
+total_fat,the total fat content in the recipe
+sat_fat,the saturated fat content in the recipe
+cholestrl,the cholesterol content in the recipe
+sodium,the sodium content in the recipe
+iron,the iron content in the recipe
+vitamin_c,the vitamin c content in the recipe
+vitamin_a,the vitamin a content in the recipe
+fiber,the fiber a content in the recipe
+pcnt_cal_carb,percentage of carbo in total nutrient composition
+pcnt_cal_fat,percentage of fat in total nutrient composition
+pcnt_cal_prot,percentage of protein in total nutrient composition
+calories,the calories of the recipe

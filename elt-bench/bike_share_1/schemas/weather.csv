@@ -1,0 +1,25 @@
+column_name,column_description
+date,
+max_temperature_f,max temperature in Fahrenheit degree
+mean_temperature_f,mean temperature in Fahrenheit degree
+min_temperature_f,min temperature in Fahrenheit degree
+max_dew_point_f,max dew point in Fahrenheit degree 
+mean_dew_point_f,mean dew point in Fahrenheit degree 
+min_dew_point_f,min dew point in Fahrenheit degree 
+max_humidity,max humidity
+mean_humidity,mean humidity
+min_humidity,min humidity
+max_sea_level_pressure_inches,max sea level pressure in inches
+mean_sea_level_pressure_inches,mean sea level pressure in inches
+min_sea_level_pressure_inches,min sea level pressure in inches
+max_visibility_miles,max visibility in miles
+mean_visibility_miles,mean visibility in miles
+min_visibility_miles,min visibility in miles
+max_wind_speed_mph,max wind Speed in mph
+mean_wind_speed_mph,mean wind Speed in mph
+max_gust_speed_mph,max gust Speed in mph
+precipitation_inches,precipitation in inches
+cloud_cover,cloud cover
+events,
+wind_dir_degrees,wind direction degrees
+zip_code,zip code

@@ -1,0 +1,4 @@
+column_name,column_description
+truck_id,Unique identifier of the truck table
+make,The brand of the truck
+model_year,The year the truck was manufactured

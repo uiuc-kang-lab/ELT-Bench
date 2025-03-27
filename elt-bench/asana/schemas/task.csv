@@ -1,0 +1,17 @@
+column_name,column_description
+id,System generated unique identifier for the task
+assignee_id,Foreign key referencing the USER assigned to this task (note that a task may not have an assignee)
+completed,Boolean that's true if the task is *currently* marked completed. Note that a task can be unmarked complete
+completed_at,"Timestamp of when the task was completed, if still currently completed."
+completed_by_id,"Foreign key that references the USER who completed the task, if currently completed."
+created_at,Timestamp of when the task was first made
+due_on,The date on which the task is due. Note that not tasks may not have a due date
+due_at,"The date and time at which the task is due, only if a specific time is given."
+modified_at,The last time the task was updated. Does not include comments nor changes in associations (ie their projects)
+name,The title of the task
+notes,Free-form textual description of the task (as seen in the UI).
+liked,A boolean that's true if the task has been liked.
+num_likes,An integer indicating the number of likes on a task.
+parent_id,"The ID of the parent of the task, if it is a subtask. Self-refers to TASK"
+start_on,"The start date of the task, if given with the due date"
+workspace_id,The id of an organization's workspace in asana. Not necessary unless you have access to multiple organization's asanas.

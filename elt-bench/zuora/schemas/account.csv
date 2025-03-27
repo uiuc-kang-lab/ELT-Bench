@@ -1,0 +1,34 @@
+column_name,column_description
+id,The unique identifier of the
+_fivetran_synced,Timestamp of when a record was last synced.
+_fivetran_deleted,Boolean identifiying whether the record was deleted in the source.
+account_number,Unique account number assigned to the account.
+auto_pay,Indicates if future payments are automatically collected when they're due during a Payment Run.
+balance,Current outstanding balance for the account. Can be calculated by (Total Invoice Balance - Total Credit Balance)
+batch,Organizes your customer accounts into groups to optimize your billing and payment operations.
+bill_cycle_day,Day on which bill runs generate invoices for the account.
+bill_to_contact_id,Person that you would like to bill or send the invoice to.
+created_date,Creation date for
+created_by_id,Identifier of the user who created
+credit_balance,Total credit balance for the account.
+crm_id,"CRM account id, used in Salesforce integration."
+currency,Currency the customer is billed in.
+default_payment_method_id,Identifier of the default payment method for the account.
+last_invoice_date,The date when the previous invoice was generated for the account. The field value is null if no invoice has ever been generated for the account.
+mrr,The amount of predictable revenue expected to be received on a monthly basis.
+name,Account name as displayed in Zuora.
+notes,Comments about the account.
+parent_account_id,Identifier of the parent customer account for this account. Use this field if you have customer hierarchy enabled.
+payment_term,Indicates when the customer pays for subscriptions.
+sold_to_contact_id,Person that you have sold your product or services to; can be the same as the bill to contact.
+status,Status of the account in the system.
+tax_exempt_effective_date,Date when the customer's tax exemption starts.
+tax_exempt_expiration_date,Date when the customer's tax exemption certificate expires.
+tax_exempt_status,Status of the account's tax exemption.
+total_debit_memo_balance,Total balance of the account's debit memos.
+total_invoice_balance,Total balance of the account's invoices.
+unapplied_balance,Total of unapplied payments not applied to invoices or debit memos.
+unapplied_credit_memo_amount,"Total of credit memos created that has been created, but not used to settle or offset an invoice balance or a debit memo balance."
+updated_date,Last updated date for
+updated_by_id,Identifier of the user who last updated
+vatid,EU Value Added Tax id.

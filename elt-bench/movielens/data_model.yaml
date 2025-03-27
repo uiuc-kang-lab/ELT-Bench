@@ -1,0 +1,58 @@
+models:
+  - name: movielens__movies
+    description: Each record represents a movie.
+    columns:
+      - name: movieid
+        description: Unique identifier for the movie.
+      - name: country
+        description: The country where the movie was produced.
+      - name: isenglish
+        description: is the movie in English.
+      - name: avg_rating
+        description: The average rating of the movie.
+      - name: number_of_audience_occupation_5
+        description: The number of audience with occupation 5 who watched the movie, replace NULL values with 0.
+      - name: number_of_ratings_by_female_users
+        description: The number of ratings given by female users for the movie, replace NULL values with 0.
+      - name: percentage_of_female_actresses
+        description: The percentage of female actresses in the movie
+      - name: running_time_3_ave_revenue_1
+        description: Set to 1 if the movie has a running time of 3 and an average revenue of 1, otherwise, set to 0
+  - name: movielens__directors
+    description: Each record represents a director.
+    columns: 
+      - name: directorid
+        description: Unique identifier for the director.
+      - name: d_quality
+        description: The quality of the director.
+      - name: avg_revenue
+        description: The average revenue of the director.
+      - name: num_action_movie
+        description: The number of action movies directed by the director, replace NULL values with 0.
+      - name: num_movie_avg_rating_over_3
+        description: The number of movies with an average rating over 3 directed by the director, replace NULL values with 0.
+      - name: most_common_film_genres
+        description: The most common film genres directed by the director.
+      - name: has_quality_3_and_at_least_2_genres
+        description: Set to 1 if the director has a quality of at least 3 and has directed at least 2 genres, otherwise, set to 0
+      - name: is_called_box_office_success_paradox
+        description: Set to 1 if the director is called the "box office success paradox", otherwise, set to 0
+  - name: movielens__actors
+    description: Each record represents an actor.
+    columns:
+      - name: actorid
+        description: Unique identifier for the actor.
+      - name: a_gender
+        description: The gender of the actor.
+      - name: a_quality
+        description: The quality of the actor.
+      - name: num_rating_over_3
+        description: The number of movies the actor has acted in with a rating over 3, replace NULL values with 0.
+      - name: has_acted_in_at_least_2_French_films
+        description: Set to 1 if the actor has acted in at least 2 French films, otherwise, set to 0
+      - name: num_film
+        description: The number of films the actor has acted in, replace NULL values with 0.
+      - name: quality_rating_3_and_acted_English_USA_movies
+        description: Set to 1 if the actor has a quality rating of 3 and has acted in English USA movies, otherwise, set to 0
+      - name: num_horror_movies
+        description: The number of horror movies the actor has acted in, replace NULL values with 0.

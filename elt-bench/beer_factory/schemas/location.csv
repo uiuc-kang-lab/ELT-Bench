@@ -1,0 +1,7 @@
+column_name,column_description
+locationid,the unique id for the location
+locationname,the name of the location
+streetaddress,the street address
+city,the city where the location locates
+state,the state code
+zipcode,the zip code of the location

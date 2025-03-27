@@ -1,0 +1,8 @@
+column_name,column_description
+playerid,id number identifying the player
+year,year
+stint,stint
+tmid,team abbreviated name
+s,shots
+g,goals
+gdg,game deciding goals

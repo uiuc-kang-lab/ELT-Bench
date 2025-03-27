@@ -1,0 +1,10 @@
+column_name,column_description
+id,unique id number indicating the dishes
+name,the name of the dish
+description,description of the dish 
+menus_appeared,how many menus have this dish 
+times_appeared,how many times this dish appears in the menu
+first_appeared,the year that this dish appears first
+last_appeared,the year that this dish appears the last time
+lowest_price,the lowest price of the dish
+highest_price,the highest price of the dish

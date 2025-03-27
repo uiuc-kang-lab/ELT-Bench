@@ -1,0 +1,12 @@
+column_name,column_description
+recipe_id,the unique identifier for the recipe
+title,the title of the recipe
+subtitle,the subtitle of the recipe
+servings,the number of people the recipe can serve
+yield_unit,the unit of the yield for the recipe
+prep_min,the preparation minute of the recipe
+cook_min,the cooked minute of the recipe
+stnd_min,the stand minute of the price
+source,the source of the recipe
+intro,the introduction of the recipe
+directions,the directions of the recipe

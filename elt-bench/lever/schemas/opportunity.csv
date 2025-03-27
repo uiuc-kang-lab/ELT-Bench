@@ -1,0 +1,29 @@
+column_name,column_description
+id,Unique ID of the opportunity.
+archived_at,Timestamp of when the opportunity was archived.
+archived_reason_id,Foreign key referencing the ARCHIVE_REASON for which the opportunity was archived.
+contact,Foreign key referencing the CONTACT info of the candidate applying in this opportunity.
+created_at,"Timestamp of when the opportunity was created (ie when the candidate clicked ""apply"" on your company website).
+"
+data_protection_contact_allowed,"Boolean that is true if relevant data policy regulations allow for contacting  this opportunity's candidate.
+"
+data_protection_contact_expires_at,Timestamp of when this permission/data policy expires.
+data_protection_store_allowed,"Boolean that is true if relevant data policy regulations allow for storing  this opportunity record.
+"
+data_protection_store_expires_at,Timestamp of when this permission/data policy expires.
+headline,"Contact headline, typically a list of previous companies where the contact has worked or  schools that the contact has attended.
+"
+is_anonymized,"Boolean that is true if the opportunity has been anonymized (therefore fully anonymizing  the contact and removing their *personal* information).
+"
+last_advanced_at,"Timestamp of when the candidate advanced to their current stage in the hiring pipeline.
+"
+last_interaction_at,"Timestamp of when the Opportunity profile was last interacted with. See interactions [here](https://help.lever.co/hc/en-us/articles/205697619).
+"
+location,Current contact location of the candidate.
+name,Contact full name.
+origin,"The way in which the opportunity was added to lever. Includes 'agency', 'applied', 'internal', 'referred', 'sourced', and 'university'.
+"
+owner_id,Foreign key referencing the id of the USER who owns this opportunity.
+snoozed_until,Timestamp of when the current snooze period of this opportunity ends (if snoozed).
+stage_id,Foreign key referencing the ID of the current stage of the opportunity.
+updated_at,Timestamp of when the opportunity was last updated in lever.

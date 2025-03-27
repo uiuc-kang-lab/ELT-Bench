@@ -1,0 +1,6 @@
+column_name,column_description
+ps_partkey,unique id number identifying the part key
+ps_suppkey,unique id number identifying the supply key
+ps_supplycost,cost number of the part supply
+ps_availqty,available quantity of the part supply
+ps_comment,comment description of the part supply.

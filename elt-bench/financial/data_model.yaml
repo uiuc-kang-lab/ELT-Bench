@@ -1,0 +1,38 @@
+models:
+  - name: districts
+    description: Each record represents a district.
+    columns:
+      - name: district_id
+        description: The unique identifier for the district.
+      - name: district_name
+        description: The name of the district.
+      - name: num_opened_accounts
+        description: The number of accounts opened in the district, replace NULL values with 0.
+      - name: num_male_clients
+        description: The number of male clients in the district, replace NULL values with 0.
+      - name: avg_transaction_amount_1997
+        description: The average transaction amount in 1997.
+      - name: num_accounts_with_load_finished_no_problem
+        description: The number of accounts with loan contracts finished with no problems, replace NULL values with 0.
+      - name: per_account_opened_1993
+        description: The percentage of accounts from the district among all accounts opened in 1993.
+  - name: clients
+    description: Each record represents a client.
+    columns:
+      - name: client_id
+        description: The unique identifier for the client.
+      - name: gender
+        description: The gender of the client.
+      - name: birth_date
+        description: The birth date of the client.
+      - name: amount_of_first_transaction
+        description: the amount of the first transaction by the client, with ties broken by the descending order of the amount.
+      - name: largest_loan_amount
+        description: The largest loan amount the client has taken.
+      - name: num_withdrawals_in_cash_transactions
+        description: The number of withdrawals in cash transactions by the client, replace NULL values with 0.
+      - name: avg_loan_amount
+        description: The average loan amount the client has taken.
+      - name: total_pay_for_all_transactions_1998
+        description: The total amount the client paid for all of the transactions in 1998, replace NULL values with 0.
+      

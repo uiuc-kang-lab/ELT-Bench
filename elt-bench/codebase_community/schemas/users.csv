@@ -1,0 +1,15 @@
+column_name,column_description
+Id,the user id
+Reputation,the user's reputation
+CreationDate,the creation date of the user account
+DisplayName,the user's display name
+LastAccessDate,the last access date of the user account
+WebsiteUrl,the website url of the user account
+Location,user's location
+AboutMe,the self introduction of the user
+Views,the number of views
+UpVotes,the number of upvotes
+DownVotes,the number of downvotes
+AccountId,the unique id of the account
+Age,user's age
+ProfileImageUrl,the profile image url

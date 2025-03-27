@@ -1,0 +1,33 @@
+Airbyte:
+  config:
+    files_definition_id: 778daa7c-feaf-4db6-96f3-70fd645acc77
+    mongodb_definition_id: b2e713cd-cc36-4c0a-b5bd-b47cb8a0561e
+    namespace_definition: destination
+    server_url: http://airbyte-abctl-control-plane:80/api/public/v1/
+    snowflake_definition_id: 424892c4-daac-4491-b35d-c6688ba547ba
+custom_api:
+  config:
+    configuration: {}
+    sync_mode: full_refresh_append
+    tables:
+    - schools
+flat_files:
+- format: jsonl
+  path: https://drive.google.com/uc?export=download&id=1QdqQCzH2E3HXHF-KYAQbQO8oOzJltFUE
+  sync_mode: full_refresh_append
+  table: satscores
+mongodb:
+  config:
+    connection_string: mongodb://elt-mongodb:27017/?directConnection=true
+    database: california_schools
+    sync_mode: full_refresh_append
+    tables:
+    - frpm
+snowflake:
+  config:
+    database: california_schools
+    password: Snowflake@123
+    role: AIRBYTE_ROLE
+    schema: AIRBYTE_SCHEMA
+    username: AIRBYTE_USER
+    warehouse: AIRBYTE_WAREHOUSE

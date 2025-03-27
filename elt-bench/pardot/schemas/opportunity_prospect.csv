@@ -1,0 +1,5 @@
+column_name,column_description
+_fivetran_synced,The timestamp of when a record was last synced by Fivetran.
+opportunity_id,ID of the related opportunity
+prospect_id,ID of the related prospect
+updated_at,Last time record was updated in Pardot

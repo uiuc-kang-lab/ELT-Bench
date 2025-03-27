@@ -1,0 +1,11 @@
+column_name,column_description
+id,The ID of the related Campaign.
+created_time,Campaign creation time.
+advertiser_id,The ID of the related Advertiser.
+name,Campaign name.
+status,"The status of the Campaign. One of ""ACTIVE"", ""ARCHIVED"", ""PAUSED"""
+default_ad_group_budget_in_micro_currency,"When transitioning from campaign budget optimization to non-campaign budget optimization, the default_ad_group_budget_in_micro_currency will propagate to each child ad groups daily budget. Unit is micro currency of the associated advertiser account."
+is_automated_campaign,Specifies whether the campaign was created in the automated campaign flow
+is_campaign_budget_optimization,"Determines if a campaign automatically generate ad-group level budgets given a campaign budget to maximize campaign outcome. When transitioning from non-cbo to cbo, all previous child ad group budget will be cleared."
+is_flexible_daily_budgets,Determine if a campaign has flexible daily budgets setup.
+_fivetran_synced,Timestamp of when a record was last synced.

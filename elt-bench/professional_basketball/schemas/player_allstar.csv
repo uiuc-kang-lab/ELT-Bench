@@ -1,0 +1,24 @@
+column_name,column_description
+playerid,ID number identifying the unique number of the player
+first_name,the first name of the player
+last_name,the last name of the player
+season_id,the id number of the season
+conference,which conference that players belong to
+league_id,the league name
+games_played,how many all star games that this player played in this season
+minutes,minutes of attendance
+points,points
+o_rebounds,offense rebounds
+d_rebounds,defense rebounds
+rebounds,total rebounds
+assists,assistants
+steals,steals
+blocks,blocks
+turnovers,turnovers
+personal_fouls,personal fouls
+fg_attempted,field goal attempted
+fg_made,field goal made
+ft_attempted,free throw attempted
+ft_made,free throw made
+three_attempted,three point attempted
+three_made,three point made 

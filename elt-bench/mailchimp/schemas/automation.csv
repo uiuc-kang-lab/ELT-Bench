@@ -1,0 +1,13 @@
+column_name,column_description
+id,The ID of the automation in Mailchimp.
+list_id,The ID of the List an automation was sent to.
+segment_id,The ID of the Segment an automation was sent to.
+segment_text,The field describing the Segment an automation was sent to.
+start_time,The date and time the Automation was started.
+create_time,The date and time the Automation was created.
+status,"The current status of the Automation. Possible Values: save, paused, sending
+"
+title,The title of the Automation.
+trigger_settings,Available triggers for Automation workflows.
+_fivetran_synced,UTC timestamp that indicates the time when Fivetran last successfully synced the row.
+_fivetran_deleted,Boolean that is true if the row has been soft-deleted from the source.

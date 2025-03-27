@@ -1,0 +1,4 @@
+column_name,column_description
+countryregioncode,The unique id number identifying Country Region ISO standard code for countries and regions.
+name,Country or region name.
+modifieddate,Date and time the record was last updated. 

@@ -1,0 +1,3 @@
+column_name,column_description
+pred_class_id,the unique prediction id for the class
+pred_class,the caption for the prediction class id

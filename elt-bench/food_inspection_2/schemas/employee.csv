@@ -1,0 +1,12 @@
+column_name,column_description
+employee_id,the unique id for the employee
+first_name,first name of the employee
+last_name,last name of the employee
+address,physical street address of the employee
+city,city of the employee's address
+state,state of the customer's address
+zip,postal code of the employee's address
+phone,telephone number to reach the customer
+title,career title of the employee
+salary,the salary of the employee
+supervisor,the employee id of the employee's supervisor

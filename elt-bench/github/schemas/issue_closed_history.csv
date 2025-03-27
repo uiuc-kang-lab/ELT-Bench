@@ -1,0 +1,4 @@
+column_name,column_description
+issue_id,Foreign key that references the issue table
+updated_at,Timestamp of when the action took place
+closed,Boolean variable for if the issue was closed (true) or re-opened (false)

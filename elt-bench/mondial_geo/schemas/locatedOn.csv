@@ -1,0 +1,5 @@
+column_name,column_description
+city,the name of the city
+province, the province where the city belongs to
+country,the country code where the city belongs to
+island, the island it is (maybe only partially) located on

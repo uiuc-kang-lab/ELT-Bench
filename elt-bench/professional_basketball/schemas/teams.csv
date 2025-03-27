@@ -1,0 +1,23 @@
+column_name,column_description
+year,year
+lgid,league name
+tmid,team id
+franchid,
+confid,
+divid,division ID
+rank,rank
+confrank,
+playoff,another name: post season
+name,full name of the team
+o_fgm,how many offense field goal made by this team in this season
+o_ftm,how many offense free throw made by this team in this season
+o_pts,offense points
+d_pts,defense points
+homewon,wins in the home
+homelost,loses in the home
+awaywon,wins in the away
+awaylost,loses in the away
+won,
+lost,
+games,
+arena,arena

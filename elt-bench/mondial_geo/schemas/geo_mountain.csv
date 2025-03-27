@@ -1,0 +1,4 @@
+column_name,column_description
+mountain,the name of the mountain
+country,the country code where it is located
+province,the province of this country

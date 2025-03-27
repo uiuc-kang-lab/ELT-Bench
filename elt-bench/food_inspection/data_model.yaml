@@ -1,0 +1,20 @@
+models:
+  - name: restaurants
+    description: Each record represents a restaurant.
+    columns:
+      - name: business_id
+        description: Unique identifier for the restaurant.
+      - name: name
+        description: Name of the restaurant.
+      - name: owner_name
+        description: Name of the owner of the restaurant.
+      - name: num_high_risk_violations
+        description: The number of high-risk violations the restaurant has, replace NULL values with 0.
+      - name: num_of_inspections_because_of_complaint
+        description: The number of inspections the restaurant has because of a complaint, replace NULL values with 0.
+      - name: violation_per_inspection
+        description: The average number of violations per inspection the restaurant has.
+      - name: lowest_inspection_score 
+        description: The lowest inspection score the restaurant has.
+      - name: meets_all_required_standards_for_4_consecutive_years
+        description: Set to 1 if the restaurant meets all required standards for 4 consecutive years, otherwise, set to 0

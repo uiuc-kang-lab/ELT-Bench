@@ -1,0 +1,4 @@
+column_name,column_description
+directorid,unique identification number of actors directors
+d_quality,director quality 
+avg_revenue,average revenue

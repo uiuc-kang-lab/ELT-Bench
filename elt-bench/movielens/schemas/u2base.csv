@@ -1,0 +1,4 @@
+column_name,column_description
+userid,identifier number of users
+movieid,identifier number of movie
+rating,ratings of movies

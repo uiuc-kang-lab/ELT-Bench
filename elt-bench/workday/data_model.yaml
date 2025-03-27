@@ -1,0 +1,146 @@
+models:
+  - name: workday__employee_overview
+    description: Each record represents an employee with enriched personal information and the positions they hold. This helps measure employee demographic and geographical distribution, overall retention and turnover, and compensation analysis of their employees.
+    columns:
+      - name: employee_id
+        description: Surrogate key on worker_id, source_relation, position_id, position_start_date to create unique identifier for a Workday employee.
+      - name: worker_id
+        description: Unique identifier for the worker.
+      - name: position_id
+        description: Identifier for the specific position. 
+      - name: position_start_date
+        description: The position start date for this employee.
+      - name: worker_code
+        description: The code associated with the worker.
+      - name: user_id
+        description: The identifier for the user associated with the worker.
+      - name: is_user_active
+        description: Is the user currently active.
+      - name: hire_date
+        description: The date when the worker was hired.
+      - name: is_terminated
+        description: Has the worker been terminated?
+      - name: primary_termination_category
+        description: The primary termination category for the worker.
+      - name: primary_termination_reason
+        description: The primary termination reason for the worker.
+      - name: is_regrettable_termination
+        description: Has the worker been regrettably terminated? Set to true if the worker was terminated and the termination is regrettable, set to false if the worker was terminated and the termination is not regrettable, otherwise null.
+      - name: compensation_effective_date
+        description: Effective date when changes to the worker's compensation take effect.
+      - name: employee_compensation_frequency
+        description: Frequency of payment for the worker's employee compensation.
+      - name: annual_currency_summary_currency
+        description: Currency used for annual compensation summaries.
+      - name: annual_currency_summary_total_base_pay
+        description: Total base pay in the currency for annual summaries.
+      - name: annual_currency_summary_primary_compensation_basis
+        description: Primary compensation basis used for annual compensation summaries.
+      - name: annual_summary_currency
+        description: Currency used for annual summaries.
+      - name: annual_summary_total_base_pay
+        description: Total base pay in the currency for annual summaries.
+      - name: annual_summary_primary_compensation_basis
+        description: Primary compensation basis used for annual summaries.
+      - name: compensation_grade_id
+        description: Identifier for the compensation grade.
+      - name: first_name
+        description: The first name of the individual.
+      - name: business_title
+        description: The business title associated with the worker position.
+      - name: job_profile_id
+        description: Identifier for the job profile.
+      - name: employee_type
+        description: The type of employee associated with the worker position.
+      - name: position_location
+        description: The position location of the employee.
+      - name: management_level_code
+        description: Code indicating the management level associated with the job profile.
+      - name: fte_percent
+        description: The percentage of hours, the employee's scheduled hours divided by the employer's hours for a full-time workweek
+      - name: position_end_date
+        description: The position end date for this employee.
+      - name: position_effective_date
+        description: The position effective date for the employee.
+
+  - name: workday__job_overview
+    description: Each record represents a job with enriched details on job profiles and job families. This allows users to understand recruitment patterns and details within a job and job groupings.
+    columns:
+      - name: job_profile_id
+        description: Identifier for the job profile.
+      - name: job_profile_code
+        description: Code assigned to the job profile.
+      - name: job_title
+        description: The title of the job for the worker.
+      - name: job_summary
+        description: The summary of the job.
+      - name: job_description
+        description: Brief description of the job profile.
+      - name: job_family_codes
+        description: String array of all job family codes assigned to a job profile.
+      - name: job_family_summaries
+        description: String array of all job family summaries assigned to a job profile.
+      - name: job_family_group_codes
+        description: String array of all job family group codes assigned to a job profile.
+      - name: job_family_group_summaries
+        description: String array of all job family group summaries assigned to a job profile. 
+
+  - name: workday__position_overview
+    description: Each record represents a position with enriched data on positions. This allows end users to understand position availabilities, vacancies, cost to optimize hiring efforts.
+    columns:
+      - name: position_id
+        description: Identifier for the specific position.
+      - name: position_code
+        description: Code associated with the position for reference and categorization.
+      - name: job_posting_title
+        description: Title used for job postings associated with the position.
+      - name: effective_date
+        description: Date when the job profile becomes effective.
+      - name: is_closed
+        description: Flag indicating whether the position is closed.
+      - name: is_hiring_freeze
+        description: Flag indicating whether the organization is under a hiring freeze.
+      - name: is_available_for_hire
+        description: Flag indicating whether the organization is available for hiring.
+      - name: availability_date
+        description: Date when the organization becomes available.
+      - name: is_available_for_recruiting
+        description: Flag indicating whether the position is available for recruiting.
+      - name: earliest_hire_date
+        description: Earliest date when the position can be filled. 
+      - name: is_available_for_overlap
+        description: Flag indicating whether the position is available for overlap with other positions.
+      - name: worker_for_filled_position_id
+        description: Identifier for the worker filling the position, if applicable.
+      - name: worker_type_code
+        description: Code indicating the type of worker associated with the position.
+      - name: position_time_type_code
+        description: Code indicating the time type associated with the position.
+      - name: supervisory_organization_id
+        description: Identifier for the supervisory organization associated with the position.
+      - name: job_profile_id
+        description: Identifier for the job profile.
+
+  - name: workday__organization_overview
+    description: Each record represents organization, organization roles, as well as positions and workers tied to these organizations. This allows end users to slice organizational data at any grain to better analyze organizational structures.
+    columns:
+      - name: organization_id
+        description: Identifier for the organization.
+      - name: organization_role_id
+        description: The role id associated with the organization.
+      - name: organization_code
+        description: Code associated with the organization.
+      - name: organization_name
+        description: Name of the organization.
+      - name: organization_type
+        description: Type or category of the organization.
+      - name: organization_sub_type
+        description: Subtype or classification of the organization.
+      - name: superior_organization_id
+        description: Identifier for the superior organization, if applicable.
+      - name: top_level_organization_id
+        description: Identifier for the top-level organization, if applicable.
+      - name: manager_id
+        description: Identifier for the manager associated with the organization.
+      - name: organization_role_code
+        description: Code assigned to the organization role for reference and categorization.

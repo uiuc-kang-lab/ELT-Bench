@@ -1,0 +1,19 @@
+column_name,column_description
+channel,Channel of the program.
+created_at,Timestamp the program was created at.
+description,Description of the program.
+end_date,"End date of the program. Applicable to event, email, and webinar type programs."
+id,ID of the program.
+name,Name of the program.
+sfdc_id,SFDC id of the program if linked to an SFDC campaign.
+sfdc_name,Name of the linked SFDC campaign if applicable.
+start_date,"Start date of program. Applicable to event, email and webinar type programs."
+status,"Status of the program. Only valid for Email and engagement program types.
+Allowed values: locked, unlocked, on, off
+"
+type,"Type of the program. Allowed values: program, event, webinar, nurture
+"
+updated_at,Timestamp the program was most recently updated.
+url,URL of the program in the Marketo UI.
+workspace,Name of the workspace.
+_fivetran_deleted,Boolean created by Fivetran to indicate whether the record has been deleted.

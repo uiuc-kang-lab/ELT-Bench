@@ -1,0 +1,47 @@
+column_name,column_description
+id,The unique identifier of the
+_fivetran_synced,Timestamp of when a record was last synced.
+_fivetran_deleted,Boolean identifiying whether the record was deleted in the source.
+account_id,The account identifier associated with the invoice.
+adjustment_amount,The amount of the invoice adjustments associated with the invoice.
+amount,The sum of all charges and taxes associated with the invoice.
+amount_home_currency,The total amount of the invoice in the home currency of the customer's billing account.
+amount_without_tax,The sum of all charges associated with the invoice. Taxes are excluded from this value.
+amount_without_tax_home_currency,"The amount of the invoice that is not subject to tax, in the home currency of the customer's billing account."
+auto_pay,Whether invoices are automatically picked up for processing in the corresponding payment run.
+balance,"The remaining balance of the invoice after all payments, adjustments, and refunds are applied."
+bill_to_contact_id,Person that you would like to bill or send the invoice to.
+comments,Additional comments about the invoice.
+created_by_id,Identifier of the user who created
+created_date,Creation date for
+credit_balance_adjustment_amount,The total amount of credit balance adjustments applied to the invoice.
+credit_memo_amount,The total amount of credit memos applied to the invoice.
+default_payment_method_id,Identifier of the default payment method for the account.
+due_date,The due date of the invoice.
+exchange_rate,The exchange rate used to convert the invoice amount into the customer's billing account currency.
+exchange_rate_date,The date the exchange rate was last updated.
+home_currency,Home currency the customer is billed in.
+includes_one_time,Specifies whether the invoice includes one-time charges.
+includes_recurring,Specifies whether the invoice includes recurring charges.
+includes_usage,Specifies whether the invoice includes usage charges.
+invoice_date,Specifies the date on which to generate the invoice.
+invoice_number,The unique identification number for the invoice.
+last_email_sent_date,The date when the invoice was last emailed.
+parent_account_id,"The id of the parent account, if the invoice is associated with a parent-child account relationship."
+payment_amount,The amount of payments applied to the invoice.
+payment_term,The name of the payment term associated with the invoice.
+posted_by,The user id of the person who moved the invoice to Posted status.
+posted_date,The date when the invoice was posted.
+refund_amount,Specifies the amount of a refund that was applied against an earlier payment on the invoice.
+sold_to_contact_id,Person that you have sold your product or services to; can be the same as the bill to contact.
+source,The source of the invoice.
+source_id,The identifier of the value in the source field.
+source_type,The type of the invoice source.
+status,"The status of the invoice in the system. This status is not the status of the payment of the invoice, just the status of the invoice itself."
+target_date,The date the invoice is generated.
+tax_amount,The total amount of the taxes applied to the invoice.
+tax_status,The status of tax calculation related to the invoice.
+transaction_currency,The currency in which the invoice is billed.
+transferred_to_accounting,Indicates whether the invoice has been transferred to the accounting system.
+updated_by_id,Identifier of the user who last updated
+updated_date,Last updated date for

@@ -1,0 +1,18 @@
+column_name,column_description
+year,year
+lgid,league ID number
+tmid,team ID
+g,Games
+w,wins
+l,loses
+t,ties
+gf,goals for
+ga,goals against
+pim,penalty minutes
+benchminor,Bench minors (minutes)
+ppg,Power play goals
+ppc,Power play chances
+sha,Shorthanded goals against
+pkg,Power play goals against
+pkc,Penalty kill chances
+shf,Shorthanded goals for

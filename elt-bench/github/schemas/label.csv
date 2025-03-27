@@ -1,0 +1,8 @@
+column_name,column_description
+id,Unique identifier of the Github label
+_fivetran_synced,Timestamp of the record being synced by Fivetran
+color,The color of the label
+description,The description of the label indicating the purpose
+is_default,Boolean flagging if the label is default on creation
+name,Name of the label
+url,Url where the label was used

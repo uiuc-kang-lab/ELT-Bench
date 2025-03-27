@@ -1,0 +1,12 @@
+column_name,column_description
+eliteid,the id number of the players
+season,season when players are playing
+team,which team the player belong to
+league,league
+gametype,type of games
+gp,number of games
+g,Goals in Draft Year
+a,Assists in Draft Year
+p,Points in Draft Year
+pim,Penalty Minutes in Draft Year
+plusminus,Goal Differential in Draft Year

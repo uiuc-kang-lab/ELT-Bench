@@ -1,0 +1,7 @@
+column_name,column_description
+campaign_id,The unique id for the campaign.
+member_id,The ID of the member an email was sent to.
+list_id,The unique ID for the list.
+reason,Field expressing unsubscribe reason.
+timestamp,The time and date the member unsubscribed.
+_fivetran_synced,UTC timestamp that indicates the time when Fivetran last successfully synced the row.

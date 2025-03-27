@@ -1,0 +1,4 @@
+column_name,column_description
+id,the unique identifier of the noc region
+noc,the NOC code of the region
+region_name,the name of the region

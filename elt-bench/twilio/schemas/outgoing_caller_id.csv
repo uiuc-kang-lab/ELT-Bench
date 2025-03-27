@@ -1,0 +1,7 @@
+column_name,column_description
+_fivetran_synced,Timestamp of when fivetran synced a record.
+created_at,"The date that this resource was created, given in RFC 2822 format."
+friendly_name,"A human readable descriptive text for this resource, up to 64 characters long. By default, the FriendlyName is a nicely formatted version of the phone number."
+id,The unique string that identifies this resource.
+phone_number,"The incoming phone number. Formatted with a '+' and country code e.g., +16175551212 (E.164 format)."
+updated_at,"The date that this resource was last updated, given in RFC 2822 format."

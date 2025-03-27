@@ -1,0 +1,10 @@
+column_name,column_description
+qualifyId,the unique identification number identifying qualifying 
+raceId,the identification number identifying each race 
+driverId,the identification number identifying each driver 
+constructorId,constructor Id 
+number,number 
+position,position or track of circuit 
+q1,time in qualifying 1 
+q2,time in qualifying 2 
+q3,time in qualifying 3 

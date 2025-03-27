@@ -1,0 +1,11 @@
+column_name,column_description
+user_id,ID related to the user who created the list.
+list_id,ID of the list on Mubi
+list_update_date_utc,Last update date for the list
+list_creation_date_utc,Creation date for the list
+user_trialist,whether the user was a tralist when he created the list 
+user_subscriber,whether the user was a subscriber when he created the list 
+user_avatar_image_url,User profile image URL on Mubi
+user_cover_image_url,User profile cover image URL on Mubi
+user_eligible_for_trial,whether the user was eligible for trial when he created the list 
+user_has_payment_method,whether the user was a paying subscriber when he created the list 

@@ -1,0 +1,27 @@
+Airbyte:
+  config:
+    mongodb_definition_id: b2e713cd-cc36-4c0a-b5bd-b47cb8a0561e
+    namespace_definition: destination
+    server_url: http://airbyte-abctl-control-plane:80/api/public/v1/
+    snowflake_definition_id: 424892c4-daac-4491-b35d-c6688ba547ba
+custom_api:
+  config:
+    configuration: {}
+    sync_mode: full_refresh_append
+    tables:
+    - user_reviews
+mongodb:
+  config:
+    connection_string: mongodb://elt-mongodb:27017/?directConnection=true
+    database: app_store
+    sync_mode: full_refresh_append
+    tables:
+    - playstore
+snowflake:
+  config:
+    database: app_store
+    password: Snowflake@123
+    role: AIRBYTE_ROLE
+    schema: AIRBYTE_SCHEMA
+    username: AIRBYTE_USER
+    warehouse: AIRBYTE_WAREHOUSE

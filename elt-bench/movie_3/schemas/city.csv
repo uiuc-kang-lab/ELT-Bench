@@ -1,0 +1,5 @@
+column_name,column_description
+city_id,unique id number identifying the city
+city,name of the city
+country_id,number identifying the country which the city belongs to
+last_update,The time of the latest update

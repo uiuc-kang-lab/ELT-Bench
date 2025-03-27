@@ -1,0 +1,4 @@
+column_name,column_description
+refid,unique id number identifying the customer
+ref_date,indicating the date when the mailing was sent
+response,Actual response to the marketing incentive email 

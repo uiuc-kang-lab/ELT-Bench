@@ -1,0 +1,16 @@
+models:
+  - name: countries
+    description: Each record represents a country.
+    columns:
+      - name: country
+        description: Unique identifier for the country.
+      - name: number_of_tweets
+        description: The number of tweets posted by the users in the country, replace NULL values with 0.
+      - name: percentage_of_male_users
+        description: The percentage of male Twitter users from the country.
+      - name: number_of_likes
+        description: The number of likes on tweets from the country, replace NULL values with 0.
+      - name: number_of_positive_sentiment_tweets
+        description: The number of tweets with positive sentiment from the country, replace NULL values with 0.
+      - name: tweets_with_most_number_of_likes_sent_by_male_users
+        description: The tweet text sent by a male user in the country with the highest number of likes, with ties broken by the ascending order of tweet ID

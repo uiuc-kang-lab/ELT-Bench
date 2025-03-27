@@ -1,0 +1,6 @@
+column_name,column_description
+coachid,string ID of the coach
+award,awards that the coach achieve
+year,year of award
+lgid,league abbreviated name
+note,

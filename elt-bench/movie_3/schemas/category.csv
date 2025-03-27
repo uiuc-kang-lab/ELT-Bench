@@ -1,0 +1,4 @@
+column_name,column_description
+category_id,unique id number identifying the category
+name,name of the category
+last_update,The time of the latest update

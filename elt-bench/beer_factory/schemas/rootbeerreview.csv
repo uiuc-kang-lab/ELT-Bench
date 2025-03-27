@@ -1,0 +1,6 @@
+column_name,column_description
+customerid,the id of the customer
+brandid,the id of the brand
+starrating,the star rating of the root beer
+reviewdate,the review date
+review,the specific review content

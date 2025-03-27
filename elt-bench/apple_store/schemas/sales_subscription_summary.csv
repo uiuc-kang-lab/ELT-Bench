@@ -1,0 +1,12 @@
+column_name,column_description
+_filename,Report filenames used to extract the date of the report
+app_name,"Sales Account Name associated with the Sales Account ID, app name or app ID. "
+account_number,Sales Account ID associated with the app name or app ID.
+country,The country associated with the subscription event metrics and subscription summary metric(s). This country code maps to ISO-3166 Alpha-2.
+state,The state associated with the subscription event metrics or subscription summary metrics.
+subscription_name,The subscription name associated with the subscription event metric or subscription summary metric.
+active_free_trial_introductory_offer_subscriptions,Total number of introductory offer subscriptions currently in a free trial.
+active_pay_as_you_go_introductory_offer_subscriptions,Total number of introductory offer subscriptions currently with a pay as you go introductory price.
+active_pay_up_front_introductory_offer_subscriptions,Total number of introductory offer subscriptions currently with a pay up front introductory price.
+active_standard_price_subscriptions,"Total number of auto-renewable standard paid subscriptions currently active, excluding free trials, 
+subscription offers, introductory offers, and marketing opt-ins. Subscriptions are active during the period for which the customer has paid without cancellation."

@@ -1,0 +1,3 @@
+column_name,column_description
+bowling_id,unique id for bowling style
+bowling_skill,the bowling skill

@@ -1,0 +1,33 @@
+column_name,column_description
+id,Unique identifier.
+_fivetran_deleted,Indicates if the record was soft-deleted by Fivetran.
+_fivetran_synced,Timestamp the record was synced by Fivetran.
+academic_tenure_eligible,Flag indicating whether the position is eligible for academic tenure.
+availability_date,Date when the organization becomes available.
+available_for_hire,Flag indicating whether the organization is available for hiring.
+available_for_overlap,Flag indicating whether the position is available for overlap with other positions.
+available_for_recruiting,Flag indicating whether the position is available for recruiting.
+closed,Flag indicating whether the position is closed.
+compensation_grade_code,Code associated with the compensation grade of the position.
+compensation_grade_profile_code,Code associated with the compensation grade profile of the position.
+compensation_package_code,Code associated with the compensation package of the position.
+compensation_step_code,Code associated with the compensation step of the position.
+critical_job,Flag indicating whether the job is critical.
+difficulty_to_fill_code,Code indicating the difficulty level in filling the position.
+earliest_hire_date,Earliest date when the position can be filled.
+earliest_overlap_date,Earliest date when the position can overlap with other positions.
+effective_date,Date when the job profile becomes effective.
+hiring_freeze,Flag indicating whether the organization is under a hiring freeze.
+job_description,Detailed description of the job associated with the position.
+job_description_summary,Summary or overview of the job description for the position.
+job_posting_title,Title used for job postings associated with the position.
+position_code,Code associated with the position for reference and categorization.
+position_time_type_code,Code indicating the time type associated with the position.
+primary_compensation_basis,Primary basis of compensation for the position.
+primary_compensation_basis_amount_change,Change in the amount of the primary compensation basis.
+primary_compensation_basis_percent_change,Change in the percentage of the primary compensation basis.
+supervisory_organization_id,Identifier for the supervisory organization associated with the position.
+work_shift_required,Flag indicating whether a work shift is required.
+worker_for_filled_position_id,"Identifier for the worker filling the position, if applicable."
+worker_position_id,Identifier for the worker associated with the position.
+worker_type_code,Code indicating the type of worker associated with the position.

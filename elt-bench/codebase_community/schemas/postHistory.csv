@@ -1,0 +1,10 @@
+column_name,column_description
+Id,the post history id
+PostHistoryTypeId,the id of the post history type
+PostId,the unique id of the post
+RevisionGUID,the revision globally unique id of the post
+CreationDate,the creation date of the post
+UserId,the user who post the post
+Text,the detailed content of the post
+Comment,comments of the post
+UserDisplayName,user's display name

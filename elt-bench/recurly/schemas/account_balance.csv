@@ -1,0 +1,6 @@
+column_name,column_description
+account_id,The account the balance update is associated with.
+account_updated_at,When the account balance was last changed.
+amount,The combined amount of charge or credit adjustments that are left uninvoiced and open on the account.
+currency,3-letter ISO 4217 currency code (USD for US Dollar)
+past_due,Is the existing amount of this balance due?

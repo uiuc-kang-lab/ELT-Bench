@@ -1,0 +1,4 @@
+column_name,column_description
+lake,the name of the lake
+country,the country code where it is located
+province,the province of this country

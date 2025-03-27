@@ -1,0 +1,58 @@
+models:
+  - name: car_retails__customers
+    description: Each record represents a customer.
+    columns:
+      - name: customernumber
+        description: Unique identifier for the customer.
+      - name: customername
+        description: Name of the customer.
+      - name: country
+        description: Country where the customer is located.
+      - name: has_credit_limit_not_more_than_100000
+        description: Set to 1 if the credit limit of the customer is not more than $100,000; otherwise, set to 0.
+      - name: total_payments_2003
+        description: Total payments made by the customer in 2003, replace NULL values with 0.
+      - name: has_paid_more_than_three_times_in_2003
+        description: Set to 1 if the customer has made more than three payments in 2003; otherwise, set to 0.
+      - name: total_actual_profit_gained
+        description: Total actual profit gained from the customer, replace NULL values with 0.
+      - name: total_price_of_product_shipped_in_2003
+        description: Total price of products shipped to the customer in 2003, replace NULL values with 0.
+  - name: car_retails__employees
+    description: Each record represents an employee.
+    columns: 
+      - name: employeenumber
+        description: Unique identifier for the employee.
+      - name: officecode
+        description: Office code where the employee is located.
+      - name: name
+        description: The name of the employee, formed by concatenating the first name and last name with a space in between.
+      - name: number_of_customers
+        description: Number of customers the employee is responsible for, replace NULL values with 0.
+      - name: is_in_Sydney
+        description: Set to 1 if the employee is located in Sydney; otherwise, set to 0.
+      - name: product_name_of_the_highest_amount_of_order
+        description: Name of the product with the highest amount of order made by the employee, with ties broken by the ascending order of the product name.
+      - name: customer_made_highest_payment
+        description: Name of the customer who made the highest payment to the employee, with ties broken by the descending order of the customer name.
+      - name: highest_customer_credit_limit
+        description: The highest credit limit among the customers the employee is responsible for.
+  - name: car_retails__products
+    description: Each record represents a product.
+    columns:
+      - name: productcode
+        description: Unique identifier for the product.
+      - name: productname 
+        description: Name of the product.
+      - name: buyprice
+        description: Price at which the product is bought.
+      - name: number_of_product_ordered
+        description: Number of the product has been ordered, replace NULL values with 0.
+      - name: expected_profit_per_piece
+        description: Expected profit per piece of the product.
+      - name: num_of_customers
+        description: Number of customers who have ordered the product, replace NULL values with 0.
+      - name: total_quantity_sold_in_2003
+        description: Total quantity of the product sold in 2003, replace NULL values with 0.
+      - name: average_actual_profit
+        description: Average actual profit gained from the product.

@@ -1,0 +1,45 @@
+column_name,column_description
+ID,identification of the patient
+Date,Date of the laboratory tests (YYMMDD)
+GOT,AST glutamic oxaloacetic transaminase
+GPT,ALT glutamic pyruvic transaminase
+LDH,lactate dehydrogenase
+ALP,alkaliphophatase
+TP,total protein
+ALB,albumin
+UA,uric acid
+UN,urea nitrogen
+CRE,creatinine
+T_BIL,total bilirubin
+T_CHO,total cholesterol
+TG,triglyceride
+CPK,creatinine phosphokinase
+GLU,blood glucose
+WBC,White blood cell
+RBC,Red blood cell
+HGB,Hemoglobin
+HCT,Hematoclit
+PLT,platelet
+PT,prothrombin time
+APTT,activated partial prothrombin time
+FG,fibrinogen
+PIC,
+TAT,
+TAT2,
+U_PRO,proteinuria
+IGG,Ig G
+IGA,Ig A
+IGM,Ig M
+CRP,C-reactive protein
+RA,Rhuematoid Factor
+RF,RAHA
+C3,complement 3
+C4,complement 4
+RNP,anti-ribonuclear protein
+SM,anti-SM
+SC170,anti-scl70
+SSA,anti-SSA
+SSB,anti-SSB
+CENTROMEA,anti-centromere
+DNA,anti-DNA
+DNA_II,anti-DNA

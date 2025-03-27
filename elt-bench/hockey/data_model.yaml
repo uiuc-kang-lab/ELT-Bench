@@ -1,0 +1,35 @@
+models:
+  - name: hockey__goalies
+    description: Each record represents a goalie.
+    columns:
+      - name: playerid
+        description: Unique identifier for the goalie.
+      - name: namegiven
+        description: Given name of the goalie.
+      - name: height
+        description: Height of the goalie.
+      - name: number_of_seasons_played
+        description: The number of seasons the goalie has played, replace NULL values with 0.
+      - name: has_more_lost_than_won_games
+        description: Set to 1 if the goalie has more lost than won games, otherwise, set to 0
+      - name: total_goal_againsts
+        description: The total number of goals against by the goalie, replace NULL values with 0.
+      - name: played_5000_minutes_in_the_all_the_season_played
+        description: Set to 1 if the goalie has played 5000 minutes in all the seasons played, otherwise, set to 0
+      - name: defensive_success_rate_in_the_postseason_of_2011
+        description: The defensive success rate (in percentage) of the goalie in the postseason of 2011
+  - name: hockey__teams
+    description: Each record represents a team.
+    columns:
+      - name: team_id
+        description: Unique identifier for the team.
+      - name: num_victories
+        description: The number of victories the team has, replace NULL values with 0.
+      - name: highest_total_points_got_in_a_year
+        description: The highest total points the team got in a year.
+      - name: power_play_percentage_in_2011
+        description: The power play percentage of the team in 2011.
+      - name: num_bench_minor_penalties
+        description: The number of bench minor penalties the team has, replace NULL values with 0.
+      - name: num_ties
+        description: The number of ties the team has, replace NULL values with 0.

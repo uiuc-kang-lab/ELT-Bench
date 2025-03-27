@@ -1,0 +1,4 @@
+column_name,column_description
+cultureid,The unique id string identifying the language in which AdventrueWorks data is stored.
+name,Name of the language.
+modifieddate,Date and time the record was last updated. 

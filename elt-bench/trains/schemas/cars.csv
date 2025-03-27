@@ -1,0 +1,11 @@
+column_name,column_description
+id,the unique id number representing the cars
+train_id,the counterpart id for trains that the cars belong to
+position,postion id of cars in the trains
+shape,shape of the cars
+len,length of the cars
+sides,sides of the cars
+roof,roof of the cars
+wheels,wheels of the cars
+load_shape,load shape
+load_num,load number

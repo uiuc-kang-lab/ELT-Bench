@@ -1,0 +1,7 @@
+column_name,column_description
+shipmethodid,The unique number for ShipMethod records.
+name,Shipping company name.
+shipbase,Minimum shipping charge.
+shiprate,Shipping charge per pound.
+rowguid,Uniquely identifying the record. Used to support a merge replication sample. 
+modifieddate,Date and time the record was last updated. 

@@ -1,0 +1,11 @@
+column_name,column_description
+_fivetran_deleted,Boolean representing whether the record was soft-deleted in Qualtrics.
+_fivetran_synced,The time when a record was last updated by Fivetran.
+creation_date,"The creation date and time of the record, expressed as an ISO 8601 value."
+description,A user-provided description of the survey version.
+id,The unique identifier for this survey version.
+published,"Boolean that, when true, publishes the version."
+survey_id,"The unique identifier for this survey. Match pattern = ^SV_[a-zA-Z0-9]{11,15}$"
+user_id,"Unique ID of the user. Match pattern  = ^((UR)|(URH))_[0-9a-zA-Z]{11,15}$"
+version_number,The version number of this survey.
+was_published,Boolean that is true if the survey version was published.

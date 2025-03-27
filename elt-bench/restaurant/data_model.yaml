@@ -1,0 +1,16 @@
+models:
+  - name: cities
+    description: Each record represents a unique city.
+    columns:
+      - name: city
+        description: Unique identifier for the city.
+      - name: most_popular_restaurant_among_dinner
+        description: The most popular restaurant among dinner in the city, with ties broken by the ascending order of the restaurant's label.
+      - name: most_common_type
+        description: The most common type of restaurant in the city,with ties broken by the ascending order of the food type
+      - name: most_popular_restaurant_serving_Asian_foods
+        description: The most popular restaurant serving Asian foods in the city, with ties broken by the ascending order of the restaurant's label.
+      - name: average_review_score_of_restaurants
+        description: The average review score of restaurants in the city.
+      - name: review_greater_than_average_review_all_American_restaurants
+        description: Set to 3 if the average review of all restaurants in the city exceeds 90% of the average review of all American restaurants in the city, to 2 if it exceeds 70%, to 1 if it exceeds 50%, and to 0 otherwise.

@@ -1,0 +1,9 @@
+column_name,column_description
+prof_id,unique id for professors
+gender,gender of the professor
+first_name,the first name of the professor
+last_name,the last name of the professor 
+email,email of the professor
+popularity,popularity of the professor
+teachingability,the teaching ability of the professor
+graduate_from,the school where the professor graduated from

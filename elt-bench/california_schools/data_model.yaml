@@ -1,0 +1,21 @@
+models:
+  - name: ca__schools
+    description: Each record represents a school.
+    columns:
+      - name: cdscode
+        description: Unique identifier for the school.
+      - name: county
+        description: The county of the school.
+      - name: school_name
+        description: The name of the school.
+      - name: percent_eligible_free_meals_for_grades_1_through_12
+        description: The percentage of eligible free meals for grades 1 through 12 of the school
+      - name: percent_eligible_free_meals_for_ages_5_17
+        description: The percentage of eligible free meals for ages 5 to 17 of the school
+      - name: SAT_excellence_rate
+        description: The excellence rate of the SAT scores of the school
+      - name: has_more_than_30_difference_in_enrollments_between_K_12_and_ages_5_17
+        description: Set to 1 if the school has more than 30 differences in enrollments between K-12 and ages 5-17, otherwise, set to 0
+      - name: sum_of_average_score_for_all_subjects
+        description: The sum of average score for all subjects of the school, replace NULL values with 0.
+      

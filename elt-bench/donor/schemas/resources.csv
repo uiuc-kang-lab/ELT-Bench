@@ -1,0 +1,10 @@
+column_name,column_description
+resourceid,unique resource id
+projectid,project id that requested resources for a classroom
+vendorid,vendor id that supplies resources to a project
+vendor_name,vendor name
+project_resource_type,type of resource
+item_name,resource name
+item_number,resource item identifier
+item_unit_price,unit price of the resource
+item_quantity,number of a specific item requested by a teacher

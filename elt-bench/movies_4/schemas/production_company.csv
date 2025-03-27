@@ -1,0 +1,3 @@
+column_name,column_description
+company_id,the unique identifier of the company
+company_name,the name of the company

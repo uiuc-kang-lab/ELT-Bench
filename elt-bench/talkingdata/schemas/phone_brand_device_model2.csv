@@ -1,0 +1,4 @@
+column_name,column_description
+device_id,the id number of the device
+phone_brand,phone brand
+device_model,device model

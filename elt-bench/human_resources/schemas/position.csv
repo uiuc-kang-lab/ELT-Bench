@@ -1,0 +1,6 @@
+column_name,column_description
+positionid,the unique id for position
+positiontitle,the position title
+educationrequired,the required education year
+minsalary,minimum salary of this position 
+maxsalary,maximum salary of this position 

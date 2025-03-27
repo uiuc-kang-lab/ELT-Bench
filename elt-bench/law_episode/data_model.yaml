@@ -1,0 +1,39 @@
+models:
+  - name: law_episode__episode
+    description: Each record represents an episode
+    columns:
+      - name: episode_id
+        description: The unique identifier of the episode
+      - name: title
+        description: The title of the episode
+      - name: episode
+        description: the sequential number of the episode within a specific season
+      - name: number_of_keywords
+        description: The number of keywords in the episode, replace NULL values with 0.
+      - name: number_of_crews_in_art
+        description: the number of crews in the Art Department that the episode has, replace NULL values with 0.
+      - name: number_of_nominations
+        description: the number of nominations that the episode has, replace NULL values with 0.
+      - name: ratio_of_American_casts
+        description: the ratio of American casts in the episode
+      - name: number_of_1_star_votes
+        description: the number of 1-star votes that the episode has, replace NULL values with 0.
+  - name: law_episode__person
+    description: Each record represents a person
+    columns:
+      - name: person_id
+        description: The unique identifier of the person
+      - name: name
+        description: The name of the person
+      - name: birth_country
+        description: The country where the person was born
+      - name: organization_most_awards
+        description: the organization in which the person win the most awards, with ties broken by the ascending order of the organization
+      - name: percentage_of_episodes_appeared_in_series
+        description: The percentage of episodes in which a person appeared, relative to the total number of episodes in the series.
+      - name: has_won_at_least_3_awards
+        description: set to 1 if the person has won at least 3 awards, otherwise, set to 0
+      - name: number_of_times_credited
+        description: the number of times that the person is credited, replace NULL values with 0.
+      - name: average_star_rating
+        description: the average star rating of the episodes that the person has worked on

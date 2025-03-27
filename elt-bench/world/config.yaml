@@ -1,0 +1,37 @@
+Airbyte:
+  config:
+    files_definition_id: 778daa7c-feaf-4db6-96f3-70fd645acc77
+    namespace_definition: destination
+    postgres_definition_id: decd338e-5647-4c0b-adf4-da0e75f5a750
+    server_url: http://airbyte-abctl-control-plane:80/api/public/v1/
+    snowflake_definition_id: 424892c4-daac-4491-b35d-c6688ba547ba
+custom_api:
+  config:
+    configuration: {}
+    sync_mode: full_refresh_append
+    tables:
+    - City
+flat_files:
+- format: jsonl
+  path: https://drive.google.com/uc?export=download&id=15QNS3D38PsRFdObjNUrleLfGPA6VNT03
+  sync_mode: full_refresh_append
+  table: CountryLanguage
+postgres:
+  config:
+    database: world
+    host: elt-postgres
+    password: testelt
+    port: 5432
+    schema: public
+    sync_mode: full_refresh_append
+    tables:
+    - country
+    user: postgres
+snowflake:
+  config:
+    database: world
+    password: Snowflake@123
+    role: AIRBYTE_ROLE
+    schema: AIRBYTE_SCHEMA
+    username: AIRBYTE_USER
+    warehouse: AIRBYTE_WAREHOUSE

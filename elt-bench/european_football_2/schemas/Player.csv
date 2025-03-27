@@ -1,0 +1,8 @@
+column_name,column_description
+id,the unique id for players
+player_api_id,the id of the player api
+player_name,player name
+player_fifa_api_id,the id of the player fifa api
+birthday,the player's birthday
+height,the player's height
+weight,the player's weight

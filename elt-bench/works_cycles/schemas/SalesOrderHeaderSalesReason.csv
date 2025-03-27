@@ -1,0 +1,4 @@
+column_name,column_description
+salesorderid,The id number of sales order.
+salesreasonid,The id number for sales reasons.
+modifieddate,Date and time the record was last updated. 

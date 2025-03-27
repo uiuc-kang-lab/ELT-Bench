@@ -1,0 +1,9 @@
+column_name,column_description
+driver_id,Unique identifier for the driver
+first_name,First given name of the driver
+last_name,Family name of the driver
+address,Street address of the driver's home
+city,City the driver lives in
+state,State the driver lives in
+zip_code,postal code of the driver's address
+phone,telephone number of the driver

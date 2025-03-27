@@ -1,0 +1,8 @@
+column_name,column_description
+loan_id,the id number identifying the loan data
+account_id,the id number identifying the account
+date,the date when the loan is approved
+amount,approved amount
+duration,loan duration
+payments,monthly payments
+status,repayment status

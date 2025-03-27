@@ -1,0 +1,20 @@
+models:
+  - name: coinmarket__coins
+    description: Each record represents a coin.
+    columns:
+      - name: coin_id
+        description: Unique identifier for the coin.
+      - name: coin_name
+        description: Name of the coin.
+      - name: coin_status
+        description: Status of the coin.
+      - name: highest_price
+        description: Highest price of the coin.
+      - name: date_lowest_price
+        description: Date when the coin had the lowest price, with ties broken by the ascending order of the date.
+      - name: is_above_average_20180428
+        description: Set to 1 if the price of the coin is above the average price of all coins on 2018-04-28; otherwise, set to 0.
+      - name: average_price
+        description: Average price of the coin.
+      - name: date_with_greatest_price_decline
+        description: the date of transactions with the greatest decline in percent change in 1 hour, with ties broken by the descending order of the date

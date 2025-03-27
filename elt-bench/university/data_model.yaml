@@ -1,0 +1,37 @@
+models:
+  - name: universities
+    description: Each record represents a university.
+    columns:
+      - name: university_id
+        description: Unique identifier for the university.
+      - name: university_name
+        description: The name of the university.
+      - name: country_name
+        description: The name of the country where the university is located.
+      - name: avg_student_staff_ratio
+        description: The average student-to-staff ratio of the university.
+      - name: num_international_students
+        description: The number of international students in the university, replace NULL values with 0.
+      - name: avg_ranking_score_in_Teaching
+        description: The average ranking score in Teaching the university got across all ranking systems
+      - name: score_less_than_28_per_avg_research_2015
+        description: Set to 1 if the university's score in research is less than 28% of the average score of all universities in 2015, otherwise, set to 0.
+      - name: num_male_students
+        description: The number of male students in the university, replace NULL values with 0.
+  - name: countries
+    description: Each record represents a country.
+    columns:
+      - name: country_id
+        description: The unique identifier of the country.
+      - name: country_name
+        description: The name of the country.
+      - name: num_universities
+        description: The number of universities in the country, replace NULL values with 0.
+      - name: university_with_highest_score_in_Citations_criteria_2016
+        description: The name of the university in the country with the highest score in Citations criteria in 2016, with ties broken by the ascending order of the university name
+      - name: has_university_with_num_students_greater_than_98_per_avg_2013
+        description: set to 1 if the country has any university with the number of students greater than 98% of the average student population of all universities in 2013, 0 otherwise.
+      - name: num_international_students_2015
+        description: The number of international students in the country in 2015, replace NULL values with 0.
+      - name: most_populated_university_2014
+        description: The most populated university in the country in 2014, with ties broken by the descending order of the university name

@@ -1,0 +1,16 @@
+column_name,column_description
+orderid,the unique id for orders
+customerid,the unique id for customers
+employeeid,the unique id for employees
+orderdate,the order date
+requireddate,the required date of the order
+shippeddate,the shipped date of the order
+shipvia,the shippers id
+freight,the freight of the product
+shipname,name of the consignee
+shipaddress,address ships to
+shipcity,the ship city
+shipregion,the ship region
+shippostalcode,the postal code
+shipcountry,the country 
+shipperid,the id of the shipper

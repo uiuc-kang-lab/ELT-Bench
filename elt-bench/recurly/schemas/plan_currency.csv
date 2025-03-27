@@ -1,0 +1,6 @@
+column_name,column_description
+plan_id,The id of the plan.
+plan_updated_at,Last time plan updated.
+currency,3-letter ISO 4217 currency code.
+setup_fees,Fee automatically charged at the beginning of a subscription billing cycle.
+unit_amount,Amount for one plan.

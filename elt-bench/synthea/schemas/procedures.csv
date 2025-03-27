@@ -1,0 +1,8 @@
+column_name,column_description
+date,the date of the procedure
+patient,the patient id
+encounter,the medical encounter id
+code,the code of the procedure
+description,the description of the procedure
+reasoncode,the code of the reason
+reasondescription,the description of the reason why the patient take the procedure

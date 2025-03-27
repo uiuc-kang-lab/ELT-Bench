@@ -1,0 +1,7 @@
+column_name,column_description
+orderid,the unique id for orders
+productid,the unique id for products
+unitprice,the unit price of the products
+quantity,the quantity of the ordered products
+discount,the discount
+orderdetailid,id of the order detail

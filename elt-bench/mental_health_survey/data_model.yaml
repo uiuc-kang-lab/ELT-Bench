@@ -1,0 +1,18 @@
+models:
+  - name: surveys
+    description: Each record represents a survey.
+    columns:
+      - name: survey_id
+        description: The unique identifier of the survey.
+      - name: description
+        description: The description of the survey.
+      - name: num_people_mental_illness
+        description: The number of people in the survey who was identified with mental illness (who responded ‘Yes’ to Question 34), replace NULL values with 0.
+      - name: num_questions_more_than_200_answers
+        description: The number of questions in the survey that received more than 200 answers, replace NULL values with 0.
+      - name: oldest_user_age
+        description: The age of the oldest user who answered the survey (question 'What is your age?')
+      - name: per_bring_mental_issue_in_interview
+        description: The percentage of people in the survey who would bring up a mental health issue with a potential employer in an interview
+      - name: contains_work_city
+        description: Set to 1 if the survey contains the question "What country do you work in?", 0 otherwise.

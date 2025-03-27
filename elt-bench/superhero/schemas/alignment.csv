@@ -1,0 +1,3 @@
+column_name,column_description
+id,the unique identifier of the alignment
+alignment,the alignment of the superhero

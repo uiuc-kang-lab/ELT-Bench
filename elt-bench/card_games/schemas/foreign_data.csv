@@ -1,0 +1,9 @@
+column_name,column_description
+id,unique id number identifying this row of data
+flavorText,The foreign flavor text of the card.
+language,The foreign language of card.
+multiverseid,The foreign multiverse identifier of the card.
+name,The foreign name of the card.
+text,The foreign text ruling of the card.
+type,The foreign type of the card. Includes any supertypes and subtypes.
+uuid,

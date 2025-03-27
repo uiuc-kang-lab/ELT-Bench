@@ -1,0 +1,10 @@
+column_name,column_description
+TransactionID,Transaction ID
+Date,Date
+Time,Time
+CustomerID,Customer ID
+CardID,Card ID
+GasStationID,Gas Station ID
+ProductID,Product ID
+Amount,Amount
+Price,Price

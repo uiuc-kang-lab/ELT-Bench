@@ -1,0 +1,3 @@
+column_name,column_description
+genre_id,the unique identifier of the genre
+genre_name,the genre

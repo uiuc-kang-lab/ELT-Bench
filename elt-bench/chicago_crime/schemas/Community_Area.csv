@@ -1,0 +1,5 @@
+column_name,column_description
+community_area_no,unique community area number
+community_area_name,community area name
+side,district 
+population,population of the community

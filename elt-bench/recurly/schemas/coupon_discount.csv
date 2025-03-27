@@ -1,0 +1,9 @@
+column_name,column_description
+coupon_id,Unique identifier for the coupon created.
+fivetran_id,Combined unique surrogate key for the model.
+amount,"Fixed amount discount being applied, if applicable. Percentage would be null if amount exists."
+currency,3-letter ISO 4217 currency code (USD for US Dollar).
+percentage,"Percentage discount being applied, if applicable. Amount would be null if percentage exists."
+trial_length,Period of time that coupon will discount eligible purchases by customer.
+trial_unit,"Unit of time associated with trial time ('day', 'week', 'month')"
+type,"Delineates between which type of discount is being applied ('fixed' for amount discount, 'percent' for percentage discount)"

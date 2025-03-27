@@ -1,0 +1,20 @@
+column_name,column_description
+_fivetran_id,Unique record identifier
+page_link,URL destination of Facebook ads.
+template_page_link,URL destination of Facebook dynamic ads.
+id,Unique ID for an ad creative.
+account_id,Ad account ID for the account this ad creative belongs to.
+name,Name of this ad creative as seen in the ad account's library.
+url_tags,"A set of query string parameters which will replace or be appended to urls clicked from page post ads, message of the post, and canvas app install creatives only."
+_fivetran_synced,When the record was last synced by Fivetran.
+template_page_link,URL destination of Facebook dynamic ads.
+asset_feed_spec_link_urls,Link to the asset feed spec
+object_story_link_data_child_attachments,Link of the object story child attachments
+object_story_link_data_caption,Link of the object story caption
+object_story_link_data_description,Link of the object story description
+object_story_link_data_link,Link of the object story link
+object_story_link_data_message,Link of the object story message
+template_app_link_spec_ios,Link of the object story spec for ios
+template_app_link_spec_ipad,Link of the template app spec for ipad
+template_app_link_spec_android,Link of the template app for android
+template_app_link_spec_iphone,Link of the template app for iphone

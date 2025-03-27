@@ -1,0 +1,35 @@
+models:
+  - name: airline__airlines
+    description: Each record represents a airline.
+    columns:
+      - name: airline_code
+        description: The airline code.
+      - name: airline_name
+        description: The airline name.
+      - name: flight_number_had_the_lonest_delay_in_departure
+        description: the flight number of the flight operated by the airline that had the longest delay in departure, with ties broken by the ascending order of the flight number
+      - name: num_flights_operate_in_2018
+        description: the number of flights operated by the airline in 2018, replace NULL values with 0.
+      - name: num_planes
+        description: the number of planes operated by the airline, replace NULL values with 0.
+      - name: number_of_non_cancelled_flights
+        description: the number of non-cancelled flights operated by the airline, replace NULL values with 0.
+      - name: total_hours_delayed_due_to_a_late_aircraft_in_2018
+        description: the total hours delayed of the airline due to a late aircraft in 2018, replace NULL values with 0.
+  - name: airline__airports
+    description: Each record represents a airport.
+    columns:
+      - name: airport_code
+        description: The airport code.
+      - name: airport_name
+        description: The airport name.
+      - name: num_flights_departure
+        description: the number of flights that depart from the airport, replace NULL values with 0.
+      - name: airline_flew_most_flights
+        description: the airline that flew the most flights to the airport, with ties broken by the ascending order of the airline name
+      - name: num_flights_landed_in_2018
+        description: the number of flights that landed at the airport in 2018, replace NULL values with 0.
+      - name: highest_delay_in_minutes_due_to_security
+        description: the highest delay in minutes due to security among flights departing from the airport 
+      - name: num_cancelled_flights
+        description: the number of cancelled flights that depart from the airport, replace NULL values with 0.

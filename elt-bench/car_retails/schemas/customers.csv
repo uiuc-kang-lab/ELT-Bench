@@ -1,0 +1,14 @@
+column_name,column_description
+customernumber,unique id number of customer
+customername,the name when the customer registered
+contactlastname,contact last name
+contactfirstname,contact first name
+phone,phone
+addressline1,addressLine1
+addressline2,addressLine2
+city,city
+state,state
+postalcode,postalCode
+country,country
+salesrepemployeenumber,sales representative employee number
+creditlimit,credit limit

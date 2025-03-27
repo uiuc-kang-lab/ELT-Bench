@@ -1,0 +1,3 @@
+column_name,column_description
+label_id,unique id of label
+category,category of the label

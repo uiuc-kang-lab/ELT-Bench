@@ -1,0 +1,16 @@
+models:
+  - name: music_tracker__tags
+    description: Each record represents a unique tag.
+    columns:
+      - name: tags
+        description: The tag of the music.
+      - name: artist_released_most_singles
+        description: The artist who has released the most singles with the tag, with ties broken by the ascending order of the artist
+      - name: total_album_download
+        description: The total number of album downloads of the tag, replace NULL values with 0.
+      - name: amount_of_downloads
+        description: The amount of downloads of the tag, replace NULL values with 0.
+      - name: oldest_single_release_title
+        description: The title of the oldest single release of the tag, with ties broken by the ascending order of the single title.
+      - name: most_downloaded_release_title
+        description: The title of the most downloaded release of the tag, with ties broken by the ascending order of the release title.

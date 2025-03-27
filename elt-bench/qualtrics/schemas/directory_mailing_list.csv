@@ -1,0 +1,9 @@
+column_name,column_description
+_fivetran_deleted,Boolean representing whether the record was soft-deleted in Qualtrics.
+_fivetran_synced,The time when a record was last updated by Fivetran.
+creation_date,"The creation date and time of the record, expressed as an ISO 8601 value."
+directory_id,"The directory ID, also known as a pool ID. Example - POOL_012345678901234"
+id,The ID for the mailing list.
+last_modified_date,The point in time when the record was last modified.
+name,Name of the mailing list.
+owner_id,The unique identifier for a specific user who owns this.

@@ -1,0 +1,8 @@
+column_name,column_description
+budget_id,A unique identifier for the budget entry
+category,"The area for which the amount is budgeted, such as, advertisement, food, parking"
+spent,The total amount spent in the budgeted category for an event.
+remaining,A value calculated as the amount budgeted minus the amount spent
+amount,The amount budgeted for the specified category and event
+event_status,the status of the event
+link_to_event,The unique identifier of the event to which the budget line applies.

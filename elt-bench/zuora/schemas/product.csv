@@ -1,0 +1,13 @@
+column_name,column_description
+id,The unique identifier for the product.
+category,The category of the product.
+created_by_id,The id of the user who created the product.
+created_date,The date and time when the product was created.
+description,A description of the product.
+effective_end_date,The date when the product is no longer available for purchase.
+effective_start_date,The date when the product becomes available for purchase.
+name,The name of the product.
+sku,The SKU (stock keeping unit) of the product.
+updated_by_id,The id of the user who last updated the product.
+updated_date,The date and time when the product was last updated.
+_fivetran_deleted,Boolean identifiying whether the record was deleted in the source.

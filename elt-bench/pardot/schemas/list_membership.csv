@@ -1,0 +1,8 @@
+column_name,column_description
+_fivetran_synced,The timestamp of when a record was last synced by Fivetran.
+created_at,Time that this membership is created in Pardot
+id,Pardot ID for this list membership
+list_id,TPardot ID of the list for this membershipBD
+opted_out,"If value is 1, the prospect is unsubscribed from receiving emails from this list"
+prospect_id,Pardot ID of the prospect for this membership
+updated_at,Last time that this membership was updated

@@ -1,0 +1,6 @@
+column_name,column_description
+id,the unique id for the city
+name,the name of the city
+countrycode,the country code of the country that the city is belonged
+district,the district where the city locates
+population,the number of the population in the area

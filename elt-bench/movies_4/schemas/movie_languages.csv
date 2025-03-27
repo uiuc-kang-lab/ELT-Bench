@@ -1,0 +1,6 @@
+column_name,column_description
+movie_id,"the id of the movie 
+Maps to movie(movie_id)"
+language_id,"the id of the movie language
+Maps to language(language_id)"
+language_role_id,the id of the role's language

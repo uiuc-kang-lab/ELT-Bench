@@ -1,0 +1,3 @@
+column_name,column_description
+p_id,id number identifying each person
+p_id_dummy,the id number identifying the advisor

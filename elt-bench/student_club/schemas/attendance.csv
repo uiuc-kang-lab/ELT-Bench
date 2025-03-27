@@ -1,0 +1,3 @@
+column_name,column_description
+link_to_event,The unique identifier of the event which was attended
+link_to_member,The unique identifier of the member who attended the event

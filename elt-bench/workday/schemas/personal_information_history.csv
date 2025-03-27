@@ -1,0 +1,39 @@
+column_name,column_description
+id,Unique identifier.
+_fivetran_active,TRUE if it is the currently active record. FALSE if it is a historical version of the record. Only one version of the record can be TRUE.
+_fivetran_start,Timestamp when the record was first created or modified in the source.
+_fivetran_end,Timestamp marking the end of a record being active.
+type,The type of personal information record.
+_fivetran_deleted,Indicates if the record was soft-deleted by Fivetran.
+_fivetran_synced,Timestamp the record was synced by Fivetran.
+additional_nationality,Additional nationality associated with the individual.
+blood_type,The blood type of the individual.
+citizenship_status,The citizenship status of the individual.
+city_of_birth,The city of birth of the individual.
+city_of_birth_code,The city of birth code of the individual.
+country_of_birth,The country of birth of the individual.
+date_of_birth,The date of birth of the individual.
+date_of_death,The date of death of the individual.
+gender,The gender of the individual.
+hispanic_or_latino,lag indicating whether the individual is Hispanic or Latino.
+hukou_locality,The locality associated with the Hukou.
+hukou_postal_code,The postal code associated with the Hukou.
+hukou_region,The region associated with the Hukou.
+hukou_subregion,The subregion associated with the Hukou.
+hukou_type,The type of Hukou.
+last_medical_exam_date,The date of the last medical exam.
+last_medical_exam_valid_to,The validity date of the last medical exam.
+local_hukou,Flag indicating whether the Hukou is local.
+marital_status,The marital status of the individual.
+marital_status_date,The date of the marital status.
+medical_exam_notes,Notes from the medical exam.
+native_region,The native region of the individual.
+native_region_code,The code of the native region.
+personnel_file_agency,The agency associated with the personnel file.
+political_affiliation,The political affiliation of the individual.
+primary_nationality,The primary nationality of the individual.
+region_of_birth,The region of birth of the individual.
+region_of_birth_code,The code of the region of birth.
+religion,The religion of the individual.
+social_benefit,The social benefit associated with the individual.
+tobacco_use,Flag indicating whether the individual uses tobacco.

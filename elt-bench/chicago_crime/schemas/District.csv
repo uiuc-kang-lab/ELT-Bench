@@ -1,0 +1,11 @@
+column_name,column_description
+district_no,unique number identifying the district
+district_name, name of the district
+address,Street address of the police district building
+zip_code,ZIP code of the police district building
+commander,Name of the district's commanding officer
+email,Email address to contact district administrators
+phone,Main telephone number for the district
+fax,Fax number for the district
+tty,Number of the district teletype machine.
+twitter,The district twitter handle. 

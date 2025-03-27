@@ -1,0 +1,30 @@
+column_name,column_description
+id,The unique identifier of the
+_fivetran_synced,Timestamp of when a record was last synced.
+_fivetran_deleted,Boolean identifiying whether the record was deleted in the source.
+account_id,The id of the customer account that the invoice payment is associated with.
+account_receivable_accounting_code_id,The id of the accounting code for the account receivable account.
+accounting_period_id,The id of the accounting period associated with the invoice payment.
+amount,The amount of the invoice payment.
+amount_currency_rounding,The amount of the invoice payment after rounding to the nearest currency unit.
+amount_home_currency,The amount of the invoice payment in the home currency of the customer account.
+bill_to_contact_id,The id of the contact associated with the billing address for the invoice payment.
+cash_accounting_code_id,The id of the accounting code for the cash account.
+created_by_id,The id of the user who created the invoice payment.
+created_date,The date and time when the invoice payment was created.
+default_payment_method_id,The id of the default payment method for the customer account.
+exchange_rate,The exchange rate used to convert the transaction currency of the invoice payment to the home currency of the customer account.
+exchange_rate_date,The date of the exchange rate used to convert the transaction currency of the invoice payment to the home currency of the customer account.
+home_currency,The home currency of the customer account.
+invoice_id,The id of the invoice associated with the invoice payment.
+journal_entry_id,The id of the journal entry created for the invoice payment.
+journal_run_id,The id of the journal run associated with the invoice payment.
+parent_account_id,The id of the parent account for the customer account associated with the invoice payment.
+payment_id,The id of the payment associated with the invoice payment.
+payment_method_id,The id of the payment method used for the invoice payment.
+provider_exchange_rate_date,The date of the exchange rate used by the payment provider to convert the transaction currency of the invoice payment to the currency of the payment provider.
+refund_amount,The amount of the refund applied to the invoice payment.
+sold_to_contact_id,The id of the contact associated with the shipping address for the invoice payment.
+transaction_currency,The currency of the invoice payment.
+updated_by_id,The id of the user who last updated the invoice payment.
+updated_date,The date and time when the invoice payment was last updated.

@@ -1,0 +1,26 @@
+column_name,column_description
+id,the unique id for teams
+team_fifa_api_id,the id of the team fifa api
+team_api_id,the id of the team api
+date,Date
+buildUpPlaySpeed,the speed in which attacks are put together 
+buildUpPlaySpeedClass,the speed class
+buildUpPlayDribbling,the tendency/ frequency of dribbling
+buildUpPlayDribblingClass,the dribbling class
+buildUpPlayPassing,affects passing distance and support from teammates
+buildUpPlayPassingClass,the passing class
+buildUpPlayPositioningClass,A team's freedom of movement in the 1st two thirds of the pitch
+chanceCreationPassing,Amount of risk in pass decision and run support
+chanceCreationPassingClass,the chance creation passing class
+chanceCreationCrossing,The tendency / frequency of crosses into the box
+chanceCreationCrossingClass,the chance creation crossing class
+chanceCreationShooting,The tendency / frequency of shots taken
+chanceCreationShootingClass,the chance creation shooting class
+chanceCreationPositioningClass,A team�s freedom of movement in the final third of the pitch
+defencePressure,Affects how high up the pitch the team will start pressuring
+defencePressureClass,the defence pressure class
+defenceAggression,Affect the team�s approach to tackling the ball possessor
+defenceAggressionClass,the defence aggression class
+defenceTeamWidth,Affects how much the team will shift to the ball side
+defenceTeamWidthClass,the defence team width class
+defenceDefenderLineClass,Affects the shape and strategy of the defence

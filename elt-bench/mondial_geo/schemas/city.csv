@@ -1,0 +1,7 @@
+column_name,column_description
+name,name of city
+country,the code of the country where it belongs to
+province,the name of the province where it belongs to
+population,population of the city
+longitude,geographic longitude
+latitude,geographic latitude

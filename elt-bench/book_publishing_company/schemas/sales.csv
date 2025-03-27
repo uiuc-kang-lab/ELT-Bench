@@ -1,0 +1,7 @@
+column_name,column_description
+stor_id,id number identifying stores
+ord_num,id number identifying the orders
+ord_date,the date of the order
+qty,quantity of sales 
+payterms,payments
+title_id,id number identifying titles

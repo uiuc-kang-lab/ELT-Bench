@@ -1,0 +1,246 @@
+models:
+  - name: marketo__campaigns
+    description: Each record is Marketo campaign.
+    columns:
+      - name: campaign_id
+        description: ID of the campaign.
+      - name: campaign_name
+        description: Name of the campaign.
+      - name: campaign_type
+        description: Type of campaign, either 'batch' or 'trigger'.
+      - name: created_timestamp
+        description: Timestamp when the campaign was created.
+      - name: description
+        description: Description of the campaign
+      - name: is_active
+        description: Whether the campaign is active. Only applicable to trigger campaigns.
+      - name: program_id
+        description: ID of the parent program, if applicable.
+      - name: updated_timestamp
+        description: Timestamp when the campaign was most recently updated.
+      - name: workspace_name
+        description: Name of the parent workspace, if applicable.
+      - name: count_sends
+        description: Count of total sends from related email sends. Set the value to 0 if it is NULL.
+      - name: count_opens
+        description: Count of total opens from related email sends. Set the value to 0 if it is NULL.
+      - name: count_bounces
+        description: Count of total bounces from related email sends. Set the value to 0 if it is NULL.
+      - name: count_clicks
+        description: Count of total clicks from related email sends. Set the value to 0 if it is NULL.
+      - name: count_deliveries
+        description: Count of total deliveries from related email sends. Set the value to 0 if it is NULL.
+      - name: count_unsubscribes
+        description: Count of total unsubscribes from related email sends. Set the value to 0 if it is NULL.
+      - name: count_unique_opens
+        description: Count of unique opens from related email sends. Set the value to 0 if it is NULL.
+      - name: count_unique_clicks
+        description: Count of unique clicks from related email sends. Set the value to 0 if it is NULL.
+      - name: computed_url
+        description: The URL computed for the campaign, used for tracking or reference.
+      - name: flow_id
+        description: The ID of the flow associated with the campaign, defining the actions taken.
+      - name: folder_id
+        description: ID of the folder where the campaign is stored in Marketo.
+      - name: folder_type
+        description: Type of folder (e.g., program, campaign) that stores the campaign.
+      - name: is_communication_limit_enabled
+        description: Whether the communication limit is enabled for the campaign.
+      - name: is_requestable
+        description: Indicates if the campaign can be requested externally.
+      - name: is_system
+        description: Whether the campaign is a system-level campaign.
+      - name: qualification_rule_type
+        description: Type of qualification rule governing campaign entry.
+      - name: qualification_rule_interval
+        description: Interval for the qualification rule, specifying campaign entry frequency.
+      - name: qualification_rule_unit
+        description: Unit for the qualification interval (e.g., hours, days).
+      - name: recurrence_start_at
+        description: Timestamp when the recurrence of the campaign starts.
+      - name: recurrence_interval_type
+        description: Type of interval for the recurrence (e.g., daily, weekly).
+      - name: recurrence_interval
+        description: Frequency of recurrence (e.g., every 1 day).
+      - name: recurrence_weekday_only
+        description: Whether recurrence occurs only on weekdays.
+      - name: smart_list_id
+        description: ID of the smart list associated with the campaign, used for targeting.
+      - name: status
+        description: Current status of the campaign (e.g., active, paused).
+
+  - name: marketo__email_sends
+    description: Each record is a sent email in Marketo to a user. The email send activity timestamp should be in the valid range of the email template's valid time range.
+    columns:
+      - name: action_result
+        description: The outcome of a specific action performed within the Marketo platform.
+      - name: activity_id
+        description: The ID of the activity. 
+      - name: activity_rank
+        description: Assigned rank for a given email_send_id, determined by ascending order of activity_timestamp. Earliest activity_timestamp gets rank 1.
+      - name: activity_timestamp
+        description: The timestamp the email was sent.
+      - name: activity_type_id
+        description: The ID of the activity type.
+      - name: campaign_id
+        description: The ID of the email's campaign.
+      - name: campaign_run_id
+        description: The ID of the email's campaign run.
+      - name: choice_number
+        description: The choice number of the current step that triggered the activity.
+      - name: email_send_id
+        description: The inferred ID for the email sent.
+      - name: email_template_id
+        description: The ID of the email's template.
+      - name: lead_id
+        description: The ID of the lead related to the activity.
+      - name: primary_attribute_value
+        description: The primary attribute of the activity.
+      - name: primary_attribute_value_id
+        description: The ID of the primary attribute of the activity.
+      - name: step_id
+        description: The Id of the current step in the flow.
+      - name: count_opens
+        description: Count of total opens from related email sends. Set the value to 0 if it is NULL.
+      - name: count_bounces
+        description: Count of total bounces from related email sends. Set the value to 0 if it is NULL.
+      - name: count_clicks
+        description: Count of total clicks from related email sends. Set the value to 0 if it is NULL.
+      - name: count_deliveries
+        description: Count of total deliveries from related email sends. Set the value to 0 if it is NULL.
+      - name: count_unsubscribes
+        description: Count of total unsubscribes from related email sends. Set the value to 0 if it is NULL.
+      - name: was_opened
+        description: Whether the email send was opened. Set to True if the email was opened, False if it was not opened.
+      - name: was_bounced
+        description: Whether the email send bounced. Set to True if the email bounced, False if it did not.
+      - name: was_clicked
+        description: Whether the email send was clicked. Set to True if the email was clicked, False if it was not.
+      - name: was_delivered
+        description: Whether the email send was delivered. Set to True if the email was delivered, False if it was not.
+      - name: was_unsubscribed
+        description: Whether the email send resulted in the user unsubscribing. Set to True if the email was unsubscribed, False if it was not.
+      - name: program_id
+        description: The ID of the email send's program.
+      - name: is_operational
+        description: Whether the email send was operational.
+
+  - name: marketo__email_templates
+    description: Each record is the most recent version of an email template.
+    columns:
+      - name: created_timestamp
+        description: Timestamp the email template was created.
+      - name: description
+        description: Description of the email template.
+      - name: email_subject
+        description: Subject line of the email.
+      - name: email_template_history_id
+        description: ID of the version of the email template.
+      - name: email_template_id
+        description: ID of the email template
+      - name: email_template_name
+        description: Name of the email template.
+      - name: email_template_status
+        description: Status filter for draft or approved versions.
+      - name: email_template_url
+        description: URL of the email template in the Marketo UI.
+      - name: folder_name
+        description: The name of the email template's folder.
+      - name: folder_id
+        description: The ID of the email template's folder.
+      - name: folder_type
+        description: The type of the email template's folder.
+      - name: folder_value
+        description: The value of the email template's folder.
+      - name: from_email
+        description: The 'From' address of the email.
+      - name: from_name
+        description: The 'From' name of the email.
+      - name: has_web_view_enabled
+        description: Whether 'View as Webpage' function is enabled for the email.
+      - name: inferred_version
+        description: Incrementing integer version of the email template.
+      - name: is_most_recent_version
+        description: Whether it is the most recent version of the email template.
+      - name: is_operational
+        description: Whether the email is operational. Operational emails bypass unsubscribe status. Defaults to false.
+      - name: is_text_only
+        description: Setting to include text-only version of email when sent.
+      - name: parent_template_id
+        description: ID of the parent template.
+      - name: program_id
+        description: The ID of the email template's program.
+      - name: publish_to_msi
+        description: Whether the email is published to Marketo Sales Insight.
+      - name: reply_email
+        description: Reply-To address of the Email.
+      - name: total_count_of_versions
+        description: Count of records for a given email_template_id.
+      - name: updated_timestamp
+        description: Timestamp the email template was last updated.
+      - name: valid_from
+        description: When the version of the email template was is valid from.
+      - name: valid_to
+        description: When the version of the email template was is valid to.
+      - name: version_type
+        description: The type version of the email, either '1' or '2'.
+      - name: workspace_name
+        description: Name of the workspace.
+      - name: count_sends
+        description: Count of total sends from related email sends. Set the value to 0 if it is NULL.
+      - name: count_opens
+        description: Count of total opens from related email sends. Set the value to 0 if it is NULL.
+      - name: count_bounces
+        description: Count of total bounces from related email sends. Set the value to 0 if it is NULL.
+      - name: count_clicks
+        description: Count of total clicks from related email sends. Set the value to 0 if it is NULL.
+      - name: count_deliveries
+        description: Count of total deliveries from related email sends. Set the value to 0 if it is NULL.
+      - name: count_unsubscribes
+        description: Count of total unsubscribes from related email sends. Set the value to 0 if it is NULL.
+      - name: count_unique_opens
+        description: Count of unique opens from related email sends. Set the value to 0 if it is NULL.
+      - name: count_unique_clicks
+        description: Count of unique clicks from related email sends. Set the value to 0 if it is NULL.
+
+  - name: marketo__programs
+    description: Each record is a Marketo program.
+    columns:
+      - name: program_id
+        description: ID of the program.
+      - name: channel
+        description: Channel of the program.
+      - name: created_timestamp
+        description: Timestamp the program was created at
+      - name: program_name
+        description: Name of the program.
+      - name: program_status
+        description:  Status of the program. Only valid for Email and engagement program types. Allowed values:locked, unlocked, on, off
+      - name: program_type
+        description: Type of the program. Allowed values:program, event, webinar, nurture
+      - name: sfdc_id
+        description:  SFDC id of the program if linked to an SFDC campaign.
+      - name: sfdc_name
+        description: Name of the linked SFDC campaign if applicable.
+      - name: updated_timestamp
+        description: Timestamp the program was most recently updated.
+      - name: url
+        description: URL of the program in the Marketo UI.
+      - name: workspace
+        description: Name of the workspace.
+      - name: count_sends
+        description: Count of total sends from related email sends. Set the value to 0 if it is NULL.
+      - name: count_opens
+        description: Count of total opens from related email sends. Set the value to 0 if it is NULL.
+      - name: count_bounces
+        description: Count of total bounces from related email sends. Set the value to 0 if it is NULL.
+      - name: count_clicks
+        description: Count of total clicks from related email sends. Set the value to 0 if it is NULL.
+      - name: count_deliveries
+        description: Count of total deliveries from related email sends. Set the value to 0 if it is NULL.
+      - name: count_unsubscribes
+        description: Count of total unsubscribes from related email sends. Set the value to 0 if it is NULL.
+      - name: count_unique_opens
+        description: Count of unique opens from related email sends. Set the value to 0 if it is NULL.
+      - name: count_unique_clicks
+        description: Count of unique clicks from related email sends. Set the value to 0 if it is NULL.

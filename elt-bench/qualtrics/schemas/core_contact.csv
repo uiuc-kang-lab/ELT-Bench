@@ -1,0 +1,11 @@
+column_name,column_description
+_fivetran_synced,The time when a record was last updated by Fivetran.
+id,Mailing List Contact ID (different from contact_id). ex: MLRP_*
+mailing_list_id,The ID for the mailing list.
+first_name,Contact's first name.
+last_name,Contact's surname.
+email,The user's email address.
+external_data_reference,The external reference for the contact.
+language,The user's default language.
+unsubscribed,Boolean indicating if the user unsubscribed.
+_fivetran_deleted,Boolean representing whether the record was soft-deleted in Qualtrics.

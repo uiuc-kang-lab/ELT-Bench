@@ -1,0 +1,16 @@
+column_name,column_description
+stateid,state FIPS (Federal Information Processing System) code
+state,state name 
+state_abbr,
+control,
+level,Level of institution
+year,year of data release
+gender,gender of students
+race,race/ethnicity of students
+cohort,degree-seeking cohort type
+grad_cohort,"Number of first-time, full-time, degree-seeking students in the cohort being tracked, minus any exclusions"
+grad_100,Number of students who graduated within 100 percent of normal/expected time
+grad_150,Number of students who graduated within 150 percent of normal/expected time
+grad_100_rate,Percentage of students who graduated within 100 percent of normal/expected time
+grad_150_rate,Percentage of students who graduated within 150 percent of normal/expected time
+grad_cohort_ct,Number of institutions with data included in the cohort

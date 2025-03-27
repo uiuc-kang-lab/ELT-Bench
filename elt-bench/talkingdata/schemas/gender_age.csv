@@ -1,0 +1,5 @@
+column_name,column_description
+device_id,unique number of devices
+gender,gender of the user who uses this device
+age,age of the user who uses this device
+group,group of the ages

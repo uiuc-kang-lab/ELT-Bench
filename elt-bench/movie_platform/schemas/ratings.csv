@@ -1,0 +1,14 @@
+column_name,column_description
+movie_id,Movie ID related to the rating
+rating_id,Rating ID on Mubi
+rating_url,URL to the rating on Mubi
+rating_score,Rating score ranging from 1 (lowest) to 5 (highest)
+rating_timestamp_utc,Timestamp for the movie rating made by the user on Mubi
+critic,Critic made by the user rating the movie. 
+critic_likes,Number of likes related to the critic made by the user rating the movie
+critic_comments,Number of comments related to the critic made by the user rating the movie
+user_id,ID related to the user rating the movie
+user_trialist,whether user was a tralist when he rated the movie
+user_subscriber,
+user_eligible_for_trial,
+user_has_payment_method,

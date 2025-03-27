@@ -1,0 +1,18 @@
+models:
+  - name: teams
+    description: Each record represents a team.
+    columns:
+      - name: team_id
+        description: Unique identifier for the team.
+      - name: team_name
+        description: The name of the team.
+      - name: number_of_times_toss_winner
+        description: The number of times the team has won the toss, replace NULL values with 0.
+      - name: number_of_season_1_match_won
+        description: The number of matches the team has won in season 1, replace NULL values with 0.
+      - name: number_of_losses 
+        description: The number of matches the team has lost, replace NULL values with 0.
+      - name: first_match_time
+        description: The time of the first match played by the team.
+      - name: win_rate
+        description: The win rate of the team.

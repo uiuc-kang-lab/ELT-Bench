@@ -1,0 +1,87 @@
+agent:
+  templates:
+    system_template: |-
+      SETTING: You are a data scientist skilled in databases, SQL, and building ELT pipelines.
+      You are starting in the src directory, which contains all the necessary information for your tasks.
+      Your goal is to build an ELT pipeline by extracting data from multiple sources, including APIs, relational databases, NoSQL databases, and S3 files. 
+      The extracted data will be loaded into a target system, Snowflake, followed by writing transformation queries and run DBT to construct final tables for downstream use.
+      This task is divided into three stages:
+      1.	Creating sources, destinations and connections in Airbyte – Using Airbyte Terraform.
+      2.  Triggering the Airbyte Sync.
+      3.	Data Transformation – Using the DBT Project workflow.
+
+      RESPONSE FORMAT:
+      Your shell prompt is formatted as follows:
+      (Open file: <path>)
+      (Current directory: <cwd>)
+      bash-$
+
+      First, you should _always_ include a general thought about what you're going to do next.
+      Then, for every response, you must include exactly _ONE_ tool call/function call.
+
+      Remember, you should always include a _SINGLE_ tool call/function call and then wait for a response from the shell before continuing with more discussion and commands. Everything you include in the DISCUSSION section will be saved for future reference.
+
+    instance_template: |-
+      We're currently building the ELT pipeline using Airbyte Terraform and DBT. Here's the detailed instruction:
+
+      INSTRUCTIONS:
+      # Stage 1: Creating sources, destinations and connections in Airbyte Hint#
+      1.	Begin by initializing an Airbyte Terraform project in the /elt/src directory.
+      2. Use the provided /elt/src/airbyte_config.yaml to initialize the provider Airbyte in main.tf. The values in /elt/src/airbyte_config.yaml represent the actual configuration needed for the project.
+      3.	Look at the provided /elt/src/config.yaml to learn the types of sources and destinations that need to be created. Then, refer to the Airbyte official documentation in /elt/src/documentation folder to understand how to configure the sources and destinations.
+      4. After referring to the documentation, create sources and destinations in the Airbyte Terraform project based on the configuration in /elt/src/config.yaml.
+      •	Important: The values in the documentation are examples for reference only. DO NOT directly use them. Always use the specific values from /elt/src/config.yaml during configuration.
+      •	If the documentation mentions optional fields that are not present in /elt/src/config.yaml, skip them without assigning any default or random values.
+      4.	After creating sources and destinations, establish a connection between them by referring to /elt/src/documentation/connection.md.
+      5.	After modifying the .tf file, run terraform init to initialize the project, followed by terraform apply to create the resources.
+      6.	Handling Errors:
+      •	If errors occur, do not modify /elt/src/config.yaml. Verify the configuration against the plugin /elt/src/documentation and ensure YAML formatting is correct.
+      •	Proceed to the next stage only after successful data extraction and loading.
+
+      # Stage 2: Triggering the Airbyte Sync
+      1.	After successfully creating sources and destinations, trigger the job to extract and load data. Refer to /elt/src/documentation/trigger_job.md for guidance and use /elt/src/config.yaml to retrieve the necessary values.
+      2.	First, retrieve the connection IDs for the newly created connections and use them to initiate the job.
+      3.	Trigger the job using the Airbyte API and the obtained connection IDs.
+      4.	Check the status of all triggered jobs by running 'python /elt/src/check_job_status.py --server <server> --username <username> --password <passwod>', you need to replace <server>, <username>, <passwod> with the actual value>. If all jobs are successful, proceed to the next stage. Otherwise, return to the previous stage to identify and resolve any issues.
+
+      # Stage 3: DBT Project for Data Transformation Hint#
+      1. **For dbt projects**, Start by reading the /elt/src/data_model.yaml file to understand the data model that needs to be generated. Your task is to write SQL queries to create the required data model.
+      2. Write transformation queries based on the data model defined in /elt/src/data_model.yaml and the source table schemas located in the schemas folder.
+      3. **Solve the task** You should first initailize a DBT project. Then by reviewing the YAML files, understanding all data models, understanding the schemas and wrting the needed files including SQL transformation queries and nessaray intermediate stages to complete the project. 
+      4. When encountering bugs, you must not attempt to modify the yml file; instead, you should write correct SQL based on the existing yml.
+      5. After writing all required SQL, run `dbt run` to update the database.
+      6. You may need to write multiple SQL queries to get the correct answer; do not easily assume the task is complete. You must complete all SQL queries according to the YAML files.
+      7. You'd better to verify the new data models generated in the database to ensure they meet the definitions in the YAML files.
+      8. If any source tables are missing, revisit the Airbyte Terraform Project to check the configuration. Re-trigger the job to extract and load the missing data. 
+
+      (Open file: {{open_file}})
+      (Current directory: {{working_dir}})
+      bash-$
+    next_step_template: |-
+      {{observation}}
+      (Open file: {{open_file}})
+      (Current directory: {{working_dir}})
+      bash-$
+    next_step_no_output_template: |-
+      Your command ran successfully and did not produce any output.
+      (Open file: {{open_file}})
+      (Current directory: {{working_dir}})
+      bash-$
+    put_demos_in_history: true
+  tools:
+    env_variables:
+      WINDOW: 100
+      OVERLAP: 2
+    bundles:
+      - path: tools/registry
+      - path: tools/defaults
+      - path: tools/search
+      # - path: tools/edit_linting
+      - path: tools/edit_replace
+      - path: tools/submit
+    enable_bash_tool: true
+    parse_function:
+      type: function_calling
+  history_processors:
+    - type: last_n_observations
+      n: 5

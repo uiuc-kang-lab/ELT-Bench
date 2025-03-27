@@ -1,0 +1,13 @@
+column_name,column_description
+workorderid,The id number of work order.
+productid,The id number identifying products.
+operationsequence,Indicates the manufacturing process sequence.
+locationid,Manufacturing location where the part is processed.
+scheduledstartdate,Planned manufacturing start date.
+scheduledenddate,Planned manufacturing end date.
+actualstartdate,Actual start date.
+actualenddate,Actual end date.
+actualresourcehrs,Number of manufacturing hours used.
+plannedcost,Estimated manufacturing cost.
+actualcost,Actual manufacturing cost.
+modifieddate,Date and time the record was last updated. 

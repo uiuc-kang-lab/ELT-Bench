@@ -1,0 +1,5 @@
+column_name,column_description
+specialofferid,The id for SpecialOfferProduct records
+productid,Product identification number.
+rowguid,Uniquely identifying the record. Used to support a merge replication sample. 
+modifieddate,Date and time the record was last updated. 

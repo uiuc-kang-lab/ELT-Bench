@@ -1,0 +1,20 @@
+models:
+  - name: donor__projects
+    description: Each record represents a donor project.
+    columns:
+      - name: project_id
+        description: Unique identifier for the project.
+      - name: school_city
+        description: The city where the school is located.
+      - name: school_id
+        description: Unique identifier for the school.
+      - name: percentage_lacking_amount_total
+        description: The percentage of the total amount that is lacking for the project, including the optional price of the project.
+      - name: total_price_of_resources
+        description: The total price of the resources needed for the project, replace NULL values with 0.
+      - name: has_resources_provided_by_LLM
+        description: Set to 1 if the project has resources provided by 'Lakeshore Learning Materials', otherwise, set to 0
+      - name: item_cost_most
+        description: The item with the most cost in the project, with ties broken by the ascending order of the item name
+      - name: avg_amount_donation
+        description: The average amount of donation for the project.

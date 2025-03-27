@@ -1,0 +1,8 @@
+column_name,column_description
+id,The ID of the campaign.
+name,The name of the campaign.
+account_id,The ID of the account.
+modified_time,"The time each version of the object was last modified, i.e. when that version of the object was 'created'."
+type,The campaign type associated with this record
+time_zone,The time zone associated with this record.
+status,The status of this campaign

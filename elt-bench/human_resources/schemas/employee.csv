@@ -1,0 +1,10 @@
+column_name,column_description
+ssn,employee's ssn
+lastname,employee's last name
+firstname,employee's first name
+hiredate,employee's hire date
+salary,employee's salary
+gender,employee's gender
+performance,employee's performance
+positionid,the unique id for position
+locationid,the unique id for location

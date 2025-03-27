@@ -1,0 +1,44 @@
+column_name,column_description
+id,the unique number to identify this record
+playerid,ID number identifying the unique number of the player
+year,year
+stint,the period of the time player spent played for this team
+tmid,team name
+lgid,
+gp,game presentatons (attendance)
+gs,game starting
+minutes,minutes
+points,points
+orebounds,offense rebounds
+drebounds,defense rebounds
+rebounds,total rebounds
+assists,assistants
+steals,steals
+blocks,blocks
+turnovers,turnovers
+pf,personal fouls
+fgattempted,field goal attempted
+fgmade,field goal made
+ftattempted,free throw attempted
+ftmade,free throw made
+threeattempted,three point attempted
+threemade,three point made
+postgp,post season game presentations
+postgs,post season game starting
+postminutes,post season minutes
+postpoints,post season points
+postorebounds,post season offense rebounds
+postdrebounds,post season defense rebounds
+postrebounds,post season defense rebounds
+postassists,
+poststeals,
+postblocks,
+postturnovers,
+postpf,
+postfgattempted,
+postfgmade,
+postftattempted,
+postftmade,
+postthreeattempted,
+postthreemade,
+note,

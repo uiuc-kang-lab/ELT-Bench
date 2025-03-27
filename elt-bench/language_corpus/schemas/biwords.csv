@@ -1,0 +1,5 @@
+column_name,column_description
+lid,language id 
+w1st,The word id of the first word of the biwords pair. 
+w2nd,The word id of the second word of the biwords pair. 
+occurrences,times of this pair appears in this language/page

@@ -1,0 +1,22 @@
+column_name,column_description
+id,unique id identifying this set
+baseSetSize,The number of cards in the set.
+block,The block name the set was in.
+booster,A breakdown of possibilities and weights of cards in a booster pack.
+code,The set code for the set.
+isFoilOnly,If the set is only available in foil.
+isForeignOnly,If the set is available only outside the United States of America.
+isNonFoilOnly,If the set is only available in non-foil.
+isOnlineOnly,If the set is only available in online game variations.
+isPartialPreview,If the set is still in preview (spoiled). Preview sets do not have complete data.
+keyruneCode,The matching Keyrune code for set image icons.
+mcmId,The Magic Card Marketset identifier.
+mcmIdExtras,The split Magic Card Market set identifier if a set is printed in two sets. This identifier represents the second set's identifier.
+mcmName,
+mtgoCode,The set code for the set as it appears on Magic: The Gathering Online
+name,The name of the set.
+parentCode,"The parent set code for set variations like promotions, guild kits, etc."
+releaseDate,The release date in ISO 8601 format for the set.
+tcgplayerGroupId,The group identifier of the set on TCGplayer
+totalSetSize,"The total number of cards in the set, including promotional and related supplemental products but excluding Alchemy modifications - however those cards are included in the set itself."
+type,The expansion type of the set.

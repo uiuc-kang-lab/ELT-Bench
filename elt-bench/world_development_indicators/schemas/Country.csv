@@ -1,0 +1,32 @@
+column_name,column_description
+countrycode,unique code identifying countries
+shortname,Short names of countries 
+tablename,table names of countries
+longname,long or full name of countries
+alpha2code,2 digit code of countries 
+currencyunit,Currency Unit used in this country
+specialnotes,Special Notes
+region,region that country belongs to 
+incomegroup,income level of countries 
+wb2code,world bank to code
+nationalaccountsbaseyear,the year used as the base period for constant price calculations in the country's national accounts
+nationalaccountsreferenceyear,National Accounts Reference Year
+snapricevaluation,SNA Price Valuation
+lendingcategory,Lending category
+othergroups,other groups
+systemofnationalaccounts,System Of National Accounts
+alternativeconversionfactor,Alternative conversion factor is the underlying annual exchange rate used for the World Bank Atlas method
+pppsurveyyear,purchasing power parity survey year
+balanceofpaymentsmanualinuse,Balance Of Payments Manual In Use
+externaldebtreportingstatus,External Debt Reporting Status
+systemoftrade,System Of Trade
+governmentaccountingconcept,Government Accounting Concept
+imfdatadisseminationstandard,IMF Standards for Data Dissemination
+latestpopulationcensus,Latest Population Census
+latesthouseholdsurvey,
+sourceofmostrecentincomeandexpendituredata,Source Of Most Recent Income And Expenditure Data
+vitalregistrationcomplete,Vital Registration Complete
+latestagriculturalcensus,Latest Agricultural Census
+latestindustrialdata,Latest Industrial Data
+latesttradedata,Latest Trade Data
+latestwaterwithdrawaldata,Latest Water Withdrawal Data

@@ -1,0 +1,10 @@
+column_name,column_description
+_fivetran_deleted,Boolean representing whether the record was soft-deleted in Qualtrics.
+_fivetran_synced,The time when a record was last updated by Fivetran.
+block_locking,Boolean representing whether modification of the block and its contents is prevented.
+block_visibility,Whether the questions in the block are 'collapsed' or 'expanded' by default.
+description,Description given to the block. 
+id,The ID of the survey block. Match pattern = ^BL_[a-zA-Z0-9]{11,15}$
+randomize_questions,"If/how the block questions are randomized. Can be - `false` (no randomization), `RandomWithXPerPage` (randomize all and place X questions in each block), `RandomWithOnlyX` (randomly present only X out of the total questions), or `Advanced` (custom configuration)"
+survey_id,"The unique identifier for this survey. Match pattern = ^SV_[a-zA-Z0-9]{11,15}$"
+type,"Type of block. Can be Trash, Default, or Standard"

@@ -1,0 +1,15 @@
+column_name,column_description
+donationid,unique donation identifier
+projectid,project identifier that received the donation
+donor_acctid,donor that made a donation
+donor_city,donation city
+donor_state,donation state
+donor_zip,donation zip code
+is_teacher_acct,whether donor is also a teacher
+donation_timestamp,the time of donation
+donation_to_project,"amount to project, excluding optional support (tip)"
+donation_optional_support,amount of optional support
+donation_total,donated amount
+dollar_amount,donated amount in US dollars
+donation_included_optional_support,whether optional support (tip) was included for DonorsChoose.org
+donation_message,donation comment/message. 

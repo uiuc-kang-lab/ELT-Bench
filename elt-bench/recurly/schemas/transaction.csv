@@ -1,0 +1,63 @@
+column_name,column_description
+id,Unique identifier for the object.
+account_id,The account_id this transaction belongs to.
+amount,Total transaction amount sent to the payment gateway.
+avs_check,"When processed, result from checking the overall AVS on the transaction. Enum: ""N"", ""P"", ""D""
+"
+billing_city,Billing info - City
+billing_country,"Billing info - Country, 2-letter ISO code."
+billing_first_name,Billing info - First name
+billing_last_name,Billing info - Last name
+billing_phone,Billing info - Phone
+billing_postal_code,Billing info - Zip or postal code.
+billing_region,Billing info - State or province.
+billing_street_1,Billing info - Address Street 1
+billing_street_2,Billing info - Address Street 2
+collected_at,When the transaction was collected.
+collection_method,"The method by which the payment was collected. Enum: ""automatic"", ""manual""
+"
+created_at,When the transaction was created.
+currency,3-letter ISO 4217 currency code.
+customer_message,"For declined (success=false) transactions, the message displayed to the customer."
+customer_message_locale,Language code for the message
+cvv_check,"When processed, result from checking the CVV/CVC value on the transaction. Enum: ""M"", ""N""
+"
+gateway_approval_code,Transaction approval code from the payment gateway.
+gateway_message,Transaction message from the payment gateway.
+gateway_reference,Transaction reference number from the payment gateway.
+gateway_response_code,"For declined transactions (`success=false`), this field lists the gateway error code."
+gateway_response_time,"Time, in seconds, for gateway to process the transaction."
+gateway_response_values,The values in this field will vary from gateway to gateway.
+invoice_id,The invoice_id this transaction belongs to.
+ip_address_country,"When provided, the country associated with the IP address of customer's location when processing transaction."
+ip_address_v_4,"When provided, the IP address when processing transaction."
+origin,"Describes how the transaction was triggered. Enum: ""api"", ""chargeback"", ""force_collect"", ""hpp"", ""merchant"", ""recurly_admin"", ""recurlyjs"", ""recurring"", ""refunded_externally"", ""transparent""
+"
+original_transaction_id,"If this transaction is a refund (type=refund), this will be the ID of the original transaction on the invoice being refunded."
+payment_gateway_id,Payment gateway id
+payment_gateway_name,Payment gateway name
+payment_gateway_type,Payment gateway type
+payment_method_card_type,Card type of payment method.
+payment_method_exp_month,Expiration month of payment method.
+payment_method_exp_year,Expiration year of payment method.
+payment_method_first_six,First six numbers of payment method.
+payment_method_last_four,Last four digits of payment method.
+payment_method_object,"Enum: ""amazon"", ""amazon_billing_agreement"", ""apple_pay"", ""bank_account_info"", ""check"", ""credit_card"", ""eft"",  ""gateway_token"", ""iban_bank_account"", ""money_order"", ""other"", ""paypal"", ""paypal_billing_agreement"", ""roku"",  ""sepadirectdebit"", ""wire_transfer""
+"
+refunded,Indicates if part or all of this transaction was refunded.
+status,"The current transaction status. Note that the status may change, e.g. a pending transaction may become declined or success may later become void. Enum: ""chargeback"", ""declined"", ""error"", ""pending"", ""processing"", ""scheduled"", ""success"", ""void""
+"
+status_code,Status code of the transaction
+status_message,"For declined (success=false) transactions, the message displayed to the merchant."
+success,Did this transaction complete successfully?
+type,"Transaction types:
+  authorization - verifies billing information and places a hold on money in the customer's account.
+  capture - captures funds held by an authorization and completes a purchase.
+  purchase - combines the authorization and capture in one transaction.
+  refund - returns all or a portion of the money collected in a previous transaction to the customer.
+  verify - a $0 or $1 transaction used to verify billing information which is immediately voided.
+Enum: ""authorization"", ""capture"", ""purchase"", ""refund"", ""verify""
+"
+uuid,The UUID is useful for matching data with the CSV exports and building URLs into Recurly's UI.
+voided_at,When the transaction was voided.
+voided_by_invoice_id,The invoice_id this transaction was voided.

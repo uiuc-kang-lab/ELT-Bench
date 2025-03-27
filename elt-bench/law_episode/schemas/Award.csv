@@ -1,0 +1,11 @@
+column_name,column_description
+award_id,the unique identifier for the award nomination
+organization,the name of the organization that grants the award
+year,the year of the nomination for  the award
+award_category,the class of the award
+award,the specific award
+series,the name of the Law & Order series that has been nominated
+episode_id,the id of the episode that has been nominated
+person_id,the id of the person that has been nominated
+role,the role that has been nominated
+result,the nomination result

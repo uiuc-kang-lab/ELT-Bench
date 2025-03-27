@@ -1,0 +1,4 @@
+column_name,column_description
+id,Id of the author
+name,Author Name
+affiliation,Organization name with which the author is affiliated. 

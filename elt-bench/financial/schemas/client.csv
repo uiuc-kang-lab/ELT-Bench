@@ -1,0 +1,5 @@
+column_name,column_description
+client_id,the unique number
+gender,
+birth_date,birth date
+district_id,location of branch

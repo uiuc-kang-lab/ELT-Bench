@@ -1,0 +1,10 @@
+column_name,column_description
+id,Unique identifier for subscription add-on.
+updated_at,The date/time the add-on was last modified.
+created_at,The date/time the add-on was last created.
+expired_at,Date and time the subscription was/ will churn.
+object,Object type of subscription add-on.
+plan_add_on_id,Plan add-on ID associated with subscription add-on ID.
+quantity,Number of add-ons added to the subscription.
+subscription_id,Subscription ID associated with add-on.
+unit_amount,Amount of one unit of the add-on.

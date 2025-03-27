@@ -1,0 +1,8 @@
+column_name,column_description
+ship_id,Unique identifier of the shipment
+cust_id,A reference to the customer table that indicates which customer the shipment is for
+weight,The number of pounds being transported on the shipment
+truck_id,A reference to the truck table that indicates which truck is used in the shipment
+driver_id,A reference to the driver table that indicates which driver transported the goods in the shipment
+city_id,A reference to the city table that indicates the destination of the shipment
+ship_date,the date the items were received by the driver

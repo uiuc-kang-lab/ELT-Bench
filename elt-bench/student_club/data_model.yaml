@@ -1,0 +1,39 @@
+models:
+  - name: events
+    description: Each record represents an event.
+    columns:
+      - name: event_id
+        description: Unique identifier for the event.
+      - name: event_name
+        description: Name of the event.
+      - name: event_type
+        description: Type of the event.
+      - name: num_attendence_of_students
+        description: The number of attendance of the students from the Student_Club that the event has, replace NULL values with 0.
+      - name: per_cost
+        description: The percentage of cost for the event based on the total cost for all events.
+      - name: amount_spent_on_advertisement
+        description: The amount spent on advertisement for the event, replace NULL values with 0.
+      - name: amount_budgeted
+        description: The amount budgeted for the event, replace NULL values with 0.
+      - name: per_budget_for_parking
+        description: The percentage of the budget for parking.
+  - name: members
+    description: Each record represents a member.
+    columns:
+      - name: member_id
+        description: Unique identifier for the member.
+      - name: name
+        description: Name of the member.
+      - name: position
+        description: Position of the member in the club.
+      - name: incurred_expenses_in_more_than_one_event
+        description: set to 1 if the member incurred expenses in more than one event, otherwise, set to 0
+      - name: has_expense_more_than_avg_expense
+        description: Set to 1 if the member has any expense greater than the average expense across all expenses, otherwise, set to 0
+      - name: comes_from_the_Art_and_Design_Department
+        description: Set to 1 if the member comes from the Art and Design Department, otherwise, set to 0
+      - name: num_events_attended_2019
+        description: The number of events the member attended in 2019, replace NULL values with 0.
+      - name: is_able_to_generate_income_over_40
+        description: Set to 1 if the member is able to generate income more than $40, otherwise, set to 0

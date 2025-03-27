@@ -1,0 +1,5 @@
+column_name,column_description
+job_id,unique id number identifying the jobs
+job_desc,job description
+min_lvl,min job level
+max_lvl,max job level

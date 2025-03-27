@@ -1,0 +1,4 @@
+column_name,column_description
+r_regionkey,unique id number identifying the region
+r_name,name of the region
+r_comment,comment description of the region

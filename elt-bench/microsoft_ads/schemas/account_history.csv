@@ -1,0 +1,6 @@
+column_name,column_description
+id,The ID of the account. 
+name,The name of the account.
+last_modified_time,"The time each version of the object was last modified, i.e. when that version of the object was 'created'."
+time_zone,The time zone associated with this record.
+currency_code,"The currency code associated with spend and, if applicable, other metrics associated with currency."

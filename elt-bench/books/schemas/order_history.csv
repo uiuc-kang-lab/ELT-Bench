@@ -1,0 +1,7 @@
+column_name,column_description
+history_id,the unique identifier of the order history
+order_id,"the id of the order
+Maps to cust_order(order_id)"
+status_id,"the id of the order
+Maps to order_status(status_id)"
+status_date,the date of the status updated 

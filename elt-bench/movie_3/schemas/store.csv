@@ -1,0 +1,5 @@
+column_name,column_description
+store_id,unique id number identifying the store
+manager_staff_id,id number identifying the manager staff
+address_id,id number identifying the address
+last_update,The time of the latest update

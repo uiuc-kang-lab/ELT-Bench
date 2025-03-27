@@ -1,0 +1,4 @@
+column_name,column_description
+city_id,unique id for city
+city_name,city name
+country_id,id of country

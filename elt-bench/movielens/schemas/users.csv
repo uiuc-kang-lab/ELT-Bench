@@ -1,0 +1,5 @@
+column_name,column_description
+userid,unique identifier number of users
+age,age
+u_gender,user gender
+occupation,occupation

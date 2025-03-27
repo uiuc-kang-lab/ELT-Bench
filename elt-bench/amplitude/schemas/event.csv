@@ -1,0 +1,60 @@
+column_name,column_description
+_fivetran_deleted,Timestamp of when Fivetran marked a record as deleted.
+_fivetran_synced,Timestamp of when Fivetran synced a record.
+amplitude_id,An internal ID used to count unique users.
+ad_id,"(Android) Google Play Services advertising ID (AdID). This usually is wiped after ingestion and therefore will be blank
+"
+amplitude_attribution_ids,"Anonymized hash of the advertising IDs that Amplitude stores for internal purposes; not useful for customers by any means. But this will appear if advertising IDs were sent which proves that adid/idfv existed even though currently wiped
+"
+app,Project ID found in your project's Settings page
+city,City where event was registered.
+client_event_time,"Local timestamp (UTC) of when the device logged the event.
+"
+client_upload_time,The local timestamp (UTC) of when the device uploaded the event.
+country,Country where event was registered.
+data,"Dictionary where certain fields such as first_event and merged_amplitude_id are stored. Ex, {""first_event"":true}
+"
+device_brand,Brand of device where event was registered on.
+device_carrier,Carrier of device where event was registered on.
+device_family,"Device family. Ex, Apple iPhone"
+device_id,The device specific identifier
+device_manufacturer,Manufacturer of device where event was registered on.
+device_model,The model of device where event was registered on.
+device_type,Type of device where event was registered on.
+dma,Designated marketing area (DMA)
+id,A counter that distinguishes events
+event_properties,"Event properties are attributes of the events your users fire, and which you then send to Amplitude. Each event will have its own set of event properties. The nature of these properties depends on both the type of product you have, and the specific information you're most interested in discovering. For instance, if Swipe is an event you're tracking, the event property Direction could have the values Left or Right. Some example event properties are description, category, type, duration, level, percent completed, count, source, status, number, lives, authenticated, error number, rank, action, and mode. 
+"
+event_time,"Amplitude timestamp (UTC) which is the client_event_time adjusted by the difference between server_received_time and client_upload_time, specifically: event_time = client_event_time + (server_received_time - client_upload_time) 2015-08-10T12:00:00.000000 We use this timestamp to organize events on Amplitude charts. Note: If the difference between server_received_time and client_upload_time is less than 60 seconds, the event_time will not be adjusted and will equal the client_event_time
+"
+event_type,The assigned type of event. Example 'Add Friend'
+event_type_id,Internal identifier on Amplitude.
+group_properties,"A dictionary of key-value pairs that represent data tied to the group. Each distinct value appears as a group segment on the Amplitude dashboard. You can store property values in an array, and date values are transformed into string values."
+groups,Group types. See the Accounts documentation for more information.
+idfa,"(iOS) Identifier for Advertiser. This usually is wiped after ingestion and therefore will be blank
+"
+_insert_id,"A unique identifier for the event. Amplitude deduplicates subsequent events sent with the same device_id and insert_id within the past 7 days. Amplitude recommends generating a UUID or using some combination of device_id, user_id, event_type, event_id, and time.  
+"
+ip_address,IP address
+is_attribution_event,Boolean of whether event was an attribution event
+language,The language set by the user
+library,Library being used to send the event data.
+location_lat,Latitude
+location_lng,Longitude
+os_name,OS name where event was registered on.
+os_version,OS version where event was registered on.
+paying,"Boolean of whether the user has ever logged any revenue, otherwise '(none)'. Note the property value can be modified via the\_Identify API."
+platform,Platform of the device.
+processed_time,Time of when event was processed
+project_name,Project ID
+region,Region where event was registered on.
+schema,Schema ID
+server_received_time,Amplitude timestamp (UTC) of when servers received the event
+server_upload_time,Amplitude timestamp (UTC) of when the event data was uploaded to Amplitude servers
+session_id,The session start time in milliseconds since epoch
+start_version,App version the user was first tracked on
+user_creation_time,Event_time (UTC) of the user's first event
+user_id,A readable ID specified by you
+user_properties,An attribute that describes a useful detail about the user it's attached to. Amplitude sends user properties with every event.
+uuid,A unique identifier per row (event sent)
+version_name,The app version

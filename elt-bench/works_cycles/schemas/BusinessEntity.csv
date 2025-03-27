@@ -1,0 +1,4 @@
+column_name,column_description
+businessentityid,Unique number of identifying business entity.
+rowguid,Uniquely identifying the record. Used to support a merge replication sample. 
+modifieddate,Date and time the record was last updated. 

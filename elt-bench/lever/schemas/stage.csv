@@ -1,0 +1,3 @@
+column_name,column_description
+id,Unique id of the stage.
+text,Title of the stage.

@@ -1,0 +1,50 @@
+models:
+  - name: professional_basketball__teams
+    description: Each record represents a team.
+    columns:
+      - name: team_id
+        description: The unique identifier of the team.
+      - name: win_more_in_2005_than_2004
+        description: Set to 1 if the team won more games in 2005 than in 2004, 0 otherwise.
+      - name: has_played_over_3800_points_and_has_player_with_MVP
+        description: Set to 1 if the team has played over 3800 points and has a player who has won the MVP award, 0 otherwise.
+      - name: win_rate_change_from_1972_to_1973
+        description: The change in win rate from 1972 to 1973.
+      - name: has_at_least_3_all_star_players
+        description: Set to 1 if the team has at least 3 all-star players, otherwise, set to 0.
+      - name: has_more_home_won_than_lost_80_per
+        description: Set to 1 if the team has more home won than home lost more than 80% in any season, otherwise, set to 0.
+  - name: professional_basketball__coaches
+    description: Each record represents a coach.
+    columns: 
+      - name: coachID
+        description: The unique identifier of the coach.
+      - name: served_more_than_2_NBA_teams
+        description: Set to 1 if the coach has served more than 2 NBA teams, 0 otherwise.
+      - name: received_both_NBA_and_ABA_awards_1962_to_2011
+        description: Set to 1 if the coach has received both NBA and ABA awards from 1962 to 2011, 0 otherwise.
+      - name: num_of_won_games
+        description: The number of games the coach has won, replace NULL values with 0.
+      - name: has_more_than_50_games_won_2000
+        description: Set to 1 if the coach has won more than 50 games in 2000, 0 otherwise.
+      - name: lost_more_than_won_from_2000_to_2010
+        description: Set to 1 if the coach has  more game lost than won from year 2000-2010, otherwise, set to 0.
+  - name: professional_basketball__players
+    description: Each record represents a player.
+    columns:
+      - name: player_id
+        description: The unique identifier of the player.
+      - name: name
+        description: The name of the player.
+      - name: birthcountry
+        description: The country where the player was born.
+      - name: num_MVPs
+        description: The number of MVPs the player has won, replace NULL values with 0.
+      - name: num_fouls
+        description: The number of fouls the player has committed, replace NULL values with 0.
+      - name: field_goal_made_rate
+        description: The rate of field goals made by the player.
+      - name: is_all_star_player_and_higher_than_75_inch
+        description: Set to 1 if the player is an all-star player and is higher than 75 inches, 0 otherwise.
+      - name: attended_California_college_and_is_an_all_star_player
+        description: Set to 1 if the player attended a college in California and is an all-star player, 0 otherwise.

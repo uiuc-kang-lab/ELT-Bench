@@ -1,0 +1,4 @@
+column_name,column_description
+method_id,the unique identifier of the method
+method_name,the method name
+cost,the cost of the shipping method

@@ -1,0 +1,4 @@
+column_name,column_description
+movieid,identifier number of movies
+actorid,identifier number of actors
+cast_num,cast number

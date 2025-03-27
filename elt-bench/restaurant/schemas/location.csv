@@ -1,0 +1,5 @@
+column_name,column_description
+id_restaurant,the unique id for the restaurant
+street_num,the street number of the restaurant
+street_name,the street name of the restaurant
+city,the city where the restaurant is located in

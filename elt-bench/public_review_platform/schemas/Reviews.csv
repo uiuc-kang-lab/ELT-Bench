@@ -1,0 +1,8 @@
+column_name,column_description
+business_id,the number identifying the business
+user_id,the number identifying the user who comments on this business
+review_stars,review on this business
+review_votes_funny,the amount of funny votes that the user received for the review
+review_votes_useful,how many useful votes that the user received for the review
+review_votes_cool,how many cool votes that the user received for the review
+review_length,The length of the review written by the user

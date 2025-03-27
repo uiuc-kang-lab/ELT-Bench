@@ -1,0 +1,4 @@
+column_name,column_description
+weight_id,the unique weight id
+weight_in_kg,weight in kg
+weight_in_lbs,weight in lbs

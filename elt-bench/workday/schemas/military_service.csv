@@ -1,0 +1,12 @@
+column_name,column_description
+index,An index for a particular identifier.
+personal_info_system_id,The system ID associated with the personal information of the individual.
+_fivetran_deleted,Indicates if the record was soft-deleted by Fivetran.
+_fivetran_synced,Timestamp the record was synced by Fivetran.
+discharge_date,The date on which the individual was discharged from military service.
+notes,Additional notes or comments related to the military service record.
+rank,The rank achieved by the individual during military service.
+service,The specific military service branch in which the individual served.
+service_type,"The type or category of military service (e.g., active duty, reserve, etc.)."
+status,"The status of the individual's military service (e.g., active, inactive, retired)."
+status_begin_date,The date on which the current military service status began.

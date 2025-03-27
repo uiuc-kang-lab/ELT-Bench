@@ -1,0 +1,7 @@
+column_name,column_description
+podcast_id,The unique id of the podcast 
+title,The title of the podcast review.
+content,The content of the podcast review.
+rating,The rating of the podcast review.
+author_id,The author id of the podcast review.
+created_at,The date and time of the podcast review creation.

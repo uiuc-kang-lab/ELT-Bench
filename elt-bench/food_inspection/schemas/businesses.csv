@@ -1,0 +1,17 @@
+column_name,column_description
+business_id,the unique id of the business 
+name,the name of the eatery
+address,the eatery address
+city,the city where the eatery is located in
+postal_code,the postal code of the eatery
+latitude,the latitude of the position
+longitude,the longitude of the position
+phone_number,the phone number of the eatery
+tax_code,the tax code of the eatery
+business_certificate,the business certificate number
+application_date,the application date of the eatery
+owner_name,the owner's name
+owner_address,the owner's address
+owner_city,the city where the owner is located
+owner_state,the state where the owner is located
+owner_zip,the zip code of the owner

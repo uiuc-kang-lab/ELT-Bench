@@ -1,0 +1,6 @@
+column_name,column_description
+id,unique id number identifying the work
+title,title of the work
+longtitle,full title of the work
+date,date of the work
+genretype,the type of the genere

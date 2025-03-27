@@ -1,0 +1,9 @@
+column_name,column_description
+year,year
+month,month
+date,day
+tmid,team abbreviated name
+oppid,Team ID of opponent
+r_p,regular / postseason
+idgoalie1,ID of first goalie
+idgoalie2,ID of second goalie

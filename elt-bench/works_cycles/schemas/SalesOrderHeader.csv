@@ -1,0 +1,27 @@
+column_name,column_description
+salesorderid,The id number of sales order.
+revisionnumber,
+orderdate,
+duedate,
+shipdate,Estimated shipment date from the vendor
+status,Order current status
+onlineorderflag,
+salesordernumber,
+purchaseordernumber,
+accountnumber,
+customerid,
+salespersonid,
+territoryid,
+billtoaddressid,
+shiptoaddressid,
+shipmethodid,Shipping method
+creditcardid,
+creditcardapprovalcode,
+currencyrateid,
+subtotal,
+taxamt,Tax amount
+freight,Shipping cost
+totaldue,Total due to vendor
+comment,
+rowguid,
+modifieddate,Date and time the record was last updated. 

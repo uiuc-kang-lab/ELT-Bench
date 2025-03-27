@@ -1,0 +1,10 @@
+column_name,column_description
+driverId,the unique identification number identifying each driver
+driverRef,driver reference name 
+number,number 
+code,abbreviated code for drivers 
+forename,forename 
+surname,surname 
+dob,date of birth 
+nationality,nationality of drivers 
+url,the introduction website of the drivers 

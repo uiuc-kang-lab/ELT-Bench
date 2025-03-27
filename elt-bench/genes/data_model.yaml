@@ -1,0 +1,16 @@
+models:
+  - name: genes__genes
+    description: Each record represents a gene.
+    columns:
+      - name: geneid
+        description: Unique identifier for the gene.
+      - name: paired_gene_highest_expression_correlation_score
+        description: The paired gene with the highest expression correlation score, with ties broken by the ascending order of the geneid
+      - name: located_in_cytoplasm_and_have_7_chromosomes
+        description: Set to 1 if the gene is located in the cytoplasm and has 7 chromosomes, otherwise, set to 0
+      - name: paired_gene_lowest_expression_correlation_score
+        description: The paired gene with the lowest expression correlation score, with ties broken by the ascending order of the geneid
+      - name: interaction_with_genes_located_in_the_nucleus_and_is_positively_correlated
+        description: set to 1 if the gene's interaction is with genes located in the nucleus in which it is positively correlated
+      - name: num_functions
+        description: The number of functions the gene has, replace NULL values with 0.

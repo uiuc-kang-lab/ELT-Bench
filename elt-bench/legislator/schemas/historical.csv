@@ -1,0 +1,27 @@
+column_name,column_description
+ballotpedia_id,"The ballotpedia.org page name for the person (spaces are given as spaces, not underscores)."
+bioguide_previous_id,The previous alphanumeric ID for this legislator 
+bioguide_id,The alphanumeric ID for this legislator 
+birthday_bio,"The legislator's birthday,"
+cspan_id,"The numeric ID for this legislator on C-SPAN's video website,"
+fec_id, A list of IDs for this legislator in Federal Election Commission data.
+first_name,first name of the legislator
+gender_bio,gender of the legislator
+google_entity_id_id,google entity id
+govtrack_id,The numeric ID for this legislator on GovTrack.us
+house_history_alternate_id,The alternative numeric ID for this legislator
+house_history_id,The numeric ID for this legislator on http://history.house.gov/People/Search/
+icpsr_id,"The numeric ID for this legislator in Keith Poole's VoteView.com website, originally based on an ID system by the Interuniversity Consortium for Political and Social Research (stored as an integer)."
+last_name,last name of the legislator
+lis_id,The alphanumeric ID for this legislator found in Senate roll call votes
+maplight_id,The numeric ID for this legislator on maplight.org
+middle_name,the middle name of the legislator
+nickname_name,nickname of the legislator
+official_full_name,official full name
+opensecrets_id,The alphanumeric ID for this legislator on OpenSecrets.org.
+religion_bio,The legislator's religion.
+suffix_name,suffix name
+thomas_id,The numeric ID for this legislator on http://thomas.gov and http://beta.congress.gov. 
+votesmart_id,The numeric ID for this legislator on VoteSmart.org
+wikidata_id,the id for wikidata
+wikipedia_id, The Wikipedia page name for the person

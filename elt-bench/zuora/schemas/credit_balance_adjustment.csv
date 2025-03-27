@@ -1,0 +1,35 @@
+column_name,column_description
+id,The unique identifier of the
+_fivetran_synced,Timestamp of when a record was last synced.
+_fivetran_deleted,Boolean identifiying whether the record was deleted in the source.
+account_id,The account id of the credit balance's account. Zuora generates this value from the source transaction.
+account_receivable_accounting_code_id,The accounting code ID for the account receivable account to which the adjustment was made.
+accounting_code,"The accounting code for the credit balance adjustment, maps to a bank account in the accounting system."
+adjustment_date,The date when the credit balance adjustment is applied.
+amount,The amount of the credit balance adjustment.
+amount_home_currency,The amount of the adjustment in the home currency of the account.
+bill_to_contact_id,Person that you would like to bill or send the invoice to.
+cancelled_on,Date when the credit balance adjustment was canceled.
+comment,Comments about the credit balance adjustment.
+created_by_id,Identifier of the user who created
+created_date,Creation date for
+default_payment_method_id,Identifier of the default payment method for the account.
+exchange_rate,The exchange rate used for the adjustment.
+exchange_rate_date,The date of the exchange rate used for the adjustment.
+home_currency,Home currency the customer is billed in.
+invoice_id,The ID of the invoice associated with the adjustment.
+journal_entry_id,The ID of the journal entry associated with the adjustment.
+number,A unique identifier for the credit balance adjustment.
+parent_account_id,The ID of the parent account associated with the adjustment.
+reason_code,The reason code for the adjustment.
+reference_id,The reference ID for the adjustment.
+sold_to_contact_id,Person that you have sold your product or services to; can be the same as the bill to contact.
+source_transaction_id,The id of the object that the credit balance adjustment is applied to.
+source_transaction_number,The number of the object that the credit balance adjustment is applied to.
+source_transaction_type,The source of the credit balance adjustment.
+status,The status of the credit balance adjustment.
+transaction_currency,Transaction currency the customer is billed in.
+transferred_to_accounting,"Indicates the status of the credit balance adjustment's transfer to an external accounting system, such as Netsuite."
+type,Specifies if the credit balance adjustment increases or decrease the amount of the credit balance.
+updated_by_id,Identifier of the user who last updated
+updated_date,Last updated date for

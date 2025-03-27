@@ -1,0 +1,23 @@
+column_name,column_description
+_fivetran_deleted,Boolean representing whether the record was soft-deleted in Qualtrics.
+_fivetran_synced,The time when a record was last updated by Fivetran.
+account_creation_date,The date and time that the account was created. Dates and times are expressed in ISO 8601 format.
+account_expiration_date,The date the account expires. Dates and times are expressed in ISO 8601 format.
+account_status,"Either `active`, `disabled`, or `notVerified`."
+division_id,"The unique identifier for the Division ID. Match pattern = ^DV_[0-9a-zA-Z]{11,15}$"
+email,The user's email address.
+first_name,The user's first name or given name.
+id,Unique ID of the user. Match pattern = ^((UR)|(URH))_[0-9a-zA-Z]{11,15}$
+language,The user's default language.
+last_login_date,The date and time the user last logged into the user interface. Dates and times are expressed in ISO 8601 format.
+last_name,User's surname.
+organization_id,ID of the organization/brand this record belongs to.
+password_expiration_date,The date the account password expires. Dates and times are expressed in ISO 8601 format.
+password_last_changed_date,The date the account password was last changed. Dates and times are expressed in ISO 8601 format.
+response_count_auditable,The count of auditable responses.
+response_count_deleted,The count of deleted responses.
+response_count_generated,The count of generated responses.
+time_zone,The IANA time zone setting for the user.
+unsubscribed,Boolean indicating if the user unsubscribed.
+user_type,ID of the user type. See mappings of user types to their type IDs [here](https://api.qualtrics.com/dc2be1c61af61-user-type).
+username,UI-facing username for the account.

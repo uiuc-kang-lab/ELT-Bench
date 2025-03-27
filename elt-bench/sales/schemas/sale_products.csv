@@ -1,0 +1,4 @@
+column_name,column_description
+productid,the unique id of the product
+name,the product name
+price,the price of the product

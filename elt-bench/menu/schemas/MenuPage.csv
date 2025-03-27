@@ -1,0 +1,8 @@
+column_name,column_description
+id,the unique id number indentifying the menupage
+menu_id,the id of the menu
+page_number,the page number 
+image_id,the id of the image 
+full_height,full height of the menu page
+full_width,full width of the menu page
+uuid,

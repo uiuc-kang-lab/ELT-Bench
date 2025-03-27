@@ -1,0 +1,5 @@
+column_name,column_description
+event_id,
+app_id,
+is_installed,
+is_active,

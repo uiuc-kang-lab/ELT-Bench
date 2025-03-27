@@ -1,0 +1,5 @@
+column_name,column_description
+games_id,"the id of the game
+Maps to games(id)"
+city_id,"the id of the city that held the game
+Maps to city(id)"

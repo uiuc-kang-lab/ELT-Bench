@@ -1,0 +1,18 @@
+models:
+  - name: countries
+    description: Each record represents a country.
+    columns:
+      - name: origin
+        description: The unique identifier for the origin country.
+      - name: country
+        description: the origin country of the car.
+      - name: fastest_car
+        description: Name of the fastest car produced in the country, with ties broken by the ascending order of the car name.
+      - name: most_fuel_efficient_car
+        description: Name of the most fuel-efficient car produced in the country, with ties broken by the descending order of the car name.
+      - name: num_cars
+        description: Number of cars produced in the country, replace NULL values with 0.
+      - name: num_car_worth_over_35000_and_acceleration_14
+        description: Number of cars produced in the country that are worth over $35,000 and have an acceleration of 14, replace NULL values with 0.
+      - name: avg_car_price
+        description: Average price of cars produced in the country.

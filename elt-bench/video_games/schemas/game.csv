@@ -1,0 +1,4 @@
+column_name,column_description
+id,the unique identifier of the game
+genre_id,the id of the game genre
+game_name,the name of the game

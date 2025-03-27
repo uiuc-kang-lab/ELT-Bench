@@ -1,0 +1,24 @@
+column_name,column_description
+id,The ID of the member.
+email_address,Email address for a subscriber.
+email_client,The list member's email client.
+email_type,Type of email this member asked to get ('html' or 'text').
+status,"Subscriber's current status.  Possible Values: subscribed, unsubscribed, cleaned, pending, transactional, archived
+"
+list_id,The ID of the list the member belongs to.
+timestamp_signup,The date and time the subscriber signed up for the list.
+timestamp_opt,The date and time the subscribe confirmed their opt-in status.
+last_changed,The date and time the member's info was last changed.
+country_code,The member's unique code for the location country.
+dstoff,The member's offset for timezones where daylight saving time is observed.
+gmtoff,The member's time difference in hours from GMT.
+ip_opt,The IP address the subscriber used to confirm their opt-in status.
+ip_signup,IP address the subscriber signed up from.
+language,"If set/detected, the subscriber's language."
+latitude,The member's location latitude.
+longitude,The member's location longitude.
+member_rating,"Star rating for this member, between 1 and 5."
+timezone,The timezone for the member's location.
+unique_email_id,An identifier for the address across all of Mailchimp.
+vip,VIP status for subscriber.
+_fivetran_synced,UTC timestamp that indicates the time when Fivetran last successfully synced the row.

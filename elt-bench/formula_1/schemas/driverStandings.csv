@@ -1,0 +1,8 @@
+column_name,column_description
+driverStandingsId,the unique identification number identifying driver standing records 
+raceId,id number identifying which races 
+driverId,id number identifying which drivers 
+points,how many points acquired in each race 
+position,position or track of circuits 
+wins,wins 
+positionText,

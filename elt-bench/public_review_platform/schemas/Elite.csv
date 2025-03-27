@@ -1,0 +1,3 @@
+column_name,column_description
+user_id,id number identifying the users
+year_id,id number identifying the year

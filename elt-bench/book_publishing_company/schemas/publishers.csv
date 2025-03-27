@@ -1,0 +1,6 @@
+column_name,column_description
+pub_id,unique id number identifying publisher
+pub_name,publisher name
+city,city 
+state,state
+country,country

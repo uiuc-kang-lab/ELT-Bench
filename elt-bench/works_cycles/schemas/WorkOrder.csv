@@ -1,0 +1,11 @@
+column_name,column_description
+workorderid,The unique id number identifying work order.
+productid,Product identification number.
+orderqty,Product quantity to build.
+stockedqty,Quantity built and put in inventory.
+scrappedqty,Quantity that failed inspection.
+startdate,Work order start date.
+enddate,Work order end date.
+duedate,Work order due date.
+scrapreasonid,Reason for inspection failure.
+modifieddate,Date and time the record was last updated. 

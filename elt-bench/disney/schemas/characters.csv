@@ -1,0 +1,6 @@
+column_name,column_description
+movie_title,unique title of the movie
+release_date,The release date of the movie.
+hero,The main character of the movie. 
+villian,The villain of the movie.
+song,A song associated with the movie.

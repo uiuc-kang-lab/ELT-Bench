@@ -1,0 +1,133 @@
+models:
+  - name: pinterest_ads__ad_group_report
+    description: Each record in this table represents the daily performance of ads at the campaign, advertiser, and ad group level.
+    columns:
+      - name: date_day
+        description: The performance date of the record.
+      - name: advertiser_name
+        description: Name of the advertiser.
+      - name: advertiser_id
+        description: The ID of the related Advertiser.
+      - name: campaign_name
+        description: The name of the related Campaign.
+      - name: campaign_status
+        description: Status of the campaign.
+      - name: campaign_id
+        description: The ID of the related Campaign.
+      - name: ad_group_name
+        description: The name of the related Ad group.
+      - name: ad_group_id
+        description: The ID of the related Ad group.
+      - name: created_at
+        description: Ad group creation time.
+      - name: start_time
+        description: Ad group start time. 
+      - name: end_time
+        description: Ad group end time. 
+      - name: ad_group_status
+        description: Status of the ad group.
+      - name: spend
+        description: The amount of spend that occurred on the day of the record. Convert the unit to dollars. Set to 0 if the value is NULL.
+      - name: clicks
+        description: The number of paid and earned clicks that occurred on the day of the record. Set to 0 if the value is NULL.
+      - name: impressions
+        description: The number of paid and earned impressions that occurred on the day of the record. Set to 0 if the value is NULL.
+      - name: total_conversions
+        description: This is the sum of all website conversions, otherwise known as the number of conversion events. For example, if you track sign-ups and checkouts on your website, it's the sum of all sign-ups and checkouts attributed from clicks, engagements, and views on Pinterest. Example, If a user clicks on a Pinterest ad and completes two different conversion actions (e.g., signs up and checks out), this would be counted as 2 total conversions. Set to 0 if the value is NULL.
+      - name: total_conversions_quantity
+        description: Refers to the total count of items or units involved in the conversions. This metric is often more granular and relates to the specific quantity of products or services purchased or actions taken. Example, If a single checkout includes three items, the total_conversions_quantity would be 3, even though it counts as one total_conversion. Set to 0 if the value is NULL.
+      - name: total_conversions_value
+        description: Total conversions order value. The total value of the conversions, calculated by summing up the revenue or order values attributed to conversions. Converted from the source total_conversions_value_in_micro_dollar field. Convert the unit to dollars. Set to 0 if the value is NULL.
+
+  - name: pinterest_ads__campaign_report
+    description: Each record in this table represents the daily performance of ads at the advertiser and campaign level.
+    columns:
+      - name: date_day
+        description: The performance date of the record.
+      - name: advertiser_name
+        description: Name of the advertiser.
+      - name: advertiser_id
+        description: The ID of the related Advertiser.
+      - name: campaign_name
+        description: The name of the related Campaign.
+      - name: campaign_id
+        description: The ID of the related Campaign.
+      - name: campaign_status
+        description: Status of the campaign.
+      - name: spend
+        description: The amount of spend that occurred on the day of the record. Convert the unit to dollars. Set to 0 if the value is NULL.
+      - name: clicks
+        description: The number of paid and earned clicks that occurred on the day of the record. Set to 0 if the value is NULL.
+      - name: impressions
+        description: The number of paid and earned impressions that occurred on the day of the record. Set to 0 if the value is NULL.
+      - name: total_conversions
+        description: This is the sum of all website conversions, otherwise known as the number of conversion events. For example, if you track sign-ups and checkouts on your website, it's the sum of all sign-ups and checkouts attributed from clicks, engagements, and views on Pinterest. Example, If a user clicks on a Pinterest ad and completes two different conversion actions (e.g., signs up and checks out), this would be counted as 2 total conversions. Set to 0 if the value is NULL.
+      - name: total_conversions_quantity
+        description: Refers to the total count of items or units involved in the conversions. This metric is often more granular and relates to the specific quantity of products or services purchased or actions taken. Example, If a single checkout includes three items, the total_conversions_quantity would be 3, even though it counts as one total_conversion. Set to 0 if the value is NULL.
+      - name: total_conversions_value
+        description: Total conversions order value. The total value of the conversions, calculated by summing up the revenue or order values attributed to conversions. Converted from the source total_conversions_value_in_micro_dollar field. Convert the unit to dollars. Set the value to 0 if it is NULL.
+
+  - name: pinterest_ads__advertiser_report
+    description: Each record in this table represents the daily performance of an advertiser on the Pinterest Ads platform.
+    columns:
+      - name: date_day
+        description: The performance date of the record.
+      - name: advertiser_name
+        description: Name of the advertiser.
+      - name: advertiser_id
+        description: The ID of the related Advertiser.
+      - name: currency_code
+        description: The currency code which the advertiser is set up using.
+      - name: country
+        description: The country code where the advertiser is located.
+      - name: spend
+        description: The amount of spend that occurred on the day of the record. Convert the unit to dollars. Set to 0 if the value is NULL.
+      - name: clicks
+        description: The number of paid and earned clicks that occurred on the day of the record. Set the value to 0 if it is NULL.
+      - name: impressions
+        description: The number of paid and earned impressions that occurred on the day of the record. Set the value to 0 if it is NULL.
+      - name: total_conversions
+        description: This is the sum of all website conversions, otherwise known as the number of conversion events. For example, if you track sign-ups and checkouts on your website, it's the sum of all sign-ups and checkouts attributed from clicks, engagements, and views on Pinterest. Example, If a user clicks on a Pinterest ad and completes two different conversion actions (e.g., signs up and checks out), this would be counted as 2 total conversions. Set the value to 0 if it is NULL.
+      - name: total_conversions_quantity
+        description: Refers to the total count of items or units involved in the conversions. This metric is often more granular and relates to the specific quantity of products or services purchased or actions taken. Example, If a single checkout includes three items, the total_conversions_quantity would be 3, even though it counts as one total_conversion. Set the value to 0 if it is NULL.
+      - name: total_conversions_value
+        description: Total conversions order value. The total value of the conversions, calculated by summing up the revenue or order values attributed to conversions. Converted from the source total_conversions_value_in_micro_dollar field. Convert the unit to dollars. Set to 0 if the value is NULL.
+
+
+  - name: pinterest_ads__keyword_report
+    description: Each record in this table represents the daily performance of a keyword at the advertiser, campaign, ad group, and keyword level.
+    columns:
+      - name: date_day
+        description: The performance date of the record.
+      - name: advertiser_name
+        description: Name of the advertiser.
+      - name: advertiser_id
+        description: The ID of the related Advertiser.
+      - name: campaign_name
+        description: Name of the campaign.
+      - name: campaign_id
+        description: The ID of the related Campaign.
+      - name: ad_group_name
+        description: Name of the ad group.
+      - name: ad_group_id
+        description: The ID of the related Ad group.
+      - name: keyword_id
+        description: Unique identifier of the keyword.
+      - name: match_type
+        description: Type of match the keyword is tied to. Either Exact or Broad.
+      - name: parent_type
+        description: Identifier of what grain the parent type is. Ad group or campaign.
+      - name: keyword_value
+        description: The text value that makes upd the keyword.
+      - name: spend
+        description: The amount of spend that occurred on the day of the record. Convert the unit to dollars. Set to 0 if the value is NULL.
+      - name: clicks
+        description: The number of paid and earned clicks that occurred on the day of the record. Set the value to 0 if it is NULL.
+      - name: impressions
+        description: The number of paid and earned impressions that occurred on the day of the record. Set the value to 0 if it is NULL.
+      - name: total_conversions
+        description: This is the sum of all website conversions, otherwise known as the number of conversion events. For example, if you track sign-ups and checkouts on your website, it's the sum of all sign-ups and checkouts attributed from clicks, engagements, and views on Pinterest. Example, If a user clicks on a Pinterest ad and completes two different conversion actions (e.g., signs up and checks out), this would be counted as 2 total conversions. Set the value to 0 if it is NULL.
+      - name: total_conversions_quantity
+        description: Refers to the total count of items or units involved in the conversions. This metric is often more granular and relates to the specific quantity of products or services purchased or actions taken. Example, If a single checkout includes three items, the total_conversions_quantity would be 3, even though it counts as one total_conversion. Set the value to 0 if it is NULL.
+      - name: total_conversions_value
+        description: Total conversions order value. The total value of the conversions, calculated by summing up the revenue or order values attributed to conversions. Converted from the source total_conversions_value_in_micro_dollar field. Convert the unit to dollars. Set to 0 if the value is NULL.

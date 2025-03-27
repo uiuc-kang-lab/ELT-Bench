@@ -1,0 +1,20 @@
+models:
+  - name: conferences
+    description: Each record represents a conference.
+    columns:
+      - name: conference_id
+        description: Unique identifier for the conference.
+      - name: full_name
+        description: Full name of the conference.
+      - name: homepage
+        description: Homepage of the conference.
+      - name: avg_num_papers_published
+        description: The average number of papers published in the conference per year.
+      - name: num_paper_presented_in_2012
+        description: The number of papers presented in the conference in 2012, replace NULL values with 0.
+      - name: year_published_most_paper
+        description: The year in which the most papers were published in the conference,  with ties broken by the ascending order of the year.
+      - name: per_papers_have_keyword_cancer
+        description: The percentage of papers that have the keyword "cancer" in the conference.
+      - name: total_number_paper_during_1990_to_2000
+        description: The total number of papers published in the conference during 1990 to 2000, replace NULL values with 0.

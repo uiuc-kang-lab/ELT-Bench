@@ -1,0 +1,8 @@
+column_name,column_description
+ID,identification of the patient
+SEX,Sex
+Birthday,Birthday
+Description,the first date when a patient data was recorded
+First_Date,the date when a patient came to the hospital
+Admission,patient was admitted to the hospital (+) or followed at the outpatient clinic (-)
+Diagnosis,disease names

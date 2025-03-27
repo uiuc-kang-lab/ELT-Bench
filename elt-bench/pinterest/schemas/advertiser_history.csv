@@ -1,0 +1,11 @@
+column_name,column_description
+id,The ID of the related Advertiser.
+name,Name of the advertiser.
+country,The country code where the advertiser is located.
+created_time,Timestamp of when a record was created.
+currency,The currency code which the a
+updated_time,Timestamp of when a record was last updated.
+owner_username,Advertiser's username.
+owner_user_id,Unique identifier of the owner user.
+permissions,The permissions associated with this account.
+_fivetran_synced,Timestamp of when a record was last synced.

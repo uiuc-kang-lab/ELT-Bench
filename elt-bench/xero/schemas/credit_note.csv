@@ -1,0 +1,3 @@
+column_name,column_description
+credit_note_id,Xero identifier for the credit note.
+contact_id,The ID of the associated contact in Xero

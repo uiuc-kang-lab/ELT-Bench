@@ -1,0 +1,4 @@
+column_name,column_description
+id,System generated unique ID for a user
+email,Email associated with the user
+name,Given name for the user as it appears in the UI

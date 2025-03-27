@@ -1,0 +1,8 @@
+column_name,column_description
+event_id,A unique identifier for the event
+event_name,event name
+event_date,The date the event took place or is scheduled to take place
+type,"The kind of event, such as game, social, election"
+notes,A free text field for any notes about the event
+location,Address where the event was held or is to be held or the name of such a location
+status,"One of three values indicating if the event is in planning, is opened, or is closed"

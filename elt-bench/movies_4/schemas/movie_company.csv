@@ -1,0 +1,5 @@
+column_name,column_description
+movie_id,"the id of the movie 
+Maps to movie(movie_id)"
+company_id,"the id of the company that produced the movie
+Maps to production_company(company_id)"

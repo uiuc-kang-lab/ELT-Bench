@@ -1,0 +1,8 @@
+column_name,column_description
+id,The ID of the corresponding ad.
+title_part_1,The name of the corresponding ad; title_part_1 is used as the ad name as a proxy as one is not provided by the data source.
+final_url,The full URL that the ad links to.
+ad_group_id,The ID of the corresponding ad group.
+modified_time,"The time each version of the object was last modified, i.e. when that version of the object was 'created'."
+status,The status of this ad;
+type,The ad type associated with this record;

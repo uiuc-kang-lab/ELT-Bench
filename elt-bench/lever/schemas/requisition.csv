@@ -1,0 +1,23 @@
+column_name,column_description
+id,Unique id of the requisition.
+_fivetran_deleted,Boolean that is true if the requisition has been soft-deleted.
+backfill,"Boolean that is true if the requisition represents a backfill or new headcount.  If unspecified, defaults to false. 
+"
+compensation_band_currency,The ISO currency code associated with the requisition's compensation band.
+compensation_band_interval,The string representing the interval of payment for the compensation band.
+compensation_band_max,The high bound for the compensation band.
+compensation_band_min,The low bound for the compensation band.
+created_at,Timestamp of when the requisition was first created.
+creator_id,Foreign key referencing the USER who created the requisition.
+employment_status,"The work type of the requisition ('full-time', 'part-time', 'intern', 'contractor', or 'temp-worker')."
+headcount_hired,"The number of filled seats / openings on the requisition, or the string, 'unlimited'."
+headcount_infinite,todo!!!
+headcount_total,Total headcount allotted for this requisition.
+hiring_manager_id,Foreign key referencing the USER who is the hiring manager for this requisition.
+internal_notes,"Free form text for notes and meta-data about the requisition, visible to anyone who can see the requisition in Lever."
+location,The location associated with the requisition.
+name,The human-readable name for the requisition.
+owner_id,Foreign key referencing the USER who owns the requisition.
+requisition_code,The unique HRIS requisition code.
+status,"The status of the requisition. Can be 'open', 'onHold', 'closed', or 'draft'."
+team,The team associated with the requisition

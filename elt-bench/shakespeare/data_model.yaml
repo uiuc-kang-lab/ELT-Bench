@@ -1,0 +1,20 @@
+models:
+  - name: shakespeare__works
+    description: Each record represents a work.
+    columns:
+      - name: id
+        description: Unique identifier for the work.
+      - name: title
+        description: The title of the work.
+      - name: genretype
+        description: The genre type of the work.
+      - name: num_characters
+        description: The number of characters in the work, replace NULL values with 0.
+      - name: num_scenes
+        description: The number of scenes in the work, replace NULL values with 0.
+      - name: has_a_character_as_a_Third_Servingman
+        description: Set to 1 if the work has  a character as a "Third Servingman", otherwise, set to 0.
+      - name: is_one_act_work
+        description: Set to 1 if the work is a one-act work, 0 otherwise.
+      - name: average_scene_per_act
+        description: The average number of scenes per act in the work.

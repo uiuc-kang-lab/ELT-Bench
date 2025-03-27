@@ -1,0 +1,9 @@
+column_name,column_description
+_fivetran_synced,Timestamp of when fivetran synced a record.
+created_at,The date and time when the account history record was created.
+friendly_name,A user-friendly name or label associated with the account history event.
+id,The unique identifier for the account history record.
+owner_account_id,The unique id that represents the parent of this account. The OwnerAccountSid of a parent account is it's own sid.
+status,The status or state of the account history event.
+type,The type or category of the account history event.
+updated_at,The date and time when the account history record was last updated.

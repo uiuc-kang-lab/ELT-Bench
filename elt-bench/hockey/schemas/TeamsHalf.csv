@@ -1,0 +1,12 @@
+column_name,column_description
+year,year
+lgid,league ID number
+tmid,team ID
+half,First or second half of season
+rank,Final standing for the half
+g,Games
+w,wins
+l,loses
+t,ties
+gf,goals for
+ga,goal against

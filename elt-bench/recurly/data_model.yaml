@@ -1,0 +1,236 @@
+models:
+  - name: recurly__account_overview
+    description: Each record represents an account, enriched with metrics about their associated transactions. Use the most recent record if multiple records exist for the same account id.
+    columns:
+      - name: account_id
+        description: Primary key for the account.
+      - name: account_created_at
+        description: Timestamp of when the account entry was created.
+      - name: account_code
+        description: The unique identifier of the account. This cannot be changed once the account is created. Provided during account creation.
+      - name: account_company
+        description: The company related with the account.
+      - name: account_country
+        description: Country in the world the account is associated with.
+      - name: account_email
+        description: Email address associated with the account.
+      - name: account_state
+        description: Current state of the account.
+      - name: account_username
+        description: A secondary value for the account.
+      - name: total_transactions
+        description: Total amount of unique transactions issued to this account. Set to 0 if no transactions.
+      - name: total_invoices
+        description: Total amount of unique invoices issued to this account. Set to 0 if no invoices.
+      - name: total_charges
+        description: Total amount of charges issued to this account. Set to 0 if no charges.
+      - name: total_credits
+        description: Total amount of credits issued to this account. Set to 0 if no credits.
+      - name: total_balance
+        description: Gross amount of all transactions made with this account. Set to 0 if no transactions.
+      - name: total_discounts
+        description: Total amount of discounts issued to this account. Set to 0 if no discounts.
+      - name: total_taxes
+        description: Total amount of taxes issued to this account. Set to 0 if no taxes.
+      - name: total_charge_count
+        description: Total number of charges issued to this account. Set to 0 if no charges.
+      - name: total_credit_count
+        description: Total number of credits issued to this account. Set to 0 if no credits.
+      - name: first_charge_date
+        description: Date the first charge on the account was issued.
+      - name: most_recent_charge_date
+        description: Date the most recent charge on the account was issued.
+      - name: first_invoice_date
+        description: Date the first invoice on the account was issued.
+      - name: most_recent_invoice_date
+        description: Date the most recent invoice on the account was issued.
+      - name: first_transaction_date
+        description: Date first transaction occurred on the account.
+      - name: most_recent_transaction_date
+        description: Date most recent transaction occurred on the account. 
+
+  - name: recurly__balance_transactions
+    description: Each record represents a specific line item charge, credit, or other balance change that accumulates into the final invoices.
+    columns:
+      - name: balance_transaction_id
+        description: Unique identifier for the balance transaction line item
+      - name: created_at
+        description: When the line item was created.
+      - name: updated_at
+        description: When the line item was last updated.
+      - name: account_id
+        description: Customer in Recurly responsible for the line item.
+      - name: invoice_id
+        description: Invoice in Recurly these line items are associated with.
+      - name: invoice_number
+        description: If VAT taxation and the Country Invoice Sequencing feature are enabled, invoices will have country-specific invoice numbers for invoices billed to EU countries (e.g. FR1001). Non-EU invoices will continue to use the site-level invoice number sequence.
+      - name: type
+        description: Charges are positive line items that debit the account. Credits are negative line items that credit the account. Enum, "charge", "credit"
+      - name: state
+        description: Pending line items are charges or credits on an account that have not been applied to an invoice yet. Invoiced line items will always have an invoice_id value. Enum, "invoiced", "pending"
+      - name: origin
+        description: A credit created from an original charge will have the value of the charge's origin
+      - name: discount
+        description: The discount applied to the line item.
+      - name: tax
+        description: The tax amount for the line item.
+      - name: description
+        description: Description that appears on the invoice. For subscription related items this will be filled in automatically.
+      - name: has_refund
+        description: True if the line item is refund, false if it is not.
+      - name: currency
+        description: 3-letter ISO 4217 currency code.
+      - name: amount
+        description: Total after discounts and taxes (quantity * unit_amount) - (discount + tax).
+      - name: credit_applied
+        description:  The amount of credit from this line item that was applied to the invoice.
+      - name: quantity
+        description: This number will be multiplied by the unit amount to compute the subtotal before any discounts or taxes.
+      - name: unit_amount
+        description: Positive amount for a charge, negative amount for a credit.
+      - name: subtotal
+        description: Total before discounts and taxes (quantity * unit_amount).
+      - name: started_at
+        description: If an end date is present, this is value indicates the beginning of a billing time range. If no end date is present it indicates billing for a specific date.
+      - name: invoice_state
+        description: The invoice state. Enum, "open", "pending", "processing", "past_due", "paid", "closed", "failed", "voided".
+      - name: invoice_origin
+        description: The event that created the invoice. Enum, "credit", "gift_card", "immediate_change", "line_item_refund", "open_amount_refund", "purchase", "renewal", "termination", "write_off", "prepayment".
+      - name: invoice_type
+        description: Invoices are either "charge", "credit", or "legacy" invoices.
+      - name: invoice_created_at
+        description: When the invoice was created.
+      - name: invoice_due_at
+        description: Date invoice is due. This is the date the net terms are reached.
+      - name: invoice_closed_at
+        description: Date invoice was marked paid or failed.
+      - name: transaction_id
+        description: The id of the transaction associated with the invoice.
+      - name: transaction_created_at
+        description: Time transaction was created.
+      - name: transaction_type
+        description: >
+          Transaction types:
+            authorization: verifies billing information and places a hold on money in the customer's account.
+            capture: captures funds held by an authorization and completes a purchase.
+            purchase: combines the authorization and capture in one transaction.
+            refund: returns all or a portion of the money collected in a previous transaction to the customer.
+            verify: a $0 or $1 transaction used to verify billing information which is immediately voided.
+          Enum: "authorization", "capture", "purchase", "refund", "verify"
+      - name: transaction_origin
+        description: Describes how the transaction was triggered. Enum, "api", "chargeback", "force_collect", "hpp", "merchant", "recurly_admin", "recurlyjs", "recurring", "refunded_externally", "transparent"
+      - name: transaction_status
+        description: The current transaction status. Note that the status may change, e.g. a pending transaction may become declined or success may later become void. Enum:"chargeback", "declined", "error", "pending", "processing", "scheduled", "success", "void"
+      - name: transaction_billing_country 
+        description: Billing info - Country, 2-letter ISO code.
+      - name: transaction_payment_method_object
+        description: >
+          Examples include: "amazon", "amazon_billing_agreement", "apple_pay", "bank_account_info", "check", "credit_card", "eft", "debit",
+          "gateway_token", "iban_bank_account", "money_order", "other", "paypal", "paypal_billing_agreement", "roku", 
+          "sepadirectdebit", "wire_transfer"
+
+  - name: recurly__churn_analysis
+    description: Each record represents a subscription and their churn status and details. 
+    columns: 
+      - name: subscription_id
+        description: Unique identifier for the subscription.
+      - name: activated_at
+        description: When the subscription was activated.  
+      - name: account_id
+        description: The account this subscription belongs to. 
+      - name: account_state
+        description: Current state of the account.
+      - name: canceled_at
+        description: When the subscription was canceled. Can take future dates.
+      - name: current_period_ended_at
+        description: Current billing period ends at.
+      - name: current_period_started_at
+        description: Current billing period started at.
+      - name: expires_at
+        description: When the subscription has expired. Can take future dates.
+      - name: expiration_reason
+        description: Reason for subscription expiration.
+      - name: has_auto_renew
+        description: Whether the subscription renews at the end of its term. Default:true
+      - name: plan_name
+        description: This name describes your plan and will appear on the Hosted Payment Page and the subscriber's invoice.
+      - name: plan_state
+        description: The current state of the plan. Enum:"active", "inactive"
+      - name: subscription_end_date
+        description: When the subscription actually ends, factors in cancellations earlier than the expected end date.
+      - name: subscription_interval_days
+        description: Subscription interval by number of days, accounting for cancelled/expired periods. 
+      - name: subscription_state
+        description: The current state of the subscription. Enum:"active", "canceled", "expired", "failed", "future", "paused"
+      - name: subtotal
+        description: Estimated total, before tax.
+      - name: unit_amount
+        description: Subscription unit price.
+      - name: churn_reason
+        description: Reason for churn. null if subscription has no expiration date. Enum:"account closed", "canceled", "gift ended", "non-payment", "non-renewing", "tax location invalid", "trial ended"
+      - name: churn_reason_type 
+        description: Type of churn, null if subscription has no expiration date. Enum:"involuntary", "voluntary"
+
+  - name: recurly__subscription_overview
+    description: Each record represents a subscription, enriched with metrics about time, revenue, state, and period. Use the most recent record if multiple records exist for the same subscription id.
+    columns:
+      - name: subscription_id
+        description: Unique identifier for the subscription.
+      - name: updated_at
+        description: When the subscription was updated.
+      - name: activated_at
+        description: When the subscription was activated.  
+      - name: add_ons_total
+        description: Total price of add-ons. Greater or equal to 0.
+      - name: canceled_at
+        description: When the subscription was canceled. Can take future dates.
+      - name: current_period_ended_at
+        description: Current billing period ends at.
+      - name: current_period_started_at
+        description: Current billing period started at.
+      - name: expiration_reason
+        description: Reason for subscription expiration.
+      - name: expires_at
+        description: When the subscription has expired. Can take future dates.
+      - name: has_auto_renew
+        description: Whether the subscription renews at the end of its term. Default:true
+      - name: subscription_state
+        description: The current state of the subscription. Enum:"active", "canceled", "expired", "failed", "future", "paused"
+      - name: subscription_end_date
+        description: When the subscription actually ends, factors in cancellations earlier than the expected end date.
+      - name: subscription_interval_days
+        description: Subscription interval by number of days, accounting for cancelled/expired periods. 
+      - name: subtotal
+        description: Estimated total, before tax.
+      - name: trial_ends_at
+        description: Trial period ends at.
+      - name: trial_started_at
+        description: Trial period started at.
+      - name: trial_interval_days
+        description: Period of trial, in days.
+      - name: unit_amount
+        description: Subscription unit price.
+      - name: account_id
+        description: The account this subscription belongs to. 
+      - name: account_created_at
+        description: The date this account was created.
+      - name: account_email
+        description: Email address associated with the account for this subscription.
+      - name: account_state
+        description: Current state of the account.
+      - name: plan_code
+        description: Unique code to identify the plan. This is used in Hosted Payment Page URLs and in the invoice exports.
+      - name: plan_created_at
+        description: When the plan was created.
+      - name: plan_deleted_at
+        description: When the plan was deleted.
+      - name: plan_interval_days
+        description: The number of days on the expected Recurly plan. Assume a month has 30 days.
+      - name: plan_is_tax_exempt
+        description: true exempts tax on the plan, false applies tax on the plan.
+      - name: plan_name
+        description: This name describes your plan and will appear on the Hosted Payment Page and the subscriber's invoice.
+      - name: plan_state
+        description: The current state of the plan. Enum:"active", "inactive"
+      - name: plan_total_billing_cycles
+        description: Automatically terminate subscriptions after a defined number of billing cycles. Number of billing cycles before the plan automatically stops renewing, defaults to null for continuous, automatic renewal.

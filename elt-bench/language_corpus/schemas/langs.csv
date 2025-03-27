@@ -1,0 +1,6 @@
+column_name,column_description
+lid,language id 
+lang,language name 
+locale,The locale of the language
+pages,total pages of Wikipedia in this language
+words,total number of words in this pages

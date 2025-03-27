@@ -1,0 +1,14 @@
+column_name,column_description
+api_method_name,"API method used for change, if applicable."
+activity_date,Timestamp of the actvity.
+activity_type_id,ID of the activity type.
+campaign_id,"The ID of the related campaign, if applicable."
+id,ID of the activity.
+lead_id,Id of the lead associated to the activity.
+modifying_user,"The user who instigated the change, if applicable."
+new_value,New value after the change.
+old_value,Old value before the change.
+primary_attribute_value,Value of the primary attribute.
+primary_attribute_value_id,ID of the primary attribute field.
+reason,Reason for the data change.
+request_id,ID of the request made.

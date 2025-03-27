@@ -1,0 +1,47 @@
+column_name,column_description
+id,Unique identifier for the object.
+updated_at,When the subscription was updated.
+account_id,The account this subscription belongs to.
+activated_at,When the subscription was activated.
+add_ons_total,Total price of add-ons. Greater or equal to 0.
+auto_renew,"Whether the subscription renews at the end of its term. Default: true
+"
+bank_account_authorized_at,"Merchants importing recurring subscriptions paid with ACH into Recurly can  backdate the subscription's authorization with this attribute using an ISO 8601 timestamp.  This timestamp is used for alerting customers to reauthorize in 3 years in accordance  with NACHA rules. If a subscription becomes inactive or the billing info is no longer  a bank account, this timestamp is cleared.
+"
+canceled_at,When the subscription was canceled. Can take future dates
+collection_method,"Default: ""automatic"" Enum: ""automatic"", ""manual""
+"
+created_at,When the subscription was created.
+currency,3-letter ISO 4217 currency code.
+current_period_ends_at,Date/time current billing period ends at.
+current_period_started_at,Date/time current billing period started at.
+current_term_ends_at,"When the term ends. This is calculated by a plan's interval and total_billing_cycles in a term.  Subscription changes with a timeframe=renewal will be applied on this date.
+"
+current_term_started_at,"The start date of the term when the first billing period starts.  The subscription term is the length of time that a customer will be committed to a subscription.  A term can span multiple billing periods.
+"
+customer_notes,"This will default to the Customer Notes text specified on the Invoice Settings page. Custom notes will stay with a subscription on all renewals.
+"
+expiration_reason,Expiration reason
+expires_at,When the subscription has expired. Can take future dates.
+net_terms,Identifies the agreement associated with the subscription.
+object,"The object type, in this case only ""subscription"""
+paused_at,Null unless subscription is paused or will pause at the end of the current billing period.
+plan_id,The plan this subscription belongs to.
+po_number,"For manual invoicing, this identifies the PO number associated with the subscription."
+quantity,Subscription quantity. Greater or equal to 0.
+remaining_billing_cycles,The remaining billing cycles in the current term.
+remaining_pause_cycles,Null unless subscription is paused or will pause at the end of the current billing period.
+renewal_billing_cycles,"If auto_renew=true, when a term completes, total_billing_cycles takes this value as the length of subsequent terms.  Defaults to the plan's total_billing_cycles.
+"
+shipping_address_id,Unique id assigned to shipping address.
+state,"The current state of the subscription. Enum: ""active"", ""canceled"", ""expired"", ""failed"", ""future"", ""paused""
+"
+subtotal,"Estimated total, before tax."
+terms_and_conditions,"Optional notes field.  This will default to the Terms and Conditions text specified on the Invoice Settings page.
+"
+total_billing_cycles,"The number of cycles/billing periods in a term.  When remaining_billing_cycles=0, if auto_renew=true the subscription will renew and a new term will begin,  otherwise the subscription will expire.
+"
+trial_ends_at,Trial period ends at
+trial_started_at,Trial period started at
+unit_amount,Subscription unit price
+uuid,The UUID is useful for matching data with the CSV exports and building URLs into Recurly's UI.

@@ -1,0 +1,10 @@
+column_name,column_description
+circuitId,unique identification number of the circuit 
+circuitRef,circuit reference name 
+name,full name of circuit 
+location_,location of circuit 
+country,country of circuit 
+lat,latitude of location of circuit 
+lng,longitude of location of circuit 
+alt,
+url,url 

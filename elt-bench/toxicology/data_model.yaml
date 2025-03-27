@@ -1,0 +1,20 @@
+models:
+  - name: molecules
+    description: Each record represents a molecule.
+    columns:
+      - name: molecule_id
+        description: Unique identifier for the molecule.
+      - name: carcinogenic_label
+        description: whether this molecule is carcinogenic or not
+      - name: num_single_bonds
+        description: number of single bonds in the molecule, replace NULL values with 0.
+      - name: per_triple_bonds
+        description: percentage of triple bonds in the molecule
+      - name: num_atom_types
+        description: number of different atom types in the molecule, replace NULL values with 0.
+      - name: ratio_of_Hydrogen_elements
+        description: ratio of Hydrogen elements in the molecule
+      - name: has_double_bonded_Carbon_atom
+        description: set to 1 if the molecule has a double bonded Carbon atom, otherwise, set to 0
+      
+ 

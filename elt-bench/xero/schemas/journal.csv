@@ -1,0 +1,8 @@
+column_name,column_description
+journal_id,Xero identifier for the journal entry
+created_date_utc,The created date of the journal entry
+journal_date,The date the journal was posted
+journal_number,Xero generated journal number
+reference,"The associated reference to the journal, if present."
+source_id,The identifier for the source transaction. This can be used to join to other Xero tables.
+source_type,The journal source type. This can be used to know which table to join to for additional information.

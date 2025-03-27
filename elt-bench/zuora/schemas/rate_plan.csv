@@ -1,0 +1,18 @@
+column_name,column_description
+id,The unique identifier of the rate plan.
+_fivetran_synced,Timestamp of when a record was last synced.
+_fivetran_deleted,Boolean identifiying whether the record was deleted in the source.
+account_id,The unique identifier of the account that the rate plan belongs to.
+amendment_id,The unique identifier of the amendment that the rate plan belongs to.
+bill_to_contact_id,The unique identifier of the contact that the rate plan is billed to.
+created_by_id,The unique identifier of the user who created the rate plan.
+created_date,The date and time when the rate plan was created.
+default_payment_method_id,The unique identifier of the default payment method for the rate plan.
+name,The name of the rate plan.
+original_rate_plan_id,The unique identifier of the original rate plan that was used to create the rate plan.
+product_id,The unique identifier of the product that the rate plan belongs to.
+product_rate_plan_id,The unique identifier of the product rate plan that the rate plan belongs to.
+sold_to_contact_id,The unique identifier of the contact that the rate plan is sold to.
+subscription_id,The unique identifier of the subscription that the rate plan belongs to.
+updated_by_id,The unique identifier of the user who last updated the rate plan.
+updated_date,The date and time when the rate plan was last updated.

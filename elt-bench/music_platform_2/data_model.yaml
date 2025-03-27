@@ -1,0 +1,35 @@
+models:
+  - name: music_platform__categories
+    description: Each record represents a category.
+    columns:
+      - name: category
+        description: Category of the podcast
+      - name: num_podcasts
+        description: Number of podcasts in the category, replace NULL values with 0.
+      - name: num_reviews
+        description: The number of reviews of podcasts in the category, replace NULL values with 0.
+      - name: avg_rating
+        description: The average rating of podcasts in the category
+      - name: latest_review_podcast_title
+        description: The title of the podcast with the latest review in the category, with ties broken by the ascending order of the podcast title.
+      - name: includes_podcast_with_jessica_in_title
+        description: Set to 1 if the category includes a podcast with 'Jessica' in the title, 0 otherwise.
+  - name: music_platform__podcasts
+    description: Each record represents a podcast.
+    columns:
+      - name: podcast_id
+        description: The unique identifier of the podcast.
+      - name: podcast_title
+        description: The title of the podcast.
+      - name: itunes_url
+        description: URL to the podcast page.
+      - name: has_at_least_four_categories
+        description: Set to 1 if the podcast are categorized in four or more categories, otherwise, set to 0
+      - name: avg_rating
+        description: The average rating of the podcast
+      - name: content_of_earliest_review
+        description: The content of the earliest review of the podcast, with ties broken by the ascending order of the review content.
+      - name: num_people_rated_5
+        description: The number of people who rated the podcast 5, replace NULL values with 0.
+      - name: longest_review
+        description: The longest review of the podcast, with ties broken by the descending order of the review content.

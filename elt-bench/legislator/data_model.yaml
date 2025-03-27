@@ -1,0 +1,20 @@
+models:
+  - name: current_legislators
+    description: Each record represents a current legislator.
+    columns:
+      - name: bioguide_id
+        description: The unique identifier of the legislator.
+      - name: gender_bio
+        description:  The gender of the legislator.
+      - name: full_name
+        description: The full name of the legislator.
+      - name: num_served_terms
+        description: The number of terms the current legislator has served, replace NULL values with 0.
+      - name: has_served_in_Maine
+        description: Set to 1 if the current legislator has served in Maine, 0 otherwise.
+      - name: is_male_but_is_not_senator
+        description: Set to 1 if the current legislator is male but is not a senator, 0 otherwise.
+      - name: is_Jewish_but_does_not_have_facebook
+        description: Set to 1 if the current legislator is Jewish but does not have a Facebook account, 0 otherwise.
+      - name: has_a_nickname
+        description: Set to 1 if the current legislator has a nickname, 0 otherwise.

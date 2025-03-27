@@ -1,0 +1,18 @@
+models:
+  - name: courses
+    description: Each record represents a course.
+    columns:
+      - name: course_id
+        description: Unique identifier for the course
+      - name: courselevel
+        description: Course level
+      - name: number_of_professors
+        description: Number of professors teaching the course, replace NULL values with 0.
+      - name: number_of_professors_not_faculty
+        description: Number of professors teaching the course who are not faculty, replace NULL values with 0.
+      - name: number_of_professors_faculty
+        description: Number of professors teaching the course who are faculty, replace NULL values with 0.
+      - name: taught_by_more_than_4_people
+        description: Set to 1 if the course is taught by more than 4 people, otherwise, set to 0
+      - name:  taught_by_the_advisors
+        description: Set to 1 if the course is taught by the advisors who gave advice to student, otherwise, set to 0

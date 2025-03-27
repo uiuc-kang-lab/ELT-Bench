@@ -1,0 +1,5 @@
+column_name,column_description
+id,System generated unique id for the repository.
+created_at,Timestamp of when the repository was created.
+full_name,The name of the git repository.
+private,Boolean field indicating whether the repository is private (true) or public (false).

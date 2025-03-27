@@ -1,0 +1,5 @@
+column_name,column_description
+disp_id,unique number of identifying this row of record
+client_id,id number of client
+account_id,id number of account
+type,type of disposition

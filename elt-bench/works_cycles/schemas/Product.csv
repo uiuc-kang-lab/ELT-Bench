@@ -1,0 +1,26 @@
+column_name,column_description
+productid,The unique id number identifying the product.
+name,Name of the product.
+productnumber,The unique product identification number.
+makeflag,The source of product make.
+finishedgoodsflag,Whether the product is salable or not.
+color,Color
+safetystocklevel,The minimum inventory quantity.
+reorderpoint,Inventory level that triggers a purchase order or work order.
+standardcost,Standard cost of the product.
+listprice,Selling price
+size,Product size
+sizeunitmeasurecode,Unit of measure for Size column.
+weightunitmeasurecode,Unit of measure for Weight column.
+weight,Product weight
+daystomanufacture,Number of days required to manufacture the product.
+productline,Product Routine
+class,Product quality class
+style,Style
+productsubcategoryid,Product is a member of this product subcategory.
+productmodelid,Product is a member of this product model.
+sellstartdate,Date the product was available for sale.
+sellenddate,Date the product was no longer available for sale.
+discontinueddate,Date the product was discontinued.
+rowguid,Uniquely identifying the record. Used to support a merge replication sample. 
+modifieddate,Date and time the record was last updated. 

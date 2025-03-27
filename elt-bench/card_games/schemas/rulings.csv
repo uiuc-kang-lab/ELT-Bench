@@ -1,0 +1,5 @@
+column_name,column_description
+id,unique id identifying this ruling
+date,date 
+text,description about this ruling
+uuid,

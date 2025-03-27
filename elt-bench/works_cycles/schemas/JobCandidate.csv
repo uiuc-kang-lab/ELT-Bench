@@ -1,0 +1,5 @@
+column_name,column_description
+jobcandidateid,The unique id number identifying the job candidates.
+businessentityid,Employee identification number if applicant was hired.
+resume,Resume in XML format.
+modifieddate,Date and time the record was last updated. 

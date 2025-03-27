@@ -1,0 +1,22 @@
+models:
+  - name: synthea__patients
+    description: Each record represents a patient.
+    columns:
+      - name: patient
+        description: The unique identifier of the patient.
+      - name: name
+        description: The name of the patient, formed by concatenating the first name and last name with a space in between.
+      - name: birthdate
+        description: The birth date of the patient
+      - name: highest_Systolic_Blood_Pressure_observed
+        description: The highest systolic blood pressure observed for the patient.
+      - name: number_of_immunizations
+        description: The number of immunizations the patient has received, replace NULL values with 0.
+      - name: num_encounters_between_2010_and_2017
+        description: The number of encounters the patient has with medical professionals between 2010 and 2017, replace NULL values with 0.
+      - name: has_received_the_IPV_and_is_english
+        description: Set to 1 if the patient has received the IPV and is English, 0 otherwise.
+      - name: time_recieve_most_recent_vaccine
+        description: The time when the patient received her/his most recent influenza seasonal vaccine
+
+      

@@ -1,0 +1,7 @@
+column_name,column_description
+zip_code,The ZIP code itself. A five-digit number identifying a US post office.
+type,The kind of ZIP code
+city,The city to which the ZIP pertains
+county,The county to which the ZIP pertains
+state,The name of the state to which the ZIP pertains
+short_state,The abbreviation of the state to which the ZIP pertains

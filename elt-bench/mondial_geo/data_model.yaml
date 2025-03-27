@@ -1,0 +1,20 @@
+models:
+  - name: countries
+    description: Each record represents a country.
+    columns:
+      - name: country_name
+        description: The name of the country.
+      - name: country_area
+        description: The area of the country.
+      - name: country_population
+        description: The population number of the country.
+      - name: the_majority_ethnic_group
+        description: The majority ethnic group in the country, with ties broken by the ascending order of the ethnic group name.
+      - name: num_ethnic_groups
+        description: The number of ethnic groups in the country, replace NULL values with 0.
+      - name: num_languages_spoken
+        description: The number of languages spoken in the country, replace NULL values with 0.
+      - name: has_over_1_organizations_and_an_inflation_rate_of_over_3_per
+        description: Set to 1 if the country has over 1 organizations and an inflation rate of over 3, otherwise, set to 0.
+      - name: num_neighbors
+        description: The number of neighbors of the country, replace NULL values with 0.

@@ -1,0 +1,44 @@
+column_name,column_description
+id,The unique identifier for the subscription.
+_fivetran_synced,Timestamp of when a record was last synced.
+_fivetran_deleted,Boolean identifiying whether the record was deleted in the source.
+account_id,The unique identifier for the account associated with the subscription.
+auto_renew,Indicates whether the subscription is set to automatically renew at the end of the term.
+bill_to_contact_id,The unique identifier for the contact that will be billed for the subscription.
+cancel_reason,"The reason for cancelling the subscription, if applicable."
+cancelled_date,"The date on which the subscription was cancelled, if applicable."
+contract_acceptance_date,The date on which the contract was accepted by the customer.
+contract_effective_date,The date on which the contract became effective.
+created_by_id,The unique identifier for the user who created the subscription.
+created_date,The date on which the subscription was created.
+current_term,The length of the current subscription term.
+current_term_period_type,"The unit of time for the current subscription term (e.g. ""Month"", ""Year"")."
+default_payment_method_id,The unique identifier for the default payment method associated with the subscription.
+externally_managed_by,Indicates whether the subscription is externally managed by another system or platform.
+initial_term,The length of the initial subscription term.
+initial_term_period_type,"The unit of time for the initial subscription term (e.g. ""Month"", ""Year"")."
+invoice_owner_id,The unique identifier for the user who will receive invoice notifications for the subscription.
+is_invoice_separate,Indicates whether the subscription is invoiced separately from other subscriptions on the same account.
+is_latest_version,Indicates whether the subscription is the latest version of the subscription on the account.
+last_booking_date,The date on which the most recent booking was created for the subscription.
+name,The name of the subscription.
+notes,Additional notes or comments about the subscription.
+original_created_date,"The date on which the original subscription was created, if the current subscription is a renewal."
+original_id,"The unique identifier for the original subscription, if the current subscription is a renewal."
+parent_account_id,The unique identifier for the parent account associated with the subscription.
+payment_term,The payment term associated with the subscription.
+previous_subscription_id,The unique identifier for the previous subscription associated with the subscription.
+renewal_term,The length of the renewal subscription term.
+renewal_term_period_type,The type of the renewal term for the subscription.
+revision,The revision number for the subscription.
+service_activation_date,The date the subscription was activated.
+sold_to_contact_id,The unique identifier for the sold-to contact associated with the subscription.
+status,The status of the subscription.
+subscription_end_date,The end date of the subscription.
+subscription_start_date,The start date of the subscription.
+term_end_date,The end date of the subscription term.
+term_start_date,The start date of the subscription term.
+term_type,The type of subscription term.
+updated_by_id,The unique identifier of the user who last updated the subscription.
+updated_date,The date the subscription was last updated.
+version,The version number of the subscription.

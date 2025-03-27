@@ -1,0 +1,66 @@
+Airbyte:
+  config:
+    files_definition_id: 778daa7c-feaf-4db6-96f3-70fd645acc77
+    mongodb_definition_id: b2e713cd-cc36-4c0a-b5bd-b47cb8a0561e
+    namespace_definition: destination
+    postgres_definition_id: decd338e-5647-4c0b-adf4-da0e75f5a750
+    s3_definition_id: 69589781-7828-43c5-9f63-8925b1c1ccc2
+    server_url: http://airbyte-abctl-control-plane:80/api/public/v1/
+    snowflake_definition_id: 424892c4-daac-4491-b35d-c6688ba547ba
+aws_s3:
+  AWS_ACCESS_KEY_ID: test
+  AWS_DEFAULT_REGION: us-west-2
+  AWS_ENDPOINT_URL: http://elt-localstack:4566
+  AWS_SECRET_ACCESS_KEY: test
+  data:
+  - path: s3://book-publishing-company-bucket/discounts.csv
+    sync_mode: full_refresh_append
+    table: discounts
+  - path: s3://book-publishing-company-bucket/pub_info.jsonl
+    sync_mode: full_refresh_append
+    table: pub_info
+custom_api:
+  config:
+    configuration: {}
+    sync_mode: full_refresh_append
+    tables:
+    - publishers
+    - stores
+    - titles
+flat_files:
+- format: jsonl
+  path: https://drive.google.com/uc?export=download&id=1z0Ibt2Gl3eS2PhCfaVVZ0_YUfYGG2Rey
+  sync_mode: full_refresh_append
+  table: jobs
+- format: csv
+  path: https://drive.google.com/uc?export=download&id=1FgDnjrK-DqTTZKcxgzXE2hs0atpHk7Gd
+  sync_mode: full_refresh_append
+  table: titleauthor
+mongodb:
+  config:
+    connection_string: mongodb://elt-mongodb:27017/?directConnection=true
+    database: book_publishing_company
+    sync_mode: full_refresh_append
+    tables:
+    - authors
+    - employee
+postgres:
+  config:
+    database: book_publishing_company
+    host: elt-postgres
+    password: testelt
+    port: 5432
+    schema: public
+    sync_mode: full_refresh_append
+    tables:
+    - roysched
+    - sales
+    user: postgres
+snowflake:
+  config:
+    database: book_publishing_company
+    password: Snowflake@123
+    role: AIRBYTE_ROLE
+    schema: AIRBYTE_SCHEMA
+    username: AIRBYTE_USER
+    warehouse: AIRBYTE_WAREHOUSE

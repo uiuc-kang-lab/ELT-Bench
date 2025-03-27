@@ -1,0 +1,13 @@
+column_name,column_description
+journal_line_id,Xero identifier for the journal line.
+account_code,Customer defined alpha numeric account code e.g 200 or SALES
+account_id,The Xero identifier for the related account.
+account_name,The name of the related account.
+account_type,The type of the related account.
+description,The description from the source transaction line item.
+gross_amount,Gross amount of journal line (NetAmount + TaxAmount).
+journal_id,The Xero identifier for the related journal entry.
+net_amount,Net amount of journal line. This will be a positive value for a debit and negative for a credit
+tax_amount,Total tax on a journal line
+tax_name,The name of the tax rate.
+tax_type,The type of the tax rate.

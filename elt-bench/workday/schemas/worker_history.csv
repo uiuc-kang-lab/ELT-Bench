@@ -1,0 +1,86 @@
+column_name,column_description
+id,Unique identifier.
+_fivetran_deleted,Indicates if the record was soft-deleted by Fivetran.
+_fivetran_synced,Timestamp the record was synced by Fivetran.
+academic_tenure_date,Date when academic tenure is achieved.
+active,Flag indicating the current active status of the worker.
+active_status_date,Date when the active status was last updated.
+annual_currency_summary_currency,Currency used for annual compensation summaries.
+annual_currency_summary_frequency,Frequency of currency for annual compensation summaries.
+annual_currency_summary_primary_compensation_basis,Primary compensation basis used for annual compensation summaries.
+annual_currency_summary_total_base_pay,Total base pay in the currency for annual summaries.
+annual_currency_summary_total_salary_and_allowances,Total salary and allowances in the currency for annual summaries.
+annual_summary_currency,Currency used for annual summaries.
+annual_summary_frequency,Frequency of currency for annual summaries.
+annual_summary_primary_compensation_basis,Primary compensation basis used for annual summaries.
+annual_summary_total_base_pay,Total base pay in the currency for annual summaries.
+annual_summary_total_salary_and_allowances,Total salary and allowances in the currency for annual summaries.
+benefits_service_date,Date when the worker's benefits service starts.
+company_service_date,Date when the worker's service with the company started.
+compensation_effective_date,Effective date when changes to the worker's compensation take effect.
+compensation_grade_id,Identifier for the compensation grade.
+compensation_grade_profile_id,Unique identifier for the compensation grade profile associated with the worker.
+continuous_service_date,Date when the worker's continuous service with the organization started.
+contract_assignment_details,Details of the worker's contract assignment.
+contract_currency_code,Currency code used for the worker's contract.
+contract_end_date,Date when the worker's contract is scheduled to end.
+contract_frequency_name,Frequency of payment for the worker's contract.
+contract_pay_rate,Pay rate associated with the worker's contract.
+contract_vendor_name,Name of the vendor associated with the worker's contract.
+date_entered_workforce,Date when the worker entered the workforce.
+days_unemployed,Number of days the worker has been unemployed.
+eligible_for_hire,Flag indicating whether the worker is eligible for hire.
+eligible_for_rehire_on_latest_termination,Flag indicating whether the worker is eligible for rehire based on the latest termination.
+employee_compensation_currency,Currency code used for the worker's employee compensation.
+employee_compensation_frequency,Frequency of payment for the worker's employee compensation.
+employee_compensation_primary_compensation_basis,Primary compensation basis used for the worker's employee compensation.
+employee_compensation_total_base_pay,Total base pay for the worker's employee compensation.
+employee_compensation_total_salary_and_allowances,Total salary and allowances for the worker's employee compensation.
+end_employment_date,Date when the worker's employment is scheduled to end.
+expected_date_of_return,Expected date of the worker's return.
+expected_retirement_date,Expected date of the worker's retirement.
+first_day_of_work,The date when the worker started their first day of work.
+has_international_assignment,Flag indicating whether the worker has an international assignment.
+hire_date,The date when the worker was hired.
+hire_reason,The reason for hiring the worker.
+hire_rescinded,Flag indicating whether the worker's hire was rescinded.
+home_country,The home country of the worker.
+hourly_frequency_currency,Currency code used for the worker's hourly compensation.
+hourly_frequency_frequency,Frequency of payment for the worker's hourly compensation.
+hourly_frequency_primary_compensation_basis,Primary compensation basis used for the worker's hourly compensation.
+hourly_frequency_total_base_pay,Total base pay for the worker's hourly compensation.
+hourly_frequency_total_salary_and_allowances,Total salary and allowances for the worker's hourly compensation.
+last_datefor_which_paid,Last date for which the worker was paid.
+local_termination_reason,The reason for local termination of the worker.
+months_continuous_prior_employment,Number of months of continuous prior employment.
+not_returning,Flag indicating whether the worker is not returning.
+original_hire_date,The original date when the worker was hired.
+pay_group_frequency_currency,Currency code used for the worker's pay group frequency.
+pay_group_frequency_frequency,Frequency of payment for the worker's pay group.
+pay_group_frequency_primary_compensation_basis,Primary compensation basis used for the worker's pay group.
+pay_group_frequency_total_base_pay,Total base pay for the worker's pay group.
+pay_group_frequency_total_salary_and_allowances,Total salary and allowances for the worker's pay group.
+pay_through_date,The date through which the worker is paid.
+primary_termination_category,The primary termination category for the worker.
+primary_termination_reason,The primary termination reason for the worker.
+probation_end_date,The date when the worker's probation ends.
+probation_start_date,The date when the worker's probation starts.
+reason_reference_id,The reference ID for the termination reason.
+regrettable_termination,Flag indicating whether the worker's termination is regrettable.
+rehire,Flag indicating whether the worker is eligible for rehire.
+resignation_date,The date when the worker resigned.
+retired,Flag indicating whether the worker is retired.
+retirement_date,The date when the worker retired.
+retirement_eligibility_date,The date when the worker becomes eligible for retirement.
+return_unknown,Flag indicating whether the worker's return status is unknown.
+seniority_date,The date when the worker's seniority is recorded.
+severance_date,The date when the worker's severance is recorded.
+terminated,Flag indicating whether the worker is terminated.
+termination_date,The date when the worker is terminated.
+termination_involuntary,Flag indicating whether the termination is involuntary.
+termination_last_day_of_work,The last day of work for the worker during termination.
+time_off_service_date,The date when the worker's time-off service starts.
+universal_id,The universal ID associated with the worker.
+user_id,The identifier for the user associated with the worker.
+vesting_date,The date when the worker's vesting starts.
+worker_code,The code associated with the worker.

@@ -1,0 +1,39 @@
+models:
+  - name: community_areas
+    description: Each record represents a community area.
+    columns:
+      - name: community_area_no
+        description: Unique identifier for the community area.
+      - name: community_area_name
+        description: Name of the community area.
+      - name: population
+        description: Population of the community area.
+      - name: num_neighborhoods
+        description: Number of neighborhoods in the community area, replace NULL values with 0.
+      - name: num_crimes
+        description: Number of crimes reported in the community area, replace NULL values with 0.
+      - name: num_pocket_picking_thefts
+        description: Number of pocket-picking thefts reported in the community area, replace NULL values with 0.
+      - name: per_under_500_thefts
+        description: Percentage of thefts in the community area that are under $500.
+      - name: more_than_average_solicit_for_prostitutes_reported
+        description: Set to 1 if the number of solicitations for prostitutes reported in the community area is more than the average number of solicitations for prostitutes reported in all community areas; otherwise, set to 0.
+  - name: districts
+    description: Each record represents a district.
+    columns:  
+      - name: district_no
+        description: Unique identifier for the district.
+      - name: district_name
+        description: Name of the district.
+      - name: email
+        description: Email of the district.
+      - name: num_crimes_Jan_2018
+        description: Number of crimes reported in January 2018 in the district, replace NULL values with 0.
+      - name: num_crimes
+        description: Number of crimes reported in the district, replace NULL values with 0.
+      - name: diff_bewteen_vehicular_hijackings_and_aggravated_vehicular_hijackings
+        description: Difference between the number of vehicular hijackings and the number of aggravated vehicular hijackings reported in the district.
+      - name: per_crimes_heppened_inside_the_house
+        description: Percentage of crimes reported in the district that happened inside the house.
+      - name: num_domestic_violence
+        description: Number of domestic violence cases reported in the district, replace NULL values with 0.

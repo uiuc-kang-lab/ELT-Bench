@@ -1,0 +1,17 @@
+column_name,column_description
+l_shipdate,ship date of line item 
+l_orderkey,order key number of line item 
+l_discount,discount of line item 
+l_extendedprice,extended price of line item 
+l_suppkey,suppkey of line item 
+l_quantity,quantity of line item 
+l_returnflag,return flag of line item 
+l_partkey,part key of line item 
+l_linestatus,line status of line item 
+l_tax,tax of line item 
+l_commitdate,commit date of line item 
+l_receiptdate,receipt date of line item 
+l_shipmode,ship mode of line item 
+l_linenumber,unique id number identifying the line item
+l_shipinstruct,ship instruct of line item 
+l_comment,comment of line item 

@@ -1,0 +1,3 @@
+column_name,column_description
+award_id,A unique identifier for the award
+character,the name of the awarded character

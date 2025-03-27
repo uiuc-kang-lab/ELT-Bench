@@ -1,0 +1,39 @@
+models:
+  - name: trucks
+    description: Each record represents a truck.
+    columns:
+      - name: truck_id
+        description: Unique identifier for the truck.
+      - name: make
+        description: The make of the truck.
+      - name: model_year
+        description: The model year of the truck.
+      - name: headquarter
+        description: Set to 'Texas (TX)' if the make is 'Peterbilt', set to 'North Carolina (NC)' if the make is Mack, set to 'Washington (WA)' isf the make is 'Kenworth'
+      - name: num_shipments
+        description: The number of shipment delivered by the truck model, replace NULL values with 0.
+      - name: person_receive_heaviest_shipment
+        description: The person who received the heaviest shipment delivered by the truck model, with ties broken by the ascending order of the customer name
+      - name: per_weight_exceed_10000
+        description: The percentage of shipments that exceed 10,000 pounds among all shipments delivered by the truck model.
+      - name: num_shipments_change_from_2016_to_2017
+        description: The number of shipments change from 2016 to 2017 delivered by the truck model, replace NULL values with 0.
+  - name: drivers
+    description: Each record represents a driver.
+    columns:
+      - name: driver_id
+        description: Unique identifier for the driver.
+      - name: first_name
+        description: The first name of the driver.
+      - name: last_name
+        description: The last name of the driver.
+      - name: num_shipments_2017 
+        description: The number of shipments the driver delivered in 2017, replace NULL values with 0.
+      - name: num_shipment_to_least_populated_city
+        description: The number of shipments to the least populated city delivered by the driver, replace NULL values with 0.
+      - name: per_shipment_placed_by_Autoware_Inc
+        description: The percentage of shipments placed by Autoware Inc among all shipments delivered by the driver.
+      - name: has_a_shipment_weight_greater_95_per_avg_across_all_shipments
+        description: Set to 1 if the driver has a shipment with a weight greater than 95% of the average weight of all shipments, 0 otherwise.
+      - name: weight_first_shipment
+        description: The weight the driver transported during his/her first shipment, with ties broken by the descending order of the weight.

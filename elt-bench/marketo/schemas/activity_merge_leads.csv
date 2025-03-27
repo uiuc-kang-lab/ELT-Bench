@@ -1,0 +1,9 @@
+column_name,column_description
+activity_date,The timestamp the lead was deleted.
+activity_type_id,The ID of the activity type.
+campaign_id,"The ID of the campaign related to the activity, if applicable."
+id,ID of the activity.
+lead_id,The ID of the lead related to the activity.
+primary_attribute_value,The primary attribute of the activity.
+primary_attribute_value_id,The ID of the primary attribute of the activity.
+merge_ids,ID of the lead that the lead was merged into.

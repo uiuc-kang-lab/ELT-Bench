@@ -1,0 +1,4 @@
+column_name,column_description
+character,The unique name of the character. 
+voice_actor,The name of the voice actor.
+movie,The name of the movie.

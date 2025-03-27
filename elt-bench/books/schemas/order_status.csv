@@ -1,0 +1,3 @@
+column_name,column_description
+status_id,the unique identifier of the order status
+status_value,the status value

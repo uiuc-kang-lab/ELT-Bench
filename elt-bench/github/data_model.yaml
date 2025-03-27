@@ -1,0 +1,163 @@
+models:
+  - name: github__issues
+    columns:
+      - name: issue_id
+        description: The unique ID of an issue.
+      - name: body
+        description: The text body of the issue's main description
+      - name: closed_at
+        description: The timestamp for when an issue was last closed.  "null" for issues that are open
+      - name: created_at
+        description: The timestamp for when an issue was created
+      - name: is_locked
+        description: Boolean indicating if the issue is locked.
+      - name: issue_number
+        description: The number of the issue.  Is unique within a repository, but not accross
+      - name: is_pull_request
+        description: Boolean indicating whether the issue is a pull request
+      - name: repository_id
+        description: Foreign key that references the repository table
+      - name: state
+        description: Whether the issue is open or closed
+      - name: title
+        description: The title of the issue
+      - name: updated_at
+        description: Timestamp of when the issue was last updated
+      - name: user_id
+        description: Foreign key that references the user table.
+      - name: number_of_times_reopened
+        description: Total number of times the issue was reopened
+      - name: number_of_comments
+        description: The total number of comments included in the issue
+      - name: repository
+        description: The repository that the issue is applicable to
+      - name: repository_team_names
+        description: An aggreate of the teams associated with the repository
+      - name: creator_login_name
+        description: User that created the issue login name
+      - name: creator_name
+        description: User that created the issue name.
+      - name: creator_company
+        description: User that created the issue company name.
+
+  - name: github__pull_requests
+    description: Basic information about pull_requests as well as additional fields about reviews and time between actions
+    columns:
+      - name: issue_id
+        description: The unique ID of an issue.
+      - name: body
+        description: the text body of the description of the pull request
+      - name: closed_at
+        description: Timestamp of when the pull request was closed.  NULL for pull requests that are still open
+      - name: created_at
+        description: Timestamp of when the pull request was created
+      - name: is_locked
+        description: Boolean indicating whether the issue is locked.
+      - name: issue_number
+        description: The number of the pull request.  Unique within a repository, but not accross.
+      - name: is_pull_request
+        description: Boolean indiciating whether the issue is a pull request.
+      - name: repository_id
+        description: Foreign key that references the repository table
+      - name: state
+        description: Whether the pull request is open or closed.
+      - name: title
+        description: The title of the pull request
+      - name: updated_at
+        description: Timestamp of when the issue was last updated
+      - name: user_id
+        description: Foreign key that references the user table.
+      - name: number_of_times_reopened
+        description: Total number of times the issue was reopened
+      - name: number_of_comments
+        description: The total number of comments included in the issue
+      - name: repository
+        description: The repository that the pull request applies to
+      - name: repository_team_names
+        description: An aggreate of the teams associated with the repository
+      - name: creator_login_name
+        description: User that created the issue login name
+      - name: creator_name
+        description: User that created the issue name.
+      - name: creator_company
+        description: User that created the issue company name.
+      - name: merged_at
+        description: Timestamp of when the pull request was merged
+      - name: reviewers
+        description: List of Users who reviewed the pull request
+      - name: number_of_reviews
+        description: Number of times a pull request was reviewed
+
+  - name: github__daily_metrics
+    description: Summary numbers for issues and pull requests by day
+    columns:
+      - name: day
+        description: The reporting day
+      - name: repository
+        description: The name of the repository
+      - name: number_issues_opened
+        description: The total number of issues created during this time period. Set to 0 if no issues were created.
+      - name: number_issues_closed
+        description: The total number of issues closed during this time period. Set to 0 if no issues were closed.
+      - name: number_prs_opened
+        description: The total number of pull requests created during this time period. Set to 0 if no pull requests were created.
+      - name: number_prs_merged
+        description: The total number of pull requests merged during this time period. Set to 0 if no pull requests were merged.
+      - name: number_prs_closed_without_merge
+        description: The total number of pull requests closed without a merge during this time period. Set to 0 if no pull requests were closed without a merge.
+
+
+  - name: github__weekly_metrics
+    description: Summary numbers for issues and pull requests by week
+    columns:
+      - name: week
+        description: The reporting week
+      - name: repository
+        description: The name of the repository
+      - name: total_number_issues_opened
+        description: The total number of issues created during this time period. Set to 0 if no issues were created.
+      - name: total_number_issues_closed
+        description: The total number of issues closed during this time period. Set to 0 if no issues were closed.
+      - name: total_number_prs_opened
+        description: The total number of pull requests created during this time period. Set to 0 if no pull requests were created.
+      - name: total_number_prs_merged
+        description: The total number of pull requests merged during this time period. Set to 0 if no pull requests were merged.
+      - name: number_prs_closed_without_merge
+        description: The total number of pull requests closed without a merge during this time period. Set to 0 if no pull requests were closed without a merge.
+
+        
+  - name: github__monthly_metrics
+    description: Summary numbers for issues and pull requests by month
+    columns:
+      - name: month
+        description: The reporting month
+      - name: repository
+        description: The name of the repository
+      - name: total_number_issues_opened
+        description: The total number of issues created during this time period. Set to 0 if no issues were created.
+      - name: total_number_issues_closed
+        description: The total number of issues closed during this time period. Set to 0 if no issues were closed.
+      - name: total_number_prs_opened
+        description: The total number of pull requests created during this time period. Set to 0 if no pull requests were created.
+      - name: total_number_prs_merged
+        description: The total number of pull requests merged during this time period. Set to 0 if no pull requests were merged.
+      - name: number_prs_closed_without_merge
+        description: The total number of pull requests closed without a merge during this time period. Set to 0 if no pull requests were closed without a merge.
+        
+  - name: github__quarterly_metrics
+    description: Summary numbers for issues and pull requests by quarter
+    columns:
+      - name: quarter
+        description: The reporting quarter
+      - name: repository
+        description: The name of the repository
+      - name: total_number_issues_opened
+        description: The total number of issues created during this time period. Set to 0 if no issues were created.
+      - name: total_number_issues_closed
+        description: The total number of issues closed during this time period. Set to 0 if no issues were closed.
+      - name: total_number_prs_opened
+        description: The total number of pull requests created during this time period. Set to 0 if no pull requests were created.
+      - name: total_number_prs_merged
+        description: The total number of pull requests merged during this time period. Set to 0 if no pull requests were merged.
+      - name: number_prs_closed_without_merge
+        description: The total number of pull requests closed without a merge during this time period. Set to 0 if no pull requests were closed without a merge.

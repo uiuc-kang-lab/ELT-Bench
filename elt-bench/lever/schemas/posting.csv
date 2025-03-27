@@ -1,0 +1,23 @@
+column_name,column_description
+id,Unique ID of the job posting.
+_fivetran_deleted,Boolean that is true if the posting has been soft-deleted.
+categories_commitment,"Tag for job position work type (e.g. Full-time, Part-time, Internship)."
+categories_department,"Tag for the department to which the job posting's team belongs, if present."
+categories_level,"Tag for job posting level (e.g. Senior, Junior). Note - this has been deprecated by Lever  but is currently maintained for backward compatibility.
+"
+categories_location,Tag for job position location.
+categories_team,"Tag for the team to which the job posting belongs (a sub-category of department).
+"
+content_closing,"Closing statement on the job posting, in plaintext."
+content_closing_html,"Closing statement on job posting, as styled HTML."
+content_description,"Job posting description that is shown at the top of the job's page, as plaintext."
+content_description_html,"Job posting description that is shown at the top of the job's page, in HTML."
+created_at,Timestamp of when the posting was created in Lever.
+creator_id,Foreign key referencing the id of the USER who created the job posting.
+owner_id,"Foreign key referencing the id of the USER who owns the posting. The posting owner is the  individual who is directly responsible for managing all candidates who are applied to that role.
+"
+requisition_code,Array of requisition codes associated with this posting.
+state,"Current status of the posting, which may include 'published', 'internal' (called 'unlisted' in the UI), 'closed', 'draft', 'pending' (awaiting approval), and 'rejected'.
+"
+text,Title of the job posting role.
+updated_at,Timestamp of when the posting was last updated.

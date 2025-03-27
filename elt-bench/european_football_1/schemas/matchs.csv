@@ -1,0 +1,9 @@
+column_name,column_description
+div,Division Id
+date,Match Date
+hometeam,Name of Home Team
+awayteam,Name of Away Team
+fthg,Final-time Home-team Goals
+ftag,Final-time Away-team Goals
+ftr,Final-time Results
+season,season of the match

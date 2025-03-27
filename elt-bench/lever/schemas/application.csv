@@ -1,0 +1,18 @@
+column_name,column_description
+id,Unique ID of the application.
+archived_at,Timestamp of when the application was last archived.
+archived_reason_id,Foreign key referencing the id of the ARCHIVE_REASON for which the application was last archived.
+comments,Any additional comments from the candidate included in the job application.
+company,The candidate's current company or organization.
+created_at,Timestamp of when the application was created.
+posting_hiring_manager_id,"Foreign key referencing the id of the USER who is the job posting's hiring manager, at the time  the application was submitted.
+"
+posting_id,Foreign key referencing the job POSTING for which the candidate applied.
+posting_owner_id,"Foreign key referencing the id of the USER who owns this posting at the time the candidate applied.
+"
+referrer_id,The user ID of the candidate's referrer.
+requisition_for_hire_id,"If the application was archived as hired against a requisition, a foreign key referencing the id of the REQUISITION against which the application was hired.
+"
+type,"Type of the application. An application can be of type referral, user, or posting. Applications of type  referral are created when a user refers a candidate for a job posting. Applications have type user when they  are applied manually to a posting in Lever. Applications have type posting when a candidate applies to a job  posting through your company's jobs page.
+"
+opportunity_id,Foreign key referencing the id of the OPPORTUNITY associated with this application.

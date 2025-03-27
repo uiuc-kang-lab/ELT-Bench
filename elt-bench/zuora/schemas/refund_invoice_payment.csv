@@ -1,0 +1,9 @@
+column_name,column_description
+id,The id of the refund invoice payment in Zuora.
+_fivetran_synced,Timestamp of when a record was last synced.
+_fivetran_deleted,Boolean identifiying whether the record was deleted in the source.
+created_by_id,The id of the user who created the refund invoice payment in Zuora.
+created_date,The date and time when the refund invoice payment was created in Zuora.
+refund_amount,The amount of the refund invoice payment in the currency of the invoice.
+updated_by_id,The id of the user who last updated the refund invoice payment in Zuora.
+updated_date,The date and time when the refund invoice payment was last updated in Zuora.

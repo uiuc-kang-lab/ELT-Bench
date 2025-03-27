@@ -1,0 +1,3 @@
+column_name,column_description
+id,the unique identifier of the gender
+gender,the gender of the superhero

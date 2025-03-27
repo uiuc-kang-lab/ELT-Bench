@@ -1,0 +1,20 @@
+models:
+  - name: simpson_episodes__episode
+    description: Each record represents an episode.
+    columns:
+      - name: episode_id
+        description: Unique identifier for the episode.
+      - name: episode_title
+        description: The title of the episode.
+      - name: air_date
+        description: The air date of the episode.
+      - name: num_worst_vote
+        description: The number of votes in star classification of worst the episode got, replace NULL values with 0.
+      - name: num_nominations
+        description: The number of nominations the episode got, replace NULL values with 0.
+      - name: star_7_class
+        description: Set to 3 if the episode receives 7-star votes exceeding 1.1 times the season average. Set to 2 if the episode receives 7-star votes exceeding the season average but less than or equal to 1.1 times the average. Set to 1 if the episode receives 7-star votes that are at least 0.9 times the season average but do not exceed it. Otherwise, set to 0.
+      - name: ratio_between_uncredited_and_credited_roles
+        description: The percentage ratio between uncredited and credited roles on the episode 
+      - name: average_stars
+        description: The average star rating of the episode.

@@ -1,0 +1,16 @@
+column_name,column_description
+report_no,unique Numeric identifier of the crime report.
+case_number,Case number assigned to the reported crime.
+date,Date of the occurrence of the incident being reported
+block,A redacted address indicating in which city block the incident occurred
+iucr_no,Illinois Uniform Crime Reporting code: a four digit code used to classify criminal incidents when taking reports.
+location_description,A description of the kind of area where incident occurred
+arrest,A true/false value indicating if an arrest has been made
+domestic,A true/false value indicating if the incident is as case of domestic violence
+beat,
+district_no,A number indicating the geographic subdivision of the police district where the incident occurred
+ward_no,A two digit number identifying the legislative district (ward) where the incident occurred.
+community_area_no,A number identifying one of 77 geographic areas where the incident occurred
+fbi_code_no,A code identifying the type of crime reported according to the classification scheme used by the FBI.
+latitude,The latitude where incident is reported to have occurred.
+longitude,The longitude where incident is reported to have occurred.

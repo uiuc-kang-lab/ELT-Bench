@@ -1,0 +1,20 @@
+models:
+  - name: repository
+    description: Each record represents a repository.
+    columns:
+      - name: repo_id
+        description: Unique identifier for the repository.
+      - name: url
+        description: URL of the repository.
+      - name: stars
+        description: Stars the repository has received
+      - name: number_of_solution_path_need_compiled
+        description: Number of solution paths that need to be compiled if the user wants to implement the repository, replace NULL values with 0.
+      - name: has_forks_higher_than_half_of_watchers
+        description: Set to 1 if the number of forks is higher than half of the number of watchers; otherwise, set to 0.
+      - name: average_time_needed_for_the_solutions
+        description: Average processed time needed to implement the solutions in the repository.
+      - name: percentage_of_solutions_compiled_XML
+        description: the percentage of the methods' solutions that need to be compiled among the methods whose comments is XML format within the repository
+      - name: has_solution_without_compilation
+        description: Set to 1 if the repository has at least one solution that does not need to be compiled; otherwise, set to 0.

@@ -1,0 +1,39 @@
+models:
+  - name: films
+    description: Each record represents a film.
+    columns:
+      - name: film_id
+        description: The unique identifier of the film.
+      - name: title
+        description: The title of the film.
+      - name: length
+        description: Duration time of the film screening.
+      - name: num_rented_times
+        description: The number of times the film has been rented, replace NULL values with 0.
+      - name: rental_revenue
+        description: The rental revenue of the film, replace NULL values with 0.
+      - name: has_a_rental_rate_greater_than_the_60per_of_average_rental_rate_of_all_listed_films
+        description: Set to 1 if the rental rate of the film is greater than 60% of the average rental rate of all listed films, 0 otherwise.
+      - name: num_actors
+        description: The number of actors in the film, replace NULL values with 0.
+      - name: customers_can_rent_for_more_than_5_days
+        description: Set to 1 if customers can rent the film for more than 5 days, 0 otherwise.
+  - name: customers
+    description: Each record represents a customer.
+    columns:
+      - name: customer_id
+        description: The unique identifier of the customer.
+      - name: full_name
+        description: The full name of the customer
+      - name: email
+        description: The email of the customer
+      - name: has_rented_the_film_with_the_highest_replacement_cost
+        description: Set to 1 if the customer has rented the film with the highest replacement cost, 0 otherwise.
+      - name: num_rented_films
+        description: The number of films the customer has rented, replace NULL values with 0.
+      - name: per_music_film_among_all_rented_films
+        description: The percentage of music films among all the films the customer has rented
+      - name: avg_amount_of_money_spent_on_rental
+        description: The average amount of money on a single film rental the customer has spent
+      - name: total_payments_greater_than_70per_of_the_average_total_payments
+        description: Set to 1 if the total payments of the customer is greater than 70% of the average total payments of all customers, 0 otherwise.

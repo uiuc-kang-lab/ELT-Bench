@@ -1,0 +1,14 @@
+column_name,column_description
+match_id,unique id for match
+team_1,the team id of the first team
+team_2,the team id for the second team
+match_date,the date of the match
+season_id,the id of the season
+venue_id,the id of the venue where the match held
+toss_winner,the id of the toss winner
+toss_decide,the decision (batting or bowling) made after winning the toss
+win_type,the id of the winning type 
+win_margin,the points of the winning margin
+outcome_type,the id of the outcome type
+match_winner,the team id of the match winner
+man_of_the_match,the id of the man of the match

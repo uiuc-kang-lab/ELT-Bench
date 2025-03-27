@@ -1,0 +1,293 @@
+models:
+  - name: microsoft_ads__account_report
+    description: Each record in this table represents the daily clicks, impressions, spend (and if applicable other passthrough metrics) of ads by account, account timezone, device os, device type, network and currency code.
+    columns:
+      - name: date_day
+        description: The date of the performance report.
+      - name: account_name
+        description: The name of the account.
+      - name: account_id
+        description: The ID of the account.
+      - name: account_timezone
+        description: The time zone associated with this account.
+      - name: device_os
+        description: The device operating system associated with this record; values include but may not be limited to 'Windows', 'iOS', 'Android', 'Other', 'BlackBerry' and 'Unknown'.
+      - name: device_type
+        description: The device type associated with this record; values include but may not be limited to 'Computer', 'Smartphone', 'Tablet' and 'Unknown'.
+      - name: network
+        description: The network associated with this record.
+      - name: currency_code
+        description: The currency code associated with spend and, if applicable, other metrics associated with currency.
+      - name: clicks
+        description: The number of clicks that occurred by the grain of the report. Set the value to 0 if it is NULL.
+      - name: impressions
+        description: The number of impressions that occurred by the grain of the report. Set the value to 0 if it is NULL.
+      - name: spend
+        description: The amount of spend that occurred by the grain of the report. Set the value to 0 if it is NULL.
+      - name: conversions
+        description: Number of conversions, measured by completion of an action by a customer after viewing your ad. This will exclude any conversions where the convesion goal's ExcludeFromBidding property in Microsoft Ads is set to true. This field coalesces the source conversions_qualifed and conversions fields, and will be 0 if both are null.
+      - name: conversions_value
+        description: The revenue optionally reported by the advertiser as a result of the conversions figure. This will exclude revenue from conversions in which the conversion goal's ExcludeFromBidding property in Microsoft Ads is set to true. Set the value to 0 if it is NULL.
+      - name: all_conversions
+        description: Number of all conversions, measured by completion of an action by a customer after viewing your ad. This will include data from conversions regardless of the value of the conversion goal's ExcludeFromBidding property in Microsoft Ads. This field coalesces the source all_conversions_qualifed and all_conversions fields, and will be 0 if both are null.
+      
+  - name: microsoft_ads__ad_group_report
+    description: Each record in this table represents the daily clicks, impressions, spend (and if applicable other passthrough metrics) of ads by ad group, campaign, account, device os, device type, network and currency code.
+    columns:
+      - name: date_day
+        description: The date of the performance report.
+      - name: account_name
+        description: The name of the account.
+      - name: account_id
+        description: The ID of the account.
+      - name: campaign_name
+        description: The name of the campaign.
+      - name: campaign_id
+        description: The ID of the campaign.
+      - name: ad_group_name
+        description: The name of the corresponding ad group.
+      - name: ad_group_id
+        description: The ID of the corresponding ad group.
+      - name: device_os
+        description: The device operating system associated with this record; values include but may not be limited to 'Windows', 'iOS', 'Android', 'Other', 'BlackBerry' and 'Unknown'.
+      - name: device_type
+        description: The device type associated with this record; values include but may not be limited to 'Computer', 'Smartphone', 'Tablet' and 'Unknown'.
+      - name: network
+        description: The network associated with this record.
+      - name: currency_code
+        description: The currency code associated with spend and, if applicable, other metrics associated with currency.
+      - name: clicks
+        description: The number of clicks that occurred by the grain of the report. Set the value to 0 if it is NULL.
+      - name: impressions
+        description: The number of impressions that occurred by the grain of the report. Set the value to 0 if it is NULL.
+      - name: spend
+        description: The amount of spend that occurred by the grain of the report. Set the value to 0 if it is NULL.
+      - name: conversions
+        description: Number of conversions, measured by completion of an action by a customer after viewing your ad. This will exclude any conversions where the convesion goal's ExcludeFromBidding property in Microsoft Ads is set to true. This field coalesces the source conversions_qualifed and conversions fields, and will be 0 if both are null.
+      - name: conversions_value
+        description: The revenue optionally reported by the advertiser as a result of the conversions figure. This will exclude revenue from conversions in which the conversion goal's ExcludeFromBidding property in Microsoft Ads is set to true. Set the value to 0 if it is NULL.
+      - name: all_conversions
+        description: Number of all conversions, measured by completion of an action by a customer after viewing your ad. This will include data from conversions regardless of the value of the conversion goal's ExcludeFromBidding property in Microsoft Ads. This field coalesces the source all_conversions_qualifed and all_conversions fields, and will be 0 if both are null.
+      - name: all_conversions_value
+        description: The revenue reported by the advertiser as a result of the all_conversions figure. This will include revenue from conversions regardless of the value of the conversion goal's ExcludeFromBidding property in Microsoft Ads. Set the value to 0 if it is NULL.
+
+  - name: microsoft_ads__ad_report
+    description: Each record in this table represents the daily clicks, impressions, spend (and if applicable other passthrough metrics) of ads by ad, ad group, campaign, account, ad type, device os, device type, network and currency code.
+    columns:
+      - name: date_day
+        description: The date of the performance report.
+      - name: account_name
+        description: The name of the account.
+      - name: account_id
+        description: The ID of the account.
+      - name: campaign_name
+        description: The name of the campaign.
+      - name: campaign_id
+        description: The ID of the campaign.
+      - name: ad_group_name
+        description: The name of the corresponding ad group.
+      - name: ad_group_id
+        description: The ID of the corresponding ad group.
+      - name: ad_name
+        description: The name of the corresponding ad; title_part_1 is used as the ad name as a proxy as one is not provided by the data source.
+      - name: ad_id
+        description: The ID of the corresponding ad.
+      - name: ad_type
+        description: The ad type associated with this record
+      - name: device_os
+        description: The device operating system associated with this record; values include but may not be limited to 'Windows', 'iOS', 'Android', 'Other', 'BlackBerry' and 'Unknown'.
+      - name: device_type
+        description: The device type associated with this record; values include but may not be limited to 'Computer', 'Smartphone', 'Tablet' and 'Unknown'.
+      - name: network
+        description: The network associated with this record.
+      - name: currency_code
+        description: The currency code associated with spend and, if applicable, other metrics associated with currency.
+      - name: clicks
+        description: The number of clicks that occurred by the grain of the report. Set the value to 0 if it is NULL.
+      - name: impressions
+        description: The number of impressions that occurred by the grain of the report. Set the value to 0 if it is NULL.
+      - name: spend
+        description: The amount of spend that occurred by the grain of the report. Set the value to 0 if it is NULL.
+      - name: conversions
+        description: Number of conversions, measured by completion of an action by a customer after viewing your ad. This will exclude any conversions where the convesion goal's ExcludeFromBidding property in Microsoft Ads is set to true. This field coalesces the source conversions_qualifed and conversions fields, and will be 0 if both are null.
+      - name: conversions_value
+        description: The revenue optionally reported by the advertiser as a result of the conversions figure. This will exclude revenue from conversions in which the conversion goal's ExcludeFromBidding property in Microsoft Ads is set to true. Set the value to 0 if it is NULL.
+      - name: all_conversions
+        description: Number of all conversions, measured by completion of an action by a customer after viewing your ad. This will include data from conversions regardless of the value of the conversion goal's ExcludeFromBidding property in Microsoft Ads. This field coalesces the source all_conversions_qualifed and all_conversions fields, and will be 0 if both are null.
+      - name: all_conversions_value
+        description: The revenue reported by the advertiser as a result of the all_conversions figure. This will include revenue from conversions regardless of the value of the conversion goal's ExcludeFromBidding property in Microsoft Ads. Set the value to 0 if it is NULL.
+
+  - name: microsoft_ads__campaign_report
+    description: Each record in this table represents the daily clicks, impressions, spend (and if applicable other passthrough metrics) of ads by campaign, account, campaign type, campaign timezone, campaign status, device os, device type, network and currency code.
+    columns:
+      - name: date_day
+        description: The date of the performance report.
+      - name: account_name
+        description: The name of the account.
+      - name: account_id
+        description: The ID of the account.
+      - name: campaign_name
+        description: The name of the campaign.
+      - name: campaign_id
+        description: The ID of the campaign.
+      - name: campaign_type
+        description: The campaign type associated with this record
+      - name: campaign_timezone
+        description: The time zone associated with this campaign.
+      - name: campaign_status
+        description: The status of this campaign
+      - name: device_os
+        description: The device operating system associated with this record; values include but may not be limited to 'Windows', 'iOS', 'Android', 'Other', 'BlackBerry' and 'Unknown'.
+      - name: device_type
+        description: The device type associated with this record; values include but may not be limited to 'Computer', 'Smartphone', 'Tablet' and 'Unknown'.
+      - name: network
+        description: The network associated with this record.
+      - name: currency_code
+        description: The currency code associated with spend and, if applicable, other metrics associated with currency.
+      - name: clicks
+        description: The number of clicks that occurred by the grain of the report. Set the value to 0 if it is NULL.
+      - name: impressions
+        description: The number of impressions that occurred by the grain of the report. Set the value to 0 if it is NULL.
+      - name: spend
+        description: The amount of spend that occurred by the grain of the report. Set the value to 0 if it is NULL.
+      - name: conversions
+        description: Number of conversions, measured by completion of an action by a customer after viewing your ad. This will exclude any conversions where the convesion goal's ExcludeFromBidding property in Microsoft Ads is set to true. This field coalesces the source conversions_qualifed and conversions fields, and will be 0 if both are null.
+      - name: conversions_value
+        description: The revenue optionally reported by the advertiser as a result of the conversions figure. This will exclude revenue from conversions in which the conversion goal's ExcludeFromBidding property in Microsoft Ads is set to true. Set the value to 0 if it is NULL.
+      - name: all_conversions
+        description: Number of all conversions, measured by completion of an action by a customer after viewing your ad. This will include data from conversions regardless of the value of the conversion goal's ExcludeFromBidding property in Microsoft Ads. This field coalesces the source all_conversions_qualifed and all_conversions fields, and will be 0 if both are null.
+      - name: all_conversions_value
+        description: The revenue reported by the advertiser as a result of the all_conversions figure. This will include revenue from conversions regardless of the value of the conversion goal's ExcludeFromBidding property in Microsoft Ads. Set the value to 0 if it is NULL.
+
+  - name: microsoft_ads__keyword_report
+    description: Each record in this table represents the daily clicks, impressions, spend (and if applicable other passthrough metrics) of ads by keyword, ad, ad group, campaign, account, device os, device type, network and currency code.
+    columns:
+      - name: date_day
+        description: The date of the performance report.
+      - name: account_name
+        description: The name of the account.
+      - name: account_id
+        description: The ID of the account.
+      - name: campaign_id
+        description: The ID of the campaign.
+      - name: ad_group_id
+        description: The ID of the corresponding ad group.
+      - name: ad_id
+        description: The ID of the corresponding ad.
+      - name: keyword_id
+        description: The ID of the keyword.
+      - name: match_type
+        description: The match type associated with this record; values contain but may not be limited to 'Broad', 'Exact', 'Phrase'.
+      - name: device_os
+        description: The device operating system associated with this record; values include but may not be limited to 'Windows', 'iOS', 'Android', 'Other', 'BlackBerry' and 'Unknown'.
+      - name: device_type
+        description: The device type associated with this record; values include but may not be limited to 'Computer', 'Smartphone', 'Tablet' and 'Unknown'.
+      - name: network
+        description: The network associated with this record.
+      - name: currency_code
+        description: The currency code associated with spend and, if applicable, other metrics associated with currency.
+      - name: clicks
+        description: The number of clicks that occurred by the grain of the report. Set the value to 0 if it is NULL.
+      - name: impressions
+        description: The number of impressions that occurred by the grain of the report. Set the value to 0 if it is NULL.
+      - name: spend
+        description: The amount of spend that occurred by the grain of the report. Set the value to 0 if it is NULL.
+      - name: conversions
+        description: Number of conversions, measured by completion of an action by a customer after viewing your ad. This will exclude any conversions where the convesion goal's ExcludeFromBidding property in Microsoft Ads is set to true. This field coalesces the source conversions_qualifed and conversions fields, and will be 0 if both are null.
+      - name: conversions_value
+        description: The revenue optionally reported by the advertiser as a result of the conversions figure. This will exclude revenue from conversions in which the conversion goal's ExcludeFromBidding property in Microsoft Ads is set to true. Set the value to 0 if it is NULL.
+      - name: all_conversions
+        description: Number of all conversions, measured by completion of an action by a customer after viewing your ad. This will include data from conversions regardless of the value of the conversion goal's ExcludeFromBidding property in Microsoft Ads. This field coalesces the source all_conversions_qualifed and all_conversions fields, and will be 0 if both are null.
+      - name: all_conversions_value
+        description: The revenue reported by the advertiser as a result of the all_conversions figure. This will include revenue from conversions regardless of the value of the conversion goal's ExcludeFromBidding property in Microsoft Ads. Set the value to 0 if it is NULL.
+
+
+  - name: microsoft_ads__search_report
+    description: Each record in this table represents the daily clicks, impressions, spend (and if applicable other passthrough metrics) of ads by search query, keyword, ad, ad group, campaign, account, device os, device type and network.
+    columns:
+      - name: date_day
+        description: The date of the performance report.
+      - name: account_name
+        description: The name of the account.
+      - name: account_id
+        description: The ID of the account.
+      - name: campaign_name
+        description: The name of the campaign.
+      - name: campaign_id
+        description: The ID of the campaign.
+      - name: ad_group_id
+        description: The ID of the corresponding ad group.
+      - name: ad_name
+        description: The name of the corresponding ad; title_part_1 is used as the ad name as a proxy as one is not provided by the data source.
+      - name: ad_id
+        description: The ID of the corresponding ad.
+      - name: keyword_id
+        description: The ID of the keyword.
+      - name: match_type
+        description: The match type associated with this record; values contain but may not be limited to 'Broad', 'Exact', 'Phrase'.
+      - name: search_query
+        description: The search query string associated with this record.
+      - name: device_os
+        description: The device operating system associated with this record; values include but may not be limited to 'Windows', 'iOS', 'Android', 'Other', 'BlackBerry' and 'Unknown'.
+      - name: device_type
+        description: The device type associated with this record; values include but may not be limited to 'Computer', 'Smartphone', 'Tablet' and 'Unknown'.
+      - name: network
+        description: The network associated with this record.
+      - name: clicks
+        description: The number of clicks that occurred by the grain of the report. Set the value to 0 if it is NULL.
+      - name: impressions
+        description: The number of impressions that occurred by the grain of the report. Set the value to 0 if it is NULL.
+      - name: spend
+        description: The amount of spend that occurred by the grain of the report. Set the value to 0 if it is NULL.
+      - name: conversions
+        description: Number of conversions, measured by completion of an action by a customer after viewing your ad. This will exclude any conversions where the convesion goal's ExcludeFromBidding property in Microsoft Ads is set to true. This field coalesces the source conversions_qualifed and conversions fields, and will be 0 if both are null.
+      - name: conversions_value
+        description: The revenue optionally reported by the advertiser as a result of the conversions figure. This will exclude revenue from conversions in which the conversion goal's ExcludeFromBidding property in Microsoft Ads is set to true. Set the value to 0 if it is NULL.
+      - name: all_conversions
+        description: Number of all conversions, measured by completion of an action by a customer after viewing your ad. This will include data from conversions regardless of the value of the conversion goal's ExcludeFromBidding property in Microsoft Ads. This field coalesces the source all_conversions_qualifed and all_conversions fields, and will be 0 if both are null.
+      - name: all_conversions_value
+        description: The revenue reported by the advertiser as a result of the all_conversions figure. This will include revenue from conversions regardless of the value of the conversion goal's ExcludeFromBidding property in Microsoft Ads. Set the value to 0 if it is NULL.
+
+  - name: microsoft_ads__url_report
+    description: Each record in this table represents the daily clicks, impressions, spend (and if applicable other passthrough metrics) of ads by ad, ad group, campaign, account, ad type, device os, device type, network, currency code, url and utm parameters.
+    columns:
+      - name: date_day
+        description: The date of the performance report.
+      - name: account_name
+        description: The name of the account.
+      - name: account_id
+        description: The ID of the account.
+      - name: campaign_name
+        description: The name of the campaign.
+      - name: campaign_id
+        description: The ID of the campaign.
+      - name: ad_group_name
+        description: The name of the corresponding ad group.
+      - name: ad_group_id
+        description: The ID of the corresponding ad group.
+      - name: ad_name
+        description: The name of the corresponding ad; title_part_1 is used as the ad name as a proxy as one is not provided by the data source.
+      - name: ad_id
+        description: The ID of the corresponding ad.
+      - name: device_os
+        description: The device operating system associated with this record; values include but may not be limited to 'Windows', 'iOS', 'Android', 'Other', 'BlackBerry' and 'Unknown'.
+      - name: device_type
+        description: The device type associated with this record; values include but may not be limited to 'Computer', 'Smartphone', 'Tablet' and 'Unknown'.
+      - name: network
+        description: The network associated with this record.
+      - name: currency_code
+        description: The currency code associated with spend and, if applicable, other metrics associated with currency.
+      - name: clicks
+        description: The number of clicks that occurred by the grain of the report. Set the value to 0 if it is NULL.
+      - name: impressions
+        description: The number of impressions that occurred by the grain of the report. Set the value to 0 if it is NULL.
+      - name: spend
+        description: The amount of spend that occurred by the grain of the report. Set the value to 0 if it is NULL.
+      - name: conversions
+        description: Number of conversions, measured by completion of an action by a customer after viewing your ad. This will exclude any conversions where the convesion goal's ExcludeFromBidding property in Microsoft Ads is set to true. This field coalesces the source conversions_qualifed and conversions fields, and will be 0 if both are null.
+      - name: conversions_value
+        description: The revenue optionally reported by the advertiser as a result of the conversions figure. This will exclude revenue from conversions in which the conversion goal's ExcludeFromBidding property in Microsoft Ads is set to true. Set the value to 0 if it is NULL.
+      - name: all_conversions
+        description: Number of all conversions, measured by completion of an action by a customer after viewing your ad. This will include data from conversions regardless of the value of the conversion goal's ExcludeFromBidding property in Microsoft Ads. This field coalesces the source all_conversions_qualifed and all_conversions fields, and will be 0 if both are null.
+      - name: all_conversions_value
+        description: The revenue reported by the advertiser as a result of the all_conversions figure. This will include revenue from conversions regardless of the value of the conversion goal's ExcludeFromBidding property in Microsoft Ads. Set the value to 0 if it is NULL.

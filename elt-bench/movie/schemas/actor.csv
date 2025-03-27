@@ -1,0 +1,11 @@
+column_name,column_description
+actorid,the unique id for the actor
+name,actor's name
+date_of_birth,actor's birth date
+birth_city,actor's birth city
+birth_country,actor's birth country
+height_inches,actor's height
+biography,actor's biography
+gender,actor's gender
+ethnicity,actor's ethnicity
+networth,actor's networth

@@ -1,0 +1,42 @@
+column_name,column_description
+id,The ID of the campaign in Mailchimp.
+segment_id,The ID of the Segment a campaign was sent to.
+create_time,The date and time the campaign was created.
+send_time,The date and time a campaign was sent.
+list_id,The ID of the List a campaign was sent to.
+reply_to,The reply-to email address for the campaign.
+type,"The type of campaign sent.  Possible values: regular, plaintext, absplit, variate, rss.
+"
+title,The title of the campaign.
+archive_url,The link to the campaign's archive version in ISO 8601 format.
+authenticate,Whether Mailchimp authenticated the campaign. Defaults to true.
+auto_footer,Automatically append Mailchimp's default footer to the campaign.
+auto_tweet,Automatically tweet a link to the campaign archive page when the campaign is sent.
+clicktale,The custom slug for ClickTale tracking (max of 50 bytes).
+content_type,"How the campaign's content is put together ('template', 'drag_and_drop', 'html', 'url')."
+drag_and_drop,Whether the campaign uses the drag-and-drop editor.
+fb_comments,Allows Facebook comments on the campaign (also force-enables the Campaign Archive toolbar). Defaults to true.
+folder_id,"If the campaign is listed in a folder, the ID for that folder."
+from_name,The 'from' name on the campaign (not an email address).
+google_analytics,The custom slug for Google Analytics tracking (max of 50 bytes).
+inline_css,Automatically inline the CSS included with the campaign content.
+long_archive_url,The original link to the campaign's archive version.
+status,The current status of the campaign.
+subject_line,The subject line for the campaign.
+template_id,The ID for the template used in this campaign.
+test_size,"The percentage of recipients to send the test combinations to, must be a value between 10 and 100."
+timewarp,Send this campaign using Timewarpe_this
+to_name,The campaign's custom 'To' name. Typically the first name merge field.
+track_ecomm_360,Whether to enable eCommerce360 tracking.
+track_goals,Whether to enable Goal tracking.
+track_html_clicks,Whether to track clicks in the HTML version of the campaign. Defaults to true. Cannot be set to false for variate campaigns.
+track_opens,Whether to track opens. Defaults to true. Cannot be set to false for variate campaigns.
+track_text_clicks,Whether to track clicks in the plain-text version of the campaign. Defaults to true. Cannot be set to false for variate campaigns.
+use_conversation,Use Mailchimp Conversation feature to manage out-of-office replies.
+wait_time,"The number of minutes to wait before choosing the winning campaign. The value of wait_time must be greater than 0 and in whole hours, specified in minutes."
+winner_criteria,"The combination that performs the best.  This may be determined automatically by click rate, open rate, or total revenue—or  you may choose manually based on the reporting data you find the most valuable.  For Multivariate Campaigns testing send_time, winner_criteria is ignored.  For Multivariate Campaigns with 'manual' as the winner_criteria, the winner must be chosen in the Mailchimp web application.
+"
+winning_campaign_id,ID of the campaign that was sent to the remaining recipients based on the winning combination.
+winning_combination_id,ID for the winning combination.
+_fivetran_synced,UTC timestamp that indicates the time when Fivetran last successfully synced the row.
+_fivetran_deleted,Boolean that is true if the row has been soft-deleted from the source.

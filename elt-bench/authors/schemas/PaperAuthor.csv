@@ -1,0 +1,5 @@
+column_name,column_description
+paperid, Paper Id
+authorid,Author Id
+name,Author Name (as written on paper)
+affiliation,Author Affiliation (as written on paper)

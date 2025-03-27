@@ -1,0 +1,8 @@
+column_name,column_description
+id,Unique identifier.
+personal_info_system_id,The system ID associated with the personal information of the individual.
+_fivetran_deleted,Indicates if the record was soft-deleted by Fivetran.
+_fivetran_synced,Timestamp the record was synced by Fivetran.
+email_address,The actual email address of the person.
+email_code,A code or label associated with the type or purpose of the email address.
+email_comment,Any additional comments or notes related to the email address.

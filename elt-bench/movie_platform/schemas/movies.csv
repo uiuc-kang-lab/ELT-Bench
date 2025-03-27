@@ -1,0 +1,11 @@
+column_name,column_description
+movie_id,ID related to the movie on Mubi
+movie_title,Name of the movie
+movie_release_year,Release year of the movie
+movie_url,URL to the movie page on Mubi
+movie_title_language,"By default, the title is in English."
+movie_popularity,Number of Mubi users who love this movie
+movie_image_url,Image URL to the movie on Mubi
+director_id,ID related to the movie director on Mubi
+director_name,Full Name of the movie director
+director_url,URL to the movie director page on Mubi

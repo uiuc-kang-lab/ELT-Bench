@@ -1,0 +1,3 @@
+column_name,column_description
+keyword_id,the unique identifier of the keyword
+keyword_name,the keyword

@@ -1,0 +1,4 @@
+column_name,column_description
+island,the name of the island
+country,the country code where it is located
+province,the province of this country

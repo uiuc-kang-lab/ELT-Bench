@@ -1,0 +1,13 @@
+column_name,column_description
+supplierid,the unique id for suppliers
+suppliername,the supplier name
+contactname,the contact person's name representing the company
+contacttitle,the title of the contact person
+address,the address of the supplier
+city,the city where the supplier is located
+region,the region where the supplier is located
+postalcode,the postal code
+country,the country
+phone,the phone number
+fax,the fax number
+homepage,the home page url of the supply company

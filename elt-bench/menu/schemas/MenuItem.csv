@@ -1,0 +1,10 @@
+column_name,column_description
+id,the unique id representing the menu item
+menu_page_id,the id of menu page
+price,the price of this dish (menu item)
+high_price,high price of this dish
+dish_id,the id of the dish
+created_at,the dates when the item was created
+updated_at,the dates when the item was updated
+xpos,x-axis position of the dish in this menu page
+ypos,y-axis position of the dish in this menu page

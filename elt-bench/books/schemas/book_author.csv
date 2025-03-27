@@ -1,0 +1,3 @@
+column_name,column_description
+book_id,the id of the book Maps to book(book_id)
+author_id,the id of the author Maps to author(author_id)

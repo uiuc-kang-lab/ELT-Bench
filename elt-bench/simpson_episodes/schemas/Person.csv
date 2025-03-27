@@ -1,0 +1,9 @@
+column_name,column_description
+name,the name of the crew
+birthdate,the birth date of the crew
+birth_name,the birth name of the crew
+birth_place,the birth place of the crew
+birth_region,the birth region of the crew
+birth_country,the birth country of the crew
+height_meters,the height of the crew
+nickname,the nickname of the crew

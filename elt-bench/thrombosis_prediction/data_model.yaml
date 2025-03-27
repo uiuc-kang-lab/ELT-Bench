@@ -1,0 +1,20 @@
+models:
+  - name: patients
+    description: Each record represents a patient.
+    columns:
+      - name: id
+        description: Unique identifier for the patient.
+      - name: sex
+        description: The sex of the patient.
+      - name: birthday
+        description: The birthday of the patient.
+      - name: has_thrombosis_2_ANA_S_IgM
+        description: set to 1 if the patient has a degree of thrombosis level 2,  ANA pattern of only S, and a level of anti-Cardiolip in antibody (IgM) 20% higher than average, otherwise, set to 0
+      - name: UA_index_in_latest_laboratory_examination
+        description:  the UA index in the patient's latest laboratory examination result
+      - name: num_laboratory_examinations_hematoclit_exceed_52
+        description: The number of laboratory examinations where the patient’s hematocrit level exceeded 52, replace NULL values with 0.
+      - name: abnormal_white_blood_cell_count
+        description: Set to 1 if the patient’s white blood cell count is less than or equal to 3.5 or greater than or equal to 9, otherwise, set to 0
+      - name: has_an_abnormal_level_of_glutamic_oxaloacetic_transaminase
+        description: Set to 1 if the patient's level of glutamic oxaloacetic transaminase is greater than or equal to 60, otherwise, set to 0

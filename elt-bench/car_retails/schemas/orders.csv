@@ -1,0 +1,8 @@
+column_name,column_description
+ordernumber,unique order number
+orderdate,order date
+requireddate,required Date
+shippeddate,shipped Date
+status,status
+comments,comments
+customernumber,customer number

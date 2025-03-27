@@ -1,0 +1,5 @@
+column_name,column_description
+Id,the badge id
+UserId,the unique id of the user
+Name,the badge name the user obtained
+Date,the date that the user obtained the badge

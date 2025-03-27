@@ -1,0 +1,11 @@
+column_name,column_description
+match_id,Unique Number Which Identifies a match
+over_id,Unique Number which Identifies an over in an Innings
+ball_id,Unique Number which Identifies a ball in an over
+innings_no,Unique Number which Identifies an innings in a match
+team_batting,Unique Number which Identifies Batting team in a match
+team_bowling,Unique Number which Identifies Bowling team in a match
+striker_batting_position,Unique Number which Identifies the position in which player came into bat
+striker,Unique Number which Identifies the player who is on strike for that particular ball
+non_striker,Unique Number which Identifies the player who is Non-striker for that particular ball
+bowler,Unique Number which Identifies the player who is Bowling that particular ball

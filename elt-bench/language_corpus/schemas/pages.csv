@@ -1,0 +1,7 @@
+column_name,column_description
+pid,page id of Wikipedia about Catalan language
+lid,language id 
+page,wikipedia page id
+revision,wikipedia revision page id
+title,The title of this Catalan language Wikipedia page
+words,number of different words in this page

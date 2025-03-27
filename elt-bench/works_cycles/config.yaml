@@ -1,0 +1,149 @@
+Airbyte:
+  config:
+    files_definition_id: 778daa7c-feaf-4db6-96f3-70fd645acc77
+    mongodb_definition_id: b2e713cd-cc36-4c0a-b5bd-b47cb8a0561e
+    namespace_definition: destination
+    postgres_definition_id: decd338e-5647-4c0b-adf4-da0e75f5a750
+    s3_definition_id: 69589781-7828-43c5-9f63-8925b1c1ccc2
+    server_url: http://airbyte-abctl-control-plane:80/api/public/v1/
+    snowflake_definition_id: 424892c4-daac-4491-b35d-c6688ba547ba
+aws_s3:
+  AWS_ACCESS_KEY_ID: test
+  AWS_DEFAULT_REGION: us-west-2
+  AWS_ENDPOINT_URL: http://elt-localstack:4566
+  AWS_SECRET_ACCESS_KEY: test
+  data:
+  - path: s3://works-cycles-bucket/ContactType.jsonl
+    sync_mode: full_refresh_append
+    table: ContactType
+  - path: s3://works-cycles-bucket/Culture.csv
+    sync_mode: full_refresh_append
+    table: Culture
+  - path: s3://works-cycles-bucket/Location.jsonl
+    sync_mode: full_refresh_append
+    table: Location
+  - path: s3://works-cycles-bucket/PhoneNumberType.jsonl
+    sync_mode: full_refresh_append
+    table: PhoneNumberType
+  - path: s3://works-cycles-bucket/SalesTerritory.jsonl
+    sync_mode: full_refresh_append
+    table: SalesTerritory
+  - path: s3://works-cycles-bucket/SalesTerritoryHistory.jsonl
+    sync_mode: full_refresh_append
+    table: SalesTerritoryHistory
+  - path: s3://works-cycles-bucket/Shift.csv
+    sync_mode: full_refresh_append
+    table: Shift
+  - path: s3://works-cycles-bucket/ShipMethod.jsonl
+    sync_mode: full_refresh_append
+    table: ShipMethod
+  - path: s3://works-cycles-bucket/ShoppingCartItem.csv
+    sync_mode: full_refresh_append
+    table: ShoppingCartItem
+  - path: s3://works-cycles-bucket/TransactionHistoryArchive.csv
+    sync_mode: full_refresh_append
+    table: TransactionHistoryArchive
+  - path: s3://works-cycles-bucket/UnitMeasure.csv
+    sync_mode: full_refresh_append
+    table: UnitMeasure
+custom_api:
+  config:
+    configuration: {}
+    sync_mode: full_refresh_append
+    tables:
+    - CountryRegion
+    - CountryRegionCurrency
+    - Currency
+    - CurrencyRate
+    - ProductReview
+    - SalesOrderDetail
+    - SalesOrderHeader
+    - SalesOrderHeaderSalesReason
+    - SalesTaxRate
+    - SpecialOffer
+    - SpecialOfferProduct
+    - StateProvince
+    - Store
+    - Vendor
+    - WorkOrder
+    - WorkOrderRouting
+flat_files:
+- format: csv
+  path: https://drive.google.com/uc?export=download&id=1P0wVOLyJbta_jeYq_Yy3NX_WIGc042v8
+  sync_mode: full_refresh_append
+  table: AddressType
+- format: jsonl
+  path: https://drive.google.com/uc?export=download&id=1iR1yCXvgH5nnaa5H4IFiaE01grbYsL-6
+  sync_mode: full_refresh_append
+  table: Department
+- format: parquet
+  path: https://drive.google.com/uc?export=download&id=1oOPVAKDGcyfHw4jySfxR5dlgESrFkXyr
+  sync_mode: full_refresh_append
+  table: Document
+- format: csv
+  path: https://drive.google.com/uc?export=download&id=1e940xr9KPf79x6L8YBF1sUsYuNfTbwCX
+  sync_mode: full_refresh_append
+  table: ProductCategory
+- format: jsonl
+  path: https://drive.google.com/uc?export=download&id=19eGUWiRIKsujuOqKV2-RSVPSKexzx-xK
+  sync_mode: full_refresh_append
+  table: SalesReason
+- format: csv
+  path: https://drive.google.com/uc?export=download&id=1hcCD89pG4xoHESebsBLjG-i319RDK1gd
+  sync_mode: full_refresh_append
+  table: ScrapReason
+mongodb:
+  config:
+    connection_string: mongodb://elt-mongodb:27017/?directConnection=true
+    database: work_cycles
+    sync_mode: full_refresh_append
+    tables:
+    - Address
+    - BusinessEntity
+    - BusinessEntityAddress
+    - BusinessEntityContact
+    - Employee
+    - EmployeeDepartmentHistory
+    - EmployeePayHistory
+    - JobCandidate
+    - Person
+    - Product
+    - ProductDescription
+    - ProductDocument
+    - ProductModel
+    - ProductPhoto
+    - ProductProductPhoto
+    - ProductSubcategory
+    - SalesPerson
+postgres:
+  config:
+    database: work_cycles
+    host: elt-postgres
+    password: testelt
+    port: 5432
+    schema: public
+    sync_mode: full_refresh_append
+    tables:
+    - bill_of_materials
+    - credit_card
+    - email_address
+    - password
+    - person_credit_card
+    - product_cost_history
+    - product_inventory
+    - product_list_price_history
+    - product_model_product_description_culture
+    - product_vendor
+    - purchase_order_detail
+    - purchase_order_header
+    - sales_person_quota_history
+    - transaction_history
+    user: postgres
+snowflake:
+  config:
+    database: work_cycles
+    password: Snowflake@123
+    role: AIRBYTE_ROLE
+    schema: AIRBYTE_SCHEMA
+    username: AIRBYTE_USER
+    warehouse: AIRBYTE_WAREHOUSE

@@ -1,0 +1,14 @@
+column_name,column_description
+id,The ID of the related Pin promotion.
+ad_account_id,The ID of the related Advertiser.
+ad_group_id,The ID of the related Ad group.
+created_time,Pin creation time.
+destination_url,Pin destination URL.
+name,Pin promotion name.
+pin_id,Original pin ID.
+status,"The status of the Pin promotion. One of ""ACTIVE"", ""ARCHIVED"", ""PAUSED"""
+creative_type,"The creative type. 
+One of ""APP"", ""APP_VIDEO"", ""BOARD"", ""CAROUSEL"", ""CINEMATIC"", ""COMMERCE"", ""MAX_VIDEO"", ""NATIVE_VIDEO"", ""REGULAR"", 
+""SEARCH_PROMINENCE"", ""SEARCH_PROMINENCE_CAROUSEL"", ""SHOPPING"", ""SHOP_THE_PIN"", ""THIRD_PARTY"", or ""VIDEO"".
+"
+_fivetran_synced,Timestamp of when a record was last synced.

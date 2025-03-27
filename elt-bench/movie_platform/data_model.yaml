@@ -1,0 +1,58 @@
+models:
+  - name: movie_platform__list_users
+    description: Each record represents a list user
+    columns:
+      - name: user_id
+        description: The unique identifier of the user
+      - name: user_avatar_image_url
+        description: User profile image URL on Mubi
+      - name: user_cover_image_url
+        description: User profile cover image URL on Mubi
+      - name: latest_rated_movie
+        description: The latest movie the user rated, with ties broken by the ascending order of the movie title
+      - name: list_title_most_followers
+        description: The title of the list with the most followers created by the user, with ties broken by the ascending order of the list title
+      - name: description_list_most_followers
+        description: The description of the list with the most followers created by the user, with ties broken by the descending order of the list description
+      - name: first_list_created
+        description: The title of the first list created by the user, with ties broken by the ascending order of the list title
+      - name: average_followers_of_the_lists_created
+        description: The average number of followers of the lists created by the user
+  - name: movie_platform__movies
+    description: Each record represents a movie
+    columns:
+      - name: movie_id
+        description: The unique identifier of the movie
+      - name: movie_title
+        description: The title of the movie
+      - name: movie_url
+        description: URL to the movie page on Mubi
+      - name: avg_rating_score
+        description: The average rating score of the movie
+      - name: total_critic_comments
+        description: The total number of critic comments on the movie, replace NULL values with 0.
+      - name: percentage_subscribers_rated
+        description: The percentage of subscribers who rated the movie
+      - name: critic_highest_number_likes
+        description: The critic made by the user rating the movie that received the highest number of likes, with ties broken by the ascending order of the critic
+      - name: percentage_highest_rating_score
+        description: The percentage of the highest rating score the movie received
+  - name: movie_platform__directors
+    description: Each record represents a director
+    columns:
+      - name: director_id
+        description: The unique identifier of the director
+      - name: director_url
+        description: URL to the director page on Mubi
+      - name: director_name
+        description: The name of the director
+      - name: third_movie_directed
+        description: The title of the third movie directed by the director, with ties broken by the ascending order of the movie title
+      - name: highest_average_score_film
+        description: The title of the film with the highest average score directed by the director, with ties broken by the ascending order of the film title
+      - name: number_of_movies_directed_in_70s
+        description: The number of movies directed by the director in the 1970s, replace NULL values with 0.
+      - name: has_more_than_10_movies_1960_1985
+        description: Set to 1 if the director has directed more than 10 movies between 1960 and 1985, 0 otherwise
+      - name: average_rating_score_of_most_popular_movie
+        description: The average rating score of the most popular movie directed by the director, if there are multiple movies with the same popularity, rank them by the descending order of the movie title and take the first one

@@ -1,0 +1,28 @@
+column_name,column_description
+_fivetran_id,Fivetran's internal ID for this record
+_fivetran_synced,When this record was last synced with Fivetran
+carousel_album_engagement,Total number of likes and IG Comments on the album IG Media object.
+carousel_album_impressions,Total number of times the album IG Media object has been seen
+carousel_album_reach,Total number of unique Instagram accounts that have seen the album IG Media object.
+carousel_album_saved,Total number of unique Instagram accounts that have saved the album IG Media object.
+carousel_album_video_views,Total number of unique Instagram accounts that have viewed video IG Media within the album.
+comment_count,Total number of comments on the IG Media object.
+id,The media ID of this post or story
+like_count,Total number of likes on the IG Media object.
+story_exits,Number of times someone exited the story IG Media object.
+story_impressions,Total number of times the story IG Media object has been seen.
+story_reach,Total number of unique Instagram accounts that have seen the story IG Media object.
+story_replies,Total number of replies to the story IG Media object.
+story_taps_back,Total number of taps to see this story IG Media object's next photo or video.
+story_taps_forward,Total number of taps to see this story IG Media object's previous photo or video.
+video_photo_engagement,Total number of likes and IG Comments on the video IG Media object.
+video_photo_impressions,Total number of times the video IG Media object has been seen.
+video_photo_reach,Total number of unique Instagram accounts that have seen the video IG Media object.
+video_photo_saved,Total number of unique Instagram accounts that have saved the video IG Media object.
+video_views,Total number of times the video IG Media object has been viewed.
+reel_comments,Total number of comments on the reel IG Media object.
+reel_likes,Total number of likes on the reel IG Media object.
+reel_plays,Total number of times the reel IG Media object has been played.
+reel_reach,Total number of unique Instagram accounts that have seen the reel IG Media object.
+reel_shares,Total number of times the reel IG Media object has been shared.
+reel_total_interactions,Total number of interactions the reel IG Media object had.

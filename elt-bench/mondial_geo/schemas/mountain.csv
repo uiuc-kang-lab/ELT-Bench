@@ -1,0 +1,7 @@
+column_name,column_description
+name,the name of the mountain
+mountains,the mountains where it belongs to
+height, the maximal elevation of the summit of the mountain
+type, the sea where it finally flows to
+longitude,the length of the river
+latitude,the longitude of its source

@@ -1,0 +1,7 @@
+column_name,column_description
+business_id, unique number identifying the business
+active,whether the business is still actively running until now
+city,The city where the business is located
+state,The state where the business is located
+stars,ratings of the business
+review_count,the total number of reviews the users have written for a business

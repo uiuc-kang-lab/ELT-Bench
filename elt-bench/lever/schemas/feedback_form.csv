@@ -1,0 +1,13 @@
+column_name,column_description
+id,Unique id of the feedback form.
+completed_at,Timestamp of when the feedback form was completed.
+created_at,Timestamp of when the feedback form was created.
+creator_id,Foreign key referencing the USER who completed and submitted the feedback.
+deleted_at,Timestamp of when the feedback form was deleted.
+instructions,Form instructions.
+interview_id,Foreign key referencing the INTERVIEW for which the feedback is directed.
+score_system_value,Overall rating (1-4 scale) to the candidate.
+template_id,Foreign key referencing the TEMPLATE_FIELD that this form used.
+text,Form title. This can be edited in Feedback and Form Settings.
+type,Form type. Feedback forms are of type interview.
+opportunity_id,Foreign key referencing the OPPORTUNITY that the candidate was interviewed for.

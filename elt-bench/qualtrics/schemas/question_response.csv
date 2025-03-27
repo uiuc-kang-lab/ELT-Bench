@@ -1,0 +1,11 @@
+column_name,column_description
+_fivetran_id,Fivetran-generated unique key hashed on response_id, question_id, sub_question_key, sub_question_text , question_option_key , loop_id and importId.
+_fivetran_synced,The time when a record was last updated by Fivetran.
+loop_id,ID of the Loop and Merge object this response is associated with.
+question,Question text.
+question_id,The unique identifier for the question. Match pattern = ^QID[a-zA-Z0-9]+$
+question_option_key,The key of the `QUESTION_OPTION` that was chosen.
+response_id,The unique ID for the `SURVEY_RESPONSE`.
+sub_question_key,Key of the sub question.
+sub_question_text,Sub question text.
+value,Value of the question response.

@@ -1,0 +1,60 @@
+models:
+  - name: sales__customers
+    description: Each record represents a customer.
+    columns:
+      - name: CustomerID
+        description: Unique identifier for the customer.
+      - name: FirstName
+        description: The first name of the customer.
+      - name: LastName
+        description: The last name of the customer.
+      - name: product_with_the_highest_quantity
+        description: The product with the highest quantity the customer has bought, with ties broken by the ascending order of the product name
+      - name: above_average_bought_quantity
+        description: Set to 1 if the customer has bought more than the average quantity of all customers, 0 otherwise.
+      - name: total_bought_quantity
+        description: The total quantity of products the customer has bought, replace NULL values with 0.
+      - name: placed_order_for_product_id_1
+        description: Set to 1 if the customer has placed an order for product ID 1, 0 otherwise.
+      - name: total_price_purchased
+        description: The total price the customer has purchased, replace NULL values with 0.
+
+  - name: sales__employees
+    description: Each record represents an employee.
+    columns:
+      - name: EmployeeID
+        description: Unique identifier for the employee.
+      - name: FirstName
+        description: The first name of the employee.
+      - name: LastName
+        description: The last name of the employee.
+      - name: num_sales
+        description: The number of sales the employee has handled, replace NULL values with 0.
+      - name: sold_over_20000_Touring_Blue
+        description: Set to 1 if the employee has sold over 20000 units of the product "Touring-2000 Blue, 50", 0 otherwise.
+      - name: product_sold_most
+        description: The name of the product that is most sold by the employee, with ties broken by the ascending order of the product name
+      - name: num_customers
+        description: The number of customers the employee has served, replace NULL values with 0.
+      - name: total_amount_sold
+        description: The total amount the employee has sold, replace NULL values with 0.
+        
+  - name: sales__products
+    description: Each record represents a product.
+    columns:
+      - name: ProductID
+        description: Unique identifier for the product.
+      - name: Name
+        description: The name of the product.
+      - name: Price
+        description: The price of the product.
+      - name: total_sale_price
+        description: The total sale price of the product, replace NULL values with 0.
+      - name: sold_below_the_average_quantity
+        description: Set to 1 if the product has been sold below the average quantity of all products, 0 otherwise.
+      - name: per_sold
+        description: The percentage of the product sold in the total number of products sold.
+      - name: num_sold_by_Stearns_MacFeather
+        description: The number of products sold by the employee "Stearns MacFeather", replace NULL values with 0.
+      - name: is_freebies
+        description: Set to 1 if the product is freebies, 0 otherwise.

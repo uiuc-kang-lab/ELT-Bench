@@ -1,0 +1,101 @@
+Airbyte:
+  config:
+    files_definition_id: 778daa7c-feaf-4db6-96f3-70fd645acc77
+    mongodb_definition_id: b2e713cd-cc36-4c0a-b5bd-b47cb8a0561e
+    namespace_definition: destination
+    postgres_definition_id: decd338e-5647-4c0b-adf4-da0e75f5a750
+    s3_definition_id: 69589781-7828-43c5-9f63-8925b1c1ccc2
+    server_url: http://airbyte-abctl-control-plane:80/api/public/v1/
+    snowflake_definition_id: 424892c4-daac-4491-b35d-c6688ba547ba
+aws_s3:
+  AWS_ACCESS_KEY_ID: test
+  AWS_DEFAULT_REGION: us-west-2
+  AWS_ENDPOINT_URL: http://elt-localstack:4566
+  AWS_SECRET_ACCESS_KEY: test
+  data:
+  - path: s3://soccer-2016-bucket/City.jsonl
+    sync_mode: full_refresh_append
+    table: City
+  - path: s3://soccer-2016-bucket/Country.parquet
+    sync_mode: full_refresh_append
+    table: Country
+  - path: s3://soccer-2016-bucket/Out_Type.csv
+    sync_mode: full_refresh_append
+    table: Out_Type
+  - path: s3://soccer-2016-bucket/Outcome.jsonl
+    sync_mode: full_refresh_append
+    table: Outcome
+  - path: s3://soccer-2016-bucket/Team.jsonl
+    sync_mode: full_refresh_append
+    table: Team
+  - path: s3://soccer-2016-bucket/Toss_Decision.parquet
+    sync_mode: full_refresh_append
+    table: Toss_Decision
+  - path: s3://soccer-2016-bucket/Umpire.csv
+    sync_mode: full_refresh_append
+    table: Umpire
+custom_api:
+  config:
+    configuration: {}
+    sync_mode: full_refresh_append
+    tables:
+    - Batsman_Scored
+    - Match
+flat_files:
+- format: jsonl
+  path: https://drive.google.com/uc?export=download&id=1lbsOkkbcx_7j8vVkgVHWvkbLjDI4jnn8
+  sync_mode: full_refresh_append
+  table: Venue
+- format: jsonl
+  path: https://drive.google.com/uc?export=download&id=1TGvR-5gFpaBT6rVBmqvpA_jKL66vNGhx
+  sync_mode: full_refresh_append
+  table: Extra_Type
+- format: csv
+  path: https://drive.google.com/uc?export=download&id=1PD4jImXM1nJ7k0m3WA3QmXcX-1KjcFRT
+  sync_mode: full_refresh_append
+  table: Season
+- format: csv
+  path: https://drive.google.com/uc?export=download&id=15sw26A_X_PfM5Fj496tnGnyZPma5eul5
+  sync_mode: full_refresh_append
+  table: Rolee
+- format: csv
+  path: https://drive.google.com/uc?export=download&id=1eWKg6OVhfL-uLjmah4Yu6xSOzL6-CVDs
+  sync_mode: full_refresh_append
+  table: Batting_Style
+- format: parquet
+  path: https://drive.google.com/uc?export=download&id=1xZ13tb1nNTFpTvHTZ0uSn8WOCdwrH92B
+  sync_mode: full_refresh_append
+  table: Win_By
+- format: parquet
+  path: https://drive.google.com/uc?export=download&id=144CwS-ukkOxTytMVOcoKeC5PGZBcviCS
+  sync_mode: full_refresh_append
+  table: Bowling_Style
+mongodb:
+  config:
+    connection_string: mongodb://elt-mongodb:27017/?directConnection=true
+    database: soccer_2016
+    sync_mode: full_refresh_append
+    tables:
+    - Player
+    - Player_Match
+postgres:
+  config:
+    database: soccer_2016
+    host: elt-postgres
+    password: testelt
+    port: 5432
+    schema: public
+    sync_mode: full_refresh_append
+    tables:
+    - ball_by_ball
+    - extra_runs
+    - wicket_taken
+    user: postgres
+snowflake:
+  config:
+    database: soccer_2016
+    password: Snowflake@123
+    role: AIRBYTE_ROLE
+    schema: AIRBYTE_SCHEMA
+    username: AIRBYTE_USER
+    warehouse: AIRBYTE_WAREHOUSE

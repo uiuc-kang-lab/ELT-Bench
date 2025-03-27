@@ -1,0 +1,5 @@
+column_name,column_description
+actor_id,unique id number identifying the actor
+first_name,First name of the actor
+last_name,Last name of the actor
+last_update,The time of the latest update

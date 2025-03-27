@@ -1,0 +1,86 @@
+models:
+  - name: youtube__video_report
+    description: Each record represents the daily aggregation of your YouTube video performance.
+    columns:
+      - name: date_day
+        description: The date the video was viewed
+      - name: video_id
+        description: Unique ID of the video
+      - name: channel_id
+        description: Unique identifier of the video channel
+      - name: video_title
+        description: Title of the video
+      - name: video_description
+        description: Description of the video
+      - name: channel_title
+        description: Title of the channel
+      - name: video_published_at
+        description: Timestamp of when the video was published
+      - name: average_view_duration_percentage
+        description: Average duration of views represented as a percent of the entire length of the video 
+      - name: average_view_duration_seconds
+        description: Average duration of views for the video in seconds
+      - name: comments
+        description: Total number of comment posted on the video
+      - name: dislikes
+        description: Total number of dislikes attributed to the video
+      - name: likes
+        description: Total number of likes attributed to the video
+      - name: shares
+        description: Total number of times the video was shared
+      - name: subscribers_gained
+        description: Total subscribers gained from the video
+      - name: subscribers_lost
+        description: Total subscribers lost from the video
+      - name: views
+        description: Total number of views the video received
+      - name: watch_time_minutes
+        description: Total watch time in minutes the video received
+      - name: video_duration_seconds
+        description: The total duration of the video in seconds
+
+  - name: youtube__age_demographics_pivot
+    description: Each record represents a daily video view percentage with the age ranges pivoted out for quicker analysis.
+    columns:
+      - name: date_day
+        description: The date the video was viewed
+      - name: video_id
+        description: Unique ID of the video
+      - name: video_title
+        description: Title of the video
+      - name: video_description
+        description: Description of the video
+      - name: video_published_at
+        description: Timestamp of when the video was published
+      - name: channel_title
+        description: The channel title
+      - name: AGE_18_24_view_percentage
+        description: Total number of views percent attributed to the age range 18 - 24 years old
+      - name: AGE_65__view_percentage
+        description: Total number of views percent attributed to the age range 65 years and older
+      - name: AGE_13_17_view_percentage
+        description: Total number of views percent attributed to the age range 13 - 17 years old
+
+  - name: youtube__demographics_report
+    description: Each record represents a daily video view percentage by gender, age, and country.
+    columns:
+      - name: date_day
+        description: The date the video was viewed
+      - name: video_id
+        description: Unique ID of the video
+      - name: video_title
+        description: Title of the video
+      - name: video_description
+        description: Description of the video
+      - name: channel_title
+        description: The channel title
+      - name: video_published_at
+        description: Timestamp of when the video was published
+      - name: age_group
+        description: The age group the individual. Ranges follow the format of 'AGE_[min age]_[max age]'
+      - name: country_code
+        description: Country code where the individual who watched the video is located
+      - name: gender
+        description: Gender of the user who watched the video. Either 'MALE', 'FEMALE', or 'GENDER_OTHER'
+      - name: views_percentage
+        description: Total percent of views the user makes up for the video

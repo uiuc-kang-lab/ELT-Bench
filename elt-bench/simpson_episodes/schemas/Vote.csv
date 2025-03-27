@@ -1,0 +1,5 @@
+column_name,column_description
+episode_id,A unique identifier for episodes
+stars,the star score of the episode
+votes,the number of votes of the star score
+percent,the percent of the vote number of the star score

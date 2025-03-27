@@ -1,0 +1,4 @@
+column_name,column_description
+statecode,the unique code identifying the state
+state,full state name
+region,the region where the state is located in

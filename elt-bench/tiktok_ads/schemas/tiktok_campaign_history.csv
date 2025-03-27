@@ -1,0 +1,14 @@
+column_name,column_description
+campaign_id,Campaign ID
+updated_at,Time the record was updated.
+advertiser_id,Advertiser ID
+budget,Campaign budget
+budget_mode,Budget type
+campaign_name,Campaign name
+campaign_type,"Campaign Type, indicates the campaign is a regular campaign or iOS 14 campaign."
+create_time,Time at which the campaign was created.
+is_new_structure,"Whether the campaign is a new structure (for the same campaign, the structure of campaign, adgroups and ads are the same)"
+objective_type,Advertising objective.
+opt_status,Operation status.
+status,Campaign status
+split_test_variable,"Split Test variables. Optional values; TARGETING, BIDDING_OPTIMIZATION , CREATIVE."

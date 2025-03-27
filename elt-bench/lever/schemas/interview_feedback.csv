@@ -1,0 +1,3 @@
+column_name,column_description
+feedback_form_id,Foreign key referencing the FEEDBACK_FORM submitted for this interview.
+interview_id,Foreign key referencing the INTERVIEW that was given feedback for.

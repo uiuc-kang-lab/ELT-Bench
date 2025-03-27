@@ -1,0 +1,5 @@
+column_name,column_description
+business_id,the unique id of the business 
+score,the inspection score
+date,the inspection date
+type,the inspection type

@@ -1,0 +1,7 @@
+column_name,column_description
+country,the country code
+gdp,gross domestic product
+agriculture,percentage of agriculture of the GDP
+service,"percentage of services of the GDP,"
+industry,percentage of industry of the GDP
+inflation,"inflation rate (per annum),"

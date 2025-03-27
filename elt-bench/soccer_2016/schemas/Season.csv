@@ -1,0 +1,6 @@
+column_name,column_description
+season_id,the unique id for season
+man_of_the_series,the player id of man of the series
+orange_cap,the player id who wins the orange cap
+purple_cap,the player id who wins the purple cap
+season_year,the year of the season

@@ -1,0 +1,4 @@
+column_name,column_description
+index,index
+id,release identifier which can be matched with id field in the torrents table
+tag,tag

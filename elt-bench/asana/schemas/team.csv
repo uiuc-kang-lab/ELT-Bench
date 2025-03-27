@@ -1,0 +1,4 @@
+column_name,column_description
+id,System generated unique ID for each team
+name,Provided name for each team. There can be duplicates
+organization_id,"Equivalent to the workspace_id, as organizations are a kind of workspace. Probably not relevant unless working with multiple orgs."

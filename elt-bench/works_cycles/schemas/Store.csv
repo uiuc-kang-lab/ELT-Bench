@@ -1,0 +1,7 @@
+column_name,column_description
+businessentityid,The unique number identifying business entity.
+name,Name of the store.
+salespersonid,ID of the sales person assigned to the customer.
+demographics,"Demographic information about the store such as the number of employees, annual sales and store type."
+rowguid,Uniquely identifying the record. Used to support a merge replication sample. 
+modifieddate,Date and time the record was last updated. 

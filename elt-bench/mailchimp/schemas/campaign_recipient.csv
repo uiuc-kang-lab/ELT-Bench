@@ -1,0 +1,6 @@
+column_name,column_description
+campaign_id,The ID of the campaign a sent email is from.
+member_id,The ID of the member an email was sent to.
+combination_id,The ID of the combination the member was part of for a campaign.
+list_id,The ID of the list the campaign was sent to.
+_fivetran_synced,UTC timestamp that indicates the time when Fivetran last successfully synced the row.

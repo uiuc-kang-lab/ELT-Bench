@@ -1,0 +1,30 @@
+column_name,column_description
+_fivetran_synced,The timestamp that Fivetran last synced the record.
+contributors_enabled,Whether the user has contributors enabled
+created_at,Date and time when the user was created
+default_profile,"When true, indicates that the user has not altered the theme or background of their user profile."
+default_profile_image,"When true, indicates that the user has not uploaded their own profile image and a default image is used instead."
+description,The description on the user's profile
+favourites_count,Number of times the user has favorited a tweet
+followers_count,Number of followers the user has
+friends_count,Number of friends the user has
+geo_enabled,Whether the user has enabled geotagging
+id,The ID of the user in Twitter
+is_translation_enabled,Whether the user has translation enabled
+is_translator,Whether the user is a translator
+lang,The language of the user's account
+location,The location of the user's account
+name,The name of the user
+profile_background_image_url,URL of the user's profile background image
+profile_background_image_url_https,URL of the user's profile background image in HTTPS
+profile_banner_url,URL of the user's profile banner
+profile_image_url,URL of the user's profile image
+profile_image_url_https,URL of the user's profile image in HTTPS
+profile_use_background_image,Whether the user has a custom profile background image
+protected_user,Whether the user is protected
+screen_name,The screen name of the user
+statuses_count,Number of tweets the user has made
+time_zone,The time zone of the user's account
+url,The URL of the user's page
+utc_offset,The UTC offset of the user's account
+verified,Whether the user has verified their account

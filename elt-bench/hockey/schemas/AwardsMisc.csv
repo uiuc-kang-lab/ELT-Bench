@@ -1,0 +1,7 @@
+column_name,column_description
+name,unique name of awards
+id,"id number of players or coaches, etc."
+award,awarder
+year,year of the award
+lgid,league abbreviated name
+note,note if needed

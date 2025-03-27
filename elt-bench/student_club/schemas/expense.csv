@@ -1,0 +1,8 @@
+column_name,column_description
+expense_id,unique id of income
+expense_description,A textual description of what the money was spend for
+expense_date,The date the expense was incurred
+cost,The dollar amount of the expense
+approved,A true or false value indicating if the expense was approved
+link_to_member,The member who incurred the expense
+link_to_budget,The unique identifier of the record in the Budget table that indicates the expected total expenditure for a given category and event. 

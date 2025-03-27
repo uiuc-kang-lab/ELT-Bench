@@ -1,0 +1,11 @@
+column_name,column_description
+_fivetran_synced,The timestamp of when a record was last synced by Fivetran.
+created_at,Time list is created in Pardot.
+description,List's description
+id,Pardot ID of this list
+is_crm_visible,"If true, list is visible in CRM to add or remove from"
+is_dynamic,"If true, list has prospects dynamically added to it via a set of chosen rules"
+is_public,"If true, list will show on EPC pages to prospects"
+name,List's name (internal to Pardot)
+title,List's title (visible to subscribers)
+updated_at,Last time list was updated

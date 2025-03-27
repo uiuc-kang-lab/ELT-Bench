@@ -1,0 +1,6 @@
+column_name,column_description
+id,System generated unique id for the pull request review.
+pull_request_id,Foreign key that references the pull request table.
+submitted_at,Timestamp of when the request for review was submitted.
+state,"Whether the review was an approval, request for change, comment, dismissal."
+user_id,"Foreign key that references the user table, representing the user that reviewed the pull request."

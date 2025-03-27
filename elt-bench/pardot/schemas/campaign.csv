@@ -1,0 +1,6 @@
+column_name,column_description
+_fivetran_deleted,Boolean representing whether the record has been deleted in the source system.
+_fivetran_synced,The timestamp of when a record was last synced by Fivetran.
+id,Pardot ID for this campaign
+name,Campaign's name
+cost,Cost associated to the campaign

@@ -1,0 +1,5 @@
+column_name,column_description
+id,unique id identifying this set
+language,language of this card set
+setCode,the set code for this set
+translation,translation of this card set

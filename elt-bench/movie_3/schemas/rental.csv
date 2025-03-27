@@ -1,0 +1,8 @@
+column_name,column_description
+rental_id,unique id number identifying the rental
+rental_date,date when the rental occurs
+inventory_id,id number identifying the inventory
+customer_id,id number identifying the customer
+return_date,date when the rental returns
+staff_id,id number identifying the staff
+last_update,The time of the latest update

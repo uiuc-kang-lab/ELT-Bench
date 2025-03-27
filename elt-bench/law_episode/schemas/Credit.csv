@@ -1,0 +1,6 @@
+column_name,column_description
+episode_id,the id of the episode to which the credit information pertains
+person_id,the id of the person to which the credit information pertains
+category,the kind of credit being recognized
+role,the role for which the person is being recognized
+credited,whether the credit was displayed in the credits at the end of the episode

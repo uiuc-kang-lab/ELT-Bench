@@ -1,0 +1,26 @@
+column_name,column_description
+ad_id,Ad ID
+updated_at,Time the record was updated.
+adgroup_id,Ad group ID
+advertiser_id,Advertiser ID
+campaign_id,Campaign ID
+ad_name,Ad Name.
+ad_text,The ad text.
+app_name,The display name of app download ad.
+call_to_action,Call to action values.
+click_tracking_url,Click monitoring URL.
+create_time,Time at which the ad was created.
+display_name,The display name of landing page or pure exposure ad.
+image_ids,A list of image IDs.
+impression_tracking_url,Display monitoring URL.
+is_aco,Whether the ad is an automated ad.
+is_creative_authorized,"Whether you grant displaying some of your ads in our TikTok For Business Creative Center. Only valid for non-US advertisers, the default value is false.
+"
+is_new_structure,Whether the campaign is a new structure.
+landing_page_url,Landing page URL.
+open_url,The specific location where you want your audience to go if they have your app installed.
+opt_status,Operation status.
+playable_url,Playable material url.
+profile_image,Avatar URL.
+status,Ad status.
+video_id,The video ID.

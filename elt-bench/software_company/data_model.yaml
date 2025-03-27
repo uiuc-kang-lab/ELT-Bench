@@ -1,0 +1,20 @@
+models:
+  - name: geo
+    description: Each record represents a geo.
+    columns:
+      - name: geoid
+        description: Unique identifier for the geo.
+      - name: income_k
+        description: average income per inhabitant per month
+      - name: inhabitants_k
+        description: number of inhabitants
+      - name: num_male_customer_edu_level_4_and_below
+        description: The number of male customers with a level of education of 4 and below in the place, replace NULL values with 0.
+      - name: avg_education_level
+        description: The average education level of the inhabitants in the place.
+      - name: per_elderly_customer_never_married
+        description: The percentage of elderly customers who have never been married in the place.
+      - name: response_rate
+        description: The response rate of the customers in the place.
+      - name: per_male_teenager_among_all_teenage_edu_above_10
+        description: The percentage of male teenagers with an education level above 10 among all teenagers with an education level above 10.

@@ -1,0 +1,4 @@
+column_name,column_description
+movieid,identifier number of movies
+directorid,identifier number of directors
+genre,genre of movies

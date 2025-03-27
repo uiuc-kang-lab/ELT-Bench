@@ -1,0 +1,32 @@
+column_name,column_description
+id,The unique identifier of the
+_fivetran_synced,Timestamp of when a record was last synced.
+_fivetran_deleted,Boolean identifiying whether the record was deleted in the source.
+auto_renew,"Determines whether the subscription is automatically renewed, or whether it expires at the end of the term and needs to be manually renewed."
+booking_date,The date when the amendment is signed.
+code,A unique alphanumeric string that identifies the amendment.
+contract_effective_date,The date when the amendment's changes become effective for billing purposes.
+created_by_id,Identifier of the user who created
+created_date,Creation date for
+current_term,The length of the period for the current subscription term.
+current_term_period_type,The period type for the current subscription term.
+customer_acceptance_date,The date when the customer accepts the amendment's changes to the subscription.
+description,A description of the amendment.
+effective_date,The date when the amendment's changes take effective. This field validates that the amendment's changes are within valid ranges of products and product rate plans.
+name,The name of the amendment.
+new_rate_plan_id,The id of the rate plan that was added to the subscription by this amendment.
+removed_rate_plan_id,The id of the rate plan that was removed from the subscription by this amendment.
+renewal_setting,Specifies whether a termed subscription will remain termed or change to evergreen when it is renewed.
+renewal_term,The term of renewal for the amended subscription.
+renewal_term_period_type,The period type for the subscription renewal term.
+resume_date,The date when the subscription resumption takes effect.
+service_activation_date,The date when service is activated.
+specific_update_date,The date when the UpdateProduct amendment takes effect.
+status,The status of the amendment.
+subscription_id,The id of the subscription that the amendment changes.
+suspend_date,The date when the subscription suspension takes effect.
+term_start_date,The date when the new terms and conditions take effect.
+term_type,"Indicates if the subscription is TERMED (expiration date, must be manually renewed), EVERGREEN (doesn't have expiration date, must be manually ended)."
+type,The type of amendment.
+updated_by_id,Identifier of the user who last updated
+updated_date,Last updated date for

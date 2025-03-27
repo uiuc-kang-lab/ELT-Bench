@@ -1,0 +1,5 @@
+column_name,column_description
+district_id,unique id number representing district
+city,city 
+state_abbrev,state abbreviated code
+division,division

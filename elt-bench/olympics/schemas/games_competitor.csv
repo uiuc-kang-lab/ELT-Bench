@@ -1,0 +1,7 @@
+column_name,column_description
+id,the unique identifier of the record
+games_id,"the id of the game
+Maps to games(id)"
+person_id,"the id of the person
+Maps to person(id)"
+age,the age of the person when he/she participated in the game

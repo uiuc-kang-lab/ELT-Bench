@@ -1,0 +1,10 @@
+column_name,column_description
+coachid,ID number identifying the unique number of the coach
+year,
+tmid,team name
+lgid,league name
+stint,the period of the time coaching this team
+won,the number of won games
+lost,the number of lost games
+post_wins,the number of games won in the post-season (playoffs) games
+post_losses,the number of games lost in the post-season (playoffs) games

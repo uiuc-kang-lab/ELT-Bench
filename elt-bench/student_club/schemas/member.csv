@@ -1,0 +1,10 @@
+column_name,column_description
+member_id,unique id of member
+first_name,member's first name
+last_name,member's last name
+email,member's email
+position,The position the member holds in the club
+t_shirt_size,The size of tee shirt that member wants when shirts are ordered
+phone,The best telephone at which to contact the member
+zip,the zip code of the member's hometown
+link_to_major,The unique identifier of the major of the member. References the Major table

@@ -1,0 +1,33 @@
+column_name,column_description
+id,Uniquely identifies your customers in Recurly. No two customers can share the same account id. Part of the PK
+updated_at,When the account was last changed.
+account_city,The city the account was registered in.
+account_country,The country the account was registered in.
+account_first_name,The first name for who registered the account.
+account_last_name,The last name for who registered the account.
+account_phone,The contact phone number registered on the account.
+account_postal_code,The contact postal code registered on the account.
+account_region,"The region registered with the account, like state in the US or province in Canada."
+account_street_1,The first street line registered with the account.
+account_street_2,The second street line registered with the account.
+bill_to,"An enumerable describing the billing behavior of the account,  specifically whether the account is self-paying or will rely on the parent account to pay.
+"
+cc_emails,"Additional email address that should receive account correspondence.  These should be separated only by commas.  These CC emails will receive all emails that the email field also receives.         
+"
+code,"The unique identifier of the account. This cannot be changed once the account is created. Provided during account creation.
+"
+company,The company related with the account.
+created_at,When the account was created.
+deleted_at,"If present, when the account was last marked inactive."
+email,"The email address used for communicating with this customer.  The customer will also use this email address to log into your hosted account management pages.  This value does not need to be unique.
+"
+exemption_certificate,"Exemption certificate to prove that the business is tax exempt.
+"
+first_name,The first name of the customer related to the account.
+hosted_login_token,Custom URL on your site that logs the user directly into their account
+last_name,The last name of the customer related to the account.
+preferred_locale,"The language code and country code for this account, like en-US."
+state,Accounts can be either active or inactive.
+tax_exempt,"The tax status of the account. true exempts tax on the account, false applies tax on the account."
+username,A secondary value for the account.
+vat_number,The VAT number of the account (to avoid having the VAT applied). This is only used for manually collected invoices.

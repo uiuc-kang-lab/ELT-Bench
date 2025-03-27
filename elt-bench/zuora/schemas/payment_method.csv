@@ -1,0 +1,25 @@
+column_name,column_description
+id,The unique identifier of the payment method.
+_fivetran_synced,Timestamp of when a record was last synced.
+_fivetran_deleted,Boolean identifiying whether the record was deleted in the source.
+account_id,The unique identifier of the account associated with this payment method.
+ach_account_type,The account type for ACH payment methods.
+active,A Boolean value indicating whether this payment method is active.
+bank_transfer_account_type,The account type for bank transfer payment methods.
+created_by_id,The unique identifier of the user who created this payment method.
+created_date,The date and time when this payment method was created.
+credit_card_type,The credit card type for credit card payment methods.
+last_failed_sale_transaction_date,The date and time when the last sale transaction failed for this payment method.
+last_transaction_date_time,The date and time of the last transaction for this payment method.
+last_transaction_status,The status of the last transaction for this payment method.
+max_consecutive_payment_failures,The maximum number of consecutive payment failures allowed for this payment method.
+name,The name of the payment method.
+num_consecutive_failures,The number of consecutive payment failures for this payment method.
+payment_method_status,The status of the payment method.
+paypal_type,The PayPal account type for PayPal payment methods.
+sub_type,The sub-type of the payment method.
+total_number_of_error_payments,The total number of error payments for this payment method.
+total_number_of_processed_payments,The total number of processed payments for this payment method.
+type,The type of the payment method.
+updated_by_id,The unique identifier of the user who last updated this payment method.
+updated_date,The date and time when this payment method was last updated.

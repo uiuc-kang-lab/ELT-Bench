@@ -1,0 +1,8 @@
+column_name,column_description
+date,the date of the observation
+patient,the patient id
+encounter,the medical encounter id
+code,the code of the observation type
+description,the description of the observation
+value,the observation value
+units,the units of the observation value

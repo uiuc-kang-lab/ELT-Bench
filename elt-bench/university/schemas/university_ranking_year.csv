@@ -1,0 +1,5 @@
+column_name,column_description
+university_id,the id of the university
+ranking_criteria_id,the id of the ranking criteria
+year,ranking year
+score,ranking score

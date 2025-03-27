@@ -1,0 +1,66 @@
+Airbyte:
+  config:
+    files_definition_id: 778daa7c-feaf-4db6-96f3-70fd645acc77
+    mongodb_definition_id: b2e713cd-cc36-4c0a-b5bd-b47cb8a0561e
+    namespace_definition: destination
+    postgres_definition_id: decd338e-5647-4c0b-adf4-da0e75f5a750
+    s3_definition_id: 69589781-7828-43c5-9f63-8925b1c1ccc2
+    server_url: http://airbyte-abctl-control-plane:80/api/public/v1/
+    snowflake_definition_id: 424892c4-daac-4491-b35d-c6688ba547ba
+aws_s3:
+  AWS_ACCESS_KEY_ID: test
+  AWS_DEFAULT_REGION: us-west-2
+  AWS_ENDPOINT_URL: http://elt-localstack:4566
+  AWS_SECRET_ACCESS_KEY: test
+  data:
+  - path: s3://asana-bucket/task_section.csv
+    sync_mode: full_refresh_append
+    table: task_section
+  - path: s3://asana-bucket/task_tag.jsonl
+    sync_mode: full_refresh_append
+    table: task_tag
+custom_api:
+  config:
+    configuration: {}
+    sync_mode: full_refresh_append
+    tables:
+    - project
+    - story
+flat_files:
+- format: jsonl
+  path: https://drive.google.com/uc?export=download&id=1K2BG3X5m_o_nyzE9yGjfKVr66Pe7GQRq
+  sync_mode: full_refresh_append
+  table: task_follower
+- format: csv
+  path: https://drive.google.com/uc?export=download&id=1a4CFOkwotBJRtom6rkZ0gPIC_JAVBpNK
+  sync_mode: full_refresh_append
+  table: project_task
+mongodb:
+  config:
+    connection_string: mongodb://elt-mongodb:27017/?directConnection=true
+    database: asana
+    sync_mode: full_refresh_append
+    tables:
+    - section
+    - team
+    - user
+postgres:
+  config:
+    database: asana
+    host: elt-postgres
+    password: testelt
+    port: 5432
+    schema: public
+    sync_mode: full_refresh_append
+    tables:
+    - tag
+    - task
+    user: postgres
+snowflake:
+  config:
+    database: asana
+    password: Snowflake@123
+    role: AIRBYTE_ROLE
+    schema: AIRBYTE_SCHEMA
+    username: AIRBYTE_USER
+    warehouse: AIRBYTE_WAREHOUSE

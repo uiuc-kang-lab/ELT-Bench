@@ -1,0 +1,18 @@
+column_name,column_description
+patient,the unique id for the patient
+birthdate,the birth date of the patient
+deathdate,the death date of the patient
+ssn,the social security number of the patient
+drivers,the driver number of the patient
+passport,the passport number
+prefix,the prefix
+first,the first name
+last,the last name
+suffix,the suffix of the patient
+maiden,the maiden name of the patient
+marital,the marital status of the patient
+race,the race of the patient
+ethnicity,the ethnicity of the patient
+gender,the gender of the patient
+birthplace,the birth place
+address,the specific address

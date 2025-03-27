@@ -1,0 +1,10 @@
+column_name,column_description
+customer_id,unique id number identifying the country
+store_id,unique id number identifying the store
+first_name,First name of the customer
+last_name,Last name of the customer
+email,Email address of the customer
+address_id,Address id number of the customer.
+active,Wether the customer is active or not.
+create_date,The date when the record is created.
+last_update,The time of the latest update

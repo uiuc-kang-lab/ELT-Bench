@@ -1,0 +1,5 @@
+column_name,column_description
+business_id,the number identifying the business
+user_id,the number identifying the user who comments on this business
+likes,how many likes of this tips
+tip_length,length of the tip

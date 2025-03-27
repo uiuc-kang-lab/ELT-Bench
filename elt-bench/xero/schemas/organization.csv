@@ -1,0 +1,4 @@
+column_name,column_description
+organisation_id,Xero identifier for the organisation.
+financial_year_end_month,Calendar Month e.g. 1-12
+financial_year_end_day,Calendar day e.g. 0-31

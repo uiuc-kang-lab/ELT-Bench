@@ -1,0 +1,4 @@
+column_name,column_description
+pid,page id of Wikipedia about Catalan language
+wid,The word id of the Catalan language
+occurrences,times of this word appears into this page

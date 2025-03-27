@@ -1,0 +1,9 @@
+column_name,column_description
+transactionid,the unique id for the transaction
+creditcardnumber,the number of the credit card used for payment
+customerid,the customer id
+transactiondate,the transaction date
+creditcardtype,the credit card type
+locationid,the location id of the selling company 
+rootbeerid,the root beer id
+purchaseprice,the unit purchase price of the root beer

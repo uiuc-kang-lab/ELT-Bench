@@ -1,0 +1,4 @@
+column_name,column_description
+language_id,unique id number identifying the language
+name,name of the language
+last_update,The time of the latest update

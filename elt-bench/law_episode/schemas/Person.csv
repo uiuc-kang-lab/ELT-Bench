@@ -1,0 +1,10 @@
+column_name,column_description
+person_id,the unique identifier for the person
+name,the name of the person
+birthdate,the date the person was born
+birth_name,the name parents gave to the person shortly after birth
+birth_place,the place where a person was born.
+birth_region,the geographical area describing where a person was born that is larger than the birth place
+birth_country,the name of the country where the person was born
+height_meters,how tall the person is in meters
+nickname,the nickname the person goes by

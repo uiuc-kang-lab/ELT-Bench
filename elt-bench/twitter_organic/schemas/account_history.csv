@@ -1,0 +1,13 @@
+column_name,column_description
+_fivetran_synced,The timestamp that Fivetran last synced the record.
+approval_status,Approval status of the account in Twitter
+business_id,ID of the associated business in Twitter
+business_name,Name of the associated business in Twitter
+created_at,Date and time when the account was created
+deleted,Whether the account has been deleted
+id,ID of the account in Twitter
+industry_type,Industry type of the account in Twitter
+name,Name of the account in Twitter
+salt,Salt used to generate the account's unique ID
+timezone,Timezone of the account in Twitter
+updated_at,Date and time when the account was last updated

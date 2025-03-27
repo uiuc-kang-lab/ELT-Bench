@@ -1,0 +1,9 @@
+column_name,column_description
+emp_id,unique number identifying employees 
+fname,first name of employees
+minit,middle name
+lname,last name
+job_id,number identifying jobs
+job_lvl,job level
+pub_id,id number identifying publishers
+hire_date,hire date

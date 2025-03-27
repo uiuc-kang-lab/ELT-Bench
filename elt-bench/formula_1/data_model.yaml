@@ -1,0 +1,20 @@
+models:
+  - name: formula__drivers
+    description: Each record represents a driver.
+    columns:
+      - name: driverId
+        description: Unique identifier for the driver.
+      - name: fullname
+        description: Full name of the driver
+      - name: nationality
+        description: The nationality of the driver.
+      - name: num_winnings
+        description: The number of winnings by the driver, replace NULL values with 0.
+      - name: year_and_race_of_fastest_lap
+        description: Concatenate the year and the name of the race, separated by a space, in which the driver had his fastest lap, with ties broken by the ascending of the year first, then descending order of the name of the race
+      - name: points_recorded_for_first_race
+        description: The points recorded for the driver's first race event.
+      - name: num_accidents
+        description: The number of accidents the driver has been involved in, replace NULL values with 0.
+      - name: avg_pit_stop_duration
+        description: The average duration of the pit stops the driver has made.

@@ -1,0 +1,5 @@
+column_name,column_description
+id,System generated unique ID for each section
+created_at,Timestamp of when the section was created by a user
+name,"The given name of the section as it appears in the UI. Is stored as ""(no section)"" when this is the default bucket for tasks with a section in a project"
+project_id,Foreign key referencing the PROJECT that the section lives in

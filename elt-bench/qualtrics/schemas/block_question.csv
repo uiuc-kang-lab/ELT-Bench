@@ -1,0 +1,6 @@
+column_name,column_description
+_fivetran_deleted,Boolean representing whether the record was soft-deleted in Qualtrics.
+_fivetran_synced,The time when a record was last updated by Fivetran.
+block_id,"The ID of the survey block. Match pattern = ^BL_[a-zA-Z0-9]{11,15}$"
+question_id,The unique identifier for the question. Match pattern = ^QID[a-zA-Z0-9]+$
+survey_id,"The unique identifier for this survey. Match pattern = ^SV_[a-zA-Z0-9]{11,15}$"

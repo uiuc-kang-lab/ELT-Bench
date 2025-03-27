@@ -1,0 +1,10 @@
+column_name,column_description
+id,Unique identifier for the coupon redemption created.
+account_id,Account associated with the coupon being redeemed.
+coupon_id,Coupon being redeemed.
+created_at,Time coupon was being redeemed.
+currency,3-letter ISO 4217 currency code (USD for US Dollar).
+discounted,Amount discounted from coupon redemption.
+removed_at,"If a coupon is removed from a customer, time of removal."
+state,Current state of coupon redemption (usually active or inactive)
+updated_at,Time coupon redemption last updated.

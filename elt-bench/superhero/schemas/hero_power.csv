@@ -1,0 +1,5 @@
+column_name,column_description
+hero_id,"the id of the hero
+Maps to superhero(id)"
+power_id,"the id of the power
+Maps to superpower(id)"

@@ -1,0 +1,5 @@
+column_name,column_description
+station_id,station id
+bikes_available,number of available bikes
+docks_available,number of available docks
+time,

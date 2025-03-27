@@ -1,0 +1,12 @@
+column_name,column_description
+staff_id,unique id number identifying the staff
+first_name,First name of the actor
+last_name,Last name of the actor
+address_id,id number identifying the address
+picture,
+email,
+store_id,id number identifying the store
+active,Whether the staff is active or not.
+username,username to login the staff
+password,password to login the staff
+last_update,The time of the latest update

@@ -1,0 +1,17 @@
+column_name,column_description
+district_id,location of branch
+A2,district_name
+A3,region
+A4,
+A5,municipality < district < region
+A6,municipality < district < region
+A7,municipality < district < region
+A8,municipality < district < region
+A9,
+A10,ratio of urban inhabitants
+A11,average salary
+A12,unemployment rate 1995
+A13,unemployment rate 1996
+A14,no. of entrepreneurs per 1000 inhabitants
+A15,no. of committed crimes 1995
+A16,no. of committed crimes 1996

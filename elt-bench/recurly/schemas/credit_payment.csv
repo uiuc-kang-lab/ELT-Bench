@@ -1,0 +1,18 @@
+column_name,column_description
+id,Unique identifier for the credit payment.
+account_id,The id of the account the credit payment is associated with.
+action,"The action that resulted in the credit payment being created. Enum: ""payment"", ""gift_card"", ""write_off"", ""reduction"", ""refund"" 
+"
+amount,"The amount of the credit payment, which will always be positive."
+applied_to_invoice_id,"The invoice the credit payment was applied to.  If action is payment, gift_card, or write_off, this is a charge invoice.  If action is reduction or refund, this is a credit invoice.
+"
+created_at,The date and time the credit payment was created.
+currency,3-letter ISO 4217 currency code (USD for US Dollar).
+original_credit_payment_id,"The unique id of the credit payment the refund action credit payment is refunding.  Will only populate if the action on the row is ""refund"".
+"
+original_invoice_id,The invoice of the credit invoice the credit payment came from.
+refund_transaction_id,"The unique id of the new refund transaction the refund action credit payment is transferring value to.  Will only populate if the action on the row is ""refund"".
+"
+updated_at,Time credit payment last updated.
+uuid,Unique id of credit payment.
+voided_at,Time when a credit payment is voided.

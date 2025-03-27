@@ -1,0 +1,12 @@
+column_name,column_description
+salesorderid,
+salesorderdetailid,
+carriertrackingnumber,
+orderqty,
+productid,
+specialofferid,
+unitprice,
+unitpricediscount,
+linetotal,
+rowguid,
+modifieddate,modified date

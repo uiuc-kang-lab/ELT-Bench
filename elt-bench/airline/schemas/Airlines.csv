@@ -1,0 +1,29 @@
+column_name,column_description
+FL_DATE,flight date
+OP_CARRIER_AIRLINE_ID,operator carrier airline id
+TAIL_NUM,plane's tail number
+OP_CARRIER_FL_NUM,operator carrier flight number
+ORIGIN_AIRPORT_ID,origin airport id
+ORIGIN_AIRPORT_SEQ_ID,origin airport sequence id
+ORIGIN_CITY_MARKET_ID,origin city market id
+ORIGIN,airport of origin
+DEST_AIRPORT_ID,ID of the destination airport
+DEST_AIRPORT_SEQ_ID,
+DEST_CITY_MARKET_ID,
+DEST,Destination airport
+CRS_DEP_TIME,
+DEP_TIME,Flight departure time
+DEP_DELAY,Departure delay indicator
+DEP_DELAY_NEW,departure delay new
+ARR_TIME,Flight arrival time.
+ARR_DELAY,arrival delay time
+ARR_DELAY_NEW,arrival delay new
+CANCELLED,Flight cancellation indicator.
+CANCELLATION_CODE,cancellation code
+CRS_ELAPSED_TIME,scheduled elapsed time
+ACTUAL_ELAPSED_TIME,actual elapsed time
+CARRIER_DELAY,carrier delay
+WEATHER_DELAY,delay caused by the wheather problem
+NAS_DELAY,"delay, in minutes, attributable to the National Aviation System"
+SECURITY_DELAY,delay attribute to security
+LATE_AIRCRAFT_DELAY,delay attribute to late aircraft

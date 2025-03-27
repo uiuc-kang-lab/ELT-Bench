@@ -1,0 +1,5 @@
+column_name,column_description
+id,unique id identifying this legality
+format,format of play
+status,
+uuid,

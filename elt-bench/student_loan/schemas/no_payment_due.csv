@@ -1,0 +1,3 @@
+column_name,column_description
+name,student's name 
+bool,whether the student has payment dues

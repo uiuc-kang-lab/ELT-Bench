@@ -1,0 +1,7 @@
+column_name,column_description
+university_id,id of the university
+year,
+num_students,the total number of students for the year
+student_staff_ratio,
+pct_international_students,the percentage of international students among all students
+pct_female_students,the percentage of female students

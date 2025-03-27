@@ -1,0 +1,342 @@
+{
+    "address": [
+        "congress"
+    ],
+    "app_store": [
+        "playstore"
+    ],
+    "authors": [
+        "Author"
+    ],
+    "beer_factory": [
+        "customers"
+    ],
+    "bike_share_1": [
+        "trip"
+    ],
+    "book_publishing_company": [
+        "authors",
+        "employee"
+    ],
+    "books": [
+        "author",
+        "book",
+        "customer"
+    ],
+    "car_retails": [
+        "customers",
+        "products"
+    ],
+    "chicago_crime": [
+        "Ward"
+    ],
+    "codebase_comments": [
+        "Method"
+    ],
+    "college_completion": [
+        "institution_details"
+    ],
+    "computer_student": [
+        "person"
+    ],
+    "cookbook": [
+        "Recipe"
+    ],
+    "cs_semester": [
+        "prof"
+    ],
+    "disney": [
+        "characters"
+    ],
+    "donor": [
+        "donations",
+        "projects"
+    ],
+    "food_inspection": [
+        "businesses"
+    ],
+    "food_inspection_2": [
+        "establishment",
+        "violation"
+    ],
+    "genes": [
+        "Genes"
+    ],
+    "hockey": [
+        "Coaches",
+        "Goalies",
+        "GoaliesSC",
+        "Teams"
+    ],
+    "ice_hockey_draft": [
+        "PlayerInfo"
+    ],
+    "image_and_language": [
+        "IMG_OBJ_ATT"
+    ],
+    "language_corpus": [
+        "pages"
+    ],
+    "law_episode": [
+        "Episode",
+        "Person"
+    ],
+    "legislator": [
+        "current_terms"
+    ],
+    "mental_health_survey": [
+        "Answer"
+    ],
+    "menu": [
+        "Menu"
+    ],
+    "mondial_geo": [
+        "organization",
+        "island",
+        "islandIn",
+        "lake",
+        "river"
+    ],
+    "movie": [
+        "actor"
+    ],
+    "movie_3": [
+        "actor",
+        "customer",
+        "staff"
+    ],
+    "movie_platform": [
+        "lists_users"
+    ],
+    "movielens": [
+        "movies2actors",
+        "movies2directors"
+    ],
+    "movies_4": [
+        "movie",
+        "person",
+        "production_company"
+    ],
+    "music_platform_2": [
+        "podcasts"
+    ],
+    "music_tracker": [
+        "torrents"
+    ],
+    "olympics": [
+        "person"
+    ],
+    "professional_basketball": [
+        "draft",
+        "player_allstar",
+        "players"
+    ],
+    "public_review_platform": [
+        "Business_Attributes",
+        "Business_Hours",
+        "Users",
+        "Users_Compliments",
+        "Reviews"
+    ],
+    "regional_sales": [
+        "Customers",
+        "Sales_Team"
+    ],
+    "retail_complains": [
+        "client"
+    ],
+    "retail_world": [
+        "Customers",
+        "Employees"
+    ],
+    "retails": [
+        "customer",
+        "partsupp"
+    ],
+    "sales": [
+        "Customers"
+    ],
+    "shakespeare": [
+        "characters"
+    ],
+    "shipping": [
+        "customer"
+    ],
+    "simpson_episodes": [
+        "Person"
+    ],
+    "soccer_2016": [
+        "Player",
+        "Player_Match"
+    ],
+    "social_media": [
+        "twitter"
+    ],
+    "software_company": [
+        "Customers"
+    ],
+    "student_loan": [
+        "enlist",
+        "person",
+        "unemployed"
+    ],
+    "superstore": [
+        "people"
+    ],
+    "synthea": [
+        "patients"
+    ],
+    "talkingdata": [
+        "gender_age"
+    ],
+    "university": [
+        "university"
+    ],
+    "video_games": [
+        "game"
+    ],
+    "works_cycles": [
+        "Address",
+        "BusinessEntity",
+        "BusinessEntityAddress",
+        "BusinessEntityContact",
+        "Employee",
+        "EmployeeDepartmentHistory",
+        "EmployeePayHistory",
+        "JobCandidate",
+        "Person",
+        "Product",
+        "ProductDescription",
+        "ProductDocument",
+        "ProductModel",
+        "ProductPhoto",
+        "ProductProductPhoto",
+        "ProductSubcategory",
+        "SalesPerson"
+    ],
+    "world_development_indicators": [
+        "Country",
+        "Series"
+    ],
+    "california_schools": [
+        "frpm"
+    ],
+    "card_games": [
+        "cards",
+        "rulings"
+    ],
+    "codebase_community": [
+        "comments",
+        "postHistory",
+        "posts"
+    ],
+    "debit_card_specializing": [
+        "customers"
+    ],
+    "european_football_2": [
+        "Player",
+        "Team"
+    ],
+    "financial": [
+        "client"
+    ],
+    "formula_1": [
+        "circuits",
+        "constructors",
+        "drivers",
+        "races"
+    ],
+    "student_club": [
+        "member"
+    ],
+    "superhero": [
+        "superhero",
+        "superpower"
+    ],
+    "thrombosis_prediction": [
+        "Patient"
+    ],
+    "toxicology": [
+        "atom"
+    ],
+    "twilio": [
+        "call"
+    ],
+    "facebook_ads": [
+        "ad_set_history",
+        "basic_ad"
+    ],
+    "youtube_analytics": [
+        "channel_demographics"
+    ],
+    "zuora": [
+        "account",
+        "product"
+    ],
+    "workday": [
+        "person_contact_email_address",
+        "position_job_profile"
+    ],
+    "lever": [
+        "contact_phone",
+        "interview_feedback"
+    ],
+    "pinterest": [
+        "ad_group_history",
+        "keyword_report"
+    ],
+    "linkedin": [
+        "campaign_history"
+    ],
+    "github": [
+        "issue_comment",
+        "label",
+        "pull_request_review",
+        "team"
+    ],
+    "tiktok_ads": [
+        "tiktok_campaign_report_hourly"
+    ],
+    "apple_store": [
+        "app_store_territory",
+        "downloads_territory",
+        "usage_territory"
+    ],
+    "xero": [
+        "account",
+        "contact"
+    ],
+    "twitter_organic": [
+        "organic_tweet_report"
+    ],
+    "pardot": [
+        "list_membership",
+        "opportunity"
+    ],
+    "asana": [
+        "section",
+        "team",
+        "user"
+    ],
+    "recurly": [
+        "account_note",
+        "transaction_subscription"
+    ],
+    "microsoft_ads": [
+        "account_history",
+        "ad_history"
+    ],
+    "mailchimp": [
+        "segment",
+        "segment_member"
+    ],
+    "marketo": [
+        "activity_email_bounced",
+        "activity_email_delivered"
+    ],
+    "qualtrics": [
+        "block_question",
+        "core_contact",
+        "question_option"
+    ]
+}

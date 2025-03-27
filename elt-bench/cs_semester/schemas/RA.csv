@@ -1,0 +1,6 @@
+column_name,column_description
+student_id,the id numbe representing each student
+capability,"the capability of student on research
+(Evaluated by the professor)"
+prof_id,professor who advises this student
+salary,the salary of this student.

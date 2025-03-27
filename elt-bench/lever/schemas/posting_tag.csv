@@ -1,0 +1,4 @@
+column_name,column_description
+posting_id,Foreign key referencing the id of the job POSTING.
+tag,Text of the posting's individual tag.
+_fivetran_deleted,Boolean that is true if the posting-tag association has been deleted.

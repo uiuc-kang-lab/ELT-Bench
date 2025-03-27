@@ -1,0 +1,19 @@
+column_name,column_description
+resultId,the unique identification number identifying race result 
+raceId,the identification number identifying the race 
+driverId,the identification number identifying the driver 
+constructorId,the identification number identifying which constructors 
+number,number  
+grid,the number identifying the area where cars are set into a grid formation in order to start the race. 
+position,The finishing position or track of circuits 
+positionText,
+positionOrder,the finishing order of positions 
+points,points 
+laps,lap number 
+time_,finish time 
+milliseconds,the actual finishing time of drivers in milliseconds  
+fastestLap,fastest lap number 
+rank,starting rank positioned by fastest lap speed
+fastestLapTime,fastest Lap Time
+fastestLapSpeed,fastest Lap Speed 
+statusId,status ID 

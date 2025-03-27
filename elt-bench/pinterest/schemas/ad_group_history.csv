@@ -1,0 +1,13 @@
+column_name,column_description
+id,The ID of the related Ad group.
+campaign_id,The ID of the related Campaign.
+ad_account_id,The ID of the related Advertiser.
+created_time,Ad group creation time.
+name,Ad group name.
+status,"The status of the Ad group. One of ""ACTIVE"", ""ARCHIVED"", ""PAUSED"""
+start_time,Ad group start time.
+end_time,Ad group end time.
+pacing_delivery_type,"Ad group pacing delivery type. With ACCELERATED, an ad group budget is spent as fast as possible. With STANDARD, an ad group budget is spent smoothly over a day. When using CBO, only the STANDARD pacing delivery type is allowed."
+placement_group,"The placement group. ""ALL"", ""SEARCH"", ""BROWSE"", or ""OTHER"""
+summary_status,"Summary status. ""RUNNING"", ""PAUSED"", ""NOT_STARTED"", ""COMPLETED"", ""ADVERTISER_DISABLED"", ""ARCHIVED"""
+_fivetran_synced,Timestamp of when a record was last synced.

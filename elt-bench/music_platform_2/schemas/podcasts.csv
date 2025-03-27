@@ -1,0 +1,6 @@
+column_name,column_description
+podcast_id,The unique id of the podcast 
+itunes_id,The unique id of the itunes.
+slug,The slug of the podcast.
+itunes_url,The iTunes url of the podcast.
+title,The title of the podcast.

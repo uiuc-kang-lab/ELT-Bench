@@ -1,0 +1,6 @@
+column_name,column_description
+match_id,Unique Number Which Identifies a match
+over_id,Unique Number which Identifies an over in an Innings
+ball_id,Unique Number which Identifies a ball in an over
+runs_scored,Number of Runs scored by the batsman
+innings_no,Unique Number which Identifies an innings in a match

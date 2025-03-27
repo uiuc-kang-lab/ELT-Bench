@@ -1,0 +1,8 @@
+column_name,column_description
+inspection_id,the unique id for the inspection
+inspection_date,the date of the inspection
+inspection_type,the type of the inspection
+results,the inspection results
+employee_id,the id of the employee who is responsible for the inspection
+license_no,the license number of the facility that is inspected
+followup_to,the id of inspections that this inspection is following up

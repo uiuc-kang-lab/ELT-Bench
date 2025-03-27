@@ -1,0 +1,39 @@
+models:
+  - name: employees
+    description: Each record represents an employee.
+    columns:
+      - name: employee_id
+        description: Unique identifier for the employee.
+      - name: last_name
+        description: Last name of the employee.
+      - name: first_name
+        description: First name of the employee.
+      - name: num_inspections
+        description: The number of inspections the employee has conducted, replace NULL values with 0.
+      - name: is_under_Gregory_Cardenas
+        description: Set to 1 if the employee is under the supervision of Gregory Cardenas, otherwise, set to 0
+      - name: total_amount_of_fine
+        description: The total amount of fine given by the employee, replace NULL values with 0.
+      - name: inspection_pass_rate
+        description: The inspection pass rate of the employee
+      - name: is_Sanitarian_and_has_inspected_the_facility_Burbank
+        description: Set to 1 if the employee is a Sanitarian and has inspected the facility in Burbank, otherwise, set to 0
+  - name: businesses
+    description: Each record represents a facility.
+    columns:
+      - name: license_no
+        description: Unique identifier for the facility.
+      - name: dba_name
+        description: The dba name of the facility.
+      - name: facility_type
+        description: The type of facility.
+      - name: at_least_5_failed_inspection_bewteen_20100101_20151231
+        description: Set to 1 if the facility has at least 5 failed inspections between 1/1/2010 and 12/31/2015, otherwise, set to 0
+      - name: total_fine_2014
+        description: The total fine the facility received in 2014, replace NULL values with 0.
+      - name: per_failed_inspections
+        description: The percentage of failed inspections the facility has.
+      - name: has_paid_at_least_250_fine
+        description: Set to 1 if the facility has paid at least $250 in fines, otherwise, set to 0
+      - name: num_violations
+        description: The number of violations the facility has, replace NULL values with 0.

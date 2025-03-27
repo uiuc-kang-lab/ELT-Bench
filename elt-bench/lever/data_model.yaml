@@ -1,0 +1,94 @@
+models:
+  - name: lever__posting_enhanced
+    description: Table capturing job postings.
+    columns:
+      - name: job_commitment
+        description: Tag for job position work type (e.g. Full-time, Part-time, Internship).
+      - name: job_location
+        description: Tag for job position location.
+      - name: job_team
+        description: Tag for the team to which the job posting belongs (a sub-category of department).
+      - name: content_description
+        description: Job posting description that is shown at the top of the job's page, as plaintext.
+      - name: created_at
+        description: Timestamp of when the posting was created in Lever.
+      - name: creator_user_id
+        description: Foreign key referencing the id of the USER who created the job posting. 
+      - name: posting_id
+        description: Unique ID of the job posting. 
+      - name: owner_user_id
+        description: Foreign key referencing the id of the USER who owns the posting. The posting owner is the individual who is directly responsible for managing all candidates who are applied to that role.
+      - name: current_state
+        description: Current status of the posting, which may include 'published', 'internal' (called 'unlisted' in the UI), 'closed', 'draft', 'pending' (awaiting approval), and 'rejected'.
+      - name: job_title
+        description: Title of the job posting role.
+      - name: updated_at
+        description: Timestamp of when the posting was last updated.
+      - name: count_referred_applications
+        description: Count of how many applications were referred to this posting. Set to 0 if NULL.
+      - name: count_posting_applications
+        description: Count of how many applications were submitted through the posting (including via an agency).Set to 0 if NULL.
+      - name: count_manual_user_applications
+        description: Count of how many applications have been manually submitted by internal users. Set to 0 if NULL.
+      - name: count_opportunities
+        description: Count of how many opportunities applied to this posting. Set to 0 if NULL.
+      - name: count_open_opportunities
+        description: Count of how many currently open opprtunities applied to this posting. Set to 0 if NULL.
+      - name: count_interviews
+        description: Count of the number of interviews conducted for this posting. Set to 0 if NULL.
+      - name: count_interviewees
+        description: Count of opportunities interviewed for this posting. Set to 0 if NULL.
+      - name: count_requisitions
+        description: Number of requisitions associated with this posting. Set to 0 if NULL.
+      - name: has_requisition
+        description: Boolean that is true if the posting has a requisition.
+      
+  - name: lever__requisition_enhanced
+    description: Table capturing requisitions, if enabled.
+    columns:
+      - name: is_backfill
+        description: Boolean that is true if the requisition represents a backfill or new headcount. If unspecified, defaults to false. 
+      - name: compensation_band_currency
+        description: The ISO currency code associated with the requisition's compensation band.
+      - name: compensation_band_interval
+        description: The string representing the interval of payment for the compensation band.
+      - name: compensation_band_max
+        description: The high bound for the compensation band.
+      - name: compensation_band_min
+        description: The low bound for the compensation band.
+      - name: created_at
+        description: Timestamp of when the requisition was first created. 
+      - name: creator_user_id
+        description: Foreign key referencing the USER who created the requisition.
+      - name: employment_status
+        description: The work type of the requisition ('full-time', 'part-time', 'intern', 'contractor', or 'temp-worker').
+      - name: headcount_hired
+        description: The number of filled seats / openings on the requisition, or the string, 'unlimited'.
+      - name: headcount_total_allotted
+        description: Total headcount allotted for this requisition.
+      - name: hiring_manager_user_id
+        description: Foreign key referencing the USER who is the hiring manager for this requisition. 
+      - name: requisition_id
+        description: Unique id of the requisition.
+      - name: internal_notes
+        description: Free form text for notes and meta-data about the requisition, visible to anyone who can see the requisition in Lever. 
+      - name: job_location
+        description: The location associated with the requisition.
+      - name: job_title
+        description: The human-readable name for the requisition.
+      - name: owner_user_id
+        description: Foreign key referencing the USER who owns the requisition.
+      - name: requisition_code
+        description: The unique HRIS requisition code.
+      - name: status
+        description: The status of the requisition. Can be 'open', 'onHold', 'closed', or 'draft'.
+      - name: job_team
+        description: The team associated with the requisition
+      - name: count_postings
+        description: Number of postings associated with this requisition. Set to 0 if NULL.
+      - name: has_posting
+        description: Boolean that is true if the requisition has a posting. 
+      - name: count_offers
+        description: Total count of extended offers associated with this requisition. Note - includes offers regardless of their status. Set to 0 if NULL.
+      - name: has_offer
+        description: Boolean that is true if the requisition has any offer associated with it. 

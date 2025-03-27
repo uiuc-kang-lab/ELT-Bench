@@ -1,0 +1,3 @@
+column_name,column_description
+id,the unique identifier of the color
+colour,the color of the superhero's skin/eye/hair/etc

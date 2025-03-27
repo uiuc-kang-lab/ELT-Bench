@@ -1,0 +1,9 @@
+column_name,column_description
+data_type,Datatype of the field.
+display_name,UI display-name of the field.
+id,Unique integer id of the field.
+length,"Max length of the field. Only applicable to text, string, and text area."
+restname,Description of REST API usage attributes.
+restread_only,Whether the field is only available via the REST API.
+soapname,Description of SOAP API usage attributes.
+soapread_only,Whether the field is only available via the SOAP API.

@@ -1,0 +1,15 @@
+column_name,column_description
+movie_id,the unique identifier of the movie
+title,the title of the movie
+budget,the budget for the movie
+homepage,the homepage of the movie
+overview,the overview of the movie
+popularity,the popularity of the movie
+release_date,the release date of the movie
+revenue,the revenue of the movie
+runtime,the runtime of the movie
+movie_status,"the status of the movie
+The only value of this column is 'Released'. "
+tagline,the tagline of the movie
+vote_average,the average vote for the movie
+vote_count,the vote count for the movie

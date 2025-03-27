@@ -1,0 +1,20 @@
+models:
+  - name: countries
+    description: Each record represents a country.
+    columns:
+      - name: countrycode
+        description: Unique identifier for the country.
+      - name: region
+        description: The region of the country.
+      - name: ShortName
+        description: The short name of the country.
+      - name: average_adolescent_fertility_rate
+        description: The average adolescent fertility rate of the country.
+      - name: lowest_value_indicator_HPS_1960_to_1965
+        description: The lowest value of the indicator HPS in the period 1960 to 1965.
+      - name: number_of_footnotes_1980
+        description: The number of footnotes have been made in year 1980 in the country, replace NULL values with 0.
+      - name: percentage_increase_Adolescent_1960_to_1961
+        description: The percentage of increase of the indicator on Adolescent fertility rate from 1960 to 1961 in the country
+      - name: is_under_IDA_and_finish_estimate
+        description: Set to 1 if the country is under the lending category of the International Development Associations and has a external debt reporting finished by estimation, otherwise, set to 0.

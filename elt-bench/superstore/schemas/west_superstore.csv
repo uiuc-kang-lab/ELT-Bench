@@ -1,0 +1,13 @@
+column_name,column_description
+row_id,the unique id for rows
+order_id,the unique identifier for the order
+order_date,the date of the order
+ship_date,the date of the shipment
+ship_mode,the ship mode of the order
+customer_id,the id of the customer
+region,region of the customer's address
+product_id,the id of the product
+sales,the sales of the product
+quantity,the quantity of the product
+discount,the discount of the product
+profit,the profit that the company got by selling the product

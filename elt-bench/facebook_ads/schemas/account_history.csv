@@ -1,0 +1,9 @@
+column_name,column_description
+id,The ID of the ad account.
+name,Name of the account.
+_fivetran_synced,When the record was last synced by Fivetran.
+account_status,Current status of account.
+business_country_code,Country code of business associated to account.
+created_time,The time account was created.
+currency,Currency associated with account.
+timezone_name,Timezone associated with account.

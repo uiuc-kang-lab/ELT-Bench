@@ -1,0 +1,7 @@
+column_name,column_description
+business_id,the unique id of the business 
+date,the date of the violation
+violation_type_id,the unique type id of the violation
+risk_category,"risk category
+High / Moderate / Low risk"
+description,the description of the violation

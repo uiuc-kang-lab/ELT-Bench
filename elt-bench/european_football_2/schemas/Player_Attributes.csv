@@ -1,0 +1,43 @@
+column_name,column_description
+id,the unique id for players
+player_fifa_api_id,the id of the player fifa api
+player_api_id,the id of the player api
+date,date
+overall_rating,the overall rating of the player
+potential,potential of the player
+preferred_foot,the player's preferred foot when attacking
+attacking_work_rate,the player's attacking work rate
+defensive_work_rate,the player's defensive work rate
+crossing,the player's crossing score 
+finishing,the player's finishing rate
+heading_accuracy,the player's heading accuracy
+short_passing,the player's short passing score
+volleys,the player's volley score
+dribbling,the player's dribbling score
+curve,the player's curve score
+free_kick_accuracy,the player's free kick accuracy
+long_passing,the player's long passing score
+ball_control,the player's ball control score
+acceleration,the player's acceleration score
+sprint_speed,the player's sprint speed
+agility,the player's agility
+reactions,the player's reactions score
+balance,the player's balance score
+shot_power,the player's shot power
+jumping,the player's jumping score
+stamina,the player's stamina score
+strength,the player's strength score
+long_shots,the player's long shots score
+aggression,the player's aggression score
+interceptions,the player's interceptions score
+positioning,the player's positioning score
+vision,the player's vision score
+penalties,the player's penalties score
+marking,the player's markingscore
+standing_tackle,the player's standing tackle score
+sliding_tackle,the player's sliding tackle score
+gk_diving,the player's goalkeep diving score
+gk_handling,the player's goalkeep diving score
+gk_kicking,the player's goalkeep kicking score
+gk_positioning,the player's goalkeep positioning score
+gk_reflexes,the player's goalkeep reflexes score

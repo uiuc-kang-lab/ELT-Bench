@@ -1,0 +1,9 @@
+column_name,column_description
+businessentityid,The unique number identifying Vendor records.
+accountnumber,Vendor account (identification) number.
+name,Company name.
+creditrating,Rating of credit.
+preferredvendorstatus,Preferred Vendor Status
+activeflag,Vendor URL
+purchasingwebserviceurl,Purchasing Web Service URL
+modifieddate,Date and time the record was last updated. 

@@ -1,0 +1,4 @@
+column_name,column_description
+attribute_id,id number identifying the attribute
+business_id,id number identifying the business
+attribute_value,sort of the attributes for each business

@@ -1,0 +1,43 @@
+column_name,column_description
+_fivetran_synced,Timestamp of when the record was synced by Fivetran
+content_details_caption,Boolean indicating if the video contains captions
+content_details_definition,"Identifies the details of the available definition of the video (ie. hd, sd, etc.)"
+content_details_dimension,Identifies the dimension of the video (ie. 2d)
+content_details_duration,Identifies the duration of the video
+content_details_has_custom_thumbnail,Boolean indicating if the video has a custom thumbnail
+content_details_licensed_content,Boolean indicating if the video has licensed content
+content_details_projection,Identifies the projection type of the video
+content_details_region_restriction,Identifies the region restrictions of the video
+etag,Electronic tag of the video
+id,Unique identifier of the video
+kind,"Identifies the type of video (ie. video, short, etc.)"
+player_embed_height,The height of the embedded video player
+player_embed_html,The html used for the embedded video
+player_embed_width,The width of the embedded video player
+privacy_status,"Identifies if the video is either `public`, `private`, or `unlisted`."
+snippet_category_id,Lookup id of the snippet category
+snippet_channel_id,Lookup id of the snippet channel
+snippet_channel_title,Title of the snippet channel
+snippet_default_audio_language,Identifies the default audio language of the snippet video
+snippet_default_language,Identifies the default language of the snippet video
+snippet_description,Description of the snippet video
+snippet_live_broadcast_content,The content of the live broadcast
+snippet_localized,json object containing the localized snippet details
+snippet_published_at,Timestamp of when the snippet was published
+snippet_tags,Tags associated with the snippet
+snippet_thumbnails,Thumbnail of the snippet
+snippet_title,Title of the snippet
+statistics_comment_count,Count of comments on the video
+statistics_dislike_count,Count of dislikes on the video
+statistics_favorite_count,Count of favorites on the video
+statistics_like_count,Count of likes on the video
+statistics_view_count,Count of total views on the video
+status_embeddable,Boolean if the video is able to be embedded
+status_failure_reason,Reason for video failure if provided
+status_license,License associated with the video
+status_made_for_kids,Boolean indicating if the video was made for kids
+status_public_stats_viewable,Boolean indicating if the stats for the video are made public
+status_publish_at,Timestamp of when the video was published
+status_rejection_reason,Description of the rejection reason for the video if applicable
+status_self_declared_made_for_kids,Boolean indicating if the video is self declaring that is is made for kids
+upload_status,Status of the video upload

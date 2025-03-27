@@ -1,0 +1,10 @@
+column_name,column_description
+businessentityid,The unique id number identifying the business entity.
+territoryid,Territory currently assigned to.
+salesquota,Projected yearly sales
+bonus,Bonus due if quota is met.
+commissionpct,
+salesytd,Sales total year to date
+saleslastyear,Sales total of previous year.
+rowguid,Uniquely identifying the record. Used to support a merge replication sample. 
+modifieddate,Date and time the record was last updated. 

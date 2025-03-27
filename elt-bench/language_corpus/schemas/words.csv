@@ -1,0 +1,4 @@
+column_name,column_description
+wid,The word id of the Catalan language
+word,The word itself
+occurrences,The occurrences of the specific word

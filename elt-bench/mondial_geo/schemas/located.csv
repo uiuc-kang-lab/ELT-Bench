@@ -1,0 +1,7 @@
+column_name,column_description
+city,the name of the city
+country,the country code where the city belongs to
+province,the province where the city belongs to
+river, the river where it is located at
+lake,the lake where it is located at
+sea,the sea where it is located at

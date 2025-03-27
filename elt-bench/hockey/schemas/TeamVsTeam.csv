@@ -1,0 +1,9 @@
+column_name,column_description
+year,year
+lgid,league ID number
+tmid,team ID
+oppid,opponent ID
+w,wins
+l,loses
+t,ties
+otl,overtime loses

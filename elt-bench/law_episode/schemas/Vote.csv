@@ -1,0 +1,5 @@
+column_name,column_description
+episode_id,the id of the episode
+stars,a number between 1 and 10 indicating how much the viewer enjoyed the episode
+votes,"The total number of viewers that gave the specific episode the number of stars indicated in the ""stars"" column"
+percent,"The percent of viewers that gave the specific episode the number of stars indicated in the ""stars"" column"

@@ -1,0 +1,7 @@
+column_name,column_description
+businessentityid,Employee identification number.
+departmentid,Department in which the employee worked including currently.
+shiftid,Identifies which 8-hour shift the employee works.
+startdate,Date the employee started working in the department.
+enddate,Date the employee ended working in the department.
+modifieddate,Date and time the record was last updated. 

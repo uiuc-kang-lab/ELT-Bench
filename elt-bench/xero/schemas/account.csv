@@ -1,0 +1,7 @@
+column_name,column_description
+account_id,Xero identifier for the account.
+name,The name of the account.
+code,Customer defined alpha numeric account code e.g 200 or SALES
+type,"The type of account, e.g. CURRENT, EQUITY, SALES"
+class,"The class of account, e.g. ASSET, EQUITY, EXPENSE, LIABILITY, REVENUE"
+_fivetran_synced,The timestamp that Fivetran last synced the record.

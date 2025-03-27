@@ -1,0 +1,26 @@
+column_name,column_description
+id,Unique identifier.
+_fivetran_deleted,Indicates if the record was soft-deleted by Fivetran.
+_fivetran_synced,Timestamp the record was synced by Fivetran.
+additional_job_description,Additional details or information about the job.
+compensation_grade_id,Identifier for the compensation grade.
+critical_job,Flag indicating whether the job is critical.
+description,"{{ doc(""job_profile_description"") }}"
+difficulty_to_fill,Indication of the difficulty level in filling the job.
+effective_date,Date when the job profile becomes effective.
+inactive,Flag indicating whether this is inactive.
+include_job_code_in_name,Flag indicating whether to include the job code in the job profile name.
+job_category_id,Identifier for the job category.
+job_profile_code,Code assigned to the job profile.
+level,Level associated with the job profile.
+management_level,Management level associated with the job profile.
+private_title,Private title associated with the job profile.
+public_job,Flag indicating whether the job is public.
+referral_payment_plan,Referral payment plan associated with the job profile.
+summary,Summary or overview of the job profile.
+title,Title associated with the job profile.
+union_code,Code associated with the union related to the job profile.
+union_membership_requirement,Flag indicating whether union membership is a requirement for the job profile.
+work_shift_required,Flag indicating whether a work shift is required.
+work_study_award_source_code,Code associated with the source of work study awards.
+work_study_requirement_option_code,Code associated with work study requirement options.

@@ -1,0 +1,30 @@
+column_name,column_description
+CDSCode,CDSCode
+Academic_Year,Academic Year
+County_Code,County Code
+District_Code,District Code
+School_Code,School Code
+County_Name,County Code 
+District_Name,District Name 
+School_Name,School Name 
+District_Type,District Type
+School_Type,School Type 
+Educational_Option_Type,Educational Option Type
+NSLP_Provision_Status,NSLP Provision Status
+Charter_School_Y_N,Charter School (Y/N)
+Charter_School_Number,Charter School Number
+Charter_Funding_Type,Charter Funding Type
+IRC,
+Low_Grade,Low Grade
+High_Grade,High Grade
+Enrollment_K_12,Enrollment (K-12)
+Free_Meal_Count_K_12,Free Meal Count (K-12)
+Percent___Eligible_Free_K_12,
+FRPM_Count_K_12,Free or Reduced Price Meal Count (K-12)
+Percent___Eligible_FRPM_K_12,
+Enrollment_Ages_5_17,Enrollment (Ages 5-17)
+Free_Meal_Count_Ages_5_17,Free Meal Count (Ages 5-17)
+_Percent___Eligible_Free_Ages_5_17,
+FRPM_Count_Ages_5_17,
+Percent___Eligible_FRPM_Ages_5_17,
+2013_14_CALPADS_Fall_1_Certification_Status,2013-14 CALPADS Fall 1 Certification Status

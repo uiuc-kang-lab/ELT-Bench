@@ -1,0 +1,21 @@
+column_name,column_description
+eliteid,the unique number identifying the players who attended the draft
+playername,the name of the player
+birthdate,the birthdate of the player
+birthyear,the birth year of the player
+birthmonth,the birth month of the player
+birthday,the birthday of the player
+birthplace,the player of the birthplace
+nation,the nation of the player
+height,the id number identifying heights
+weight,the id number identifying weights
+position_info,position information of the player
+shoots,
+draftyear,draft year
+draftround,draft round
+overall,overall orders of draft picks
+overallby,drafted by which team
+css_rank,Central Scouting Service ranking
+sum_7yr_gp,Total NHL games played in players first 7 years of NHL career
+sum_7yr_toi,Total NHL Time on Ice in players first 7 years of NHL career
+gp_greater_than_0,Played a game or not in players first 7 years of NHL career

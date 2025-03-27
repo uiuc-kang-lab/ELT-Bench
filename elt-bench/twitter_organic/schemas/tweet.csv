@@ -1,0 +1,21 @@
+column_name,column_description
+_fivetran_synced,The timestamp that Fivetran last synced the record.
+account_id,ID of the associated account in Twitter
+card_uri,URI of the associated card in Twitter
+created_at,Date and time when the tweet was created
+favorite_count,Number of times the tweet has been favorited
+favorited,Whether the tweet has been favorited
+followers,Number of followers the tweet generated
+full_text,The full text of the tweet
+id,The ID of the tweet in Twitter
+in_reply_to_screen_name,Screen name the tweet is in reply to
+in_reply_to_status_id,Status ID the tweet is in reply to
+in_reply_to_user_id,User ID the tweet is in reply to
+lang,Language of the tweet
+media_key,Key of associated media in media library table
+retweet_count,Number of times the tweet has been retweeted
+retweeted,Whether the tweet has been retweeted
+source,The source of the tweet
+truncated,Whether the tweet has been truncated
+tweet_type,The type of the tweet
+user_id,The ID of the user who tweeted the tweet

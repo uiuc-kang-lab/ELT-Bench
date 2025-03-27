@@ -1,0 +1,9 @@
+column_name,column_description
+quantity_id,the unique identifier for the quantity
+recipe_id,the id of the recipe
+ingredient_id,the id of the ingredient
+max_qty,the max quantity of the ingredient
+min_qty,the min quantity of the ingredient
+unit,the unit of the ingredient
+preparation,
+optional,whether the ingredient is optional 

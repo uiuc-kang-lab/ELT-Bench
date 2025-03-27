@@ -1,0 +1,6 @@
+column_name,column_description
+discounttype,discount type
+stor_id,store id
+lowqty,low quantity (quantity floor)
+highqty,high quantity (max quantity)
+discount,discount

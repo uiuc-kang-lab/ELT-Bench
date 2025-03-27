@@ -1,0 +1,56 @@
+models:
+  - name: regions
+    description: Each record represents a region.
+    columns:
+      - name: region_id
+        description: Unique identifier for the region.
+      - name: noc
+        description: The NOC code of the region
+      - name: region_name
+        description: The name of the region.
+      - name: tallest_competitor
+        description: The name of the tallest competitor in the region, with ties broken by the ascending order of the competitor full name.
+      - name: per_from_region_1994
+        description: The percentage of competitors of the 1994 Winter Olympic Game come from the region
+      - name: num_athletes
+        description: The number of athletes from the region, replace NULL values with 0.
+      - name: num_medals
+        description: The number of medals won by athletes from the region, replace NULL values with 0.
+      - name: per_athlete_taller_175
+        description: The percentage of athletes from the region that are taller than 175cm
+  - name: sports
+    description: Each record represents a sport.
+    columns:
+      - name: sport_id
+        description: Unique identifier for the sport.
+      - name: sport_name
+        description: The name of the sport.
+      - name: num_events
+        description: The number of events in the sport, replace NULL values with 0.
+      - name: avg_male_height
+        description: The average height of male athletes participating in the sport
+      - name: avg_age
+        description: The average age of athletes participating in the sport
+      - name: num_athletes_overweight_2008
+        description: The number of athletes playing in the sport fall into overweight BMI category in the 2008 Summer games, replace NULL values with 0.
+      - name: heaviest_athlete
+        description: The name of the heaviest athlete in the sport, with ties broken by the ascending order of the athlete full name.
+  - name: athletes
+    description: Each record represents an athlete.
+    columns:
+      - name: person_id
+        description: Unique identifier for the athlete.
+      - name: full_name
+        description: The full name of the athlete.
+      - name: gender
+        description: The gender of the athlete.
+      - name: num_Olympic_games
+        description: The number of Olympic games the athlete has participated in, replace NULL values with 0.
+      - name: per_won_a_gold_medal
+        description: The percentage of the events where the athlete won a gold medal
+      - name: num_medals
+        description: The number of medals won by the athlete, replace NULL values with 0.
+      - name: BMI
+        description: The BMI of the athlete
+      - name: height_over_170_participate_1988
+        description: Set to 1 if the athlete's height is over 170 and participated in the game in 1988, otherwise, set to 0

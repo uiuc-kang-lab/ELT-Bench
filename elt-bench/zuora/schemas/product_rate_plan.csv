@@ -1,0 +1,13 @@
+column_name,column_description
+id,Unique identifier of the product rate plan.
+_fivetran_synced,Timestamp of when a record was last synced.
+_fivetran_deleted,Boolean identifiying whether the record was deleted in the source.
+created_by_id,The id of the Zuora user who created the product rate plan.
+created_date,The date and time when the product rate plan was created.
+description,A brief description of the product rate plan.
+effective_end_date,The date when the product rate plan will no longer be effective.
+effective_start_date,The date when the product rate plan becomes effective.
+name,The name of the product rate plan.
+product_id,The id of the product that this rate plan belongs to.
+updated_by_id,The id of the Zuora user who last updated the product rate plan.
+updated_date,The date and time when the product rate plan was last updated.

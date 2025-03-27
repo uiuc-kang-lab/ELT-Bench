@@ -1,0 +1,5 @@
+column_name,column_description
+account_id,the id of the account
+district_id,location of branch
+frequency,frequency of the acount
+date,the creation date of the account

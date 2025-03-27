@@ -1,0 +1,7 @@
+column_name,column_description
+income_id,A unique identifier for each record of income
+date_received,the date that the fund received
+amount,amount of funds
+source,"A value indicating where the funds come from such as dues, or the annual university allocation"
+notes,A free-text value giving any needed details about the receipt of funds
+link_to_member,link to member

@@ -1,0 +1,11 @@
+column_name,column_description
+year,year
+lgid,league ID number
+tmid,team ID
+g,Games
+w,wins
+l,loses
+t,ties
+gf,goals for
+ga,goals against
+pim,penalty minutes

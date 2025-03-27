@@ -1,0 +1,9 @@
+column_name,column_description
+address_id,unique id number identifying the address
+address,The first address line
+address2,the second address line
+district,
+city_id,
+postal_code,
+phone,phone number
+last_update,The time of the latest update

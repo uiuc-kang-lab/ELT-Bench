@@ -1,0 +1,18 @@
+models:
+  - name: states
+    description: Each record represents a state.
+    columns:
+      - name: abbreviation
+        description: the abbreviation of the state name
+      - name: name
+        description: the name of the state
+      - name: county_with_highest_average_income_per_household
+        description: the county with the highest average income per household in the state, with ties broken by the ascending order of the country
+      - name: num_asian
+        description: the number of Asian in the state, replace NULL values with 0.
+      - name: num_counties
+        description: the number of counties in the state, replace NULL values with 0.
+      - name: higher_avg_female_per
+        description: Set to 1 if the state’s percentage of female population is higher than the average percentage of female population across all states, otherwise, set to 0
+      - name: greater_than_50_CBSA_metro
+        description: Set to 1 if the state has greater than 50 CBSA officers of metro type, otherwise, set to 0

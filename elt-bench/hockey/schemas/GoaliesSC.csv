@@ -1,0 +1,11 @@
+column_name,column_description
+playerid,id number identifying the player
+year,year
+tmid,team abbreviated name
+lgid,league abbreviated name
+gp,Games played
+min,Minutes of appearance
+w,Wins
+l,Loses
+t,Ties
+sho,Shutouts

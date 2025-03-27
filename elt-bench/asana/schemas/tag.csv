@@ -1,0 +1,5 @@
+column_name,column_description
+id,System generated ID for each tag
+name,The name of the tag as it appears in the UI. There can be duplicates.
+created_at,Timestamp of when the tag was created
+color,Chosen color of the tag as it appears in the UI

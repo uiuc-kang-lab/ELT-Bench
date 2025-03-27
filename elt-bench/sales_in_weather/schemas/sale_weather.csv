@@ -1,0 +1,21 @@
+column_name,column_description
+station_nbr,the id of weather stations
+date,date
+tmax,max temperature
+tmin,min temperature
+tavg,average temperature
+depart,
+dewpoint,
+wetbulb,
+heat,calculated heating degree
+cool,calculated cooling degree
+sunrise,calculated sunrise
+sunset,calculated sunset
+codesum,code summarization for the weather
+snowfall,snowfall
+preciptotal,precipitation total
+stnpressure,station pressure
+sealevel,sea level
+resultspeed,resultant wind speed
+resultdir,resultant wind direction
+avgspeed,average wind speed

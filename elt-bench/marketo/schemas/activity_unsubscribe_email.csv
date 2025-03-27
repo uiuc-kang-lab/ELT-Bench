@@ -1,0 +1,17 @@
+column_name,column_description
+activity_date,The timestamp the lead unsubscribed.
+activity_type_id,The ID of the activity type.
+campaign_id,The ID of the email's campaign.
+campaign_run_id,The ID of the email's campaign run.
+client_ip_address,The IP address of the client that unsubscribed.
+email_template_id,The ID of the email's template.
+form_fields,The query parameters contained within the URL.
+id,ID of the activity.
+lead_id,The ID of the lead related to the activity.
+primary_attribute_value,The primary attribute of the activity.
+primary_attribute_value_id,The ID of the primary attribute of the activity.
+query_parameters,The query parameters contained within the URL.
+referrer_url,The URL of the referrer used to identify where the form visit originated from.
+user_agent,The web browser user agent information obtained when the lead unsubscribed.
+webform_id,The ID of the unsubscribe web page.
+webpage_id,The ID of the unsubscribe web form.

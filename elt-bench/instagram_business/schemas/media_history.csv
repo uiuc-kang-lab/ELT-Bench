@@ -1,0 +1,17 @@
+column_name,column_description
+_fivetran_id,Fivetran's internal ID for this record
+_fivetran_synced,When this record was last synced with Fivetran
+caption,The caption of the post or story
+carousel_album_id,The ID of the carousel album this post or story belongs to
+created_time,The timestamp this post or story was created
+id,The media ID of this post or story
+ig_id,The Instagram media ID of this post or story
+is_comment_enabled,Whether comments are enabled for this post or story
+is_story,Whether this is a story
+media_type,"Media type. Can be CAROUSEL_ALBUM, IMAGE, or VIDEO."
+media_url,"Media URL. Will be omitted from responses if the media contains copyrighted material, or has been flagged for a copyright violation."
+permalink,Permanent URL to the media.
+shortcode,Shortcode to the media.
+thumbnail_url,Media thumbnail URL. Only available on VIDEO media.
+user_id,ID of the user who posted this post or story
+username,Username of user who created the media.

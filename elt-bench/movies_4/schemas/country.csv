@@ -1,0 +1,4 @@
+column_name,column_description
+country_id,the unique identifier of the country
+country_iso_code,the ISO code
+country_name,the name of the country

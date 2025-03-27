@@ -1,0 +1,7 @@
+column_name,column_description
+start,the start date of the allergy 
+stop,the stop date of the allergy
+patient,the patient id
+encounter,the medical encounter id
+code,the code of the allergy 
+description,the description of the allergy 

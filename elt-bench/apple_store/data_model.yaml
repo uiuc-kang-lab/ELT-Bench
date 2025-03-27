@@ -1,0 +1,167 @@
+models:
+  - name: apple_store__device_report
+    description: Each record represents daily subscription metrics by app_id, source_type and device
+    columns:
+      - name: date_day
+        description: The date of the report and respective recorded metric(s); follows the format YYYY-MM-DD.
+      - name: app_id
+        description: Application ID.
+      - name: app_name
+        description: Application Name.
+      - name: source_type
+        description: A source is counted when a customer follows a link to your App Store product page. There are 8 types of sources, App Store Browse, App Store Search, App Referrers, Web Referrers, App Clips, Unavailable, Institutional Purchases, and Null. Null is the default value for data that does not provide source types, including crashes, subscription events and subscription summary. 
+      - name: device
+        description: Device type associated with the respective metric(s).
+      - name: impressions
+        description: The number of times your app was viewed in the App Store for more than one second. This includes search results, Featured, Explore, Top Charts and App Product Page views. 
+      - name: impressions_unique_device
+        description: The number of unique devices that have viewed your app for more than one second on on the Today, Games, Apps, Featured, Explore, Top Charts, Search tabs of the App Store and App Product Page views. This metric is presumed to be de-duplicated daily as received from the source data, therefore, aggregating over a span of days is better done in the UI.
+      - name: page_views
+        description: The total number of times your App Store product page was clicked and viewed; when a user taps on a link from an app, website or App Clip card that brings them to your App Store product page, the immediate product page_view is attributed to the referring app, website, or App Clip. 
+      - name: page_views_unique_device
+        description: The number of unique devices that have viewed your App Store product page; this metric is presumed to be de-duplicated daily as received from the source data, therefore, aggregating over a span of days is better done in the UI.
+      - name: crashes
+        description: The number of recorded crashes experienced (User Opt-In only); a value of 0 indicates there were 0 crash reports or no value from the source report that day.
+      - name: first_time_downloads
+        description: The number of first time downloads for your app; credit is attributed to the referring app, website, or App Clip of the first time download.
+      - name: redownloads
+        description: The count of redownloads where a redownload occurs when a user who previously downloaded your app adds it to their device again (User Opt-In only); credit is attributed to the source recorded when a user tapped to download/launch your app for the first time. A value of 0 indicates there were 0 redownloads or no value from the source report that day.
+      - name: total_downloads
+        description: Total Downloads is the sum of Redownloads and First Time Downloads.
+      - name: active_devices
+        description: The count of active_device is the count of devices that ran the app at least one time and for at least two seconds on a given day (User Opt-In only); this metric is presumed to be de-duplicated daily as received from the source data, therefore, aggregating over a span of days is better done in the UI. A value of 0 indicates there were 0 active devices or no value from the source report that day.
+      - name: active_devices_last_30_days
+        description: The count of active_devices_last_30_days is the count of devices that ran the app at least one time and for at least two seconds on the date_day of the report minus 30 days (User Opt-In only); this metric is presumed to be de-duplicated daily as received from the source data, therefore, aggregating over a span of days is better done in the UI. A value of 0 indicates there were 0 active devices last 30 days or no value from the source report that day.
+      - name: deletions
+        description: A deletion occurs when a user removes your app from their device (User Opt-In only). Data from resetting or erasing a device’s content and settings is not included. A value of 0 indicates there were 0 deletions or no value from the source report that day.
+      - name: installations
+        description: An installation event is when the user opens the App after they've downloaded it (User Opt-In only). If the App was downloaded but not opened or opened offline, this will not count; if the user opts out of sending data back to Apple, there will also be no data here. A value of 0 indicates there were 0 installations or no value from the source report that day.
+      - name: sessions 
+        description: Sessions is the count of the number of times the app has been used for at least two seconds (User Opt-In only). If the app is in the background and is later used again, that counts as another session. A value of 0 indicates there were 0 sessions or no value from the source report that day.
+
+  - name: apple_store__source_type_report
+    description: Each record represents daily metrics by app_id and source_type
+    columns:
+      - name: date_day
+        description: The date of the report and respective recorded metric(s); follows the format YYYY-MM-DD.
+      - name: app_id
+        description: Application ID.
+      - name: app_name
+        description: Application Name.
+      - name: source_type
+        description: A source is counted when a customer follows a link to your App Store product page. There are 8 types of sources App Store Browse, App Store Search, App Referrers, Web Referrers, App Clips, Unavailable, Institutional Purchases, and Null. Null is the default value for data that does not provide source types, including crashes, subscription events and subscription summary. 
+      - name: impressions
+        description: The number of times your app was viewed in the App Store for more than one second. This includes search results, Featured, Explore, Top Charts and App Product Page views.
+      - name: page_views
+        description: The total number of times your App Store product page was clicked and viewed; when a user taps on a link from an app, website or App Clip card that brings them to your App Store product page, the immediate product page_view is attributed to the referring app, website, or App Clip.
+      - name: first_time_downloads
+        description: The number of first time downloads for your app; credit is attributed to the referring app, website, or App Clip of the first time download.
+      - name: redownloads
+        description: The count of redownloads where a redownload occurs when a user who previously downloaded your app adds it to their device again (User Opt-In only); credit is attributed to the source recorded when a user tapped to download/launch your app for the first time. A value of 0 indicates there were 0 redownloads or no value from the source report that day.
+      - name: total_downloads
+        description: Total Downloads is the sum of Redownloads and First Time Downloads.
+      - name: active_devices
+        description: The count of active_device is the count of devices that ran the app at least one time and for at least two seconds on a given day (User Opt-In only); this metric is presumed to be de-duplicated daily as received from the source data, therefore, aggregating over a span of days is better done in the UI. A value of 0 indicates there were 0 active devices or no value from the source report that day.
+      - name: deletions
+        description: A deletion occurs when a user removes your app from their device (User Opt-In only). Data from resetting or erasing a device’s content and settings is not included. A value of 0 indicates there were 0 deletions or no value from the source report that day.
+      - name: installations
+        description: An installation event is when the user opens the App after they've downloaded it (User Opt-In only). If the App was downloaded but not opened or opened offline, this will not count; if the user opts out of sending data back to Apple, there will also be no data here. A value of 0 indicates there were 0 installations or no value from the source report that day.
+      - name: sessions 
+        description: Sessions is the count of the number of times the app has been used for at least two seconds (User Opt-In only). If the app is in the background and is later used again, that counts as another session. A value of 0 indicates there were 0 sessions or no value from the source report that day.
+
+  - name: apple_store__overview_report
+    description: Each record represents daily metrics for each app_id
+    columns:
+      - name: date_day
+        description: The date of the report and respective recorded metric(s); follows the format YYYY-MM-DD.
+      - name: app_id
+        description: Application ID.
+      - name: app_name
+        description: Application Name.
+      - name: impressions
+        description: The number of times your app was viewed in the App Store for more than one second. This includes search results, Featured, Explore, Top Charts and App Product Page views.
+      - name: page_views
+        description: The total number of times your App Store product page was clicked and viewed; when a user taps on a link from an app, website or App Clip card that brings them to your App Store product page, the immediate product page_view is attributed to the referring app, website, or App Clip.
+      - name: crashes
+        description: The number of recorded crashes experienced (User Opt-In only); a value of 0 indicates there were 0 crash reports or no value from the source report that day.
+      - name: first_time_downloads
+        description: The number of first time downloads for your app; credit is attributed to the referring app, website, or App Clip of the first time download.
+      - name: redownloads
+        description: The count of redownloads where a redownload occurs when a user who previously downloaded your app adds it to their device again (User Opt-In only); credit is attributed to the source recorded when a user tapped to download/launch your app for the first time. A value of 0 indicates there were 0 redownloads or no value from the source report that day.
+      - name: total_downloads
+        description: Total Downloads is the sum of Redownloads and First Time Downloads.
+      - name: active_devices
+        description: The count of active_device is the count of devices that ran the app at least one time and for at least two seconds on a given day (User Opt-In only); this metric is presumed to be de-duplicated daily as received from the source data, therefore, aggregating over a span of days is better done in the UI. A value of 0 indicates there were 0 active devices or no value from the source report that day.
+      - name: deletions
+        description: A deletion occurs when a user removes your app from their device (User Opt-In only). Data from resetting or erasing a device’s content and settings is not included. A value of 0 indicates there were 0 deletions or no value from the source report that day.
+      - name: installations
+        description: An installation event is when the user opens the App after they've downloaded it (User Opt-In only). If the App was downloaded but not opened or opened offline, this will not count; if the user opts out of sending data back to Apple, there will also be no data here. A value of 0 indicates there were 0 installations or no value from the source report that day.
+      - name: sessions 
+        description: Sessions is the count of the number of times the app has been used for at least two seconds (User Opt-In only). If the app is in the background and is later used again, that counts as another session. A value of 0 indicates there were 0 sessions or no value from the source report that day.
+
+  - name: apple_store__platform_version_report
+    description: Each record represents daily metrics for each by app_id, source_type and platform version
+    columns:
+      - name: date_day
+        description: The date of the report and respective recorded metric(s); follows the format YYYY-MM-DD.
+      - name: app_id
+        description: Application ID.
+      - name: app_name
+        description: Application Name.
+      - name: source_type
+        description: A source is counted when a customer follows a link to your App Store product page. There are 8 types of sources App Store Browse, App Store Search, App Referrers, Web Referrers, App Clips, Unavailable, Institutional Purchases, and Null. Null is the default value for data that does not provide source types, including crashes, subscription events and subscription summary. 
+      - name: platform_version
+        description: The platform version of the device engaging with your app.
+      - name: impressions
+        description: The number of times your app was viewed in the App Store for more than one second. This includes search results, Featured, Explore, Top Charts and App Product Page views. 
+      - name: impressions_unique_device
+        description: The number of unique devices that have viewed your app for more than one second on on the Today, Games, Apps, Featured, Explore, Top Charts, Search tabs of the App Store and App Product Page views. This metric is presumed to be de-duplicated daily as received from the source data, therefore, aggregating over a span of days is better done in the UI.
+      - name: page_views
+        description: The total number of times your App Store product page was clicked and viewed; when a user taps on a link from an app, website or App Clip card that brings them to your App Store product page, the immediate product page_view is attributed to the referring app, website, or App Clip. 
+      - name: page_views_unique_device
+        description: The number of unique devices that have viewed your App Store product page; this metric is presumed to be de-duplicated daily as received from the source data, therefore, aggregating over a span of days is better done in the UI.
+      - name: crashes
+        description: The number of recorded crashes experienced (User Opt-In only); a value of 0 indicates there were 0 crash reports or no value from the source report that day.
+      - name: first_time_downloads
+        description: The number of first time downloads for your app; credit is attributed to the referring app, website, or App Clip of the first time download.
+      - name: redownloads
+        description: The count of redownloads where a redownload occurs when a user who previously downloaded your app adds it to their device again (User Opt-In only); credit is attributed to the source recorded when a user tapped to download/launch your app for the first time. A value of 0 indicates there were 0 redownloads or no value from the source report that day.
+      - name: total_downloads
+        description: Total Downloads is the sum of Redownloads and First Time Downloads.
+      - name: active_devices
+        description: The count of active_device is the count of devices that ran the app at least one time and for at least two seconds on a given day (User Opt-In only); this metric is presumed to be de-duplicated daily as received from the source data, therefore, aggregating over a span of days is better done in the UI. A value of 0 indicates there were 0 active devices or no value from the source report that day.
+      - name: active_devices_last_30_days
+        description: The count of active_devices_last_30_days is the count of devices that ran the app at least one time and for at least two seconds on the date_day of the report minus 30 days (User Opt-In only); this metric is presumed to be de-duplicated daily as received from the source data, therefore, aggregating over a span of days is better done in the UI. A value of 0 indicates there were 0 active devices last 30 days or no value from the source report that day.
+      - name: deletions
+        description: A deletion occurs when a user removes your app from their device (User Opt-In only). Data from resetting or erasing a device’s content and settings is not included. A value of 0 indicates there were 0 deletions or no value from the source report that day.
+      - name: installations
+        description: An installation event is when the user opens the App after they've downloaded it (User Opt-In only). If the App was downloaded but not opened or opened offline, this will not count; if the user opts out of sending data back to Apple, there will also be no data here. A value of 0 indicates there were 0 installations or no value from the source report that day.
+      - name: sessions 
+        description: Sessions is the count of the number of times the app has been used for at least two seconds (User Opt-In only). If the app is in the background and is later used again, that counts as another session. A value of 0 indicates there were 0 sessions or no value from the source report that day.
+
+
+  - name: apple_store__app_version_report
+    description: Each record represents daily metrics for each by app_id, source_type and app version
+    columns:
+      - name: date_day
+        description: The date of the report and respective recorded metric(s); follows the format YYYY-MM-DD.
+      - name: app_id
+        description: Application ID.
+      - name: app_name
+        description: Application Name.
+      - name: source_type
+        description: A source is counted when a customer follows a link to your App Store product page. There are 8 types of sources App Store Browse, App Store Search, App Referrers, Web Referrers, App Clips, Unavailable, Institutional Purchases, and Null. Null is the default value for data that does not provide source types, including crashes, subscription events and subscription summary. 
+      - name: app_version
+        description: The app version of the app that the user is engaging with.
+      - name: crashes
+        description: The number of recorded crashes experienced (User Opt-In only); a value of 0 indicates there were 0 crash reports or no value from the source report that day.
+      - name: active_devices
+        description: The count of active_device is the count of devices that ran the app at least one time and for at least two seconds on a given day (User Opt-In only); this metric is presumed to be de-duplicated daily as received from the source data, therefore, aggregating over a span of days is better done in the UI. A value of 0 indicates there were 0 active devices or no value from the source report that day.
+      - name: active_devices_last_30_days
+        description: The count of active_devices_last_30_days is the count of devices that ran the app at least one time and for at least two seconds on the date_day of the report minus 30 days (User Opt-In only); this metric is presumed to be de-duplicated daily as received from the source data, therefore, aggregating over a span of days is better done in the UI. A value of 0 indicates there were 0 active devices last 30 days or no value from the source report that day.
+      - name: deletions
+        description: A deletion occurs when a user removes your app from their device (User Opt-In only). Data from resetting or erasing a device’s content and settings is not included. A value of 0 indicates there were 0 deletions or no value from the source report that day.
+      - name: installations
+        description: An installation event is when the user opens the App after they've downloaded it (User Opt-In only). If the App was downloaded but not opened or opened offline, this will not count; if the user opts out of sending data back to Apple, there will also be no data here. A value of 0 indicates there were 0 installations or no value from the source report that day.
+      - name: sessions 
+        description: Sessions is the count of the number of times the app has been used for at least two seconds (User Opt-In only). If the app is in the background and is later used again, that counts as another session. A value of 0 indicates there were 0 sessions or no value from the source report that day.

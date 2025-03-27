@@ -1,0 +1,20 @@
+models:
+  - name: Clients
+    description: Each record represents a client.
+    columns:
+      - name: client_id
+        description: Unique identifier for the client.
+      - name: sex
+        description: Sex of the client.
+      - name: full_name
+        description: Full name of the client. Concatenates the first name, middle name, and last name, separated by a space.
+      - name: issue_with_the_longest_server_time
+        description: The issue that the client with the longest server time faced,with ties broken by the ascending order of the issue
+      - name: days_of_longest_delay_of_complaint
+        description: The number of days of the longest delay in the client’s complaint.
+      - name: has_in_progress_complaints
+        description: Set to 1 if the client has in progress complaints, 0 otherwise.
+      - name: percentage_of_complaint_calls_got_consent
+        description: The percentage of complaint calls that got consent.
+      - name: number_of_complaint_submitted_via_fax
+        description: The number of complaints submitted via fax, replace NULL values with 0.

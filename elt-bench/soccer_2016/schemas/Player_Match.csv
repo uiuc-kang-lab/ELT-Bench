@@ -1,0 +1,5 @@
+column_name,column_description
+match_id,unique id for match
+player_id,the id of the player
+role_id,the id of the play's role in the match
+team_id,the id of player's team

@@ -1,0 +1,10 @@
+column_name,column_description
+date,The date of the report and respective recorded metric(s); follows the format `YYYY-MM-DD`.
+app_id,Application ID.
+source_type,"A source is counted when a customer follows a link to your App Store product page. 
+There are 8 types of sources: App Store Browse, App Store Search, App Referrers, Web Referrers, App Clips, Unavailable, Institutional Purchases, and Null. Null is the default value for data that does not provide source types, including: crashes, subscription events and subscription summary.
+More information can be found in the Apple App Store developer [docs](https://developer.apple.com/help/app-store-connect/view-app-analytics/view-acquisition-sources/)."
+device,Device type associated with the respective metric(s).
+first_time_downloads,"The number of first time downloads for your app; credit is attributed to the referring app, website, or App Clip of the first time download."
+redownloads,The count of redownloads where a redownload occurs when a user who previously downloaded your app adds it to their device again (User Opt-In only); credit is attributed to the source recorded when a user tapped to download/launch your app for the first time. A value of 0 indicates there were 0 redownloads or no value from the source report that day.
+total_downloads,Total Downloads is the sum of Redownloads and First Time Downloads.

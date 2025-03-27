@@ -1,0 +1,21 @@
+models:
+  - name: players
+    description: Each record represents a player
+    columns:
+      - name: elite_id
+        description: Unique identifier for the player
+      - name: player_name
+        description: Name of the player
+      - name: player_height_in_cm
+        description: Height of the player in cm
+      - name: num_games_played
+        description: Number of games played by the player, replace NULL values with 0.
+      - name: diff_goals_bewteen_Rs_and_Pf
+        description: the difference in the number of goals scored by the player during the regular season versus the playoffs
+      - name: total_penalty_minutes_season_1997_1998
+        description: Total penalty minutes for the player during the 1997-1998 season, replace NULL values with 0.
+      - name: num_goals_for_Rimouski_Oceanic_in_playoff
+        description: Number of goals scored by the player for the Rimouski Oceanic during the playoffs, replace NULL values with 0.
+      - name: player_BMI
+        description: Body Mass Index of the player
+      

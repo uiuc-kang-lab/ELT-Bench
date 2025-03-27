@@ -1,0 +1,14 @@
+column_name,column_description
+ID,identification of the patient
+Examination_Date,Examination Date
+aCL_IgG,anti-Cardiolipin antibody (IgG) concentration
+aCL_IgM,anti-Cardiolipin antibody (IgM) concentration
+ANA,anti-nucleus antibody concentration
+ANA_Pattern,pattern observed in the sheet of ANA examination
+aCL_IgA,anti-Cardiolipin antibody (IgA) concentration
+Diagnosis,disease names
+KCT,measure of degree of coagulation
+RVVT,measure of degree of coagulation
+LAC,measure of degree of coagulation
+Symptoms,other symptoms observed
+Thrombosis,degree of thrombosis

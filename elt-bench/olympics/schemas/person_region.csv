@@ -1,0 +1,5 @@
+column_name,column_description
+person_id,"the id of the person
+Maps to person(id)"
+region_id,"the id of the noc region
+Maps to noc_region(id)"

@@ -1,0 +1,11 @@
+column_name,column_description
+_fivetran_id,Fivetran's internal ID for this record
+_fivetran_synced,When this record was last synced with Fivetran
+followers_count,Total number of followers of this user.
+follows_count,Total number of users this user follows.
+id,The user ID of this user.
+ig_id,The Instagram user ID of this user.
+media_count,Total number of media this user has posted.
+name,The name of this user.
+username,The username of this user.
+website,The website linked in the profile of this user.

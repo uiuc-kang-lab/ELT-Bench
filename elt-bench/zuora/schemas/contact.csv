@@ -1,0 +1,20 @@
+column_name,column_description
+id,The unique identifier of the
+_fivetran_synced,Timestamp of when a record was last synced.
+_fivetran_deleted,Boolean identifiying whether the record was deleted in the source.
+account_id,The Zuora account id associated with this contact.
+address_1,"The first line of the contact's address, which is often a street address or business name."
+address_2,The second line of the contact's address.
+city,The city of the contact's address.
+country,The country of the contact's address.
+created_by_id,Identifier of the user who created
+created_date,Creation date for
+description,A description for the contact.
+first_name,The contact's first name.
+last_name,The contact's last name.
+postal_code,The zip code for the contact's address.
+state,The state for the contact's address.
+updated_by_id,Identifier of the user who last updated
+updated_date,Last updated date for
+work_email,The contact's business email address.
+work_phone,The contact's business phone number.

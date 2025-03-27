@@ -1,0 +1,13 @@
+column_name,column_description
+license_no,the license number of the facility
+dba_name,the dba name of the facility
+aka_name,the aka name of the facility
+facility_type,the facility type
+risk_level,the risk level of the facility
+address,physical street address of the facility
+city,city of the facility's address
+state,state of the facility's address
+zip,postal code of the facility's address
+latitude,the latitude of the facility
+longitude,the longitude of the facility
+ward,the ward number of the facility

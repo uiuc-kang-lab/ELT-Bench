@@ -1,0 +1,4 @@
+column_name,column_description
+id,the unique id for leagues
+country_id,the unique id for countries
+name,league name

@@ -1,0 +1,5 @@
+column_name,column_description
+iucr_no,Unique identifier for the incident classification
+primary_description,The general description of the incident classification
+secondary_description,The specific description of the incident classification
+index_code,"Uses values ""I"" and ""N"" to indicate crimes "

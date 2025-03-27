@@ -1,0 +1,4 @@
+column_name,column_description
+id,the unique identifier of the game publisher
+game_id,the id of the game
+publisher_id,the id of the publisher

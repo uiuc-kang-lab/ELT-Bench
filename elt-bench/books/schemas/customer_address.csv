@@ -1,0 +1,6 @@
+column_name,column_description
+customer_id,"the id of the customer
+Maps to customer(customer_id)"
+address_id,"the id of the address
+Maps to address(address_id)"
+status_id,the id of the address status

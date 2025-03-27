@@ -1,0 +1,3 @@
+column_name,column_description
+cited_paper_id,cited_paper_id is the ID of the paper being cited
+citing_paper_id,citing_paper_id stands for the paper which contains the citation

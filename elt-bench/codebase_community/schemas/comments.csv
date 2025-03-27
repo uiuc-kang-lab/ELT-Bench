@@ -1,0 +1,8 @@
+column_name,column_description
+Id,the comment Id
+PostId,the unique id of the post
+Score,rating score
+Text,the detailed content of the comment
+CreationDate,the creation date of the comment
+UserId,the id of the user who post the comment
+UserDisplayName,user's display name

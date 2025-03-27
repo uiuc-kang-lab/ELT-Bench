@@ -1,0 +1,129 @@
+models:
+  - name: asana__task
+    description: An enriched task table consisting of base task info + aggregated metrics and lists 
+    columns:
+      - name: task_id
+        description: System generated unique ID of the task.
+      - name: assignee_user_id
+        description: Foreign key referencing the ASANA_USER that is currently assigned the task.
+      - name: is_completed
+        description: Boolean that is true if the task is currently marked complete.
+      - name: completed_at
+        description: Timestamp of when the task was marked complete.
+      - name: created_at
+        description: Timestamp of when the task was created
+      - name: due_date
+        description: Date the task is due, if provided.
+      - name: task_modified_at
+        description: Timestamp of when the task was last modified
+      - name: task_description
+        description: Free-form text describing the task, as seen in the UI.
+      - name: workspace_id
+        description: Foreign key reference to the workspace
+      - name: days_open
+        description: The number of days the task has been/was open (creation -> completion)
+      - name: is_currently_assigned
+        description: Boolean, true if the task is *currently* assigned
+      - name: has_been_assigned
+        description: Boolean, true if the task has at one point been assigned, even if currently not.
+      - name: number_of_comments
+        description: Count of comments made on the task
+      - name: number_of_followers
+        description: Count of the users following the task
+      - name: tags
+        description: A list of the tags associated with the task.
+      - name: number_of_tags
+        description: Count of the tags associated with the task.
+      - name: is_subtask
+        description: Boolean that's true if the task is a subtask of another.
+
+
+  - name: asana__user
+    description: Enriched user table consisting of base user info + metrics around tasks and completions
+    columns:
+      - name: user_id
+        description: System generated unique ID of the user
+      - name: email
+        description: The user's email
+      - name: user_name
+        description: Name of the user as it appears in the UI
+      - name: number_of_open_tasks
+        description: Count of the currently open tasks assigned to this user
+      - name: number_of_tasks_completed
+        description: Count of the tasks that this user has completed
+      - name: number_of_projects_owned
+        description: Count of the projects that this user is the owner of (excludes archived projects)
+      - name: number_of_projects_currently_assigned_to
+        description: Count of the projects that the user is currently assigned open tasks to.
+
+
+  - name: asana__project
+    description: Table of projects' basic info enriched with metrics regarding tasks and completions
+    columns:
+      - name: project_id
+        description: System-generated unique ID of the project.
+      - name: project_name
+        description: UI-facing name of the project
+      - name: number_of_open_tasks
+        description: Count of the currently open tasks in this project
+      - name: number_of_assigned_open_tasks
+        description: Count of the open and assigned tasks in this project.
+      - name: number_of_tasks_completed
+        description: Count of tasks that have been completed in this project
+      - name: team_id
+        description: Foreign key referencing the ASANA_TEAM that the project is associated with
+      - name: team_name
+        description: User-facing name of the project's team
+      - name: is_archived
+        description: Boolean representing if the project has been archived in the UI
+      - name: created_at
+        description: Timestamp of when the project was created
+      - name: current_status
+        description: The most recent progress status update for the project (free-form string)
+      - name: due_date
+        description: The date the project is due on, if given
+      - name: last_modified_at
+        description: Timestamp of when the project was last modified (doesn't include comments or tasks)
+      - name: owner_user_id
+        description: Foreign key referencing the USER who owns the project.
+      - name: number_of_users_involved
+        description: Count of the unique users associated with the project
+      - name: notes
+        description: Free-form textual description associated with project
+ 
+      
+  - name: asana__team
+    description: Enriched team table consisting of basic team info + task/completion metrics (note that teams can only act on tasks in projects)
+    columns:
+      - name: team_id
+        description: System generate unique ID for the team
+      - name: team_name
+        description: UI-facing name of the team.
+      - name: number_of_open_tasks
+        description: Count of the currently open tasks for this team.
+      - name: number_of_assigned_open_tasks
+        description: Count of the open and assigned tasks for the team.
+      - name: number_of_tasks_completed
+        description: Count of tasks that this team has completed.
+      - name: number_of_active_projects
+        description: Count of non-archived projects
+      - name: active_projects
+        description: Aggregated list of non archived projects associated with the team
+      - name: number_of_archived_projects
+        description: Count of archived projects
+  
+  - name: asana__tag 
+    description: Table of tag basic info enriched with some task metrics.
+    columns:
+      - name: tag_id
+        description: System-generated unique ID for the tag
+      - name: tag_name
+        description: UI-facing name of the tag
+      - name: created_at
+        description: Timestamp of when the tag was created
+      - name: number_of_open_tasks
+        description: Count of the currently open tasks with this tag. 
+      - name: number_of_assigned_open_tasks
+        description: Count of the open and assigned tasks with this tag. Set to 0 if NULL.
+      - name: number_of_tasks_completed
+        description: Count of tasks with this tag that have been completed. Set to 0 if NULL.

@@ -1,0 +1,16 @@
+column_name,column_description
+stateid,state FIPS (Federal Information Processing System) code
+state,state name 
+state_post,
+level,Level of institution
+control,
+schools_count,
+counted_pct,"Percentage of students in the entering class (Fall 2007 at 4-year institutions, Fall 2010 at 2-year institutions) who are first-time, full-time, degree-seeking students and generally part of the official graduation rate"
+awards_per_state_value,"Completions per 100 FTE (full-time equivalent) undergraduate students, state and sector average"
+awards_per_natl_value,"Completions per 100 FTE (full-time equivalent) undergraduate students, national sector average"
+exp_award_state_value,"Spending per completion, state and sector average "
+exp_award_natl_value,"Spending per completion, national sector average"
+state_appr_value,State appropriations to higher education in fiscal year 2011 per resident
+state_appr_rank,
+grad_rate_rank,
+awards_per_rank,

@@ -1,0 +1,30 @@
+column_name,column_description
+id,Unique identifier for the billing info object.
+account_id,Account identifier for the billing info.
+billing_city,Billing city of the card on file for the account.
+billing_country,Billing country of the card on file for the account.
+billing_first_name,First name at billing address on account.
+billing_last_name,Last name at billing address on account.
+billing_phone,Phone number of the account.
+billing_postal_code,Billing postal code of the card on file for the account.
+billing_region,"Billing region of the card on file for the account, like state in the US or province in Canada."
+billing_street_1,First address line of the card on file for the account.
+billing_street_2,Second address line of the card on file for the account.
+company,Company name of the account.
+created_at,Date customer's billing information was added to the account.
+first_name,First name of the cardholder for the account.
+fraud_decision,Decision made on whether billing info triggers a fraud alert.
+fraud_risk_rules_triggered,The rules that are triggered for fraud if an alert is raised.
+fraud_score,Fraud score on card based on risk inquiries.
+last_name,Last name of the cardholder for the account.
+payment_method_card_type,"Card type of payment method, like Visa or Mastercard."
+payment_method_exp_month,Month the payment method is expected to expire.
+payment_method_exp_year,Year the payment method is expected to expire.
+payment_method_first_six,First six numbers of the credit card used to process the transaction.
+payment_method_last_four,Last four digits of the credit card number stored on customer's account.
+payment_method_object,"Object type of payment method, like credit card or debit card."
+updated_at,Date customer's billing information was last updated on the account.
+updated_by_country,Country from which latest billing info update came from.
+updated_by_ip,IP address from which latest billing info update came from.
+valid,Is the card valid? Boolean object.
+vat_number,"(for EU companies), VAT number provider by customer."

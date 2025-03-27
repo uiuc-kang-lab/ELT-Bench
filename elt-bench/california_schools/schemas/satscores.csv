@@ -1,0 +1,12 @@
+column_name,column_description
+cds,California Department Schools
+rtype,rtype
+sname,school name
+dname,district segment
+cname,county name
+enroll12,enrollment (1st-12nd grade)
+NumTstTakr,Number of Test Takers in this school
+AvgScrRead,average scores in Reading
+AvgScrMath,average scores in Math
+AvgScrWrite,average scores in writing
+NumGE1500,Number of Test Takers Whose Total SAT Scores Are Greater or Equal to 1500

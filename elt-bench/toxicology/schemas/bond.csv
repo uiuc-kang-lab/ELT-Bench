@@ -1,0 +1,4 @@
+column_name,column_description
+bond_id,unique id representing bonds
+molecule_id,identifying the molecule in which the bond appears
+bond_type,type of the bond

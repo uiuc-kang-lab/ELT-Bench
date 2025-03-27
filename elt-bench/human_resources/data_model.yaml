@@ -1,0 +1,39 @@
+models:
+  - name: positions
+    description: Each record represents a position
+    columns:
+      - name: position_id
+        description: Unique identifier for the position
+      - name: position_title
+        description: Title of the position
+      - name: education_required
+        description: Education required for the position
+      - name: num_poor_performing_employees
+        description: Number of poor performing employees in the position, replace NULL values with 0.
+      - name: num_female_employees
+        description: Number of female employees in the position, replace NULL values with 0.
+      - name: per_salary_over_20000
+        description: Percentage of employees with a salary over $20,000 a year in the position
+      - name: avg_salary
+        description: Average salary of employees in the position
+      - name: has_maximum_salary_no_more_than_70000
+        description: Set to 1 if the maximum salary for the position is no more than $70,000, otherwise, set to 0
+  - name: locations
+    description: Each record represents a location
+    columns:
+      - name: location_id
+        description: Unique identifier for the location
+      - name: location_state
+        description: State of the location
+      - name: location_address
+        description: The detailed address of the location
+      - name: num_employees
+        description: Number of employees at the location, replace NULL values with 0.
+      - name: highest_paid_employee
+        description: The highest paid employee at the location, with ties broken by ascending order of the employee's last name
+      - name: num_of_trainee
+        description: The number of employees who are Trainees work at the location, replace NULL values with 0.
+      - name: num_Account_Representatives_with_Average_performance
+        description: The number of Account Representatives with 'Average' performance at the location, replace NULL values with 0.
+      - name: num_employees_have_good_perfomance
+        description: The number of employees who have 'Good' joob performance at the location, replace NULL values with 0.

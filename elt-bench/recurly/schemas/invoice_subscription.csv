@@ -1,0 +1,4 @@
+column_name,column_description
+invoice_id,The id of the invoice associated with the subscription.
+invoice_updated_at,When the invoice was updated.
+subscription_id,The id of the subscription associated with the invoice.

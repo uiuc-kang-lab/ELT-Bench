@@ -1,0 +1,6 @@
+column_name,column_description
+event_id,unique id number referring to the event
+device_id,id number referring the device
+timestamp,the time of the event
+longitude,longitude 
+latitude,latitude

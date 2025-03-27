@@ -1,0 +1,18 @@
+models:
+  - name: publishers
+    description: Each record represents a publisher.
+    columns:
+      - name: publisher_id
+        description: Unique identifier for the publisher.
+      - name: publisher_name
+        description: The name of the publisher.
+      - name: num_games
+        description: The number of games published by the publisher, replace NULL values with 0.
+      - name: num_puzzle_games
+        description: The number of puzzle games published by the publisher, replace NULL values with 0.
+      - name: oldest_published_game
+        description: The name of the oldest game published by the publisher.
+      - name: published_only_one_game
+        description: Set to 1 if the publisher has published only one game, otherwise, set to 0.
+      - name: avg_sale_greater_than_90_per_of_avg_sale_in_Japan
+        description: Set to 1 if the publisher's average sale in Japan is greater than 90% of the average sales of all publishers in Japan, otherwise, set to 0

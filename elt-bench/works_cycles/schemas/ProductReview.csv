@@ -1,0 +1,9 @@
+column_name,column_description
+productreviewid,The unique id numbers identifying product reviews.
+productid,Product identification number.
+reviewername,The name of reviewer.
+reviewdate,Date review was submitted. 
+emailaddress,Reviewer's e-mail address.
+rating,Product rating given by the reviewer. 
+comments,
+modifieddate,Date and time the record was last updated. 

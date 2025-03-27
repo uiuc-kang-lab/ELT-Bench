@@ -1,0 +1,64 @@
+column_name,column_description
+position_id,Identifier for the specific position.
+worker_id,Unique identifier for the worker.
+_fivetran_active,TRUE if it is the currently active record. FALSE if it is a historical version of the record. Only one version of the record can be TRUE.
+_fivetran_start,Timestamp when the record was first created or modified in the source.
+_fivetran_end,Timestamp marking the end of a record being active.
+_fivetran_deleted,Indicates if the record was soft-deleted by Fivetran.
+_fivetran_synced,Timestamp the record was synced by Fivetran.
+academic_pay_setup_data_annual_work_period_end_date,The end date of the annual work period in academic pay setup data.
+academic_pay_setup_data_annual_work_period_start_date,The start date of the annual work period in academic pay setup data.
+academic_pay_setup_data_annual_work_period_work_percent_of_year,The work percentage of the year in the annual work period in academic pay setup data.
+academic_pay_setup_data_disbursement_plan_period_end_date,The end date of the disbursement plan period in academic pay setup data.
+academic_pay_setup_data_disbursement_plan_period_start_date,The start date of the disbursement plan period in academic pay setup data.
+business_site_summary_display_language,The display language of the business site summary.
+business_site_summary_local,Local information related to the business site summary.
+business_site_summary_location,The location of the business site summary.
+business_site_summary_location_type,The type of location for the business site summary.
+business_site_summary_name,The name associated with the business site summary.
+business_site_summary_scheduled_weekly_hours,The scheduled weekly hours associated with the business site summary.
+business_site_summary_time_profile,The time profile associated with the business site summary.
+business_title,The business title associated with the worker position.
+critical_job,Flag indicating whether the job is critical.
+default_weekly_hours,The default weekly hours associated with the worker position.
+difficulty_to_fill,Indication of the difficulty level in filling the job.
+effective_date,Date when the job profile becomes effective.
+employee_type,The type of employee associated with the worker position.
+end_date,The end date of the worker position.
+end_employment_date,Date when the worker's employment is scheduled to end.
+exclude_from_head_count,Flag indicating whether the position is excluded from headcount.
+expected_assignment_end_date,The expected end date of the assignment associated with the worker position.
+external_employee,Flag indicating whether the worker is an external employee.
+federal_withholding_fein,The Federal Employer Identification Number (FEIN) for federal withholding.
+frequency,The frequency associated with the worker position.
+full_time_equivalent_percentage,The full-time equivalent (FTE) percentage associated with the worker position.
+headcount_restriction_code,The code associated with headcount restriction for the worker position.
+home_country,The home country of the worker.
+host_country,The host country associated with the worker.
+international_assignment_type,The type of international assignment associated with the worker position.
+is_primary_job,Flag indicating whether the job is the primary job for the worker.
+job_exempt,Indicates whether the job is exempt from certain regulations.
+job_profile_id,Identifier for the job profile.
+management_level_code,Code indicating the management level associated with the job profile.
+paid_fte,The paid full-time equivalent (FTE) associated with the worker position.
+pay_group,The pay group associated with the worker position.
+pay_rate,The pay rate associated with the worker position.
+pay_rate_type,The type of pay rate associated with the worker position.
+pay_through_date,The date through which the worker is paid.
+payroll_entity,The payroll entity associated with the worker position.
+payroll_file_number,The file number associated with payroll for the worker position.
+regular_paid_equivalent_hours,The regular paid equivalent hours associated with the worker position.
+scheduled_weekly_hours,The scheduled weekly hours associated with the worker position.
+specify_paid_fte,Flag indicating whether to specify paid FTE for the worker position.
+specify_working_fte,Flag indicating whether to specify working FTE for the worker position.
+start_date,The start date of the worker position.
+start_international_assignment_reason,The reason for starting an international assignment associated with the worker position.
+work_hours_profile,The work hours profile associated with the worker position.
+work_shift,The work shift associated with the worker position.
+work_shift_required,Flag indicating whether a work shift is required.
+work_space,The work space associated with the worker position.
+worker_hours_profile_classification,The classification of worker hours profile associated with the worker position.
+working_fte,The working full-time equivalent (FTE) associated with the worker position.
+working_time_frequency,The frequency of working time associated with the worker position.
+working_time_unit,The unit of working time associated with the worker position.
+working_time_value,The value of working time associated with the worker position.

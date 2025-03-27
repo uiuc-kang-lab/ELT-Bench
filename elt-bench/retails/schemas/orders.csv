@@ -1,0 +1,10 @@
+column_name,column_description
+o_orderdate,date of the order
+o_orderkey,unique id number identifying the order
+o_custkey,customer key of order
+o_orderpriority,priority rate of order
+o_shippriority,ship priority of order
+o_clerk,clerk of order
+o_orderstatus,status of order
+o_totalprice,total price of the order
+o_comment,comment description of order

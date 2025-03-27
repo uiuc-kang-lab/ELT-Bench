@@ -1,0 +1,11 @@
+column_name,column_description
+id,unique number of this record
+year,year
+round,round
+series,
+tmidwinner,team id winner
+lgidwinner,league id winner
+tmidloser,team id loser
+lgidloser,league id loser
+w,wins
+l,loses

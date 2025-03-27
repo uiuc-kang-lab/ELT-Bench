@@ -1,0 +1,4 @@
+column_name,column_description
+language_id,the unique identifier of the language 
+language_code,the language code
+language_name,the language name

@@ -1,0 +1,39 @@
+models:
+  - name: codebase_community__users
+    description: Each record represents a user.
+    columns:
+      - name: user_id
+        description: Unique identifier for the user.
+      - name: display_name
+        description: Display name of the user.
+      - name: creation_date
+        description: Date when the user was created.
+      - name: num_badges
+        description: Number of badges the user has earned, replace NULL values with 0.
+      - name: num_comments
+        description: Number of comments the user has posted, replace NULL values with 0.
+      - name: created_post_with_score_more_than_60
+        description: Set to 1 if the user has created at least one post with a score of more than 60; otherwise, set to 0.
+      - name: sum_of_favourite_count_gained_2011
+        description: Sum of the favourite count gained by the user in 2011, replace NULL values with 0.
+      - name: num_posts_voted
+        description: Number of posts the user has voted on, replace NULL values with 0.
+  - name: codebase_community__posts
+    descrption: Each record represents a post.
+    columns:
+      - name: postid
+        description: Unique identifier for the post.
+      - name: viewcount
+        description: Number of times the post has been viewed.
+      - name: creation_date
+        description: Date when the post was created.
+      - name: num_unique_users_commented
+        description: Number of unique users who have commented on the post, replace NULL values with 0.
+      - name: has_views_above_average
+        description: Set to 1 if the number of views on the post is above the average number of views on all posts; otherwise, set to 0.
+      - name: avg_score_of_comments
+        description: the average score of comments that were added to the post
+      - name: posted_by_most_influential_user
+        description: Set to 1 if the post was posted by the most influential user, otherwise, set to 0.
+      - name: comment_with_the_highest_score
+        description: the comment of the post that has the highest score, with ties broken by the ascending order of the text.

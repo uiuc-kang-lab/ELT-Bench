@@ -1,0 +1,4 @@
+column_name,column_description
+run_at,The date and time of the podcast review creation.
+max_rowid,The id of max row of this run.
+reviews_added,The number of reviews added in this run.

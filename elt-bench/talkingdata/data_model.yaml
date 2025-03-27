@@ -1,0 +1,18 @@
+models:
+  - name: labels
+    description: Each record represents a label category of the app.
+    columns:
+      - name: label_id
+        description: Unique id of label.
+      - name: category
+        description: Category of the label
+      - name: number_of_users
+        description: The number of users belong to the label category, replace NULL values with 0.
+      - name: oldest_event_id
+        description: The id of the oldest event belongs to the label category, with ties broken by the ascending order of the event id.
+      - name: percentage_of_the_app_under_the_label
+        description: The percentage of the app that belongs to the label category.
+      - name: number_of_users_not_active_when_2_happened
+        description: The number of users belong to the label category who were not active when event no.2 happened, replace NULL values with 0.
+      - name: start_with_the_word_game
+        description: Set to 1 if the label category name starts with the word "game", 0 otherwise.

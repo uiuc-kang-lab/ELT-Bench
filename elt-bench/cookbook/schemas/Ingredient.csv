@@ -1,0 +1,5 @@
+column_name,column_description
+ingredient_id,the unique identifier for the ingredient
+category,the category of the ingredient
+name,the name of the ingredient
+plural,the plural suffix of the ingredient

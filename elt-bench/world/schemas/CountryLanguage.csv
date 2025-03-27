@@ -1,0 +1,5 @@
+column_name,column_description
+countrycode,The unique code for country 
+language,Country language
+isofficial,Information on whether the language is official in a given country
+percentage,Percentage of language use

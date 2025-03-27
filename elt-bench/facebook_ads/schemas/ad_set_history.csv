@@ -1,0 +1,14 @@
+column_name,column_description
+id,The ID of the ad set.
+account_id,The ID of the ad account that this ad set belongs to.
+campaign_id,Ad campaign that contains this ad set.
+name,The name of the ad set.
+_fivetran_synced,When the record was last synced by Fivetran.
+updated_time,The timestamp of the last update of a record.
+start_time,Timestamp of designated ad set start time.
+end_time,Timestamp of designated ad set end time.
+bid_strategy,"Bid strategy values are - 'LOWEST_COST_WITHOUT_CAP', 'LOWEST_COST_WITH_BID_CAP', 'COST_CAP', 'LOWEST_COST_WITH_MIN_ROAS'."
+daily_budget,Daily budget of ad set.
+budget_remaining,Remaining budget of ad set.
+status,"Status values are - 'ACTIVE', 'PAUSED', 'DELETED', 'ARCHIVED'."
+optimization_goal,The optimization goal this ad set is using. Possible values defined [here](https://developers.facebook.com/docs/marketing-api/reference/ad-campaign/#fields).

@@ -1,0 +1,9 @@
+column_name,column_description
+movie_id,"the id of the movie
+Maps to movie(movie_id)"
+person_id,"the id of the person
+Maps to person(person_id)"
+character_name,the character name
+gender_id,"the id of the cast's gender
+Maps to gender(gender_id)"
+cast_order,the cast order of the cast

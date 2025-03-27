@@ -1,0 +1,4 @@
+column_name,column_description
+desert,the name of the desert
+country,the country code where it is located
+province,the province of this country

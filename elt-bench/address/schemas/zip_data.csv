@@ -1,0 +1,56 @@
+column_name,column_description
+zip_code,the zip code of the postal point
+city,the city where the postal point locates
+state,the state of the city
+multi_county,whether the country that the city belongs to is multi_country
+type,the type of the postal point
+organization,the organization to which the postal point belongs
+time_zone,the time zone of the postal point location
+daylight_savings,whether the location implements daylight savings
+latitude,the latitude of the postal point location
+longitude,the longitude of the postal point location
+elevation,the elevation of the postal point location
+state_fips,state-level FIPS code
+county_fips,country-level FIPS code
+region,the region where the postal point locates 
+division,the division of the organization 
+population_2020,the population of the residential area in 2020
+population_2010,the population of the residential area in 2010
+households,the number of the households in the residential area
+avg_house_value,the average house value in the residential area
+avg_income_per_household,the average income per household in the residential area
+persons_per_household,the number of persons per household residential area
+white_population,the population of white people in the residential area
+black_population,the population of black people in the residential area
+hispanic_population,the population of Hispanic people in the residential area
+asian_population,the population of Asian people in the residential area
+american_indian_population,the population of American Indian people in the residential area
+hawaiian_population,the population of Hawaiian people in the residential area
+other_population,the population of other races in the residential area
+male_population,the population of males in the residential area
+female_population,the population of females in the residential area
+median_age,the median age of the residential area
+male_median_age,the male median age in the residential area
+female_median_age,the female median age in the residential area
+residential_mailboxes,the number of residential mailboxes in the residential area
+business_mailboxes,the number of business mailboxes in the residential area
+total_delivery_receptacles,the total number of delivery receptacles
+businesses,the number of businesses in the residential area
+1st_quarter_payroll,the total wages reported in the 1st quarter payroll report of the residential area
+annual_payroll,the total wages reported in the annual payroll report of the residential area
+employees,the number of employees in the residential area
+water_area,the water area of the residential area
+land_area,the land area of the residential area
+single_family_delivery_units,the number of single-family delivery units in the residential area
+multi_family_delivery_units,the number of single-family delivery units in the residential area
+total_beneficiaries,the total number of beneficiaries of the postal service
+retired_workers,the number of retired workers in the residential area
+disabled_workers,the number of disabled workers in the residential area
+parents_and_widowed,the number of parents and widowed in the residential area
+spouses,the number of spouses in the residential area
+children,the number of children in the residential area
+over_65,the number of people whose age is over 65 in the residential area
+monthly_benefits_all,all benefit payments by month 
+monthly_benefits_retired_workers,monthly benefit payments for retired workers
+monthly_benefits_widowed,monthly benefit payments for retired workers
+CBSA,the code of the cbsa officer

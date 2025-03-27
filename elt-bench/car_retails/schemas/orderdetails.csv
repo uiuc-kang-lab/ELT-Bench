@@ -1,0 +1,6 @@
+column_name,column_description
+ordernumber,order number
+productcode,product code
+quantityordered,quantity ordered
+priceeach,price for each
+orderlinenumber,order Line Number

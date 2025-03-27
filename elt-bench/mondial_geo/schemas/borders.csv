@@ -1,0 +1,4 @@
+column_name,column_description
+country1,a country code
+country2,a country code
+length,length of the border between country1 and country2

@@ -1,0 +1,14 @@
+column_name,column_description
+_fivetran_synced,The timestamp of when a record was last synced by Fivetran.
+id,Pardot ID for this visitor
+prospect_id,Pardot ID for the associated prospect
+page_view_count,Number of page views by this visitor
+ip_address,Visitor's IP address
+hostname,Visitor's hostname
+campaign_parameter,Visitor's campaign parameter utm_campaign from Google Analytics
+medium_parameter,Visitor's medium parameter utm_medium from Google Analytics
+source_parameter,Visitor's source parameter utm_source from Google Analytics
+content_parameter,Visitor's content parameter utm_content from Google Analytics
+term_parameter,Visitor's term parameter utm_term from Google Analytics
+created_at,Time visitor is created in Pardot; Time is reported in API user's preferred timezone
+updated_at,Last time visitor was updated in Pardot; Time is reported in API user's preferred timezone

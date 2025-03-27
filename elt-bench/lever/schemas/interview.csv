@@ -1,0 +1,19 @@
+column_name,column_description
+id,Unique ID of the interview.
+canceled_at,"Timestamp of when the interview was canceled, if canceled."
+created_at,Timestamp of when the interview was created.
+creator_id,Foreign key referencing the USER who created the interview in lever.
+date,Date + time at which the interview was set to occur.
+duration,"Interview duration in minutes, minimum value is 1."
+feedback_reminder,"Frequency of feedback reminders (i.e. once, daily, frequently, none). Defaults to 'frequently' which is every 6 hours.
+"
+gcal_event_url,Google calendar event url.
+location,"Interview location. Usually the name of a booked conference room but can also be a  phone number to call.
+"
+note,Interview note.
+panel_id,Unique id of the PANEL this interview belongs to.
+stage_id,"Foreign key referencing the STAGE that the candidate was in at the time  the interview was scheduled.
+"
+subject,Subject of the interview.
+timezone,Name of timezone in which interview was scheduled to occur.
+opportunity_id,Foreign key referencing the OPPORTUNITY being interviewed for.

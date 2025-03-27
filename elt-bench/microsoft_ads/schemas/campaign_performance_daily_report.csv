@@ -1,0 +1,24 @@
+column_name,column_description
+date,The date of the performance report.
+account_id,The ID of the account.
+campaign_id,The ID of the campaign.
+currency_code,"The currency code associated with spend and, if applicable, other metrics associated with currency."
+device_os,"The device operating system associated with this record; values include but may not be limited to 'Windows', 'iOS', 'Android', 'Other', 'BlackBerry' and 'Unknown'."
+device_type,"The device type associated with this record; values include but may not be limited to 'Computer', 'Smartphone', 'Tablet' and 'Unknown'."
+network,The network associated with this record.
+ad_distribution,The distribution medium associated with this record.
+bid_match_type,"The bid match type associated with this record; values include 'Broad', 'Exact', 'Phrase'."
+delivered_match_type,"The delivered match type associated with this record; values include 'Broad', 'Exact', 'Phrase'."
+top_vs_other,"The position of the ad associated with this record. For more information, refer to Microsoft [documentation](https://help.ads.microsoft.com/apex/index/22/en/14009)."
+clicks,The number of clicks that occurred by the grain of the report.
+impressions,The number of impressions that occurred by the grain of the report.
+spend,The amount of spend that occurred by the grain of the report.
+budget_association_status,Indicates whether or not the campaign is currently spending from the budget mentioned in the BudgetName column. The possible values are `Current` and `Ended`.
+budget_name,The name of the budget. This column will be empty for unshared budgets.
+budget_status,The budget status. The possible values are `Active` and `Deleted`. This column will be empty for unshared budgets.
+conversions_qualified,"Number of [conversions](https://learn.microsoft.com/en-us/advertising/reporting-service/conversionperformancereportcolumn?view=bingads-13#conversionsqualified), measured by completion of an action by a customer after viewing your ad. This will **exclude** any conversions where the conversion goal's [ExcludeFromBidding](https://learn.microsoft.com/en-us/advertising/campaign-management-service/conversiongoal?view=bingads-13#excludefrombidding) property in Microsoft Ads is set to true."
+conversions,"Number of conversions, measured by completion of an action by a customer after viewing your ad. This will **exclude** any conversions where the convesion goal's [ExcludeFromBidding](https://learn.microsoft.com/en-us/advertising/campaign-management-service/conversiongoal?view=bingads-13#excludefrombidding) property in Microsoft Ads is set to true. This field coalesces the source `conversions_qualifed` and `conversions` fields, and will be 0 if both are null."
+revenue,The revenue optionally reported by the advertiser as a result of the `conversions` figure. This will **exclude** revenue from conversions in which the conversion goal's [ExcludeFromBidding](https://learn.microsoft.com/en-us/advertising/campaign-management-service/conversiongoal?view=bingads-13#excludefrombidding) property in Microsoft Ads is set to true.
+all_conversions_qualified,"Number of all conversions, measured by completion of an action by a customer after viewing your ad. This will **include** data from conversions regardless of the value of the conversion goal's [ExcludeFromBidding](https://learn.microsoft.com/en-us/advertising/campaign-management-service/conversiongoal?view=bingads-13#excludefrombidding) property in Microsoft Ads."
+all_conversions,"Number of all conversions, measured by completion of an action by a customer after viewing your ad. This will **include** data from conversions regardless of the value of the conversion goal's [ExcludeFromBidding](https://learn.microsoft.com/en-us/advertising/campaign-management-service/conversiongoal?view=bingads-13#excludefrombidding) property in Microsoft Ads. This field coalesces the source `all_conversions_qualifed` and `all_conversions` fields, and will be 0 if both are null."
+all_revenue,The revenue reported by the advertiser as a result of the `all_conversions` figure. This will **include** revenue from conversions regardless of the value of the conversion goal's [ExcludeFromBidding](https://learn.microsoft.com/en-us/advertising/campaign-management-service/conversiongoal?view=bingads-13#excludefrombidding) property in Microsoft Ads.

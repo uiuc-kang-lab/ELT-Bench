@@ -1,0 +1,36 @@
+column_name,column_description
+id,Unique integer id of a lead record.
+created_at,The timestamp each lead object was created at.
+updated_at,The timestamp each lead object was last updated at.
+email,The email address of the lead.
+first_name,The first name of the lead.
+last_name,The last name of the lead.
+phone,Lead’s Phone Number.
+main_phone,Primary phone number of the lead’s company
+mobile_phone,Lead’s mobile phone number
+company,Lead’s company name
+inferred_company,Company name inferred by reverse IP lookup of the lead’s first recorded web visit
+address_lead,Second address associated with the lead.
+address,Lead’s address.
+city,Lead’s city
+state,Lead’s state
+state_code,Alpha-2 code of the Lead’s state
+country,Lead’s country
+country_code,Alpha-2 code of the Lead’s country
+postal_code,Lead’s postal code
+billing_street,Billing street address of the lead’s company
+billing_city,City of the lead’s billing address
+billing_state,State or province of the lead’s billing address
+billing_state_code,Alpha-2 code of the state or province of the lead’s billing address
+billing_country,Country of the lead’s billing address
+billing_country_code,Alpha-2 code of the country of the lead’s billing address
+billing_postal_code,Postal code of the lead’s billing address
+inferred_city,Lead’s city inferred by reverse IP lookup of lead’s first recorded web visit.
+inferred_state_region,Lead’s state region inferred by reverse IP lookup of lead’s first recorded web visit.
+inferred_country,Country inferred by reverse IP lookup of the lead’s first recorded web visit
+inferred_postal_code,Lead’s postal code inferred by reverse IP lookup of lead’s first recorded web visit.
+inferred_phone_area_code,Lead’s phone area code inferred by reverse IP lookup of lead’s first recorded web visit.
+anonymous_ip,IP address of the lead’s first recorded web visit
+unsubscribed,Lead’s email-unsubscribed status (boolean). Partially system managed. Will prevent receipt of non-operational emails if set to true.
+email_invalid,Email invalid status (boolean). All emails to the address will be blocked if set to true. Bounces indicating that the email is invalid will automatically set this field to true.
+do_not_call,Lead’s do-not-call preference (boolean)

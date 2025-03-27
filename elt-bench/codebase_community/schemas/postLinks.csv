@@ -1,0 +1,6 @@
+column_name,column_description
+Id,the post link id
+CreationDate,the creation date of the post link
+PostId,the post id
+RelatedPostId,the id of the related post
+LinkTypeId,the id of the link type

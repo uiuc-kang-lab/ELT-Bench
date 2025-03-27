@@ -1,0 +1,5 @@
+column_name,column_description
+major_id,A unique identifier for each major
+major_name,major name
+department,The name of the department that offers the major
+college,The name college that houses the department that offers the major

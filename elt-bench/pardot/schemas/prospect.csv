@@ -1,0 +1,50 @@
+column_name,column_description
+_fivetran_deleted,Boolean representing whether the record has been deleted in the source system.
+_fivetran_synced,The timestamp of when a record was last synced by Fivetran.
+id,Pardot ID for this prospect
+user_id,Pardot ID of the user associated with this prospect
+campaign_id,Pardot ID of the campaign associated with this prospect
+salutation,Prospect's formal prefix
+first_name,Prospect's first name
+last_name,Prospect's last name
+email,Prospect's email address
+password,Prospect's password
+company,Prospect's company
+prospect_account_id,Prospect's account ID
+website,Prospect's website URL
+job_title,Prospect's job title
+department,Prospect's department
+country,Prospect's country
+address_one,"Prospect's address, line 1"
+address_two,"Prospect's address, line 2"
+city,Prospect's city
+state,Prospect's US state
+territory,Prospect's territory
+zip,Prospect's postal code
+phone,Prospect's phone number
+fax,Prospect's fax number
+source,Prospect's source
+annual_revenue,Prospect's annual revenue
+employees,Prospect's number of employees
+industry,Prospect's industry
+years_in_business,Prospect's number of years in business
+comments,Comments about this prospect
+notes,Notes about this prospect
+score,Prospect's score
+grade,Prospect's letter grade
+last_activity_at,Time stamp of this prospect's latest visitor activity; Time is reported in API user's preferred timezone
+recent_interaction,Describes the prospect's most recent interaction with Pardot
+crm_lead_fid,Prospect's lead ID in a supported CRM system
+crm_contact_fid,Prospect's contact ID in a supported CRM system
+crm_owner_fid,Prospect's owner ID in a supported CRM system
+crm_account_fid,Account ID in a supported CRM system
+crm_last_sync,Last time this prospect was synced with a supported CRM system
+crm_url,URL to view the prospect within the CRM system
+is_do_not_email,"If value is 1, prospect prefers not to be emailed"
+is_do_not_call,"If value is 1, prospect prefers not to be called"
+opted_out,"If value is 1, prospect has opted out of marketing communications"
+is_reviewed,"If value is 1, prospect has been reviewed"
+is_starred,"If value is 1, prospect has been starred"
+is_archived,"If value is 1, prospect has been archived"
+created_at,Time prospect is created in Pardot; Time is reported in API user's preferred timezone
+updated_at,Last time prospect was updated in Pardot; Time is reported in API user's preferred timezone

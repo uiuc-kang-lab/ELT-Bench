@@ -1,0 +1,10 @@
+column_name,column_description
+book_id,the unique identifier of the book
+title,the title of the book 
+isbn13,the International Standard Book Number of the book
+language_id,"the id of the book language
+Maps to book_language (language_id)"
+num_pages,the number of the pages
+publication_date,the publication date of the book
+publisher_id,"the id of the publisher
+Maps to publisher (publisher_id)"

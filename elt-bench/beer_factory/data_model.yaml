@@ -1,0 +1,40 @@
+models:
+  - name: beer_factory__customers
+    description: Each record represents a customer.
+    columns:
+      - name: customer_id
+        description: Unique identifier for the customer.
+      - name: name
+        description: Name of the customer. Concatenate the first name and last name with a space separating them.
+      - name: address
+        description: Address of the customer. Concatenate the street streetaddress, city and state with a space separating them.
+      - name: num_reviews
+        description: Number of reviews the customer has written, replace NULL values with 0.
+      - name: purchased_beer_by_ASB
+        description: set to 1 if the customer has purchased at least one root beer produced by AJ Stephans Beverages, otherwise, set to 0
+      - name: date_first_bought
+        description: Date the customer first bought a root beer.
+      - name: num_non_sweetened
+        description: Number of non-sweetened root beers the customer has purchased, replace NULL values with 0.
+      - name: bought_beers_contain_artificial_sweetener
+        description: set to 1 if the customer has purchased at least one root beer that contains artificial sweetener, otherwise, set to 0
+  - name: brands
+    description: Each record represents a brand of root beer.
+    columns:
+      - name: brand_id
+        description: Unique identifier for the brand.
+      - name: brandname
+        description: Name of the brand.
+      - name: address
+        description: Address of the brand, contains city, state, and country with a space between each.
+      - name: num_5_stars
+        description: Number of 5-star ratings the brand has received, replace NULL values with 0.
+      - name: not_advertise_on_Facebook_and_Twitter
+        description: set to 1 if the brand does not advertise on Facebook and Twitter, otherwise, set to 0
+      - name: unit_profit
+        description: the unit profit of the brand available to wholesalers
+      - name: avg_rating_star
+        description: Average rating star of the brand.
+      - name: latitude_consumed_most
+        description: Latitude where the brand is consumed the most with ties broken by the descending order of the latitude
+      

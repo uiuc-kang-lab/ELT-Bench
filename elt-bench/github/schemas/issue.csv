@@ -1,0 +1,14 @@
+column_name,column_description
+id,System generated unique id for the issue.  This is not the number that appears in the URL.
+body,The text of the main description of the issue.
+locked,Boolean indicating whether the issue is locked.
+closed_at,"Timestamp of when the issue was closed, NULL for issues that are open."
+created_at,Timestamp of when the issue was created.
+milestone_id,Foreign key that references the milestone table representing the current milestone the issue is in.
+number,"The issue number within a repository.  Is unique by repository, but not across repositories."
+pull_request,Boolean for is the issue is a pull request (true) ot regular issue (false)
+repository_id,Foreign key that references the repository table.
+state,Whether the issue is open or closed.
+title,Title of the issue.
+updated_at,Timestamp of when the last update was made to the issue.
+user_id,"Foreign key that references the user table, representing the user that created the issue."

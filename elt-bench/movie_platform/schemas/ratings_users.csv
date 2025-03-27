@@ -1,0 +1,9 @@
+column_name,column_description
+user_id,ID related to the user rating the movie
+rating_date_utc,Rating date for the movie rating.
+user_trialist,whether the user was a trialist when he rated the movie
+user_subscriber,whether the user was a subscriber when he rated the movie
+user_avatar_image_url,URL to the user profile image on Mubi
+user_cover_image_url,URL to the user profile cover image on Mubi
+user_eligible_for_trial,whether the user was eligible for trial when he rated the movie
+user_has_payment_method,whether the user was a paying subscriber when he rated the movie

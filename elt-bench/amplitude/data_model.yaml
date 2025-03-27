@@ -1,0 +1,137 @@
+models:
+  - name: amplitude__event_enhanced
+    description: Each record represents event data, enhanced with event type data and unnested event, group, and user properties. 
+    columns:
+      - name: unique_event_id
+        description: A surrogate key that uniquely identifies each event, derived from event_id, device_id, and client_event_time.
+      - name: unique_session_id
+        description: A surrogate key that uniquely identifies each session, derived from user_id and session_id
+      - name: amplitude_user_id
+        description: Unique key for each user, which is user_id by default. If user_id does not exist, use amplitude_id
+      - name: event_id
+        description: A counter that distinguishes events
+      - name: event_type
+        description: The assigned type of event. Example 'Add Friend'
+      - name: event_time
+        description: >
+          Amplitude timestamp (UTC) which is the client_event_time adjusted by the
+          difference between server_received_time and client_upload_time,
+          specifically: event_time = client_event_time + (server_received_time -
+          client_upload_time) 2015-08-10T12:00:00.000000 We use this timestamp to
+          organize events on Amplitude charts. Note: If the difference between
+          server_received_time and client_upload_time is less than 60 seconds, the
+          event_time will not be adjusted and will equal the client_event_time
+      - name: event_day
+        description: Day of event time
+      - name: unique_event_type_id
+        description: A unique identifier for each event type.
+      - name: event_type_id
+        description: Event type ID
+      - name: event_type_name
+        description: Event type name
+      - name: session_id
+        description: The session start time in milliseconds since epoch.All events within the same session share the same session ID. By default, the setting in Amplitude for the session property is session ID. All events with the same session ID and the same user ID will be grouped into the same session. The session ID does not have to be unique across multiple users. Session IDs for events sent via the Amplitude SDKs are automatically generated and managed. However, for events sent via the HTTP API, Amplitude defaults to a session ID of -1. This means the event is excluded from all session metrics.
+      - name: session_event_number
+        description: The number of the event within the session, ordered by time of event.
+      - name: user_event_number
+        description: A sequential count of events triggered by a user, indicating the order of events within a user’s activity.
+      - name: group_types
+        description: Group types. "Groups" in the source table, renamed here. See the Accounts documentation for more information.
+      - name: user_id
+        description: >
+          A readable ID specified by you.
+          Amplitude uses a combination of three different methods to identify your users: device IDs, Amplitude ID, and user IDs. The first comes directly from your users' devices, while the second is an ID that Amplitude automatically creates once it has enough information to conclusively identify a unique user. The user ID, however, is something you'd set up.
+          In Amplitude, a user ID is a unique identifier applied to individual users. Using them is optional, but recommended: your product should set a user ID once a user has created an account, logged in, or is otherwise identified in your product.
+          Amplitude can use a user ID to reconcile events across multiple devices under the same user ID. Additionally, a user's event data will be merged on the backend so that all anonymous events prior to the assignment of a user ID will be connected to the correct user. For this reason, you can wait to assign user IDs if that makes sense for your product. Conversely, this is also why you should not set user IDs for anonymous users.
+          Once set, user IDs in Amplitude cannot be changed.Once set, user IDs in Amplitude cannot be changed.
+      - name: user_creation_time
+        description: Event_time (UTC) of the user's first event
+      - name: amplitude_id
+        description: An internal ID used to count unique users.
+      - name: app
+        description: Project ID found in your project's Settings page
+      - name: project_name
+        description: Project ID
+      - name: client_event_time
+        description: Local timestamp (UTC) of when the device logged the event.
+      - name: client_upload_time
+        description: The local timestamp (UTC) of when the device uploaded the event.
+      - name: server_received_time
+        description: Amplitude timestamp (UTC) of when servers received the event
+      - name: server_upload_time
+        description: Amplitude timestamp (UTC) of when the event data was uploaded to Amplitude servers
+      - name: country
+        description: Country
+      - name: data
+        description: Dictionary where certain fields such as first_event and merged_amplitude_id are stored.
+      - name: device_id
+        description: The device specific identifier
+      - name: ip_address
+        description: IP address
+      - name: totals
+        description: The total number of times the event has happened this week
+      - name: value
+        description: Name of the event in the raw data.
+      - name: events_per_session
+        description: The count of events in a session
+      - name: session_started_at
+        description: The time of the first event in a session
+      - name: session_ended_at
+        description: The time of the last event in a session
+      - name: user_session_number
+        description: A sequential identifier for each session initiated by a user, helping to track users across sessions.
+      - name: session_started_at_day
+        description: The date on which a session started.
+      - name: session_ended_at_day
+        description: The date on which a session ended.
+      - name: session_length_in_minutes
+        description: The length of the session, in minutes
+      - name: is_first_user_session
+        description: Boolean of whether or not a session is the user's first session
+     
+  - name: amplitude__sessions
+    description: Each record represents a distinct session with aggregated metrics for that session.
+    columns:
+      - name: unique_session_id
+        description: A surrogate key that uniquely identifies each session, derived from user_id and session_id
+      - name: user_id
+        description: >
+          A readable ID specified by you.
+          Amplitude uses a combination of three different methods to identify your users: device IDs, Amplitude ID, and user IDs. The first comes directly from your users' devices, while the second is an ID that Amplitude automatically creates once it has enough information to conclusively identify a unique user. The user ID, however, is something you'd set up.
+          In Amplitude, a user ID is a unique identifier applied to individual users. Using them is optional, but recommended: your product should set a user ID once a user has created an account, logged in, or is otherwise identified in your product.
+          Amplitude can use a user ID to reconcile events across multiple devices under the same user ID. Additionally, a user's event data will be merged on the backend so that all anonymous events prior to the assignment of a user ID will be connected to the correct user. For this reason, you can wait to assign user IDs if that makes sense for your product. Conversely, this is also why you should not set user IDs for anonymous users.
+          Once set, user IDs in Amplitude cannot be changed.Once set, user IDs in Amplitude cannot be changed.
+      - name: events_per_session
+        description: The count of events in a session
+      - name: session_started_at
+        description: The time of the first event in a session
+      - name: session_ended_at
+        description: The time of the last event in a session
+      - name: session_length_in_minutes
+        description: The length of the session, in minutes
+      - name: session_started_at_day
+        description: The day the session started
+      - name: session_ended_at_day
+        description: The day the session ended
+      - name: user_session_number
+        description: The number of the session, within a user's lifetime
+      - name: is_first_user_session
+        description: Boolean of whether or not a session is the user's first session
+
+  - name: amplitude__user_enhanced
+    description: Each record represents a distinct user with aggregated metrics for that user.
+    columns:
+      - name: amplitude_user_id
+        description: Unique key for each user, which is user_id by default. If user_id does not exist, use amplitude_id
+      - name: user_created_at
+        description: Event_time (UTC) of the user's first event
+      - name: first_session_at
+        description: Timestamp of user's first recorded activity
+      - name: last_session_at
+        description: Timestamp of user's most recent activity
+      - name: total_events_per_user
+        description: The total number of events for a certain user
+      - name: total_sessions_per_user
+        description: The total number of sessions for a certain user
+      - name: average_session_length_in_minutes
+        description: Average length of sessions, in minutes

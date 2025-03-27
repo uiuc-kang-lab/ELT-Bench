@@ -1,0 +1,41 @@
+column_name,column_description
+id,The unique identifier of the taxation item.
+_fivetran_synced,Timestamp of when a record was last synced.
+_fivetran_deleted,Boolean identifiying whether the record was deleted in the source.
+account_id,The id of the account associated with the taxation item.
+account_receivable_accounting_code_id,The id of the accounting code for the account receivable.
+accounting_code,The accounting code associated with the taxation item.
+amendment_id,The id of the amendment associated with the taxation item.
+balance,The balance of the taxation item.
+bill_to_contact_id,The id of the contact associated with the billing of the taxation item.
+created_by_id,The id of the user who created the taxation item.
+created_date,The date when the taxation item was created.
+credit_amount,The credit amount of the taxation item.
+exchange_rate,The exchange rate of the taxation item.
+exchange_rate_date,The date of the exchange rate of the taxation item.
+exempt_amount,The exempt amount of the taxation item.
+exempt_amount_home_currency,The exempt amount in home currency of the taxation item.
+home_currency,The home currency of the taxation item.
+invoice_id,The id of the invoice associated with the taxation item.
+invoice_item_id,The id of the invoice item associated with the taxation item.
+journal_entry_id,The id of the journal entry associated with the taxation item.
+name,The name of the taxation item.
+payment_amount,The payment amount of the taxation item.
+product_id,The id of the product associated with the taxation item.
+product_rate_plan_charge_id,The id of the product rate plan charge associated with the taxation item.
+product_rate_plan_id,The id of the product rate plan associated with the taxation item.
+rate_plan_charge_id,The id of the rate plan charge associated with the taxation item.
+rate_plan_id,The id of the rate plan associated with the taxation item.
+sales_tax_payable_accounting_code_id,The id of the accounting code for the sales tax payable.
+sold_to_contact_id,The id of the contact associated with the sale of the taxation item.
+subscription_id,The id of the subscription associated with the taxation item.
+tax_amount,The tax amount of the taxation item.
+tax_amount_home_currency,The tax amount in home currency of the taxation item.
+tax_date,The date of the tax of the taxation item.
+tax_description,The description of the tax of the taxation item.
+tax_mode,The tax mode of the taxation item.
+tax_rate,The tax rate of the taxation item.
+tax_rate_type,The type of tax rate that applies to the taxation item.
+transaction_currency,The currency in which the transaction was processed.
+updated_by_id,The id of the user who last updated the taxation item.
+updated_date,The date and time the taxation item was last updated.

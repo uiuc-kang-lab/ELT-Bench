@@ -1,0 +1,15 @@
+column_name,column_description
+user_id,ID related to the user who created the list.
+list_id,ID of the list on Mubi
+list_title,Name of the list
+list_movie_number,Number of movies added to the list
+list_update_timestamp_utc,Last update timestamp for the list
+list_creation_timestamp_utc,Creation timestamp for the list
+list_followers,Number of followers on the list
+list_url,URL to the list page on Mubi
+list_comments,Number of comments on the list
+list_description,List description made by the user
+list_cover_image_url,
+list_first_image_url,
+list_second_image_url,
+list_third_image_url,

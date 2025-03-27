@@ -1,0 +1,39 @@
+models:
+  - name: movie
+    description: Each record represents a movie.
+    columns:
+      - name: movieid
+        description: The unique identifier of the movie.
+      - name: title
+        description: The title of the movie.
+      - name: rating
+        description: The rating of the movie.
+      - name: actor_with_longest_screentime
+        description: The actor with the longest screentime in the movie, with ties broken by the ascending order of the actor name.
+      - name: percentage_of_the_USA_actors
+        description: The percentage of the USA actors that showed up in the credit list of the movie
+      - name: percentage_of_the_actor_born_after_19700101
+        description: The percentage of the actors that were born after 1970/1/1 in the credit list of the movie
+      - name: num_distinct_characters
+        description: The number of distinct characters in the movie, replace NULL values with 0.
+      - name: number_of_USA_male_actors
+        description: The number of male actors born in USA that starred in the movie, replace NULL values with 0.
+  - name: actors
+    description: Each record represents an actor.
+    columns:
+      - name: actorid
+        description: The unique identifier of the actor.
+      - name: name
+        description: The name of the actor
+      - name: networth
+        description: The net worth of the actor
+      - name: number_of_movies
+        description: The number of movies the actor has acted in, replace NULL values with 0.
+      - name: average_rating_of_all_the_movies 
+        description: The average rating of all the movies the actor has acted in
+      - name: number_of_movie_with_a_rating_greater_than_5
+        description: The number of movies the actor has acted in that has a rating greater than 5, replace NULL values with 0.
+      - name: number_of_romantic_movies
+        description: The number of movies in the genre 'Romance' the actor has acted in, replace NULL values with 0.
+      - name: total_runtime_of_the_movie_with_a_rating_greater_than_7
+        description: The total runtime of the movies the actor has acted in that has a rating greater than 7, replace NULL values with 0.

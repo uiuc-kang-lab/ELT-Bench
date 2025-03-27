@@ -1,0 +1,4 @@
+column_name,column_description
+country_id,unique id number identifying the country
+country,number identifying the country
+last_update,The time of the latest update

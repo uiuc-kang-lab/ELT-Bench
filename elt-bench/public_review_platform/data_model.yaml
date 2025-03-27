@@ -1,0 +1,39 @@
+models:
+  - name: public_review_platform__users
+    description: Each record represents a user.
+    columns:
+      - name: user_id
+        description: Unique identifier for the user.
+      - name: user_yelping_since_year
+        description: The time when the user join Yelp. 
+      - name: user_fans
+        description: The total number of fans / followers the user has
+      - name: num_5_star_reviews
+        description: The number of 5-star reviews the user has given, replace NULL values with 0.
+      - name: num_business_reviewed
+        description: The number of businesses the user has reviewed, replace NULL values with 0.
+      - name: num_of_funny_type_of_compliments
+        description: The number of funny type of compliments the user has received, replace NULL values with 0.
+      - name: is_an_elite_user_for_5_years_or_more
+        description: Set to 1 if the user has been an elite user for 5 years or more, 0 otherwise.
+      - name: received_less_than_5_low_compliments_from_other_users
+        description: Set to 1 if the user has received less than 5 low compliments from other users, 0 otherwise.
+  - name: public_review_platform__businesses
+    description: Each record represents a business.
+    columns:
+      - name: business_id
+        description: Unique identifier for the business.
+      - name: active
+        description: whether the business is still actively running until now
+      - name: city
+        description: The city where the business is located.
+      - name: num_long_reviews
+        description: The number of long reviews the business has received, replace NULL values with 0.
+      - name: is_under_the_category_of_Food_are_good_for_kids
+        description: Set to 1 if the business is under the category of Food and are good for kids, 0 otherwise.
+      - name: average_review_star
+        description: The average review star of the business
+      - name: has_more_than_10_attributes
+        description: Set to 1 if the business has more than 10 attributes, 0 otherwise.
+      - name: received_the_review_of_4_star_and_above_by_65_per_of_user
+        description: Set to 1 if the business has received the review of 4-star and above by 65% of users, 0 otherwise.

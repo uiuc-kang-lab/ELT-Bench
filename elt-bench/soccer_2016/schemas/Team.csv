@@ -1,0 +1,3 @@
+column_name,column_description
+team_id,the unique id for the team
+team_name,the team name 

@@ -1,0 +1,35 @@
+models:
+  - name: regional_sales__customers
+    description: Each record represents a customer.
+    columns:
+      - name: customer_id
+        description: Unique identifier for the customer.
+      - name: customer_name
+        description: The name of the customer.
+      - name: most_expensive_order
+        description: The most expensive order the customer has made, with ties broken by the ascending order of the order number.
+      - name: has_made_orders_online
+        description: Set to 1 if the customer has made orders online, 0 otherwise.
+      - name: highest_net_profiit_for_order
+        description: The highest net profit for an order the customer has made.
+      - name: avg_price_of_order_after_discount
+        description: The average price of an order after discount the customer has made.
+      - name: quantity_of_orders_in_2018
+        description: The quantity of orders the customer has made in 2018, replace NULL values with 0.
+  - name: regional_sales__products
+    description: Each record represents a product.
+    columns:
+      - name: product_id
+        description: Unique identifier for the product.
+      - name: product_name
+        description: The name of the product.
+      - name: has_been_applied_10per_discount
+        description: Set to 1 if the product has been applied a 10% discount, 0 otherwise.
+      - name: percentage_of_products_that_were_shipped_from_Burban
+        description: The percentage of products that were shipped from Burban.
+      - name: total_net_profit
+        description: The total net profit of the product, replace NULL values with 0.
+      - name: number_of_orders
+        description: The number of orders the product has, replace NULL values with 0.
+      - name: highest_net_profit_in_2019
+        description: The highest net profit of the product in 2019.

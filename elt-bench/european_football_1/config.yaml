@@ -1,0 +1,25 @@
+Airbyte:
+  config:
+    files_definition_id: 778daa7c-feaf-4db6-96f3-70fd645acc77
+    namespace_definition: destination
+    server_url: http://airbyte-abctl-control-plane:80/api/public/v1/
+    snowflake_definition_id: 424892c4-daac-4491-b35d-c6688ba547ba
+custom_api:
+  config:
+    configuration: {}
+    sync_mode: full_refresh_append
+    tables:
+    - matchs
+flat_files:
+- format: csv
+  path: https://drive.google.com/uc?export=download&id=1KFZsbn9RfhpNEQSvoBV7wUie5x5MP4XP
+  sync_mode: full_refresh_append
+  table: divisions
+snowflake:
+  config:
+    database: european_football_1
+    password: Snowflake@123
+    role: AIRBYTE_ROLE
+    schema: AIRBYTE_SCHEMA
+    username: AIRBYTE_USER
+    warehouse: AIRBYTE_WAREHOUSE

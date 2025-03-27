@@ -1,0 +1,45 @@
+column_name,column_description
+leave_request_event_id,The unique identifier for the leave request event.
+worker_id,Unique identifier for the worker.
+_fivetran_deleted,Indicates if the record was soft-deleted by Fivetran.
+_fivetran_synced,Timestamp the record was synced by Fivetran.
+adoption_notification_date,The date of adoption notification.
+adoption_placement_date,The date of adoption placement.
+age_of_dependent,The age of the dependent associated with the leave status.
+benefits_effect,The effect of leave on benefits.
+caesarean_section_birth,Indicator for Caesarean section birth.
+child_birth_date,The date of child birth.
+child_sdate_of_death,The start date of child death.>
+continuous_service_accrual_effect,The effect of leave on continuous service accrual.
+date_baby_arrived_home_from_hospital,The date when the baby arrived home from the hospital.
+date_child_entered_country,The date when the child entered the country.
+date_of_recall,The date of recall.
+description,Description of the type of leave
+estimated_leave_end_date,The estimated end date of the leave.
+expected_due_date,The expected due date.
+first_day_of_work,The date when the worker started their first day of work.
+last_date_for_which_paid,The last date being paid before leave.
+leave_end_date,The end date of the leave.
+leave_entitlement_override,Override for leave entitlement.
+leave_last_day_of_work,The last day of work associated with the leave status.
+leave_of_absence_type,The type of leave of absence.
+leave_percentage,The percentage of leave.
+leave_return_event,The event associated with the return from leave.
+leave_start_date,The start date of the leave.
+leave_status_code,The code indicating the status of the leave.
+leave_type_reason,The reason for the leave type.
+location_during_leave,The location during the leave.
+multiple_child_indicator,Indicator for multiple children.
+number_of_babies_adopted_children,The number of babies adopted by the worker.
+number_of_child_dependents,The number of child dependents.
+number_of_previous_births,The number of previous births.
+number_of_previous_maternity_leaves,The number of previous maternity leaves.
+on_leave,Indicator for whether the worker is on leave.
+paid_time_off_accrual_effect,The effect of leave on paid time off accrual.
+payroll_effect,The effect of leave on payroll.
+single_parent_indicator,Indicator for a single parent.
+social_security_disability_code,The code indicating social security disability.
+stock_vesting_effect,The effect of leave on stock vesting.
+stop_payment_date,The date when stop payment occurs.
+week_of_confinement,Indicator for whether the leave is work-related.
+work_related,Indicator for whether the leave is work-related.

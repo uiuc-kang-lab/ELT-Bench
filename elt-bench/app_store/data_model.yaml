@@ -1,0 +1,17 @@
+models:
+  - name: apps
+    description: Each record represents an app.
+    columns:
+      - name: app_name
+        description: Name of the app.
+      - name: num_negative_comments
+        description: Number of negative comments for the app, replace NULL values with 0.
+      - name: avg_sentiment_subjectivity_score
+        description: The average sentiment subjectivity score of the app.
+      - name: num_nan_or_null_comment_reviews
+        description: the number of reviews the app recieved whose comment is 'nan' or null, replace NULL values with 0.
+      - name: per_ratio_between_positive_and_negative_setiments
+        description: The percentage ratio between positive and negative sentiments for the app
+      - name: num_reviews_with_neutral_attitude
+        description: The number of reviews with a neutral attitude for the app, replace NULL values with 0.
+      

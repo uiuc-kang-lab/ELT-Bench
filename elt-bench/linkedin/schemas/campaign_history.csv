@@ -1,0 +1,47 @@
+column_name,column_description
+id,Unique internal ID representing the campaign.
+last_modified_time,The timestamp of when the version was updated.
+account_id,The ID of the account the campaign belongs to.
+campaign_group_id,The ID of the campaign group the campaign belongs to.
+created_time,The timestamp of when the campaign was created.
+name,A label for the campaign.
+version_tag,An integer representation of the version of the campaign.
+audience_expansion_enabled,Boolean (default=false) representing whether Audience Expansion is enabled for the campaign provides query expansion for certain targeting criteria.
+cost_type,"CPM - Cost per thousand advertising impressions. If type=SPONSORED_INMAILS; cost per send(CPS) is measured as CPM x 1000.
+CPC- Cost per individual click on the associated link.
+CPV- Cost per view for video ads.
+"
+creative_selection,"ROUND_ROBIN - Rotate through available creatives to serve them as evenly as possible.
+OPTIMIZED (default) - Bias selection taking into account such as expected performance. Not available for Message and Conversation Ads (type=SPONSORED_INMAILS).
+"
+daily_budget_amount,Maximum amount to spend per day UTC. The amount of money as a real number string.
+daily_budget_currency_code,ISO currency code. The currency must match that of the parent account.
+format,The ad format on the campaign level. See https://docs.microsoft.com/en-us/linkedin/marketing/integrations/ads/campaign-formats?view=li-lms-2022-07
+locale_country,Locale of the campaign. An uppercase two-letter country code as defined by ISO-3166.
+locale_language,Locale of the campaign. A lowercase two-letter language code as defined by ISO-639.
+objective_type,"Campaign Objective type values. Click [here](https://docs.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/ad-budget-pricing-type-combinations?view=li-lms-2022-07) for Campaign Objective descriptions. One of: - BRAND_AWARENESS - ENGAGEMENT - JOB_APPLICANTS - LEAD_GENERATION - WEBSITE_CONVERSIONS - WEBSITE_VISITS - VIDEO_VIEWS
+"
+offsite_delivery_enabled,"Boolean indicating if this campaign to allowed to be served on the LinkedIn Audience Network to extend the reach of your campaign by delivering ads beyond the  LinkedIn feed to members on third-party apps and sites.	(default will be ""True"" from June 30, 2022)
+"
+optimization_target_type,"Determines how this campaign is optimized for spending. If this is not set, there is no optimization. Refer to the documentation here. Default = 'NONE'."
+run_schedule_start,Scheduled date range to run associated creatives. The start date must be non-null. Represents the inclusive (greater than or equal to) value in which to start the range.
+run_schedule_end,"Scheduled date range to run associated creatives. The start date must be non-null. Represents the exclusive (strictly less than) value in which to end the range, if provided.
+"
+status,"ACTIVE - Denotes that the campaign is fully servable.
+PAUSED - Denotes that the campaign meets all requirements to be served, but temporarily should not be.
+ARCHIVED - Denotes that the campaign is presently inactive, and should mostly be hidden in the UI until un-archived.
+COMPLETED - Denotes that the campaign has reached a specified budgetary or chronological limit.
+CANCELED - Denotes that the campaign has been permanently canceled, such as when an advertising account is permanently closed.
+DRAFT - Denotes that the campaign is still being edited and not eligible for serving. Some validation will be postponed until the campaign is activated.
+PENDING_DELETION - Denotes that the campaign has been requested to be deleted that is currently pending.
+REMOVED - Denotes that the campaign was deleted, but must remain fetchable due to the existence of performance data.
+"
+type,"TEXT_AD - Text-based ads that show up in the right column or top of the page on LinkedIn.
+SPONSORED_UPDATES - Native ads that promote a company's content updates in the LinkedIn feed.
+SPONSORED_INMAILS - Personalized messages with a call-to-action button delivered to a LinkedIn's member inbox.
+DYNAMIC - Ads that are dynamically personalized.
+"
+unit_cost_amount,"This value is used as one of the following: amount to bid (for manual bidding), amount which is the target cost (for target cost bidding) per click,  impression, or other event depending on the pricing model, or cost cap (for cost cap bidding). The amount of money as a real number string.  The amount should be non-negative if the bidding strategy is manual, target cost, or cost cap bidding. The default is 0 with the currency code set to match that of the associated account.
+"
+unit_cost_currency_code,"Amount to bid per click, impression, or other event depending on the pricing model. The default is 0 with the currency code set to match that of the associated account.  ISO currency code.
+"

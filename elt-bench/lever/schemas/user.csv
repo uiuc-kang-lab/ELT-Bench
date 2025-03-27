@@ -1,0 +1,12 @@
+column_name,column_description
+id,Unique id of the user.
+_fivetran_deleted,Boolean that is true if the user has been soft-deleted.
+access_role,"The user's access role, which can be 'super admin', 'admin', 'team member', 'limited team member', or 'interviewer'. Information on what the roles entail can be found  [here](https://help.lever.co/hc/en-us/articles/360042645691-What-are-the-differences-between-access-roles-in-Lever-#:~:text=There%20are%205%20different%20access,information%2C%20and%20permission%20granting%20privileges).
+"
+created_at,Timestamp of when the user was created.
+deactivated_at,Timestamp of when the user was deactivated (null for active users).
+email,The user's email address.
+external_directory_id,"Unique ID of the user in an external HR directory, if provided."
+name,User's preferred name.
+photo,"URL for user's gravatar, if enabled."
+username,"Username, extracted from user's email address."

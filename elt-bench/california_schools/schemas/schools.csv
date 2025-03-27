@@ -1,0 +1,50 @@
+column_name,column_description
+CDSCode,CDSCode
+NCESDist,"This field represents the 7-digit National Center for Educational Statistics (NCES) school district identification number. The first 2 digits identify the state and the last 5 digits identify the school district. Combined, they make a unique 7-digit ID for each school district."
+NCESSchool,This field represents the 5-digit NCES school identification number. The NCESSchool combined with the NCESDist form a unique 12-digit ID for each school.
+StatusType,This field identifies the status of the district. 
+County,County name
+District,District
+School,School
+Street,Street
+StreetAbr,"The abbreviated street address of the school, district, or administrative authority’s physical location."
+City,City
+Zip,Zip
+State,State
+MailStreet,MailStreet
+MailStrAbr,
+MailCity,
+MailZip,
+MailState,
+Phone,Phone
+Ext,"The phone number extension of the school, district, or administrative authority."
+Website,"The website address of the school, district, or administrative authority."
+OpenDate,The date the school opened.
+ClosedDate,The date the school closed.
+Charter,This field identifies a charter school. 
+CharterNum,"The charter school number,"
+FundingType,Indicates the charter school funding type
+DOC,District Ownership Code
+DOCType,The District Ownership Code Type is the text description of the DOC category.
+SOC,The School Ownership Code is a numeric code used to identify the type of school.
+SOCType,The School Ownership Code Type is the text description of the type of school.
+EdOpsCode,The Education Option Code is a short text description of the type of education offered.
+EdOpsName,Educational Option Name
+EILCode,The Educational Instruction Level Code is a short text description of the institution's type relative to the grade range served.
+EILName,The Educational Instruction Level Name is the long text description of the institution’s type relative to the grade range served.
+GSoffered,"The grade span offered is the lowest grade and the highest grade offered or supported by the school, district, or administrative authority. This field might differ from the grade span served as reported in the most recent certified California Longitudinal Pupil Achievement (CALPADS) Fall 1 data collection."
+GSserved,It is the lowest grade and the highest grade of student enrollment as reported in the most recent certified CALPADS Fall 1 data collection. Only K–12 enrollment is reported through CALPADS. This field may differ from the grade span offered.
+Virtual,"This field identifies the type of virtual instruction offered by the school. Virtual instruction is instruction in which students and teachers are separated by time and/or location, and interaction occurs via computers and/or telecommunications technologies. "
+Magnet,This field identifies whether a school is a magnet school and/or provides a magnet program. 
+Latitude,"The angular distance (expressed in degrees) between the location of the school, district, or administrative authority and the equator measured north to south."
+Longitude,"The angular distance (expressed in degrees) between the location of the school, district, or administrative authority and the prime meridian (Greenwich, England) measured from west to east."
+AdmFName1,administrator's first name
+AdmLName1,administrator's last name
+AdmEmail1,administrator's email address
+AdmFName2,
+AdmLName2,
+AdmEmail2,
+AdmFName3,
+AdmLName3,
+AdmEmail3,
+LastUpdate,

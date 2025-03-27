@@ -1,0 +1,12 @@
+column_name,column_description
+ad_id,The ID of the ad the report relates to.
+ad_name,Name of the ad the report relates to.
+adset_name,Name of the ad set the report relates to.
+date,The date of the reported performance.
+account_id,The ID of the ad account that this ad belongs to.
+impressions,The number of impressions the ad had on the given day.
+inline_link_clicks,The number of clicks the ad had on the given day.
+spend,The spend on the ad in the given day.
+reach,The number of people who saw any content from your Page or about your Page. This metric is estimated.
+frequency,The average number of times each person saw your ad; it is calculated as impressions divided by reach.
+_fivetran_synced,When the record was last synced by Fivetran.

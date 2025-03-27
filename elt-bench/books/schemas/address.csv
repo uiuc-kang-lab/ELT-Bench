@@ -1,0 +1,6 @@
+column_name,column_description
+address_id,the unique identifier of the address
+street_number,the street number of the address
+street_name,the street name
+city,the city where the address belongs
+country_id,the id of the country where the address belongs 

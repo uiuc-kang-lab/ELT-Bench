@@ -1,0 +1,31 @@
+column_name,column_description
+_fivetran_deleted,Boolean representing whether the record was soft-deleted in Qualtrics.
+_fivetran_synced,The time when a record was last updated by Fivetran.
+auto_scoring_category,The automated scoring category.
+brand_base_url,Base url for the organization/brand.
+brand_id,Unique ID of the organization/brand.
+bundle_short_name,Short name for the content bundle that the survey is from.
+composition_type,Survey composition type.
+creator_id,The unique identifier for a specific `USER` who created the survey.
+default_scoring_category,The default scoring category.
+division_id,"The unique identifier for the Division ID. Match pattern = ^DV_[0-9a-zA-Z]{11,15}$"
+id,The unique identifier for this survey. Match pattern = ^SV_[a-zA-Z0-9]{11,15}$
+is_active,DEPRECATED. Use `survey_status = 'active'` instead.
+last_accessed,The date the survey was last accessed.
+last_activated,The date the survey was last activated.
+last_modified,The point in time when the record was last modified.
+owner_id,The unique identifier for a specific user who owns this.
+project_category,"Project category of the survey.
+
+Allowed values - `CORE`, `CX`, `EX`, `BX`, `PX`"
+project_type,Type of [Qualtrics project](https://www.qualtrics.com/support/survey-platform/my-projects/my-projects-overview/#SelectingProjectType). Match pattern = ^[a-zA-Z]+$
+registry_sha,The survey registry SHA.
+registry_version,The survey registry version.
+schema_version,Qualtrics schema version.
+scoring_summary_after_questions,Boolean representing whether the scoring summary is after questions.
+scoring_summary_after_survey,Boolean representing whether the scoring summary is after the survey.
+scoring_summary_category,The unique identifier for the scoring.
+survey_name,Name of the survey.
+survey_status,"The distribution status of the survey, or a flag indicating that it's a library block
+
+Allowed values - `Inactive`, `Active`, `Pending`, `LibBlock`, `Deactive`, `Temporary`"

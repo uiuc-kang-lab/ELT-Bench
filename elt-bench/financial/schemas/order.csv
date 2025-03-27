@@ -1,0 +1,7 @@
+column_name,column_description
+order_id,identifying the unique order
+account_id,id number of account
+bank_to,bank of the recipient
+account_to,account of the recipient
+amount,debited amount
+k_symbol,purpose of the payment

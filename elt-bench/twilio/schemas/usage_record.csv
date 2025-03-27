@@ -1,0 +1,14 @@
+column_name,column_description
+_fivetran_synced,Timestamp of when fivetran synced a record.
+account_id,The unique identifier of the account associated with the usage record.
+as_of,"Usage records up to date as of this timestamp, formatted as YYYY-MM-DDTHH:MM:SS+00:00. All timestamps are in GMT"
+category,The category of usage.
+count,"The number of usage events, such as the number of calls."
+count_unit,"The units in which count is measured, such as calls for calls or messages for SMS."
+description,A brief description or summary of the usage record.
+end_date,The end date of the usage period for the record.
+price,The cost or price associated with the resource usage.
+price_unit,The currency unit for the price.
+start_date,The first date for which usage is included in this UsageRecord. The date is specified in GMT and formatted as YYYY-MM-DD.
+usage,The amount used to bill usage and measured in units described in usage_unit.
+usage_unit,"The units in which usage is measured, such as minutes for calls or messages for SMS."

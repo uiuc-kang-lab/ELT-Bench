@@ -1,0 +1,16 @@
+column_name,column_description
+_fivetran_synced,The time when a record was last updated by Fivetran.
+creation_date,"The creation date and time of the record, expressed as an ISO 8601 value."
+directory_id,"The directory ID, also known as a pool ID. Example - POOL_012345678901234"
+directory_unsubscribe_date,Date and time the user opted out of the directory.
+directory_unsubscribed,Boolean indicating whether the contact unsubscribed from all contact from the Directory.
+email,The user's email address.
+email_domain,Domain of the contact's email address.
+ext_ref,The external reference for the contact.
+first_name,Contact's first name.
+id,The ID for the contact. Example - CID_012345678901234
+language,The user's default language.
+last_modified,The point in time when the record was last modified.
+last_name,Contact's surname.
+phone,Contact's phone number.
+write_blanks,Boolean of whether to write blanks(?) or not.

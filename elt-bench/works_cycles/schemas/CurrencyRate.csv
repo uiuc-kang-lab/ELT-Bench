@@ -1,0 +1,8 @@
+column_name,column_description
+currencyrateid,The unique id number identifying the currency rate record.
+currencyratedate,Date and time the exchange rate was obtained.
+fromcurrencycode,Exchange rate was converted from this currency code.
+tocurrencycode,Exchange rate was converted to this currency code.
+averagerate,Average exchange rate for the day.
+endofdayrate,Final exchange rate for the day.
+modifieddate,Date and time the record was last updated. 

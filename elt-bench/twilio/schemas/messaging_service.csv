@@ -1,0 +1,23 @@
+column_name,column_description
+_fivetran_synced,Timestamp of when fivetran synced a record.
+account_id,The unique identifier of the account that owns the messaging service.
+area_code_geomatch,Boolean of whether phone numbers used by this messaging service are required to be geo-matched to the message sender's area code.
+created_at,The date and time when the messaging service was created.
+fallback_method,The HTTP method Twilio will use to send requests to the fallback URL when an error occurs in the messaging service.
+fallback_to_long_code,Specifies whether to fallback to long code phone numbers when short code phone numbers are not available or cannot be used.
+fallback_url,The URL that Twilio will request  if an error occurs while retrieving or executing the TwiML from the Inbound Request URL.
+friendly_name,A human-readable descriptive name for the messaging service.
+id,The unique identifier of the messaging service.
+inbound_method,The HTTP method Twilio will use to send requests to the inbound request URL of the messaging service.
+inbound_request_url,"The URL we call using inbound_method when a message is received by any phone number or short code in the Service. When this property is null, receiving inbound messages is disabled. All messages sent to the Twilio phone number or short code will not be logged and received on the Account. If the use_inbound_webhook_on_number field is enabled then the webhook url defined on the phone number will override the inbound_request_url defined for the Messaging Service."
+mms_converter,Specifies the method to convert outbound MMS content.
+scan_message_content,Specifies whether to scan the content of outbound messages sent using the messaging service for harmful or unwanted content.
+smart_encoding,Specifies whether Twilio should attempt to optimize the message encoding for the messaging service.
+status_callback,The URL that Twilio will request to pass status updates of sent messages to the messaging service.
+sticky_sender,Specifies whether to assign a single sender phone number for all outbound messages sent from the messaging service.
+synchronous_validation,Specifies whether to enable or disable synchronous validation of requests to the messaging service.
+updated_at,The date and time when the messaging service was last updated.
+us_app_to_person_registered,Specifies whether to enable or disable routing inbound messages to the messaging service using US App-to-Person (A2P) routing.
+use_inbound_webhook_on_number,Specifies whether to use inbound webhooks for handling incoming messages to the messaging service.
+usecase,Specifies the intended use case of the messaging service.
+validity_period,"How long, in seconds, messages sent from the Service are valid. Can be an integer from 1 to 14,400."

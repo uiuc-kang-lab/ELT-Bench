@@ -1,0 +1,16 @@
+models:
+  - name: states
+    description: Each record represents a state.
+    columns:
+      - name: state
+        description: Institution state
+      - name: institute_with_most_number_of_American_Indian
+        description: Institution with most number of American Indian students in the state, with ties broken by the ascending order of the institute name
+      - name: average_median_SAT_value_for_institutes
+        description: Average median SAT value for institutes in the state
+      - name: num_graduate_cohort_in_2012_from_private_institute_for_profit
+        description: Number of graduate cohort in 2012 from private institute for profit in the state, replace NULL values with 0.
+      - name: per_of_4_year_public_schools
+        description: Percentage of 4 year public schools in the state
+      - name: institution_with_the_highest_freshman_retention_percentage
+        description: Institution with the highest freshman retention percentage in the state, with ties broken by the ascending order of the institute name

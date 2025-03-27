@@ -1,0 +1,19 @@
+column_name,column_description
+client_id,unique id client number
+sex,sex of client
+day,day of the birthday
+month,month of the birthday
+year,year when is born
+age,age 
+social,social number
+first,first name
+middle,middle name
+last,last name
+phone,phone number
+email,email
+address_1,address 1
+address_2,address 2
+city,city 
+state,state code
+zipcode,zipcode
+district_id,district id number

@@ -1,0 +1,37 @@
+models:
+  - name: customers
+    description: Each record represents a customer.
+    columns:
+      - name: customer_id
+        description: Unique identifier for the customer.
+      - name: customer_name
+        description: The name of the customer.
+      - name: segment
+        description: The segment the customer belongs to.
+      - name: the_largest_total_cost_of_products_in_a_single_order
+        description: The largest total cost of products in a single order the customer has made.
+      - name: name_of_the_product_that_was_ordered_recently
+        description: The name of the product that was ordered most recently by the customer, with ties broken by the ascending order of the product name.
+      - name: item_ordered_with_the_highest_quantity_in_the_East_region
+        description: The item ordered with the highest quantity in the East region by the customer, with ties broken by the descending order of the product name.
+      - name: number_of_orders_in_2016_from_the_east_superstore
+        description: The number of orders in 2016 from the East region superstore by the customer, replace NULL values with 0.
+      - name: number_of_orders_with_more_than_3_kinds_of_products_ordered
+        description: The number of orders with more than 3 kinds of products ordered by the customer, replace NULL values with 0.
+  - name: products 
+    description: Each record represents a product.
+    columns: 
+      - name: product_id
+        description: Unique identifier for the product.
+      - name: product_name
+        description: The name of the product.
+      - name: total_profits
+        description: The total profits of the product, replace NULL values with 0.
+      - name: has_a_profit_greater_than_98_per_of_the_average_profit_of_all_products_in_the_East_region
+        description: Set to 1 if the profit of the product is greater than 98% of the average profit of all products in the East region, 0 otherwise.
+      - name: percetange_of_consumers_among_the_customers
+        description: The percentage of consumers among the customers who have ordered the product.
+      - name: is_ordered_by_Becky_Martin_around_the_Central_region
+        description: Set to 1 if the product is ordered by Becky Martin around the Central region, 0 otherwise.
+      - name: total_quantity_sold
+        description: The total quantity sold of the product, replace NULL values with 0.

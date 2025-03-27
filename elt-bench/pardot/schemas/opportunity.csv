@@ -1,0 +1,13 @@
+column_name,column_description
+_fivetran_synced,The timestamp of when a record was last synced by Fivetran.
+id,Pardot ID for this opportunity
+campaign_id,Pardot ID of the campaign associated with this opportunity
+name,Opportunity's name
+value,Opportunity's value
+probability,Opportunity's probability
+type,Opportunity's type
+stage,Opportunity's stage
+status,Opportunity's status
+closed_at,Opportunity's closed date
+created_at,Time opportunity is created in Pardot
+updated_at,Last time opportunity was updated in Pardot

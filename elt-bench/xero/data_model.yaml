@@ -1,0 +1,114 @@
+models:
+  - name: xero__invoice_line_items
+    description: Each record represents an invoice line item, enriched with account, contact and invoice information.
+    columns:
+      - name: _fivetran_synced
+        description: The timestamp that Fivetran last synced the record.
+      - name: account_code
+        description: Customer defined alpha numeric account code e.g 200 or SALES
+      - name: line_item_description
+        description: The description of the line item
+      - name: discount_rate
+        description: Percentage discount being applied to a line item.
+      - name: invoice_id
+        description: The Xero identifier for the invoice the line items belongs to.
+      - name: line_amount
+        description: The line amount reflects the discounted price if a DiscountRate has been used.
+      - name: line_item_id
+        description: Xero identifier for the line item.
+      - name: quantity
+        description: The quantity of the line item.
+      - name: tax_amount
+        description: The tax amount is auto calculated as a percentage of the line amount based on the tax rate.
+      - name: tax_type
+        description: Used as an override if the default Tax Code for the selected AccountCode is not correct.
+      - name: unit_amount
+        description: The unit amount of each line item. 
+      - name: invoice_date
+        description: The date the invoice was issued.
+      - name: updated_date
+        description: The date the invoice was last modified.
+      - name: due_date
+        description: The date the invoice is/was due.
+      - name: fully_paid_on_date
+        description: The date the invoice was fully paid. Only returned on fully paid invoices
+      - name: currency_code
+        description: The currency that invoice has been raised in
+      - name: currency_rate
+        description: The currency rate for a multicurrency invoice
+      - name: invoice_number
+        description: Alpha numeric code identifying invoice
+      - name: is_sent_to_contact
+        description: Boolean to indicate whether the invoice in the Xero app displays as "sent"
+      - name: invoice_status
+        description: The status of the invoice
+      - name: type
+        description: The type of the invoice.
+      - name: invoice_reference
+        description: Additional reference number. For accounts receivable only.
+      - name: account_id
+        description: The Xero identifier for the related account.
+      - name: account_name
+        description: The name of the account.
+      - name: account_type
+        description: The type of account, e.g. CURRENT, EQUITY, SALES
+      - name: account_class
+        description: The class of account, e.g. ASSET, EQUITY, EXPENSE, LIABILITY, REVENUE
+      - name: contact_name
+        description: The name of the associated contact.
+
+  - name: xero__general_ledger
+    description: Each record represents a journal line item. This ledger is used to create the balance sheet and profit and loss.
+    columns:
+      - name: journal_id
+        description: Xero identifier for the journal entry
+      - name: created_date_utc
+        description: The created date of the journal entry
+      - name: journal_date
+        description: The date the journal was posted
+      - name: journal_number
+        description: Xero generated journal number
+      - name: reference
+        description: The associated reference to the journal, if present.
+      - name: source_id
+        description: The identifier for the source transaction. This can be used to join to other Xero tables.
+      - name: source_type
+        description: The journal source type. This can be used to know which table to join to for additional information.
+      - name: journal_line_id
+        description: Xero identifier for the journal line.
+      - name: account_code
+        description: Customer defined alpha numeric account code e.g 200 or SALES
+      - name: account_id
+        description: The Xero identifier for the related account.
+      - name: account_name
+        description: The name of the related account.
+      - name: account_type
+        description: The type of the related account.
+      - name: gross_amount
+        description: Gross amount of journal line (NetAmount + TaxAmount).
+      - name: net_amount
+        description: Net amount of journal line. This will be a positive value for a debit and negative for a credit
+      - name: tax_amount
+        description: Total tax on a journal line
+      - name: tax_name
+        description: The name of the tax rate.
+      - name: tax_type
+        description: The type of the tax rate.
+      - name: account_class
+        description: The class of account, e.g. ASSET, EQUITY, EXPENSE, LIABILITY, REVENUE
+      - name: invoice_id
+        description: Source ID where it can be joined to the invoice table. Set to the source id of the journal when the source type of the journal is in ('ACCPAY', 'ACCREC').
+      - name: bank_transaction_id
+        description: Source ID where it can be joined to the bank transaction table. Set to the source id of the journal when the source type of the journal is in ('CASHREC','CASHPAID').
+      - name: bank_transfer_id
+        description: Source ID where it can be joined to the bank transfer table. Set to the source id of the journal when the source type of the journal is in ('TRANSFER').
+      - name: manual_journal_id
+        description: Source ID where it can be joined to the manual journal table. Set to the source id of the journal when the source type of the journal is in ('MANJOURNAL').
+      - name: payment_id
+        description: Source ID where it can be joined to the payment table. Set to the source id of the journal when the source type of the journal is in ('APPREPAYMENT', 'APOVERPAYMENT', 'ACCPAYPAYMENT', 'ACCRECPAYMENT', 'ARCREDITPAYMENT', 'APCREDITPAYMENT').
+      - name: credit_note_id
+        description: Source ID where it can be joined to the credit note table. Set to the source id of the journal when the source type of the journal is in ('ACCPAYCREDIT','ACCRECCREDIT').
+      - name: contact_id
+        description: ID of the associated contact, where relevant.
+      - name: contact_name
+        description: Name of the associated contact, where relevant.

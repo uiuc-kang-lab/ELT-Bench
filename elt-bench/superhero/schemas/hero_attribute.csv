@@ -1,0 +1,6 @@
+column_name,column_description
+hero_id,"the id of the hero
+Maps to superhero(id)"
+attribute_id,"the id of the attribute
+Maps to attribute(id)"
+attribute_value,the attribute value

@@ -1,0 +1,5 @@
+column_name,column_description
+id,System generated unique id for the issue comment.
+issue_id,Foreign key that references the issue table
+user_id,Foreign key that references the user table
+created_at,Timestamp of when the issue comment was created.

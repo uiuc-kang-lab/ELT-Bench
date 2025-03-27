@@ -1,0 +1,5 @@
+column_name,column_description
+categoryid,the unique id for the category
+categoryname,the category name
+description,the detailed description of the category
+picture,the picture of the category

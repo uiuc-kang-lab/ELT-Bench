@@ -1,0 +1,6 @@
+column_name,column_description
+Id,the tag id
+TagName,the name of the tag
+Count,the count of posts that contain this tag
+ExcerptPostId,the excerpt post id of the tag
+WikiPostId,the wiki post id of the tag

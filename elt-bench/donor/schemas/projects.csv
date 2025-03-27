@@ -1,0 +1,36 @@
+column_name,column_description
+projectid,project's unique identifier
+teacher_acctid,teacher's unique identifier (teacher that created a project)
+schoolid,school's identifier (school where teacher works)
+school_ncesid,Public National Center for Ed Statistics id
+school_latitude,latitude of school 
+school_longitude,longitude of school 
+school_city,city where the school is located
+school_state,state where the school is located
+school_zip,zipcode of school
+school_metro,metro where the school is located
+school_district,district where the school is located
+school_county,country where the school is located
+school_charter,whether it is a public charter school or not (no private schools in the dataset)
+school_magnet,whether a public magnet school or not
+school_year_round,whether it is a public year round school or not
+school_nlns,whether it is a public Nonleafy Normal Stature school or not
+school_kipp,whether it is a public Knowledge Power Program school or not
+school_charter_ready_promise,whether it is a public ready promise school or not
+teacher_prefix,teacher's gender
+teacher_teach_for_america,Teach for America or not
+teacher_ny_teaching_fellow,New York teaching fellow or not
+primary_focus_subject,main subject for which project materials are intended
+primary_focus_area,main subject area for which project materials are intended
+secondary_focus_subject,secondary subject
+secondary_focus_area,secondary subject area
+resource_type,main type of resources requested by a project
+poverty_level,school's poverty level
+grade_level,grade level for which project materials are intended
+fulfillment_labor_materials, cost of fulfillment
+total_price_excluding_optional_support,project cost excluding optional tip that donors give to DonorsChoose.org while funding a project
+total_price_including_optional_support,project cost including optional tip that donors give to DonorsChoose.org while funding a project
+students_reached,number of students impacted by a project (if funded)
+eligible_double_your_impact_match," project was eligible for a 50% off offer by a corporate partner (logo appears on a project, like Starbucks or Disney)"
+eligible_almost_home_match,project was eligible for a $100 boost offer by a corporate partner
+date_posted,data a project went live on the site

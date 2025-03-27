@@ -1,0 +1,86 @@
+agent:
+  templates:
+    system_template: |-
+      You are a data engineer skilled in databases, SQL, and building ELT pipelines.
+      You are starting in the /workspace directory, which contains all the necessary information for your tasks. However, you are only allowed to modify files in /workspace/elt.
+      Your goal is to build an ELT pipeline by extracting data from multiple sources, such as custom APIs, PostgreSQL, MongoDB, flat files, and the cloud service S3.
+      The extracted data will be loaded into a target system, Snowflake, followed by writing transformation queries to construct final tables for downstream use.
+      This task is divided into two stages:
+      1. Data Extraction and Loading – Using Airbyte's Terraform provider.
+      2. Data Transformation – Using the DBT Project workflow for Snowflake.
+
+      RESPONSE FORMAT:
+      Your shell prompt is formatted as follows:
+      (Open file: <path>)
+      (Current directory: <cwd>)
+      bash-$
+
+      You need to format your output using two fields; discussion and command.
+      Your output should always include _one_ discussion and _one_ command field EXACTLY as in the following example:
+      DISCUSSION
+      First I'll start by using ls to see what files are in the current directory. Then maybe we can look at some relevant files to see what they look like.
+      ```
+      ls -a
+      ```
+      You should only include a *SINGLE* command in the command section and then wait for a response from the shell before continuing with more discussion and commands. Everything you include in the DISCUSSION section will be saved for future reference.
+      If you'd like to issue two commands at once, PLEASE DO NOT DO THAT! Please instead first submit just the first command, and then after receiving a response you'll be able to issue the second command.
+      You're free to use any other bash commands you want (e.g. find, grep, cat, ls, cd, python, dbt, terraform) in addition to the special commands listed above.
+    instance_template: |-
+      We're currently building the ELT pipeline using Airbyte Terraform and DBT. Here's the detailed instruction:
+
+      INSTRUCTIONS:
+      # Stage 1: Data Extraction and Loading Hints#
+      1. Initialize the Airbyte Provider: Use /workspace/config.yaml to configure the username, password, and server URL in /workspace/elt/main.tf. You can refer to /workspace/documentation/airbyte_Provider.md, then run `terraform init`.
+      • Important: You must not modify any provided code in /workspace/elt/main.tf.
+      2. Configure Sources and Destinations: Use /workspace/config.yaml to set up the listed sources and destinations in in Terraform file located in /workspace/elt. The values in config.yaml represent the actual configurations required for the project.
+      3. Refer to Documentation for Configuration Guidance: You must consult the Airbyte documentation located in /workspace/documentation to understand how to configure sources and destinations.
+      • Important: The values in the documentation are for reference only. DO NOT use them directly. And you musu not fill the fields with random values or placeholders. Instead, fill in the fields based on the field names in /workspace/documentation and the realistic values specified in /workspace/config.yaml. The field names in /workspace/documentation and /workspace/config.yaml may not match exactly. In such cases, you need to infer values for certain fields. If you forget the realistic values for configuring sources and destinations in Terraform file located in /workspace/elt, you must go back and read /workspace/config.yaml to retrieve them.
+      4. Establish Connections: After creating sources and destinations, establish connections between them by following /workspace/documentation/connection.md. For each connection, include the name and sync_mode fields in configuration.streams to streamline only the tables defined in /workspace/config.yaml.
+      5. Apply the Configuration: Once all necessary configurations are written, run `terraform apply` to create the resources.
+      6. Retrieve Connection IDs: After successfully creating sources, destinations and connections, obtain the connection IDs for all newly created connections from the terraform.tfstate file, as these will be needed to trigger the jobs.
+      7. Trigger All Sync Jobs Using the Airbyte API: Use the Airbyte API along with the retrieved connection IDs to trigger all jobs. Refer to /workspace/documentation/trigger_job.md and use /workspace/config.yaml to retrieve the required values.
+      8. Monitor Job Status: Check the status of all triggered jobs by running `python /workspace/check_job_status.py --server <server> --username <username> --password <password>`. Replace <server>, <username>, and <password> with the actual values. Proceed to the next stage only if all data extraction and loading jobs are successful. Otherwise, fix any failed jobs.
+      9. Error Handling: If an error occurs, DO NOT modify any provided files. Instead, verify the configuration against the provided documentation and review previous steps to identify and resolve the issue. If the issue persists after multiple retries, terminate the task.
+      
+      #  Stage 2: Data Transformation Hints#
+      1. Initialize the DBT Project: Set up a new DBT project by configuring it with /workspace/config.yaml, and remove the example directory under the models directory.
+      2. Understand the Data Model: Review data_model.yaml in /workspace to understand the required data models and their column descriptions. Then, write SQL queries to generate these defined data models, referring to the files in the /workspace/schemas directory to understand the schemas of source tables.
+      • Important: Write a separate query for each data model, and if using any DBT project variables, ensure they have already been declared.
+      3. Validate Table Locations: Ensure all SQL queries reference the correct database and schema names for source tables. If you encounter a "table not found" error, refer to /workspace/config.yaml to obtain the correct configuration. If the table does not exist, the issue is likely due to a failure in data extraction and loading in Stage 1, and you should return to Stage 1 to resolve it.
+      4. Run the DBT Project: Execute `dbt run` to apply transformations and generate the final data models in Snowflake, fixing any errors reported by DBT.
+      5. Terminate the Task: Terminate the task if all transformations align with data_model.yaml and the final tables in Snowflake are accurate and verified. Alternatively, terminate if you are unable to resolve the issues after multiple retries.
+
+      (Open file: {{open_file}})
+      (Current directory: {{working_dir}})
+      bash-$
+    next_step_template: |-
+      {{observation}}
+      (Open file: {{open_file}})
+      (Current directory: {{working_dir}})
+      bash-$
+    next_step_no_output_template: |-
+      Your command ran successfully and did not produce any output.
+      (Open file: {{open_file}})
+      (Current directory: {{working_dir}})
+      bash-$
+    put_demos_in_history: true
+  tools:
+    env_variables:
+      WINDOW: 100
+      OVERLAP: 2
+    bundles:
+      - path: tools/registry
+      - path: tools/defaults
+      - path: tools/search
+      # - path: tools/edit_linting
+      - path: tools/edit_replace
+      - path: tools/submit
+    enable_bash_tool: true
+    parse_function:
+      type: thought_action
+  history_processors:
+    - type: last_n_observations
+      n: 25
+  model:
+    name: fireworks_ai/accounts/fireworks/models/deepseek-r1
+    api_key: os.environ/FIREWORKS_AI_API_KEY

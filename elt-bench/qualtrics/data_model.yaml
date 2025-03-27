@@ -1,0 +1,229 @@
+models:
+  - name: qualtrics__survey
+    description: Detailed view of all surveys created, enhanced with distribution and response metrics.
+    columns:
+      - name: survey_id
+        description: The unique identifier for this survey. Match pattern = ^SV_[a-zA-Z0-9]{11,15}$
+      - name: survey_name
+        description: Name of the survey.
+      - name: survey_status
+        description: The distribution status of the survey, or a flag indicating that it's a library block. Allowed values - Inactive, Active, Pending, LibBlock, Deactive, Temporary
+      - name: brand_base_url
+        description: Base url for the organization/brand.
+      - name: brand_id
+        description: Unique ID of the organization/brand.
+      - name: owner_user_id
+        description: The unique identifier for a specific user who owns this.
+      - name: project_category
+        description: Project category of the survey. Allowed values - CORE, CX, EX, BX, PX
+      - name: project_type
+        description: Type of Qualtrics project. Match pattern = ^[a-zA-Z]+$
+      - name: scoring_summary_after_questions
+        description: Boolean representing whether the scoring summary is after questions.
+      - name: scoring_summary_after_survey
+        description: Boolean representing whether the scoring summary is after the survey.
+      - name: last_activated_at
+        description: The date the survey was last activated.
+      - name: last_modified_at
+        description: The point in time when the record was last modified.
+      - name: is_deleted
+        description: Boolean representing whether the record was soft-deleted in Qualtrics.
+      - name: owner_email
+        description: Email of the USER who owns the object.
+      - name: count_questions
+        description: Total number of questions (does not include deleted ones) in the survey. Set to 0 if NULL.
+      - name: count_survey_responses
+        description: Total number of survey responses. Set to 0 if NULL.
+      - name: count_completed_survey_responses
+        description: Total number of completed survey responses (ie is_finished=true). Set to 0 if NULL.
+
+  - name: qualtrics__contact
+    description: Detailed view of all contacts (from both the XM Directory and Research Core contact endpoints), ehanced with response and mailing list metrics.
+    columns:
+      - name: contact_id
+        description: The ID for the contact. Example - CID_012345678901234
+      - name: is_xm_directory_contact
+        description: Boolean representing whether the contact came from the XM Directory API endpoint (ie stored in the directory_contact table).
+      - name: is_research_core_contact
+        description: Boolean representing whether the contact came from the (to-be-deprecated) Research Core API endpoint (ie stored in the core_contact table).
+      - name: email
+        description: The user's email address.
+      - name: email_domain
+        description: Domain of the contact's email address.
+      - name: first_name
+        description: Contact's first name.
+      - name: last_name
+        description: Contact's surname.
+      - name: external_data_reference
+        description: The external reference for the contact.
+      - name: language
+        description: The user's default language.
+      - name: mailing_list_ids
+        description: Comma-separated list of mailing list IDs the record is associated with.
+      - name: count_mailing_lists_subscribed_to
+        description: Count of distinct mailing lists the contact is a member of and has not opted out of.
+      - name: count_mailing_lists_unsubscribed_from
+        description: Count of distinct mailing lists that the contact has opted out of receiving emails through.
+      - name: created_at
+        description: The creation date and time of the record, expressed as an ISO 8601 value.
+      - name: count_surveys_sent_email
+        description: Distinct surveys sent to the contact via email invite. Set to 0 if NULL.
+      - name: count_surveys_sent_sms
+        description: Distinct surveys sent to the contact via SMS invite. Set to 0 if NULL.
+      - name: count_surveys_opened_email
+        description: Distinct surveys opened by the contact via email invite. Set to 0 if NULL.
+      - name: count_surveys_opened_sms
+        description: Distinct surveys opened by the contact via SMS invite. Set to 0 if NULL.
+      - name: count_surveys_started_email
+        description: Distinct surveys started by the contact via email invite. Set to 0 if NULL.
+      - name: count_surveys_started_sms
+        description: Distinct surveys started by the contact via SMS invite. Set to 0 if NULL.
+      - name: count_surveys_completed_email
+        description: Distinct surveys completed by the contact via email invite. Set to 0 if NULL.
+      - name: count_surveys_completed_sms
+        description: Distinct surveys completed by the contact via SMS invite. Set to 0 if NULL.
+      - name: total_count_surveys
+        description: Total distinct surveys distributed. Set to 0 if NULL.
+      - name: total_count_completed_surveys
+        description: Total distinct surveys completed. Set to 0 if NULL.
+
+  - name: qualtrics__directory
+    description: A directory is an address book for the entire brand and contains all of the contacts that have been added by your users. This model provides a detailed view of each directory, enhanced with metrics regarding contacts, survey distribution, and engagement.
+    columns:
+      - name: is_deduped_on_email
+        description: Boolean representing if directory contacts are deduped based on email.
+      - name: is_deduped_on_ext_ref
+        description: Boolean representing if directory contacts are deduped based on an external data reference.
+      - name: is_deduped_on_first_name
+        description: Boolean representing if directory contacts are deduped based on first name.
+      - name: is_deduped_on_last_name
+        description: Boolean representing if directory contacts are deduped based on last name.
+      - name: is_deduped_on_phone
+        description: Boolean representing if directory contacts are deduped based on phone number.
+      - name: directory_id
+        description: The directory ID, also known as a pool ID. Example - POOL_012345678901234
+      - name: is_default
+        description: Boolean representing if this directory is the default one for your brand. The default directory will be the first directory listed in the dropdown menu in Qualtrics.
+      - name: name
+        description: Name of the directory.
+      - name: is_deleted
+        description: Boolean representing whether the record was soft-deleted in Qualtrics.
+      - name: _fivetran_synced
+        description: The time when a record was last updated by Fivetran.
+      - name: count_distinct_emails
+        description: Count of distinct email addresses in the directory. Set to 0 if NULL.
+      - name: count_distinct_phones
+        description: Count of distinct phone numbers (stripped of any non-numeric characters) in the directory. Set to 0 if NULL.
+      - name: total_count_contacts
+        description: Total number of contacts. Set to 0 if NULL.
+      - name: count_contacts_sent_survey_30d
+        description: Number of contacts in this directory who have been sent a survey in the past 30 days (inclusive). Set to 0 if NULL.
+      - name: count_contacts_opened_survey_30d
+        description: Number of contacts in this directory who have been sent a survey in the past 30 days (inclusive) and opened it. Set to 0 if NULL.
+      - name: count_contacts_started_survey_30d
+        description: Number of contacts in this directory who have been sent a survey in the past 30 days (inclusive)and started it. Set to 0 if NULL.
+      - name: count_contacts_completed_survey_30d
+        description: Number of contacts in this directory who have been sent a survey in the past 30 days (inclusive) and completed it. Set to 0 if NULL.
+      - name: count_surveys_sent_30d
+        description: Number of distinct surveys sent to contacts in the past 30 days (inclusive). Set to 0 if NULL.
+      - name: count_mailing_lists
+        description: Number of mailing lists the exist within the directory. Set to 0 if NULL.
+
+  - name: qualtrics__distribution
+    description: Table of each survey's distribution (method of reaching out to XM directory contacts) enhanced with survey response and status metrics.
+    columns:
+      - name: created_at
+        description: The creation date and time of the record, expressed as an ISO 8601 value.
+      - name: header_from_email
+        description: Email from address.
+      - name: header_from_name
+        description: Email from name.
+      - name: header_reply_to_email
+        description: Email reply-to address.
+      - name: header_subject
+        description: Email subject; text or message id (MS_).
+      - name: distribution_id
+        description: The unique Distribution ID.
+      - name: last_modified_at
+        description: The point in time when the record was last modified.
+      - name: organization_id
+        description: ID of the organization/brand this record belongs to.
+      - name: owner_user_id
+        description: The unique identifier for a specific user who owns this.
+      - name: recipient_contact_id
+        description: The contact ID of the recipient. Can point to directory_contact or core_contact.
+      - name: recipient_library_id
+        description: Library ID of the message.
+      - name: recipient_mailing_list_id
+        description: The mailing list or contact group associated with the distribution(s). Can point to directory_mailing_list or core_mailing_list.
+      - name: recipient_sample_id
+        description: The ID for the desired sample. Can point to directory_sample or core_sample (not included in package).
+      - name: request_status
+        description: The distribution's status. States include Pending and Done. The Pending state is for email that is scheduled to be sent at a later time.
+      - name: request_type
+        description: The distribution's type. Types include Invite, Reminder, and ThankYou.
+      - name: send_at
+        description: The date and time the request will be or was sent (in ISO 8601 format). Note that this date and time could be in the future if the email distribution is scheduled to send after a delay.
+      - name: survey_link_expires_at
+        description: The expiration date for the link associated with the survey distribution. Null if request_type != Invite.
+      - name: survey_link_type
+        description: The link type (Individual, Anonymous, or Multiple) for the link associated with the survey distribution. Null if request_type != Invite.
+      - name: survey_id
+        description: The unique survey ID. Will be non-null even if request_type != Invite.
+      - name: is_deleted
+        description: Boolean representing whether the record was soft-deleted in Qualtrics.
+      - name: _fivetran_synced
+        description: The time when a record was last updated by Fivetran.
+      - name: owner_email
+        description: Email of the USER who owns the object.
+      - name: owner_first_name
+        description: First name of the user who owns the object.
+      - name: owner_last_name
+        description: Surname of the user who owns the object.
+      - name: current_count_surveys_pending
+        description: Count of distributed surveys currently pending (the distribution is scheduled but has yet to be sent). Set to 0 if NULL.
+      - name: current_count_surveys_success
+        description: Count of distributed surveys currently with a status of success (the distribution was successfully delivered to the contact). Set to 0 if NULL.
+      - name: current_count_surveys_error
+        description: Count of distributed surveys currently with a status of error (an error occurred while attempting to send the distribution). Set to 0 if NULL.
+      - name: current_count_surveys_opened
+        description: Count of distributed surveys currently with a status of opened (the distribution was opened by the contact). Set to 0 if NULL.
+      - name: current_count_surveys_complaint
+        description: Count of distributed surveys currently with a status of complaint (the contact complained that the distribution was spam). Set to 0 if NULL.
+      - name: current_count_surveys_skipped
+        description: Count of distributed surveys currently with a status of `skipped` (the contact was skipped due to contact frequency rules or blacklisted contact information). Set to 0 if NULL.
+      - name: current_count_surveys_blocked
+        description: Count of distributed surveys currently with a status of blocked (the distribution failed to send, because the contact blocked it or the email was caught by the spam circuit breaker). Set to 0 if NULL.
+      - name: current_count_surveys_failure
+        description: Count of distributed surveys currently with a status of failed (the distribution failed to be delivered). Set to 0 if NULL.
+      - name: current_count_surveys_unknown
+        description: Count of distributed surveys currently with a status of unknown (the distribution failed for an unknown reason). Set to 0 if NULL.
+      - name: current_count_surveys_softbounce
+        description: Count of distributed surveys currently with a status of softbounce (the distribution bounced but can be retried). Set to 0 if NULL.
+      - name: current_count_surveys_hardbounce
+        description: Count of distributed surveys currently with a status of hardbounce (the distribution bounced and should not be retried). Set to 0 if NULL.
+      - name: current_count_surveys_surveystarted
+        description: Count of distributed surveys currently with a status of surveystarted (the contact started the survey distributed). Set to 0 if NULL.
+      - name: current_count_surveys_surveypartiallyfinished
+        description: Count of distributed surveys currently with a status of surveypartiallyfinished (the contact submitted a partially completed survey response). Set to 0 if NULL.
+      - name: current_count_surveys_surveyfinished
+        description: Count of distributed surveys currently with a status of surveyfinished (the contact submitted a completed survey response). Set to 0 if NULL.
+      - name: current_count_surveys_surveyscreenedout
+        description: Count of distributed surveys currently with a status of surveyscreenedout (the contact screened out while taking the survey). Set to 0 if NULL.
+      - name: current_count_surveys_sessionexpired
+        description: Count of distributed surveys currently with a status of sessionexpired (the contact's survey session has expired). Set to 0 if NULL.
+      - name: total_count_contacts
+        description: Total number of contacts. Set to 0 if NULL.
+      - name: count_contacts_sent_surveys
+        description: Count of unique contacts who have been sent surveys via the distribution. Set to 0 if NULL.
+      - name: count_contacts_opened_surveys
+        description: Count of unique contacts who have opened surveys via the distribution. Set to 0 if NULL.
+      - name: count_contacts_started_surveys
+        description: Count of unique contacts who have started surveys via the distribution. Set to 0 if NULL.
+      - name: count_contacts_completed_surveys
+        description: Count of unique contacts who have completed surveys via the distribution. Set to 0 if NULL.
+      - name: first_survey_sent_at
+        description: Timestamp of when the first survey was sent via this distribution.
+      - name: last_survey_sent_at
+        description: Timestamp of when a survey was most recently sent out via this distribution.
+      

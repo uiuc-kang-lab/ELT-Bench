@@ -1,0 +1,8 @@
+column_name,column_description
+id,unique ID for each station
+name,Station name
+lat,latitude
+long,longitude
+dock_count,number of bikes the station can hold
+city,
+installation_date,installation date

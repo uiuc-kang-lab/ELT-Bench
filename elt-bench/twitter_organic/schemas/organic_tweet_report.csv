@@ -1,0 +1,29 @@
+column_name,column_description
+_fivetran_synced,The timestamp that Fivetran last synced the record.
+account_id,ID of the associated account in Twitter
+app_clicks,Number of clicks on app install campaigns
+card_engagements,Number of engagements on cards
+carousel_swipes,Number of swipes on carousels
+clicks,Number of clicks on tweet
+date,Date of the report
+engagements,Number of engagements on tweet
+follows,Number of follows as a result of the tweet
+impressions,Number of impressions on tweet
+likes,Number of likes on tweet
+organic_tweet_id,ID of the tweet in Twitter
+poll_card_vote,Number of votes on poll cards
+qualified_impressions,Number of qualified impressions on tweet
+replies,Number of replies on tweet
+retweets,Number of retweets on tweet
+unfollows,Number of unfollows as a result of the tweet
+url_clicks,Number of clicks on URLs in tweet
+video_15_s_views,Number of 15-second views on video
+video_3_s_100_pct_views,Total number of views where at least 3 seconds were played while 100% in view.
+video_6_s_views,Number of 6-second views on video
+video_content_starts,Number of times the video content started
+video_cta_clicks,Number of clicks on tweet call-to-actions
+video_total_views,Total number of views on video
+video_views_100,Total number of views where at least 100% of the video was viewed.
+video_views_25,Total number of views where at least 25% of the video was viewed.
+video_views_50,Total number of views where at least 50% of the video was viewed.
+video_views_75,Total number of views where at least 75% of the video was viewed.

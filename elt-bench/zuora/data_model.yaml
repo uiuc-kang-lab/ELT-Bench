@@ -1,0 +1,66 @@
+models:
+  - name: zuora__billing_history
+    description: Each record is an invoice to evaluate the history of charges billed, enhanced with additional details from payments, refunds, adjustments, discounts, and taxes.
+    columns:
+      - name: invoice_id
+        description: The unique identifier of the invoice table. 
+      - name: account_id
+        description: The account associated with the invoice.
+      - name: created_at
+        description: The time at which the invoice was created.
+      - name: invoice_number
+        description: The unique identification number for the invoice.
+      - name: invoice_date
+        description: Specifies the date on which to generate the invoice.
+      - name: invoice_amount
+        description: The sum of all charges and taxes associated with the invoice.
+      - name: invoice_amount_home_currency
+        description: The sum of all charges and taxes associated with the invoice in its home currency.
+      - name: invoice_amount_paid
+        description: The amount of the invoice currently paid for.  
+      - name: invoice_amount_unpaid
+        description: The amount of the invoice yet to be paid for. 
+      - name: tax_amount
+        description: The total amount of the taxes applied to the invoice.
+      - name: refund_amount
+        description: The amount of refunds applied to the invoice.
+      - name: credit_balance_adjustment_amount
+        description: The amount of the credit balance adjustment applied to the invoice.
+      - name: transaction_currency 
+        description: Transaction currency the customer is billed in.
+      - name: home_currency 
+        description: Home currency the customer is billed in.
+      - name: exchange_rate_date 
+        description: The date of the exchange rate used for the invoice.
+      - name: due_date
+        description: The due date of the invoice.
+      - name: status
+        description: The status of the invoice in the system. This status is not the status of the payment of the invoice just the status of the invoice itself.
+      - name: purchase_type
+        description: The type of the invoice source. 
+      - name: invoice_items
+        description: The amount of invoice items in the invoice.
+      - name: products
+        description: The number of products billed in the invoice.
+      - name: subscriptions
+        description: The number of subscriptions in the invoice.
+      - name: units
+        description: The units in the invoice.
+      - name: first_charge_date
+        description: The first charge date for the invoice.
+      - name: most_recent_charge_date
+        description: The most recent charge date for the invoice.
+      - name: invoice_service_start_date
+        description: Earliest invoice item service start date for the invoice.
+      - name: invoice_service_end_date
+        description: Earliest invoice item service end date for the invoice.
+      - name: payments
+        description: The number of payments applied to the invoice.
+      - name: payment_methods
+        description: The number of payment methods associated with the invoice.
+      - name: credit_balance_adjustments
+        description: The number of the credit balance adjustments applied on the invoice.
+      - name: first_credit_balance_adjustment_date
+        description: The first date when a credit balance adjustment is applied to the invoice. 
+      - name: most_recent_credit_balance_adjustment_date
+        description: The most recent date when a credit balance adjustment is applied to the invoice. 

@@ -1,0 +1,13 @@
+column_name,column_description
+id,The ID of the campaign.
+account_id,The ID of the ad account that this campaign belongs to.
+name,The name of the campaign.
+_fivetran_synced,When the record was last synced by Fivetran.
+updated_time,The timestamp of the last update of a record.
+created_time,The time the campaign was created.
+start_time,Timestamp of designated campaign start time.
+stop_time,Timestamp of designated campaign end time.
+daily_budget,Daily budget of campaign.
+budget_remaining,Remaining budget of campaign.
+lifetime_budget,Lifetime budget of the campaign.
+status,"Status values are - 'ACTIVE', 'PAUSED', 'DELETED', 'ARCHIVED'."

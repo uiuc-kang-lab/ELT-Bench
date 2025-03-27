@@ -1,0 +1,20 @@
+column_name,column_description
+employeeid,the unique id for employees
+lastname,the employee's last name
+firstname,the employee's first name
+title,the employee's position title
+titleofcourtesy,the title of the courtesy
+birthdate,the birth date of the employee
+hiredate,the hire date of the employee
+address,the address of the employee
+city,the city where the employee is located
+region,the region where the employee is located
+postalcode,the postal code 
+country,the country where the employee is located
+homephone,employee's home phone number
+extension,employee's extension number
+photo,the photo of the employee
+notes,some additional information of the employee
+reportsto,the employee id that the employee directly reports to
+photopath,the url of the employee's photo
+salary,the employee's salary 

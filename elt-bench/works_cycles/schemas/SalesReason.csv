@@ -1,0 +1,5 @@
+column_name,column_description
+salesreasonid,The unique number identifying SalesReason records.
+name,Sales reason description
+reasontype,Category the sales reason belongs to.
+modifieddate,Date and time the record was last updated. 

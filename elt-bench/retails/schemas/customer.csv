@@ -1,0 +1,9 @@
+column_name,column_description
+c_custkey,unique id number identifying the customer
+c_mktsegment,the segment of the customer
+c_nationkey,the nation key number of the customer
+c_name,name of the customer
+c_address,address of the customer
+c_phone,phone of the customer
+c_acctbal,account balance
+c_comment,comment of the customer

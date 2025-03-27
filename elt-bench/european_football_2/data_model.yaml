@@ -1,0 +1,58 @@
+models:
+  - name: teams
+    description: Each record represents a team.
+    columns:
+      - name: team_api_id
+        description: The unique identifier for the team.
+      - name: team_long_name
+        description: The long name of the team.
+      - name: team_short_name
+        description: The short name of the team.
+      - name: num_lost_matches_as_home_team_2016
+        description: The number of matches the team lost as the home team in the 2016 season, replace NULL values with 0.
+      - name: less_than_avg_chance_creation_passing_2014
+        description: Set to 1 if the team had less than the average chance creation passing in the 2014 season, otherwise, set to 0.
+      - name:  avg_num_goals_as_away_team
+        description: The average number of goals the team scored as the away team.
+      - name: num_won_2010
+        description: The number of matches the team won in the 2010 season, replace NULL values with 0.
+      - name: num_goals
+        description: The total number of goals the team scored, replace NULL values with 0.
+  - name: players
+    description: Each record represents a player.
+    columns:
+      - name: player_api_id
+        description: The unique identifier for the player.
+      - name: player_name
+        description: The name of the player.
+      - name: birthday
+        description: The birthday of the player.
+      - name: height_above_180
+        description: Set to 1 if the player's height is above 180 cm, otherwise, set to 0.
+      - name: avg_penalties_rate
+        description: The average rate of penalties the player scores.
+      - name: average_overall_rating_from_2010_to_2015
+        description: The average overall rating the player received from 2010 to 2015.
+      - name: is_under_180_and_overall_strenth_more_than_70
+        description: Set to 1 if the player's height is under 180 cm and the overall strength is more than 70, otherwise, set to 0.
+      - name: avg_finishing_rate
+        description: The average rate of finishing the player has.
+  - name: leagues
+    description: Each record represents a league.
+    columns:
+      - name: league_id
+        description: The unique identifier for the league.
+      - name: country_name
+        description: The name of the country the league is in.
+      - name: league_name
+        description: The name of the league.
+      - name: num_goals_2016
+        description: The total number of goals scored of the league in the 2016 season, replace NULL values with 0.
+      - name: away_team_won_most_2010
+        description: The team with the most wins as an away team during the 2010 season, with ties broken by the ascending order of the team long name
+      - name: num_draw_matches_2016
+        description: The number of matches that ended in a draw in the 2016 season, replace NULL values with 0.
+      - name: avg_goal_by_home_team_higher_than_away_team
+        description: Set to 1 if the average goal scored by the home team is higher than the away team, otherwise, set to 0.
+      - name: num_matches_2008_2009_season
+        description: The number of matches played of the league in the 2008-2009 season, replace NULL values with 0.

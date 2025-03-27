@@ -1,0 +1,6 @@
+column_name,column_description
+productid,The id number identifying the product.
+startdate,Product cost start date
+enddate,Product cost end date
+standardcost,Standard cost of the product.
+modifieddate,Date and time the record was last updated. 

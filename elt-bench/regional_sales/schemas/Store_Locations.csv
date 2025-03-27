@@ -1,0 +1,16 @@
+column_name,column_description
+storeid,unique store id
+city_name,City Name
+county,full county name
+statecode,state code
+state,full state name
+type,type of the store
+latitude,Latitude
+longitude,Longitude
+areacode,
+population,Population
+household_income,Household Income
+median_income,Median Income
+land_area,Land Area
+water_area,Water Area
+time_zone,Time Zone

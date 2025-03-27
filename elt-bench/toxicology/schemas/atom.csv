@@ -1,0 +1,4 @@
+column_name,column_description
+atom_id,the unique id of atoms
+molecule_id,identifying the molecule to which the atom belongs
+element,the element of the toxicology 

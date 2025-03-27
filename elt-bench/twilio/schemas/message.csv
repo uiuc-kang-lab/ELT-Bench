@@ -1,0 +1,19 @@
+column_name,column_description
+_fivetran_synced,Timestamp of when fivetran synced a record.
+account_id,The unique identifier of the Account that sent or received the message.
+body,The text of the message.
+created_at,The timestamp indicating when the message was created.
+date_sent,The timestamp indicating when the message was sent.
+direction,"The direction of the message.  Can be inbound for incoming messages, outbound-api for messages initiated by a REST API, outbound-call for messages initiated during a call, or outbound-reply for messages initiated in response to an incoming message."
+error_code,"The error code associated with the message, if applicable."
+error_message,"The description of the error_code if your message status is failed or undelivered. If the message was successful, this value is null."
+from,The phone number or sender ID that sent the message.
+id,The unique identifier for the message.
+messaging_service_sid,The unique identifier of the messaging service associated with the message.
+num_media,"The number of media (e.g., images, videos) included in the message."
+num_segments,"The number of segments the message contains. A message body that is too large to be sent in a single SMS message is segmented and charged as multiple messages. Inbound messages over 160 characters are reassembled when the message is received. Note, when using a Messaging Service to send messages, num_segments will always be 0 in Twilio's response to your API request."
+price,The cost of the message.
+price_unit,The currency unit for the message cost.
+status,"The status of the message. Can be accepted, scheduled, canceled, queued, sending, sent, failed, delivered, undelivered, receiving, received, or read (WhatsApp only)."
+to,The phone number or recipient ID that received the message.
+updated_at,The timestamp indicating when the message was last updated.

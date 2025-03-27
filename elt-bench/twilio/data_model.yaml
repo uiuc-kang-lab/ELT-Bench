@@ -1,0 +1,52 @@
+models:
+  - name: twilio__account_overview
+    description: This model provides aggregate information per each account regarding the Twilio Messages resource.
+    columns:
+      - name: account_id
+        description: The unique identifier for account.
+      - name: account_name
+        description: Friendly name associated with the account.
+      - name: account_status
+        description: The status or state of the account.
+      - name: account_type
+        description: The type or category of the account.
+      - name: date_day
+        description: The day of the message activity.
+      - name: date_week
+        description: The week of the message activity.
+      - name: date_month
+        description: The month of the message activity.
+      - name: price_unit
+        description: The currency unit in which the `price` is measured.
+      - name: total_outbound_messages
+        description: Total number of outbound messages for this account. 
+      - name: total_inbound_messages
+        description: Total number of inbound messages for this account. 
+      - name: total_accepted_messages
+        description: Total number of accepted messages for this account. 
+      - name: total_scheduled_messages
+        description: Total number of scheduled messages for this account. 
+      - name: total_canceled_messages
+        description: Total number of canceled messages for this account. 
+      - name: total_queued_messages
+        description: Total number of queued messages for this account. 
+      - name: total_sending_messages
+        description: Total number of sending messages for this account. 
+      - name: total_sent_messages
+        description: Total number of sent messages for this account. 
+      - name: total_failed_messages
+        description: Total number of failed messages for this account. 
+      - name: total_delivered_messages
+        description: Total number of delivered messages for this account. 
+      - name: total_undelivered_messages
+        description: Total number of undelivered messages for this account. 
+      - name: total_receiving_messages
+        description: Total number of receiving messages for this account. 
+      - name: total_received_messages
+        description: Total number of received messages for this account. 
+      - name: total_read_messages
+        description: Total number of read messages for this account. 
+      - name: total_messages
+        description: Total number of messages for this account. 
+      - name: total_messages_spend
+        description: Total cost or price associated with this account. 

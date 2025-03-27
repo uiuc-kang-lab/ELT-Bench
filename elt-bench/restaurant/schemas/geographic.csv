@@ -1,0 +1,4 @@
+column_name,column_description
+city,the city
+county,the country the city belongs to
+region,corresponding regions

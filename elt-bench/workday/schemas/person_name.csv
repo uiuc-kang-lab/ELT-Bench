@@ -1,0 +1,33 @@
+column_name,column_description
+index,An index for a particular identifier.
+personal_info_system_id,The system ID associated with the personal information of the individual.
+type,"The type or category of the person name (e.g., legal name, preferred name)."
+_fivetran_deleted,Indicates if the record was soft-deleted by Fivetran.
+_fivetran_synced,Timestamp the record was synced by Fivetran.
+academic_suffix,"The academic suffix, if applicable (e.g., PhD, MD)."
+additional_name_type,Additional type or category for the person name.
+country,The country associated with the person name.
+first_name,The first name of the individual.
+full_name_singapore_malaysia,The full name as used in Singapore and Malaysia.
+hereditary_suffix,"The hereditary suffix, if applicable (e.g., Jr, Sr)."
+honorary_suffix,"The honorary suffix, if applicable."
+last_name,The last name or surname of the individual.
+local_first_name,The local or native first name of the individual.
+local_first_name_2,"Additional local or native first name, if applicable."
+local_last_name,The local or native last name of the individual.
+local_last_name_2,"Additional local or native last name, if applicable."
+local_middle_name,The local or native middle name of the individual.
+local_middle_name_2,"Additional local or native middle name, if applicable."
+local_secondary_last_name,"Secondary local or native last name or surname, if applicable."
+local_secondary_last_name_2,"Additional secondary local or native last name, if applicable."
+middle_name,The middle name of the individual.
+prefix_salutation,"The prefix or salutation before the name (e.g., Mr., Ms., Dr.)."
+prefix_title,"The prefix or title associated with the name (e.g., Professor)."
+prefix_title_code,The code associated with the prefix or title.
+professional_suffix,"The professional suffix, if applicable (e.g., Esq., CPA)."
+religious_suffix,"The religious suffix, if applicable."
+royal_suffix,"The royal suffix, if applicable."
+secondary_last_name,"Secondary last name or surname, if applicable."
+social_suffix,"The social suffix, if applicable."
+social_suffix_id,The identifier for the social suffix.
+tertiary_last_name,"Tertiary last name or surname, if applicable."

@@ -1,0 +1,34 @@
+column_name,column_description
+id,The unique identifier of the payment.
+_fivetran_synced,Timestamp of when a record was last synced.
+_fivetran_deleted,Boolean identifiying whether the record was deleted in the source.
+account_id,The id of the Zuora account associated with the payment.
+accounting_code,The accounting code associated with the payment.
+amount,The amount of the payment in the transaction currency.
+amount_home_currency,The amount of the payment in the home currency.
+applied_amount,The amount of the payment that has been applied to one or more invoices.
+applied_credit_balance_amount,The amount of the payment that has been applied to a credit balance.
+bill_to_contact_id,The id of the contact to which the payment should be billed.
+cancelled_on,The date the payment was cancelled.
+comment,A comment associated with the payment.
+created_by_id,The id of the user who created the payment.
+created_date,The date the payment was created.
+currency,The currency of the payment.
+effective_date,The date the payment will be effective.
+exchange_rate,The exchange rate used to convert the payment amount from the transaction currency to the home currency.
+exchange_rate_date,The date the exchange rate was set.
+home_currency,The home currency of the payment.
+parent_account_id,The id of the parent account associated with the payment.
+payment_method_id,The id of the payment method used for the payment.
+payment_number,The payment number assigned by Zuora.
+refund_amount,The amount of the payment that has been refunded.
+settled_on,The date the payment was settled.
+sold_to_contact_id,The id of the contact who made the payment.
+status,The status of the payment.
+submitted_on,The date the payment was submitted.
+transaction_currency,The transaction currency of the payment.
+transferred_to_accounting,Whether the payment has been transferred to the accounting system.
+type,The type of the payment.
+unapplied_amount,The amount of the payment that has not yet been applied.
+updated_by_id,The id of the user who last updated the payment.
+updated_date,The date the payment was last updated.

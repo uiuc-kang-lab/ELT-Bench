@@ -1,0 +1,10 @@
+column_name,column_description
+cust_id,Unique identifier for the customer
+cust_name,Business name of the customer
+annual_revenue,Annual revenue of the customer
+cust_type,Whether the customer is a manufacturer or a wholes
+address,Physical street address of the customer
+city,City of the customer's address
+state,State of the customer's address
+zip,Postal code of the customer's address
+phone,Telephone number to reach the customer

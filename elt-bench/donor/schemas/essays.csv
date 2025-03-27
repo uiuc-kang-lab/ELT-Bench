@@ -1,0 +1,7 @@
+column_name,column_description
+projectid,unique project identifier
+teacher_acctid,teacher id that created a project
+title,title of the project
+short_description,short description of a project
+need_statement,need statement of a project
+essay,complete project essay

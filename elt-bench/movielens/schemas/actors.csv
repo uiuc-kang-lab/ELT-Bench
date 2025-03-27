@@ -1,0 +1,4 @@
+column_name,column_description
+actorid,unique identificator number of actors
+a_gender,actor gender
+a_quality,actor quality

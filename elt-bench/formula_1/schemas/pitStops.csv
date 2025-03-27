@@ -1,0 +1,8 @@
+column_name,column_description
+raceId,the identification number identifying race 
+driverId,the identification number identifying each driver 
+stop,stop number 
+lap,lap number 
+time,time 
+duration,duration time 
+milliseconds,milliseconds 

@@ -1,0 +1,3 @@
+column_name,column_description
+userid,the unique id of the user
+gender,user's gender

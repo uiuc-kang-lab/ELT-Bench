@@ -1,0 +1,5 @@
+column_name,column_description
+member_id,The ID of the member the automation was sent to.
+automation_email_id,The ID for the automation email.
+list_id,The ID of the List an automation was sent to.
+_fivetran_synced,UTC timestamp that indicates the time when Fivetran last successfully synced the row.

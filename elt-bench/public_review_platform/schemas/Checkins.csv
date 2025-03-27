@@ -1,0 +1,27 @@
+column_name,column_description
+business_id,id number identifying the business
+day_id,id number identifying each day of the week
+label_time_0,indicates times of checkins on a business
+label_time_1,
+label_time_2,
+label_time_3,
+label_time_4,
+label_time_5,
+label_time_6,
+label_time_7,
+label_time_8,
+label_time_9,
+label_time_10,
+label_time_11,
+label_time_12,
+label_time_13,
+label_time_14,
+label_time_15,
+label_time_16,
+label_time_17,
+label_time_18,
+label_time_19,
+label_time_20,
+label_time_21,
+label_time_22,
+label_time_23,

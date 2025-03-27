@@ -1,0 +1,6 @@
+column_name,column_description
+opportunity_id,Foreign key referencing the id of the OPPORTUNITY.
+updated_at,Timestamp of when the opportunity was changed to this stage.
+stage_id,Foreign key referencing the STAGE that the opportunity was changed to.
+updater_id,Foreign key referencing the USER who changed the opportunity stage.
+to_stage_index,The index of the stage in the pipeline at the time the stage change occurred.

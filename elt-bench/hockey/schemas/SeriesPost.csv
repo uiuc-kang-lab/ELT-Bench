@@ -1,0 +1,14 @@
+column_name,column_description
+year,year
+round,round 
+series,series
+tmidwinner,Team ID of winner
+lgidwinner,League ID of winner
+tmidloser,Team ID of winner
+lgidloser,league id of loser
+w,wins 
+l,loses
+t,ties 
+goalswinner,goals for winner
+goalsloser,goals for loser
+note,note

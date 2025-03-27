@@ -1,0 +1,20 @@
+models:
+  - name: recipes
+    description: Each record represents a recipe.
+    columns:
+      - name: recipe_id
+        description: Unique identifier for the recipe
+      - name: title
+        description: Title of the recipe
+      - name: prep_min
+        description: Preparation time in minutes for the recipe
+      - name: num_ingredients
+        description: Number of ingredients in the recipe, replace NULL values with 0.
+      - name: includes_baking_soda_and_serves_10_or_more_people
+        description: Set to 1 if the recipe includes baking soda and serves 10 or more people, otherwise, set to 0
+      - name: contains_vitamin_that_helps_vision
+        description: Set to 1 if the recipe contains a vitamin that helps vision in dim light, otherwise, set to 0
+      - name: is_good_for_wound_healing
+        description: Set to 1 if the recipe is good for wound healing, otherwise, set to 0
+      - name: contains_cheese_and_calories_greater_than_200
+        description: Set to 1 if the recipe contains cheese and the calories are greater than 200, otherwise, set to 0

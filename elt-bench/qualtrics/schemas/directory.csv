@@ -1,0 +1,13 @@
+column_name,column_description
+_fivetran_deleted,Boolean representing whether the record was soft-deleted in Qualtrics.
+_fivetran_synced,The time when a record was last updated by Fivetran.
+deduplication_criteria_email,Boolean representing if directory contacts are deduped based on email.
+deduplication_criteria_external_data_reference,Boolean representing if directory contacts are deduped based on an external data reference.
+deduplication_criteria_first_name,Boolean representing if directory contacts are deduped based on first name.
+deduplication_criteria_last_name,Boolean representing if directory contacts are deduped based on last name.
+deduplication_criteria_phone,Boolean representing if directory contacts are deduped based on phone number.
+id,The directory ID, also known as a pool ID. Example - POOL_012345678901234
+is_default,"Boolean representing if this directory is the default one for your brand. 
+
+The default directory will be the first directory listed in the dropdown menu in Qualtrics."
+name,Name of the directory.

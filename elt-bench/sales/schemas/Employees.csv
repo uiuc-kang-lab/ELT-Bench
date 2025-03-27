@@ -1,0 +1,5 @@
+column_name,column_description
+employeeid,the unique id of the employee
+firstname,the employee's first name
+middleinitial,the employee's middle initial 
+lastname,the employee's last name

@@ -1,0 +1,63 @@
+column_name,column_description
+unitid,unique Education Unit ID number
+chronname,Institution name
+city,Institution city
+state,Institution state
+level,Level of institution
+control,Control of institution
+basic,Carnegie Foundation for the Advancement of Teaching Basic Classification (2010 version)
+hbcu,Denotes Historically Black College and Universities
+flagship,Denotes Public flagship institutions
+long_x,Institution longitude
+lat_y,Institution latitude
+site,Institution Web site address
+student_count,Total number of undergraduates in 2010
+awards_per_value,"Completions per 100 FTE (full-time equivalency) undergraduate students (average 2011, 2012, and 2013)"
+awards_per_state_value,"Completions per 100 FTE (full-time equivalency) undergraduate students, state and sector average"
+awards_per_natl_value,"Completions per 100 FTE (full-time equivalency) undergraduate students, national sector average"
+exp_award_value,Estimated educational spending per academic award in 2013. Includes all certificates and degrees
+exp_award_state_value,"Spending per completion, state and sector average"
+exp_award_natl_value,"Spending per completion, national sector average"
+exp_award_percentile,
+ft_pct,Percentage of undergraduates who attend full-time
+fte_value,total number of full-time equivalent undergraduates
+fte_percentile,
+med_sat_value,Median estimated SAT value for incoming students
+med_sat_percentile,Institution's percent rank for median SAT value within sector
+aid_value,The average amount of student aid going to undergraduate recipients
+aid_percentile,Institution's percent rank for average amount of student aid going to undergraduate recipients within sector
+endow_value,End-of-year endowment value per full-time equivalent student
+endow_percentile,Institution's percent rank for endowment value per full-time equivalent student within sector
+grad_100_value,"percentage of first-time, full-time, degree-seeking undergraduates who complete a degree or certificate program within 100 percent of expected time (bachelor's-seeking group at 4-year institutions)"
+grad_100_percentile,Institution's percent rank for completers within 100 percent of normal time within sector
+grad_150_value,"percentage of first-time, full-time, degree-seeking undergraduates who complete a degree or certificate program within 150 percent of expected time (bachelor's-seeking group at 4-year institutions)"
+grad_150_percentile,Institution's percent rank for completers within 150 percent of normal time within sector
+pell_value,percentage of undergraduates receiving a Pell Grant
+pell_percentile,Institution's percent rank for undergraduate Pell recipients within sector
+retain_value,share of freshman students retained for a second year
+retain_percentile,Institution's percent rank for freshman retention percentage within sector
+ft_fac_value,"Percentage of employees devoted to instruction, research or public service who are full-time and do not work for an associated medical school"
+ft_fac_percentile,Institution's percent rank for full-time faculty share within sector 
+vsa_year,Most recent year of Student Success and Progress Rate data available from the Voluntary System of Accountability
+vsa_grad_after4_first,"First-time, full-time students who graduated from this institution within four years"
+vsa_grad_elsewhere_after4_first,"First-time, full-time students who graduated from another institution within four years"
+vsa_enroll_after4_first,"First-time, full-time students who are still enrolled at this institution after four years"
+vsa_enroll_elsewhere_after4_first,"First-time, full-time students who are enrolled at another institution after four years"
+vsa_grad_after6_first,"First-time, full-time students who graduated from this institution within six years"
+vsa_grad_elsewhere_after6_first,"First-time, full-time students who graduated from another institution within six years"
+vsa_enroll_after6_first,"First-time, full-time students who are still enrolled at this institution after six years"
+vsa_enroll_elsewhere_after6_first,"First-time, full-time students who are enrolled at another institution after six years"
+vsa_grad_after4_transfer,Full-time transfer students who graduated from this institution within four years
+vsa_grad_elsewhere_after4_transfer,Full-time transfer students who graduated from this institution within four years
+vsa_enroll_after4_transfer,Full-time transfer students who are still enrolled at this institution after four years
+vsa_enroll_elsewhere_after4_transfer,Full-time transfer students who are enrolled at another institution after four years
+vsa_grad_after6_transfer,Full-time transfer students who graduated from this institution within six years
+vsa_grad_elsewhere_after6_transfer,Full-time transfer students who graduated from another institution within six years
+vsa_enroll_after6_transfer,Full-time transfer students who are still enrolled at this institution after six years
+vsa_enroll_elsewhere_after6_transfer,Full-time transfer students who are enrolled at another institution after six years
+similar,
+state_sector_ct,
+carnegie_ct,
+counted_pct,
+nicknames,
+cohort_size,

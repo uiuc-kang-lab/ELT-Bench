@@ -1,0 +1,17 @@
+column_name,column_description
+businessentityid,The id number identifying the employee.
+nationalidnumber,The national identification number such as a social security number.
+loginid,Network login.
+organizationnode,Where the employee is located in corporate hierarchy.
+organizationlevel,The depth of the employee in the corporate hierarchy.
+jobtitle,Work title such as Buyer or Sales Representative.
+birthdate,Date of birth.
+maritalstatus,Whether this employee is married or not.
+gender,The gender of this employee.
+hiredate,The employee was hired on this date.
+salariedflag,Job classification.
+vacationhours,The number of available vacation hours.
+sickleavehours,The number of available sick leave hours.
+currentflag,Whether this employee is active or not
+rowguid,Uniquely identifying the record. Used to support a merge replication sample. 
+modifieddate,Date and time the record was last updated. 

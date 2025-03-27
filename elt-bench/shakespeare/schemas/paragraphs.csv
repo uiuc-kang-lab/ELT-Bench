@@ -1,0 +1,6 @@
+column_name,column_description
+id,unique id number identifying the paragraphs
+paragraphnum,unique id number identifying the paragraph number
+plaintext,main content of the paragraphs
+character_id,unique id number identifying the mentioned character
+chapter_id,unique id number identifying the related chapter

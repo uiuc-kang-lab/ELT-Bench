@@ -1,0 +1,16 @@
+column_name,column_description
+id,unique id number identifying coins
+name,name of coins
+slug,slug names of coins
+symbol,symbol of names of coins
+status,status of coins
+category,category of coins
+description,description of coins
+subreddit,name of coins on reddit 
+notice,notice if any 
+tags,tags of coins
+tag_names,tag names of coins
+website,website introduction of coins
+platform_id,id number of the platform
+date_added,the added date
+date_launched,lanched date

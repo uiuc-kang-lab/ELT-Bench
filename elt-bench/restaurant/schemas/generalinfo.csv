@@ -1,0 +1,6 @@
+column_name,column_description
+id_restaurant,the unique id for the restaurant
+label,the label of the restaurant
+food_type,the food type
+city,the city where the restaurant is located in
+review,the review of the restaurant

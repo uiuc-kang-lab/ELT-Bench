@@ -1,0 +1,9 @@
+column_name,column_description
+order_id,the unique identifier of the customer order
+order_date,the date of the order
+customer_id,"the id of the customer
+Maps to customer(customer_Id)"
+shipping_method_id,"the id of the shipping method
+Maps to shipping_method(method_id)"
+dest_address_id,"the id of the destination address
+Maps to address(address_id)"

@@ -1,0 +1,20 @@
+models:
+  - name: eu_foolball__divisions
+    description: Each record represents a division.
+    columns:
+      - name: division
+        description: Division id.
+      - name: name
+        description: Name of the division.
+      - name: country
+        description: Country of the division.
+      - name: num_teams_2012
+        description: The number of teams in the division in 2012, replace NULL values with 0.
+      - name: highest_final_time_score_2021
+        description: The highest final time score in the division in 2021.
+      - name: num_0_0_games
+        description: The number of games that ended with a 0-0 score in the division, replace NULL values with 0.
+      - name: per_games_drawn
+        description: The percentage of games that ended in a draw in the division.
+      - name: team_with_highest_win_percentage_as_local
+        description: The team with the highest win percentage as the local team in the division, with ties broken by the ascending order of the team name

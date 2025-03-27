@@ -1,0 +1,7 @@
+column_name,column_description
+event_id,"the id of the event
+Maps to event(id)"
+competitor_id,"the id of the competitor
+Maps to games_competitor(id)"
+medal_id,"the id of the medal
+Maps to medal(id)"

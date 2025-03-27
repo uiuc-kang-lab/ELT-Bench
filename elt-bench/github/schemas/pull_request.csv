@@ -1,0 +1,5 @@
+column_name,column_description
+id,System generated unique id for the pull request.
+issue_id,Foreign key that references the issue table.
+head_repo_id,"Foreign key that references the repository table, referencing the current branch."
+head_user_id,"Foreign key that references the user table, referencing who created the current branch."

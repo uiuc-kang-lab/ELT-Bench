@@ -1,0 +1,10 @@
+column_name,column_description
+productcode,unique product code
+productname,product name
+productline,product line name
+productscale,product scale
+productvendor,product vendor
+productdescription,product description
+quantityinstock,quantity in stock 
+buyprice,buy price from vendors
+msrp,Manufacturer Suggested Retail Price

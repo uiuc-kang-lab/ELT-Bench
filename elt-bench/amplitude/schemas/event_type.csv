@@ -1,0 +1,18 @@
+column_name,column_description
+_fivetran_deleted,Timestamp of when Fivetran marked a record as deleted
+_fivetran_synced,Timestamp of when Fivetran synced a record
+autohidden,Whether event type is hidden
+deleted,Whether event type is deleted
+display,The display name of the event
+flow_hidden,If the event is hidden from Pathfinder/Pathfinder Users or not
+hidden,If the event is hidden or not.
+id,Event type ID
+in_waitroom,Whether event type is in waitroom
+name,Event name
+non_active,If the event is marked inactive or not
+project_name,Project name
+timeline_hidden,If the event is hidden or not
+totals,The total number of times the event has happened this week
+totals_delta,This represents the change in event volume from the previous week.
+value,Name of the event in the raw data.
+waitroom_approved,Waitroom approved

@@ -1,0 +1,4 @@
+column_name,column_description
+salesteamid,unique sales team id
+sales_team,sales team names
+region,the region where the state is located in

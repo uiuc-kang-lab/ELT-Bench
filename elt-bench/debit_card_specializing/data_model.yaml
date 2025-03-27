@@ -1,0 +1,20 @@
+models:
+  - name: debit_card__customers
+    description: Each record represents a customer.
+    columns:
+      - name: customerid
+        description: The unique identifier for the customer.
+      - name: segment
+        description: The segment the customer belongs to.
+      - name: currency
+        description: The currency the customer uses.
+      - name: consumption_in_2012
+        description: The total amount the customer consumed in 2012, replace NULL values with 0.
+      - name: consumption_decrease_rate_from_2012_to_2013
+        description: The rate of decrease in consumption from 2012 to 2013.
+      - name: avg_price_per_single_item
+        description: The average price per single item the customer pays.
+      - name: amount_spent_at_gas_station
+        description: The total amount the customer spent at gas stations, replace NULL values with 0.
+      - name: paid_in_euro_and_avg_monthly_consumption_over_1000
+        description: Set to 1 if the customer paid in euro and has a monthly consumption of over 1000, otherwise, set to 0

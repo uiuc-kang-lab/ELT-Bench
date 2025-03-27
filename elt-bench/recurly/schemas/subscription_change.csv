@@ -1,0 +1,12 @@
+column_name,column_description
+id,Unique identifier for subscription change.
+activate_at,Date at which subscription changes.
+activated,Is the subscription change currently active?
+created_at,When the subscription was last created.
+deleted_at,When subscription was rendered to be inactive.
+object,Object type of subscription change.
+plan_id,Plan id associated with subscription change.
+quantity,Quantity of subscriptions changed
+subscription_id,subscription ID associated with subscription change.
+unit_amount,Amount of one unit subscription.
+updated_at,Last modification of subscription change.

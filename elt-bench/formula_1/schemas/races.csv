@@ -1,0 +1,9 @@
+column_name,column_description
+raceId,the unique identification number identifying the race 
+year,year 
+round,round 
+circuitId,circuit Id 
+name,name of the race 
+date,duration time 
+time,time of the location 
+url,introduction of races 

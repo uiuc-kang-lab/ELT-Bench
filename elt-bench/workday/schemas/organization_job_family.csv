@@ -1,0 +1,6 @@
+column_name,column_description
+job_family_id,Identifier for the job family.
+organization_id,Identifier for the organization.
+_fivetran_deleted,Indicates if the record was soft-deleted by Fivetran.
+_fivetran_synced,Timestamp the record was synced by Fivetran.
+job_family_group_id,Identifier for the job family group.

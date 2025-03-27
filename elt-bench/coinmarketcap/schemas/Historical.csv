@@ -1,0 +1,21 @@
+column_name,column_description
+date,"transaction date
+"
+coin_id,id number referring to coins
+cmc_rank,CMC rank is a metric used by CoinMarketCap to rank the relative popularity of different cryptocurrencies.
+market_cap,Market capitalization refers to how much a coin is worth as determined by the coin market.
+price,how much is a coin
+open,the price at which a cryptocurrency (coin) opens at a time period
+high,highest price
+low,lowest price
+close,"the price at which a cryptocurrency (coin) closes at a time period, for example at the end of the day."
+time_high,the time to achieve highest price
+time_low,the time to achieve lowest price
+volume_24h,the total value of cryptocurrency coined traded in the past 24 hours.
+percent_change_1h,price percentage change in the first hour
+percent_change_24h,price percentage change in the first 24 hours
+percent_change_7d,price percentage change in the first 7 days
+circulating_supply,the best approximation of the number of coins that are circulating in the market and in the general public's hands.
+total_supply,the total amount of coins in existence right now
+max_supply,Max Supply is the best approximation of the maximum amount of coins that will ever exist in the lifetime of the cryptocurrency.
+num_market_pairs,number of market pairs across all exchanges trading each currency.

@@ -1,0 +1,16 @@
+column_name,column_description
+id,Unique internal ID representing the creative.
+last_modified_time,The timestamp of when the version was updated (Linkedin Ads pre-January 2023 API Update).
+last_modified_at,The timestamp of when the version was updated (Linkedin Ads post-January 2023 API Update).
+created_time,The timestamp of when the creative was created (Linkedin Ads pre-January 2023 API Update).
+created_at,The timestamp of when the creative was created (Linkedin Ads post-January 2023 API Update).
+campaign_id,The ID of the campaign the creative belongs to.
+click_uri,Deprecated url field. Please refer to the text_ad_landing_page and spotlight_landing_page fields for relevant landing page information.
+text_ad_landing_page,"The URL where the member should be redirected to, on clicking the text ad."
+spotlight_landing_page,"The URL where the member should be redirected to, on clicking the spotlight ad."
+intended_status,"ACTIVE - Creative creation is complete and creative is available for review and serve.
+PAUSED - Creative creation is complete and creative is current, but should temporarily not be served. This status is not valid upon creation.
+DRAFT - Creative creation is incomplete and may still be edited.
+ARCHIVED - Creative creation is complete, but creative should not be served and should be separated from non-archived creatives in any UI.
+CANCELED - Creative is permanently canceled.
+"

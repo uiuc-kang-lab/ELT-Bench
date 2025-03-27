@@ -1,0 +1,20 @@
+column_name,column_description
+_fivetran_synced,Timestamp of when fivetran synced a record.
+account_id,The unique identifier of the Account that owns this phone number resource.
+address_id,The unique identifier of the Address resource responsible for the phone number.
+address_requirements,The specific requirements for the Address on this phone number.
+beta,Whether this phone number is a beta number.
+capabilities_mms,Indicates whether this phone number is capable of sending and receiving MMS messages.
+capabilities_sms,Indicates whether this phone number is capable of sending and receiving SMS messages.
+capabilities_voice,Indicates whether this phone number is capable of making and receiving voice calls.
+created_at,The date and time this phone number resource was created.
+emergency_address_id,The unique identifier of the Address resource to be used in case of an emergency.
+emergency_status,The emergency status of the phone number.
+friendly_name,A human-readable name associated with the phone number.
+id,The unique identifier for this phone number resource.
+origin,The origination type of the phone number.
+phone_number,The phone number in E.164 format.
+trunk_id,The unique identifier of the Trunk resource responsible for the phone number.
+updated_at,The date and time this phone number resource was last updated.
+voice_caller_id_lookup,Indicates whether the phone number performs a lookup of the caller ID.
+voice_url,The URL Twilio will request when receiving a voice call to this phone number.

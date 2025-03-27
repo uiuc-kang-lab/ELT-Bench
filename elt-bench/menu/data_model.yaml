@@ -1,0 +1,20 @@
+models:
+  - name: menus
+    description: Each record represents a menu.
+    columns:
+      - name: menu_id
+        description: Unique identifier of the menu.
+      - name: name
+        description: The name of the menu.
+      - name: sponsor
+        description: The sponsor of the menu.
+      - name: dish_with_highest_price
+        description: The dish with the highest price in the menu, with ties broken by the ascending order of the dish name.
+      - name: num_dishes_second_page
+        description: The number of dishes on the second page of the menu, replace NULL values with 0.
+      - name: has_clear_green_turtle_and_uses_dollars
+        description: Set to 1 if the menu has the dish "Clear green turtle" and uses dollars as their currency, 0 otherwise.
+      - name: page_with_biggest_height
+        description: The page number with the biggest height in the menu, with ties broken by the ascending order of the page number
+      - name: avg_num_of_dishes_per_page
+        description: The average number of dishes per page in the menu.

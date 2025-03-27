@@ -1,0 +1,5 @@
+column_name,column_description
+movie_id,"the id of the movie 
+Maps to movie(movie_id)"
+genre_id,"the id of the movie genre
+Maps to genre(genre_id)"

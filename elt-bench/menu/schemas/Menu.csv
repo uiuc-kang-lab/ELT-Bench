@@ -1,0 +1,21 @@
+column_name,column_description
+id,the unique number identifying the menu
+name,the name of the menu
+sponsor,the sponsor of this menu
+event,the event that the menu was created for
+venue,the venue that the menu was created for
+place,the location that the menu was used
+physical_description,physical description of the menu
+occasion,occasion of the menu
+notes,notes
+call_number,call number
+keywords,keywords
+language,language
+date,the date that this menu was created
+location,the location that the menu was used
+location_type,
+currency,the currency that the menu was used
+currency_symbol,the currency symbol
+status,status of the menu
+page_count,the number of pages of this menu
+dish_count,the number of dishes of this menu

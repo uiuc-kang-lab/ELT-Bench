@@ -1,0 +1,21 @@
+column_name,column_description
+seriescode,unique code identifying series
+topic,topic of series
+indicatorname,Indicator Name
+shortdefinition,Short Definition of series
+longdefinition,Long Definition of series 
+unitofmeasure,Unit Of Measure
+periodicity,Periodicity
+baseperiod,"a period of business or economic activity used as a basis or reference point especially for indexing, calculating, estimating, or adjudicating prices, taxes, compensation, income, and production"
+othernotes,Other Notes
+aggregationmethod,Aggregation Method
+limitationsandexceptions,Limitations And Exceptions
+notesfromoriginalsource,Notes From Original Source
+generalcomments,General Comments
+source,source of this data
+statisticalconceptandmethodology,Statistical Concept And Methodology
+developmentrelevance,Development Relevance
+relatedsourcelinks,Related Source Links
+otherweblinks,Other Web Links
+relatedindicators,Related Indicators
+licensetype,License Type

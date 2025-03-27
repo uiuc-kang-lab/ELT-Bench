@@ -1,0 +1,54 @@
+models:
+  - name: movies4__movies
+    description: Each record represents a movie.
+    columns:
+      - name: movie_id
+        description: Unique identifier for the movie.
+      - name: title
+        description: The title of the movie.
+      - name: movie_status
+        description: The status of the movie.
+      - name: number_of_production_companies
+        description: The number of production companies that produced the movie, replace NULL values with 0.
+      - name: percentage_of_male_characters
+        description: The percentage of male characters in the movie.
+      - name: number_of_crews
+        description: The number of crews that worked on the movie, replace NULL values with 0.
+      - name: number_of_main_characters
+        description: The number of main characters in the movie, replace NULL values with 0.
+      - name: ratio_between_male_and_female_cast_members
+        description: The ratio between male and female cast members in the movie.
+  - name: movies4__production_company
+    description: Each record represents a production company.
+    columns:
+      - name: company_id
+        description: Unique identifier for the production company.
+      - name: company_name
+        description: The name of the production company.
+      - name: latest_released_movie
+        description: The latest released movie by the production company, with ties broken by the descending order of the movie title.
+      - name: most_popular_movie
+        description: The most popular movie by the production company, with ties broken by the ascending order of the movie title.
+      - name: number_of_movies_released
+        description: The number of movies released by the production company, replace NULL values with 0.
+      - name: highest_revenue_movie
+        description: The movie title made the highest revenue among the production company's movies, with ties broken by the descending order of the movie title
+      - name: category_running_time_per_movie_2016
+        description: Set to 3 if the production company’s average movie running time in 2016 exceeds 75%, to 2 if it exceeds 55%, to 1 if it exceeds 35%, and to 0 otherwise
+  - name: movies4__person
+    description: Each record represents a person.
+    columns:
+      - name: person_id
+        description: Unique identifier for the person.
+      - name: person_name
+        description: The name of the person
+      - name: lastest_movie
+        description: The latest movie in which the person worked as a crew member, with ties broken by the ascending order of the movie title
+      - name: percentage_of_movie_vote_average_over_5
+        description: The percentage of movies, in which the person worked as a crew member, that have a vote average over 5.0.
+      - name: has_worked_as_a_music_editor
+        description: Set to 1 if the person has worked as a 'Music Editor' in the movie, otherwise, set to 0
+      - name: movie_with_the_highest_average_vote
+        description: The movie title with the highest average vote in which the person worked as a crew member, with ties broken by the descending order of the movie title
+      - name: has_movie_between_19160101_19251231
+        description: Set to 1 if the person worked as a crew member in the movies released between 1/01/1916 and 12/31/1925, otherwise, set it to 0

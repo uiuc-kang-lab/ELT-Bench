@@ -1,0 +1,5 @@
+column_name,column_description
+playerid,string ID of players
+year,
+ppa,Power play assists
+sha,Shorthanded assists

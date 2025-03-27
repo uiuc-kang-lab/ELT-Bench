@@ -1,0 +1,7 @@
+column_name,column_description
+id,System generated unique id for the team.
+description,User created description of the team.
+name,User created name of the team.
+parent_id,Reference to the parent team.
+privacy,Type of privacy permissions associated with the team.
+slug,Url friendly version of the team name.

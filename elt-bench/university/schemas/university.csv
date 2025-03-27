@@ -1,0 +1,4 @@
+column_name,column_description
+id,unique id number identifying university
+country_id,the country where the university locates
+university_name,name of the university

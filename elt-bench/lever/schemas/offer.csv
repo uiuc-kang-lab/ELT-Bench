@@ -1,0 +1,7 @@
+column_name,column_description
+id,Unique ID of the offer.
+candidate_id,Unique ID of the candidate or opportunity??
+created_at,Timestamp of when the offer was created.
+creator_id,Foreign key referencing the USER who created the offer.
+status,"A string describing the current status of the offer. Can include:  draft - the offer is still under construction approval-sent - the offer needs approval approved - the offer has been approved sent - the offer has been sent through Lever sent-manually - the offer has been sent to the candidate outside of Lever opened - the candidate has opened the offer denied - the candidate denied the offer signed - the candidate signed the offer
+"

@@ -1,0 +1,11 @@
+column_name,column_description
+title_id,title id
+title,title
+type,type of titles
+pub_id,publisher id
+price,price
+advance,pre-paid amount
+royalty,royalty
+ytd_sales,year to date sales
+notes,notes if any
+pubdate,publication date

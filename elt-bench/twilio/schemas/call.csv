@@ -1,0 +1,26 @@
+column_name,column_description
+_fivetran_synced,Timestamp of when fivetran synced a record.
+account_id,The unique identifier for the Account responsible for this Call.
+annotation,A user-defined string that provides additional information about the Call.
+answered_by,The identity of the recipient that answered the Call.
+caller_name,"The caller's name, if available."
+created_at,"The date and time when the Call was created, given as GMT in RFC 2822 format."
+direction,"The direction of the Call - `inbound` for incoming calls, `outbound-api` for calls initiated via the REST API, and `outbound-dial` for calls initiated by a TwiML `<Dial` verb."
+duration,The duration of the Call in seconds.
+end_time,"The date and time when the Call ended, given as GMT in RFC 2822 format."
+forwarded_from,"The phone number that initiated the Call, if applicable."
+from,The phone number or client identifier that made the Call.
+from_formatted,The formatted version of the `from` phone number or client identifier.
+group_id,The unique identifier for the grouping of related Calls.
+id,The unique identifier for the Call resource.
+outgoing_caller_id,The unique identifier for the Outgoing Caller ID resource associated with the Call.
+parent_call_id,The unique identifier for the Call that created this Call as a result of executing TwiML.
+price,The cost of the Call in the specified `price_unit`.
+price_unit,The currency unit in which the `price` is measured.
+queue_time,"The time spent in the queue before the Call is placed, in milliseconds."
+start_time,"The date and time when the Call started, given as GMT in RFC 2822 format."
+status,"The current status of the Call - `queued`, `ringing`, `in-progress`, `completed`, `busy`, `failed`, `no-answer`, or `canceled`."
+to,The phone number or client identifier that received the Call.
+to_formatted,The formatted version of the `to` phone number or client identifier.
+trunk_id,The unique identifier for the Trunk resource associated with the Call.
+updated_at,"The date and time when the Call record was last updated, given as GMT in RFC 2822 format."

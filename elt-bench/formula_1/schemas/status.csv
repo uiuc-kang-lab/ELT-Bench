@@ -1,0 +1,3 @@
+column_name,column_description
+statusId,the unique identification number identifying status
+status,full name of status 

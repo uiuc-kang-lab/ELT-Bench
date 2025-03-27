@@ -1,0 +1,5 @@
+column_name,column_description
+geneid1,identifier number of genes
+geneid2,identifier number of genes
+type,Type
+expression_corr,Expression correlation score

@@ -1,0 +1,14 @@
+column_name,column_description
+film_id,unique id number identifying the film
+title,title of the film
+description,main content of the film
+release_year,the year when the film is released
+language_id,the language id of the film
+original_language_id,the original language id of the film
+rental_duration,how long this film can be rent at once
+rental_rate,the rate of renting this film
+length,Duration time of the film screening
+replacement_cost,cost of replacing this film
+rating,The Motion Picture Association film rating
+special_features,features of this film
+last_update,The time of the latest update

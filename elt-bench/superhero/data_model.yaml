@@ -1,0 +1,20 @@
+models:
+  - name: superheroes
+    description: Each record represents a superhero.
+    columns:
+      - name: hero_id
+        description: Unique identifier for the superhero.
+      - name: superhero_name
+        description: Name of the superhero.
+      - name: full_name
+        description: Full name of the superhero
+      - name: has_durability_less_than_50
+        description: Set to 1 if the superhero has a durability attribute value of less than 50, otherwise, set to 0
+      - name: num_powers
+        description: Number of powers the superhero has, replace NULL values with 0.
+      - name: has_weight_greater_than_79_per_avg_weight
+        description: set to 1 if the superhero has a weight greater than the 79% average weight of all superheroes, otherwise, set to 0.
+      - name: is_blue_female_superhero
+        description: Set to 1 if the superhero is a blue female superhero, otherwise, set to 0.
+      - name: has_highest_value_in_strength
+        description: Set to 1 if the superhero has the highest attribute value in strength, otherwise, set to 0

@@ -1,0 +1,5 @@
+column_name,column_description
+course_id,the id of courses
+student_id,the id of students
+grade,the grades that the students acquire in this course
+sat,student satisfaction with the course

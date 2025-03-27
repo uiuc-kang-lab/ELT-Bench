@@ -1,0 +1,20 @@
+models:
+  - name: language_corpus__words
+    description: Each record represents a word
+    columns:
+      - name: word_id
+        description: The unique identifier of the word
+      - name: word
+        description: The word
+      - name: occurrences
+        description: The number of occurrences of the word
+      - name: num_biword
+        description: The number of biwords that contain the word, replace NULL values with 0.
+      - name: percentage_occurrence_Art_higher_Astronomia
+        description: The percentage of occurrences of the word in the page titled "Art"  that are higher than the percentage of occurrences of the word in the page titled "Astronomia"
+      - name: same_word_appears_in_a_pair
+        description: set to 1 if the word appears more than once in a pair, otherwise, set to 0
+      - name: repetition_more_than_16000
+        description: set to 1 if the word appears more than 16000 times, otherwise, set to 0
+      - name: avg_occurrence_per_page
+        description: the average occurrence of the word on each Wikipedia page that has this word

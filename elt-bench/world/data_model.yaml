@@ -1,0 +1,20 @@
+models:
+  - name: countries
+    description: Each record represents a country.
+    columns:
+      - name: country_code
+        description: The unique identifier of the country.
+      - name: country_name
+        description: The name of the country.
+      - name: population
+        description: The population of the country.
+      - name: capital_name
+        description: The name of the capital city of the country.
+      - name: num_cities
+        description: The number of cities in the country, replace NULL values with 0.
+      - name: city_with_least_population
+        description: The city in the country that has the least population, with ties broken by the ascending order of the city name
+      - name: GNP_growth_rate
+        description: The GNP growth rate of the country.
+      - name: use_most_widely_used_language_as_official_language
+        description: Set to 1 if the country uses the most widely used language as its official language, otherwise, set to 0

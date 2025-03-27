@@ -1,0 +1,6 @@
+column_name,column_description
+id,the unique id for teams
+team_api_id,the id of the team api
+team_fifa_api_id,the id of the team fifa api
+team_long_name,the team's long name
+team_short_name,the team's short name

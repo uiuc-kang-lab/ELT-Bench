@@ -1,0 +1,8 @@
+column_name,column_description
+payment_id,unique id number identifying the payment
+customer_id,unique id number identifying the customer
+staff_id,unique id number identifying the staff
+rental_id,unique id number identifying the rental
+amount,unique id number identifying the amount
+payment_date,the date when the payment ocurs
+last_update,The time of the latest update

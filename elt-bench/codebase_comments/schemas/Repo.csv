@@ -1,0 +1,7 @@
+column_name,column_description
+id,unique id to identify repositories
+url,github address of repository
+stars,stars this repository has received
+forks,forks that the repository has received
+watchers,how many watchers of this repository
+processedtime,how much processed time of downloading this repository

@@ -1,0 +1,3 @@
+column_name,column_description
+productid,unique id number representing each product
+product_name,name of the product

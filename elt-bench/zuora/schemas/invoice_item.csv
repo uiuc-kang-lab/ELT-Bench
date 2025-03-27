@@ -1,0 +1,46 @@
+column_name,column_description
+id,The unique identifier of the
+_fivetran_synced,Timestamp of when a record was last synced.
+_fivetran_deleted,Boolean identifiying whether the record was deleted in the source.
+account_id,id of the account associated with this invoice item.
+account_receivable_accounting_code_id,id of the accounting code for the account receivable account for this invoice item.
+accounting_code,Accounting code for the invoice item.
+amendment_id,id of the amendment associated with this invoice item.
+applied_to_invoice_item_id,id of the invoice item that this invoice item is applied to.
+balance,Balance of the invoice item.
+bill_to_contact_id,id of the contact to whom the invoice item is billed.
+charge_amount,Amount charged for the invoice item.
+charge_amount_home_currency,Amount charged for the invoice item in the home currency.
+charge_date,Date on which the charge for the invoice item was made.
+charge_name,Name of the charge associated with this invoice item.
+created_by_id,id of the user who created this invoice item.
+created_date,Date on which the invoice item was created.
+deferred_revenue_accounting_code_id,id of the accounting code for the deferred revenue account for this invoice item.
+exchange_rate,Exchange rate for the invoice item.
+exchange_rate_date,Date of the exchange rate for the invoice item.
+home_currency,Currency used for the invoice item in the home currency.
+invoice_id,id of the invoice associated with this invoice item.
+journal_entry_id,id of the journal entry associated with this invoice item.
+parent_account_id,id of the parent account associated with this invoice item.
+processing_type,Type of processing for the invoice item.
+product_id,id of the product associated with this invoice item.
+product_rate_plan_charge_id,id of the product rate plan charge associated with this invoice item.
+product_rate_plan_id,id of the product rate plan associated with this invoice item.
+quantity,Quantity associated with the invoice item.
+rate_plan_charge_id,id of the rate plan charge associated with this invoice item.
+rate_plan_id,id of the rate plan associated with this invoice item.
+recognized_revenue_accounting_code_id,id of the accounting code for the recognized revenue account for this invoice item.
+rev_rec_start_date,Date on which revenue recognition starts for the invoice item.
+service_end_date,End date of the service associated with the invoice item.
+service_start_date,Start date of the service associated with the invoice item.
+sku,SKU of the invoice item.
+sold_to_contact_id,The id of the contact to whom the product or service was sold.
+source_item_type,The type of the source item that created the invoice item.
+subscription_id,The id of the subscription associated with the invoice item.
+tax_amount,The tax amount for the invoice item.
+tax_mode,The tax mode for the invoice item.
+transaction_currency,The transaction currency for the invoice item.
+unit_price,The unit price for the invoice item.
+uom,The unit of measure for the invoice item.
+updated_by_id,The id of the user who last updated the invoice item.
+updated_date,The date and time when the invoice item was last updated.

@@ -1,0 +1,5 @@
+column_name,column_description
+inspection_id,the unique id for the inspection
+point_id,the inspection point id
+fine,the fine of the violation
+inspector_comment,the comment of the inspector

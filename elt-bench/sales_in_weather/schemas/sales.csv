@@ -1,0 +1,5 @@
+column_name,column_description
+date,the date of sales
+store_nbr,store number
+item_nbr,item / product number
+units,the quantity sold of an item on a given day

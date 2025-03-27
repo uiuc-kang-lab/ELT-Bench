@@ -1,0 +1,57 @@
+column_name,column_description
+id,Unique identifier for the object.
+updated_at,When the line item was updated.
+account_id,The account this line item belongs to.
+accounting_code,Internal accounting code to help you reconcile your revenue to the correct ledger.
+add_on_code,"If the line item is a charge or credit for an add-on, this is its code."
+add_on_id,If the line item is a charge or credit for an add-on this is its ID.
+amount,Total after discounts and taxes (quantity * unit_amount) - (discount + tax).
+created_at,When the line item was created.
+credit_applied,The amount of credit from this line item that was applied to the invoice.
+credit_reason_code,The reason the credit was given.
+currency,3-letter ISO 4217 currency code.
+description,Description that appears on the invoice. For subscription related items this will be filled in automatically.
+discount,The discount applied to the line item.
+end_date,"If this date is provided, it indicates the end of a time range."
+invoice_id,Once the line item has been invoiced this will be the invoice's ID.
+invoice_number,"Once the line item has been invoiced this will be the invoice's number.  If VAT taxation and the Country Invoice Sequencing feature are enabled,  invoices will have country-specific invoice numbers for invoices billed to EU countries (e.g. FR1001).  Non-EU invoices will continue to use the site-level invoice number sequence.
+"
+legacy_category,"Category to describe the role of a line item on a legacy invoice. “charges” refers to charges being billed for on this invoice.
+"
+origin,"A credit created from an original charge will have the value of the charge's origin. Enum: ""add_on"", ""add_on_trial"", ""carryforward"", ""coupon"", ""credit"", ""debit"", ""one_time"",  ""plan"", ""plan_trial"", ""setup_fee"", ""prepayment""
+"
+original_line_item_invoice_id,"The invoice where the credit originated.  Will only have a value if the line item is a credit created from a previous credit,  or if the credit was created from a charge refund.
+"
+plan_code,"If the line item is a charge or credit for a plan or add-on, this is the plan's code."
+plan_id,"If the line item is a charge or credit for a plan or add-on, this is the plan's ID."
+previous_line_item_id,"Will only have a value if the line item is a credit created from a previous credit,  or if the credit was created from a charge refund.
+"
+product_code,"For plan-related line items this will be the plan's code, for add-on related line items it will be the add-on's code.  For item-related line items it will be the item's external_sku.
+"
+proration_rate,"When a line item has been prorated, this is the rate of the proration.  Proration rates were made available for line items created after March 30, 2017.  For line items created prior to that date, the proration rate will be null, even if the line item was prorated.
+"
+quantity,"This number will be multiplied by the unit amount to compute the subtotal before any discounts or taxes. Default: 1
+"
+refund,"true if the line item is refund, false if it is not."
+refunded_quantity,"For refund charges, the quantity being refunded. For non-refund charges, the total quantity refunded (possibly over multiple refunds)."
+start_date,"If an end date is present, this is value indicates the beginning of a billing time range.  If no end date is present it indicates billing for a specific date.
+"
+state,"Pending line items are charges or credits on an account that have not been applied to an invoice yet.  Invoiced line items will always have an invoice_id value. Enum: ""invoiced"", ""pending""
+"
+subscription_id,"If the line item is a charge or credit for a subscription, this is its ID."
+subtotal,Total before discounts and taxes (quantity * unit_amount).
+tax,The tax amount for the line item.
+tax_code,"Used by Avalara, Vertex, and Recurly’s EU VAT tax feature. The tax code values are specific to each tax system.  If you are using Recurly’s EU VAT feature you can use unknown, physical, or digital.
+"
+tax_exempt,"true exempts tax on charges, false applies tax on charges. If not defined, then defaults to the Plan and Site settings.  This attribute does not work for credits (negative line items). Credits are always applied post-tax.  Pre-tax discounts should use the Coupons feature.
+"
+tax_rate,Tax rate
+tax_region,"Provides the tax region applied on an invoice.  For U.S. Sales Tax, this will be the 2 letter state code.  For EU VAT this will be the 2 letter country code.  For all country level tax types, this will display the regional tax, like VAT, GST, or PST.
+"
+tax_type,"Provides the tax type as ""vat"" for EU VAT, ""usst"" for U.S. Sales Tax, or the 2 letter country code for country level tax types  like Canada, Australia, New Zealand, Israel, and all non-EU European countries.
+"
+taxable,"true if the line item is taxable, false if it is not."
+type,"Charges are positive line items that debit the account.  Credits are negative line items that credit the account. Enum: ""charge"", ""credit""
+"
+unit_amount,"Positive amount for a charge, negative amount for a credit."
+uuid,The UUID is useful for matching data with the CSV exports and building URLs into Recurly's UI. Used in HTB database.

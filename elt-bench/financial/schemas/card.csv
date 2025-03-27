@@ -1,0 +1,5 @@
+column_name,column_description
+card_id,id number of credit card
+disp_id,disposition id
+type,type of credit card
+issued,the date when the credit card issued 

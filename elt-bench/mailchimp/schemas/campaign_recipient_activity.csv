@@ -1,0 +1,13 @@
+column_name,column_description
+action,"One of the following actions: 'open', 'click', or 'bounce'
+"
+campaign_id,The unique ID for the sent campaign.
+member_id,The ID of the member the activity relates to.
+list_id,The ID of the list the email was sent to.
+timestamp,The timestamp when the activity occurred.
+ip,The IP address recorded for the action.
+url,"If the action is a 'click', the URL on which the member clicked."
+bounce_type,"If the action is a 'bounce', the type of bounce received: 'hard', 'soft'.
+"
+combination_id,The ID of the combination the member was part of for a campaign.
+_fivetran_synced,UTC timestamp that indicates the time when Fivetran last successfully synced the row.

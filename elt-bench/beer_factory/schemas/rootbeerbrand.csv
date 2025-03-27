@@ -1,0 +1,23 @@
+column_name,column_description
+brandid,the unique id for the brand
+brandname,the brand name
+firstbrewedyear,the first brewed year of the brand
+breweryname,the brewery name
+city,the city where the brewery locates
+state,the state code
+country,the country where the brewery locates
+description,the description of the brand
+canesugar,whether the drink contains cane sugar
+cornsyrup,whether the drink contains the corn syrup
+honey,whether the drink contains the honey 
+artificialsweetener,whether the drink contains the artificial sweetener 
+caffeinated,whether the drink is caffeinated
+alcoholic,whether the drink is alcoholic
+availableincans,whether the drink is available in cans
+availableinbottles,whether the drink is available in bottles
+availableinkegs,whether the drink is available in kegs
+website,the website of the brand
+facebookpage,the facebook page of the brand
+twitter,the twitter of the brand
+wholesalecost,the wholesale cost
+currentretailprice,the current retail price

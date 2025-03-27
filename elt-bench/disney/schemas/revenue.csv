@@ -1,0 +1,8 @@
+column_name,column_description
+year,The year the movie was released.
+studio_entertainment_ni_1,The studio entertainment segment of the Walt Disney Company.
+disney_consumer_products_ni_2,The consumer products segment of the Walt Disney Company.
+disney_interactive_ni_3__rev_1,The interactive segment of the Walt Disney Company. 
+walt_disney_parks_and_resorts,The parks and resorts segment of the Walt Disney Company.
+disney_media_networks,The media networks segment of the Walt Disney Company.
+total,The total box office gross for the movie.

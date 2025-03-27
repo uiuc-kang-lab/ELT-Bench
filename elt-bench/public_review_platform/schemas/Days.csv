@@ -1,0 +1,3 @@
+column_name,column_description
+day_id,the unique id identifying the day of the week
+day_of_week,indicate the day of the week

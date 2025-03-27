@@ -1,0 +1,12 @@
+column_name,column_description
+id,
+duration,The duration of the trip in seconds.
+start_date,start date
+start_station_name,The name of the start station
+start_station_id,The ID of the start station
+end_date,end date
+end_station_name,The name of the end station
+end_station_id,The ID of the end station
+bike_id,The ID of the bike
+subscription_type,subscription type
+zip_code,zip code

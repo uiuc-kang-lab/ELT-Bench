@@ -1,0 +1,7 @@
+column_name,column_description
+player_id,the id of the player
+player_name,the name of the player
+dob,player's birthday
+batting_hand,the id of the batting hand
+bowling_skill,the id of the bowling skill
+country_name,the name of the country where the player is from

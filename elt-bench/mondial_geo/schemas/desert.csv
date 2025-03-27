@@ -1,0 +1,5 @@
+column_name,column_description
+name,the name of the desert
+area,the total area of the desert
+longitude,Longitude
+latitude,Latitude

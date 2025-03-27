@@ -1,0 +1,6 @@
+column_name,column_description
+rootbeerid,the unique id for the root beer
+brandid,the brand id
+containertype,the type of the container
+locationid,the location id of the selling company 
+purchasedate,the purchase date of the root beer

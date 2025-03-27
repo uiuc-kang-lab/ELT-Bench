@@ -1,0 +1,11 @@
+column_name,column_description
+id,Unique internal ID representing the campaign group.
+last_modified_time,The timestamp of when the version was updated.
+account_id,The ID of the account the campaign group belongs to.
+created_time,The timestamp of when the campaign group was created.
+name,A label for the campaign group.
+backfilled,Flag that denotes whether the campaign group was created organically or to backfill existing campaigns. This is a read-only field set by the system. Default = false
+run_schedule_start,Represents the inclusive (greater than or equal to) date when to start running the associated campaigns under this campaign group. This field is required.
+run_schedule_end,"Represents the exclusive (strictly less than) date when to stop running the associated campaigns under this campaign group. If this field is unset, it indicates an open range with no end date."
+status,"Status of campaign group. Possible values are: ACTIVE - Denotes that the campaign group is capable of serving ads, subject to run date and budget limitations (as well as any other limitations at the account or campaign level). ARCHIVED - Denotes that the campaign group is presently inactive, and should mostly be hidden in the UI until un-archived. CANCELLED - Denotes that the campaign group has been permanently canceled and cannot be reactivated. Not a settable status. DRAFT - Denotes that the campaign group is in a preliminary state and should temporarily not be served. PAUSED - Denotes that the campaign group meets all requirements to be served, but temporarily should not be. PENDING_DELETION - Denotes that the campaign group has been requested to be deleted that is currently pending. REMOVED - Denoted that the campaign group was deleted, but must remain fetchable due to the existence of performance data.
+"

@@ -1,0 +1,5 @@
+column_name,column_description
+inventory_id,unique id number identifying the inventory
+film_id,unique id number identifying the film
+store_id, id of the store
+last_update,the last update time of the film

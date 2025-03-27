@@ -1,0 +1,10 @@
+column_name,column_description
+p_partkey,unique id number identifying the part
+p_type,type of part
+p_size,size number of part
+p_brand,brand of part
+p_name,name of part
+p_container,container of part
+p_mfgr,manufacturer of part
+p_retailprice,retail price of part
+p_comment,comment description text of part

@@ -1,0 +1,10 @@
+column_name,column_description
+id,The ID for the Segment from Mailchimp
+list_id,The ID of the List the segment is part of.
+member_count,The number of members in the segment.
+name,The name of the segment.
+type,The type of segment
+updated_at,The date and time the segment was last updated.
+created_at,The date and time the segment was created.
+_fivetran_synced,UTC timestamp that indicates the time when Fivetran last successfully synced the row.
+_fivetran_deleted,Boolean that is true if the row has been soft-deleted from the source.

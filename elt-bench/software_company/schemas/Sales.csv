@@ -1,0 +1,5 @@
+column_name,column_description
+eventid,unique id of event (sales)
+refid,Reference to customer ID
+event_date,date of sales
+amount,amount of sales

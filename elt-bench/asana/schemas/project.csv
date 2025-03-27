@@ -1,0 +1,14 @@
+column_name,column_description
+id,System generated unique ID of the project.
+archived,Boolean representing whether the project has been archived (removed from asana UI).
+color,Color of the project as seen in the UI.
+created_at,Timestamp of when the story was made/the action was logged.
+current_status,The most recent progress status update for the project. This is sent to all project followers.
+due_date,The date the project is due.
+modified_at,The last time the project was updated. Does not include comments nor changes in associations (ie new tasks).
+name,The given name of the project.
+notes,Free-form textual notes associated with the project.
+owner_id,Foreign key referencing the USER who owns the project.
+public,"Boolean that is true if the project is public to the whole organization, false if not."
+team_id,Foreign key referencing the TEAM that the project is shared with.
+workspace_id,The id of an organization's workspace in asana. Not necessary unless you have access to multiple asana workspaces.

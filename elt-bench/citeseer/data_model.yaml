@@ -1,0 +1,18 @@
+models:
+  - name: citeseer_paper
+    description: Each record represents a paper.
+    columns:
+      - name: paper_id
+        description: Unique identifier for the paper.
+      - name: class_label
+        description: Class label of the paper.
+      - name: num_cited_word
+        description: Number of cited words in the paper, replace NULL values with 0.
+      - name: cited_word_class
+        description: Set to '>50' if the paper contains more than 50 cited words, '20~50 if it contains between 20 and 50 cited words, or '<20' if it contains fewer than 20 cited words.
+      - name: under_agents_classification
+        description: Set to 1 if the paper is classified under the 'Agents' category; otherwise, set to 0.
+      - name: cited_word1002
+        description: Set to 1 if the paper has cited word1002; otherwise, set to 0.
+      - name: ML_and_cited_butz01algorithmic
+        description: Set to 1 if the paper is classified as ML and cited butz01algorithmic; otherwise, set to 0.

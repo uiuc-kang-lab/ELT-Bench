@@ -1,0 +1,6 @@
+column_name,column_description
+constructorId,the unique identification number identifying constructors 
+constructorRef,Constructor Reference name 
+name,full name of the constructor 
+nationality,nationality of the constructor 
+url,the introduction website of the constructor 

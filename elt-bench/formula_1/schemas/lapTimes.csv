@@ -1,0 +1,7 @@
+column_name,column_description
+raceId,the identification number identifying race
+driverId,the identification number identifying each driver 
+lap,lap number 
+position,position or track of circuits  
+time,lap time  
+milliseconds,milliseconds 

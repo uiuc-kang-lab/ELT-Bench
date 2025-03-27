@@ -1,0 +1,24 @@
+column_name,column_description
+address,the address of this legislator
+bioguide,The alphanumeric ID for this legislator 
+caucus,caucus
+chamber,chamber
+class,class
+contact_form,The website URL of the contact page on the legislator's official website
+district,district
+end,the end of the term
+fax,"The fax number of the legislator's Washington, D.C. office"
+last,the last known number
+name,
+office,office 
+party,The political party of the legislator.
+party_affiliations,This field is present if the legislator changed party or caucus affiliation during the term.
+phone,"The phone number of the legislator's Washington, D.C. office"
+relation,
+rss_url,The URL to the official website's RSS feed
+start,"The date legislative service began: the date the legislator was sworn in, if known, or else the beginning of the legislator's term. "
+state,state code
+state_rank,"whether they are the ""junior"" or ""senior"" senator"
+title,title of the legislator
+type,The type of the term.
+url,The official website URL of the legislator 

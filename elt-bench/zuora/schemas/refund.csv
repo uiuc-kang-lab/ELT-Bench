@@ -1,0 +1,23 @@
+column_name,column_description
+id,The unique identifier of the refund object.
+_fivetran_synced,Timestamp of when a record was last synced.
+_fivetran_deleted,Boolean identifiying whether the record was deleted in the source.
+accounting_code,The accounting code associated with the refund.
+amount,The amount of the refund.
+cancelled_on,The date and time when the refund was cancelled.
+comment,A comment about the refund.
+created_by_id,The id of the user who created the refund.
+created_date,The date and time when the refund was created.
+method_type,The type of the refund method.
+payment_method_id,The id of the payment method used for the refund.
+refund_date,The date when the refund was processed.
+refund_number,The refund number associated with the refund.
+refund_transaction_time,The date and time when the refund transaction was processed.
+settled_on,The date and time when the refund was settled.
+source_type,The type of the refund source.
+status,The status of the refund.
+submitted_on,The date and time when the refund was submitted.
+transferred_to_accounting,A flag that indicates whether the refund was transferred to the accounting system.
+type,The type of the refund.
+updated_by_id,The id of the user who last updated the refund.
+updated_date,The date and time when the refund was last updated.

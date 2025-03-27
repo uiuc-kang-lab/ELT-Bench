@@ -1,0 +1,18 @@
+column_name,column_description
+invoice_id,Xero identifier for the invoice
+contact_id,The Xero identifier for the associated contact.
+date,The date the invoice was issued.
+updated_date_utc,The date the invoice was last modified.
+planned_payment_date,"The planned payment date of the invoice, when set."
+due_date,The date the invoice is/was due.
+expected_payment_date,"The expected payment date of the invoice, when set."
+fully_paid_on_date,The date the invoice was fully paid. Only returned on fully paid invoices
+_fivetran_synced,The timestamp that Fivetran last synced the record.
+currency_code,The currency that invoice has been raised in
+currency_rate,The currency rate for a multicurrency invoice
+invoice_number,Alpha numeric code identifying invoice
+reference,Additional reference number. For accounts receivable only.
+sent_to_contact,"Boolean to indicate whether the invoice in the Xero app displays as ""sent"""
+status,The status of the invoice
+type,The type of the invoice.
+url,URL link to a source document

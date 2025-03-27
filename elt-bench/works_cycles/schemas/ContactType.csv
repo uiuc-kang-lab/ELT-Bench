@@ -1,0 +1,4 @@
+column_name,column_description
+contacttypeid,The unique id number identifying the contact type ID.
+name,Contact type description.
+modifieddate,Date and time the record was last updated. 

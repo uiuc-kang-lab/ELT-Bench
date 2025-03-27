@@ -1,0 +1,28 @@
+column_name,column_description
+year,year
+lgid,league ID number
+tmid,team ID
+franchid,Franchise ID
+confid,Conference ID
+divid,Division ID
+rank,Final standing
+playoff,playoff results
+g,games
+w,wins
+l,loses
+t,ties
+otl,Overtime losses
+pts,points
+sow,Shootout wins
+sol,Shootout loses
+gf,Goals for
+ga,goals against
+name,Full team name
+pim,Penalty minutes
+benchminor,Bench minors (minutes)
+ppg,Power play goals
+ppc,Power play chances
+sha,Shorthanded goals against
+pkg,Power play goals against
+pkc,Penalty kill chances
+shf,Shorthanded goals for

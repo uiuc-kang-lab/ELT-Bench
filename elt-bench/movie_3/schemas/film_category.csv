@@ -1,0 +1,4 @@
+column_name,column_description
+film_id,unique id number identifying the film
+category_id,id number identifying the category
+last_update,The time of the latest update

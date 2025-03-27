@@ -1,0 +1,4 @@
+column_name,column_description
+river,the name of the river
+country,the country code where it is located
+province,the province of this country

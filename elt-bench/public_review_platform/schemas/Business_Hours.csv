@@ -1,0 +1,5 @@
+column_name,column_description
+business_id,id number identifying the business
+day_id,id number identifying each day of the week
+opening_time,opening time of the business
+closing_time,closing time of the business

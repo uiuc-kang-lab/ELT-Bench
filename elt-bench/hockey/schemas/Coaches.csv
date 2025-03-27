@@ -1,0 +1,15 @@
+column_name,column_description
+coachid,number identifying coaches
+year,In which year did the coach teach this team
+tmid,team abbreviated name
+lgid,league abbreviated name
+stint,stint
+notes,note if needed
+g,number of games
+w,number of wins
+l,number of loses
+t,number of ties
+postg,number of post-season games
+postw,number of post-season wins
+postl,number of post-season loses
+postt,number of post-season ties

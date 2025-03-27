@@ -1,0 +1,6 @@
+column_name,column_description
+event_id,
+device_id,
+timestamp,
+longitude,
+latitude,

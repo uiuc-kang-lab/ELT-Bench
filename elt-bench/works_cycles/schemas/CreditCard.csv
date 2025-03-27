@@ -1,0 +1,7 @@
+column_name,column_description
+creditcardid,The unique id number identifying the credit card.
+cardtype,Credit card name.
+cardnumber,Credit card number.
+expmonth,Credit card expiration month.
+expyear,Credit card expiration year.
+modifieddate,Date and time the record was last updated. 

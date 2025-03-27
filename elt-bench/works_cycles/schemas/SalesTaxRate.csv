@@ -1,0 +1,8 @@
+column_name,column_description
+salestaxrateid,Unique id number identifying sales tax records.
+stateprovinceid,id number identifying state province.
+taxtype,Tax Type
+taxrate,Tax rate amount
+name,Tax rate description
+rowguid,Uniquely identifying the record. Used to support a merge replication sample. 
+modifieddate,Date and time the record was last updated. 

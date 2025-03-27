@@ -1,0 +1,14 @@
+column_name,column_description
+_fivetran_synced,The time when a record was last updated by Fivetran.
+contact_frequency_rule_id,The contact frequency Rule ID. Ex - FQ_AAB234234
+contact_id,The ID for the contact. Example - CID_012345678901234
+contact_lookup_id,Optional contact lookup ID for individual distribution.
+distribution_id,The unique Distribution ID.
+opened_at,"The time a survey was opened by the respondent, will be null if the survey has not been opened."
+response_completed_at,"The time a response was completed, will be null for uncompleted surveys."
+response_id,The unique ID for the `SURVEY_RESPONSE`.
+response_started_at,"The time a response was started by the respondent, will be null if survey has not been started."
+sent_at,The time a survey was sent to the respondent.
+status,The type of response.
+survey_link,The survey link sent with the distribution. This is null when no link was sent.
+survey_session_id,An identifier that represents the session in which the respondent interacted with the survey

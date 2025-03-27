@@ -1,0 +1,9 @@
+column_name,column_description
+id,Uniquely identifies the account note created.
+account_id,Account associated with the note created.
+account_updated_at,Last time the account note was updated.
+created_at,Date/time When the note was created.
+message,Contents of the note created.
+object,Object type of account note.
+user_id,Id associated with who created the note.
+user_email,Email associated with who created the note.

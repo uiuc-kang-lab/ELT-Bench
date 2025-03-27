@@ -1,0 +1,7 @@
+column_name,column_description
+movie_title,movie title
+release_date,release date
+genre,genre of the movie
+mpaa_rating,Motion Picture Association of America of the disney movie
+total_gross,The total gross of the movie.
+inflation_adjusted_gross,The inflation-adjusted gross of the movie.

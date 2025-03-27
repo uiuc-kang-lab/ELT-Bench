@@ -1,0 +1,31 @@
+column_name,column_description
+id,Unique identifier for the object.
+updated_at,When the plan was updated.
+accounting_code,"Accounting code for invoice line items for the plan. If no value is provided, it defaults to plan's code."
+auto_renew,"Subscriptions will automatically inherit this value once they are active.  If auto_renew is true, then a subscription will automatically renew its term at renewal.  If auto_renew is false, then a subscription will expire at the end of its term.  auto_renew can be overridden on the subscription record itself. Default: true
+"
+code,Unique code to identify the plan. This is used in Hosted Payment Page URLs and in the invoice exports.
+created_at,When the plan was created.
+deleted_at,When the plan was deleted.
+description,"Optional description, not displayed."
+hosted_pages_bypass_confirmation,Returns true if you use Recurly's Hosted Payment Pages and use custom return URL.
+hosted_pages_cancel_url,"If customer cancels subscription via Hosted Page, Recurly redirects customer to specific URL."
+hosted_pages_display_quantity,Number of hosted pages under plan.
+hosted_pages_success_url,"If customer successfully subscribes via Hosted Page, Recurly redirects customer to specific URL"
+interval_length,"Length of the plan's billing interval in interval_unit. Default: 1
+"
+interval_unit,"Unit for the plan's billing interval. Default: ""months"" Enum: ""days"", ""months""
+"
+name,This name describes your plan and will appear on the Hosted Payment Page and the subscriber's invoice.
+setup_fee_accounting_code,"Accounting code for invoice line items for the plan's setup fee. If no value is provided, it defaults to plan's accounting code."
+state,"The current state of the plan. Enum: ""active"", ""inactive""
+"
+tax_code,"Used by Avalara, Vertex, and Recurly’s EU VAT tax feature. The tax code values are specific to each tax system.  If you are using Recurly’s EU VAT feature you can use unknown, physical, or digital.
+"
+tax_exempt,"true exempts tax on the plan, false applies tax on the plan."
+total_billing_cycles,"Automatically terminate subscriptions after a defined number of billing cycles.  Number of billing cycles before the plan automatically stops renewing, defaults to null for continuous, automatic renewal.
+"
+trial_length,"Length of plan's trial period in trial_units. 0 means no trial. Default: 0
+"
+trial_unit,"Units for the plan's trial period. Default: ""months"" Enum: ""days"", ""months""
+"

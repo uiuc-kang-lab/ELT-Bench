@@ -1,0 +1,12 @@
+column_name,column_description
+id,Unique identifier of the keyword.
+value,The text value that makes upd the keyword.
+_fivetran_id,The unique identifier of the record within the Fivetran synced table.
+_fivetran_synced,Timestamp of when a record was last synced.
+ad_group_id,The ID of the related Ad group.
+advertiser_id,The ID of the related Advertiser.
+archived,Boolean indicating if the keyword is archived.
+bid,Bid amount set for the keyword.
+campaign_id,The ID of the related Campaign.
+match_type,Type of match the keyword is tied to. Either Exact or Broad.
+parent_type,Identifier of what grain the parent type is. Ad group or campaign.

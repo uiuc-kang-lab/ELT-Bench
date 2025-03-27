@@ -1,0 +1,5 @@
+column_name,column_description
+id,the unique identifier of the event
+sport_id,"the id of the sport
+Maps to sport(id)"
+event_name,the name of the event

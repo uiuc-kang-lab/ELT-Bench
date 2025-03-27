@@ -1,0 +1,6 @@
+column_name,column_description
+_fivetran_synced,The time when a record was last updated by Fivetran.
+import_id,A unique identifier to recognize this import job of embedded survey data.
+key,Key of the embedded survey data element.
+response_id,The unique ID for the `SURVEY_RESPONSE`.
+value,Key of the embedded survey data element.

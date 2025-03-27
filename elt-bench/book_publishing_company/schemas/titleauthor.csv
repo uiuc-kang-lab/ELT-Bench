@@ -1,0 +1,5 @@
+column_name,column_description
+au_id,author id
+title_id,title id
+au_ord,author ordering
+royaltyper,royaltyper

@@ -1,0 +1,5 @@
+column_name,column_description
+event_id,the id of events
+app_id,the id of app users
+is_installed,whether this app is installed or not
+is_active,whether this user is active or not

@@ -1,0 +1,5 @@
+column_name,column_description
+title_id,unique id number identifying title
+lorange,low range
+hirange,high range
+royalty,royalty

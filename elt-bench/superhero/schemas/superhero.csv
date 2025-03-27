@@ -1,0 +1,13 @@
+column_name,column_description
+id,the unique identifier of the superhero
+superhero_name,the name of the superhero
+full_name,the full name of the superhero
+gender_id,the id of the superhero's gender
+eye_colour_id,the id of the superhero's eye color
+hair_colour_id,the id of the superhero's hair color
+skin_colour_id,the id of the superhero's skin color
+race_id,the id of the superhero's race
+publisher_id,the id of the publisher
+alignment_id,the id of the superhero's alignment
+height_cm,the height of the superhero
+weight_kg,the weight of the superhero

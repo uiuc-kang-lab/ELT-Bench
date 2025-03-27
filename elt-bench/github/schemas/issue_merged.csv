@@ -1,0 +1,3 @@
+column_name,column_description
+issue_id,Foreign key that references the issue table.  This table will only reference issues that are pull requests
+merged_at,Timestamp of when the code merge took place

@@ -1,0 +1,8 @@
+column_name,column_description
+_fivetran_deleted,Boolean representing whether the record was soft-deleted in Qualtrics.
+_fivetran_synced,The time when a record was last updated by Fivetran.
+id,The ID for the mailing list.
+library_id,The library ID. Example: `UR_1234567890AbCdE`
+name,Name of the mailing list.
+category,The library ID. Example: UR_1234567890AbCdE
+folder,The folder this is placed in.

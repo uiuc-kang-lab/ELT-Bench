@@ -1,0 +1,8 @@
+column_name,column_description
+_fivetran_deleted,Boolean representing whether the record was soft-deleted in Qualtrics.
+_fivetran_synced,The time when a record was last updated by Fivetran.
+key,Key of the embedded survey data element.
+question_id,The unique identifier for the question. Match pattern = ^QID[a-zA-Z0-9]+$
+recode_value,Recode/mapping value for the option.
+survey_id,"The unique identifier for this survey. Match pattern = ^SV_[a-zA-Z0-9]{11,15}$"
+text,Question option text.

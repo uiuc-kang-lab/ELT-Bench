@@ -1,0 +1,4 @@
+column_name,column_description
+film_id,unique id number identifying the film
+title,title of the film
+description,main content of the film

@@ -1,0 +1,12 @@
+column_name,column_description
+episode_id,the unique identifier of the episode
+series,the name of the series
+season,a number indicating the season of the episode
+episode,the sequential number of the episode within a specific season
+number_in_series,the overall sequence number of episode in the entire series
+title,the title of the episode
+summary,a brief description of what happens in the episode
+air_date,the date the episode was initially broadcast in the United States
+episode_image,a link to an image from the episode
+rating,the weighted average of the votes received for the episode
+votes,the total number of rating votes for the episode

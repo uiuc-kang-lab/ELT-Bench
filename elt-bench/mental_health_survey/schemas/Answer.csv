@@ -1,0 +1,5 @@
+column_name,column_description
+answertext,The specific and detailed answer text of each question.
+surveyid,The id of each survey.
+userid,The id of different user.
+questionid,The id of different questions.

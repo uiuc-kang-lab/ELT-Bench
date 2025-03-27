@@ -1,0 +1,6 @@
+column_name,column_description
+city_id,unique identifier for the city
+city_name,name of the city
+state,state in which the city is
+population,population of the city
+area,square miles the city covers

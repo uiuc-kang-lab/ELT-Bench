@@ -1,0 +1,54 @@
+models:
+  - name: publishers
+    description: Each record represents a publisher.
+    columns:
+      - name: publisher_id
+        description: Unique identifier for the publisher.
+      - name: publisher_name 
+        description: Name of the publisher.
+      - name: num_books
+        description: Number of books published by the publisher, replace NULL values with 0.
+      - name: num_books_pages_greater_than_70_per_of_avg
+        description: Number of books with more than 70% of the average number of pages of all books, replace NULL values with 0.
+      - name: per_Japanese_books
+        description: Percentage of books published by the publisher that are written in Japanese.
+      - name: title_of_the_oldest_book
+        description: Title of the oldest book published by the publisher, with ties broken by the ascending order of the title.
+      - name: book_title_with_the_most_pages
+        description: Title of the book with the most pages published by the publisher, with ties broken by the descending order of the title.
+  - name: customers
+    description: Each record represents a customer.
+    columns:
+      - name: customer_id
+        description: Unique identifier for the customer.
+      - name: customer_name
+        description: Name of the customer. Concatenate the first name and last name with a space in between.
+      - name: email
+        description: Email of the customer.
+      - name: per_books_over_13
+        description: the percentage of those books ordered by the customer whose price is over $13
+      - name: num_orders
+        description: Number of orders placed by the customer, replace NULL values with 0.
+      - name: preferred_shipping_method
+        description: the shipping method that is preferred by customers the most, with ties broken by the ascending order of the shipping method name.
+      - name: has_ordered_the_oldest_book
+        description: Set to 1 if the customer has ordered the oldest book; otherwise, set to 0.
+      - name: per_order_shipped_internationally
+        description: the percentage of orders placed by the customer that were shipped internationally
+  - name: authors
+    description: Each record represents an author.
+    columns:
+      - name: author_id
+        description: Unique identifier for the author.
+      - name: author_name
+        description: Name of the author.
+      - name: first_book
+        description: Title of the first book written by the author, with ties broken by the ascending order of the title.
+      - name: per_book_published_1992
+        description: the percentage of books published by the author in 1992
+      - name: wrote_fewer_total_pages_than_the_average
+        description: Set to 1 if the author has written fewer total pages than the average total pages of all authors; otherwise, set to 0.
+      - name: most_expensive_book
+        description: Title of the most expensive book written by the author, with ties broken by the descending order of the title.
+      - name: avg_book_price_over_19
+        description: Set to 1 if the average price of the books written by the author is over $19; otherwise, set to 0.

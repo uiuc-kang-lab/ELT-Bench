@@ -1,0 +1,18 @@
+models:
+  - name: images
+    description: Each record represents an image
+    columns:
+      - name: img_id
+        description: Unique identifier for the image
+      - name: num_object_samples
+        description: Number of object samples in the image, replace NULL values with 0.
+      - name: has_at_least_one_object_sample_with_class_man
+        description: set to 1 if the image has at least one object sample in the class of "man",otherwise, set to 0
+      - name: avg_height_of_objects
+        description: Average height of the objects in the image
+      - name: num_self_relations
+        description: the number of self-relations between the object samples in the image, replace NULL values with 0.
+      - name: has_at_least_five_black_classes
+        description: set to 1 if the image has at least five object samples in the class of "black",otherwise, set to 0
+      
+  

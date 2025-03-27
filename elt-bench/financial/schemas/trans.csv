@@ -1,0 +1,11 @@
+column_name,column_description
+trans_id,transaction id
+account_id,
+date,date of transaction
+type,+/- transaction
+operation,mode of transaction
+amount,amount of money
+balance,balance after transaction
+k_symbol,
+bank,
+account,

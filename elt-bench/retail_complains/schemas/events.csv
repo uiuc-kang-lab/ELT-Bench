@@ -1,0 +1,16 @@
+column_name,column_description
+date_received,Date received
+product,complaining about which product 
+sub_product,sub product if exists
+issue,problems leading to this complaints
+sub_issue,sub problems leading to this complaints if exists
+consumer_complaint_narrative,Consumer complaint narrative
+tags,tags of client
+consumer_consent_provided,whether the tags labeled under permission of the clients
+submitted_via,Submitted via
+date_sent_to_company,Date sent to company
+company_response_to_consumer,Company response to consumer
+timely_response,whether the response of the company is timely
+consumer_disputed,whether the consumer dispute about the response from the company.
+complaint_id,id number indicating which complaint
+client_id,id number indicating which client

@@ -1,0 +1,26 @@
+column_name,column_description
+_fivetran_deleted,Boolean representing whether the record was soft-deleted in Qualtrics.
+_fivetran_synced,The time when a record was last updated by Fivetran.
+created_date,The creation date and time of the record, expressed as an ISO 8601 value.
+header_from_email,Email from address.
+header_from_name,Email from name.
+header_reply_to_email,Email reply-to address.
+header_subject,Email subject; text or message id (MS_).
+id,The unique Distribution ID.
+message_library_id,Library ID of the message.
+message_message_id,The ID for the desired library message.
+message_message_text,Text of the message to send.
+modified_date,The point in time when the record was last modified.
+organization_id,ID of the organization/brand this record belongs to.
+owner_id,The unique identifier for a specific user who owns this.
+parent_distribution_id,The unique ID of the parent distribution.
+recipient_contact_id,The contact ID of the recipient. Can point to `directory_contact` or `core_contact`.
+recipient_library_id,Library ID of the message.
+recipient_mailing_list_id,The mailing list or contact group associated with the distribution(s). Can point to `directory_mailing_list` or `core_mailing_list`.
+recipient_sample_id,The ID for the desired sample. Can point to `directory_sample` or `core_sample` (not included in package).
+request_status,The distribution's status. States include `Pending` and `Done`. The Pending state is for email that is scheduled to be sent at a later time.
+request_type,"The distribution's type. Types include `Invite`, `Reminder`, and `ThankYou`."
+send_date,The date and time the request will be or was sent (in ISO 8601 format). Note that this date and time could be in the future if the email distribution is scheduled to send after a delay.
+survey_link_expiration_date,The expiration date for the link associated with the survey distribution. Null if `request_type` != `Invite`.
+survey_link_link_type,"The link type (`Individual`, `Anonymous`, or `Multiple`) for the link associated with the survey distribution. Null if `request_type` != `Invite`."
+survey_link_survey_id,The unique survey ID. Will be non-null even if `request_type` != `Invite`.

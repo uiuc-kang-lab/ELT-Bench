@@ -1,0 +1,5 @@
+column_name,column_description
+fbi_code_no,unique code made by fbi to classify the crime cases
+title,Short description of the kind of crime
+description,Detailed description of the kind of crime
+crime_against,States who the crime is against. 

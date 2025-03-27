@@ -1,0 +1,8 @@
+column_name,column_description
+movie_id,"the id of the movie that the crew worked for
+Maps to movie(movie_id)"
+person_id,"the id of the crew
+Maps to person(person_id)"
+department_id,"the id of the crew's department
+Maps to department(department_id)"
+job,the job of the crew

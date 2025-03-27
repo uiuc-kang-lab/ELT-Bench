@@ -1,0 +1,3 @@
+column_name,column_description
+id,Sales Account ID associated with the app name or app ID.
+name,"Sales Account Name associated with the Sales Account ID, app name or app ID. "

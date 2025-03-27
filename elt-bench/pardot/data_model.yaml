@@ -1,0 +1,180 @@
+models:
+  - name: pardot__campaigns
+    description: Each record represents a campaign in Pardot
+    columns:
+      - name: campaign_id
+        description: Pardot ID for this campaign
+      - name: campaign_name
+        description: Campaign's name
+      - name: _fivetran_deleted
+        description: Boolean representing whether the record has been deleted in the source system.
+      - name: _fivetran_synced
+        description: The timestamp of when a record was last synced by Fivetran.
+      - name: count_opportunities
+        description: Count of all campaign opportunities.
+      - name: count_opportunities_won
+        description: Count of all campaign opportunities won.
+      - name: count_opportunities_lost
+        description: Count of all campaign opportunities lost.
+
+  - name: pardot__lists
+    description: Each record represents a list in Pardot.
+    columns:
+      - name: list_id
+        description: Pardot ID of this list
+      - name: name
+        description: List's name (internal to Pardot)
+      - name: description
+        description: List's description
+      - name: title
+        description: List's title (visible to subscribers)
+      - name: is_crm_visible
+        description: If true, list is visible in CRM to add or remove from
+      - name: is_public
+        description: If true, list will show on EPC pages to prospects
+      - name: is_dynamic
+        description: If true, list has prospects dynamically added to it via a set of chosen rules
+      - name: created_timestamp
+        description: Time list is created in Pardot.
+      - name: updated_timestamp
+        description: Last time list was updated
+      - name: _fivetran_synced
+        description:  The timestamp of when a record was last synced by Fivetran.
+      - name: count_activity_emails
+        description: Count of email activities associated with the members of the list. Set the value to 0 if it is NULL.
+      - name: count_activity_visits
+        description: Count of visit activities associated with the members of the list. Set the value to 0 if it is NULL.
+
+  - name: pardot__opportunities
+    description: Each record represents an opportunity in Pardot.
+    columns:
+      - name: opportunity_id
+        description: Pardot ID for this opportunity
+      - name: campaign_id
+        description: Pardot ID of the campaign associated with this opportunity
+      - name: created_timestamp
+        description: Time opportunity is created in Pardot
+      - name: updated_timestamp
+        description: Last time opportunity was updated in Pardot
+      - name: opportunity_name
+        description: Opportunity's name
+      - name: probability
+        description: Opportunity's probability
+      - name: opportunity_status
+        description: Opportunity's status
+      - name: stage
+        description: Opportunity's stage
+      - name: opportunity_type
+        description: Opportunity's type
+      - name: amount
+        description: Opportunity's value
+      - name: _fivetran_synced
+        description: The timestamp of when a record was last synced by Fivetran.
+      - name: closed_timestamp
+        description: Opportunity's closed date
+      - name: count_prospects
+        description: Number of prospects associated with the opportunity.
+
+  - name: pardot__prospects
+    description: Each record in the table represents a prospect in Pardot.
+    columns:
+      - name: prospect_id
+        description: Pardot ID for this prospect
+      - name: _fivetran_deleted
+        description: Boolean representing whether the record has been deleted in the source system.
+      - name: _fivetran_synced
+        description: The timestamp of when a record was last synced by Fivetran.
+      - name: address_one
+        description: Prospect's address, line 1
+      - name: address_two
+        description: Prospect's address, line 2
+      - name: annual_revenue
+        description: Prospect's annual revenue
+      - name: campaign_id
+        description: Pardot ID of the campaign associated with this prospect
+      - name: city
+        description: Prospect's city
+      - name: comments
+        description: Comments about this prospect
+      - name: company
+        description: Prospect's company
+      - name: country
+        description: Prospect's country
+      - name: created_timestamp
+        description: Time prospect is created in Pardot; Time is reported in API user's preferred timezone
+      - name: crm_account_fid
+        description: Account ID in a supported CRM system
+      - name: crm_contact_fid
+        description: Prospect's contact ID in a supported CRM system
+      - name: crm_last_sync
+        description: Last time this prospect was synced with a supported CRM system
+      - name: crm_lead_fid
+        description: Prospect's lead ID in a supported CRM system
+      - name: crm_owner_fid
+        description: Prospect's owner ID in a supported CRM system
+      - name: crm_url
+        description: URL to view the prospect within the CRM system
+      - name: department
+        description: Prospect's department
+      - name: email
+        description: Prospect's email address
+      - name: employees
+        description: Prospect's number of employees
+      - name: fax
+        description: Prospect's fax number
+      - name: first_name
+        description: Prospect's first name
+      - name: grade
+        description: Prospect's letter grade
+      - name: industry
+        description: Prospect's industry
+      - name: is_do_not_call
+        description: If value is 1, prospect prefers not to be called
+      - name: is_do_not_email
+        description: If value is 1, prospect prefers not to be emailed
+      - name: is_reviewed
+        description: If value is 1, prospect has been reviewed
+      - name: is_starred
+        description: If value is 1, prospect has been starred
+      - name: job_title
+        description: Prospect's job title
+      - name: last_activity_at
+        description: Time stamp of this prospect's latest visitor activity; Time is reported in API user's preferred timezone
+      - name: last_name
+        description: Prospect's last name
+      - name: notes
+        description: Notes about this prospect
+      - name: opted_out
+        description: If value is 1, prospect has opted out of marketing communications
+      - name: password
+        description: Prospect's password
+      - name: phone_number
+        description: Prospect's phone number
+      - name: prospect_account_id
+        description: Prospect's account ID
+      - name: recent_interaction
+        description: Describes the prospect's most recent interaction with Pardot
+      - name: salutation
+        description: Prospect's formal prefix
+      - name: score
+        description: Prospect's score
+      - name: prospect_source
+        description: Prospect's source
+      - name: state
+        description: Prospect's US state
+      - name: territory
+        description: Prospect's territory
+      - name: updated_timestamp
+        description: Last time prospect was updated in Pardot; Time is reported in API user's preferred timezone
+      - name: user_id
+        description: Pardot ID of the user associated with this prospect
+      - name: website
+        description: Prospect's website URL
+      - name: years_in_business
+        description: Prospect's number of years in business
+      - name: zip
+        description: Prospect's postal code
+      - name: count_activity_visits
+        description: Count of visit activities associated with the prospect. Set the value to 0 if it is NULL.
+      - name: count_activity_emails
+        description: Count of email activities associated with the prospect. Set the value to 0 if it is NULL.

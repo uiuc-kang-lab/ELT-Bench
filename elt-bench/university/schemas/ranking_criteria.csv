@@ -1,0 +1,4 @@
+column_name,column_description
+id,unique id number identifying ranking criteria
+ranking_system_id,id number identifying ranking system
+criteria_name,name of the criteria

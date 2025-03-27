@@ -1,0 +1,58 @@
+models:
+  - name: book_stores
+    description: Each record represents a store.
+    columns:
+      - name: store_id
+        description: Unique identifier for the store.
+      - name: store_name
+        description: Name of the store.
+      - name: state
+        description: State where the store is located.
+      - name: least_quantity_sale_title
+        description: The title of the book with the least quantity sold in the store, with ties broken by the ascending order of the title.
+      - name: total_sales_quantity
+        description: Total quantity of books sold in the store, replace NULL values with 0.
+      - name: percentage_of_Net_30_payment
+        description: the percentage of the quantity ordered that were on 'Net 30' payment terms
+      - name: percentage_of_psychology
+        description: The percentage of psychology book sold by the store
+      - name: title_has_highest_ytd_sales
+        description: The title of the book with the highest year-to-date sales in the store, with ties broken by the ascending order of the title.
+  - name: book_publishers
+    description: Each record represents a publisher.
+    columns:
+      - name: pub_id
+        description: Unique identifier for the publisher.
+      - name: pub_name
+        description: Name of the publisher.
+      - name: country
+        description: Country where the publisher is located.
+      - name: number_of_titles_1991
+        description: Number of titles published by the publisher in 1991, replace NULL values with 0.
+      - name: most_expensive_book
+        description: The title of the most expensive book published by the publisher, with ties broken by the ascending order of the title.
+      - name:  book_has_the_highest_royalty
+        description: The title of the book with the highest royalty published by the publisher, with ties broken by the descending order of the title.
+      - name: average_ytd_sales
+        description: Average year-to-date sales of the books published by the publisher.
+      - name: most_ytd_sale_title
+        description: The title of the book with the most year-to-date sales published by the publisher, with ties broken by the ascending order of the title.
+  - name: book_titles
+    description: Each record represents a title.
+    columns:
+      - name: title_id
+        description: Unique identifier for the title.
+      - name: title
+        description: Title of the book.
+      - name: type
+        description: Type of the title.
+      - name: has_ytd_sales_higher_than_average
+        description: Set to 1 if the year-to-date sales of the title are higher than the average year-to-date sales of all titles; otherwise, set to 0.
+      - name: has_above_average_royalty_rate
+        description: Set to 1 if the royalty rate of the title is above the average royalty rate of all titles; otherwise, set to 0.
+      - name: sold_more_than_average
+        description: Set to 1 if the title has sold more copies than the average number of copies sold by all titles; otherwise, set to 0.
+      - name: number_of_sales_in_California_stores
+        description: Number of copies sold in stores located in California, replace NULL values with 0.
+      - name: ordered_quantity_1992
+        description: Quantity of the title ordered in 1992.

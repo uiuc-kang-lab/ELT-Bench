@@ -1,0 +1,5 @@
+column_name,column_description
+id,Conference Id
+shortname,Short name
+fullname,Full name
+homepage,Homepage URL of conference

@@ -1,0 +1,7 @@
+column_name,column_description
+index,An index for a particular identifier.
+personal_info_system_id,The system ID associated with the personal information of the individual.
+_fivetran_deleted,Indicates if the record was soft-deleted by Fivetran.
+_fivetran_synced,Timestamp the record was synced by Fivetran.
+ethnicity_code,The code representing the ethnicity of the individual.
+ethnicity_id,The identifier associated with the ethnicity.

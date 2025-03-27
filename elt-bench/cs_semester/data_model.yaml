@@ -1,0 +1,58 @@
+models:
+  - name: students
+    description: Each record represents a student.
+    columns:
+      - name: student_id
+        description: Unique identifier for the student.
+      - name: first_name
+        description: First name of the student.
+      - name: last_name
+        description: Last name of the student.
+      - name: got_B_in_MLT_and_gpa_over3
+        description: Set to 1 if the student got a B in the course 'Machine Learning Theory' and has a gpa of over 3, otherwise, set to 0
+      - name: has_the_highest_intelligence_UG
+        description: Set to 1 if the student has the highest intelligence when taking a bachelor's degree, otherwise, set to 0
+      - name: is_under_supervision_of_most_popular_professor
+        description: Set to 1 if the student is under the supervision of the most popular professor, otherwise, set to 0
+      - name: GPA_based_on_registration
+        description: The GPA of the student based on the courses the student registered
+      - name: num_courses_taken
+        description: The number of courses the student has taken, replace NULL values with 0.
+  - name: professors
+    description: Each record represents a professor.
+    columns:
+      - name: prof_id
+        description: Unique identifier for the professor.
+      - name: first_name
+        description: First name of the professor.
+      - name: last_name
+        description: Last name of the professor.
+      - name: num_RA
+        description: The number of research assistants the professor has, replace NULL values with 0.
+      - name: percentage_of_RA_tpg
+        description: The percentage of the professor's research assistants are taught postgraduate students
+      - name: num_students_with_the_highest_research_ability
+        description: The number of students with the highest research ability that the professor has supervised, replace NULL values with 0.
+      - name: has_more_than_average_teaching_ability_and_1_student
+        description: Set to 1 if the professor has more than the average teaching ability and has more than 1 student, otherwise, set to 0
+      - name: num_of_students_high_salary
+        description: The number of students that have a high salary that the professor has supervised, replace NULL values with 0.
+  - name: courses
+    description: Each record represents a course.
+    columns:
+      - name: course_id
+        description: Unique identifier for the course.
+      - name: name
+        description: Name of the course.
+      - name: credit
+        description: The credit of the course.
+      - name: num_students_got_A
+        description: The number of students that got an A in the course, replace NULL values with 0.
+      - name: per_of_students_highest_satisfaction_score_for_the_course
+        description: The percentage of students that have the highest satisfaction score for the course.
+      - name: number_of_students_fail
+        description: The number of students that failed the course, replace NULL values with 0.
+      - name: percentage_of_UG
+        description: The percentage of undergraduate students that took the course.
+      - name: average_satisfying_degree
+        description: The average satisfying degree of the course.

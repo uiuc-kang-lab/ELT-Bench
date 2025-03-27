@@ -1,0 +1,5 @@
+column_name,column_description
+id,the unique identifier of the record
+game_publisher_id,the id of the game publisher
+platform_id,the id of the platform
+release_year,the release year of the game

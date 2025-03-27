@@ -1,0 +1,61 @@
+Airbyte:
+  config:
+    files_definition_id: 778daa7c-feaf-4db6-96f3-70fd645acc77
+    mongodb_definition_id: b2e713cd-cc36-4c0a-b5bd-b47cb8a0561e
+    namespace_definition: destination
+    postgres_definition_id: decd338e-5647-4c0b-adf4-da0e75f5a750
+    s3_definition_id: 69589781-7828-43c5-9f63-8925b1c1ccc2
+    server_url: http://airbyte-abctl-control-plane:80/api/public/v1/
+    snowflake_definition_id: 424892c4-daac-4491-b35d-c6688ba547ba
+aws_s3:
+  AWS_ACCESS_KEY_ID: test
+  AWS_DEFAULT_REGION: us-west-2
+  AWS_ENDPOINT_URL: http://elt-localstack:4566
+  AWS_SECRET_ACCESS_KEY: test
+  data:
+  - path: s3://microsoft-ads-bucket/keyword_history.jsonl
+    sync_mode: full_refresh_append
+    table: keyword_history
+custom_api:
+  config:
+    configuration: {}
+    sync_mode: full_refresh_append
+    tables:
+    - ad_group_history
+    - keyword_performance_daily_report
+    - search_performance_daily_report
+flat_files:
+- format: csv
+  path: https://drive.google.com/uc?export=download&id=1Gmv63P_w6ityCQ82KjOpzw6oDYD9rAhF
+  sync_mode: full_refresh_append
+  table: campaign_history
+mongodb:
+  config:
+    connection_string: mongodb://elt-mongodb:27017/?directConnection=true
+    database: microsoft_ads
+    sync_mode: full_refresh_append
+    tables:
+    - account_history
+    - ad_history
+postgres:
+  config:
+    database: microsoft_ads
+    host: elt-postgres
+    password: testelt
+    port: 5432
+    schema: public
+    sync_mode: full_refresh_append
+    tables:
+    - account_performance_daily_report
+    - ad_group_performance_daily_report
+    - ad_performance_daily_report
+    - campaign_performance_daily_report
+    user: postgres
+snowflake:
+  config:
+    database: microsoft_ads
+    password: Snowflake@123
+    role: AIRBYTE_ROLE
+    schema: AIRBYTE_SCHEMA
+    username: AIRBYTE_USER
+    warehouse: AIRBYTE_WAREHOUSE

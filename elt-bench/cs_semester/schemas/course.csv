@@ -1,0 +1,5 @@
+column_name,column_description
+course_id,unique id representing the course
+name,name of the course
+credit,credit of the course
+diff,difficulty of the course

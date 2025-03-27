@@ -1,0 +1,16 @@
+column_name,column_description
+_fivetran_synced,Timestamp of when fivetran synced a record.
+account_id,The unique identifier of the account associated with the address.
+city,The city or locality of the address.
+created_at,The timestamp indicating when the address record was created.
+customer_name,The name of the customer or contact associated with the address.
+emergency_enabled,A boolean value indicating whether emergency services are enabled for the address.
+friendly_name,A user-friendly name or label associated with the address.
+id,The unique identifier for the address record.
+iso_country,The ISO country code of the address.
+postal_code,The postal code or ZIP code of the address.
+region,The region or state of the address.
+street,The street address.
+updated_at,The timestamp indicating when the address record was last updated.
+validated,A boolean value indicating whether the address has been validated.
+verified,A boolean value indicating whether the address has been verified.

@@ -1,0 +1,32 @@
+column_name,column_description
+playerid,player ID
+year,play year
+stint,Stint (order of appearance in a season)
+tmid,team id
+lgid,league id
+pos,position
+gp,game played
+g,goals
+a,assists
+pts,points
+pim,Penalty minutes
+p_n,Plus / minus
+ppg,Power play goals
+ppa,Power play assists
+shg,Shorthanded goals
+sha,Shorthanded assists
+gwg,Game-winning goals
+gtg,Game-tying goals
+sog,Shots on goal
+postgp,Postseason games played
+postg,Postseason goals
+posta,Postseason assists
+postpts,Postseason points
+postpim,Postseason penalty minutes
+postp_n,Postseason Plus / minus
+postppg,Postseason power play goals
+postppa,Postseason power play assists
+postshg,Postseason Shorthanded goals
+postsha,Postseason Shorthanded assists
+postgwg,Postseason game-winning goals
+postsog,Postseason shots on goal

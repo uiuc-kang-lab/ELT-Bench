@@ -1,0 +1,4 @@
+column_name,column_description
+CustomerID,identification of the customer
+Segment,client segment
+Currency,Currency

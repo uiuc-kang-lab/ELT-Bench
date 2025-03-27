@@ -1,0 +1,4 @@
+column_name,column_description
+region_id,the id of the region
+game_platform_id,the id of the game platform
+num_sales,the number of sales in this region

@@ -1,0 +1,3 @@
+column_name,column_description
+role_id,the unique identifier of the language id
+language_role,the language role
