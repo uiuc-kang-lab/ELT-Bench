@@ -1,6 +1,6 @@
 # ELT-Bench
 
-![ELT](path/to/image.svg)
+![ELT](https://github.com/uiuc-kang-lab/ELT-Bench/blob/update/materials/elt.svg)
 ## Environment Setup
 
 ### Install Docker and Conda 
