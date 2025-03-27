@@ -1,0 +1,1 @@
+select * from food_inspection.airbyte_schema.restaurants order by business_id

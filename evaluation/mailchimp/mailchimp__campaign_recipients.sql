@@ -1,0 +1,1 @@
+SELECT * FROM mailchimp.airbyte_schema.mailchimp__campaign_recipients ORDER BY MEMBER_ID;

@@ -1,0 +1,1 @@
+SELECT * FROM microsoft_ads.airbyte_schema.microsoft_ads__ad_group_report ORDER BY ad_group_id, DATE_DAY;

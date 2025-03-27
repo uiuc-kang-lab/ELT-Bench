@@ -1,33 +1,64 @@
 # ELT-Bench
 
-## Setup
+![ELT](path/to/image.svg)
+## Environment Setup
 
-### Install Docker
-Ensure that your machine has installed [`docker` environment](https://docs.docker.com/get-docker/) before proceeding.
+### Install Docker and Conda 
+- Ensure your machine has the [Docker environment](https://docs.docker.com/get-docker/) and the [Conda environment](https://docs.conda.io/projects/conda/en/stable/user-guide/install/index.html) installed.
 
 ### Install Airbyte 
-Airbyte is a leading data integration platform for ELT pipelines from APIs, databases & files to databases, warehouses & lakes. You can deploy Airbyte Open Source by following the [official documentation](https://docs.airbyte.com/using-airbyte/getting-started/oss-quickstart). You may need to add sudo before abctl.
+- You can deploy Airbyte Open Source by following the [official documentation](https://docs.airbyte.com/using-airbyte/getting-started/oss-quickstart).  
+*Note:* You may need to add `sudo` before `abctl` commands.
 
-### Create Docker Containers for Different Data Sources
-You can create the docker container for Postgres, MongoDB, LocalStack (AWS S3 simulator), and API by running following commands:
-```
-cd ./elt-docker
-docker compose up -d
-```
+### Setup Airbyte 
 
-Then connect the Airbyte container to the same network.
-```
-docker network connect elt-docker_elt_network airbyte-abctl-control-plane
-```
+- Navigate to [http://localhost:8000/](http://localhost:8000/) in your web browser. Set your username. To retrieve your password, execute:
+  ```bash
+  (sudo) abctl local credentials
+  ```
 
-### Set up data sources
-After creating the containers, you can now insert data by running following commands. Replace '<path>' with the actual data path, for exmaple, if the data is located in '/mydata/elt/data/', replace '<path>' with '/mydata/elt'
+- In the Airbyte UI, go to Builder > Import a YAML. 
+Upload the YAML file located at ./setup/elt_bench.yaml.
+Click on the Publish button, type ignore warnings, and publish it to your workspace.
 
-```
-cd ./setup
-bash data_setup.sh <path>
-```
+- In the Airbyte UI, go to **Sources > Custom > ELT Bench**. Retrieve the Workspace ID and Definition ID from the URL:
+  ```
+  http://localhost:8012/workspaces/<workspace_id>/source/new-source/<api_definition_id>
+  ```
+  Update the file `./setup/airbyte/airbyte_credentials.json` by filling in the following information: username, password, workspace ID, and API definition ID.
+
+
+### Install psql
+- To insert data into PostgreSQL without installing the complete PostgreSQL database server, you can use the `psql` command-line tool. 
+Please refer to the [installation instructions](https://www.timescale.com/blog/how-to-install-psql-on-mac-ubuntu-debian-windows) to install `psql` on your machine.
+After successful installation, you can confirm the installation by running:
+
+  ```bash
+  psql --version
+  ```
 
 ### Set up data destination - Snowflake
-First, create the necessary credentials to access the Snowflake database by referring to the example in ./setup/destination/setup.sql.
-Next, fill in the required values in ./setup/destination/snowflake_credential to ensure Airbyte can successfully connect to Snowflake.
+- Refer to the example in `./setup/destination/setup.sql`. Copy all the contents into a Snowflake worksheet and execute "Run all" to create the necessary credentials.
+
+- Fill in the required values in `./setup/destination/snowflake_credential` to ensure Airbyte can successfully connect to Snowflake.
+
+### Run ELT setup
+- Execute the script to create Docker containers for various sources, download both source data and ground truth results for evaluation, and insert the data.
+  ```bash
+  cd ./setup
+  bash elt_setup.sh
+  ```
+
+## Running agents
+- To evaluate the Spider-Agent and SWE-agent on ELT-Bench, follow the instructions in the `agents` folder. This folder contains detailed steps for running each agent.
+
+## Evaluation
+
+- To evaluate the performance of an agent, use the following commands:
+
+  ```bash
+  cd evaluation
+  python eva.py --folder folder_name
+  ```
+
+  Replace folder_name with your desired name for the evaluation results. The newly created folder with the results will be located at `./evaluation/agent_results`.

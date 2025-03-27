@@ -1,0 +1,1 @@
+SELECT * FROM music_platform_2.airbyte_schema.music_platform__categories ORDER BY category;

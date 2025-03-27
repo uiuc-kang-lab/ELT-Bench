@@ -1,0 +1,1 @@
+select * from apple_store.airbyte_schema.apple_store__device_report order by device,DATE_DAY;

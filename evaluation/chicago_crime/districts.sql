@@ -1,0 +1,1 @@
+SELECT * FROM chicago_crime.airbyte_schema.districts ORDER BY district_no;

@@ -1,0 +1,1 @@
+SELECT * FROM books.airbyte_schema.publishers ORDER BY publisher_id;

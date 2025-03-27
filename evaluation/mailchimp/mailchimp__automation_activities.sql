@@ -1,0 +1,1 @@
+SELECT * FROM mailchimp.airbyte_schema.mailchimp__automation_activities ORDER BY automation_email_id, ACTIVITY_ID;

@@ -1,0 +1,1 @@
+SELECT * FROM mondial_geo.airbyte_schema.countries ORDER BY country_name;

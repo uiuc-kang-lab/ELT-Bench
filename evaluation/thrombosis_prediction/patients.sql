@@ -1,0 +1,1 @@
+SELECT * FROM thrombosis_prediction.airbyte_schema.patients ORDER BY id;

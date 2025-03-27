@@ -1,0 +1,1 @@
+SELECT * FROM movie_3.airbyte_schema.films ORDER BY film_id;

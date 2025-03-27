@@ -1,0 +1,1 @@
+select * from movielens.airbyte_schema.movielens__movies order by movieid;

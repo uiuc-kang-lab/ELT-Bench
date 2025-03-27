@@ -1,0 +1,1 @@
+SELECT * from asana.airbyte_schema.asana__project ORDER BY project_id;

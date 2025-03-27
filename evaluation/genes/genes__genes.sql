@@ -1,0 +1,1 @@
+select * from genes.airbyte_schema.genes__genes order by geneid;

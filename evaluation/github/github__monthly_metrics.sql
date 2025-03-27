@@ -1,0 +1,1 @@
+SELECT * FROM github.airbyte_schema.github__monthly_metrics ORDER BY month, REPOSITORY;

@@ -1,0 +1,1 @@
+SELECT * FROM movie_platform.airbyte_schema.movie_platform__list_users ORDER BY user_id;

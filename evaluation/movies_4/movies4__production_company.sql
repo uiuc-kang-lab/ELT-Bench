@@ -1,0 +1,1 @@
+SELECT * FROM movies_4.airbyte_schema.movies4__production_company ORDER BY company_id;

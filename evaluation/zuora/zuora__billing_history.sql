@@ -1,0 +1,1 @@
+SELECT * FROM zuora.airbyte_schema.zuora__billing_history ORDER BY invoice_id;

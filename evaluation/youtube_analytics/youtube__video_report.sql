@@ -1,0 +1,1 @@
+SELECT * FROM youtube_analytics.airbyte_schema.youtube__video_report ORDER BY video_id, AVERAGE_VIEW_DURATION_PERCENTAGE, DATE_DAY;

@@ -1,0 +1,1 @@
+SELECT * FROM cars.airbyte_schema.countries ORDER BY origin;

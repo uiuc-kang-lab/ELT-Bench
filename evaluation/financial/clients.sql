@@ -1,0 +1,1 @@
+select * from financial.airbyte_schema.clients order by client_id;

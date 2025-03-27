@@ -1,0 +1,1 @@
+select * from sales.airbyte_schema.sales__customers order by CustomerID

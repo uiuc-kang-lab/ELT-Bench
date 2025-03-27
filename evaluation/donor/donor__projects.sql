@@ -1,0 +1,1 @@
+SELECT * FROM donor.airbyte_schema.donor__projects ORDER BY project_id;

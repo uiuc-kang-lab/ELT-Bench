@@ -1,0 +1,1 @@
+SELECT * FROM card_games.airbyte_schema.card_games__sets ORDER BY id;

@@ -1,0 +1,1 @@
+SELECT * FROM sales_in_weather.airbyte_schema.stores ORDER BY store_nbr;

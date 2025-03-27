@@ -1,0 +1,1 @@
+SELECT * FROM synthea.airbyte_schema.synthea__patients ORDER BY patient;

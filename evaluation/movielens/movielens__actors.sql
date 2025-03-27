@@ -1,0 +1,1 @@
+select * from movielens.airbyte_schema.movielens__actors order by actorid;

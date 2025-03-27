@@ -1,0 +1,1 @@
+SELECT * FROM github.airbyte_schema.github__pull_requests ORDER BY issue_number,ISSUE_ID;

@@ -1,0 +1,1 @@
+SELECT * FROM tiktok_ads.airbyte_schema.tiktok_ads__advertiser_report ORDER BY advertiser_id;

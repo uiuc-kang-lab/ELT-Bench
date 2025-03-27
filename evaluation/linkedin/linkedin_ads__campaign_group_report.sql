@@ -1,0 +1,1 @@
+SELECT * FROM linkedin.airbyte_schema.linkedin_ads__campaign_group_report ORDER BY campaign_group_id;

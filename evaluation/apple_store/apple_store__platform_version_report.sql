@@ -1,0 +1,1 @@
+select * from apple_store.airbyte_schema.apple_store__platform_version_report order by platform_version, DATE_DAY;

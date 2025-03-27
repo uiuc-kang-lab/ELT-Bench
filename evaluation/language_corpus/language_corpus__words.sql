@@ -1,0 +1,1 @@
+SELECT * FROM language_corpus.airbyte_schema.language_corpus__words ORDER BY word_id;
