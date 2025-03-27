@@ -1,0 +1,1 @@
+select * from law_episode.airbyte_schema.law_episode__person order by person_id;

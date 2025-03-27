@@ -1,0 +1,1 @@
+SELECT * FROM olympics.airbyte_schema.sports ORDER BY sport_id;

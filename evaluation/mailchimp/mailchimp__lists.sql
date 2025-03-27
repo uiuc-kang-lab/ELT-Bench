@@ -1,0 +1,1 @@
+SELECT * FROM mailchimp.airbyte_schema.mailchimp__lists ORDER BY list_id;

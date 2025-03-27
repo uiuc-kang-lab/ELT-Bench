@@ -1,0 +1,1 @@
+SELECT * FROM menu.airbyte_schema.menus ORDER BY menu_id;

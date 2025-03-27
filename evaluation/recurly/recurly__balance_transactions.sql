@@ -1,0 +1,1 @@
+SELECT * FROM recurly.airbyte_schema.recurly__balance_transactions ORDER BY balance_transaction_id, TRANSACTION_ID;

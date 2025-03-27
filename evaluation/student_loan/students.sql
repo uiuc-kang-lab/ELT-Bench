@@ -1,0 +1,1 @@
+SELECT * FROM student_loan.airbyte_schema.students ORDER BY name;

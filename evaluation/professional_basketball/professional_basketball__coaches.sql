@@ -1,0 +1,1 @@
+select * from professional_basketball.airbyte_schema.professional_basketball__coaches order by coachID;

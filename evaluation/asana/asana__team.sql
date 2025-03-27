@@ -1,0 +1,1 @@
+SELECT * from asana.airbyte_schema.asana__team ORDER BY team_id;

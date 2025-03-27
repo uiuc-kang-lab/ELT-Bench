@@ -1,0 +1,1 @@
+SELECT * FROM cs_semester.airbyte_schema.professors ORDER BY prof_id;

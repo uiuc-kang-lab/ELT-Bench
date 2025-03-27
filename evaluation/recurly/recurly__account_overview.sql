@@ -1,0 +1,1 @@
+SELECT * FROM recurly.airbyte_schema.recurly__account_overview ORDER BY account_id;

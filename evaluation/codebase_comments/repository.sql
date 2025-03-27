@@ -1,0 +1,1 @@
+select * from codebase_comments.airbyte_schema.repository order by repo_id;

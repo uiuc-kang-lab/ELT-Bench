@@ -1,0 +1,1 @@
+SELECT * FROM movies_4.airbyte_schema.movies4__person ORDER BY person_id;

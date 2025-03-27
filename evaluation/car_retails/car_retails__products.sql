@@ -1,0 +1,1 @@
+SELECT * FROM car_retails.airbyte_schema.car_retails__products ORDER BY productcode;

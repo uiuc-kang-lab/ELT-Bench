@@ -1,0 +1,1 @@
+SELECT * FROM social_media.airbyte_schema.countries ORDER BY country;

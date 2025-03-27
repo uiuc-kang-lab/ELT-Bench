@@ -1,0 +1,1 @@
+SELECT * FROM software_company.airbyte_schema.geo ORDER BY geoid;

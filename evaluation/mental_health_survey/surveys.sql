@@ -1,0 +1,1 @@
+SELECT * FROM mental_health_survey.airbyte_schema.surveys ORDER BY survey_id;

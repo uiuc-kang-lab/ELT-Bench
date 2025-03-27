@@ -1,0 +1,1 @@
+SELECT * FROM microsoft_ads.airbyte_schema.microsoft_ads__keyword_report ORDER BY keyword_id, DATE_DAY;

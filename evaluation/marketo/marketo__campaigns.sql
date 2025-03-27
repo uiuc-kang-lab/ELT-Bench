@@ -1,0 +1,1 @@
+SELECT * FROM marketo.airbyte_schema.marketo__campaigns ORDER BY campaign_id;

@@ -1,0 +1,1 @@
+select * from music_tracker.airbyte_schema.music_tracker__tags order by tags

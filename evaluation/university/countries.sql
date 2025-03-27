@@ -1,0 +1,1 @@
+select * from university.airbyte_schema.countries order by country_id

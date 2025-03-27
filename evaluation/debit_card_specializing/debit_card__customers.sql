@@ -1,0 +1,1 @@
+SELECT * FROM debit_card_specializing.airbyte_schema.debit_card__customers ORDER BY customerid;

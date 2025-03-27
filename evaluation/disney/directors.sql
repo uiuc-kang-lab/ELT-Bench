@@ -1,0 +1,1 @@
+select * from disney.airbyte_schema.directors order by director_name

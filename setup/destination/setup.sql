@@ -1,7 +1,6 @@
 set airbyte_role = 'AIRBYTE_ROLE';
 set airbyte_username = 'AIRBYTE_USER' ;
 set airbyte_warehouse = 'AIRBYTE_WAREHOUSE' ;
-set airbyte_database = 'AIRBYTE_DATABASE' ;
 set airbyte_schema = 'AIRBYTE_SCHEMA' ;
 
 set airbyte_password ='Snowflake@123';
@@ -27,15 +26,11 @@ auto_suspend=60
 auto_resume=true
 initially_suspended = true;
 
-create database if not exists identifier($airbyte_database);
 
 grant USAGE 
 on warehouse identifier($airbyte_warehouse)
 to role identifier($airbyte_role);
 
-grant OWNERSHIP 
-on database AIRBYTE_DATABASE
-to role AIRBYTE_ROLE;
 
 commit;
 

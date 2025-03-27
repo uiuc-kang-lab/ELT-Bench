@@ -1,0 +1,4 @@
+awscli
+gdown
+pymongo
+snowflake

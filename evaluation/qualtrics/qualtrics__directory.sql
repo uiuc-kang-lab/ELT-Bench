@@ -1,0 +1,1 @@
+SELECT * FROM qualtrics.airbyte_schema.qualtrics__directory ORDER BY directory_id;

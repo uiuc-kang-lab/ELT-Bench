@@ -1,0 +1,1 @@
+SELECT * FROM olympics.airbyte_schema.athletes ORDER BY person_id;

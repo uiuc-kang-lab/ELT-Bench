@@ -8,5 +8,3 @@ for table_name in "${db_names[@]}"; do
   cd ..
   echo "Databases Created: $table_name"
 done
-
-python mongo.py --path $1

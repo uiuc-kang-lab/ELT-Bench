@@ -1,0 +1,1 @@
+select * from financial.airbyte_schema.districts order by district_id;

@@ -1,0 +1,1 @@
+SELECT * FROM mailchimp.airbyte_schema.mailchimp__segments ORDER BY segment_id;

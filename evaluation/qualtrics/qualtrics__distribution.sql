@@ -1,0 +1,1 @@
+SELECT * FROM qualtrics.airbyte_schema.qualtrics__distribution ORDER BY distribution_id;

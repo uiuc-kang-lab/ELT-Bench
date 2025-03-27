@@ -1,0 +1,1 @@
+select * from retails.airbyte_schema.customers order by c_custkey

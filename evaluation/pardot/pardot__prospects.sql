@@ -1,0 +1,1 @@
+SELECT * FROM pardot.airbyte_schema.pardot__prospects ORDER BY prospect_id;

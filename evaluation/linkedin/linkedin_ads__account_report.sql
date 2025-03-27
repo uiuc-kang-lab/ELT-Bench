@@ -1,0 +1,1 @@
+SELECT * FROM linkedin.airbyte_schema.linkedin_ads__account_report ORDER BY account_id;

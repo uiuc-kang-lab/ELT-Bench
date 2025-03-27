@@ -1,0 +1,1 @@
+SELECT * FROM youtube_analytics.airbyte_schema.youtube__demographics_report ORDER BY AGE_GROUP,COUNTRY_CODE,GENDER,VIEWS_PERCENTAGE;

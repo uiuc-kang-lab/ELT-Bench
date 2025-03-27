@@ -1,0 +1,1 @@
+select * from airline.airbyte_schema.airline__airports order by airport_code
