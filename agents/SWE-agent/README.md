@@ -22,6 +22,12 @@ It does so by using configurable [agent-computer interfaces](https://arxiv.org/a
 
 SWE-agent is built and maintained by researchers from Princeton University and Stanford University.
 
+## Evaluation SWE-Agent on ELT-Bench
+``` bash
+python -m pip install --upgrade pip && pip install --editable .
+bash run_swe.sh
+```
+To modify the LLM model used in the experiment, update the model name on line 18 of the script run_swe.sh or use line 20.
 ## 🚀 Get started!
 
 👉 Try SWE-agent in your browser: [![Open in GitHub Codespaces](https://img.shields.io/badge/Open_in_GitHub_Codespaces-gray?logo=github)](https://codespaces.new/SWE-agent/SWE-agent) ([more information](https://swe-agent.com/latest/installation/codespaces/))
