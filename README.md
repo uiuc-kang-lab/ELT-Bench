@@ -1,6 +1,6 @@
 # ELT-Bench
-
-![ELT](https://github.com/uiuc-kang-lab/ELT-Bench/blob/update/materials/elt.svg)
+The first comprehensive, end-to-end benchmark designed to evaluate AI agents in automating ELT pipelines.
+![ELT](https://anonymous.4open.science/r/ELT-Bench-B51C/materials/elt.svg)
 ## Environment Setup
 
 ### Install Docker and Conda 
