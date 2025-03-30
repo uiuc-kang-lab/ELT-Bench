@@ -2,3 +2,4 @@ awscli
 gdown
 pymongo
 snowflake
+pandas
