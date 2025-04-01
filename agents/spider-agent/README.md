@@ -16,6 +16,7 @@ export FIREWORKS_API_KEY=your_fireworks_api_key
 python run.py --suffix eltbench --model model_name
 ```
 
+Model options: ['gpt-4o', 'accounts/fireworks/models/llama-v3p1-405b-instruct', 'accounts/fireworks/models/qwen2p5-coder-32b-instruct', 'accounts/fireworks/models/deepseek-r1', 'claude-3-7-sonnet-20250219', 'claude-3-5-sonnet-20241022']
 ## 🚀 Quickstart
 
 ### Setup

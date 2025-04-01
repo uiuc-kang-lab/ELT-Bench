@@ -63,7 +63,7 @@ def config() -> argparse.Namespace:
     parser.add_argument("--stop_token", type=str, default=None)
     
     # example config
-    parser.add_argument("--test_path","-t", type=str, default="../inputs/")
+    parser.add_argument("--test_path","-t", type=str, default="../../inputs/")
     parser.add_argument("--example_index", "-i", type=str, default="all", help="index range of the examples to run, e.g., '0-10', '2,3', 'all'")
     parser.add_argument("--example_name", "-n", type=str, default="", help="name of the example to run")
     parser.add_argument("--overwriting", action="store_true", default=False)
