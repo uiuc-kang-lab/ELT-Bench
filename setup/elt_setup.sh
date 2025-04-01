@@ -20,3 +20,4 @@ cd ../setup
 CURRENT_DIR=$(pwd)
 bash data_setup.sh CURRENT_DIR
 python mongo.py --path CURRENT_DIR
+python write_config.py

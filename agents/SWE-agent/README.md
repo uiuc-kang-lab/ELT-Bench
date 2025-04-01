@@ -24,10 +24,17 @@ SWE-agent is built and maintained by researchers from Princeton University and S
 
 ## Evaluation SWE-Agent on ELT-Bench
 ``` bash
+cd docker/elt-swe
+docker build -t elt-swe .
+cd ../..
+conda create -n swe python=3.11
+conda activate swe
 python -m pip install --upgrade pip && pip install --editable .
+pip install snowflake fireworks-ai
 bash run_swe.sh
 ```
 To modify the LLM model used in the experiment, update the model name on line 18 of the script run_swe.sh or use line 20.
+If you are using line 20, you can change the model name in ./config/elt_ta.yaml
 ## 🚀 Get started!
 
 👉 Try SWE-agent in your browser: [![Open in GitHub Codespaces](https://img.shields.io/badge/Open_in_GitHub_Codespaces-gray?logo=github)](https://codespaces.new/SWE-agent/SWE-agent) ([more information](https://swe-agent.com/latest/installation/codespaces/))
