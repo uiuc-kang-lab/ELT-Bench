@@ -7,6 +7,4 @@ award,the name of the award
 person,the person who gets the award
 role,the role of the honoree
 episode_id,S stands for 'Season' and E stands for 'Episode'
-season,the season of the awarded work
-song,the theme song of the awarded work
 result,the final award result

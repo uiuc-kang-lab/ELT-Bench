@@ -2,13 +2,13 @@ column_name,column_description
 year,year
 round,round 
 series,series
-tmidwinner,Team ID of winner
-lgidwinner,League ID of winner
-tmidloser,Team ID of winner
-lgidloser,league id of loser
-w,wins 
-l,loses
-t,ties 
-goalswinner,goals for winner
-goalsloser,goals for loser
+tmIDWinner,Team ID of winner
+lgIDWinner,League ID of winner
+tmIDLoser,Team ID of winner
+lgIDLoser,league id of loser
+W,wins 
+L,loses
+T,ties 
+GoalsWinner,goals for winner
+GoalsLoser,goals for loser
 note,note

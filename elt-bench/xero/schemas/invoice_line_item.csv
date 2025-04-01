@@ -2,10 +2,8 @@ column_name,column_description
 _fivetran_synced,The timestamp that Fivetran last synced the record.
 account_code,Customer defined alpha numeric account code e.g 200 or SALES
 description,The description of the line item
-discount_entered_as_percent,The discount rate for the line item as a percentage.
 discount_rate,Percentage discount being applied to a line item.
 invoice_id,The Xero identifier for the invoice the line items belongs to.
-item_code,User defined item code.
 line_amount,The line amount reflects the discounted price if a DiscountRate has been used.
 line_item_id,Xero identifier for the line item.
 quantity,The quantity of the line item.

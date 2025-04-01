@@ -1,0 +1,9 @@
+column_name,column_description
+playerID,
+year,year
+stint,stint
+tmID,team abbreviated name
+W,Wins
+L,Loses
+SA,Shots against
+GA,Goals against

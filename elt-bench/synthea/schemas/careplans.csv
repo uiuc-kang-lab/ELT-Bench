@@ -1,10 +1,10 @@
 column_name,column_description
-id,the unique id of the care plan
-start,the start date of the care plan
-stop,the stop date of the care plan
-patient,the patient id
-encounter,the medical encounter id
-code,the code of the care plan 
-description,the description of the care plan
-reasoncode,the reason code
-reasondescription,the description of the reason why the patient needs the care plan
+ID,the unique id of the care plan
+START,the start date of the care plan
+STOP,the stop date of the care plan
+PATIENT,the patient id
+ENCOUNTER,the medical encounter id
+CODE,the code of the care plan 
+DESCRIPTION,the description of the care plan
+REASONCODE,the reason code
+REASONDESCRIPTION,the description of the reason why the patient needs the care plan

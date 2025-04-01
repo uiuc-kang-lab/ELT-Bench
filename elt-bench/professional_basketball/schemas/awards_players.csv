@@ -1,7 +1,7 @@
 column_name,column_description
-playerid,ID number identifying the unique number of the player
+playerID,ID number identifying the unique number of the player
 award,the name of the award
 year,the time of this award
-lgid,the name of the league
+lgID,the name of the league
 note,notification
 pos,the position of the player

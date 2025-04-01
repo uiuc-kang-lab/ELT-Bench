@@ -9,6 +9,7 @@ modified_at,The last time the project was updated. Does not include comments nor
 name,The given name of the project.
 notes,Free-form textual notes associated with the project.
 owner_id,Foreign key referencing the USER who owns the project.
-public,"Boolean that is true if the project is public to the whole organization, false if not."
 team_id,Foreign key referencing the TEAM that the project is shared with.
 workspace_id,The id of an organization's workspace in asana. Not necessary unless you have access to multiple asana workspaces.
+_fivetran_synced,Timestamp of when Fivetran synced a record.
+_fivetran_deleted,Timestamp of when Fivetran marked a record as deleted

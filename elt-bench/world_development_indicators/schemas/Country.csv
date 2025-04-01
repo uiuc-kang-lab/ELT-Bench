@@ -1,32 +1,32 @@
 column_name,column_description
-countrycode,unique code identifying countries
-shortname,Short names of countries 
-tablename,table names of countries
-longname,long or full name of countries
-alpha2code,2 digit code of countries 
-currencyunit,Currency Unit used in this country
-specialnotes,Special Notes
-region,region that country belongs to 
-incomegroup,income level of countries 
-wb2code,world bank to code
-nationalaccountsbaseyear,the year used as the base period for constant price calculations in the country's national accounts
-nationalaccountsreferenceyear,National Accounts Reference Year
-snapricevaluation,SNA Price Valuation
-lendingcategory,Lending category
-othergroups,other groups
-systemofnationalaccounts,System Of National Accounts
-alternativeconversionfactor,Alternative conversion factor is the underlying annual exchange rate used for the World Bank Atlas method
-pppsurveyyear,purchasing power parity survey year
-balanceofpaymentsmanualinuse,Balance Of Payments Manual In Use
-externaldebtreportingstatus,External Debt Reporting Status
-systemoftrade,System Of Trade
-governmentaccountingconcept,Government Accounting Concept
-imfdatadisseminationstandard,IMF Standards for Data Dissemination
-latestpopulationcensus,Latest Population Census
-latesthouseholdsurvey,
-sourceofmostrecentincomeandexpendituredata,Source Of Most Recent Income And Expenditure Data
-vitalregistrationcomplete,Vital Registration Complete
-latestagriculturalcensus,Latest Agricultural Census
-latestindustrialdata,Latest Industrial Data
-latesttradedata,Latest Trade Data
-latestwaterwithdrawaldata,Latest Water Withdrawal Data
+CountryCode,unique code identifying countries
+ShortName,Short names of countries 
+TableName,table names of countries
+LongName,long or full name of countries
+Alpha2Code,2 digit code of countries 
+CurrencyUnit,Currency Unit used in this country
+SpecialNotes,Special Notes
+Region,region that country belongs to 
+IncomeGroup,income level of countries 
+Wb2Code,world bank to code
+NationalAccountsBaseYear,the year used as the base period for constant price calculations in the country's national accounts
+NationalAccountsReferenceYear,National Accounts Reference Year
+SnaPriceValuation,SNA Price Valuation
+LendingCategory,Lending category
+OtherGroups,other groups
+SystemOfNationalAccounts,System Of National Accounts
+AlternativeConversionFactor,Alternative conversion factor is the underlying annual exchange rate used for the World Bank Atlas method
+PppSurveyYear,purchasing power parity survey year
+BalanceOfPaymentsManualInUse,Balance Of Payments Manual In Use
+ExternalDebtReportingStatus,External Debt Reporting Status
+SystemOfTrade,System Of Trade
+GovernmentAccountingConcept,Government Accounting Concept
+ImfDataDisseminationStandard,IMF Standards for Data Dissemination
+LatestPopulationCensus,Latest Population Census
+LatestHouseholdSurvey,
+SourceOfMostRecentIncomeAndExpenditureData,Source Of Most Recent Income And Expenditure Data
+VitalRegistrationComplete,Vital Registration Complete
+LatestAgriculturalCensus,Latest Agricultural Census
+LatestIndustrialData,Latest Industrial Data
+LatestTradeData,Latest Trade Data
+LatestWaterWithdrawalData,Latest Water Withdrawal Data

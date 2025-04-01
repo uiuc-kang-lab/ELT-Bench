@@ -1,5 +1,5 @@
 column_name,column_description
-productid,Product identification number.
-productphotoid,Product photo identification number.
-primary,Whether this photo is the principal image or not.
-modifieddate,
+ProductID,Product identification number.
+ProductPhotoID,Product photo identification number.
+Primary,Whether this photo is the principal image or not.
+ModifiedDate,

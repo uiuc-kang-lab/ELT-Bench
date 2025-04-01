@@ -43,3 +43,4 @@ stock_vesting_effect,The effect of leave on stock vesting.
 stop_payment_date,The date when stop payment occurs.
 week_of_confinement,Indicator for whether the leave is work-related.
 work_related,Indicator for whether the leave is work-related.
+STILLBIRTH_BABY_DECEASED,

@@ -1,7 +1,7 @@
 column_name,column_description
-countryname,code identifying unique countries
-countrycode,Series code of countries
-indicatorname,indicator name
-indicatorcode,indicator code
-year,year
-value,value
+CountryName,code identifying unique countries
+CountryCode,Series code of countries
+IndicatorName,indicator name
+IndicatorCode,indicator code
+Year,year
+Value,value

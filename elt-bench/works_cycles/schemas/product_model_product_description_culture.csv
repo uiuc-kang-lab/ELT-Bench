@@ -1,0 +1,5 @@
+column_name,column_description
+ProductModelID,The id number identifying the product model.
+ProductDescriptionID,Product description identification number.
+CultureID,Culture identification number.
+ModifiedDate,Date and time the record was last updated. 

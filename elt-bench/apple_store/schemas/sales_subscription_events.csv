@@ -8,3 +8,24 @@ country,The country associated with the subscription event metrics and subscript
 state,The state associated with the subscription event metrics or subscription summary metrics.
 device,Device type associated with the respective metric(s).
 quantity,The number of occurrences of a given subscription event.
+_fivetran_synced,Timestamp of when Fivetran synced a record.
+PROCEEDS_REASON,
+SUBSCRIPTION_GROUP_ID,
+PROMOTIONAL_OFFER_ID,
+_FILENAME,
+PREVIOUS_SUBSCRIPTION_APPLE_ID,
+CONSECUTIVE_PAID_PERIODS,
+STANDARD_SUBSCRIPTION_DURATION,
+VENDOR_NUMBER,
+PREVIOUS_SUBSCRIPTION_NAME,
+PROMOTIONAL_OFFER_NAME,
+SUBSCRIPTION_APPLE_ID,
+APP_APPLE_ID,
+DAYS_BEFORE_CANCELING,
+CANCELLATION_REASON,
+SUBSCRIPTION_OFFER_TYPE,
+_INDEX,
+ORIGINAL_START_DATE,
+DAYS_CANCELED,
+SUBSCRIPTION_OFFER_DURATION,
+MARKETING_OPT_IN_DURATION,

@@ -1,6 +1,6 @@
 column_name,column_description
 movieid,unique identifier number of movies
 year,year
-isenglish,is English
+isEnglish,is English
 country,country
 runningtime,

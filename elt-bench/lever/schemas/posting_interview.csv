@@ -1,3 +1,4 @@
 column_name,column_description
 interview_id,Foreign key referencing the INTERVIEW for this job posting.
 posting_id,Foreign key referencing the POSTING that was interviewed for.
+_fivetran_synced,Timestamp of when Fivetran synced a record.

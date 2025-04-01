@@ -12,3 +12,4 @@ state,Whether the issue is open or closed.
 title,Title of the issue.
 updated_at,Timestamp of when the last update was made to the issue.
 user_id,"Foreign key that references the user table, representing the user that created the issue."
+_fivetran_synced,Timestamp of when Fivetran synced a record

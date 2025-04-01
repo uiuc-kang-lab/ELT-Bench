@@ -1,7 +1,7 @@
 column_name,column_description
-item,the prevalent disease
-population_type,the population type - LIVING
-occurrences,the number of occurrences
-population_count,the number of the counted populations 
-prevalence_rate,the prevalence rate
-prevalence_percentage,the prevalence percentage
+ITEM,the prevalent disease
+POPULATION_TYPE,the population type - LIVING
+OCCURRENCES,the number of occurrences
+POPULATION_COUNT,the number of the counted populations 
+PREVALENCE_RATE,the prevalence rate
+PREVALENCE_PERCENTAGE,the prevalence percentage

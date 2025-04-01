@@ -1,15 +1,15 @@
 column_name,column_description
-tweetid,the unique id of the tweet
-weekday,the weekday that the tweet has been posted
-hour,the hour that the tweet has been posted
-day,the day that the tweet has been posted
-lang,the language of the tweet
-isreshare,whether the tweet is reshared
-reach,the reach of the tweet
-retweetcount,the retweet count
-likes,the number of likes 
-klout,the klout of the tweet
-sentiment,the sentiment of the tweet
+TweetID,the unique id of the tweet
+Weekday,the weekday that the tweet has been posted
+Hour,the hour that the tweet has been posted
+Day,the day that the tweet has been posted
+Lang,the language of the tweet
+IsReshare,whether the tweet is reshared
+Reach,the reach of the tweet
+RetweetCount,the retweet count
+Likes,the number of likes 
+Klout,the klout of the tweet
+Sentiment,the sentiment of the tweet
 text,the text of the tweet
-locationid,the location id of the poster
-userid,the user id of the poster
+LocationID,the location id of the poster
+UserID,the user id of the poster

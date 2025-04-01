@@ -1,28 +1,28 @@
 column_name,column_description
 year,year
-lgid,league ID number
-tmid,team ID
-franchid,Franchise ID
-confid,Conference ID
-divid,Division ID
+lgID,league ID number
+tmID,team ID
+franchID,Franchise ID
+confID,Conference ID
+divID,Division ID
 rank,Final standing
 playoff,playoff results
-g,games
-w,wins
-l,loses
-t,ties
-otl,Overtime losses
-pts,points
-sow,Shootout wins
-sol,Shootout loses
-gf,Goals for
-ga,goals against
+G,games
+W,wins
+L,loses
+T,ties
+OTL,Overtime losses
+Pts,points
+SoW,Shootout wins
+SoL,Shootout loses
+GF,Goals for
+GA,goals against
 name,Full team name
-pim,Penalty minutes
-benchminor,Bench minors (minutes)
-ppg,Power play goals
-ppc,Power play chances
-sha,Shorthanded goals against
-pkg,Power play goals against
-pkc,Penalty kill chances
-shf,Shorthanded goals for
+PIM,Penalty minutes
+BenchMinor,Bench minors (minutes)
+PPG,Power play goals
+PPC,Power play chances
+SHA,Shorthanded goals against
+PKG,Power play goals against
+PKC,Penalty kill chances
+SHF,Shorthanded goals for

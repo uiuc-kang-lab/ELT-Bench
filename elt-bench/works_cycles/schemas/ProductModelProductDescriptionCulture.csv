@@ -1,5 +1,0 @@
-column_name,column_description
-productmodelid,The id number identifying the product model.
-productdescriptionid,Product description identification number.
-cultureid,Culture identification number.
-modifieddate,Date and time the record was last updated. 

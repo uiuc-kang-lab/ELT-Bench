@@ -39,3 +39,19 @@ tax_rate_type,The type of tax rate that applies to the taxation item.
 transaction_currency,The currency in which the transaction was processed.
 updated_by_id,The id of the user who last updated the taxation item.
 updated_date,The date and time the taxation item was last updated.
+tax_rule_id,
+tax_code,
+tax_code_description,
+exempt_amount_currency_rounding,
+tax_amount_currency_rounding,
+tax_rate_description,
+provider_exchange_rate_date,
+seller_registration,
+default_payment_method_id,
+jurisdiction,
+journal_run_id,
+parent_account_id,
+accounting_period_id,
+exempt_certificate,
+location_code,
+customer_code,

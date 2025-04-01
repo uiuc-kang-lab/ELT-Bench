@@ -1,6 +1,6 @@
 column_name,column_description
 point_id,the unique id for the inspection point
-description,the specific description of the inspection results
+Description,the specific description of the inspection results
 category,the inspection category
 code,the sanitary operating requirement code
 fine,the fines for food safety problems

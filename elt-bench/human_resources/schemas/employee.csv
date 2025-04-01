@@ -6,5 +6,5 @@ hiredate,employee's hire date
 salary,employee's salary
 gender,employee's gender
 performance,employee's performance
-positionid,the unique id for position
-locationid,the unique id for location
+positionID,the unique id for position
+locationID,the unique id for location

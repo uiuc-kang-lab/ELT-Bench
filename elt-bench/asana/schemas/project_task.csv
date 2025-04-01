@@ -1,3 +1,4 @@
 column_name,column_description
 project_id,Foreign key referencing a PROJECT the task belongs to
 task_id,Foreign key referencing the TASK in the project
+_fivetran_synced,Timestamp of when Fivetran synced a record.

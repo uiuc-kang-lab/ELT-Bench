@@ -1,3 +1,4 @@
 column_name,column_description
 task_id,Foreign key referencing the TASK that is tagged
 tag_id,Foreign key referencing the TAG that is applied to the task
+_fivetran_synced,Timestamp of when Fivetran synced a record.

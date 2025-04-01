@@ -27,3 +27,4 @@ owner_id,Foreign key referencing the id of the USER who owns this opportunity.
 snoozed_until,Timestamp of when the current snooze period of this opportunity ends (if snoozed).
 stage_id,Foreign key referencing the ID of the current stage of the opportunity.
 updated_at,Timestamp of when the opportunity was last updated in lever.
+_fivetran_synced,Timestamp of when Fivetran synced a record.

@@ -1,0 +1,12 @@
+column_name,column_description
+PurchaseOrderID,Purchase order number.
+PurchaseOrderDetailID,Unique purchase detail order.
+DueDate,Date the product is expected to be received.
+OrderQty,Quantity ordered.
+ProductID,The id number identifying products.
+UnitPrice,Vendor's selling price of a single product.
+LineTotal,Per product subtotal
+ReceivedQty,Quantity actually received from the vendor.
+RejectedQty,
+StockedQty,
+ModifiedDate,

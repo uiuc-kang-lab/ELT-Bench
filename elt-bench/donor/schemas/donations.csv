@@ -13,3 +13,10 @@ donation_total,donated amount
 dollar_amount,donated amount in US dollars
 donation_included_optional_support,whether optional support (tip) was included for DonorsChoose.org
 donation_message,donation comment/message. 
+for_honoree,
+payment_included_acct_credit,
+payment_included_campaign_gift_card,
+payment_included_web_purchased_gift_card,
+payment_method,
+payment_was_promo_matched,
+via_giving_page,

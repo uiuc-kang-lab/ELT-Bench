@@ -1,9 +1,9 @@
 column_name,column_description
-customer_id,the id of the customers
-customer_name,the name of the customers
-segment,the segment that the customers belong to
-country,the country of people
-city,the city of people
-state,the state of people
-postal_code,the postal code
-region,the region of people
+Customer_ID,the id of the customers
+Customer_Name,the name of the customers
+Segment,the segment that the customers belong to
+Country,the country of people
+City,the city of people
+State,the state of people
+Postal_Code,the postal code
+Region,the region of people

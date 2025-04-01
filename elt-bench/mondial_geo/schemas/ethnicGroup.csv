@@ -1,4 +1,4 @@
 column_name,column_description
-country,the country code
-name,name of the language
-percentage,percentage of the language in this country.
+Country,the country code
+Name,name of the language
+Percentage,percentage of the language in this country.

@@ -1,4 +1,4 @@
 column_name,column_description
-shipperid,the unique id for shippers
-shippername,the shipped company name
-phone,the phone of the company
+ShipperID,the unique id for shippers
+ShipperName,the shipped company name
+Phone,the phone of the company

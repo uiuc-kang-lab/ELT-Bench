@@ -1,0 +1,6 @@
+column_name,column_description
+BusinessEntityID,Sales person identification number
+QuotaDate,Sales quota date
+SalesQuota,Sales quota amount
+rowguid,Uniquely identifying the record. Used to support a merge replication sample. 
+ModifiedDate,Date and time the record was last updated. 

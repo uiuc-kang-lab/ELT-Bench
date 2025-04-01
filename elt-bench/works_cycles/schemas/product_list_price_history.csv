@@ -1,0 +1,6 @@
+column_name,column_description
+ProductID,Product identification number.
+StartDate,List price start date.
+EndDate,List price end date.
+ListPrice,Product list price.
+ModifiedDate,Date and time the record was last updated. 

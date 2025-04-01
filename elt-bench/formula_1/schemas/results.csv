@@ -10,7 +10,7 @@ positionText,
 positionOrder,the finishing order of positions 
 points,points 
 laps,lap number 
-time_,finish time 
+time,finish time 
 milliseconds,the actual finishing time of drivers in milliseconds  
 fastestLap,fastest lap number 
 rank,starting rank positioned by fastest lap speed

@@ -1,8 +1,8 @@
 column_name,column_description
-coachid,number identifying coaches
+coachID,number identifying coaches
 year,In which year did the coach teach this team
-tmid,team abbreviated name
-lgid,league abbreviated name
+tmID,team abbreviated name
+lgID,league abbreviated name
 stint,stint
 notes,note if needed
 g,number of games

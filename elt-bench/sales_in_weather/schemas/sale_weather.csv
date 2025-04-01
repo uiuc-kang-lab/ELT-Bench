@@ -4,13 +4,10 @@ date,date
 tmax,max temperature
 tmin,min temperature
 tavg,average temperature
-depart,
 dewpoint,
 wetbulb,
 heat,calculated heating degree
 cool,calculated cooling degree
-sunrise,calculated sunrise
-sunset,calculated sunset
 codesum,code summarization for the weather
 snowfall,snowfall
 preciptotal,precipitation total

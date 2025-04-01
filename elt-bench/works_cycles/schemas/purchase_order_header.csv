@@ -1,0 +1,14 @@
+column_name,column_description
+PurchaseOrderID,The unique id number identifying purchase order.
+RevisionNumber,Incremental number to track changes to the purchase order over time. 
+Status,Order current status.
+EmployeeID,Employee who created the purchase order.
+VendorID,Vendor with whom the purchase order is placed.
+ShipMethodID,Shipping method
+OrderDate,Purchase order creation date
+ShipDate,Estimated shipment date from the vendor.
+SubTotal,Purchase order subtotal
+TaxAmt,Tax amount
+Freight,Shipping cost
+TotalDue,Total due to vendor
+ModifiedDate,Date and time the record was last updated. 

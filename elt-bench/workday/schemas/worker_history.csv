@@ -1,6 +1,5 @@
 column_name,column_description
 id,Unique identifier.
-_fivetran_deleted,Indicates if the record was soft-deleted by Fivetran.
 _fivetran_synced,Timestamp the record was synced by Fivetran.
 academic_tenure_date,Date when academic tenure is achieved.
 active,Flag indicating the current active status of the worker.
@@ -50,7 +49,7 @@ hourly_frequency_frequency,Frequency of payment for the worker's hourly compensa
 hourly_frequency_primary_compensation_basis,Primary compensation basis used for the worker's hourly compensation.
 hourly_frequency_total_base_pay,Total base pay for the worker's hourly compensation.
 hourly_frequency_total_salary_and_allowances,Total salary and allowances for the worker's hourly compensation.
-last_datefor_which_paid,Last date for which the worker was paid.
+last_date_for_which_paid,Last date for which the worker was paid.
 local_termination_reason,The reason for local termination of the worker.
 months_continuous_prior_employment,Number of months of continuous prior employment.
 not_returning,Flag indicating whether the worker is not returning.
@@ -84,3 +83,6 @@ universal_id,The universal ID associated with the worker.
 user_id,The identifier for the user associated with the worker.
 vesting_date,The date when the worker's vesting starts.
 worker_code,The code associated with the worker.
+_fivetran_active,TRUE if it is the currently active record. FALSE if it is a historical version of the record. Only one version of the record can be TRUE.
+_fivetran_start,Timestamp when the record was first created or modified in the source.
+_fivetran_end,Timestamp marking the end of a record being active.

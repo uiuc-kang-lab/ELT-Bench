@@ -7,3 +7,4 @@ id,ID of the activity.
 lead_id,The ID of the lead related to the activity.
 primary_attribute_value,The primary attribute of the activity.
 primary_attribute_value_id,The ID of the primary attribute of the activity.
+_fivetran_synced,Timestamp of when Fivetran synced a record

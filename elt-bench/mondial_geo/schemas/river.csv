@@ -1,12 +1,12 @@
 column_name,column_description
-name,the name of the river
-river,the river where it finally flows to
-lake,the lake where it finally flows to
-sea, the sea where it finally flows to
-length,the length of the river
-sourcelongitude,the longitude of its source
-sourcelatitude,the latitude of its source
-mountains,the mountains where its source is located
-sourcealtitude, the elevation (above sea level) of its source
-estuarylongitude,the coordinates of its estuary
-estuarylatitude,the latitude of its estuary
+Name,the name of the river
+River,the river where it finally flows to
+Lake,the lake where it finally flows to
+Sea, the sea where it finally flows to
+Length,the length of the river
+SourceLongitude,the longitude of its source
+SourceLatitude,the latitude of its source
+Mountains,the mountains where its source is located
+SourceAltitude, the elevation (above sea level) of its source
+EstuaryLongitude,the coordinates of its estuary
+EstuaryLatitude,the latitude of its estuary

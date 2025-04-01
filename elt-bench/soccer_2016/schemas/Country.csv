@@ -1,3 +1,3 @@
 column_name,column_description
-country_id,unique id for country
-country_name,country name
+Country_Id,unique id for country
+Country_Name,country name

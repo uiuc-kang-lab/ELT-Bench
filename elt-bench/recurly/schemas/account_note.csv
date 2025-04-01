@@ -7,3 +7,4 @@ message,Contents of the note created.
 object,Object type of account note.
 user_id,Id associated with who created the note.
 user_email,Email associated with who created the note.
+_fivetran_synced,Timestamp the record was synced by Fivetran.

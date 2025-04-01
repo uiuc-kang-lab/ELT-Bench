@@ -1,7 +1,7 @@
 column_name,column_description
-name,the name of the administrative division
-country, the country code where it belongs to
-area,"the total area of the province,"
-population,the population of the province
-capital,the name of the capital
-capprov,the name of the province where the capital belongs to
+Name,the name of the administrative division
+Country, the country code where it belongs to
+Area,"the total area of the province,"
+Population,the population of the province
+Capital,the name of the capital
+CapProv,the name of the province where the capital belongs to

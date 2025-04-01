@@ -1,11 +1,11 @@
 column_name,column_description
-territoryid,The unique id number for SalesTerritory records.
-name,Sales territory description.
-countryregioncode,ISO standard country or region code.
-group,Geographic area to which the sales territory belong.
-salesytd,Sales in the territory year to date.
-saleslastyear,Sales in the territory the previous year.
-costytd,Business costs in the territory year to date.
-costlastyear,Business costs in the territory the previous year.
+TerritoryID,The unique id number for SalesTerritory records.
+Name,Sales territory description.
+CountryRegionCode,ISO standard country or region code.
+Group,Geographic area to which the sales territory belong.
+SalesYTD,Sales in the territory year to date.
+SalesLastYear,Sales in the territory the previous year.
+CostYTD,Business costs in the territory year to date.
+CostLastYear,Business costs in the territory the previous year.
 rowguid,Uniquely identifying the record. Used to support a merge replication sample. 
-modifieddate,Date and time the record was last updated. 
+ModifiedDate,Date and time the record was last updated. 

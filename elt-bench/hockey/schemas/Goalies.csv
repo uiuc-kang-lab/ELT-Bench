@@ -1,21 +1,24 @@
 column_name,column_description
-playerid,id number identifying the player
+playerID,id number identifying the player
 year,year
 stint,order of appearance in a season
-tmid,team abbreviated name
-lgid,league abbreviated name
-gp,Games played
-min,Minutes of appearance
-w,wins
-l,loses
-t_ol,Ties / overtime losses
-eng,Empty net goals
-sho,Shutouts
-ga,Goals against
-sa,Shots against
-postgp,Postseason games played
-postmin,Postseason minutes
-postw,Postseason wins
-postl,Postseason loses
-postt,Postseason ties
-posteng,Postseason empty net goals
+tmID,team abbreviated name
+lgID,league abbreviated name
+GP,Games played
+Min,Minutes of appearance
+W,wins
+L,loses
+T_OL,Ties / overtime losses
+ENG,Empty net goals
+SHO,Shutouts
+GA,Goals against
+SA,Shots against
+PostGP,Postseason games played
+PostMin,Postseason minutes
+PostW,Postseason wins
+PostL,Postseason loses
+PostT,Postseason ties
+PostENG,Postseason empty net goals
+PostGA,Postseason goals against
+PostSA,Postseason shots against
+PostSHO,Postseason shutouts

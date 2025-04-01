@@ -1,7 +1,7 @@
 column_name,column_description
 id,id of this row of data
 year,which year did the coach receive the honor?
-coachid,id number of the coaches
+coachID,id number of the coaches
 award,the award names
-lgid,the name of the league
+lgID,the name of the league
 note,special notification

@@ -14,13 +14,14 @@ display_name,The display name of landing page or pure exposure ad.
 image_ids,A list of image IDs.
 impression_tracking_url,Display monitoring URL.
 is_aco,Whether the ad is an automated ad.
-is_creative_authorized,"Whether you grant displaying some of your ads in our TikTok For Business Creative Center. Only valid for non-US advertisers, the default value is false.
+CREATIVE_AUTHORIZED,"Whether you grant displaying some of your ads in our TikTok For Business Creative Center. Only valid for non-US advertisers, the default value is false.
 "
 is_new_structure,Whether the campaign is a new structure.
 landing_page_url,Landing page URL.
-open_url,The specific location where you want your audience to go if they have your app installed.
-opt_status,Operation status.
+DEEPLINK,The specific location where you want your audience to go if they have your app installed.
+OPERATION_STATUS,Operation status.
 playable_url,Playable material url.
-profile_image,Avatar URL.
-status,Ad status.
+PROFILE_IMAGE_URL,Avatar URL.
+SECONDARY_STATUS,
 video_id,The video ID.
+_FIVETRAN_SYNCED,Timestamp of when Fivetran synced a record.

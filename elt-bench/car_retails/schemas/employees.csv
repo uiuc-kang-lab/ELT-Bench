@@ -1,9 +1,9 @@
 column_name,column_description
-employeenumber,unique string ID of the employees
-lastname,last name of employees
-firstname,first name of employees
+employeeNumber,unique string ID of the employees
+lastName,last name of employees
+firstName,first name of employees
 extension,extension number
 email,email
-officecode,office code of the employees
-reportsto,represents for organization structure such as who reports to whom
-jobtitle,job title
+officeCode,office code of the employees
+reportsTo,represents for organization structure such as who reports to whom
+jobTitle,job title

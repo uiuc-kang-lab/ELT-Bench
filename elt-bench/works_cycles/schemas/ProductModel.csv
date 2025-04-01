@@ -1,7 +1,7 @@
 column_name,column_description
-productmodelid,The unique id number identifying the product model.
-name,Product model description.
-catalogdescription,Detailed product catalog information in xml format.
-instructions,Manufacturing instructions in xml format.
+ProductModelID,The unique id number identifying the product model.
+Name,Product model description.
+CatalogDescription,Detailed product catalog information in xml format.
+Instructions,Manufacturing instructions in xml format.
 rowguid,Uniquely identifying the record. Used to support a merge replication sample. 
-modifieddate,Date and time the record was last updated. 
+ModifiedDate,Date and time the record was last updated. 

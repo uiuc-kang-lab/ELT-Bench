@@ -1,3 +1,3 @@
 column_name,column_description
-customerid,unique id number indicating which customer
-customer_names,the name of the customer
+CustomerID,unique id number indicating which customer
+Customer_Names,the name of the customer

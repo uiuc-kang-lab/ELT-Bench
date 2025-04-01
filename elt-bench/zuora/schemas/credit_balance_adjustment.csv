@@ -33,3 +33,8 @@ transferred_to_accounting,"Indicates the status of the credit balance adjustment
 type,Specifies if the credit balance adjustment increases or decrease the amount of the credit balance.
 updated_by_id,Identifier of the user who last updated
 updated_date,Last updated date for
+amount_currency_rounding,
+journal_run_id,
+customer_cash_on_account_accounting_code_id,
+accounting_period_id,
+provider_exchange_rate_date,

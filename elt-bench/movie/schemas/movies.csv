@@ -1,12 +1,12 @@
 column_name,column_description
-movieid,the unique id for the movie
-title,the title of the movie
+MovieID,the unique id for the movie
+Title,the title of the movie
 mpaa_rating,MPAA rating of the movie
-budget,the budget of the movie
-gross,the gross of the movie
+Budget,the budget of the movie
+Gross,the gross of the movie
 release_date,release date
-genre,the genre of the movie
-runtime,the runtime of the movie
-rating,the rating of the movie
+Genre,the genre of the movie
+Runtime,the runtime of the movie
+Rating,the rating of the movie
 rating_count,the number of the ratings
-summary,the summary of the movie
+Summary,the summary of the movie

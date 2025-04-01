@@ -1,7 +1,7 @@
 column_name,column_description
-id, Id of the paper
-title,Title of the paper
-year,Year of the paper
-conferenceid,Conference Id in which paper was published
-journalid,Journal Id in which paper was published
-keyword,Keywords of the paper 
+Id, Id of the paper
+Title,Title of the paper
+Year,Year of the paper
+ConferenceId,Conference Id in which paper was published
+JournalId,Journal Id in which paper was published
+Keyword,Keywords of the paper 

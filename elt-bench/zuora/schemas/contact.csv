@@ -18,3 +18,12 @@ updated_by_id,Identifier of the user who last updated
 updated_date,Last updated date for
 work_email,The contact's business email address.
 work_phone,The contact's business phone number.
+county,
+tax_region,
+home_phone,
+other_phone_type,
+personal_email,
+other_phone,
+mobile_phone,
+fax,
+nick_name,

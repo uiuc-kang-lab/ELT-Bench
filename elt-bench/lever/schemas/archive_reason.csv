@@ -2,3 +2,4 @@ column_name,column_description
 id,Unique id of the archive reason.
 text,Name of the archive reason as shown in the Lever UI.
 _fivetran_deleted,Boolean that is true if the archive reason has been soft-deleted.
+_fivetran_synced,Timestamp of when Fivetran synced a record.

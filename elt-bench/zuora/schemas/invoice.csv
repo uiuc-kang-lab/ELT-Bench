@@ -45,3 +45,11 @@ transaction_currency,The currency in which the invoice is billed.
 transferred_to_accounting,Indicates whether the invoice has been transferred to the accounting system.
 updated_by_id,Identifier of the user who last updated
 updated_date,Last updated date for
+amount_without_tax_currency_rounding,
+sequence_set_id,
+tax_exempt_amount,
+reversed,
+template_id,
+provider_exchange_rate_date,
+amount_currency_rounding,
+tax_message,

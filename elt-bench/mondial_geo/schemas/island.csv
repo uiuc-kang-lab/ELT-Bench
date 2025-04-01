@@ -1,8 +1,8 @@
 column_name,column_description
-name,the name of the island
-islands,the group of islands where it belongs to
-area,the area of the island
-height,the maximal elevation of the island
-type, the type of the island
-longitude,Longitude
-latitude,Latitude
+Name,the name of the island
+Islands,the group of islands where it belongs to
+Area,the area of the island
+Height,the maximal elevation of the island
+Type, the type of the island
+Longitude,Longitude
+Latitude,Latitude

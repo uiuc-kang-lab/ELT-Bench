@@ -1,3 +1,4 @@
 column_name,column_description
 opportunity_id,Foreign key referencing the OPPORTUNITY that was tagged.
 tag,Text of the tag associated with this opportunity.
+_fivetran_synced,Timestamp of when Fivetran synced a record.

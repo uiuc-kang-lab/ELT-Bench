@@ -44,3 +44,12 @@ unit_price,The unit price for the invoice item.
 uom,The unit of measure for the invoice item.
 updated_by_id,The id of the user who last updated the invoice item.
 updated_date,The date and time when the invoice item was last updated.
+PROVIDER_EXCHANGE_RATE_DATE,
+TAX_EXEMPT_AMOUNT,
+ACCOUNTING_PERIOD_ID,
+JOURNAL_RUN_ID,
+DEFAULT_PAYMENT_METHOD_ID,
+TAX_CODE,
+EXCLUDE_ITEM_BILLING_FROM_REVENUE_ACCOUNTING,
+CHARGE_AMOUNT_CURRENCY_ROUNDING,
+BOOKING_REFERENCE,

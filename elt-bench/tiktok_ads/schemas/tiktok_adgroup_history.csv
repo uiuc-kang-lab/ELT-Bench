@@ -1,75 +1,77 @@
 column_name,column_description
-adgroup_id,Ad group ID
-updated_at,Time the record was updated.
-advertiser_id,Advertiser ID
-campaign_id,The Ad group's campaign ID.
-action_categories,IDs of the action categories (behaviors) that you want to target.
-action_days,The number of days of the time period to include action from.
-adgroup_name,Ad group name. Character limit is 512 and cannot contain emoji.
-age_groups,"Age groups you want to target. This is the newest version of the field `age`, which was renamed after the Tiktok Ads v1.3 API release.
+ADGROUP_ID,Ad group ID
+UPDATED_AT,Time the record was updated.
+ADVERTISER_ID,Advertiser ID
+CAMPAIGN_ID,The Ad group's campaign ID.
+ACTION_CATEGORIES,IDs of the action categories (behaviors) that you want to target.
+ACTION_DAYS,The number of days of the time period to include action from.
+ADGROUP_NAME,Ad group name. Character limit is 512 and cannot contain emoji.
+AGE_GROUPS,"Age groups you want to target. This is the newest version of the field `age`, which was renamed after the Tiktok Ads v1.3 API release.
 "
-android_osv,Minimum Android version.
-app_download_url,App download link
-app_id,The Application id of the promoted app
-app_name,App name.
-app_type,App type.
-audience,A list of audience IDs.
-audience_type,Audience Type
-bid,"CPC, CPM bidding, oCPM learning bidding"
-bid_type,Bidding Strategy
-billing_event,Bid method.
-budget,Ad budget. Returns 0.0 when Campaign Budget Optimization (budget_optimize_switch) is on.
-budget_mode,Budget mode. This field will be ignored when Campaign Budget Optimization (budget_optimize_switch) is enabled.
-carriers,Carriers that you want to target.
-category,Ad group category.
-click_tracking_url,Click monitoring URL.
-connection_type,Device connection types that you want to target. Default; unlimited.
-conversion_bid,oCPM conversion bid
-cpv_video_duration,"Video playback duration, required if optimize_goal is VIDEO_VIEW.  Allowed values; SIX_SECONDS (video playback 6s), TWO_SECONDS (video playback 2s)
+APP_DOWNLOAD_URL,App download link
+APP_ID,The Application id of the promoted app
+APP_NAME,App name.
+APP_TYPE,App type.
+AUDIENCE,A list of audience IDs.
+AUDIENCE_TYPE,Audience Type
+BID_TYPE,Bidding Strategy
+BILLING_EVENT,Bid method.
+BUDGET,Ad budget. Returns 0.0 when Campaign Budget Optimization (budget_optimize_switch) is on.
+BUDGET_MODE,Budget mode. This field will be ignored when Campaign Budget Optimization (budget_optimize_switch) is enabled.
+CARRIERS,Carriers that you want to target.
+CATEGORY,Ad group category.
+CLICK_TRACKING_URL,Click monitoring URL.
+CPV_VIDEO_DURATION,"Video playback duration, required if optimize_goal is VIDEO_VIEW.  Allowed values; SIX_SECONDS (video playback 6s), TWO_SECONDS (video playback 2s)
 "
-creative_material_mode,Creative delivery mode.
-dayparting,"Ad delivery period, the default is always and the format is 48 * 7 character string, represented by 0 or 1. > That is, with half an hour as the minimum granularity, a day (24 hours) is divided by the minimum granularity(30 mins) from Monday to Sunday. Resulting in a 48*7 format.0 represents not to be delivered, 1 represents delivery. no transmission, full transmission 0, full transmission 1 all represent full time delivery"
-deep_bid_type,Bidding strategy for in-app events.
-deep_cpabid,Deep bid
-deep_external_action,Deep conversion event.
-display_name,Display name of ad group.
-enable_inventory_filter,Inventory filtering (Unsafe videos will not be displayed).
-excluded_audience,A list of audience ID to be excluded.
-external_action,"Conversion event for the ad group. It is required when the promoted object is an app with tracking urls, or when pixel_id is specified."
-fallback_type,"Fallback Type. If the audience do not have the app installed, you can have them fall back to install the app, or to view a specific web page. Not applicable for Deferred Deeplink. Allowed values; APP_INSTALL, WEBSITE, UNSET. If website is chosen, you need to specify the url via landing_page_url field.
+CREATIVE_MATERIAL_MODE,Creative delivery mode.
+DAYPARTING,"Ad delivery period, the default is always and the format is 48 * 7 character string, represented by 0 or 1. > That is, with half an hour as the minimum granularity, a day (24 hours) is divided by the minimum granularity(30 mins) from Monday to Sunday. Resulting in a 48*7 format.0 represents not to be delivered, 1 represents delivery. no transmission, full transmission 0, full transmission 1 all represent full time delivery"
+DEEP_BID_TYPE,Bidding strategy for in-app events.
+DEEP_CPA_BID,Deep bid
+DISPLAY_NAME,Display name of ad group.
+INVENTORY_FILTER_ENABLED,Inventory filtering (Unsafe videos will not be displayed).
+EXCLUDED_AUDIENCE,A list of audience ID to be excluded.
+FALLBACK_TYPE,"Fallback Type. If the audience do not have the app installed, you can have them fall back to install the app, or to view a specific web page. Not applicable for Deferred Deeplink. Allowed values; APP_INSTALL, WEBSITE, UNSET. If website is chosen, you need to specify the url via landing_page_url field.
 "
-frequency,"frequency, together with frequency_schedule, controls how often people see your ad (only available for REACH ads).  For example, frequency = 2 frequency_schedule = 3 means ""show ads no more than twice every 3 day"".
+FREQUENCY,"frequency, together with frequency_schedule, controls how often people see your ad (only available for REACH ads).  For example, frequency = 2 frequency_schedule = 3 means ""show ads no more than twice every 3 day"".
 "
-frequency_schedule,"frequency, together with frequency, controls how often people see your ad (only available for REACH ads)."
-gender,Gender that you want to target.
-impression_tracking_url,Display monitoring URL.
-interest_category_v2,"Interest classification. If the interest is specified, users that do not meet interest target will be excluded during delivery."
-ios_osv,Minimum iOS version.
-is_comment_disable,"Whether to allow comments on your ads on TikTok, Vigo, Helo."
-is_hfss,"Whether the promoted content is HFSS foods (foods that are high in fat, salt, or sugar)."
-is_new_structure,Whether the campaign is a new structure.
-keywords,Keywords used.
-landing_page_url,Landing page URL.
-languages,Codes of the languages that you want to target.
-location,IDs of the locations that you want to target.
-open_url,The specific location where you want your audience to go if they have your app installed.
-open_url_type,The open URL type.
-operation_system,Device operating systems that you want to target.
-opt_status,Operation status.
-optimize_goal,Optimization goal.
-pacing,"You can choose between PACING_MODE_SMOOTH and PACING_MODE_FAST. For PACING_MODE_SMOOTH, the budget is allocated evenly within the scheduled time.  PACING_MODE_FAST would consume budget and produce results as soon as possible. 
+FREQUENCY_SCHEDULE,"frequency, together with frequency, controls how often people see your ad (only available for REACH ads)."
+GENDER,Gender that you want to target.
+IMPRESSION_TRACKING_URL,Display monitoring URL.
+INTEREST_CATEGORY_V_2,"Interest classification. If the interest is specified, users that do not meet interest target will be excluded during delivery."
+MIN_IOS_VERSION,Minimum iOS version.
+IS_COMMENT_DISABLE,"Whether to allow comments on your ads on TikTok, Vigo, Helo."
+IS_HFSS,"Whether the promoted content is HFSS foods (foods that are high in fat, salt, or sugar)."
+IS_NEW_STRUCTURE,Whether the campaign is a new structure.
+KEYWORDS,Keywords used.
+LANDING_PAGE_URL,Landing page URL.
+LANGUAGES,Codes of the languages that you want to target.
+LOCATION,IDs of the locations that you want to target.
+OPEN_URL,The specific location where you want your audience to go if they have your app installed.
+OPEN_URL_TYPE,The open URL type.
+OPERATING_SYSTEMS,Device operating systems that you want to target.
+OPERATION_STATUS,Operation status.
+OPTIMIZATION_GOAL,Optimization goal.
+PACING,"You can choose between PACING_MODE_SMOOTH and PACING_MODE_FAST. For PACING_MODE_SMOOTH, the budget is allocated evenly within the scheduled time.  PACING_MODE_FAST would consume budget and produce results as soon as possible. 
 "
-package,Package name.
-pangle_block_app_list_id,Pangle app block list ID.
-pixel_id,Pixel ID. Only application for landing pages.
-placement,The apps where you want to deliver your ads.
-placement_type,Placement type.
-profile_image,Avatar URL.
-schedule_end_time,Ad delivery end time (UTC+0). Format should be YYYY-MM-DD HH:MM:SS
-schedule_start_time,Ad delivery start time (UTC+0). Format should be YYYY-MM-DD HH:MM:SS
-schedule_type,"The schedule type, which can be either SCHEDULE_START_END or SCHEDULE_FROM_NOW."
-skip_learning_phase,Whether to skip the learning stage.
-statistic_type,conversion bid statistic type
-status,Ad group status
-video_actions,Number of video actions.
-video_download,Whether users can download your video ads on TikTok(cannot be updated once created).
+PACKAGE,Package name.
+PANGLE_BLOCK_APP_LIST_ID,Pangle app block list ID.
+PIXEL_ID,Pixel ID. Only application for landing pages.
+PLACEMENTS,The apps where you want to deliver your ads.
+PLACEMENT_TYPE,Placement type.
+PROFILE_IMAGE,Avatar URL.
+SCHEDULE_END_TIME,Ad delivery end time (UTC+0). Format should be YYYY-MM-DD HH:MM:SS
+SCHEDULE_START_TIME,Ad delivery start time (UTC+0). Format should be YYYY-MM-DD HH:MM:SS
+SCHEDULE_TYPE,"The schedule type, which can be either SCHEDULE_START_END or SCHEDULE_FROM_NOW."
+SKIP_LEARNING_PHASE,Whether to skip the learning stage.
+STATISTIC_TYPE,conversion bid statistic type
+VIDEO_ACTIONS,Number of video actions.
+VIDEO_DOWNLOAD,Whether users can download your video ads on TikTok(cannot be updated once created).
+CONVERSION_BID_PRICE,
+MIN_ANDROID_VERSION,Minimum Android version.
+CREATE_TIME,
+BID_PRICE,
+_FIVETRAN_SYNCED,Timestamp of when Fivetran synced a record.
+SECONDARY_OPTIMIZATION_EVENT,
+SECONDARY_STATUS,
+NETWORK_TYPES,
+OPTIMIZATION_EVENT,

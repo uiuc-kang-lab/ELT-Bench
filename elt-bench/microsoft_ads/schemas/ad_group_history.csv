@@ -4,5 +4,4 @@ name,The name of the corresponding ad group.
 campaign_id,The ID of the campaign.
 modified_time,"The time each version of the object was last modified, i.e. when that version of the object was 'created'."
 start_date,The date in which an ad group starts running. 
-end_date,The date in which this ad group will no longer run.
 status,The status of this ad group;

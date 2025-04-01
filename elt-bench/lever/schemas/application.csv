@@ -16,3 +16,5 @@ requisition_for_hire_id,"If the application was archived as hired against a requ
 type,"Type of the application. An application can be of type referral, user, or posting. Applications of type  referral are created when a user refers a candidate for a job posting. Applications have type user when they  are applied manually to a posting in Lever. Applications have type posting when a candidate applies to a job  posting through your company's jobs page.
 "
 opportunity_id,Foreign key referencing the id of the OPPORTUNITY associated with this application.
+_fivetran_synced,Timestamp of when Fivetran synced a record.
+candidate_id,

@@ -1,6 +1,6 @@
 column_name,column_description
-businessentityid,Employee identification number.
-ratechangedate,Date the change in pay is effective.
-rate,Salary hourly rate.
-payfrequency,Pay Frequency.
-modifieddate,Date and time the record was last updated. 
+BusinessEntityID,Employee identification number.
+RateChangeDate,Date the change in pay is effective.
+Rate,Salary hourly rate.
+PayFrequency,Pay Frequency.
+ModifiedDate,Date and time the record was last updated. 

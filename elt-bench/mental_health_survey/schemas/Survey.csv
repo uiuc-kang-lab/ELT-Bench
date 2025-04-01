@@ -1,3 +1,3 @@
 column_name,column_description
-surveyid,The unique id of each survey 
-description,The Description of the specific survey.
+SurveyID,The unique id of each survey 
+Description,The Description of the specific survey.

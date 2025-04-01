@@ -1,4 +1,4 @@
 column_name,column_description
-phonenumbertypeid,The id number identifying the telephone number type records.
-name,Name of the telephone number type.
-modifieddate,Date and time the record was last updated. 
+PhoneNumberTypeID,The id number identifying the telephone number type records.
+Name,Name of the telephone number type.
+ModifiedDate,Date and time the record was last updated. 

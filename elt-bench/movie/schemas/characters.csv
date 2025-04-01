@@ -1,7 +1,7 @@
 column_name,column_description
-movieid,the unique id for the movie
-actorid,the unique id for the actor
-character_name,the name of the character
-creditorder,order of the character in the credit list 
+MovieID,the unique id for the movie
+ActorID,the unique id for the actor
+Character_Name,the name of the character
+creditOrder,order of the character in the credit list 
 pay,the salary of the character
 screentime,the screentime of the character

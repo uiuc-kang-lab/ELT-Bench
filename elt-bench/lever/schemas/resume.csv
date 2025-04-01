@@ -6,3 +6,5 @@ file_ext,Resume file extension.
 file_name,Name of the file uploaded.
 file_uploaded_at,Timestamp of when the file was uploaded.
 opportunity_id,Foreign key referencing the OPPORTUNITY associated with this resume.
+_fivetran_synced,Timestamp of when Fivetran synced a record.
+candidate_id,

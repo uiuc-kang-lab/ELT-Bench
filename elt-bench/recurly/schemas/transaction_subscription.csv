@@ -1,3 +1,4 @@
 column_name,column_description
 transaction_id,The id of the transaction associated with the subscription.
 subscription_id,The id of the subscription associated with the transaction.
+_fivetran_synced,Timestamp the record was synced by Fivetran.

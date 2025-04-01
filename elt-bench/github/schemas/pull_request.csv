@@ -3,3 +3,13 @@ id,System generated unique id for the pull request.
 issue_id,Foreign key that references the issue table.
 head_repo_id,"Foreign key that references the repository table, referencing the current branch."
 head_user_id,"Foreign key that references the user table, referencing who created the current branch."
+_fivetran_synced,Timestamp of when Fivetran synced a record
+HEAD_REF,
+MERGE_COMMIT_SHA,
+HEAD_SHA,
+BASE_USER_ID,
+BASE_LABEL,
+BASE_REF,
+BASE_SHA,
+BASE_REPO_ID,
+HEAD_LABEL,

@@ -1,32 +1,32 @@
 column_name,column_description
-playerid,player ID
+playerID,player ID
 year,play year
 stint,Stint (order of appearance in a season)
-tmid,team id
-lgid,league id
+tmID,team id
+lgID,league id
 pos,position
-gp,game played
-g,goals
-a,assists
-pts,points
-pim,Penalty minutes
+GP,game played
+G,goals
+A,assists
+Pts,points
+PIM,Penalty minutes
 p_n,Plus / minus
-ppg,Power play goals
-ppa,Power play assists
-shg,Shorthanded goals
-sha,Shorthanded assists
-gwg,Game-winning goals
-gtg,Game-tying goals
-sog,Shots on goal
-postgp,Postseason games played
-postg,Postseason goals
-posta,Postseason assists
-postpts,Postseason points
-postpim,Postseason penalty minutes
-postp_n,Postseason Plus / minus
-postppg,Postseason power play goals
-postppa,Postseason power play assists
-postshg,Postseason Shorthanded goals
-postsha,Postseason Shorthanded assists
-postgwg,Postseason game-winning goals
-postsog,Postseason shots on goal
+PPG,Power play goals
+PPA,Power play assists
+SHG,Shorthanded goals
+SHA,Shorthanded assists
+GWG,Game-winning goals
+GTG,Game-tying goals
+SOG,Shots on goal
+PostGP,Postseason games played
+PostG,Postseason goals
+PostA,Postseason assists
+PostPts,Postseason points
+PostPIM,Postseason penalty minutes
+Post_p_n,Postseason Plus / minus
+PostPPG,Postseason power play goals
+PostPPA,Postseason power play assists
+PostSHG,Postseason Shorthanded goals
+PostSHA,Postseason Shorthanded assists
+PostGWG,Postseason game-winning goals
+PostSOG,Postseason shots on goal

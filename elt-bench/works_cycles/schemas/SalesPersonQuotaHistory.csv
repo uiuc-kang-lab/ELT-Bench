@@ -1,6 +1,0 @@
-column_name,column_description
-businessentityid,Sales person identification number
-quotadate,Sales quota date
-salesquota,Sales quota amount
-rowguid,Uniquely identifying the record. Used to support a merge replication sample. 
-modifieddate,Date and time the record was last updated. 

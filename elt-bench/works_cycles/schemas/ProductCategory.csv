@@ -1,5 +1,5 @@
 column_name,column_description
-productcategoryid,The unique id number identifying the product category.
-name,Category description
+ProductCategoryID,The unique id number identifying the product category.
+Name,Category description
 rowguid,Uniquely identifying the record. Used to support a merge replication sample. 
-modifieddate,Date and time the record was last updated. 
+ModifiedDate,Date and time the record was last updated. 

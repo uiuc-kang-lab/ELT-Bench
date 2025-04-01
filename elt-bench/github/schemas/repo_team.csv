@@ -1,3 +1,5 @@
 column_name,column_description
 repository_id,Reference to the respective repository for the record.
 team_id,Reference to the respective team for the record.
+_fivetran_synced,Timestamp of when Fivetran synced a record
+PERMISSION,

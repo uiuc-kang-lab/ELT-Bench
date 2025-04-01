@@ -1,27 +1,27 @@
 column_name,column_description
-playerid,ID number identifying the unique number of the player
-usefirst,
-firstname,the first name of the player
-middlename,the middle name of the player
-lastname,the last name of the player
-namegiven,
-fullgivenname,
-namesuffix,the suffix name of the player
-namenick,
+playerID,ID number identifying the unique number of the player
+useFirst,
+firstName,the first name of the player
+middleName,the middle name of the player
+lastName,the last name of the player
+nameGiven,
+fullGivenName,
+nameSuffix,the suffix name of the player
+nameNick,
 pos,the position of the player
 firstseason,
 lastseason,
 height,inch
 weight,lb
 college,college
-collegeother,the college that transferred from 
-birthdate,birthdate
-birthcity,birthcity
-birthstate,birth state
-birthcountry,birth country
-highschool,high school
-hscity,high school city
-hsstate,high school state
-hscountry,high school country
-deathdate,deathdate
+collegeOther,the college that transferred from 
+birthDate,birthdate
+birthCity,birthcity
+birthState,birth state
+birthCountry,birth country
+highSchool,high school
+hsCity,high school city
+hsState,high school state
+hsCountry,high school country
+deathDate,deathdate
 race,

@@ -9,6 +9,6 @@ campaign_type,"Campaign Type, indicates the campaign is a regular campaign or iO
 create_time,Time at which the campaign was created.
 is_new_structure,"Whether the campaign is a new structure (for the same campaign, the structure of campaign, adgroups and ads are the same)"
 objective_type,Advertising objective.
-opt_status,Operation status.
-status,Campaign status
+OPERATION_STATUS,Operation status.
 split_test_variable,"Split Test variables. Optional values; TARGETING, BIDDING_OPTIMIZATION , CREATIVE."
+_FIVETRAN_SYNCED,Timestamp of when Fivetran synced a record.

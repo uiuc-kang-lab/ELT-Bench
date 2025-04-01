@@ -2,3 +2,6 @@ column_name,column_description
 issue_id,Foreign key that references the issue table
 updated_at,Timestamp of when the action took place
 closed,Boolean variable for if the issue was closed (true) or re-opened (false)
+_fivetran_synced,Timestamp of when Fivetran synced a record
+COMMIT_SHA,
+ACTOR_ID,

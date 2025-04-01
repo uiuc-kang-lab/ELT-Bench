@@ -2,3 +2,11 @@ column_name,column_description
 id,Application ID.
 name,Application Name.
 is_enabled,Boolean indicator for whether application is enabled or not.
+_fivetran_synced,Timestamp of when Fivetran synced a record
+TVOS,
+APP_OPT_IN_RATE,
+ICON_URL,
+IS_BUNDLE,
+IOS,
+ASSET_TOKEN,
+PRE_ORDER_INFO,

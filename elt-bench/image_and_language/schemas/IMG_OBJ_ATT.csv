@@ -1,4 +1,4 @@
 column_name,column_description
-img_id,id number of each image
-att_class_id,attribute class number for image
-obj_sample_id,object sample id
+IMG_ID,id number of each image
+ATT_CLASS_ID,attribute class number for image
+OBJ_SAMPLE_ID,object sample id

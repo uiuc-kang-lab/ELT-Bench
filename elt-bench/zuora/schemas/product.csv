@@ -11,3 +11,5 @@ sku,The SKU (stock keeping unit) of the product.
 updated_by_id,The id of the user who last updated the product.
 updated_date,The date and time when the product was last updated.
 _fivetran_deleted,Boolean identifiying whether the record was deleted in the source.
+_fivetran_synced,Timestamp of when Fivetran synced a record
+allow_feature_changes,

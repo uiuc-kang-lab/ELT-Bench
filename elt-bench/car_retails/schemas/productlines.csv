@@ -1,5 +1,3 @@
 column_name,column_description
 productline,unique product line name
 textdescription,text description
-htmldescription,html description
-image,image

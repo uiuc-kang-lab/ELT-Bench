@@ -1,6 +1,6 @@
 column_name,column_description
-locationid,unique id of the location
-country,the country
-state,the state
-statecode,state code
-city,the city
+LocationID,unique id of the location
+Country,the country
+State,the state
+StateCode,state code
+City,the city

@@ -1,3 +1,4 @@
 column_name,column_description
 contact_id,Xero identifier for the contact.
 name,The name of the contact.
+_fivetran_deleted,Timestamp of when Fivetran marked a record as deleted

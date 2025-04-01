@@ -1,0 +1,12 @@
+column_name,column_description
+ProductID,The id number identifying the products.
+BusinessEntityID,The id number identifying the business entities.
+AverageLeadTime,The average span of time between placing an order with the vendor and receiving the purchased product.
+StandardPrice,The vendor's usual selling price.
+LastReceiptCost,The selling price when last purchased.
+LastReceiptDate,Date the product was last received by the vendor.
+MinOrderQty,The maximum quantity that should be ordered.
+MaxOrderQty,The minimum quantity that should be ordered.
+OnOrderQty,The quantity currently on order.
+UnitMeasureCode,The product's unit of measure.
+ModifiedDate,Date and time the record was last updated. 

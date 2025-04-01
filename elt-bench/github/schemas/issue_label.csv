@@ -1,3 +1,4 @@
 column_name,column_description
 issue_id,Foreign key that references the issue table
 label_id,Unique identifier of the used label
+_fivetran_synced,Timestamp of when Fivetran synced a record

@@ -7,7 +7,7 @@ date_sent,The timestamp indicating when the message was sent.
 direction,"The direction of the message.  Can be inbound for incoming messages, outbound-api for messages initiated by a REST API, outbound-call for messages initiated during a call, or outbound-reply for messages initiated in response to an incoming message."
 error_code,"The error code associated with the message, if applicable."
 error_message,"The description of the error_code if your message status is failed or undelivered. If the message was successful, this value is null."
-from,The phone number or sender ID that sent the message.
+message_from,The phone number or sender ID that sent the message.
 id,The unique identifier for the message.
 messaging_service_sid,The unique identifier of the messaging service associated with the message.
 num_media,"The number of media (e.g., images, videos) included in the message."
@@ -15,5 +15,5 @@ num_segments,"The number of segments the message contains. A message body that i
 price,The cost of the message.
 price_unit,The currency unit for the message cost.
 status,"The status of the message. Can be accepted, scheduled, canceled, queued, sending, sent, failed, delivered, undelivered, receiving, received, or read (WhatsApp only)."
-to,The phone number or recipient ID that received the message.
+message_to,The phone number or recipient ID that received the message.
 updated_at,The timestamp indicating when the message was last updated.

@@ -40,3 +40,4 @@ winning_campaign_id,ID of the campaign that was sent to the remaining recipients
 winning_combination_id,ID for the winning combination.
 _fivetran_synced,UTC timestamp that indicates the time when Fivetran last successfully synced the row.
 _fivetran_deleted,Boolean that is true if the row has been soft-deleted from the source.
+segment_text,Description of the segment. Formatted as a string marked up with HTML.
