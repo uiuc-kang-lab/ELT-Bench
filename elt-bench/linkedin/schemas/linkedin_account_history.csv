@@ -5,16 +5,3 @@ created_time,The timestamp of when the account was created.
 name,A label for the account.
 currency,"The ISO 4217 currency code of the account, such as 'USD' for United States Dollar (default)."
 version_tag,An integer representation of the version of the account.
-notified_on_campaign_optimization,Boolean (default=false) indicating if the campaign contact is notified about campaign optimization opportunities
-notified_on_creative_approval,Boolean (default=false) indicating if the creative contact is notified when a creative has been reviewed and approved
-notified_on_creative_rejection,Boolean (default=false) indicating if the creative contact is notified when a creative has been rejected due to content
-notified_on_end_of_campaign,Boolean (default=false) indicating if the campaign contact is notified when an associated campaign has been completed
-status,"ACTIVE - Account is active; this is the default state
-CANCELLED - Account has been permanently cancelled
-DRAFT - Account is in draft status, meaning it's not yet fully set up and it is not serving
-PENDING_DELETION - Denotes that the account has been requested to be deleted that is currently pending
-REMOVED - Denotes that the account was deleted, but must remain fetchable due to the existence of performance data.
-"
-type,"BUSINESS - This is the only value allowed when creating accounts through the API.
-ENTERPRISE - This value cannot be used to create accounts through the API and is reserved for accounts created by LinkedIn's internal ad operations systems.
-"

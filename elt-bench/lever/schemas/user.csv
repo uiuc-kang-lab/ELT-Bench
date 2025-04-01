@@ -10,3 +10,4 @@ external_directory_id,"Unique ID of the user in an external HR directory, if pro
 name,User's preferred name.
 photo,"URL for user's gravatar, if enabled."
 username,"Username, extracted from user's email address."
+_fivetran_synced,Timestamp of when Fivetran synced a record.

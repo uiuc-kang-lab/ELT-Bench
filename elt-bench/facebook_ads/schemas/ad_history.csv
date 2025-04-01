@@ -7,4 +7,3 @@ creative_id,The ID of the ad creative to be used by this ad.
 name,Name of the ad.
 _fivetran_synced,When the record was last synced by Fivetran.
 updated_time,The timestamp of the last update of a record.
-conversion_domain,The domain you've configured the ad to convert to.

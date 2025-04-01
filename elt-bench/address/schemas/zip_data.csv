@@ -36,7 +36,7 @@ residential_mailboxes,the number of residential mailboxes in the residential are
 business_mailboxes,the number of business mailboxes in the residential area
 total_delivery_receptacles,the total number of delivery receptacles
 businesses,the number of businesses in the residential area
-1st_quarter_payroll,the total wages reported in the 1st quarter payroll report of the residential area
+QUARTER_1_PAYROLL,the total wages reported in the 1st quarter payroll report of the residential area
 annual_payroll,the total wages reported in the annual payroll report of the residential area
 employees,the number of employees in the residential area
 water_area,the water area of the residential area

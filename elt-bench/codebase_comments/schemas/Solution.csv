@@ -1,6 +1,6 @@
 column_name,column_description
-id,unique id to identify this solution
-repoid,id of repository
-path,path of this solution
-processedtime,processed time
-wascompiled,whether this solution needs to be compiled or not
+Id,unique id to identify this solution
+RepoId,id of repository
+Path,path of this solution
+ProcessedTime,processed time
+WasCompiled,whether this solution needs to be compiled or not

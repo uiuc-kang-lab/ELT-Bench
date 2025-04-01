@@ -9,3 +9,4 @@ value_decimal,"If the field is a decimal, this is the value."
 value_file_id,Foreign key referencing the FILE that was provided as the field value.
 value_number,"If the field is a numeric, this is the value."
 value_text,"If the field is a text field, this is the content of the value."
+_fivetran_synced,Timestamp of when Fivetran synced a record.

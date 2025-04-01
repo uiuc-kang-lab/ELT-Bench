@@ -1,13 +1,13 @@
 column_name,column_description
-customerid,the unique id for the customer
-first,the first name of the customer
-last,the last name of the customer
-streetaddress,the address of the customer
-city,the city where the customer lives
-state,the state code
-zipcode,the zip code
-email,the customer's email
-phonenumber,the customer's phone number
-firstpurchasedate,the first purchase date of the customer
-subscribedtoemaillist,whether the customer subscribe to the email list
-gender,the customer's gender
+CustomerID,the unique id for the customer
+First,the first name of the customer
+Last,the last name of the customer
+StreetAddress,the address of the customer
+City,the city where the customer lives
+State,the state code
+ZipCode,the zip code
+Email,the customer's email
+PhoneNumber,the customer's phone number
+FirstPurchaseDate,the first purchase date of the customer
+SubscribedToEmailList,whether the customer subscribe to the email list
+Gender,the customer's gender

@@ -4,3 +4,6 @@ pull_request_id,Foreign key that references the pull request table.
 submitted_at,Timestamp of when the request for review was submitted.
 state,"Whether the review was an approval, request for change, comment, dismissal."
 user_id,"Foreign key that references the user table, representing the user that reviewed the pull request."
+_fivetran_synced,Timestamp of when Fivetran synced a record
+COMMIT_SHA,
+BODY,

@@ -3,6 +3,5 @@ productid,the unique id for products
 productname,the name of the product
 supplierid,the unique id for supplier
 categoryid,the unique id for the product category
-quantityperunit,the quantity per unit of the product
 unit,the unit of the product
 price,the price

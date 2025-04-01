@@ -5,3 +5,5 @@ name,User created name of the team.
 parent_id,Reference to the parent team.
 privacy,Type of privacy permissions associated with the team.
 slug,Url friendly version of the team name.
+_fivetran_synced,Timestamp of when Fivetran synced a record
+ORG_ID,

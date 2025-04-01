@@ -11,3 +11,4 @@ name,Name of the account in Twitter
 salt,Salt used to generate the account's unique ID
 timezone,Timezone of the account in Twitter
 updated_at,Date and time when the account was last updated
+timezone_switch_at,

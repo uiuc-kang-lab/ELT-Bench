@@ -1,3 +1,3 @@
 column_name,column_description
-extra_id,unique id for extra type
-extra_name,extra type name
+Extra_Id,unique id for extra type
+Extra_Name,extra type name

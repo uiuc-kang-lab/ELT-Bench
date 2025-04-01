@@ -2,3 +2,4 @@ column_name,column_description
 offer_id,Foriegn key referencing the OFFER for the requisition.
 requisition_id,Foriegn key referencing the REQUISITION which the offer was made against.
 _fivetran_deleted,Boolean that is true if the offer-requisition relationship has been soft-deleted.
+_fivetran_synced,Timestamp of when Fivetran synced a record.

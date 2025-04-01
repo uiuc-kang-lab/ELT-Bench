@@ -1,6 +1,6 @@
 column_name,column_description
-businessentityid,Number identifying the business entity.
-addressid,Number identifying the address.
-addresstypeid,Number identifying the address type.
+BusinessEntityID,Number identifying the business entity.
+AddressID,Number identifying the address.
+AddressTypeID,Number identifying the address type.
 rowguid,Uniquely identifying the record. Used to support a merge replication sample. 
-modifieddate,Date and time the record was last updated. 
+ModifiedDate,Date and time the record was last updated. 

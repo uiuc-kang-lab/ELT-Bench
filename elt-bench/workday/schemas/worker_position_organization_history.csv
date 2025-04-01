@@ -1,5 +1,4 @@
 column_name,column_description
-source_relation,The record's source if the unioning functionality is used. Otherwise this field will be empty.
 position_id,Identifier for the specific position.
 worker_id,Unique identifier for the worker.
 _fivetran_active,TRUE if it is the currently active record. FALSE if it is a historical version of the record. Only one version of the record can be TRUE.
@@ -10,4 +9,4 @@ index,An index for a particular identifier.
 date_of_pay_group_assignment,Date a group's pay is assigned to be processed.
 organization_id,Identifier for the organization.
 primary_business_site,Primary location a worker's business is situated.
-is_used_in_change_organization_assignments,If a worker has opted to change these organization assignments.
+used_in_change_organization_assignments,If a worker has opted to change these organization assignments.

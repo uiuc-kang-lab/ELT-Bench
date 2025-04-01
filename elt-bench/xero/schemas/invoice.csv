@@ -16,3 +16,13 @@ sent_to_contact,"Boolean to indicate whether the invoice in the Xero app display
 status,The status of the invoice
 type,The type of the invoice.
 url,URL link to a source document
+is_discounted,
+amount_paid,
+amount_credited,
+total_tax,
+has_attachments,
+total,
+has_errors,
+line_amount_types,
+sub_total,
+amount_due,

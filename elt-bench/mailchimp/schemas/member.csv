@@ -22,3 +22,5 @@ timezone,The timezone for the member's location.
 unique_email_id,An identifier for the address across all of Mailchimp.
 vip,VIP status for subscriber.
 _fivetran_synced,UTC timestamp that indicates the time when Fivetran last successfully synced the row.
+merge_fname,
+merge_lname,

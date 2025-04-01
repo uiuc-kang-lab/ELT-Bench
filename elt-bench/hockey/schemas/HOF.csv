@@ -1,5 +1,5 @@
 column_name,column_description
 year,year of hall of fame
-hofid,hall of fame id
+hofID,hall of fame id
 name,name
 category,category

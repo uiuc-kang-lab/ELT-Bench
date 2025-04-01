@@ -1,0 +1,6 @@
+column_name,column_description
+BusinessEntityID,The id number identifying the person associated with this email address.
+EmailAddressID,The ID of this email address.
+EmailAddress,The E-mail address for the person.
+rowguid,Uniquely identifying the record. Used to support a merge replication sample. 
+ModifiedDate,Date and time the record was last updated. 

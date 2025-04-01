@@ -1,3 +1,5 @@
 column_name,column_description
 id,Unique id of the stage.
 text,Title of the stage.
+_fivetran_synced,Timestamp of when Fivetran synced a record.
+_fivetran_deleted,Timestamp of when Fivetran marked a record as deleted

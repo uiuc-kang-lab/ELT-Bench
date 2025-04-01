@@ -1,5 +1,5 @@
 column_name,column_description
-addresstypeid,Unique numbers identifying address type records.
-name,Address type description. 
+AddressTypeID,Unique numbers identifying address type records.
+Name,Address type description. 
 rowguid,Uniquely identifying the record. Used to support a merge replication sample. 
-modifieddate,Date and time the record was last updated. 
+ModifiedDate,Date and time the record was last updated. 

@@ -3,3 +3,12 @@ id,System generated unique id for the user.
 login,The alias the user uses to login to github.
 name,The name of the user
 company,The  company of the user.
+_fivetran_synced,Timestamp of when Fivetran synced a record
+CREATED_AT,
+LOCATION,
+UPDATED_AT,
+BLOG,
+SITE_ADMIN,
+HIREABLE,
+BIO,
+TYPE,

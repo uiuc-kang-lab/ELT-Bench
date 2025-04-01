@@ -8,3 +8,5 @@ territory,The territory (aka country) full name associated with the report's res
 first_time_downloads,"The number of first time downloads for your app; credit is attributed to the referring app, website, or App Clip of the first time download."
 redownloads,The count of redownloads where a redownload occurs when a user who previously downloaded your app adds it to their device again (User Opt-In only); credit is attributed to the source recorded when a user tapped to download/launch your app for the first time. A value of 0 indicates there were 0 redownloads or no value from the source report that day.
 total_downloads,Total Downloads is the sum of Redownloads and First Time Downloads.
+_fivetran_synced,Timestamp of when Fivetran synced a record
+MEETS_THRESHOLD,

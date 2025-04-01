@@ -42,3 +42,17 @@ term_type,The type of subscription term.
 updated_by_id,The unique identifier of the user who last updated the subscription.
 updated_date,The date the subscription was last updated.
 version,The version number of the subscription.
+TESTCUSTOMAAKASH_C,
+QUOTE_BUSINESS_TYPE_QT,
+SUBSCRIPTION_VERSION_AMENDMENT_ID,
+QUOTE_TYPE_QT,
+CUSTOM_DATE_FIELD_C,
+INVOICE_TEMPLATE_ID,
+QUOTE_NUMBER_QT,
+OPPORTUNITY_CLOSE_DATE_QT,
+CREATOR_ACCOUNT_ID,
+SEQUENCE_SET_ID,
+RENEWAL_SETTING,
+CREATOR_INVOICE_OWNER_ID,
+OPPORTUNITY_NAME_QT,
+CPQ_BUNDLE_JSON_ID_QT,

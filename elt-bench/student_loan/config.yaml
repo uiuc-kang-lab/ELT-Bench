@@ -30,7 +30,7 @@ flat_files:
 - format: jsonl
   path: https://drive.google.com/uc?export=download&id=1RDRdHA78-9dtOWdp2tUtmuG6ebVpRRBy
   sync_mode: full_refresh_append
-  table: filed_for_bankrupcy
+  table: filed_for_bankruptcy
 - format: parquet
   path: https://drive.google.com/uc?export=download&id=1yGnpw4reB2IBKTr_rMu1cONTy50SHMA-
   sync_mode: full_refresh_append

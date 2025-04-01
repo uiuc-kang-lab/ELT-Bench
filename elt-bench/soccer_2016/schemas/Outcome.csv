@@ -1,3 +1,3 @@
 column_name,column_description
-outcome_id,unique id for outcome
-outcome_type,type of the outcome
+Outcome_Id,unique id for outcome
+Outcome_Type,type of the outcome

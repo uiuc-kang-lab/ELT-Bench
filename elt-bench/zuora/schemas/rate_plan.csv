@@ -16,3 +16,9 @@ sold_to_contact_id,The unique identifier of the contact that the rate plan is so
 subscription_id,The unique identifier of the subscription that the rate plan belongs to.
 updated_by_id,The unique identifier of the user who last updated the rate plan.
 updated_date,The date and time when the rate plan was last updated.
+invoice_owner_id,
+amendment_type,
+parent_account_id,
+subscription_version_amendment_id,
+externally_managed_plan_id,
+subscription_owner_id,

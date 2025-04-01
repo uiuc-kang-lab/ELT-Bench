@@ -3,3 +3,4 @@ contact_id,Unique ID of the contact in Lever.
 index,The index of this phone number for this contact (there can be multiple phone numbers per contact).
 type,"Type of phone number, either ""mobile"", ""home"", ""work"", ""skype"", or ""other""."
 value,The contact's provided phone number.
+_fivetran_synced,Timestamp of when Fivetran synced a record.

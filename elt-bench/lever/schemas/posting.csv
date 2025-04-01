@@ -21,3 +21,4 @@ state,"Current status of the posting, which may include 'published', 'internal' 
 "
 text,Title of the job posting role.
 updated_at,Timestamp of when the posting was last updated.
+_fivetran_synced,Timestamp of when Fivetran synced a record.

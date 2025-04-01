@@ -10,3 +10,5 @@ active_devices_last_30_days,"The count of active_devices_last_30_days is the cou
 deletions,A deletion occurs when a user removes your app from their device (User Opt-In only). Data from resetting or erasing a device’s content and settings is not included. A value of 0 indicates there were 0 deletions or no value from the source report that day.
 installations,"An installation event is when the user opens the App after they've downloaded it (User Opt-In only). If the App was downloaded but not opened or opened offline, this will not count; if the user opts out of sending data back to Apple, there will also be no data here. A value of 0 indicates there were 0 installations or no value from the source report that day."
 sessions,"Sessions is the count of the number of times the app has been used for at least two seconds (User Opt-In only). If the app is in the background and is later used again, that counts as another session. A value of 0 indicates there were 0 sessions or no value from the source report that day."
+_fivetran_synced,Timestamp of when Fivetran synced a record.
+MEETS_THRESHOLD,

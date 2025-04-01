@@ -14,3 +14,23 @@ subscribers_lost,Number of subscribers lost
 video_id,Unique ID of the video
 views,Number of views the video received
 watch_time_minutes,Total watch time the video received in minutes
+card_click_rate,
+annotation_clickable_impressions,
+card_teaser_impressions,
+card_teaser_clicks,
+red_watch_time_minutes,
+card_clicks,
+subscribed_status,
+videos_removed_from_playlists,
+annotation_click_through_rate,
+country_code,
+annotation_close_rate,
+red_views,
+videos_added_to_playlists,
+card_teaser_click_rate,
+live_or_on_demand,
+annotation_closable_impressions,
+annotation_closes,
+annotation_impressions,
+annotation_clicks,
+card_impressions,

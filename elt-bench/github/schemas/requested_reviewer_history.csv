@@ -3,3 +3,5 @@ pull_request_id,Foreign key that references the pull request table.
 created_at,Timestamp of when the review was submitted.
 requested_id,"Foreign key that references the user table, representing the user that was requested to review a PR."
 removed,Boolean variable indicating if the requester was removed from the PR (true) or added to the PR (false).
+_fivetran_synced,Timestamp of when Fivetran synced a record
+ACTOR_ID,

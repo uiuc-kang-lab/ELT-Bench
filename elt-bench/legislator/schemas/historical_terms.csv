@@ -1,7 +1,6 @@
 column_name,column_description
 bioguide,The alphanumeric ID for this legislator 
 address,the address of this legislator
-caucus,caucus
 chamber,chamber
 class,class
 contact_form,The website URL of the contact page on the legislator's official website

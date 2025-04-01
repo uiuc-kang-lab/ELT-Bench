@@ -21,3 +21,4 @@ us_app_to_person_registered,Specifies whether to enable or disable routing inbou
 use_inbound_webhook_on_number,Specifies whether to use inbound webhooks for handling incoming messages to the messaging service.
 usecase,Specifies the intended use case of the messaging service.
 validity_period,"How long, in seconds, messages sent from the Service are valid. Can be an integer from 1 to 14,400."
+_fivetran_deleted,Indicates if the record was soft-deleted by Fivetran.

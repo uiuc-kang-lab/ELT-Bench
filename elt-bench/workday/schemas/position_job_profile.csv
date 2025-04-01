@@ -3,9 +3,7 @@ job_profile_id,Identifier for the job profile.
 position_id,Identifier for the specific position.
 _fivetran_deleted,Indicates if the record was soft-deleted by Fivetran.
 _fivetran_synced,Timestamp the record was synced by Fivetran.
-difficulty_to_fill_code,Code indicating the difficulty level in filling the position.
 is_critical_job,Flag indicating whether the position is considered critical based on the job profile.
-job_category_code,Code indicating the category of the job profile associated with the position.
 management_level_code,Code indicating the management level associated with the job profile.
 name,Name associated with the job profile linked to the position.
 work_shift_required,Flag indicating whether a work shift is required.

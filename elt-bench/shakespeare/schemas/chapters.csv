@@ -1,6 +1,6 @@
 column_name,column_description
 id,unique id number identifying the chapter
-act,"An act is a major division of a theatre work, including a play, film, opera, or musical theatre"
-scene,"A scene is a dramatic part of a story, at a specific time and place, between specific characters."
-description,textual description of the chapter.
+Act,"An act is a major division of a theatre work, including a play, film, opera, or musical theatre"
+Scene,"A scene is a dramatic part of a story, at a specific time and place, between specific characters."
+Description,textual description of the chapter.
 work_id,id number identifying the work

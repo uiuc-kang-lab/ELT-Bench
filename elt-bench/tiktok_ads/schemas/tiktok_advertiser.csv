@@ -1,30 +1,26 @@
 column_name,column_description
-id,Advertiser ID
-address,Advertiser address information
-balance,Account available balance
-cellphone_number,"Contact mobile number, desensitised data. This is the newest version of the field `phone_number`, which was renamed after the Tiktok Ads v1.3 API release.
+ID,Advertiser ID
+ADDRESS,Advertiser address information
+BALANCE,Account available balance
+CELLPHONE_NUMBER,"Contact mobile number, desensitised data. This is the newest version of the field `phone_number`, which was renamed after the Tiktok Ads v1.3 API release.
 "
-company,Advertiser's company name
-contacter,Contact Person
-country,The advertiser's country
-create_time,Advertiser's create time
-currency,Type of currency used by advertisers
-description,"Brand description, i.e. promotional content"
-email,"Advertiser contact email, desensitised data"
-industry,Advertiser industry category
-language,Language used by advertisers
-license_no,License number
-license_url,"License preview address, the link is valid for an hour by default."
-name,Advertiser name
-phone_number,"Contact mobile number, desensitised data. IMPORTANT: This field will not be populated for connectors utilizing the Tiktok Ads v1.3 API version, as the column was renamed.  The new column name is `cellphone_number`.
+COMPANY,Advertiser's company name
+CONTACTER,Contact Person
+COUNTRY,The advertiser's country
+CREATE_TIME,Advertiser's create time
+CURRENCY,Type of currency used by advertisers
+DESCRIPTION,"Brand description, i.e. promotional content"
+EMAIL,"Advertiser contact email, desensitised data"
+INDUSTRY,Advertiser industry category
+LANGUAGE,Language used by advertisers
+LICENSE_NO,License number
+LICENSE_URL,"License preview address, the link is valid for an hour by default."
+NAME,Advertiser name
+PROMOTION_AREA,Operation area
+REJECTED_REASON,Reason for rejection
+ROLE,Advertiser role
+STATUS,Advertiser status
+TELEPHONE_NUMBER,"Fixed phone number, desensitised data This is the newest version of the field `telephone`, which was renamed after the Tiktok Ads v1.3 API release.
 "
-promotion_area,Operation area
-reason,Reason for rejection
-role,Advertiser role
-status,Advertiser status
-telephone,"Fixed phone number, desensitised data IMPORTANT: This field will not be populated for connectors utilizing the Tiktok Ads v1.3 API version, as the column was renamed.  The new column name is `telephone_number`.
-"
-telephone_number,"Fixed phone number, desensitised data This is the newest version of the field `telephone`, which was renamed after the Tiktok Ads v1.3 API release.
-"
-timezone,Ad account time zone including GMT offset
-_fivetran_synced,Timestamp of when Fivetran synced a record.
+TIMEZONE,Ad account time zone including GMT offset
+_FIVETRAN_SYNCED,Timestamp of when Fivetran synced a record.

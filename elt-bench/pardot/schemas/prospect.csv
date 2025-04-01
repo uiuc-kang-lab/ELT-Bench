@@ -45,6 +45,5 @@ is_do_not_call,"If value is 1, prospect prefers not to be called"
 opted_out,"If value is 1, prospect has opted out of marketing communications"
 is_reviewed,"If value is 1, prospect has been reviewed"
 is_starred,"If value is 1, prospect has been starred"
-is_archived,"If value is 1, prospect has been archived"
 created_at,Time prospect is created in Pardot; Time is reported in API user's preferred timezone
 updated_at,Last time prospect was updated in Pardot; Time is reported in API user's preferred timezone

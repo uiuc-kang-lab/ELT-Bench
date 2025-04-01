@@ -8,3 +8,4 @@ plan_add_on_id,Plan add-on ID associated with subscription add-on ID.
 quantity,Number of add-ons added to the subscription.
 subscription_id,Subscription ID associated with add-on.
 unit_amount,Amount of one unit of the add-on.
+_fivetran_synced,Timestamp the record was synced by Fivetran.

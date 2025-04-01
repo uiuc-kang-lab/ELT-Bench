@@ -15,4 +15,3 @@ timeline_hidden,If the event is hidden or not
 totals,The total number of times the event has happened this week
 totals_delta,This represents the change in event volume from the previous week.
 value,Name of the event in the raw data.
-waitroom_approved,Waitroom approved

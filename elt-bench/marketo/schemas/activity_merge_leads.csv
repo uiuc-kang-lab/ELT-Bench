@@ -7,3 +7,7 @@ lead_id,The ID of the lead related to the activity.
 primary_attribute_value,The primary attribute of the activity.
 primary_attribute_value_id,The ID of the primary attribute of the activity.
 merge_ids,ID of the lead that the lead was merged into.
+_fivetran_synced,Timestamp of when Fivetran synced a record
+MERGE_SOURCE,
+MASTER_UPDATED,
+MERGED_IN_SALES,

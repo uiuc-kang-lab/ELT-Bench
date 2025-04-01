@@ -1,9 +1,9 @@
 column_name,column_description
-date_received,complaint date
-complaint_id,unique id number representing each complaint
+Date_received,complaint date
+Complaint_ID,unique id number representing each complaint
 rand_client,client id
 phonefinal,final phone number
-vru+line,voice response unit line
+vru_line,voice response unit line
 call_id,id number identifying the call
 priority,priority of the complaint
 type,type of complaint

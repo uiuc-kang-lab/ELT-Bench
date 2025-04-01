@@ -1,6 +1,6 @@
 column_name,column_description
-locationid,The unique id number identifying the job candidates.
-name,Location description.
-costrate,Standard hourly cost of the manufacturing location.
-availability,Work capacity (in hours) of the manufacturing location.
-modifieddate,Date and time the record was last updated. 
+LocationID,The unique id number identifying the job candidates.
+Name,Location description.
+CostRate,Standard hourly cost of the manufacturing location.
+Availability,Work capacity (in hours) of the manufacturing location.
+ModifiedDate,Date and time the record was last updated. 

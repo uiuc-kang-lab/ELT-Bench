@@ -15,18 +15,13 @@ folder_type,The type of folder that the campaign is stored in.
 is_communication_limit_enabled,Whether or not the campaign has a communication limit.
 is_requestable,Whether or not the campaign can be requested by leads.
 is_system,Whether or not the campaign is a system campaign.
-max_members,The maximum number of members that the campaign can have.
 qualification_rule_type,The type of qualification rule that the campaign uses.
 qualification_rule_interval,The interval for the qualification rule.
 qualification_rule_unit,The unit for the qualification rule.
 recurrence_start_at,The start date and time for the recurrence.
-recurrence_end_at,The end date and time for the recurrence.
 recurrence_interval_type,The type of recurrence interval.
 recurrence_interval,The value of the recurrence interval.
 recurrence_weekday_only,Whether or not the recurrence is limited to weekdays.
-recurrence_day_of_month,The day of the month for the recurrence.
-recurrence_day_of_week,The day of the week for the recurrence.
-recurrence_week_of_month,The week of the month for the recurrence.
 smart_list_id,The ID of the smart list that the campaign is associated with.
 status,The status of the campaign.
 _fivetran_deleted,Boolean created by Fivetran to indicate whether the record has been deleted.

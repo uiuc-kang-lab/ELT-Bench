@@ -1,8 +1,8 @@
 column_name,column_description
-id,the unique number identifying the customer
-sex,the sex of the customer
-marital_status,
-geoid,geographic identifier
-educationnum,the level of education
-occupation,occupation of customers
+ID,the unique number identifying the customer
+SEX,the sex of the customer
+MARITAL_STATUS,
+GEOID,geographic identifier
+EDUCATIONNUM,the level of education
+OCCUPATION,occupation of customers
 age,age of customers

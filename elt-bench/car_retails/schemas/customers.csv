@@ -1,14 +1,14 @@
 column_name,column_description
-customernumber,unique id number of customer
-customername,the name when the customer registered
-contactlastname,contact last name
-contactfirstname,contact first name
+customerNumber,unique id number of customer
+customerName,the name when the customer registered
+contactLastName,contact last name
+contactFirstName,contact first name
 phone,phone
-addressline1,addressLine1
-addressline2,addressLine2
+addressLine1,addressLine1
+addressLine2,addressLine2
 city,city
 state,state
-postalcode,postalCode
+postalCode,postalCode
 country,country
-salesrepemployeenumber,sales representative employee number
-creditlimit,credit limit
+salesRepEmployeeNumber,sales representative employee number
+creditLimit,credit limit

@@ -17,3 +17,5 @@ stage_id,"Foreign key referencing the STAGE that the candidate was in at the tim
 subject,Subject of the interview.
 timezone,Name of timezone in which interview was scheduled to occur.
 opportunity_id,Foreign key referencing the OPPORTUNITY being interviewed for.
+_fivetran_synced,Timestamp of when Fivetran synced a record.
+candidate_id,

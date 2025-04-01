@@ -1,0 +1,6 @@
+column_name,column_description
+SalesID,the unique id of the sales
+SalesPersonID,the unique id of the sale person
+CustomerID,the unique id of the customer
+ProductID,the unique id of the product
+Quantity,trading quantity

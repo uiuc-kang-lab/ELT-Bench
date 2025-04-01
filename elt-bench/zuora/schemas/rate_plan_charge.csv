@@ -7,7 +7,6 @@ account_receivable_accounting_code_id,The unique identifier for the accounting c
 accounting_code,The accounting code associated with this charge.
 amended_by_order_on,The date when the amendment order was created or processed.
 amendment_id,The unique identifier for the amendment associated with this rate plan charge.
-apply_discount_to,The type of discount that is applied to the charge.
 bill_cycle_day,The day of the month when the billing cycle for the charge ends.
 bill_cycle_type,The type of billing cycle that the charge uses.
 bill_to_contact_id,The unique identifier of the contact associated with the account's billing information.
@@ -22,11 +21,8 @@ charge_type,The type of charge.
 charged_through_date,The date through which the charge has been charged.
 created_by_id,The unique identifier of the user who created the rate plan charge.
 created_date,The date and time when the rate plan charge was created.
-credit_option,The option used to calculate the credit for the charge.
 default_payment_method_id,The unique identifier of the default payment method for the account.
 deferred_revenue_accounting_code_id,The unique identifier for the accounting code that represents the deferred revenue for this charge.
-description,The description of the rate plan charge.
-discount_level,The level of the discount applied to the charge.
 dmrc,The amount of the charge in the charge currency.
 dmrchome_currency,The amount of the charge in the home currency of the company.
 dtcv,The deferred tax calculated value of the rate plan charge.
@@ -42,7 +38,6 @@ is_processed,A boolean value indicating whether the rate plan charge has been pr
 mrr,The monthly recurring revenue of the rate plan charge.
 mrrhome_currency,The monthly recurring revenue of the rate plan charge in the home currency.
 name,The name of the rate plan charge.
-number_of_periods,The number of billing periods for the rate plan charge.
 original_id,The original id of the rate plan charge.
 original_order_date,The date on which the original order was placed.
 price_change_option,The option selected for handling price changes for the rate plan charge.
@@ -56,19 +51,37 @@ rate_plan_id,The unique identifier of the rate plan associated with the rate pla
 recognized_revenue_accounting_code_id,The unique identifier of the accounting code associated with recognized revenue for the rate plan charge.
 segment,The segment associated with the rate plan charge.
 sold_to_contact_id,The unique identifier of the contact associated with the sold-to account.
-specific_billing_period,The specific billing period associated with the rate plan charge.
-specific_end_date,The specific end date associated with the rate plan charge.
-specific_list_price_base,The list price base for the rate plan charge.
 subscription_id,The id of the subscription associated with the rate plan charge.
 tcv,The total contract value for the rate plan charge.
 tcvhome_currency,The home currency value of the Total Contract Value.
 transaction_currency,The currency in which the transaction occurs.
-trigger_date,The date on which the trigger event occurs.
 trigger_event,The type of trigger event that is associated with the rate plan charge.
 uom,The unit of measure for the quantity of the rate plan charge.
-up_to_periods,The maximum number of billing periods for which the charge is applicable.
 up_to_periods_type,The time unit that is used to calculate the maximum number of billing periods for which the charge is applicable.
 updated_by_id,The id of the user who last updated the rate plan charge.
 updated_date,The date and time when the rate plan charge was last updated.
 version,The version number of the rate plan charge.
-weekly_bill_cycle_day,The day of the week on which the bill cycle starts.
+overage_unused_units_credit_option,
+drawdown_rate,
+payment_term_snapshot,
+dtcvcurrency_rounding,
+rating_group,
+parent_account_id,
+is_rollover,
+list_price_base,
+exclude_item_billing_from_revenue_accounting,
+rollover_apply,
+overage_calculation_option,
+revenue_recognition_rule_name,
+rollover_periods,
+invoice_owner_id,
+billing_period_alignment,
+exclude_item_booking_from_revenue_accounting,
+booking_provider_exchange_rate_date,
+is_last_segment,
+mrrcurrency_rounding,
+sold_to_contact_snapshot_id,
+dmrccurrency_rounding,
+provider_exchange_rate_date,
+tcvcurrency_rounding,
+subscription_owner_id,

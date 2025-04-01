@@ -5,40 +5,27 @@ tmid,team ID
 hw,home wins
 hl,home loses
 ht,home ties
-hotl,Home overtime losses
 rw,Road wins
 rl,Road loses
 rt,Road ties
-rotl,road overtime loses
-sepw,September wins
-sepl,September loses
-sept,September ties
-sepol,September overtime loses
 octw,October wins
 octl,October loses
 octt,October ties
-octol,October overtime loses
 novw,November wins
 novl,November loses
 novt,November ties
-novol,November overtime loses
 decw,December wins
 decl,December loses
 dect,December ties
-decol,December overtime loses
 janw,January wins
 janl,January loses
 jant,January ties
-janol,January overtime loses
 febw,February wins
 febl,February loses
 febt,February ties
-febol,February overtime loses
 marw,March wins
 marl,March loses
 mart,March ties
-marol,March overtime loses
 aprw,April wins
 aprl,April loses
 aprt,April ties
-aprol,April overtime loses

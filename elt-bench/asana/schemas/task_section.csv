@@ -1,3 +1,4 @@
 column_name,column_description
 section_id,Foreign key referencing the SECTION that the task lives under.
 task_id,Foreign key referencing the TASK that lives in a section.
+_fivetran_synced,Timestamp of when Fivetran synced a record.

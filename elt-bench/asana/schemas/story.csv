@@ -6,3 +6,6 @@ target_id,Foreign key referencing the TASK that the story is about.
 text,"Free-form text describing the action that was taken (if type = system), or the content of a comment (if type = comment)"
 type,The origin type of the story - a comment or change to the backend/altering a task
 source,"Where the story occurred (web, mobile, email, or api)"
+_fivetran_synced,Timestamp of when Fivetran synced a record.
+NUM_HEARTS,
+HEARTED,

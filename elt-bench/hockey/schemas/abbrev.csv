@@ -1,4 +1,4 @@
 column_name,column_description
-type,type of hockey games
-code,abbreviated codes
-fullname,full names of code
+Type,type of hockey games
+Code,abbreviated codes
+Fullname,full names of code

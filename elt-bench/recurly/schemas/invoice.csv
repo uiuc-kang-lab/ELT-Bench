@@ -2,26 +2,14 @@ column_name,column_description
 id,Unique identifier for the object.
 updated_at,When the invoice was updated.
 account_id,The account this invoice belongs to.
-amount,Total after discounts and taxes (quantity * unit_amount) - (discount + tax).
 balance,The outstanding balance remaining on this invoice.
 closed_at,Date invoice was marked paid or failed.
 collection_method,"An automatic invoice means a corresponding transaction is run using the account's billing information  at the same time the invoice is created. Manual invoices are created without a corresponding transaction.  The merchant must enter a manual payment transaction or have the customer pay the invoice with an automatic method,  like credit card, PayPal, Amazon, or ACH bank payment. Default: ""automatic"" Enum: ""automatic"", ""manual""
 "
 created_at,When the invoice was created.
 currency,3-letter ISO 4217 currency code.
-customer_notes,Notes section available for any details account wants to add.
 discount,Total discounts applied to this invoice.
 due_at,Date invoice is due. This is the date the net terms are reached.
-invoice_city,City of the customer's address on the invoice.
-invoice_country,The 2 letter country code for the country of the customer's address on the invoice.
-invoice_first_name,First name from account associated with that invoice.
-invoice_last_name,Last name from account associated with that invoice.
-invoice_name_on_account,
-invoice_phone,Phone number associated with that invoice.
-invoice_postal_code,Postal code of the customer's address on the invoice.
-invoice_region,State or province of the customer's address on the invoice.
-invoice_street_1,Address line 1 of the customer's address on the invoice.
-invoice_street_2,Address line 2 of the customer's address on the invoice.
 net_terms,"Integer representing the number of days after an invoice's creation that the invoice will become past due.  If an invoice's net terms are set to '0', it is due 'On Receipt' and will become past due 24 hours after it’s created.  If an invoice is due net 30, it will become past due at 31 days exactly. Default: 0
 "
 number,"If VAT taxation and the Country Invoice Sequencing feature are enabled,  invoices will have country-specific invoice numbers for invoices billed to EU countries (e.g. FR1001).  Non-EU invoices will continue to use the site-level invoice number sequence.
@@ -41,8 +29,7 @@ tax_region,"Provides the tax region applied on an invoice. For U.S. Sales Tax,  
 "
 tax_type,"Provides the tax type as ""vat"" for EU VAT, ""usst"" for U.S. Sales Tax,  or the 2 letter country code for country level tax types like Canada, Australia, New Zealand, Israel, and all non-EU European countries.
 "
-terms_and_conditions,A notes section available to you for any details you would like to add.
 total,"The final total on this invoice. The summation of invoice charges, discounts, credits, and tax. Alternative the summation of subtotal and tax.
 "
 type,"Invoices are either ""charge"", ""credit"", or ""legacy"" invoices."
-vat_reverse_charge_notes,Notes section if you are using Recurly's EU VAT feature for tax collection.
+_fivetran_synced,Timestamp the record was synced by Fivetran.

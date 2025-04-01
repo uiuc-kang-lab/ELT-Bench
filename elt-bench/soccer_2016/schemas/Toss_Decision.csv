@@ -1,3 +1,3 @@
 column_name,column_description
-toss_id,the unique id for the toss
-toss_name,the toss decision name
+Toss_Id,the unique id for the toss
+Toss_Name,the toss decision name

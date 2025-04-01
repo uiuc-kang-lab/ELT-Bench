@@ -1,14 +1,14 @@
 column_name,column_description
-businessentityid,The unique id number identifying the person.
-persontype,The type of person.
-namestyle,Name Style.
-title,A courtesy title.
-firstname,First name of the person.
-middlename,Middle name or middle initial of the person.
-lastname,Last name of the person.
-suffix,Surname suffix.
-emailpromotion,Email Promotion.
-additionalcontactinfo,Additional contact information about the person stored in xml format.
-demographics,"Personal information such as hobbies, and income collected from online shoppers. Used for sales analysis."
+BusinessEntityID,The unique id number identifying the person.
+PersonType,The type of person.
+NameStyle,Name Style.
+Title,A courtesy title.
+FirstName,First name of the person.
+MiddleName,Middle name or middle initial of the person.
+LastName,Last name of the person.
+Suffix,Surname suffix.
+EmailPromotion,Email Promotion.
+AdditionalContactInfo,Additional contact information about the person stored in xml format.
+Demographics,"Personal information such as hobbies, and income collected from online shoppers. Used for sales analysis."
 rowguid,Uniquely identifying the record. Used to support a merge replication sample. 
-modifieddate,Date and time the record was last updated. 
+ModifiedDate,Date and time the record was last updated. 

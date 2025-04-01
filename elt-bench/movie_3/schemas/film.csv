@@ -4,7 +4,6 @@ title,title of the film
 description,main content of the film
 release_year,the year when the film is released
 language_id,the language id of the film
-original_language_id,the original language id of the film
 rental_duration,how long this film can be rent at once
 rental_rate,the rate of renting this film
 length,Duration time of the film screening

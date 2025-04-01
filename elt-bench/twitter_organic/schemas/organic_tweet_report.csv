@@ -27,3 +27,5 @@ video_views_100,Total number of views where at least 100% of the video was viewe
 video_views_25,Total number of views where at least 25% of the video was viewed.
 video_views_50,Total number of views where at least 50% of the video was viewed.
 video_views_75,Total number of views where at least 75% of the video was viewed.
+placement,"Where on Twitter the ad is being displayed. Possible values include 'ALL_ON_TWITTER', 'PUBLISHER_NETWORK', 'TWITTER_PROFILE', 'TWITTER_SEARCH', 'TWITTER_TIMELINE', and 'TAP_*', which are more granular options for `PUBLISHER_NETWORK`."
+tweets_send,

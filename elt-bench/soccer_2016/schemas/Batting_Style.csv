@@ -1,3 +1,3 @@
 column_name,column_description
-batting_id,unique id for batting hand
-batting_hand,the batting hand: left or right
+Batting_Id,unique id for batting hand
+Batting_hand,the batting hand: left or right

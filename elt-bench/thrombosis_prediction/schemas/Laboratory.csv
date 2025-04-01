@@ -10,8 +10,8 @@ ALB,albumin
 UA,uric acid
 UN,urea nitrogen
 CRE,creatinine
-T_BIL,total bilirubin
-T_CHO,total cholesterol
+t_bil,total bilirubin
+t_cho,total cholesterol
 TG,triglyceride
 CPK,creatinine phosphokinase
 GLU,blood glucose
@@ -26,7 +26,7 @@ FG,fibrinogen
 PIC,
 TAT,
 TAT2,
-U_PRO,proteinuria
+u_pro,proteinuria
 IGG,Ig G
 IGA,Ig A
 IGM,Ig M
@@ -42,4 +42,4 @@ SSA,anti-SSA
 SSB,anti-SSB
 CENTROMEA,anti-centromere
 DNA,anti-DNA
-DNA_II,anti-DNA
+dna_ii,anti-DNA

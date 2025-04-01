@@ -9,11 +9,8 @@ physical_description,physical description of the menu
 occasion,occasion of the menu
 notes,notes
 call_number,call number
-keywords,keywords
-language,language
 date,the date that this menu was created
 location,the location that the menu was used
-location_type,
 currency,the currency that the menu was used
 currency_symbol,the currency symbol
 status,status of the menu

@@ -20,3 +20,6 @@ state,"The state of this order, such as Draft or Processing."
 status,"The status of this order, such as Pending or Completed."
 updated_by_id,The id of the user who last updated this order.
 updated_date,The date and time when this order was last updated.
+scheduled_date_policy,
+created_by_migration,
+parent_account_id,

@@ -1,15 +1,15 @@
 column_name,column_description
-documentnode,The unique hierarchy id identifying the document nodes.
-documentlevel,Depth in the document hierarchy.
-title,Title of the document.
-owner,Employee who controls the document.
-folderflag,The type of the folders.
-filename,Uniquely identifying the record. Used to support a merge replication sample. 
-fileextension,File extension indicating the document type.
-revision,Revision number of the document.
-changenumber,Engineering change approval number.
-status,Status of document processing.
-documentsummary,Document abstract.
-document,Complete document.
+DocumentNode,The unique hierarchy id identifying the document nodes.
+DocumentLevel,Depth in the document hierarchy.
+Title,Title of the document.
+Owner,Employee who controls the document.
+FolderFlag,The type of the folders.
+FileName,Uniquely identifying the record. Used to support a merge replication sample. 
+FileExtension,File extension indicating the document type.
+Revision,Revision number of the document.
+ChangeNumber,Engineering change approval number.
+Status,Status of document processing.
+DocumentSummary,Document abstract.
+Document,Complete document.
 rowguid,Uniquely identifying the record. Used to support a merge replication sample. 
-modifieddate,Date and time the record was last updated. 
+ModifiedDate,Date and time the record was last updated. 

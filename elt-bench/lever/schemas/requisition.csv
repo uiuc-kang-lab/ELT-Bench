@@ -21,3 +21,4 @@ owner_id,Foreign key referencing the USER who owns the requisition.
 requisition_code,The unique HRIS requisition code.
 status,"The status of the requisition. Can be 'open', 'onHold', 'closed', or 'draft'."
 team,The team associated with the requisition
+_fivetran_synced,Timestamp of when Fivetran synced a record.

@@ -1,8 +1,8 @@
 column_name,column_description
-match_id,the id of the match
-over_id,the id of the over in an inning
-ball_id,the id of the ball in an over
-player_out,the player id who got an out
-kind_out,the id that represents the out type
-fielders,the id of fielders
-innings_no,number which identifies an innings in a match
+Match_Id,the id of the match
+Over_Id,the id of the over in an inning
+Ball_Id,the id of the ball in an over
+Player_Out,the player id who got an out
+Kind_Out,the id that represents the out type
+Fielders,the id of fielders
+Innings_No,number which identifies an innings in a match

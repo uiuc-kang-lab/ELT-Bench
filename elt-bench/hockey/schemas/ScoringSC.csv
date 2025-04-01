@@ -1,11 +1,11 @@
 column_name,column_description
-playerid,id number identifying the player
+playerID,id number identifying the player
 year,year
-tmid,team abbreviated name
-lgid,league abbreviated name
+tmID,team abbreviated name
+lgID,league abbreviated name
 pos,position
-gp,Games played
-g,goals
-a,assists
-pts,points
-pim,Penalty minutes
+GP,Games played
+G,goals
+A,assists
+Pts,points
+PIM,Penalty minutes

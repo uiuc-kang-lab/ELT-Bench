@@ -2,3 +2,5 @@ column_name,column_description
 id,System generated unique ID for a user
 email,Email associated with the user
 name,Given name for the user as it appears in the UI
+_fivetran_deleted,Timestamp of when Fivetran marked a record as deleted
+_fivetran_synced,Timestamp of when Fivetran synced a record.

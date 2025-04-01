@@ -1,5 +1,5 @@
 column_name,column_description
-country,the country code
-independence,date of independence
-dependent, the country code where the area belongs to
-government,type of government
+Country,the country code
+Independence,date of independence
+Dependent, the country code where the area belongs to
+Government,type of government

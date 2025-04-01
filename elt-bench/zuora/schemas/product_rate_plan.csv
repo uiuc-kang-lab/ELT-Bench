@@ -11,3 +11,4 @@ name,The name of the product rate plan.
 product_id,The id of the product that this rate plan belongs to.
 updated_by_id,The id of the Zuora user who last updated the product rate plan.
 updated_date,The date and time when the product rate plan was last updated.
+promotion_code_c,

@@ -1,8 +1,0 @@
-column_name,column_description
-customerid,The unique id number identifying the customer.
-personid,The id number identifying the person.
-storeid,The id number identifying the store / bussiness entity.
-territoryid,ID of the territory in which the customer is located.
-accountnumber,Unique number identifying the customer assigned by the accounting system.
-rowguid,Uniquely identifying the record. Used to support a merge replication sample. 
-modifieddate,Date and time the record was last updated. 

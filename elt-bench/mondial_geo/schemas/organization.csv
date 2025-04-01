@@ -1,7 +1,7 @@
 column_name,column_description
-abbreviation, its abbreviation
-name,the full name of the organization
-city,the city where the headquarters are located
-country, the code of the country where the headquarters are located
-province,"the name of the province where the headquarters are located,"
-established,date of establishment
+Abbreviation, its abbreviation
+Name,the full name of the organization
+City,the city where the headquarters are located
+Country, the code of the country where the headquarters are located
+Province,"the name of the province where the headquarters are located,"
+Established,date of establishment

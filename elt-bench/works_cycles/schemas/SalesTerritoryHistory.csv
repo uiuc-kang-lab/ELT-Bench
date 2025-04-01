@@ -1,7 +1,7 @@
 column_name,column_description
-businessentityid,The sales representative.
-territoryid,Territory identification number.
-startdate,Date the sales representive started work in the territory.
-enddate,Date the sales representative left work in the territory.
+BusinessEntityID,The sales representative.
+TerritoryID,Territory identification number.
+StartDate,Date the sales representive started work in the territory.
+EndDate,Date the sales representative left work in the territory.
 rowguid,Uniquely identifying the record. Used to support a merge replication sample. 
-modifieddate,Date and time the record was last updated. 
+ModifiedDate,Date and time the record was last updated. 

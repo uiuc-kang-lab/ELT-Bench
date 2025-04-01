@@ -1,5 +1,5 @@
 column_name,column_description
-customerid,the unique id of the customer
-firstname,the customer's first name
-middleinitial,the customer's middle initial 
-lastname,the customer's last name
+CustomerID,the unique id of the customer
+FirstName,the customer's first name
+MiddleInitial,the customer's middle initial 
+LastName,the customer's last name

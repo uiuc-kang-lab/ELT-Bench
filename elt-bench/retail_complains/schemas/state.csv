@@ -1,4 +1,4 @@
 column_name,column_description
-statecode,
-state,
-region,
+StateCode,
+State,
+Region,

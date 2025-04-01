@@ -1,32 +1,32 @@
 column_name,column_description
-playerid,id number identifying the player
-coachid,coach id number
-hofid,hall of fame id
-firstname,first name
-lastname,last name
-namenote,note about name
-namegiven,Given name
-namenick,Nickname 
+playerID,id number identifying the player
+coachID,coach id number
+hofID,hall of fame id
+firstName,first name
+lastName,last name
+nameNote,note about name
+nameGiven,Given name
+nameNick,Nickname 
 height,height
 weight,weight
-shootcatch,Shooting hand (or catching hand for goalies)
-legendsid,ID at Legends Of Hockey
-ihdbid,ID at the Internet Hockey Database
-hrefid,ID at Hockey-Reference.com
-firstnhl,First NHL season
-lastnhl,Last NHL season
-firstwha,First WHA season
-lastwha,Last WHA season
+shootCatch,Shooting hand (or catching hand for goalies)
+legendsID,ID at Legends Of Hockey
+ihdbID,ID at the Internet Hockey Database
+hrefID,ID at Hockey-Reference.com
+firstNHL,First NHL season
+lastNHL,Last NHL season
+firstWHA,First WHA season
+lastWHA,Last WHA season
 pos,
-birthyear,birth Year
-birthmon,birth Month
-birthday,birth Day
-birthcountry,birth Country
-birthstate,birth State
-birthcity,birth city
-deathyear,death year
-deathmon,death month
-deathday,death day
-deathcountry,death country
-deathstate,death state
-deathcity,death city
+birthYear,birth Year
+birthMon,birth Month
+birthDay,birth Day
+birthCountry,birth Country
+birthState,birth State
+birthCity,birth city
+deathYear,death year
+deathMon,death month
+deathDay,death day
+deathCountry,death country
+deathState,death state
+deathCity,death city

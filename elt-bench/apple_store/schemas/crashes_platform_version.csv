@@ -4,3 +4,5 @@ app_id,Application ID.
 device,Device type associated with the respective metric(s).
 platform_version,The platform version of the device engaging with your app.
 crashes,The number of recorded crashes experienced (User Opt-In only); a value of 0 indicates there were 0 crash reports or no value from the source report that day.
+_fivetran_synced,Timestamp of when Fivetran synced a record
+MEETS_THRESHOLD,

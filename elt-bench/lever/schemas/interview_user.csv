@@ -1,3 +1,4 @@
 column_name,column_description
 interview_id,Foreign key referencing the INTERVIEW that was given.
 user_id,Foreign key referencing the USER that interviewed the candidate.
+_fivetran_synced,Timestamp of when Fivetran synced a record.

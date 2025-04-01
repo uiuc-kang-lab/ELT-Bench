@@ -1,9 +1,9 @@
 column_name,column_description
-name,the name of the lake
-area,the total area of the lake
-depth, the depth of the lake
-altitude,the altitude (above sea level) of the lake
-river,the river that flows out of the lake
-type,the type of the lake
-longitude,longitude of lake 
-latitude,latitude of lake 
+Name,the name of the lake
+Area,the total area of the lake
+Depth, the depth of the lake
+Altitude,the altitude (above sea level) of the lake
+River,the river that flows out of the lake
+Type,the type of the lake
+Longitude,longitude of lake 
+Latitude,latitude of lake 

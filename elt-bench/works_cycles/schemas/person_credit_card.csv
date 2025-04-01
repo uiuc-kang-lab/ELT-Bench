@@ -1,0 +1,4 @@
+column_name,column_description
+BusinessEntityID,The id number identifying the person.
+CreditCardID,Credit card identification number.
+ModifiedDate,Date and time the record was last updated. 

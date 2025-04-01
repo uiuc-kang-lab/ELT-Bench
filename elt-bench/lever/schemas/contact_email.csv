@@ -1,3 +1,4 @@
 column_name,column_description
 contact_id,Unique ID of the contact in Lever.
 email,Contact's email address.
+_fivetran_synced,Timestamp of when Fivetran synced a record.

@@ -1,9 +1,0 @@
-column_name,column_description
-playerid,
-year,year
-stint,stint
-tmid,team abbreviated name
-w,Wins
-l,Loses
-sa,Shots against
-ga,Goals against

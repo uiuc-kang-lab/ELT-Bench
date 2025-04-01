@@ -65,12 +65,12 @@ def evaluate_stage2(folder, snowflake_config):
     for db in databases:
         tables = [f.name for f in os.scandir(f'./{db}') if f.is_file() and f.name.endswith('.sql')]
         with open(f'./agent_results/{folder}/stage2.log', 'a') as f:
-            f.write(f'Database: {db}')
+            f.write(f'Database: {db}\n')
             
         for table in tables:
             table = table.split('.')[0]
             with open(f'./agent_results/{folder}/stage2.log', 'a') as f:
-                f.write(f'Table: {table}')
+                f.write(f'Table: {table}\n')
             try:
                 if not os.path.exists(f'./agent_results/{folder}/{db}/{table}.csv'):       
                     conn = snowflake.connector.connect(**snowflake_config)

@@ -1,17 +1,17 @@
 column_name,column_description
-ordernumber,the unique number identifying the order
-sales_channel,Sales Channel
-warehousecode,Warehouse Code
-procureddate,Procured Date
-orderdate,Order Date
-shipdate,Ship Date
-deliverydate,Delivery Date
-currencycode,Currency Code
-_salesteamid,Sales Team ID
-_customerid,_Customer ID
-_storeid,_Store ID
-_productid,_Product ID
-order_quantity,Order Quantity
-discount_applied,Discount Applied
-unit_price,
-unit_cost,
+OrderNumber,the unique number identifying the order
+Sales_Channel,Sales Channel
+WarehouseCode,Warehouse Code
+ProcuredDate,Procured Date
+OrderDate,Order Date
+ShipDate,Ship Date
+DeliveryDate,Delivery Date
+CurrencyCode,Currency Code
+SalesTeamID,Sales Team ID
+CustomerID,Customer ID
+StoreID,Store ID
+ProductID,Product ID
+Order_Quantity,Order Quantity
+Discount_Applied,Discount Applied
+Unit_Price,
+Unit_Cost,

@@ -1,5 +1,5 @@
 column_name,column_description
 id,unique id number identifying the characters
-charname,character name
-abbrev,abbreviation. An abbreviation is a shortened form of a word or phrase.
-description,description of the character.
+CharName,character name
+Abbrev,abbreviation. An abbreviation is a shortened form of a word or phrase.
+Description,description of the character.

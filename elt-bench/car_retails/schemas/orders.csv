@@ -1,8 +1,8 @@
 column_name,column_description
-ordernumber,unique order number
-orderdate,order date
-requireddate,required Date
-shippeddate,shipped Date
+orderNumber,unique order number
+orderDate,order date
+requiredDate,required Date
+shippedDate,shipped Date
 status,status
 comments,comments
-customernumber,customer number
+customerNumber,customer number

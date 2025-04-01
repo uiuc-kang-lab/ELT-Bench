@@ -1,5 +1,5 @@
 column_name,column_description
-playerid,ID number identifying the unique number of the player
+playerID,ID number identifying the unique number of the player
 first_name,the first name of the player
 last_name,the last name of the player
 season_id,the id number of the season

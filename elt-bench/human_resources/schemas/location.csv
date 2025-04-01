@@ -1,5 +1,5 @@
 column_name,column_description
-locationid,the unique id for location
+locationID,the unique id for location
 locationcity,the location city
 address,the detailed address of the location
 state,the state abbreviation

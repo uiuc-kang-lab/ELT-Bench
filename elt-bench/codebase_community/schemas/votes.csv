@@ -4,4 +4,3 @@ PostId,the id of the post that is voted
 VoteTypeId,the id of the vote type
 CreationDate,the creation date of the vote
 UserId,the id of the voter
-BountyAmount,the amount of bounty

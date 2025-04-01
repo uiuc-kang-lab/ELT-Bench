@@ -1,7 +1,6 @@
 column_name,column_description
 _1_d_view,"Conversion metric value using an attribution window of ""1 day after viewing the ad"". Not included in downstream models by default, but can be added using the `facebook_ads__basic_ad_actions_passthrough_metrics` var."
 _7_d_click,"Conversion metric value using an attribution window of ""7 days after clicking the ad"". Not included in downstream models by default, but can be added using the `facebook_ads__basic_ad_actions_passthrough_metrics` var."
-_28_d_click,"Conversion metric value using an attribution window of ""28 days after clicking the ad"". Deprecated by Facebook due to digital privacy initiatives. Not included in downstream models by default, but can be added using the `facebook_ads__basic_ad_actions_passthrough_metrics` var."
 _fivetran_id,Defunct field.
 _fivetran_synced,When the record was last synced by Fivetran.
 action_type,"The kind of actions taken on your ad, Page, app or event after your ad was served to someone, even if they didn't click on it. Action types include Page likes, app installs, conversions, event responses and more. Actions prepended by app_custom_event come from mobile app events and actions prepended by offsite_conversion come from the Facebook Pixel.

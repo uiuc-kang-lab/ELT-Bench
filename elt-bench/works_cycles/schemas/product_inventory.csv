@@ -1,0 +1,8 @@
+column_name,column_description
+ProductID,Product identification number.
+LocationID,Inventory location identification number.
+Shelf,Storage compartment within an inventory location.
+Bin,Storage container on a shelf in an inventory location.
+Quantity,Quantity of products in the inventory location.
+rowguid,Uniquely identifying the record. Used to support a merge replication sample. 
+ModifiedDate,Date and time the record was last updated. 

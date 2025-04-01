@@ -5,7 +5,6 @@ name,The name of a list.
 list_rating,An auto-generated activity score for the list (0-5).
 beamer_address,The list's email beamer address.
 contact_address_1,The street address for the list contact.
-contact_address_2,The street address for the list contact.
 contact_city,The city for the list contact.
 contact_company,The company name for the list.
 contact_country,A two-character ISO3166 country code. Defaults to US if invalid.
@@ -14,11 +13,8 @@ contact_zip,The postal or zip code for the list contact.
 default_from_email,The default from email for campaigns sent to a list.
 default_from_name,The default from name for campaigns sent to a list.
 default_language,The default language for a lists's forms.
-default_subject,The default subject line for campaigns sent to a list.
 email_type_option,"Whether the list supports multiple formats for emails.  When set to true, subscribers can choose whether they want to receive HTML or plain-text emails.  When set to false, subscribers will receive HTML emails, with a plain-text alternative backup.
 "
-notify_on_subscribe,The email address to send subscribe notifications to.
-notify_on_unsubscribe,The email address to send unsubscribe notifications to.
 permission_reminder,The permission reminder for a list.
 subscribe_url_long,The full version of a list's subscribe form (host will vary).
 subscribe_url_short,Mailchimp's EepURL shortened version of a list's subscribe form.

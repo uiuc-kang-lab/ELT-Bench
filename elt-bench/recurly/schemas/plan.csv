@@ -8,10 +8,6 @@ code,Unique code to identify the plan. This is used in Hosted Payment Page URLs 
 created_at,When the plan was created.
 deleted_at,When the plan was deleted.
 description,"Optional description, not displayed."
-hosted_pages_bypass_confirmation,Returns true if you use Recurly's Hosted Payment Pages and use custom return URL.
-hosted_pages_cancel_url,"If customer cancels subscription via Hosted Page, Recurly redirects customer to specific URL."
-hosted_pages_display_quantity,Number of hosted pages under plan.
-hosted_pages_success_url,"If customer successfully subscribes via Hosted Page, Recurly redirects customer to specific URL"
 interval_length,"Length of the plan's billing interval in interval_unit. Default: 1
 "
 interval_unit,"Unit for the plan's billing interval. Default: ""months"" Enum: ""days"", ""months""
@@ -29,3 +25,4 @@ trial_length,"Length of plan's trial period in trial_units. 0 means no trial. De
 "
 trial_unit,"Units for the plan's trial period. Default: ""months"" Enum: ""days"", ""months""
 "
+_fivetran_synced,Timestamp the record was synced by Fivetran.

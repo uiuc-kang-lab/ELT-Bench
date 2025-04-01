@@ -1,5 +1,5 @@
 column_name,column_description
-employeeid,the unique id of the employee
-firstname,the employee's first name
-middleinitial,the employee's middle initial 
-lastname,the employee's last name
+EmployeeID,the unique id of the employee
+FirstName,the employee's first name
+MiddleInitial,the employee's middle initial 
+LastName,the employee's last name

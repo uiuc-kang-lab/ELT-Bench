@@ -81,7 +81,7 @@ shoton,the shot on goal of the match
 shotoff,"the shot off goal of the match, which is the opposite of shot on"
 foulcommit,the fouls occurred in the match
 card,the cards given in the match
-cross,Balls sent into the opposition team's area from a wide position in the match
+crosses,Balls sent into the opposition team's area from a wide position in the match
 corner,Ball goes out of play for a corner kick in the match
 possession,The duration from a player taking over the ball in the match
 B365H,

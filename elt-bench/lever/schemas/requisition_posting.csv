@@ -2,3 +2,4 @@ column_name,column_description
 posting_id,Foreign key referencing the POSTING created for this requisition.
 requisition_id,Foreign key referencing the REQUISITION associated with this posting.
 _fivetran_deleted,Boolean that is true if the requisition-posting relationship has been soft-deleted.
+_fivetran_synced,Timestamp of when Fivetran synced a record.

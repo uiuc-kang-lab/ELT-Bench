@@ -11,3 +11,5 @@ template_id,Foreign key referencing the TEMPLATE_FIELD that this form used.
 text,Form title. This can be edited in Feedback and Form Settings.
 type,Form type. Feedback forms are of type interview.
 opportunity_id,Foreign key referencing the OPPORTUNITY that the candidate was interviewed for.
+_fivetran_synced,Timestamp of when Fivetran synced a record.
+candidate_id,

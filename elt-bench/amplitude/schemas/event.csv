@@ -1,10 +1,7 @@
 column_name,column_description
-_fivetran_deleted,Timestamp of when Fivetran marked a record as deleted.
 _fivetran_synced,Timestamp of when Fivetran synced a record.
 amplitude_id,An internal ID used to count unique users.
 ad_id,"(Android) Google Play Services advertising ID (AdID). This usually is wiped after ingestion and therefore will be blank
-"
-amplitude_attribution_ids,"Anonymized hash of the advertising IDs that Amplitude stores for internal purposes; not useful for customers by any means. But this will appear if advertising IDs were sent which proves that adid/idfv existed even though currently wiped
 "
 app,Project ID found in your project's Settings page
 city,City where event was registered.
@@ -33,8 +30,6 @@ group_properties,"A dictionary of key-value pairs that represent data tied to th
 groups,Group types. See the Accounts documentation for more information.
 idfa,"(iOS) Identifier for Advertiser. This usually is wiped after ingestion and therefore will be blank
 "
-_insert_id,"A unique identifier for the event. Amplitude deduplicates subsequent events sent with the same device_id and insert_id within the past 7 days. Amplitude recommends generating a UUID or using some combination of device_id, user_id, event_type, event_id, and time.  
-"
 ip_address,IP address
 is_attribution_event,Boolean of whether event was an attribution event
 language,The language set by the user
@@ -58,3 +53,6 @@ user_id,A readable ID specified by you
 user_properties,An attribute that describes a useful detail about the user it's attached to. Amplitude sends user properties with every event.
 uuid,A unique identifier per row (event sent)
 version_name,The app version
+sample_rate,
+amplitude_event_type,
+_insert_id,

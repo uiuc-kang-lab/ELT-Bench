@@ -1,22 +1,22 @@
 column_name,column_description
-geoid,unique geographic identifier
-inhabitants_k,number of inhabitants
-income_k,average income per inhabitant per month
-a_var1,
-a_var2,
-a_var3,
-a_var4,
-a_var5,
-a_var6,
-a_var7,
-a_var8,
-a_var9,
-a_var10,
-a_var11,
-a_var12,
-a_var13,
-a_var14,
-a_var15,
-a_var16,
-a_var17,
-a_var18,
+GEOID,unique geographic identifier
+INHABITANTS_K,number of inhabitants
+INCOME_K,average income per inhabitant per month
+A_VAR1,
+A_VAR2,
+A_VAR3,
+A_VAR4,
+A_VAR5,
+A_VAR6,
+A_VAR7,
+A_VAR8,
+A_VAR9,
+A_VAR10,
+A_VAR11,
+A_VAR12,
+A_VAR13,
+A_VAR14,
+A_VAR15,
+A_VAR16,
+A_VAR17,
+A_VAR18,

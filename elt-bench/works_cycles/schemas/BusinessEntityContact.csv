@@ -1,6 +1,6 @@
 column_name,column_description
-businessentityid,The id number identifying the Business Entity ID.
-personid,The id number identifying the Person ID.
-contacttypeid,The id number identifying the contact type ID.
+BusinessEntityID,The id number identifying the Business Entity ID.
+PersonID,The id number identifying the Person ID.
+ContactTypeID,The id number identifying the contact type ID.
 rowguid,Uniquely identifying the record. Used to support a merge replication sample. 
-modifieddate,Date and time the record was last updated. 
+ModifiedDate,Date and time the record was last updated. 

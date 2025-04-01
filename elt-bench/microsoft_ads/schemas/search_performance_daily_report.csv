@@ -6,12 +6,10 @@ ad_group_id,The ID of the corresponding ad group.
 ad_id,The ID of the corresponding ad.
 keyword_id,The ID of the keyword.
 search_query,The search query string associated with this record.
-currency_code,"The currency code associated with spend and, if applicable, other metrics associated with currency."
 device_os,"The device operating system associated with this record; values include but may not be limited to 'Windows', 'iOS', 'Android', 'Other', 'BlackBerry' and 'Unknown'."
 device_type,"The device type associated with this record; values include but may not be limited to 'Computer', 'Smartphone', 'Tablet' and 'Unknown'."
 network,The network associated with this record.
 language,The language that the associated ad was viewed in.
-ad_distribution,The distribution medium associated with this record.
 bid_match_type,"The bid match type associated with this record; values include 'Broad', 'Exact', 'Phrase'."
 delivered_match_type,"The delivered match type associated with this record; values include 'Broad', 'Exact', 'Phrase'."
 top_vs_other,"The position of the ad associated with this record. For more information, refer to Microsoft [documentation](https://help.ads.microsoft.com/apex/index/22/en/14009)."

@@ -28,3 +28,5 @@ time_zone,The time zone of the user's account
 url,The URL of the user's page
 utc_offset,The UTC offset of the user's account
 verified,Whether the user has verified their account
+LISTED_COUNT,
+PROFILE_BACKGROUND_TILE,

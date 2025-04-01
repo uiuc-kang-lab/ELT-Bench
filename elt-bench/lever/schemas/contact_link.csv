@@ -1,3 +1,4 @@
 column_name,column_description
 contact_id,Unique id of the contact associated with one or more opportunities.
 link,Url of the individual link.
+_fivetran_synced,Timestamp of when Fivetran synced a record.

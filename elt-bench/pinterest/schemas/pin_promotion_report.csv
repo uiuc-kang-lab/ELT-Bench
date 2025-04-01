@@ -1,5 +1,5 @@
 column_name,column_description
-date,The performance date of the record.
+pinterest_date,The performance date of the record.
 pin_promotion_id,The ID of the related Pin promotion.
 ad_group_id,The ID of the related Ad group.
 campaign_id,The ID of the related Campaign.

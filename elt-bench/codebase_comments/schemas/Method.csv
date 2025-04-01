@@ -1,12 +1,12 @@
 column_name,column_description
-id,"unique id number
+Id,"unique id number
 that identifies methods"
-name,name of methods 
-fullcomment,full comment of this method
-summary,summary of the method
-apicalls,linearized sequenced of API calls
-commentisxml,whether the comment is XML format or not
-sampledat,the time of sampling
-solutionid,id number of solutions
-lang,language code of method
-nametokenized,tokenized name
+Name,name of methods 
+FullComment,full comment of this method
+Summary,summary of the method
+ApiCalls,linearized sequenced of API calls
+CommentIsXml,whether the comment is XML format or not
+SampledAt,the time of sampling
+SolutionId,id number of solutions
+Lang,language code of method
+NameTokenized,tokenized name
