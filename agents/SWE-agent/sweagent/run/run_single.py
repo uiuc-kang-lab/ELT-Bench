@@ -192,7 +192,7 @@ class RunSingle:
         self.logger.info("Done")
         self._chooks.on_end()
         save_predictions(self.output_dir, self.problem_statement.id, result)
-        self.env.close()
+        # self.env.close()
 
 
 def run_from_config(config: RunSingleConfig):
