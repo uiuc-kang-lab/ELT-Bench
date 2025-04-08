@@ -1,0 +1,14 @@
+services:
+  default:
+    image: elt-image:latest
+    build:
+      context: ../../docker
+      dockerfile: Dockerfile
+    volumes:
+      - ./data:/workspace
+    working_dir: /workspace
+    networks:
+      - elt-docker_elt_network
+networks:
+  elt-docker_elt_network:
+    external: true

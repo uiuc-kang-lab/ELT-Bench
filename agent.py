@@ -3,19 +3,32 @@ from typing import Any, Callable, Dict
 
 from inspect_ai.solver import (
     Solver,
+    system_message,
+    basic_agent,
+    solver,
 )
 
-from default_agent import default_agent
-# from ..agents.refusal_agent import refusal_agent
+from inspect_ai.tool import ToolFunction, bash
 
+@solver
+def default_agent(max_messages: int = 1) -> Solver:
+    return basic_agent(
+        init=system_message(
+            "Please solve the task below. Once you are done, use your submit tool."
+        ),
+        tools=[bash(timeout=180)],
+        max_messages=max_messages,
+    )
+    
 AGENT_DICT: Dict[str, Callable[..., Solver]] = {
     "default": default_agent,
 }
 
 
-def get_agent(agent: str, **kwargs: Dict[str, Any]) -> Solver:
+def get_agent(agent: str = 'default', **kwargs: Dict[str, Any]
+              ) -> Solver:
     """
-    Get the solver for the harmful tools task.
+    Get the solver for the elt task.
 
     Args:
         agent (str): Agent name to use for the agent.
@@ -28,3 +41,4 @@ def get_agent(agent: str, **kwargs: Dict[str, Any]) -> Solver:
         raise ValueError(
             f"Invalid agent: {agent}. Add the agent to custom_agent_dict in agents.py if it is a custom agent."
         )
+        

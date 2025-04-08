@@ -7,12 +7,15 @@ databases = [f.name for f in os.scandir('../elt-bench') if f.is_dir()]
 databases.sort()
 
 for db in databases:
-  os.makedirs('../inputs',exist_ok=True)
   directory_path = f'../inputs/{db}'
+  data_path = f'../inputs/{db}/data/'
   if os.path.exists(directory_path) and os.path.isdir(directory_path):
         shutil.rmtree(directory_path)
-  os.system(f"cp -r ../elt-bench/{db} ../inputs")
-  with open(f'../inputs/{db}/config.yaml', 'r') as file:
+        
+  os.makedirs(data_path,exist_ok=True)
+
+  os.system(f"cp -r ../elt-bench/{db}/* {data_path}")
+  with open(f'{data_path}/config.yaml', 'r') as file:
     config_data = yaml.safe_load(file)
 
 
@@ -29,7 +32,7 @@ for db in databases:
   if 'custom_api' in config_data:
     config_data['Airbyte']['config']['custom_api_definition_id'] = "8c0df240-cb31-4e3f-a98c-d64d2d846cb8"
 
-  with open(f'../inputs/{db}/config.yaml', 'w') as file:
+  with open(f'{data_path}/config.yaml', 'w') as file:
     yaml.dump(config_data, file)
 
   new_sf_credentials = {}
@@ -37,10 +40,11 @@ for db in databases:
   new_sf_credentials['user'] = "AIRBYTE_USER"
   new_sf_credentials['password'] = "Snowflake@123"
 
-  with open(f'../inputs/{db}/snowflake_credential.json', 'w') as file:
+  with open(f'{data_path}/snowflake_credential.json', 'w') as file:
     json.dump(new_sf_credentials, file)
 
-  os.system(f"cp -r ../documentation ../inputs/{db}/")
-  os.system(f"cp  ./check_job_status.py ../inputs/{db}/")
-  os.system(f"mkdir ../inputs/{db}/elt")
-  os.system(f"cp  ./main.tf ../inputs/{db}/elt")
+  os.system(f"cp -r ../documentation {data_path}")
+  os.system(f"cp  ./check_job_status.py {data_path}")
+  os.system(f"mkdir {data_path}/elt")
+  os.system(f"cp  ./main.tf {data_path}/elt")
+  os.system(f"cp -r ../docker/compose.yaml ../inputs/{db}")

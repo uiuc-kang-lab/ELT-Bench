@@ -11,15 +11,21 @@ from inspect_ai.tool import bash, python
 from inspect_ai.util import sandbox, store
 from dataset import create_dataset
 from agent import get_agent
+from inspect_ai.solver import bridge
+
+from evaluation.eva import eva_stage1, eva_stage2, eva_elt
 
 CHALLENGES_DIR = Path(__file__).parent / "inputs"
+
+
 @task
 def eltbench(
   challenges: str | list[str] | None = None,
-  agent: str = None,
+  agent: str = 'default',
   agent_kwargs: Optional[Dict[str, Any]] = None,
 ):
-  print(22, agent)
+  task_id = 'gpt'
+
   def get_challenge_dir_paths() -> list[Path]:
         # If no challenges are specified, use the default challenge directory.
         if challenges is None:
@@ -31,14 +37,15 @@ def eltbench(
   dataset = create_dataset(
       get_challenge_dir_paths(),
   )
-  print(34, dataset)
+
   agent_solver = get_agent(agent=agent, **agent_kwargs if agent_kwargs else {})
-  print(34, dataset)
+  
   plan = [agent_solver]
   return Task(
         dataset=dataset,
-        solver=plan
-    )
+        solver=plan,
+        scorer=[eva_elt(task_id)]
+  )
 
 def _make_absolute(challenge_dir: str) -> Path:
     path = Path(challenge_dir)
@@ -46,5 +53,3 @@ def _make_absolute(challenge_dir: str) -> Path:
         return path.resolve()
     return (CHALLENGES_DIR / path).resolve()
 
-    
-eltbench(agent='default')

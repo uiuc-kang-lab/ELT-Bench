@@ -4,18 +4,15 @@ import os
 import numpy as np
 import json
 import argparse
+from pathlib import Path
+
+CURRENT_PATH = Path(__file__).parent
+
 
 def read_json(file_path):
     with open(file_path, 'r') as file:
         data = json.load(file)
     return data
-
-file_path = '../setup/destination/snowflake_credential.json' 
-SNOWFLAKE_CONFIG = read_json(file_path)
-
-parser = argparse.ArgumentParser(description="agent")
-parser.add_argument("--folder", type=str, required=True, help='Specify the folder name where you want to store the results.')
-args = parser.parse_args()
 
 def check_corretness(df_gt, df):
 
@@ -48,41 +45,30 @@ def check_corretness(df_gt, df):
                 matched_cols.append(gold_col)
         else:
             missed_cols.append(gold_col)
+    if len(missed_cols) == 0 and len(unmatched_cols) == 0:
+        return True
+    else:
+        return False
 
-    with open(f'./agent_results/{args.folder}/stage2.log', 'a') as f:
-        f.write(f"Matched columns: {matched_cols}\n")
-        f.write(f"Unmatched columns: {unmatched_cols}\n")
-        f.write(f"Missed: {missed_cols}\n\n\n")
 
-def evaluate_stage2(folder, snowflake_config):
-    databases = []
-    with open(f'./agent_results/{folder}/results.log', 'r') as f:
-        for line in f:
-            s = line.split(' ')
-            if s[0] == 'Success:':
-                databases.append(s[1])
-                    
-    for db in databases:
-        tables = [f.name for f in os.scandir(f'./{db}') if f.is_file() and f.name.endswith('.sql')]
-        with open(f'./agent_results/{folder}/stage2.log', 'a') as f:
-            f.write(f'Database: {db}\n')
-            
-        for table in tables:
-            table = table.split('.')[0]
-            with open(f'./agent_results/{folder}/stage2.log', 'a') as f:
-                f.write(f'Table: {table}\n')
-            try:
-                if not os.path.exists(f'./agent_results/{folder}/{db}/{table}.csv'):       
-                    conn = snowflake.connector.connect(**snowflake_config)
-                    with open(f'./{db}/{table}.sql', 'r') as f:
-                        query = f.read()
-                    df = pd.read_sql(query, conn)
-                    os.makedirs(f'./agent_results/{folder}/{db}', exist_ok=True)
-                    df.to_csv(f'./agent_results/{folder}/{db}/{table}.csv', index=False)
-                    conn.close()
-                df = pd.read_csv(f'./agent_results/{folder}/{db}/{table}.csv')
-                df_gt = pd.read_csv(f'./gt/{db}/{table}.csv')
-                check_corretness(df_gt, df)
-            except Exception as e:
-                with open(f'./agent_results/{folder}/stage2.log', 'a') as f:
-                    f.write(f'Error: {e}\n\n\n')
+def evaluate_stage2(folder, snowflake_config, db):
+    tables = [f.name for f in os.scandir(f'{CURRENT_PATH}/{db}') if f.is_file() and f.name.endswith('.sql')]
+    success_count = 0
+    for table in tables:
+        table = table.split('.')[0]
+        try:
+            if not os.path.exists(f'{CURRENT_PATH}/agent_results/{folder}/{db}/{table}.csv'):       
+                conn = snowflake.connector.connect(**snowflake_config)
+                with open(f'{CURRENT_PATH}/{db}/{table}.sql', 'r') as f:
+                    query = f.read()
+                df = pd.read_sql(query, conn)
+                os.makedirs(f'./agent_results/{folder}/{db}', exist_ok=True)
+                df.to_csv(f'{CURRENT_PATH}/agent_results/{folder}/{db}/{table}.csv', index=False)
+                conn.close()
+            df = pd.read_csv(f'{CURRENT_PATH}/agent_results/{folder}/{db}/{table}.csv')
+            df_gt = pd.read_csv(f'{CURRENT_PATH}/gt/{db}/{table}.csv')
+            if check_corretness(df_gt, df):
+                success_count += 1
+        except Exception as e:
+            continue
+    return success_count, len(tables)
