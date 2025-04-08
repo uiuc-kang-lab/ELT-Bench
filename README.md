@@ -49,16 +49,16 @@ After successful installation, you can confirm the installation by running:
   bash elt_setup.sh
   ```
 
-## Running agents
-- To evaluate the Spider-Agent and SWE-agent on ELT-Bench, follow the instructions in the `agents` folder. This folder contains detailed steps for running each agent.
-
 ## Evaluation
+### Install inspect-ai
+```
+git clone https://github.com/UKGovernmentBEIS/inspect_ai.git
+cd inspect_ai
+pip install -e .
+```
 
-- To evaluate the performance of an agent, use the following commands:
-
-  ```bash
-  cd evaluation
-  python eva.py --folder folder_name
-  ```
-
-  Replace folder_name with your desired name for the evaluation results. The newly created folder with the results will be located at `./evaluation/agent_results`.
+### Running experiments
+```
+inspect eval eltbench.py@eltbench --model=openai/gpt-4o
+```
+Replace the model with your own model if needed.

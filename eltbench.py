@@ -13,7 +13,7 @@ from dataset import create_dataset
 from agent import get_agent
 from inspect_ai.solver import bridge
 
-from evaluation.eva import eva_stage1, eva_stage2, eva_elt
+from evaluation.eva import eva_elt
 
 CHALLENGES_DIR = Path(__file__).parent / "inputs"
 
