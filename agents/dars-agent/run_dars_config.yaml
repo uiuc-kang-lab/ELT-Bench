@@ -1,0 +1,7 @@
+model:
+  name: "human"
+  cost_limit: 10
+skip_existing: true
+instances: ['astropy__astropy-12907']
+split: test
+agent: dars

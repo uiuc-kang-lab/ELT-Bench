@@ -1,0 +1,5 @@
+base_dir: "DARS-Agent/swe-agent"
+run_id: "id"
+python_script: "DARS-Agent/evaluation/evaluate/extract_and_evaluate.py"
+config_template: "DARS-Agent/evaluation/evaluate/config.yaml"
+instances: []
