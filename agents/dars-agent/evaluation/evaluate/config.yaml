@@ -1,6 +1,0 @@
-input_path: '/path/to/root_file'
-output_path: '/path/to/output_dir/'
-num_workers: 1                               
-model_name: 'Model_name'                       
-instance_id: 'psf__requests-2148'
-target_action: 'submit'
