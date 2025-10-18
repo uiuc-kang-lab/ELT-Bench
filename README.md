@@ -1,6 +1,9 @@
 # ELT-Bench
 The first comprehensive, end-to-end benchmark designed to evaluate AI agents in automating ELT pipelines.
 ![ELT](https://anonymous.4open.science/r/ELT-Bench-B51C/materials/elt.svg)
+
+[![License](https://img.shields.io/badge/License-CC%20BY%20SA%204.0-orange.svg)](https://creativecommons.org/licenses/by-sa/4.0/deed.en)
+
 ## Environment Setup
 
 ### Install Docker and Conda 
