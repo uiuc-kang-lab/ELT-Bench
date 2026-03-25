@@ -28,6 +28,16 @@ for db, tables in mongo_dbs.items():
     for row in data:
       cleaned_data.append({k: v for k, v in row.items() if v is not None and not (isinstance(v, float) and math.isnan(float(v)))})
     collection.insert_many(cleaned_data)
+
+    # Convert mixed-type numeric/string fields to strings so Airbyte
+    # does not infer them as DECIMAL and fail on non-numeric values.
+    if db == "card_games" and table == "cards":
+      for field in ["loyalty"]:
+        collection.update_many(
+          {field: {"$type": "number"}},
+          [{"$set": {field: {"$toString": f"${field}"}}}]
+        )
+
   print(f'{db} inserted successfully')
 
 
