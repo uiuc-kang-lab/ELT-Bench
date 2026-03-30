@@ -6,11 +6,14 @@
    </h1>
   <p align="center">
     <a>Christopher Zanoli</a><sup>1,2</sup>,
-    <a>Yotam Perlitz</a><sup>1</sup>, 
-    <a>Andrea Giovannini</a><sup>1</sup>
+    <a>Andrea Giovannini</a><sup>1</sup>,
+    <a>Tengjun Jin</a><sup>3</sup> 
+    <a>Ana Klimovic</a><sup>2</sup>,
+    <a>Yotam Perlitz</a><sup>1</sup>
     <br>
-    <sup>1</sup>IBM
-    <sup>2</sup>ETH Zürich 
+    <sup>1</sup>IBM Research
+    <sup>2</sup>ETH Zürich
+    <sup>3</sup>University of Illinois (UIUC)
   </p>
 
 <p align="center">
