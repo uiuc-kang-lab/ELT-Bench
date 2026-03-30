@@ -1,0 +1,95 @@
+Subject: SQL Error Classification Study - Annotation Task
+
+Hi [Name],
+
+You're invited to participate in a research study measuring inter-annotator agreement on SQL error classification. Your independent judgment will help validate our error taxonomy and improve our understanding of AI-generated SQL failures.
+
+═══════════════════════════════════════════════════════════════════════════
+
+TASK OVERVIEW
+
+• Classify 50 SQL error cases into predefined categories
+• Time estimate: 2-3 hours (can be split across multiple sessions)
+• Deadline: [INSERT YOUR DEADLINE]
+• Location: [INSERT PATH OR SHARE LINK]
+
+═══════════════════════════════════════════════════════════════════════════
+
+GETTING STARTED
+
+1. Navigate to the `method_debug_summaries` directory
+
+2. Read these files IN ORDER:
+   → README_ANNOTATION.md (start here - 5 min read)
+   → annotation_protocol.md (detailed taxonomy - 20 min study)
+   → quick_reference.md (keep open as cheat sheet)
+
+3. Copy the template:
+   → Duplicate `annotation_template.txt`
+   → Rename to `annotations_[yourname].txt`
+
+4. Start annotating:
+   → The 50 files are listed in `sampled_files.txt`
+   → Read each debug file (they're in subdirectories like sales/, books/, etc.)
+   → Assign exactly ONE category per column
+   → Use category numbers (1, 2, 4.1, 5.2, etc.) or names
+
+5. Save your work frequently!
+
+═══════════════════════════════════════════════════════════════════════════
+
+CRITICAL RULES ⚠️
+
+❌ DO NOT look in the `_analysis_results/` folder (contains prior results that would bias your work)
+❌ DO NOT discuss classifications with other annotators until after completion
+❌ DO NOT open any files named `categorization_chris.md` or `experiment_report.md`
+
+✅ DO work independently based solely on the taxonomy definitions
+✅ DO focus on identifying the ROOT CAUSE of each error, not just symptoms
+✅ DO make your best judgment when cases are ambiguous
+✅ DO take notes on particularly difficult cases (optional but helpful)
+
+═══════════════════════════════════════════════════════════════════════════
+
+WHAT TO SUBMIT
+
+When finished, send me:
+• Your completed `annotations_[yourname].txt` file
+• (Optional) Any notes on difficult or ambiguous cases
+• (Optional) Feedback on the taxonomy clarity
+
+═══════════════════════════════════════════════════════════════════════════
+
+EXAMPLE WORKFLOW
+
+1. Open `quick_reference.md` in one window
+2. Open a debug file, e.g., `./sales/summary__sales__sales__customers_ABOVE_AVERAGE_BOUGHT_QUANTITY.md`
+3. Read the root cause explanation
+4. Consult the decision tree in `quick_reference.md`
+5. Check `annotation_protocol.md` if you need detailed definitions
+6. Record your classification in `annotations_[yourname].txt`:
+
+   sales__sales__customers_ABOVE_AVERAGE_BOUGHT_QUANTITY | 2
+
+7. Move to the next file
+
+═══════════════════════════════════════════════════════════════════════════
+
+QUESTIONS?
+
+If you have questions or encounter issues:
+• [INSERT YOUR EMAIL]
+• [INSERT YOUR PHONE/SLACK/OTHER CONTACT]
+
+Note: I can answer questions about the process or taxonomy definitions, but cannot discuss specific classifications until after all annotators complete their work.
+
+═══════════════════════════════════════════════════════════════════════════
+
+Thank you for contributing to this research! Your independent annotations are crucial for validating the reliability of our error classification system.
+
+Best regards,
+[Your Name]
+
+═══════════════════════════════════════════════════════════════════════════
+
+P.S. After all annotators complete their work, we'll share the inter-annotator agreement results and discuss any interesting edge cases we discovered.

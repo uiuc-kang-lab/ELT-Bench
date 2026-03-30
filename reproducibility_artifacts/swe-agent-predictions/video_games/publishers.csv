@@ -1,0 +1,578 @@
+PUBLISHER_ID,PUBLISHER_NAME,NUM_GAMES,NUM_PUZZLE_GAMES,OLDEST_PUBLISHED_GAME,PUBLISHED_ONLY_ONE_GAME,AVG_SALE_GREATER_THAN_90_PER_OF_AVG_SALE_IN_JAPAN
+1.0,10TACLE Studios,3,1,Pirates: Legend of the Black Buccaneer,0,0
+2.0,1C Company,3,0,King's Bounty: Armored Princess,0,0
+3.0,20th Century Fox Video Games,5,0,Alien,0,0
+4.0,2D Boy,1,1,World of Goo,1,0
+5.0,3DO,30,1,BattleTanx,0,0
+6.0,49Games,1,0,Summer Athletics 2009,1,0
+7.0,505 Games,149,15,Lupin the 3rd: Treasure of the Sorcerer King,0,0
+8.0,5pb,45,0,Kanokon: Esuii,0,0
+9.0,7G//AMES,3,1,Know How 2,0,0
+10.0,989 Sports,1,0,NCAA Final Four 2000,1,0
+11.0,989 Studios,14,0,NHL FaceOff 99,0,0
+12.0,Abylight,1,0,Man vs. Wild,1,0
+13.0,Acclaim Entertainment,118,6,Mortal Kombat II,0,0
+14.0,Accolade,3,0,Bubsy 3D,0,0
+15.0,Ackkstudios,9,0,Again,0,0
+16.0,Acquire,12,0,Kamiwaza,0,0
+17.0,Activision,412,7,Boxing,0,0
+18.0,Activision Blizzard,1,0,World of Warcraft: Warlords of Draenor,1,0
+19.0,Activision Value,14,0,Cabela's Big Game Hunter: Ultimate Challenge,0,0
+20.0,Adeline Software,1,0,Time Commando,1,0
+21.0,Aerosoft,2,0,Rise of Flight: Iron Cross Edition,0,0
+22.0,Agatsuma Entertainment,3,0,Pocket Dogs,0,0
+23.0,Agetec,8,0,Master of Monsters: Disciples of Gaia,0,0
+24.0,Aksys Games,5,0,Jake Hunter: Detective Chronicles,0,0
+25.0,Alawar Entertainment,2,0,Farm Frenzy 3,0,0
+26.0,Alchemist,43,0,Aria: The Natural ~Tooi Yume no Mirage~,0,0
+27.0,Alternative Software,3,0,Rugby League 3,0,0
+28.0,Altron,1,0,Pocky & Rocky with Becky,1,0
+29.0,Alvion,2,0,Poupee Girl DS,0,0
+30.0,American Softworks,1,0,Perfect Weapon,1,0
+31.0,Angel Studios,3,0,SD Gundam Gaiden: Knight Gundam Monogatari: Ooinaru Isan,0,1
+32.0,Answer Software,1,0,Gauntlet,1,0
+33.0,AQ Interactive,5,0,Arcana Heart,0,0
+34.0,Aqua Plus,17,0,To Heart,0,0
+35.0,Aques,1,0,Power Stakes,1,1
+36.0,Arc System Works,22,0,Super Dodgeball Brawlers,0,0
+37.0,Arena Entertainment,2,0,Mortal Kombat,0,0
+38.0,Aria,1,0,Yoake Yori Ruriiro na: Brighter than Dawning Blue,1,0
+39.0,Arika,3,0,Technic Beat,0,0
+40.0,ArtDink,9,0,A. IV Evolution: A Ressha de Ikou 4,0,0
+41.0,Aruze Corp,3,0,Pachi-Slot Aruze Oukoku 2,0,1
+42.0,ASC Games,3,0,TNN Motor Sports Hardcore 4x4,0,0
+43.0,Ascaron Entertainment,1,0,The Train Giant,1,0
+44.0,Ascaron Entertainment GmbH,3,0,Port Royale 2,0,0
+45.0,ASCII Entertainment,19,0,Derby Stallion II,0,1
+46.0,ASCII Media Works,9,0,"Nogizaka Haruka no Himitsu Cosplay, Hajime Mashita",0,0
+47.0,Asgard,8,0,Starry ? Sky: In Autumn,0,0
+48.0,ASK,1,0,Big Ichigeki! Pachi-Slot Taikouryku Universal Museum,1,0
+49.0,Asmik Ace Entertainment,3,0,Virtual Pro Wrestling,0,1
+50.0,Asmik Corp,2,0,Derby Jockey: Kishou e no Michi,0,1
+51.0,Aspyr,8,0,Wakeboarding Unleashed Featuring Shaun Murray,0,0
+52.0,Astragon,6,2,Jewel Quest Mysteries,0,0
+53.0,Asylum Entertainment,5,0,Doctor Who: Evacuation Earth,0,0
+54.0,Atari,263,20,Asteroids,0,0
+55.0,Athena,2,0,Super Bowling,0,0
+56.0,Atlus,61,0,Majin Tensei,0,1
+57.0,Avalon Interactive,5,0,Death Trap,0,0
+58.0,Avanquest,24,13,Jewel Quest II,0,0
+59.0,Avanquest Software,7,0,50 Classic Games,0,0
+60.0,Axela,1,0,Combination Pro Soccer: J-League no Kantoku ni Natte Sekai wo Mezase!!,1,1
+61.0,BAM! Entertainment,24,0,Transformers: Beast Wars Transmetals,0,0
+62.0,Banpresto,72,2,Battle Commander: Hachibushu Shura no Heihou,0,1
+63.0,Benesse,6,0,Kiku! Kaku! Kotoba o Fuyasu! Hajimete no Eigo Training,0,0
+64.0,Berkeley,1,0,M&Ms Shell Shocked,1,0
+65.0,Bethesda Softworks,29,0,IHRA Drag Racing 2,0,0
+66.0,Big Ben Interactive,7,0,Savage Skies,0,0
+67.0,Big Fish Games,2,0,Agatha Christie: Death on the Nile,0,0
+68.0,Bigben Interactive,3,0,Handball 16,0,0
+69.0,bitComposer Games,3,0,RACE On,0,0
+70.0,Black Bean Games,16,0,Alfa Romeo Racing Italiano,0,0
+71.0,Black Label Games,1,0,The Lord of the Rings: The Fellowship of the Ring,1,0
+72.0,Blast! Entertainment Ltd,5,0,Garfield: Lasagna World Tour,0,0
+73.0,Blue Byte,2,0,IL-2 Sturmovik,0,0
+74.0,BMG Interactive Entertainment,7,0,3D Baseball,0,0
+75.0,Bohemia Interactive,1,0,ArmA III,1,0
+76.0,Bomb,1,0,Assault,1,0
+77.0,Boost On,1,0,Isshoni Gohan. Portable,1,0
+78.0,BPS,2,1,Tetris 2 + Bombliss,0,1
+79.0,Brash Entertainment,4,0,Alvin and the Chipmunks,0,0
+80.0,Broccoli,22,0,Galaxy Angel II: Zettairyouiki no Tobira,0,0
+81.0,BushiRoad,1,0,Detective Opera: Milky Holmes 2,1,0
+82.0,Capcom,273,4,Commando,0,1
+83.0,Cave,10,0,Princess Debut,0,0
+84.0,CBS Electronics,1,0,Mountain King,1,0
+85.0,CCP,1,0,EVE Online,1,0
+86.0,CDV Software Entertainment,6,1,Codename: Panzers Phase Two,0,0
+87.0,ChunSoft,17,0,Otogirisou,0,1
+88.0,City Interactive,14,2,Sniper: Art of Victory,0,0
+89.0,Cloud Imperium Games Corporation,1,0,Deadliest Warrior: Ancient Combat,1,0
+90.0,Coconuts Japan,2,0,Pachinko Wars II,0,0
+91.0,Codemasters,76,1,Micro Machines V3,0,0
+92.0,Codemasters Online,1,0,The Lord of the Rings Online: Mines of Moria,1,0
+93.0,CokeM Interactive,1,0,Dr. Seuss: How the Grinch Stole Christmas,1,0
+94.0,Coleco,5,0,Carnival,0,0
+95.0,Comfort,6,0,Princess Saver! Eternal Love for My Lady,0,0
+96.0,Commseed,1,0,Juggler DS,1,0
+97.0,Compile,6,5,Super Puyo Puyo 2,0,1
+98.0,Compile Heart,19,0,Record of Agarest War,0,0
+99.0,Conspiracy Entertainment,13,3,Tiny Toon Adventures: Plucky's Big Adventure,0,0
+100.0,Core Design Ltd.,2,0,ThunderStrike 2,0,0
+101.0,CPG Products,1,0,Action Force,1,0
+102.0,Crave Entertainment,48,6,Jade Cocoon: Story of the Tamamayu,0,0
+103.0,Creative Core,3,0,Mame Goma 2: Uchi no Ko ga Ichiban!,0,0
+104.0,Crimson Cow,2,0,A Vampyre Story,0,0
+105.0,Crystal Dynamics,5,0,Gex,0,0
+106.0,CTO SpA,2,0,Star Wars: Rebel Assault II - The Hidden Empire,0,0
+107.0,Culture Brain,4,0,Super Baseball Simulator 1.000,0,0
+108.0,Culture Publishers,1,1,Hello Kitty's Cube Frenzy,1,0
+109.0,CyberFront,13,0,Memories Off #5: Encore,0,0
+110.0,Cygames,1,0,Airship Q,1,0
+111.0,D3Publisher,131,8,Simple 1500 Series Vol. 1: The Mahjong,0,0
+112.0,Daedalic,3,0,Machinarium,0,0
+113.0,Daedalic Entertainment,3,0,Botanicula,0,0
+114.0,Daito,4,0,Daito Giken Koushiki Pachi-Slot Simulator: Hihouden,0,0
+115.0,Data Age,2,0,Airlock,0,0
+116.0,Data Design Interactive,3,0,Kawasaki Quad Bikes,0,0
+117.0,Data East,2,0,Metal Max Returns,0,1
+118.0,Datam Polystar,2,0,Roommate Asami: Okusama wa Joshikousei,0,0
+119.0,Deep Silver,71,5,Kingdom Under Fire: The Crusaders,0,0
+120.0,"Destination Software, Inc",12,2,Snood,0,0
+121.0,Destineer,38,6,Fullmetal Alchemist: Trading Card Game,0,0
+122.0,Detn8 Games,1,0,Ultimate Duck Hunting: Hunting & Retrieving Ducks,1,0
+123.0,Devolver Digital,2,1,Serious Sam HD: Gold Edition,0,0
+124.0,DHM Interactive,3,1,Lovely Lisa,0,0
+125.0,DigiCube,1,0,Eikan wa Kimini 2002: Koshien no Kodou,1,0
+126.0,Disney Interactive Studios,109,3,Who wants to be a millionaire,0,0
+127.0,Dorart,2,0,Minna de Dokusho: Keatai Shousetsu Desu,0,0
+128.0,dramatic create,5,0,Alia's Carnival! Sacrament,0,0
+129.0,DreamCatcher Interactive,17,2,Woody Woodpecker: Escape from Buzz Buzzard Park,0,0
+130.0,DreamWorks Interactive,1,0,SkullMonkeys,1,0
+131.0,DSI Games,5,0,Mousetrap / Operation / Simon,0,0
+132.0,DTP Entertainment,33,1,Let's Ride! Dreamer,0,0
+133.0,Dusenberry Martin Racing,1,0,NASCAR Heat Evolution,1,0
+134.0,EA Games,1,0,Syndicate,1,0
+135.0,Easy Interactive,2,2,Curse of the Amsterdam Diamond,0,0
+136.0,Ecole,1,0,Melty Blood: Actress Again,1,0
+137.0,Edia,2,0,MAPLUS: Portable Navi,0,0
+138.0,Eidos Interactive,123,7,Machine Head,0,0
+139.0,Electronic Arts,602,5,Syndicate,0,0
+140.0,Electronic Arts Victor,2,0,Assault Rigs,0,0
+141.0,Elf,2,0,Nonomura Byoin no Hitobito,0,1
+142.0,Elite,1,0,Strike Point,1,0
+143.0,Empire Interactive,34,6,Pro Pinball,0,0
+144.0,Encore,3,0,Zoboomafoo: Leapin' Lemurs!,0,0
+145.0,Enix Corporation,28,0,Dragon Warrior II,0,1
+146.0,Enjoy Gaming ltd.,1,0,System Flaw,1,0
+147.0,Enterbrain,15,0,Tear Ring Saga Yutona Eiyuu Senki,0,1
+148.0,EON Digital Entertainment,1,0,Builder's Block,1,0
+149.0,Epic Games,1,0,Paragon,1,0
+150.0,Epoch,7,0,Chibi Maruko-Chan: Harikiri 365-Nichi no Maki,0,1
+151.0,Ertain,1,0,Air Traffic Chaos,1,0
+152.0,ESP,5,0,Grandia,0,1
+153.0,Essential Games,3,0,Global Defence Force,0,1
+154.0,Evolution Games,1,0,OverBlood 2,1,0
+155.0,Evolved Games,4,0,Malice,0,0
+156.0,Excalibur Publishing,4,0,Digger Simulator,0,0
+157.0,Experience Inc.,3,0,Demon Gaze 2,0,0
+158.0,Extreme Entertainment Group,1,0,Langrisser: Re:Incarnation Tensei,1,0
+159.0,Falcom Corporation,13,0,Eiyuu Densetsu: Sora no Kiseki Material Collection Portable,0,0
+160.0,Fields,1,0,Gekiatsu!! Pachi Game Tamashi Max: Evangelion 7 x Seimei no Kodou,1,0
+161.0,Flashpoint Games,2,0,Super Army War,0,0
+162.0,Flight-Plan,2,0,Dragon Shadow Spell,0,0
+163.0,Focus Home Interactive,39,6,Bejeweled 2 Deluxe,0,0
+164.0,Focus Multimedia,3,2,Dark Tales: Edgar Allan Poe's The Premature Burial,0,0
+165.0,fonfun,1,0,World Neverland 2in1 Portable: Olerud Kingdom & Republic of Pluto,1,0
+166.0,Foreign Media Games,9,4,Casual Mania!,0,0
+167.0,Fortyfive,1,0,July,1,0
+168.0,Fox Interactive,8,0,Die Hard Trilogy,0,0
+169.0,From Software,15,0,King's Field (Japan),0,0
+170.0,Fuji,1,0,Night Head: The Labyrinth,1,0
+171.0,Funbox Media,5,0,Country Dance,0,0
+172.0,Funcom,2,0,Age of Conan: Rise of the Godslayer,0,0
+173.0,FunSoft,1,0,Burning Road,1,0
+174.0,Funsta,3,2,Platypus,0,0
+175.0,FuRyu,24,0,Datenshi no Amai Yuuwaku x Kaikan Phrase,0,0
+176.0,FuRyu Corporation,1,0,Let's Sing 2016,1,0
+177.0,G.Rev,2,0,Mamoru-kun wa Norowarete Shimatta!,0,0
+178.0,Gaga,1,0,Shippuu Mahou Daisakusen: Kingdom-Grandprix,1,0
+179.0,Gainax Network Systems,2,0,Shinseiki Evangelion- Eva: Yukai na Nakama Tachi,0,1
+180.0,Gakken,2,0,Gakken DS: Shin TOEIC Test Kanzen Kouryaku,0,0
+181.0,Game Arts,1,0,"Lunar 2: Eternal Blue(sales, but wrong system)",1,1
+182.0,Game Factory,27,3,Garfield: The Search for Pooky,0,0
+183.0,Game Life,2,0,Horse Life,0,0
+184.0,Gamebridge,1,0,Way of the Samurai 3,1,1
+185.0,Gamecock,3,0,Hail to the Chimp,0,0
+186.0,Gameloft,1,0,Guitar Rock Tour,1,0
+187.0,GameMill Entertainment,8,0,Brunswick Cosmic Bowling,0,0
+188.0,GameTek,1,0,Jeopardy!,1,0
+189.0,Gathering of Developers,7,0,4x4 EVO 2,0,0
+190.0,General Entertainment,1,0,Project V6,1,1
+191.0,Genki,8,0,Tokyo Xtreme Racer,0,0
+192.0,Genterprise,1,1,Umihara Kawase Jun: Second Edition Kanzenban,1,0
+193.0,Ghostlight,13,0,Shin Megami Tensei: Nocturne,0,0
+194.0,Giga,1,0,Kiss Bell,1,0
+195.0,Giza10,1,0,Ore wa Shoujo Mangaka,1,0
+196.0,Glams,1,0,Quo Vadis,1,1
+197.0,Global A Entertainment,4,0,Dungeon Maker: Hunting Ground,0,0
+198.0,Global Star,23,0,Army Men: RTS,0,0
+199.0,GN Software,3,0,Izumo 2,0,0
+200.0,GOA,1,0,Warhammer Online: Age of Reckoning,1,0
+201.0,Gotham Games,5,0,Conflict: Desert Storm,0,0
+202.0,Graffiti,6,0,Mazes of Fate DS,0,0
+203.0,Grand Prix Games,1,0,Hajime no Ippo Portable: Victorious Spirits,1,0
+204.0,Graphsim Entertainment,1,0,Falcon 4.0: Allied Force,1,0
+205.0,Gremlin Interactive Ltd,9,0,Reloaded,0,0
+206.0,Griffin International,1,0,Bass Pro Shops: The Hunt,1,0
+207.0,Groove Games,2,0,Land of the Dead: Road to Fiddler's Green,0,0
+208.0,GSP,15,3,I Love Horses,0,0
+209.0,GT Interactive,39,0,Final Doom,0,0
+210.0,GungHo,12,0,Hero's Saga Laevatein Tactics,0,1
+211.0,Gust,13,0,Meru Purana,0,0
+212.0,Hackberry,7,0,Pachinko Kaou: Misora Hibari,0,0
+213.0,HAL Laboratory,1,1,Adventures of Lolo,1,0
+214.0,Hamster Corporation,2,0,Arcade Hits: Frisky Tom,0,0
+215.0,Happinet,3,0,Dolly Kanon Dokidoki Tokimeki Himitsu no Ongaku Katsudou Start Desu!!,0,0
+216.0,Harmonix Music Systems,1,0,Rock Band 4,1,0
+217.0,Hasbro Interactive,14,2,Monopoly,0,0
+218.0,Havas Interactive,1,0,Diablo II,1,0
+219.0,Headup Games,1,0,The Inner World,1,0
+220.0,Hearty Robin,1,0,Sotsugyou Crossworld,1,1
+221.0,Hect,3,0,Thoroughbred Breeder,0,1
+222.0,Hello Games,1,0,No Man's Sky,1,0
+223.0,Her Interactive,1,0,Nancy Drew: Alibi In Ashes,1,0
+224.0,Hip Interactive,5,0,Around the World in 80 Days,0,0
+225.0,HMH Interactive,2,0,Travel Coach: Europe 1,0,0
+226.0,Home Entertainment Suppliers,2,0,Rugby League Live,0,0
+227.0,Hudson Entertainment,11,2,Momotarou Dentetsu 7,0,1
+228.0,Hudson Soft,78,12,Lode Runner,0,1
+229.0,Human Entertainment,13,0,Super Fire ProWrestling,0,1
+230.0,HuneX,2,0,Irotoridori no Sekai: World's End Re-Birth,0,0
+231.0,Iceberg Interactive,3,0,APB Reloaded,0,0
+232.0,id Software,1,0,Doom,1,0
+233.0,Idea Factory,126,0,Next Generation of Chaos,0,0
+234.0,Idea Factory International,6,0,Hyperdimension Neptunia Re;Birth 2,0,0
+235.0,IE Institute,5,0,Chuugaku Eitango Target 1800 DS,0,1
+236.0,Ignition Entertainment,47,8,Pinball Tycoon,0,0
+237.0,Illusion Softworks,1,0,Mafia,1,0
+238.0,Imadio,1,0,Desire,1,1
+239.0,Image Epoch,1,0,Sol Trigger,1,1
+240.0,imageepoch Inc.,2,0,SoniPro,0,0
+241.0,Imageworks,1,0,Sotsugyou II: Neo Generation Special,1,0
+242.0,Imagic,4,0,Atlantis,0,0
+243.0,Imagineer,16,0,John Madden Football,0,1
+244.0,Imax,1,0,Super Mahjong 2: Honkaku 4Jin Uchi,1,0
+245.0,Indie Games,3,0,Armored Core: Nexus,0,0
+246.0,Infogrames,52,0,Doom,0,0
+247.0,Insomniac Games,1,0,Song of the Deep,1,0
+248.0,Interchannel,4,0,Clannad,0,0
+249.0,Interchannel-Holon,1,0,Palais de Reine,1,0
+250.0,Intergrow,1,0,Shantae and the Pirate's Curse,1,0
+251.0,Interplay,30,0,Rock N' Roll Racing,0,0
+252.0,Interplay Productions,1,0,Descent Maximum,1,0
+253.0,"Interworks Unlimited, Inc.",1,0,Pro Angler Moves,1,0
+254.0,Inti Creates,1,0,Azure Striker Gunvolt: Striker Pack,1,0
+255.0,Introversion Software,1,0,Prison Architect,1,0
+256.0,inXile Entertainment,1,0,Wasteland 2,1,0
+257.0,Irem Software Engineering,12,0,R-Type Delta,0,0
+258.0,ITT Family Games,1,0,Alien's Return,1,0
+259.0,Ivolgamus,1,1,Fading Shadows,1,0
+260.0,iWin,1,1,Jewel Quest IV: Heritage,1,0
+261.0,Jack of All Games,3,0,The Cat in the Hat,0,0
+262.0,Jaleco,19,2,Bases Loaded '96: Double Header,0,0
+263.0,Jester Interactive,3,0,Super Trucks Racing,0,0
+264.0,Jorudan,3,0,Hamster Tarou,0,1
+265.0,JoWood Productions,18,1,Maximum Capacity: Hotel Giant,0,0
+266.0,Just Flight,1,0,Apache: Air Assault,1,0
+267.0,JVC,8,1,Center Ring Boxing,0,0
+268.0,Kadokawa Games,14,0,Entaku no Seito: The Eternal Legend,0,0
+269.0,Kadokawa Shoten,47,0,Lunar: Silver Star Story,0,0
+270.0,Kaga Create,4,0,A Good Librarian Like a Good Shepherd: Library Party,0,0
+271.0,Kalypso Media,21,0,Theatre Of War,0,0
+272.0,Kamui,1,0,Sekai no Hate Made Itte Q! Chinjuu Hunter Mono no Daibouken,1,0
+273.0,Kando Games,1,0,Rebel Raiders: Operation Nighthawk,1,0
+274.0,Karin Entertainment,1,0,Zettai Meikyuu Grimm: Nanatsu no Kagi to Rakuen no Otome,1,0
+275.0,Kemco,15,1,Lagoon,0,0
+276.0,KID,4,0,Highschool Terra Story,0,0
+277.0,Kids Station,1,0,Gakuen Alice: WakuWaku * Happy Friends,1,0
+278.0,King Records,1,0,Shaman King: Chou Senjiryokketsu 3,1,0
+279.0,Knowledge Adventure,4,0,Barbie Horse Adventures: Blue Ribbon Race,0,0
+280.0,Koch Media,10,1,Ben 10: Alien Force,0,0
+281.0,Kokopeli Digital Studios,1,0,Robo Pit,1,0
+282.0,Konami Digital Entertainment,634,8,Castlevania,0,1
+283.0,Kool Kizz,1,0,Dai Senryaku VII: Modern Military Tactics,1,0
+284.0,KSS,1,0,Nishijin Pachinko Monogatari 2,1,0
+285.0,Laguna,4,0,Mega Man X2,0,1
+286.0,Legacy Interactive,1,0,Igor: The Game,1,0
+287.0,LEGO Media,6,0,LEGO Racers,0,0
+288.0,Level 5,24,3,Sloane to MacHale no Nazo no Monogatari,0,1
+289.0,Lexicon Entertainment,2,0,AniMates!,0,0
+290.0,Licensed 4U,3,1,Azada,0,0
+291.0,Lighthouse Interactive,1,0,Ship Simulator 2008,1,0
+292.0,Liquid Games,2,1,ATV: Quad Power Racing,0,0
+293.0,Little Orbit,8,0,Busy Scissors,0,0
+294.0,Locus,1,0,Wizardry: Llylgamyn Saga,1,0
+295.0,LSP Games,3,0,CT Special Forces,0,0
+296.0,LucasArts,42,0,Star Wars: Dark Forces,0,0
+297.0,Mad Catz,3,0,MC Groovz Dance Craze,0,0
+298.0,Magical Company,0,0,,0,1
+299.0,Magix,2,0,Music Maker,0,0
+300.0,Majesco Entertainment,81,9,Caesars Palace Advance: Millennium Gold Edition,0,0
+301.0,Mamba Games,2,0,The Void,0,0
+302.0,Marvel Entertainment,1,0,Luminous Arc Infinity,1,0
+303.0,Marvelous Entertainment,12,0,Harvest Moon 3D: A New Beginning,0,1
+304.0,Marvelous Games,1,0,Net High,1,0
+305.0,Marvelous Interactive,52,0,The King of Fighters EX2: Howling Blood,0,0
+306.0,Masque Publishing,1,0,IGT Slots: Lucky Larry's Lobstermania,1,0
+307.0,Mastertronic,13,4,AMF Xtreme Bowling,0,0
+308.0,Mastiff,14,0,Top Gun: Combat Zones,0,0
+309.0,Mattel Interactive,12,1,Adventures of Tron,0,0
+310.0,Max Five,1,0,Hoshigami: Ruining Blue Earth,1,0
+311.0,Maximum Family Games,1,0,Deer Drive: Legends,1,0
+312.0,Maxis,2,0,SimCity,0,0
+313.0,MC2 Entertainment,3,0,Obscure,0,0
+314.0,Media Entertainment,1,0,"Pachi-Slot Teiou: Golgo 13 Las Vegas (JP sales, but wrong system)",1,0
+315.0,Media Factory,2,0,Sakura Wars GB,0,1
+316.0,Media Rings,3,0,Zero4 Champ RR,0,1
+317.0,Media Works,4,0,Shin Fortune Quest: Sokutaku no Kishi,0,0
+318.0,MediaQuest,1,1,Zoop,1,0
+319.0,Men-A-Vision,1,0,Air Raid,1,0
+320.0,Mentor Interactive,5,0,My Virtual Tutor: Reading Adventure First to Second Grade,0,0
+321.0,Mercury Games,4,0,Warriors of the Lost Empire,0,0
+322.0,Merscom LLC,1,0,Shutter Island,1,0
+323.0,Metro 3D,12,0,Armored Core 2: Another Age,0,0
+324.0,Michaelsoft,1,0,Wizardry XTH: Unlimited Students,1,0
+325.0,Micro Cabin,3,1,Bust-A-Move,0,0
+326.0,Microids,9,0,Casper,0,0
+327.0,Microprose,5,0,X-COM: UFO Defense,0,0
+328.0,Microsoft Game Studios,179,1,Microsoft Flight Simulator,0,0
+329.0,Midas Interactive Entertainment,24,3,Puzzle Star Sweep,0,0
+330.0,Midway Games,106,4,NBA Hangtime,0,0
+331.0,Milestone,1,0,Ultimate Shooting Collection,1,0
+332.0,Milestone S.r.l,1,0,Sébastien Loeb Rally Evo,1,0
+333.0,Milestone S.r.l.,4,0,MotoGP 14,0,0
+334.0,Minato Station,3,0,Kimi ga Aruji de Shitsuji ga Ore de: Oshie Nikki,0,0
+335.0,Mindscape,28,3,Panzer General,0,0
+336.0,Mirai Shounen,1,0,Moe Star: Moeru Toudai Eigojuku,1,0
+337.0,Misawa,2,0,Keiba Eight Special,0,0
+338.0,Mitsui,1,0,Knife Edge: NoseGunner,1,0
+339.0,"mixi, Inc",1,0,Monster Strike 3DS,1,1
+340.0,MLB.com,1,0,R.B.I. Baseball 2016,1,0
+341.0,Mojang,1,0,Minecraft: Story Mode,1,0
+342.0,Monte Christo Multimedia,1,0,City Life: World Edition,1,0
+343.0,Moss,2,0,Raiden IV,0,0
+344.0,MTO,8,0,Option Tuning Car Battle,0,0
+345.0,MTV Games,13,0,AC/DC LIVE: Rock Band Track Pack,0,0
+346.0,Mud Duck Productions,2,0,AMF Bowling 2004,0,0
+347.0,Mumbo Jumbo,6,4,Luxor: The Wrath of Set,0,0
+348.0,Mycom,1,0,Strongest Tokyo University Shogi DS,1,0
+349.0,Myelin Media,1,0,Stacked with Daniel Negreanu,1,0
+350.0,Mystique,1,0,Custer's Revenge,1,0
+351.0,,36,1,All Grown Up!: Game Boy Advance Video Volume 1,0,0
+352.0,Namco Bandai Games,768,20,Mappy,0,1
+353.0,Natsume,17,2,Reel Fishing,0,0
+354.0,Navarre Corp,1,0,Deadliest Catch: Alaskan Storm,1,0
+355.0,Naxat Soft,1,0,Naxat Soft Reachmania Vol. 1: CR Galaxy Angel,1,0
+356.0,NCS,3,0,Langrisser III,0,1
+357.0,NCSoft,6,0,Guild Wars,0,0
+358.0,NDA Productions,1,0,Die Hard: Vendetta,1,0
+359.0,NEC,3,0,Doukyuusei,0,1
+360.0,NEC Interchannel,8,0,Tanjou S Debut,0,1
+361.0,Neko Entertainment,6,1,Safari Adventures: Africa,0,0
+362.0,NetRevo,2,0,Tsuyo Kiss 2 Portable,0,0
+363.0,New,1,0,Boxer's Road,1,1
+364.0,New World Computing,1,0,Empire Deluxe,1,0
+365.0,NewKidCo,7,0,Sesame Street: Elmo's Letter Adventure,0,0
+366.0,Nexon,1,0,MapleStory DS,1,0
+367.0,Nichibutsu,1,0,Nichibutsu Arcade Classics,1,1
+368.0,Nihon Falcom Corporation,7,0,Nayuta no Kiseki,0,1
+369.0,Nintendo,659,67,Baseball,0,1
+370.0,Nippon Amuse,1,0,Million God,1,1
+371.0,Nippon Columbia,7,0,Kobitodzukan: Kobito Kansatsu Set,0,1
+372.0,Nippon Ichi Software,86,0,Rhapsody: A Musical Adventure,0,0
+373.0,Nippon Telenet,2,0,Parlor! Mini 2,0,1
+374.0,Nitroplus,2,0,Dramatical Murder Re:code,0,0
+375.0,Nobilis,12,0,Case Closed: One Truth Prevails,0,0
+376.0,Nordcurrent,1,0,Domino Rally,1,0
+377.0,Nordic Games,27,0,Reader Rabbit Kindergarten,0,0
+378.0,NovaLogic,2,0,Delta Force: Black Hawk Down,0,0
+379.0,Number None,1,0,Braid,1,0
+380.0,O-Games,12,4,Hurry Up Hedgehog!,0,0
+381.0,O3 Entertainment,3,1,Alien Hominid,0,0
+382.0,Ocean,14,1,F1 ROC: Race of Champions,0,0
+383.0,Office Create,2,0,Cooking Mama 5: Bon Appetit!,0,0
+384.0,On Demand,1,0,Angel Blade: Neo Tokyo Guardians,1,0
+385.0,Ongakukan,1,0,Railfan,1,0
+386.0,Origin Systems,1,0,Wing Commander IV: The Price of Freedom,1,0
+387.0,Otomate,1,0,Natsuzora no Monologue,1,0
+388.0,Oxygen Interactive,17,2,World Championship Poker 2: Featuring Howard Lederer,0,0
+389.0,P2 Games,3,1,Geon Cube,0,0
+390.0,Pacific Century Cyber Works,1,0,Lowrider,1,0
+391.0,Pack In Soft,1,0,Harvest Moon 64,1,1
+392.0,Pack-In-Video,2,0,A llI S.V.: A Ressha de Gyoukou 3 Super Version,0,0
+393.0,Palcom,1,0,Teenage Mutant Ninja Turtles,1,1
+394.0,Panther Software,1,0,Space Griffon VF-9,1,1
+395.0,Paon,6,0,Daito Giken Koushiki Pachi-Slot Simulator: Hihouden - Ossu! Banchou - Yoshimune DS,0,0
+396.0,Paon Corporation,1,0,Daito Giken Koushiki Pachi-Slot Simulator Hihouden: Taiyou o Motomeru Monotachi,1,0
+397.0,Paradox Development,1,0,Cities: Skylines Snowfall,1,0
+398.0,Paradox Interactive,23,0,Combat Mission: Shock Force,0,0
+399.0,Parker Bros.,7,1,Frogger,0,0
+400.0,Performance Designed Products,1,1,Squeeballs Party,1,0
+401.0,Phantagram,1,0,Phantom Crash,1,0
+402.0,Phantom EFX,1,0,Darkest of Days,1,0
+403.0,Phenomedia,4,2,Crazy Chicken: Atlantis Quest,0,0
+404.0,Phoenix Games,1,0,Chicken Hunter,1,0
+405.0,Piacci,1,0,FairlyLife: MiracleDays,1,0
+406.0,Pinnacle,4,1,Doodle Hex,0,0
+407.0,Pioneer LDC,4,0,NASCAR Racing,0,1
+408.0,Play It,13,0,Road Trip,0,0
+409.0,Playlogic Game Factory,10,1,Airborne Troops: Countdown to D-Day,0,0
+410.0,Playmates,1,0,VMX Racing,1,0
+411.0,Playmore,1,0,The King of Fighters 2000,1,0
+412.0,PlayV,4,2,Mind Your Language: Learn English! / French! / German! / Spanish! /Japanese!,0,0
+413.0,Plenty,1,0,Quiz Present Variety Q-Sama!! DS: Pressure Study x Atama Gai Kunaru Drill SP,1,0
+414.0,PM Studios,1,0,DJ Max Fever,1,0
+415.0,Pony Canyon,1,0,Black Jack vs. Matsudajun,1,0
+416.0,PopCap Games,12,8,Bookworm Deluxe,0,0
+417.0,Popcorn Arcade,10,2,Mini Desktop Racing,0,0
+418.0,PopTop Software,1,0,Railroad Tycoon II,1,0
+419.0,Pow,1,1,Block Kuzushi,1,0
+420.0,PQube,22,0,Castle of Shikigami III,0,0
+421.0,Princess Soft,3,0,Natsuiro no Sunadokei,0,0
+422.0,Prototype,20,0,AIR,0,0
+423.0,Psygnosis,32,1,Discworld,0,0
+424.0,Quelle,1,0,Enduro,1,0
+425.0,Quest,1,0,Tactics Ogre: Let Us Cling Together,1,1
+426.0,Quinrose,14,0,Clover no Kuni no Alice: Wonderful Wonder World,0,0
+427.0,Quintet,1,0,Code R,1,0
+428.0,Rage Software,5,1,Denki Blocks!,0,0
+429.0,Rain Games,1,0,Teslagrad,1,0
+430.0,Rebellion,2,0,Midnight Club: Street Racing,0,0
+431.0,Rebellion Developments,1,0,Zombie Army Trilogy,1,0
+432.0,RED Entertainment,1,0,Scared Rider Xechs,1,0
+433.0,Red Orb,2,0,Myst,0,0
+434.0,Red Storm Entertainment,2,0,Tom Clancy's Rainbow Six,0,0
+435.0,RedOctane,4,0,Guitar Hero,0,0
+436.0,Reef Entertainment,4,0,Free Running,0,0
+437.0,responDESIGN,1,0,Yourself Fitness,1,0
+438.0,Revolution (Japan),1,0,Tsuyo Kiss 2 Gakki: Swift Love,1,0
+439.0,Revolution Software,1,0,Broken Sword 5: The Serpent's Curse,1,0
+440.0,Rising Star Games,79,11,Harvest Moon DS (US sales),0,0
+441.0,Riverhillsoft,1,0,Sotsugyou II: Neo Generation,1,0
+442.0,Rocket Company,17,0,Tokyo Friend Park II DS,0,1
+443.0,Rondomedia,11,5,Euro Truck Simulator,0,0
+444.0,RTL,6,0,Winter Sports: The Ultimate Challenge,0,0
+445.0,Russel,6,0,Worldwide Soccer Manager 2008,0,0
+446.0,Sammy Corporation,11,0,Jissen Pachi-Slot Hisshouhou,0,1
+447.0,Saurus,1,0,Irritating Stick,1,0
+448.0,Scholastic Inc.,8,3,I Spy: Fun House,0,0
+449.0,SCi,10,0,Conflict: Desert Storm,0,0
+450.0,Screenlife,5,0,Attack on Titan: Humanity in Chains,0,1
+451.0,SCS Software,1,0,Euro Truck Simulator 2,1,0
+452.0,Sega,477,15,Congo Bongo,0,1
+453.0,Seta Corporation,6,0,Ide Yosuke no Mahjong Kazoku,0,1
+454.0,Seventh Chord,1,0,Kamen Rider: Travelers Senki,1,1
+455.0,Shogakukan,5,0,Kekkon Zenya,0,1
+456.0,Simon & Schuster Interactive,1,0,Outlaw Golf: Nine Holes of Christmas,1,0
+457.0,Slightly Mad Studios,1,0,Project CARS,1,0
+458.0,Slitherine Software,2,0,Military History: Commander - Europe at War,0,0
+459.0,SNK,19,0,Samurai Shodown,0,1
+460.0,SNK Playmore,17,0,The King of Fighters '95,0,0
+461.0,Societa,1,0,Haunted Casino,1,0
+462.0,Sold Out,1,0,Worms: WMD,1,0
+463.0,Sonnet,2,0,Tokimeki Mahjong Paradise: Koi no Tenpai Beat,0,0
+464.0,Sony Computer Entertainment,621,12,Battle Arena Toshinden,0,1
+465.0,Sony Computer Entertainment America,1,0,MLB 14: The Show,1,0
+466.0,Sony Computer Entertainment Europe,12,0,Ace Combat 04: Shattered Skies,0,1
+467.0,Sony Music Entertainment,1,0,Space Venus starring Morning Musume,1,1
+468.0,Sony Online Entertainment,7,0,EverQuest Online Adventures,0,0
+469.0,SouthPeak Games,30,2,BoomBots,0,0
+470.0,Spike,29,0,Fire ProWrestling,0,0
+471.0,SPS,1,0,HardBall 5,1,0
+472.0,Square,6,0,Final Fantasy II,0,1
+473.0,Square EA,1,0,Final Fantasy Anthology,1,0
+474.0,Square Enix,160,4,Drakengard,0,1
+475.0,SquareSoft,48,0,Final Fantasy,0,1
+476.0,SSI,1,0,Allied General,1,0
+477.0,Stainless Games,1,0,Carmageddon: Max Damage,1,0
+478.0,Starfish,10,0,Big Bass World Championship,0,0
+479.0,Starpath Corp.,1,0,Fireball,1,0
+480.0,Sting,7,0,Riviera: The Promised Land,0,0
+481.0,Storm City Games,17,7,Foto Frenzy: Spot The Diffrence,0,0
+482.0,Strategy First,1,0,Cossacks: European Wars,1,0
+483.0,Success,19,1,Asteroids,0,0
+484.0,Summitsoft,1,0,Crushed Baseball,1,0
+485.0,Sunflowers,1,0,Knights of Honor,1,0
+486.0,Sunrise Interactive,4,0,G-Saviour,0,0
+487.0,Sunsoft,10,1,Galaxy Fight,0,0
+488.0,Sweets,2,0,Gift: Prism,0,0
+489.0,Swing! Entertainment,6,0,Tiny Toon Adventures: Toonenstein - Dare to Scare,0,0
+490.0,Syscom,2,0,Pachi-Slot Kanzen Kouryaku 3: Universal Koushiki Gaido Volume 3,0,1
+491.0,System 3,1,0,Putty Squad,1,0
+492.0,System 3 Arcade Software,9,1,Pinball Hall of Fame: The Gottlieb Collection,0,0
+493.0,System Soft,4,0,Moe Moe 2-ji Taisen (Ryoku) * Deluxe,0,0
+494.0,T&E Soft,1,0,Harukanaru Augusta 2: Masters,1,1
+495.0,Taito,19,0,Front Line,0,1
+496.0,Takara,16,0,Fatal Fury,0,1
+497.0,Takara Tomy,37,0,Naruto RPG 3: Rejiuu vs Konoha Shoutai,0,0
+498.0,Take-Two Interactive,201,1,Grand Theft Auto,0,0
+499.0,Takuyo,1,0,Shinigami to Shoujo,1,0
+500.0,TalonSoft,1,0,Spec Ops: Ranger Elite,1,0
+501.0,TDK Core,5,0,Casper: Friends Around the World,0,0
+502.0,TDK Mediactive,28,0,Casper: Spirit Dimensions,0,0
+503.0,Team17 Software,1,0,Worms Reloaded,1,0
+504.0,Technos Japan Corporation,1,0,Super Dodge Ball,1,0
+505.0,TechnoSoft,1,0,Thunder Force V: Perfect System,1,0
+506.0,Tecmo Koei,253,0,Lord of Darkness,0,1
+507.0,Telegames,8,2,Iron Soldier 3,0,0
+508.0,Telltale Games,7,0,Back to the Future: The Game,0,0
+509.0,Telstar,3,0,Star Fighter,0,0
+510.0,Tetris Online,1,1,Tetris Axis,1,0
+511.0,TGL,4,0,Kono Aozora ni Yakusoku o: Tenohira no Rakuen,0,0
+512.0,The Adventure Company,4,1,Agatha Christie: And Then There Were None,0,0
+513.0,The Learning Company,1,0,Arthur! Ready to Race,1,0
+514.0,THQ,402,11,In the Hunt,0,0
+515.0,Tigervision,3,0,Jawbreaker,0,0
+516.0,Time Warner Interactive,5,0,Primal Rage,0,0
+517.0,Titus,18,0,Ninja Warriors,0,0
+518.0,Tivola,3,0,Monster Band,0,0
+519.0,TOHO,1,0,Ranma 1/2: Akanekodan Teki Hihou,1,1
+520.0,Tommo,5,0,Interactive Storybook DS Series 1,0,0
+521.0,Tomy Corporation,18,0,Shin Nippon Pro Wrestling: Toukon Retsuden,0,1
+522.0,TopWare Interactive,2,0,Battle vs. Chess,0,0
+523.0,Touchstone,2,0,Anno 1701: Dawn of Discovery,0,0
+524.0,Tradewest,1,0,Winter Sports 3: The Great Tournament,1,0
+525.0,Trion Worlds,2,0,End of Nations,0,0
+526.0,Tripwire Interactive,1,0,Red Orchestra 2: Heroes of Stalingrad,1,0
+527.0,Tru Blu Entertainment,2,0,Don Bradman Cricket 14,0,0
+528.0,Tryfirst,1,0,Wrestle Angels: Survivor 2,1,0
+529.0,TYO,1,0,JGTC: All-Japan Grand Touring Car Championship,1,0
+530.0,Type-Moon,1,0,Fate/hollow ataraxia,1,1
+531.0,U.S. Gold,4,0,Johnny Bazookatone,0,0
+532.0,Ubisoft,569,22,Rayman,0,0
+533.0,Ubisoft Annecy,11,0,Dynasty Warriors: Strikeforce,0,1
+534.0,UEP Systems,1,0,Cool Boarders 2,1,1
+535.0,UFO Interactive,14,3,Underground Pool,0,0
+536.0,UIG Entertainment,1,0,Farming 2017 - The Simulation,1,0
+537.0,Universal Gamex,1,0,X-Man,1,0
+538.0,Universal Interactive,14,0,Crash Bandicoot: The Wrath of Cortex,0,0
+539.0,Unknown,93,12,Fast Food,0,0
+540.0,Valcon Games,7,0,Real World Golf,0,0
+541.0,ValuSoft,4,2,NHRA Championship Drag Racing,0,0
+542.0,Valve,1,0,Portal 2,1,0
+543.0,Valve Software,2,0,Left 4 Dead 2,0,0
+544.0,Vap,1,0,Hisshou 777 Fighter: Pachi Slot Eiyu Densetsu,1,0
+545.0,Vatical Entertainment,1,0,Polaris SnoCross,1,0
+546.0,Vic Tokai,2,0,Criticom,0,0
+547.0,Victor Interactive,8,0,Classic Road,0,1
+548.0,Video System,4,0,F-1 Grand Prix,0,1
+549.0,Views,2,0,Dies Irae: Amantes Amentes,0,0
+550.0,Vir2L Studios,3,0,AMF Bowling Pinbusters!,0,0
+551.0,Virgin Interactive,56,2,The 7th Guest,0,1
+552.0,Virtual Play Games,2,0,Canada Hunt,0,0
+553.0,Visco,1,0,The Haunted: Hell's Reach,1,0
+554.0,Vivendi Games,91,2,You Don't Know Jack,0,0
+555.0,Wanadoo,4,0,Fatal Frame,0,0
+556.0,Warashi,1,0,Triggerheart Exelica,1,0
+557.0,Wargaming.net,1,0,World of Tanks,1,0
+558.0,Warner Bros. Interactive Entertainment,73,7,Looney Tunes: Back in Action,0,0
+559.0,Warp,1,0,Real Sound: Kaze no Riguretto,1,0
+560.0,WayForward Technologies,1,0,Goosebumps: The Game,1,0
+561.0,Westwood Studios,1,0,Command & Conquer: Tiberian Sun,1,0
+562.0,White Park Bay Software,1,1,WordJong,1,0
+563.0,Wizard Video Games,1,0,Halloween,1,0
+564.0,Xicat Interactive,3,0,Metal Dungeon,0,0
+565.0,Xing Entertainment,1,0,K-1 Revenge,1,1
+566.0,Xplosiv,5,1,Big Mutha Truckers 2,0,0
+567.0,XS Games,9,0,XS Airboat Racing,0,0
+568.0,Xseed Games,4,0,Rune Factory 4,0,1
+569.0,Yacht Club Games,1,0,Shovel Knight,1,0
+570.0,Yamasa Entertainment,2,0,Yamasa Digi Portable: Matsuri no Tatsujin - Win-Chan no Natsumatsuri,0,0
+571.0,Yeti,10,0,Mystereet,0,0
+572.0,Yuke's,3,0,D1 Professional Drift Grand Prix Series,0,0
+573.0,Yumedia,1,0,Tenchi Muyou! Ryoukouki Gokuraku,1,0
+574.0,Zenrin,2,0,Minna no Chizu,0,0
+575.0,Zoo Digital Publishing,85,11,Gadget Racers (PAL),0,0
+576.0,Zoo Games,29,3,Arcade Shooting Gallery,0,0
+577.0,Zushi Games,14,2,Sea Monsters: A Prehistoric Adventure,0,0

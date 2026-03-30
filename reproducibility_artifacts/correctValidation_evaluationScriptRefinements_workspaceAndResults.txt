@@ -1,0 +1,3 @@
+The following public link allows you to donwload the validation of evaluation script refinements, as well as the workspace (with the streamlit app) where the three engineers perfomed the experiment:
+
+https://ibm.box.com/s/goraf8lf0477mode988irt2eawzoqxlx

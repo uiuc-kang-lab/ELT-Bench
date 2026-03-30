@@ -9,7 +9,7 @@ begin;
 
 use role securityadmin;
 create role if not exists identifier($airbyte_role);
-grant role identifier ($airbyte_role) to role SYSADMIN;
+grant role SYSADMIN to role identifier ($airbyte_role);
 
 create user if not exists identifier($airbyte_username)
 password = $airbyte_password

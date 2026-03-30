@@ -1,0 +1,751 @@
+HERO_ID,SUPERHERO_NAME,FULL_NAME,HAS_DURABILITY_LESS_THAN_50,NUM_POWERS,HAS_WEIGHT_GREATER_THAN_79_PER_AVG_WEIGHT,IS_BLUE_FEMALE_SUPERHERO,HAS_HIGHEST_VALUE_IN_STRENGTH
+1.0,3-D Man,Charles Chandler,1,4,0,0,0
+2.0,A-Bomb,Richard Milhouse Jones,1,7,1,0,1
+3.0,Abe Sapien,Abraham Sapien,1,16,0,0,0
+4.0,Abin Sur,-,0,1,0,0,0
+5.0,Abomination,Emil Blonsky,0,8,1,0,0
+6.0,Abraxas,Abraxas,0,14,0,0,1
+7.0,Absorbing Man,,0,11,1,0,0
+8.0,Adam Monroe,-,1,3,0,0,0
+9.0,Adam Strange,Adam Strange,1,10,0,0,0
+10.0,Agent 13,Sharon Carter,1,0,0,0,0
+11.0,Agent Bob,Bob,1,1,0,0,0
+12.0,Agent Zero,Christoph Nord,1,6,0,0,0
+13.0,Air-Walker,Gabriel Lan,0,6,1,0,0
+14.0,Ajax,,0,5,0,0,0
+15.0,Alan Scott,,0,13,0,0,0
+16.0,Alex Mercer,Alexander J. Mercer,1,27,0,0,0
+17.0,Alex Woolsly,Alex Woolsly,1,1,0,0,0
+18.0,Alfred Pennyworth,Alfred Thaddeus Crane Pennyworth,1,0,0,0,0
+19.0,Alien,Xenomorph,1,14,1,0,0
+20.0,Allan Quatermain,,0,1,0,0,0
+21.0,Amazo,-,0,44,1,0,1
+22.0,Ammo,-,1,1,0,0,0
+23.0,Ando Masahashi,Ando Masahashi,1,1,0,0,0
+24.0,Angel,Liam,0,18,0,0,0
+25.0,Angel,Liam,0,18,0,0,0
+26.0,Angel Dust,Christina,1,4,0,0,0
+27.0,Angel Salvadore,Angel Salvadore Bohusk,1,5,0,0,0
+28.0,Angela,-,0,1,0,0,1
+29.0,Animal Man,Bernhard Baker,0,5,0,0,0
+30.0,Annihilus,Annihilus,0,7,0,0,0
+31.0,Ant-Man,Henry Jonathan Pym,1,2,1,0,0
+32.0,Ant-Man II,Scott Lang,1,9,0,0,0
+33.0,Anti-Monitor,,0,23,0,0,0
+34.0,Anti-Spawn,Jason Wynn,0,6,0,0,0
+35.0,Anti-Venom,Edward Charles Allan Brock,0,14,1,0,0
+36.0,Apocalypse,En Sabah Nur,1,23,1,0,1
+37.0,Aquababy,"Arthur Curry, Jr.",1,3,0,0,0
+38.0,Aqualad,Garth,1,13,1,0,0
+39.0,Aquaman,Orin,0,24,1,0,0
+40.0,Arachne,Julia Carpenter,0,12,0,0,0
+41.0,Archangel,Warren Kenneth Worthington III,0,8,0,0,0
+42.0,Arclight,Philippa Sontag,1,4,0,0,0
+43.0,Ardina,-,0,17,0,0,1
+44.0,Ares,-,0,8,1,0,1
+45.0,Ares,-,1,8,1,0,0
+46.0,Ariel,Ariel,1,2,0,0,0
+47.0,Armor,Hisako Ichiki,1,3,0,0,0
+48.0,Arsenal,"Roy William Harper, Jr.",0,0,0,0,0
+49.0,Astro Boy,,0,8,0,0,0
+50.0,Atlas,-,1,11,1,0,1
+51.0,Atlas,-,1,11,0,0,0
+52.0,Atlas,Erik Stephan Josten,1,11,1,0,1
+53.0,Atlas,Erik Stephan Josten,1,11,0,0,0
+54.0,Atom,Albert Pratt,0,6,0,0,0
+55.0,Atom Girl,Salu Digby,1,1,0,0,0
+56.0,Atom II,Raymond Palmer,1,5,0,0,0
+57.0,Atom III,,0,1,0,0,0
+58.0,Atom IV,Ryan Choi,0,1,0,0,0
+59.0,Aurora,Jeanne-Marie Beaubier,0,10,0,0,0
+60.0,Azazel,-,0,6,0,0,0
+61.0,Azrael,Michael Washington Lane,1,5,0,0,0
+62.0,Aztar,Aztar,0,13,0,0,0
+63.0,Bananaman,-,1,4,0,0,0
+64.0,Bane,-,1,6,1,0,0
+65.0,Banshee,Sean Cassidy,0,6,0,0,0
+66.0,Bantam,Roberto Velasquez,1,3,0,0,0
+67.0,Batgirl,Mary Elizabeth Kane,0,7,0,0,0
+68.0,Batgirl II,Barbara Gordon,1,0,0,0,0
+69.0,Batgirl III,Helena Rosa Bertinelli,0,0,0,0,0
+70.0,Batgirl IV,Cassandra Cain,1,5,0,0,0
+71.0,Batgirl V,,0,0,0,0,0
+72.0,Batgirl VI,Stephanie Brown,1,4,0,0,0
+73.0,Batman,Bruce Wayne,1,17,0,0,0
+74.0,Batman II,Richard John Grayson,1,8,0,0,0
+75.0,Batman III,Terrence McGinnis,1,0,0,0,0
+76.0,Battlestar,Lemar Hoskins,1,6,1,0,0
+77.0,Batwoman V,,0,6,0,0,0
+78.0,Beak,,0,3,0,0,0
+79.0,Beast,Henry Philip McCoy,1,14,1,0,0
+80.0,Beast Boy,Garfield Mark Logan,0,14,0,0,0
+81.0,Beetle,-,0,0,0,0,0
+82.0,Ben 10,Benjamin Kirby Tennyson,0,2,0,0,1
+83.0,Beta Ray Bill,Beta Ray Bill (translation of his Korbinite name),1,7,1,0,0
+84.0,Beyonder,-,0,19,0,0,1
+85.0,Bi-Beast,-,0,0,1,0,1
+86.0,Big Barda,Barda Free,0,10,1,0,1
+87.0,Big Daddy,Damon Macready,1,1,0,0,0
+88.0,Big Man,Frederick Foswell,1,1,0,0,0
+89.0,Bill Harken,-,1,3,0,0,0
+90.0,Billy Kincaid,,0,1,0,0,0
+91.0,Binary,Carol Susan Jane Danvers,0,6,0,0,1
+92.0,Bionic Woman,Jamie Wells Sommers,1,7,0,0,0
+93.0,Bird-Brain,-,1,3,0,0,0
+94.0,Bird-Man,,0,4,0,0,0
+95.0,Bird-Man II,,0,2,0,0,0
+96.0,Birdman,Ray Randal,0,10,0,0,0
+97.0,Bishop,Lucas Bishop,1,8,1,0,0
+98.0,Bizarro,Bizarro,0,23,1,0,0
+99.0,Black Abbott,,0,5,0,0,0
+100.0,Black Adam,Teth-Adam,0,14,1,0,1
+101.0,Black Bolt,Blackagar Boltagon,0,13,0,0,0
+102.0,Black Canary,Dinah Drake Lance,1,9,0,0,0
+103.0,Black Canary II,Dinah Laurel Lance,1,0,0,0,0
+104.0,Black Cat,Felicia Hardy,1,7,0,0,0
+105.0,Black Flash,-,0,13,0,0,0
+106.0,Black Goliath,,0,0,0,0,0
+107.0,Black Knight III,Dane Whitman,1,1,0,0,0
+108.0,Black Lightning,Jefferson Pierce,0,7,0,0,0
+109.0,Black Mamba,Tanya Sealy,1,3,0,0,0
+110.0,Black Manta,-,0,18,0,0,0
+111.0,Black Panther,T'Challa,1,13,0,0,0
+112.0,Black Widow,,0,9,0,0,0
+113.0,Black Widow II,Yelena Belova,0,0,0,0,0
+114.0,Blackout,-,1,10,0,0,0
+115.0,Blackwing,Joseph Manfredi,1,2,0,0,0
+116.0,Blackwulf,Lucian,1,4,0,0,0
+117.0,Blade,Eric Brooks,1,11,0,0,0
+118.0,Blaquesmith,,0,0,0,0,0
+119.0,Bling!,,0,3,0,0,0
+120.0,Blink,Clarice Ferguson,1,1,0,0,0
+121.0,Blizzard,-,0,2,0,0,0
+122.0,Blizzard II,Donald Gill,1,1,0,0,0
+123.0,Blob,Frederick J. Dukes,1,3,1,0,0
+124.0,Bloodaxe,Jackie Lukus,1,13,1,0,0
+125.0,Bloodhawk,Lemuel Krug,0,7,0,0,0
+126.0,Bloodwraith,Sean Dolan,0,9,0,0,0
+127.0,Blue Beetle,Daniel Garrett,0,3,0,0,0
+128.0,Blue Beetle II,Theodore Kord,0,1,0,0,0
+129.0,Blue Beetle III,Jaime Reyes,0,12,0,0,0
+130.0,Boba Fett,-,1,11,0,0,0
+131.0,Bolt,,0,0,0,0,0
+132.0,Bomb Queen,-,0,2,0,0,0
+133.0,Boom-Boom,Tabitha Smith,1,6,0,0,0
+134.0,Boomer,,0,0,0,0,0
+135.0,Booster Gold,Michael Jon Carter,1,18,0,0,0
+136.0,Box,,0,0,0,0,0
+137.0,Box III,,0,0,1,0,0
+138.0,Box IV,Madison Jeffries,1,1,0,0,0
+139.0,Brainiac,Vril Dox,0,11,1,0,0
+140.0,Brainiac 5,Querl Dox,1,3,0,0,0
+141.0,Brother Voodoo,Jericho Drumm,0,1,0,0,0
+143.0,Brundlefly,Sethaniel Brundle,1,6,0,0,0
+144.0,Buffy,Buffy Anne Summers,1,12,0,0,0
+145.0,Bullseye,Lester,1,3,0,0,0
+146.0,Bumblebee,Karen Beecher-Duncan,1,10,0,0,0
+147.0,Bumbleboy,,0,2,0,0,0
+148.0,Bushido,Ryuko Orsono,1,2,0,0,0
+149.0,Cable,Nathan Christopher Charles Summers Dayspring,1,30,1,0,0
+150.0,Callisto,Callisto,1,7,0,0,0
+151.0,Cameron Hicks,-,1,3,0,0,0
+152.0,Cannonball,,0,5,0,0,0
+153.0,Captain America,Steven Grant Rogers,1,10,1,0,0
+154.0,Captain Atom,Nathaniel Christopher Adam,0,27,0,0,0
+155.0,Captain Britain,Brian Braddock,0,10,1,0,0
+156.0,Captain Cold,Leonard Snart,1,2,0,0,0
+157.0,Captain Epic,-,0,3,0,0,0
+158.0,Captain Hindsight,Jack Brolin,0,3,0,0,0
+159.0,Captain Mar-vell,Mar-Vell,0,0,1,0,0
+160.0,Captain Marvel,,0,33,0,0,0
+161.0,Captain Marvel,,0,33,0,0,0
+162.0,Captain Marvel II,Frederick Christopher Freeman,1,6,0,0,0
+163.0,Captain Midnight,,0,4,0,0,0
+164.0,Captain Planet,-,0,26,0,0,0
+165.0,Captain Universe,-,0,8,0,0,0
+166.0,Carnage,,0,16,0,0,0
+167.0,Cat,Shirlee Bryant,0,5,0,0,0
+168.0,Cat II,,0,0,0,0,0
+169.0,Catwoman,Selina Kyle,1,8,0,0,0
+170.0,Cecilia Reyes,,0,0,0,0,0
+171.0,Century,-,0,3,0,0,0
+172.0,Cerebra,Shakti Haddad,0,1,0,0,0
+173.0,Chamber,Jonothon Evan Starsmore,1,4,0,0,0
+174.0,Chameleon,Dmitri Anatoly Nikolayevich Smerdyakov,0,1,0,0,0
+175.0,Chameleon,Dmitri Anatoly Nikolayevich Smerdyakov,1,1,0,0,0
+176.0,Changeling,Kevin Sidney,1,3,0,0,0
+177.0,Cheetah,Priscilla Rich,1,5,0,0,0
+178.0,Cheetah II,Deborah Domaine,1,6,0,0,0
+179.0,Cheetah III,Barbara Ann Minerva,0,18,0,0,1
+180.0,Chewbacca,-,1,0,1,0,0
+181.0,Chromos,,0,12,0,0,0
+182.0,Chuck Norris,,0,1,0,0,0
+183.0,Citizen Steel,Nathaniel Heywood,1,7,1,0,0
+184.0,Claire Bennet,Claire Bennet,1,2,0,0,0
+185.0,Clea,Clea,1,0,0,0,0
+186.0,Cloak,Tyrone Johnson,0,5,0,0,0
+187.0,Clock King,William Tockman,1,0,0,0,0
+188.0,Cogliostro,Cain,0,2,0,0,0
+189.0,Colin Wagner,,0,0,0,0,0
+190.0,Colossal Boy,,0,0,0,0,0
+191.0,Colossus,Piotr Nikolaievitch Rasputin,1,9,1,0,0
+192.0,Copycat,Vanessa Carlysle,1,5,0,1,0
+193.0,Corsair,Christopher Summers,1,0,0,0,0
+194.0,Cottonmouth,Burchell Clemens,1,1,0,0,0
+195.0,Crimson Crusader,Rory Destine,1,4,0,0,0
+196.0,Crimson Dynamo,Anton Vanko,0,4,0,0,0
+197.0,Crystal,Crystallia Amaquelin Maximoff,1,8,0,0,0
+198.0,Curse,,0,3,0,0,0
+199.0,Cy-Gor,-,0,7,0,0,1
+200.0,Cyborg,Victor Stone,1,12,1,0,0
+201.0,Cyborg Superman,Henry Henshaw,0,19,0,0,0
+202.0,Cyclops,Scott Summers,1,7,0,0,0
+203.0,Cypher,Douglas Aaron Ramsey,1,0,0,0,0
+204.0,Dagger,Tandy Bowen,1,3,0,0,0
+205.0,Danny Cooper,,0,0,0,0,0
+206.0,Daphne Powell,Daphne Powell,1,1,0,0,0
+207.0,Daredevil,,0,14,0,0,0
+208.0,Darkhawk,Christopher Powell,1,8,0,0,0
+209.0,Darkman,Peyton Westlake,1,3,0,0,0
+210.0,Darkseid,Uxas,0,28,1,0,1
+211.0,Darkside,,0,0,0,0,0
+212.0,Darkstar,Laynia Petrovna,1,5,0,0,0
+213.0,Darth Maul,-,0,14,0,0,0
+214.0,Darth Vader,Anakin Skywalker,1,26,1,0,0
+215.0,Dash,Dashiell Robert Parr,0,4,0,0,0
+216.0,Data,-,1,16,0,0,0
+217.0,Dazzler,Alison Blaire,1,15,0,0,0
+218.0,Deadman,Boston Brand,1,12,0,0,0
+219.0,Deadpool,,0,16,0,0,0
+220.0,Deadshot,Floyd Lawton,1,4,0,0,0
+221.0,Deathlok,Luther Manning,1,11,1,0,0
+222.0,Deathstroke,Slade Joseph Wilson,1,11,0,0,0
+223.0,Demogoblin,-,1,8,0,0,0
+224.0,Destroyer,-,0,5,1,0,0
+225.0,Diamondback,Willis Stryker,1,2,0,0,0
+226.0,DL Hawkins,Daniel Lawrence Hawkins,1,1,0,0,0
+227.0,Doc Samson,Leonard Samson,1,3,1,0,0
+228.0,Doctor Doom,Victor von Doom,1,15,1,0,0
+229.0,Doctor Doom II,Kristoff Vernard,0,5,1,0,0
+230.0,Doctor Fate,Kent Nelson,1,22,0,0,0
+231.0,Doctor Octopus,Otto Octavius,1,10,1,0,0
+232.0,Doctor Strange,Stephen Vincent Strange,1,20,0,0,0
+233.0,Domino,Neena Thurman,1,4,0,0,0
+234.0,Donatello,-,0,9,0,0,0
+235.0,Donna Troy,Donna Hinckley Stacey Troy,0,3,0,0,0
+236.0,Doomsday,Doomsday,0,20,1,0,1
+237.0,Doppelganger,-,0,9,0,0,0
+238.0,Dormammu,Dormammu,0,13,0,0,0
+239.0,Dr Manhattan,Jonathan Osterman,1,29,0,0,1
+240.0,Drax the Destroyer,Arthur Sampson Douglas,1,11,1,0,0
+241.0,Ego,Ego,0,3,0,0,0
+242.0,Elastigirl,Helen Parr,1,7,0,0,0
+243.0,Electro,Maxwell Dillon,0,3,0,0,0
+244.0,Elektra,Elektra Natchios,1,10,0,0,0
+245.0,Elle Bishop,-,1,1,0,0,0
+246.0,Elongated Man,Ralph Dibny,1,5,0,0,0
+247.0,Emma Frost,Emma Frost,1,14,0,0,0
+248.0,Enchantress,-,1,14,0,0,0
+249.0,Energy,-,0,3,0,0,0
+250.0,ERG-1,,0,0,0,0,0
+251.0,Ethan Hunt,,0,8,0,0,0
+252.0,Etrigan,Jason Blood,1,10,1,0,0
+253.0,Evil Deadpool,-,0,16,0,0,0
+254.0,Evilhawk,Dargin Bokk,1,10,1,0,0
+255.0,Exodus,Bennet du Paris,1,12,0,0,0
+256.0,Fabian Cortez,,0,1,0,0,0
+257.0,Falcon,Samuel Thomas Wilson,0,4,1,0,0
+258.0,Fallen One II,-,0,18,0,0,0
+259.0,Faora,Faora Hu-Ul,0,19,0,0,0
+260.0,Feral,Maria Callasantos,1,9,0,0,0
+261.0,Fighting Spirit,,0,3,0,0,0
+262.0,Fin Fang Foom,-,1,10,1,0,0
+263.0,Firebird,Bonita Juarez,1,7,0,0,0
+264.0,Firelord,Pyreus Kril,0,6,0,0,0
+265.0,Firestar,Angelica Jones,0,6,0,0,0
+266.0,Firestorm,Jason Rusch,0,22,0,0,0
+267.0,Firestorm II,Ronald Raymond,0,0,0,0,0
+268.0,Fixer,Paul Norbert Ebersol,0,0,0,0,0
+269.0,Flash,Jason Peter Garrick,0,11,0,0,0
+270.0,Flash Gordon,,0,1,0,0,0
+271.0,Flash II,Bartholomew Henry Allen,0,15,0,0,0
+272.0,Flash III,Wallace Rudolph West,0,14,0,0,0
+273.0,Flash IV,Bartholomew Allen II,0,7,0,0,0
+274.0,Forge,-,1,2,0,0,0
+275.0,Franklin Richards,Franklin Benjamin Richards,0,29,0,0,0
+276.0,Franklin Storm,Dr. Franklin Storm,1,0,0,0,0
+277.0,Frenzy,Joanna Cargill,1,5,0,0,0
+278.0,Frigga,Frigga,0,2,1,0,0
+279.0,Galactus,,0,32,0,0,0
+280.0,Gambit,Remy Etienne LeBeau,1,5,0,0,0
+281.0,Gamora,Gamora Zen Whoberi Ben Titan,1,13,0,0,0
+282.0,Garbage Man,Richard Ethan Morse,0,1,0,0,0
+283.0,Gary Bell,Gary Bell,1,2,0,0,0
+284.0,General Zod,Dru-Zod,0,19,0,0,1
+285.0,Genesis,Tyler Dayspring,0,2,0,0,0
+286.0,Ghost Rider,,0,19,0,0,0
+287.0,Ghost Rider II,Daniel Ketch,0,5,0,0,0
+288.0,Giant-Man,Henry Jonathan Pym,1,0,0,0,0
+289.0,Giant-Man II,,0,0,0,0,0
+290.0,Giganta,Doris Zuel,1,4,1,0,0
+291.0,Gladiator,Kallark,0,15,1,0,1
+292.0,Goblin Queen,Madelyne Jennifer Pryor,1,3,0,0,0
+293.0,Godzilla,-,0,18,1,0,1
+294.0,Gog,-,0,3,0,0,0
+295.0,Goku,Kakarot,0,25,0,0,1
+296.0,Goliath,,0,0,0,0,0
+297.0,Goliath IV,,0,2,0,0,0
+298.0,Gorilla Grodd,Grodd,1,13,1,0,0
+299.0,Granny Goodness,-,0,2,1,0,1
+300.0,Gravity,Greg Willis,1,5,0,0,0
+301.0,Greedo,-,1,1,0,0,0
+302.0,Green Arrow,Oliver Jonas Queen,1,6,0,0,0
+303.0,Green Goblin,,0,10,0,0,0
+304.0,Green Goblin II,Harold Osborn,1,8,0,0,0
+305.0,Green Goblin III,,0,2,0,0,0
+306.0,Green Goblin IV,Phillip Benjamin Urich,0,2,0,0,0
+307.0,Green Lantern,Alan Ladd Wellington Scott,1,0,0,0,0
+308.0,Green Lantern II,Guy Darrin Gardner,0,0,0,0,0
+309.0,Green Lantern III,John Stewart,1,0,0,0,0
+310.0,Green Lantern IV,-,1,0,0,0,0
+311.0,Green Lantern V,Jessica Viviana Cruz,0,0,0,0,0
+312.0,Groot,Groot,1,13,1,0,0
+313.0,Guardian,Dr. James McDonald Hudson,0,0,0,0,0
+314.0,Guy Gardner,,0,12,0,0,0
+315.0,Hal Jordan,,0,15,0,0,0
+316.0,Han Solo,Han Solo,1,5,0,0,0
+317.0,Hancock,John Hancock,0,11,0,0,0
+318.0,Harley Quinn,Harleen Francis Quinzel,1,10,0,0,0
+319.0,Harry Potter,-,1,18,0,0,0
+320.0,Havok,,0,6,0,0,0
+321.0,Hawk,Henry Hall,1,7,0,0,0
+322.0,Hawkeye,Clinton Francis Barton,1,6,0,0,0
+323.0,Hawkeye II,Katherine Elizabeth Bishop,1,4,0,0,0
+324.0,Hawkgirl,,0,8,0,0,0
+325.0,Hawkman,Carter Hall,0,1,0,0,0
+326.0,Hawkwoman,Shayera Hol,0,0,0,0,0
+327.0,Hawkwoman II,Sharon Parker,0,0,0,0,0
+328.0,Hawkwoman III,Shayera Thal,0,0,0,0,0
+329.0,He-Man,-,0,0,0,0,0
+330.0,Heat Wave,Mick Rory,1,1,0,0,0
+331.0,Hela,-,0,16,1,0,1
+332.0,Hellboy,Anung Un Rama,1,13,1,0,0
+333.0,Hellcat,,0,7,0,0,0
+334.0,Hellstorm,Daimon Hellstrom,0,7,0,0,0
+335.0,Hercules,Heracles,0,8,1,0,1
+336.0,Hiro Nakamura,Hiro Nakamura,0,2,0,0,0
+337.0,Hit-Girl,Mindy McCready,1,6,0,0,0
+338.0,Hobgoblin,Roderick Kingsley,0,4,0,0,0
+339.0,Hollow,Monet St. Croix,0,3,0,0,0
+340.0,Hope Summers,Hope Summers,1,7,0,0,0
+341.0,Howard the Duck,Howard (Last name unrevealed),0,0,0,0,0
+342.0,Hulk,Robert Bruce Banner,0,18,1,0,1
+343.0,Human Torch,Jonathan Lowell Spencer Storm,0,11,0,0,0
+344.0,Huntress,Helena Rosa Bertinelli,1,2,0,0,0
+345.0,Husk,Paige Elisabeth Guthrie,1,6,0,0,0
+346.0,Hybrid,,0,22,0,0,0
+347.0,Hydro-Man,Morris Bench,1,7,1,0,0
+348.0,Hyperion,-,0,18,1,0,1
+349.0,Iceman,Robert Louis Drake,0,16,0,0,0
+350.0,Impulse,Bartholomew Allen II,0,12,0,0,0
+351.0,Indiana Jones,Henry Walton Jones Jr.,1,3,0,0,0
+352.0,Indigo,-,0,6,0,0,0
+353.0,Ink,Eric Gitter,1,7,0,0,0
+354.0,Invisible Woman,,0,7,0,0,0
+355.0,Iron Fist,Daniel Thomas Rand-K'ai,1,21,0,0,0
+356.0,Iron Man,Anthony Edward Stark,0,21,1,0,0
+357.0,Iron Monger,Obadiah Stane,1,5,1,0,0
+358.0,Isis,Adrianna Tomaz,0,10,0,0,0
+359.0,Jack Bauer,,0,0,0,0,0
+360.0,Jack of Hearts,Jonathan Hart,0,10,0,0,0
+361.0,Jack-Jack,Jac-jack Parr,0,18,0,0,0
+362.0,James Bond,,0,7,0,0,0
+363.0,James Bond (Craig),James Bond,0,0,0,0,0
+364.0,James T. Kirk,James Tiberius Kirk,1,5,0,0,0
+365.0,Jar Jar Binks,-,1,4,0,0,0
+366.0,Jason Bourne,,0,8,0,0,0
+367.0,Jason Voorhees,-,1,0,1,0,0
+368.0,Jean Grey,Jean Grey-Summers,1,12,0,0,0
+369.0,Jean-Luc Picard,-,1,3,0,0,0
+370.0,Jennifer Kale,Jennifer Kale,1,3,0,0,0
+371.0,Jesse Quick,Jessica Belle Chambers,0,0,0,0,0
+372.0,Jessica Cruz,,0,13,0,0,0
+373.0,Jessica Jones,,0,5,0,0,0
+374.0,Jessica Sanders,,0,0,0,0,0
+375.0,Jigsaw,Billy Russo,1,0,1,0,0
+376.0,Jim Powell,Jim Powell,1,3,0,0,0
+377.0,JJ Powell,JJ Powell,1,1,0,0,0
+378.0,Johann Krauss,,0,2,0,0,0
+379.0,John Constantine,John Constantine,1,5,0,0,0
+380.0,John Stewart,,0,14,0,0,0
+381.0,John Wraith,John Wraith,1,3,0,0,0
+382.0,Joker,Jack Napier,1,8,0,0,0
+383.0,Jolt,Helen Takahama,1,4,0,0,0
+384.0,Jubilee,Jubilation Lee,1,3,0,0,0
+385.0,Judge Dredd,Joseph Dredd,1,10,0,0,0
+386.0,Juggernaut,Cain Marko,1,9,1,0,1
+387.0,Junkpile,-,1,7,0,0,0
+388.0,Justice,Vance Astrovik,1,6,0,0,0
+389.0,Jyn Erso,-,0,0,0,0,0
+390.0,K-2SO,,0,4,0,0,0
+391.0,Kang,Nathaniel Richards,0,9,0,0,0
+392.0,Karate Kid,-,0,9,0,0,0
+393.0,Kathryn Janeway,Kathryn M. Janeway,1,1,0,0,0
+394.0,Katniss Everdeen,-,1,6,0,0,0
+395.0,Kevin 11,Kevin Ethan Levin,1,12,0,0,0
+396.0,Kick-Ass,Dave Lizewski,1,4,0,0,0
+397.0,Kid Flash,Wallace Rudolph West,0,2,0,0,0
+398.0,Kid Flash II,Bartholomew Allen II,0,0,0,0,0
+399.0,Killer Croc,Waylon Jones,1,13,1,0,0
+400.0,Killer Frost,-,1,6,0,1,0
+401.0,Kilowog,,0,7,1,0,0
+402.0,King Kong,-,0,12,1,0,1
+403.0,King Shark,-,0,18,0,0,0
+404.0,Kingpin,Wilson Grant Fisk,1,0,1,0,0
+405.0,Klaw,Ulysses Klaw,1,7,0,0,0
+406.0,Kool-Aid Man,,0,2,0,0,0
+407.0,Kratos,-,0,0,1,0,0
+408.0,Kraven II,Alyosha Kravinoff,1,7,0,0,0
+409.0,Kraven the Hunter,,0,6,1,0,0
+410.0,Krypto,Krypto the Superdog,0,14,0,0,0
+411.0,Kyle Rayner,,0,12,0,0,0
+412.0,Kylo Ren,-,1,23,0,0,0
+413.0,Lady Bullseye,-,0,1,0,0,0
+414.0,Lady Deathstrike,Yuriko Oyama,1,11,0,0,0
+415.0,Leader,Samuel Sterns,1,3,0,0,0
+416.0,Leech,-,1,1,0,0,0
+417.0,Legion,,0,26,0,0,0
+418.0,Leonardo,-,0,10,0,0,0
+419.0,Lex Luthor,Alexander 'Lex' Joseph Luthor,1,10,0,0,0
+420.0,Light Lass,Ayla Ranzz,1,3,0,0,0
+421.0,Lightning Lad,Garth Ranzz,1,1,0,0,0
+422.0,Lightning Lord,Mekt Ranzz,1,2,0,0,0
+423.0,Living Brain,-,1,4,1,0,0
+424.0,Living Tribunal,-,0,35,0,0,1
+425.0,Liz Sherman,Elizabeth Anne Sherman,1,1,0,0,0
+426.0,Lizard,Curtis Connors,0,14,1,0,0
+427.0,Lobo,-,0,13,1,0,1
+428.0,Loki,Loki Laufeyson,0,14,1,0,0
+429.0,Longshot,-,1,7,0,0,0
+430.0,Lucifer Morningstar,-,0,0,0,0,1
+431.0,Luke Cage,Luke Cage,1,6,1,0,0
+432.0,Luke Campbell,,0,1,0,0,0
+433.0,Luke Skywalker,Luke Skywalker,1,25,0,0,0
+434.0,Luna,Luna Maximoff,0,1,0,0,0
+435.0,Lyja,Lyja,0,3,0,0,0
+436.0,Mach-IV,Abner Jenkins,0,5,0,0,0
+437.0,Machine Man,"X-51, Aaron Stack",1,5,1,0,0
+438.0,Magneto,Erik Magnus Lensherr,1,10,0,0,0
+439.0,Magog,David Reid,1,4,0,0,0
+440.0,Magus,-,0,10,0,0,1
+441.0,Man of Miracles,-,0,34,0,0,1
+442.0,Man-Bat,Robert Kirkland Langstrom,0,11,0,0,0
+443.0,Man-Thing,Dr. Theodore Sallis,1,11,1,0,0
+444.0,Man-Wolf,John Jameson,1,9,0,0,0
+445.0,Mandarin,Khan,1,11,0,0,0
+446.0,Mantis,-,1,14,0,0,0
+447.0,Martian Manhunter,J'onn J'onzz,0,35,1,0,0
+448.0,Marvel Girl,Rachel Anne Summers,0,11,0,0,0
+449.0,Master Brood,,0,3,0,0,0
+450.0,Master Chief,John-117,1,11,0,0,0
+451.0,Match,Kent Connor,0,15,0,0,0
+452.0,Matt Parkman,Matthew Parkman,1,1,0,0,0
+453.0,Maverick,Christopher Bradley,1,1,1,0,0
+454.0,Maxima,-,1,10,0,0,0
+455.0,Maya Herrera,Maya Herrera,1,2,0,0,0
+456.0,Medusa,Medusalith Amaquelin Boltagon,1,7,0,0,0
+457.0,Meltdown,Tabitha Smith,1,7,0,0,0
+458.0,Mephisto,-,1,17,1,0,0
+459.0,Mera,-,0,14,0,0,0
+460.0,Metallo,John Corben,1,9,0,0,0
+461.0,Metamorpho,Rex Mason,0,4,0,0,0
+462.0,Meteorite,,0,0,0,0,0
+463.0,Metron,Metron,0,5,0,0,0
+464.0,Micah Sanders,Micah Sanders,1,1,0,0,0
+465.0,Michelangelo,-,0,10,0,0,0
+466.0,Micro Lad,Gim Allon,1,1,0,0,0
+467.0,Mimic,Calvin Montgomery Rankin,0,9,0,0,0
+468.0,Minna Murray,,0,5,0,0,0
+469.0,Misfit,Charlotte Gage-Radcliffe,1,3,0,0,0
+470.0,Miss Martian,M'gann M'orzz,0,16,0,0,0
+471.0,Mister Fantastic,Reed Richards,1,5,0,0,0
+472.0,Mister Freeze,Victor Fries,1,6,0,0,0
+473.0,Mister Knife,-,1,2,0,0,0
+474.0,Mister Mxyzptlk,Mr. Mxyzptlk,0,31,0,0,0
+475.0,Mister Sinister,Dr. Nathaniel Essex,0,24,1,0,0
+476.0,Mister Zsasz,Victor Zsasz,1,0,0,0,0
+477.0,Mockingbird,Barbara Morse,1,7,0,0,0
+478.0,MODOK,-,1,15,1,0,0
+479.0,Mogo,Mogo,0,0,0,0,0
+480.0,Mohinder Suresh,,0,1,0,0,0
+481.0,Molecule Man,-,0,0,0,0,1
+482.0,Moloch,Edgar William Jacobi,1,0,0,0,0
+483.0,Molten Man,Mark Raxton,1,4,1,0,0
+484.0,Monarch,Nathaniel Christopher Adam,0,7,0,0,1
+485.0,Monica Dawson,Monica Dawson,1,1,0,0,0
+486.0,Moon Knight,Marc Spector,1,6,0,0,0
+487.0,Moonstone,Dr. Karla Sofen,0,8,0,0,0
+488.0,Morlun,Morlun,1,7,0,0,0
+489.0,Morph,Kevin Sydney,1,0,0,0,0
+490.0,Moses Magnum,Moses Magnum,1,1,0,0,0
+491.0,Mr Immortal,-,1,3,0,0,0
+492.0,Mr Incredible,Robert Parr,1,7,1,0,0
+493.0,Ms Marvel II,Sharon Ventura,1,2,0,0,0
+494.0,Multiple Man,James Arthur,1,1,0,0,0
+495.0,Mysterio,Quentin Beck,1,13,0,0,0
+496.0,Mystique,Raven Darkholme,1,13,0,1,0
+497.0,Namor,,0,17,1,0,0
+498.0,Namora,Aquaria Nautica Neptunia,1,10,0,0,0
+499.0,Namorita,Namorita Prentiss,0,9,0,0,0
+500.0,Naruto Uzumaki,-,0,22,0,0,0
+501.0,Nathan Petrelli,,0,1,0,0,0
+502.0,Nebula,-,1,3,0,1,0
+503.0,Negasonic Teenage Warhead,-,1,2,0,0,0
+504.0,Nick Fury,Nicholas Joseph Fury,1,2,0,0,0
+505.0,Nightcrawler,Kurt Wagner,0,7,0,0,0
+506.0,Nightwing,Richard John Grayson,1,8,0,0,0
+507.0,Niki Sanders,Nicole Sanders,1,1,0,0,0
+508.0,Nina Theroux,-,1,2,0,0,0
+509.0,Nite Owl II,Daniel Dreiberg,1,0,0,0,0
+510.0,Northstar,Jean-Paul Beaubier,0,5,0,0,0
+511.0,Nova,Richard Rider,0,24,0,0,0
+513.0,Odin,-,0,31,1,0,0
+514.0,Offspring,Luke O'Brian,1,10,0,0,0
+515.0,Omega Red,Arkady Gregorivich,0,0,1,0,0
+516.0,Omniscient,,0,6,0,0,0
+517.0,One Punch Man,-,0,9,0,0,1
+518.0,One-Above-All,-,0,31,0,0,1
+519.0,Onslaught,Onslaught,1,22,1,0,1
+520.0,Oracle,Barbara Gordon,1,1,0,0,0
+521.0,Osiris,Amon Tomaz,0,10,0,0,0
+522.0,Overtkill,,0,3,0,0,0
+523.0,Ozymandias,Adrian Alexander Veidt,1,8,0,0,0
+524.0,Parademon,-,1,9,0,0,0
+525.0,Paul Blart,-,1,0,1,0,0
+526.0,Penance,,0,0,0,0,0
+527.0,Penance I,,0,0,0,0,0
+528.0,Penance II,Robert Baldwin,0,1,0,0,0
+529.0,Penguin,Oswald Chesterfield Cobblepot,1,1,0,0,0
+530.0,Peter Petrelli,Peter Petrelli,0,1,0,0,0
+531.0,Phantom,Christopher Walker,1,3,0,0,0
+532.0,Phantom Girl,Tinya Wazzo,1,1,0,0,0
+533.0,Phantom Stranger,-,1,0,0,0,0
+534.0,Phoenix,Jean Grey-Summers,0,18,0,0,1
+535.0,Plantman,-,1,5,0,0,0
+536.0,Plastic Lad,,0,0,0,0,0
+537.0,Plastic Man,Patrick O'Brian,1,12,0,0,0
+538.0,Plastique,Bette Sans Souci,1,1,0,0,0
+539.0,Poison Ivy,Pamela Lillian Isley,1,10,0,0,0
+540.0,Polaris,Lorna Sally Dane,1,8,0,0,0
+541.0,Power Girl,Kara Zor-L,0,24,0,0,1
+542.0,Power Man,-,1,0,0,0,0
+543.0,Predator,Yautja,1,21,1,0,0
+544.0,Professor X,Charles Francis Xavier,1,10,0,0,0
+545.0,Professor Zoom,Eobard Thawne,0,5,0,0,0
+546.0,Proto-Goblin,Nels Van Adder,1,4,0,0,0
+547.0,Psylocke,Elizabeth Braddock,1,14,0,0,0
+548.0,Punisher,Francis Castiglione,1,9,0,0,0
+549.0,Purple Man,Zebediah Killgrave,1,5,0,0,0
+550.0,Pyro,St. John Allerdyce,1,1,0,0,0
+551.0,Q,-,1,15,0,0,0
+552.0,Quake,Daisy Louise Johnson,0,0,0,0,0
+553.0,Quantum,,0,1,0,0,0
+554.0,Question,Charles Victor Szasz,1,2,0,0,0
+555.0,Quicksilver,Pietro Django Maximoff,0,5,0,0,0
+556.0,Quill,Maxwell Jordan,1,2,0,0,0
+557.0,Ra's Al Ghul,Ra's Al Ghul,1,8,0,0,0
+558.0,Rachel Pirzad,-,1,6,0,0,0
+559.0,Rambo,,0,5,0,0,0
+560.0,Raphael,-,0,10,0,0,0
+561.0,Raven,Rachel Roth,1,5,0,0,0
+562.0,Ray,Raymond C. Terrill,0,16,0,0,0
+563.0,Razor-Fist II,Douglas Scott,0,2,1,0,0
+564.0,Red Arrow,,0,5,0,0,0
+565.0,Red Hood,Jason Peter Todd,1,7,0,0,0
+566.0,Red Hulk,Thaddeus E. Ross,0,12,1,0,1
+567.0,Red Mist,Chris Genovese,1,2,0,0,0
+568.0,Red Robin,Timothy Jackson Drake,1,6,0,0,0
+569.0,Red Skull,Johann Shmidt,1,1,1,0,0
+570.0,Red Tornado,,0,14,1,0,0
+571.0,Redeemer II,,0,6,0,0,0
+572.0,Redeemer III,,0,5,0,0,0
+573.0,Renata Soliz,,0,0,0,0,0
+574.0,Rey,-,1,6,0,0,0
+575.0,Rhino,Aleksei Mikhailovich Sytsevich,1,8,1,0,0
+576.0,Rick Flag,Richard Rogers Flag,1,1,0,0,0
+577.0,Riddler,Edward Nigma,1,1,0,0,0
+578.0,Rip Hunter,-,1,7,0,0,0
+579.0,Ripcord,,0,2,0,0,0
+580.0,Robin,Richard John Grayson,1,5,0,0,0
+581.0,Robin II,Jason Peter Todd,1,5,0,0,0
+582.0,Robin III,Timothy Jackson Drake,1,6,0,0,0
+583.0,Robin V,Damian Wayne,1,5,0,0,0
+584.0,Robin VI,Carrie Kelley,1,3,0,0,0
+585.0,Robocop,Alexander James Murphy,1,0,0,0,0
+586.0,Rocket Raccoon,Rocket Raccoon,1,11,0,0,0
+587.0,Rogue,Anna Marie,1,2,0,0,0
+588.0,Ronin,,0,0,0,0,0
+589.0,Rorschach,Walter Joseph Kovacs,1,5,0,0,0
+590.0,Sabretooth,Victor Creed,1,18,1,0,0
+591.0,Sage,Tessa,1,5,0,0,0
+592.0,Sandman,-,0,11,1,0,0
+593.0,Sasquatch,Walter Langkowski,1,6,1,0,0
+594.0,Saturn Girl,Imra Ardeen-Ranzz,0,0,0,0,0
+595.0,Sauron,-,1,20,0,0,0
+596.0,Savage Dragon,Kurr,0,6,0,0,0
+597.0,Scarecrow,Jonathan Crane,1,2,0,0,0
+598.0,Scarlet Spider,Benjamin Reilly,0,15,0,0,0
+599.0,Scarlet Spider II,Kaine Parker,0,11,1,0,0
+600.0,Scarlet Witch,Wanda Maximoff,1,14,0,0,0
+601.0,Scorpia,Elaine Coll,1,5,0,0,0
+602.0,Scorpion,MacDonald Gargan,0,9,1,0,0
+603.0,Sebastian Shaw,Sebastian Hiram Shaw,1,5,0,0,0
+604.0,Sentry,Robert Reynolds,0,22,0,0,1
+606.0,Shadow King,Amahl Farouk,1,6,1,0,0
+607.0,Shadow Lass,-,0,6,0,1,0
+608.0,Shadowcat,Katherine Pryde,1,9,0,0,0
+609.0,Shang-Chi,Shang-Chi,1,6,0,0,0
+610.0,Shatterstar,Gaveedra Seven,1,6,0,0,0
+611.0,Shazam,William Joseph Batson,0,0,0,0,1
+612.0,She-Hulk,Jennifer Walters,1,8,1,0,1
+613.0,She-Ra,-,0,0,0,0,0
+614.0,She-Thing,Sharon Ventura,1,4,1,0,0
+615.0,Shocker,Herman Schultz,1,4,0,0,0
+616.0,Shriek,Frances Louise Barrison,1,8,0,0,0
+617.0,Shrinking Violet,,0,0,0,0,0
+618.0,Sif,Sif,0,12,1,0,0
+619.0,Silk,-,0,17,0,0,0
+620.0,Silk Spectre,,0,1,0,0,0
+621.0,Silk Spectre II,Laurie Juspeczyk,0,1,0,0,0
+622.0,Silver Surfer,Norrin Radd,0,21,0,0,1
+623.0,Silverclaw,Maria de Guadalupe Santiago,1,7,0,0,0
+624.0,Simon Baz,,0,15,0,0,0
+625.0,Sinestro,Thaal Sinestro,0,10,0,0,0
+626.0,Siren,Hila,0,14,0,0,0
+627.0,Siren II,,0,4,0,0,0
+628.0,Siryn,Theresa Rourke Cassidy,0,4,0,0,0
+629.0,Skaar,-,1,5,1,0,0
+630.0,Snake-Eyes,,0,0,0,0,0
+631.0,Snowbird,Narya,1,9,0,0,0
+632.0,Sobek,Yurrd the Unknown,1,2,0,0,0
+633.0,Solomon Grundy,Cyrus Gold,1,10,1,0,0
+634.0,Songbird,Melissa Joan Gold,1,8,0,0,0
+635.0,Space Ghost,Thaddeus Bach,1,13,1,0,0
+636.0,Spawn,Al Simmons,0,18,1,0,0
+637.0,Spectre,-,0,49,0,0,1
+638.0,Speedball,,0,4,0,0,0
+640.0,Speedy,Thea Dearden Queen,1,5,0,0,0
+641.0,Spider-Carnage,Benjamin Reilly,0,0,0,0,0
+642.0,Spider-Girl,May 'Mayday' Parker,0,15,0,0,0
+643.0,Spider-Gwen,Gwendolyne Stacy,0,16,0,0,0
+644.0,Spider-Man,Peter Benjamin Parker,0,20,0,0,0
+646.0,Spider-Woman,Jessica Drew,1,12,0,0,0
+647.0,Spider-Woman II,,0,0,0,0,0
+648.0,Spider-Woman III,Martha Franklin,1,9,0,0,0
+649.0,Spider-Woman IV,,0,11,0,0,0
+650.0,Spock,-,1,9,0,0,0
+651.0,Spyke,,0,6,0,0,0
+652.0,Stacy X,,0,0,0,0,0
+653.0,Star-Lord,Peter Jason Quill,1,8,0,0,0
+654.0,Stardust,-,0,14,0,0,0
+655.0,Starfire,Koriand'r,1,7,0,0,0
+656.0,Stargirl,Courtney Whitmore,0,14,0,0,0
+657.0,Static,Virgil Ovid Hawkins,1,14,0,0,0
+658.0,Steel,John Henry Irons,0,7,1,0,0
+659.0,Stephanie Powell,Stephanie Powell,0,2,0,0,0
+660.0,Steppenwolf,-,0,14,0,0,1
+661.0,Storm,Ororo Munroe,0,8,0,0,0
+662.0,Stormtrooper,-,1,2,0,0,0
+663.0,Sunspot,Roberto DaCosta,1,12,0,0,0
+664.0,Superboy,Kon-El / Conner Kent,0,15,0,0,0
+665.0,Superboy-Prime,Kal-El,0,23,0,0,1
+666.0,Supergirl,Kara Zor-El,0,27,0,0,1
+667.0,Superman,Clark Joseph Kent (Kal-El),0,29,0,0,1
+668.0,Surtur,-,0,0,0,0,1
+669.0,Swamp Thing,Alec Holland,1,14,0,0,0
+670.0,Swarm,Fritz von Meyer,0,10,0,0,0
+671.0,Sylar,Gabriel Gray,1,8,0,0,0
+672.0,Synch,Everett Thomas,1,1,0,0,0
+673.0,T-1000,Cyberdyne Systems Series 1000 Terminator,1,32,1,0,0
+674.0,T-800,Cyberdyne Systems Series 800 Terminator Model 101,1,16,1,0,0
+675.0,T-850,Cyberdyne Systems Series 850 Terminator,1,17,1,0,0
+676.0,T-X,Cyberdyne Systems Series X Terminator,1,33,1,0,0
+677.0,Taskmaster,-,0,10,0,0,0
+678.0,Tempest,Angel Salvadore Bohusk,1,5,0,0,0
+679.0,Thanos,Thanos,1,31,1,0,1
+680.0,Thanos (Infinity Gauntlet),-,1,0,1,0,1
+681.0,The Cape,,0,1,0,0,0
+682.0,The Comedian,Edward Morgen Blake,1,1,0,0,0
+683.0,The Presence,-,0,0,0,0,1
+684.0,Thing,Benjamin Jacob Grimm,1,9,1,0,0
+685.0,Thor,Thor Odinson,0,18,1,0,1
+686.0,Thor Girl,Tarene,0,8,1,0,0
+687.0,Thunderbird,John Proudstar,1,4,0,0,0
+688.0,Thunderbird II,,0,0,0,0,0
+689.0,Thunderbird III,,0,4,0,0,0
+690.0,Thunderstrike,Eric Kevin Masterson,0,7,1,0,0
+691.0,Thundra,Thundra,1,5,1,0,0
+692.0,Tiger Shark,Todd Arliss,0,16,1,0,0
+693.0,Tigra,Greer Grant Nelson,0,6,0,0,0
+694.0,Tinkerer,Phineas Mason,1,1,0,0,0
+695.0,Titan,,0,3,0,0,0
+696.0,Toad,Mortimer Toynbee,0,17,0,0,0
+697.0,Toxin,,0,20,1,0,0
+698.0,Tracy Strauss,Tracy Strauss,0,2,0,0,0
+699.0,Trickster,,0,1,0,0,0
+700.0,Trigon,-,0,14,0,0,1
+701.0,Triplicate Girl,Luornu Durgo,1,2,0,0,0
+702.0,Triton,-,0,9,0,0,0
+703.0,Two-Face,Harvey Dent,1,0,0,0,0
+704.0,Ultragirl,Tsu-Zana,1,8,1,0,0
+705.0,Ultron,,0,25,1,0,0
+706.0,Utgard-Loki,-,1,6,1,0,0
+707.0,Vagabond,,0,0,0,0,0
+708.0,Valerie Hart,,0,5,0,0,0
+709.0,Valkyrie,Brunnhilde,0,4,1,0,0
+710.0,Vanisher,-,0,1,0,0,0
+711.0,Vegeta,-,0,23,0,0,1
+712.0,Venom,Edward Charles Allan Brock,0,14,1,0,0
+713.0,Venom II,Angelo Fortunato,0,9,0,0,0
+714.0,Venom III,MacDonald Gargan,1,13,1,0,0
+715.0,Venompool,-,0,26,0,0,0
+716.0,Vertigo II,,0,1,0,0,0
+717.0,Vibe,Francisco Paco Ramon,1,6,0,0,0
+719.0,Vindicator,Heather McNeil Hudson,0,8,0,0,0
+720.0,Violator,-,1,5,0,0,0
+721.0,Violet Parr,Violet Parr,1,6,0,0,0
+722.0,Vision,,0,20,1,0,0
+723.0,Vision II,,0,0,1,0,0
+724.0,Vixen,Mari Jiwe McCabe,0,17,0,0,0
+725.0,Vulcan,Gabriel Summers,0,0,0,0,0
+726.0,Vulture,Adrian Toomes,1,8,0,0,0
+727.0,Walrus,Hubert Carpent,1,4,1,0,0
+728.0,War Machine,James Rupert Rhodes,0,18,0,0,0
+729.0,Warbird,,0,0,0,0,0
+730.0,Warlock,Adam Warlock,0,9,1,0,0
+731.0,Warp,Emil LaSalle,1,2,0,0,0
+732.0,Warpath,James Proudstar,0,11,1,0,0
+733.0,Wasp,Janet Van Dyne,0,9,0,0,0
+734.0,Watcher,Uatu,0,18,0,0,0
+735.0,Weapon XI,Weapon XI,0,7,0,0,0
+736.0,White Canary,-,1,5,0,0,0
+737.0,White Queen,Emma Grace Frost,1,0,0,0,0
+738.0,Wildfire,Drake Burroughs,1,8,0,0,0
+739.0,Winter Soldier,,0,5,1,0,0
+740.0,Wiz Kid,,0,0,0,0,0
+741.0,Wolfsbane,Rahne Sinclair,1,8,1,0,0
+742.0,Wolverine,James Howlett,0,21,1,0,0
+743.0,Wonder Girl,Cassandra Elizabeth Sandsmark,1,9,0,0,0
+744.0,Wonder Man,Simon Williams,0,11,1,0,1
+745.0,Wonder Woman,Diana of Themyscira,0,30,0,0,1
+746.0,Wondra,,0,0,0,0,0
+747.0,Wyatt Wingfoot,Wyatt Wingfoot,1,0,1,0,0
+748.0,X-23,Laura Kinney,1,17,0,0,0
+749.0,X-Man,Nate Grey,0,11,0,0,0
+750.0,Yellow Claw,,0,0,0,0,0
+751.0,Yellowjacket,,0,2,0,0,0
+752.0,Yellowjacket II,Rita DeMara,1,3,0,0,0
+753.0,Ymir,Ymir,1,6,0,0,1
+754.0,Yoda,Yoda,1,19,0,0,0
+755.0,Zatanna,,0,8,0,0,0
+756.0,Zoom,Hunter Zolomon,0,4,0,0,0

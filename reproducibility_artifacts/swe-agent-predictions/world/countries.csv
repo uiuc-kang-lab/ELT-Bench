@@ -1,0 +1,240 @@
+COUNTRY_CODE,COUNTRY_NAME,POPULATION,CAPITAL_NAME,NUM_CITIES,CITY_WITH_LEAST_POPULATION,GNP_GROWTH_RATE,USE_MOST_WIDELY_USED_LANGUAGE_AS_OFFICIAL_LANGUAGE
+ABW,Aruba,103000,Oranjestad,1,Oranjestad,0.044136191677175286,0
+AFG,Afghanistan,22720000,Kabul,4,Mazar-e-Sharif,,1
+AGO,Angola,12878000,Luanda,5,Namibe,-0.16733466933867736,0
+AIA,Anguilla,8000,The Valley,2,The Valley,,1
+ALB,Albania,3401200,Tirana,1,Tirana,0.282,1
+AND,Andorra,78000,Andorra la Vella,1,Andorra la Vella,,0
+ANT,Netherlands Antilles,217000,Willemstad,1,Willemstad,,1
+ARE,United Arab Emirates,2441000,Abu Dhabi,5,Ajman,0.030396786625413886,1
+ARG,Argentina,37032000,Buenos Aires,57,Tandil,0.05235841761776623,1
+ARM,Armenia,3520000,Yerevan,3,Vanadzor,0.11432083589428396,1
+ASM,American Samoa,68000,Fagatogo,2,Fagatogo,,1
+ATA,Antarctica,0,,0,,,0
+ATF,French Southern territories,0,,0,,,0
+ATG,Antigua and Barbuda,68000,Saint John´s,1,Saint John´s,0.04794520547945205,0
+AUS,Australia,18886000,Canberra,14,Cairns,-0.10620471302661418,1
+AUT,Austria,8091800,Wien,6,Klagenfurt,0.028321805606115764,1
+AZE,Azerbaijan,7734000,Baku,4,Mingäçevir,0.006585365853658536,1
+BDI,Burundi,6695000,Bujumbura,1,Bujumbura,-0.08044806517311609,1
+BEL,Belgium,10239000,Bruxelles [Brussel],9,Mons,0.023595192418056306,1
+BEN,Benin,6097000,Porto-Novo,4,Parakou,0.10088743577767398,0
+BFA,Burkina Faso,11937000,Ouagadougou,3,Koudougou,0.10177192185370286,0
+BGD,Bangladesh,129155000,Dhaka,24,Gazipur,0.02771694925858725,1
+BGR,Bulgaria,8190900,Sofija,10,Šumen,0.19756121545874716,1
+BHR,Bahrain,617000,al-Manama,1,al-Manama,0.04412005904543218,1
+BHS,Bahamas,307000,Nassau,1,Nassau,0.0537795040334628,0
+BIH,Bosnia and Herzegovina,3972000,Sarajevo,3,Zenica,,1
+BLR,Belarus,10236000,Minsk,16,Molodetšno,,1
+BLZ,Belize,241000,Belmopan,2,Belmopan,0.022727272727272728,1
+BMU,Bermuda,65000,Hamilton,2,Hamilton,0.06301369863013699,1
+BOL,Bolivia,8329000,La Paz,8,Tarija,0.07581272750094138,1
+BRA,Brazil,170115000,Brasília,250,Águas Lindas de Goiás,-0.03403647271262069,1
+BRB,Barbados,270000,Bridgetown,1,Bridgetown,0.016925892040256175,0
+BRN,Brunei,328000,Bandar Seri Begawan,1,Bandar Seri Begawan,-0.06059390048154093,1
+BTN,Bhutan,2124000,Thimphu,1,Thimphu,-0.028720626631853787,1
+BVT,Bouvet Island,0,,0,,,0
+BWA,Botswana,1622000,Gaborone,2,Francistown,-0.020466058763931105,0
+CAF,Central African Republic,3615000,Bangui,1,Bangui,0.06143001007049345,0
+CAN,Canada,31147000,Ottawa,49,Barrie,-0.042779552000716085,1
+CCK,Cocos (Keeling) Islands,600,West Island,2,West Island,,1
+CHE,Switzerland,7160400,Bern,5,Lausanne,0.032746044390297234,1
+CHL,Chile,15211000,Santiago de Chile,29,Melipilla,-0.03735814198997097,1
+CHN,China,1277558000,Peking,363,Huangyan,0.07033634478527741,1
+CIV,Côte d’Ivoire,14786000,Yamoussoukro,5,Korhogo,0.10306271268838113,0
+CMR,Cameroon,15085000,Yaoundé,7,Nkongsamba,0.06724057701256399,0
+COD,"Congo, The Democratic Republic of the",51654000,Kinshasa,18,Kalemie,1.814874696847211,0
+COG,Congo,2943000,Brazzaville,2,Pointe-Noire,-0.07826847398338435,0
+COK,Cook Islands,20000,Avarua,1,Avarua,,0
+COL,Colombia,42321000,Santafé de Bogotá,38,Giron,-0.021119525096084325,1
+COM,Comoros,578000,Moroni,1,Moroni,0.009172208209126348,1
+CPV,Cape Verde,428000,Praia,1,Praia,0.03571428571428571,0
+CRI,Costa Rica,4023000,San José,1,San José,0.04806805370503228,1
+CUB,Cuba,11201000,La Habana,14,Ciego de Ávila,-0.054023963524546706,1
+CXR,Christmas Island,2500,Flying Fish Cove,1,Flying Fish Cove,,0
+CYM,Cayman Islands,38000,George Town,1,George Town,0.06492411467116357,1
+CYP,Cyprus,754700,Nicosia,2,Limassol,0.1318214892068882,1
+CZE,Czech Republic,10278100,Praha,10,Pardubice,0.057266944673981975,1
+DEU,Germany,82164700,Berlin,93,Esslingen am Neckar,0.01452378846371502,1
+DJI,Djibouti,638000,Djibouti,1,Djibouti,0.024128686327077747,0
+DMA,Dominica,71000,Roseau,1,Roseau,0.053497942386831275,0
+DNK,Denmark,5330000,København,5,Frederiksberg,0.028564845448530107,1
+DOM,Dominican Republic,8495000,Santo Domingo de Guzmán,6,San Felipe de Puerto Plata,0.05107455558503582,1
+DZA,Algeria,31471000,Alger,18,Ghardaïa,0.06421666737639994,1
+ECU,Ecuador,12646000,Quito,15,Esmeraldas,5.0584248065152515e-05,1
+EGY,Egypt,68470000,Cairo,37,Disuq,0.09380165835724771,1
+ERI,Eritrea,3850000,Asmara,1,Asmara,-0.1390728476821192,1
+ESH,Western Sahara,293000,El-Aaiún,1,El-Aaiún,,1
+ESP,Spain,39441700,Madrid,59,Torrejón de Ardoz,0.03985106131033718,1
+EST,Estonia,1439200,Tallinn,2,Tartu,0.5805398991397211,1
+ETH,Ethiopia,62565000,Addis Abeba,7,Bahir Dar,0.027993527508090615,0
+FIN,Finland,5171300,Helsinki [Helsingfors],7,Lahti,0.01736583411914915,1
+FJI,Fiji Islands,817000,Suva,1,Suva,-0.285248953001396,1
+FLK,Falkland Islands,2000,Stanley,1,Stanley,,1
+FRA,France,59225700,Paris,40,Montreuil,0.02286404950130992,1
+FRO,Faroe Islands,43000,Tórshavn,1,Tórshavn,,1
+FSM,"Micronesia, Federated States of",119000,Palikir,2,Palikir,,0
+GAB,Gabon,1226000,Libreville,1,Libreville,0.04053798067815874,0
+GBR,United Kingdom,59623400,London,81,Douglas,0.06284555415898768,1
+GEO,Georgia,4968000,Tbilisi,5,Sohumi,0.02363268062120189,1
+GHA,Ghana,20212000,Accra,5,Sekondi-Takoradi,0.03675188843695526,0
+GIB,Gibraltar,25000,Gibraltar,1,Gibraltar,,1
+GIN,Guinea,7430000,Conakry,1,Conakry,-0.013008812421317666,0
+GLP,Guadeloupe,456000,Basse-Terre,2,Basse-Terre,,0
+GMB,Gambia,1305000,Banjul,2,Banjul,-0.015384615384615385,0
+GNB,Guinea-Bissau,1213000,Bissau,1,Bissau,0.07720588235294118,0
+GNQ,Equatorial Guinea,453000,Malabo,1,Malabo,-0.477859778597786,0
+GRC,Greece,10545700,Athenai,8,Larisa,0.0064862521467993935,1
+GRD,Grenada,94000,Saint George´s,1,Saint George´s,,0
+GRL,Greenland,56000,Nuuk,1,Nuuk,,1
+GTM,Guatemala,11385000,Ciudad de Guatemala,4,Quetzaltenango,0.06804517615328426,1
+GUF,French Guiana,181000,Cayenne,1,Cayenne,,0
+GUM,Guam,168000,Agaña,2,Agaña,0.05369718309859155,1
+GUY,Guyana,861000,Georgetown,1,Georgetown,-0.02826379542395693,0
+HKG,Hong Kong,6782000,Victoria,2,Victoria,-0.041253384021657735,0
+HMD,Heard Island and McDonald Islands,0,,0,,,0
+HND,Honduras,6485000,Tegucigalpa,3,La Ceiba,0.13540557802852884,1
+HRV,Croatia,4473000,Zagreb,4,Osijek,0.04704663212435233,1
+HTI,Haiti,8222000,Port-au-Prince,4,Le-Cap-Haïtien,0.11329256517541036,0
+HUN,Hungary,10043200,Budapest,9,Székesfehérvár,0.05124798536394128,1
+IDN,Indonesia,212107000,Jakarta,85,Banyuwangi,-0.6047385605715295,0
+IND,India,1013662000,New Delhi,341,Vejalpur,0.03841866168724394,1
+IOT,British Indian Ocean Territory,0,,0,,,0
+IRL,Ireland,3775100,Dublin,2,Cork,0.038136520264726796,1
+IRN,Iran,67702000,Teheran,67,Qomsheh,0.2222589930752852,1
+IRQ,Iraq,23115000,Baghdad,15,Baquba,,1
+ISL,Iceland,279000,Reykjavík,1,Reykjavík,0.1044955846936045,1
+ISR,Israel,6217000,Jerusalem,14,Rehovot,-0.011158789575661665,1
+ITA,Italy,57680000,Roma,58,Pesaro,0.014303649818574227,1
+JAM,Jamaica,2583000,Kingston,3,Portmore,0.02216602201725677,0
+JOR,Jordan,5083000,Amman,5,Wadi al-Sir,0.06736633101687704,1
+JPN,Japan,126714000,Tokyo,248,Tsuyama,-0.09674004767404197,1
+KAZ,Kazakstan,16223000,Astana,21,Zhezqazghan,0.04242398323568405,1
+KEN,Kenya,30080000,Nairobi,8,Nyeri,-0.09999023532858119,0
+KGZ,Kyrgyzstan,4699000,Bishkek,2,Osh,-0.07979626485568761,1
+KHM,Cambodia,11168000,Phnom Penh,3,Siem Reap,-0.09682539682539683,1
+KIR,Kiribati,83000,Bairiki,2,Bairiki,,1
+KNA,Saint Kitts and Nevis,38000,Basseterre,1,Basseterre,,0
+KOR,South Korea,46844000,Seoul,70,Mun-gyong,-0.2752155717849525,1
+KWT,Kuwait,1972000,Kuwait,3,Kuwait,-0.10983439238797617,1
+LAO,Laos,5433000,Vientiane,2,Savannakhet,-0.2600229095074456,1
+LBN,Lebanon,3282000,Beirut,2,Tripoli,0.13166765813999604,1
+LBR,Liberia,3154000,Monrovia,1,Monrovia,,0
+LBY,Libyan Arab Jamahiriya,5605000,Tripoli,4,al-Zawiya,0.10462994921354962,1
+LCA,Saint Lucia,154000,Castries,1,Castries,,0
+LIE,Liechtenstein,32300,Vaduz,2,Vaduz,0.03228782287822878,1
+LKA,Sri Lanka,18827000,Colombo,7,Negombo,0.0407527665495991,1
+LSO,Lesotho,2153000,Maseru,1,Maseru,-0.08613264427217916,1
+LTU,Lithuania,3698500,Vilnius,5,Panevezys,0.11549295774647887,1
+LUX,Luxembourg,435700,Luxembourg [Luxemburg/Lëtzebuerg],1,Luxembourg [Luxemburg/Lëtzebuerg],0.05167858753785682,1
+LVA,Latvia,2424200,Riga,3,Liepaja,0.13459833303777266,1
+MAC,Macao,473000,Macao,1,Macao,-0.03215488215488215,0
+MAR,Morocco,28351000,Rabat,22,El Araich,0.07787790177239362,1
+MCO,Monaco,34000,Monaco-Ville,2,Monaco-Ville,,1
+MDA,Moldova,4380000,Chisinau,4,Bender (Tîghina),-0.15651709401709402,1
+MDG,Madagascar,15942000,Antananarivo,5,Fianarantsoa,0.05782792665726375,1
+MDV,Maldives,286000,Male,1,Male,,1
+MEX,Mexico,98881000,Ciudad de México,173,Tierra Blanca,0.033654576658753904,1
+MHL,Marshall Islands,64000,Dalap-Uliga-Darrit,1,Dalap-Uliga-Darrit,,1
+MKD,Macedonia,2024000,Skopje,1,Skopje,-0.1154046997389034,1
+MLI,Mali,11234000,Bamako,1,Bamako,0.0770485120260905,0
+MLT,Malta,380200,Valletta,2,Valletta,0.05212702216896345,1
+MMR,Myanmar,45611000,Rangoon (Yangon),16,Pagakku (Pakokku),0.054651869869261176,1
+MNG,Mongolia,2662000,Ulan Bator,1,Ulan Bator,0.11789924973204716,1
+MNP,Northern Mariana Islands,78000,Garapan,1,Garapan,,0
+MOZ,Mozambique,19680000,Maputo,12,Maxixe,0.06639616377720399,0
+MRT,Mauritania,2670000,Nouakchott,2,Nouâdhibou,-0.07678075855689177,0
+MSR,Montserrat,11000,Plymouth,1,Plymouth,,1
+MTQ,Martinique,395000,Fort-de-France,1,Fort-de-France,0.06721375537319266,0
+MUS,Mauritius,1158000,Port-Louis,3,Vacoas-Phoenix,0.015527950310559006,0
+MWI,Malawi,10925000,Lilongwe,2,Lilongwe,-0.33240997229916897,1
+MYS,Malaysia,22244000,Kuala Lumpur,18,Shah Alam,-0.29290793183768543,1
+MYT,Mayotte,149000,Mamoutzou,1,Mamoutzou,,0
+NAM,Namibia,1726000,Windhoek,1,Windhoek,-0.08362884160756501,0
+NCL,New Caledonia,214000,Nouméa,1,Nouméa,,0
+NER,Niger,10730000,Niamey,3,Maradi,0.07974683544303797,0
+NFK,Norfolk Island,2000,Kingston,1,Kingston,,1
+NGA,Nigeria,111506000,Abuja,64,Epe,0.12083994336693789,0
+NIC,Nicaragua,5074000,Managua,4,Masaya,-0.01730103806228374,1
+NIU,Niue,2000,Alofi,1,Alofi,,1
+NLD,Netherlands,15864000,Amsterdam,28,Alkmaar,0.030193243415686948,1
+NOR,Norway,4478500,Oslo,5,Bærum,-0.048738345178326925,1
+NPL,Nepal,23930000,Kathmandu,5,Birgunj,-0.014265040314244366,1
+NRU,Nauru,12000,Yaren,2,Yaren,,1
+NZL,New Zealand,3862000,Wellington,9,Lower Hutt,-0.15842056650246306,1
+OMN,Oman,2542000,Masqat,5,Masqat,0.04649291153346128,1
+PAK,Pakistan,156483000,Islamabad,59,Nowshera,0.046798408170933746,0
+PAN,Panama,2856000,Ciudad de Panamá,2,San Miguelito,0.04954022988505747,1
+PCN,Pitcairn,50,Adamstown,1,Adamstown,,0
+PER,Peru,25662000,Lima,22,Castilla,-0.016046390329211794,1
+PHL,Philippines,75967000,Manila,136,Ligao,-0.2083196536922871,1
+PLW,Palau,19000,Koror,1,Koror,,1
+PNG,Papua New Guinea,4807000,Port Moresby,1,Port Moresby,-0.21175726927939317,0
+POL,Poland,38653600,Warszawa,44,Jelenia Góra,0.11841251585124893,1
+PRI,Puerto Rico,3869000,San Juan,9,Toa Baja,0.06230529595015576,1
+PRK,North Korea,24039000,Pyongyang,13,Kaesong,,1
+PRT,Portugal,9997600,Lisboa,5,Braga,0.037412001997395555,1
+PRY,Paraguay,5496000,Asunción,5,Fernando de la Mora,-0.1162742019884877,1
+PSE,Palestine,3101000,Gaza,6,Rafah,,0
+PYF,French Polynesia,235000,Papeete,2,Papeete,0.04737516005121639,0
+QAT,Qatar,599000,Doha,1,Doha,0.06188340807174888,1
+REU,Réunion,699000,Saint-Denis,1,Saint-Denis,0.03743114672008012,0
+ROM,Romania,22455500,Bucuresti,29,Resita,0.09514106133226186,1
+RUS,Russian Federation,146934000,Moscow,189,Novyi Urengoi,-0.37558720419694397,1
+RWA,Rwanda,7733000,Kigali,1,Kigali,0.09286097691894793,1
+SAU,Saudi Arabia,21607000,Riyadh,24,Najran,-0.0583973565207873,1
+SDN,Sudan,29490000,Khartum,12,Juba,,1
+SEN,Senegal,9481000,Dakar,9,Diourbel,0.053940995156318804,1
+SGP,Singapore,3567000,Singapore,1,Singapore,-0.1019020328495193,1
+SGS,South Georgia and the South Sandwich Islands,0,,0,,,0
+SHN,Saint Helena,6000,Jamestown,1,Jamestown,,1
+SJM,Svalbard and Jan Mayen,3200,Longyearbyen,1,Longyearbyen,,1
+SLB,Solomon Islands,444000,Honiara,1,Honiara,-0.17272727272727273,0
+SLE,Sierra Leone,4854000,Freetown,1,Freetown,-0.13053613053613053,0
+SLV,El Salvador,6276000,San Salvador,7,Apopa,0.0589127912166384,1
+SMR,San Marino,27000,San Marino,2,San Marino,,1
+SOM,Somalia,10097000,Mogadishu,3,Hargeysa,,1
+SPM,Saint Pierre and Miquelon,7000,Saint-Pierre,1,Saint-Pierre,,1
+STP,Sao Tome and Principe,147000,São Tomé,1,São Tomé,,0
+SUR,Suriname,417000,Paramaribo,1,Paramaribo,0.23229461756373937,0
+SVK,Slovakia,5398700,Bratislava,3,Prešov,0.05870861608060868,1
+SVN,Slovenia,1987800,Ljubljana,2,Maribor,0.08537523349082518,1
+SWE,Sweden,8861400,Stockholm,15,Gävle,-0.005554165184824177,1
+SWZ,Swaziland,1008000,Mbabane,1,Mbabane,-0.08079268292682927,1
+SYC,Seychelles,77000,Victoria,1,Victoria,-0.0055658627087198514,0
+SYR,Syria,16125000,Damascus,11,Idlib,0.016295474848288822,1
+TCA,Turks and Caicos Islands,17000,Cockburn Town,1,Cockburn Town,,1
+TCD,Chad,7651000,N´Djaména,2,Moundou,0.09618874773139746,0
+TGO,Togo,4629000,Lomé,1,Lomé,0.035,1
+THA,Thailand,61399000,Bangkok,12,Nakhon Pathom,-0.24359515811496554,1
+TJK,Tajikistan,6188000,Dushanbe,2,Khujand,0.884469696969697,1
+TKL,Tokelau,2000,Fakaofo,1,Fakaofo,,1
+TKM,Turkmenistan,4459000,Ashgabat,4,Mary,1.1985,1
+TMP,East Timor,885000,Dili,1,Dili,,1
+TON,Tonga,99000,Nuku´alofa,1,Nuku´alofa,-0.1411764705882353,1
+TTO,Trinidad and Tobago,1295000,Port-of-Spain,2,Port-of-Spain,0.062212374296914945,0
+TUN,Tunisia,9586000,Tunis,8,Gabès,0.05968885596359403,1
+TUR,Turkey,66591000,Ankara,62,Bandirma,0.11420670255179197,1
+TUV,Tuvalu,12000,Funafuti,1,Funafuti,,1
+TWN,Taiwan,22256000,Taipei,42,Miaoli,-0.02731817301889156,0
+TZA,Tanzania,33517000,Dodoma,10,Tabora,0.08351380617217109,0
+UGA,Uganda,21778000,Kampala,1,Kampala,-0.08334543342529403,0
+UKR,Ukraine,50456000,Kyiv,57,Brovary,-0.1511564708013769,1
+UMI,United States Minor Outlying Islands,0,,0,,,1
+URY,Uruguay,3337000,Montevideo,1,Montevideo,0.04327139780638053,1
+USA,United States,278357000,Washington,274,Charleston,0.049291693893402704,1
+UZB,Uzbekistan,24318000,Toskent,17,Termiz,-0.33361502347417843,1
+VAT,Holy See (Vatican City State),1000,Città del Vaticano,1,Città del Vaticano,,1
+VCT,Saint Vincent and the Grenadines,114000,Kingstown,1,Kingstown,,0
+VEN,Venezuela,24170000,Caracas,41,El Limón,0.07450754234796571,1
+VGB,"Virgin Islands, British",21000,Road Town,1,Road Town,0.06806282722513089,1
+VIR,"Virgin Islands, U.S.",93000,Charlotte Amalie,1,Charlotte Amalie,,1
+VNM,Vietnam,79832000,Hanoi,22,Buon Ma Thuot,-0.03963387930279408,1
+VUT,Vanuatu,190000,Port-Vila,1,Port-Vila,0.06097560975609756,1
+WLF,Wallis and Futuna,15000,Mata-Utu,1,Mata-Utu,,0
+WSM,Samoa,180000,Apia,1,Apia,-0.10191082802547771,0
+YEM,Yemen,18112000,Sanaa,6,Ibb,0.05445976610228661,1
+YUG,Yugoslavia,10640000,Beograd,8,Prizren,,1
+ZAF,South Africa,40377000,Pretoria,44,Ladysmith,-0.09576890899513525,1
+ZMB,Zambia,9169000,Lusaka,7,Luanshya,-0.13895971443141256,0
+ZWE,Zimbabwe,11669000,Harare,6,Gweru,-0.3136101499423299,0

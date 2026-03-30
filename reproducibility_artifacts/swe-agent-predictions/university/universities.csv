@@ -1,0 +1,1248 @@
+UNIVERSITY_ID,UNIVERSITY_NAME,COUNTRY_NAME,AVG_STUDENT_STAFF_RATIO,NUM_INTERNATIONAL_STUDENTS,AVG_RANKING_SCORE_IN_TEACHING,SCORE_LESS_THAN_28_PER_AVG_RESEARCH_2015,NUM_MALE_STUDENTS
+1.0,Harvard University,United States of America,8.9,30228,93.83333333333333,0,120912
+2.0,Massachusetts Institute of Technology,United States of America,9.0,21927,92.5,0,41860
+3.0,Stanford University,United States of America,7.8,20587,94.5,0,54274
+4.0,University of Cambridge,United Kingdom,11.800000000000002,38376,90.0,0,60951
+5.0,California Institute of Technology,United States of America,6.900000000000001,3634,95.33333333333333,0,9017
+6.0,Princeton University,United States of America,8.4,12845,89.16666666666667,0,26166
+7.0,University of Oxford,United Kingdom,11.6,40635,88.66666666666667,0,64538
+8.0,Yale University,United States of America,4.4,14101,90.16666666666667,0,35253
+9.0,Columbia University,United States of America,5.900000000000001,42092,85.0,0,150330
+10.0,"University of California, Berkeley",United States of America,16.4,32567,83.16666666666667,0,108558
+11.0,University of Chicago,United States of America,6.900000000000001,17918,85.66666666666667,0,49489
+12.0,Cornell University,United States of America,10.2,24423,75.16666666666667,0,66843
+13.0,University of Pennsylvania,United States of America,6.5,24451,81.66666666666667,0,59905
+14.0,University of Tokyo,Japan,5.7,15719,84.83333333333333,0,157194
+15.0,Johns Hopkins University,United States of America,3.6,20877,78.66666666666667,0,45384
+16.0,Swiss Federal Institute of Technology in Zurich,Switzerland,0.0,0,0.0,0,0
+17.0,Kyoto University,Japan,5.6,7983,74.4,0,114045
+18.0,Weizmann Institute of Science,Israel,0.0,0,0.0,0,0
+19.0,"University of California, Los Angeles",United States of America,10.3,34385,84.0,0,110033
+20.0,"University of California, San Diego",United States of America,6.5,14978,57.6,0,70806
+21.0,Rockefeller University,United States of America,0.0,0,0.0,0,0
+22.0,Hebrew University of Jerusalem,Israel,10.7,3522,46.5,0,31702
+23.0,New York University,United States of America,6.8,47944,67.33333333333333,0,113551
+24.0,"University of California, San Francisco",United States of America,0.0,0,0.0,0,0
+25.0,University of Wisconsin–Madison,United States of America,0.0,0,0.0,0,0
+26.0,University of Illinois at Urbana–Champaign,United States of America,0.0,0,0.0,0,0
+27.0,Duke University,United States of America,4.8,15475,71.0,0,46426
+28.0,Imperial College London,United Kingdom,11.699999999999998,46084,86.33333333333333,0,56927
+29.0,University of Texas Southwestern Medical Center,United States of America,0.0,0,0.0,0,0
+30.0,University of Texas at Austin,United States of America,17.4,22242,66.8,0,121096
+31.0,University College London,United Kingdom,10.699999999999998,73435,75.66666666666667,0,70242
+32.0,Osaka University,Japan,7.8,10415,57.4,0,79847
+33.0,Northwestern University,United States of America,13.800000000000002,16501,70.16666666666667,0,57202
+34.0,"University of Michigan, Ann Arbor",United States of America,0.0,0,0.0,0,0
+35.0,University of Toronto,Canada,19.5,49649,76.2,0,330990
+36.0,University of North Carolina at Chapel Hill,United States of America,7.3,12729,63.833333333333336,0,66825
+37.0,Washington University in St. Louis,United States of America,0.0,0,0.0,0,0
+38.0,University of Utah,United States of America,16.9,11553,43.8,0,70604
+39.0,University of Washington - Seattle,United States of America,0.0,0,0.0,0,0
+40.0,"University of California, Santa Barbara",United States of America,27.3,12111,53.0,0,52848
+41.0,McGill University,Canada,13.699999999999998,43230,67.83333333333333,0,82701
+42.0,"Purdue University, West Lafayette",United States of America,0.0,0,0.0,0,0
+43.0,Carnegie Mellon University,United States of America,13.1,24959,66.66666666666667,0,43499
+44.0,University of Southern California,United States of America,12.9,43841,60.333333333333336,0,105218
+45.0,"University of California, Davis",United States of America,13.9,22987,60.6,0,81337
+46.0,University of Colorado Boulder,United States of America,16.1,11730,39.4,0,80644
+47.0,"University of California, Irvine",United States of America,16.1,21291,41.2,0,63874
+48.0,University of Paris-Sud,France,0.0,0,0.0,0,0
+49.0,"University of Minnesota, Twin Cities",United States of America,0.0,0,0.0,0,0
+50.0,University of Arizona,United States of America,12.699999999999998,17486,44.5,0,104916
+51.0,Technion – Israel Institute of Technology,Israel,0.0,0,0.0,0,0
+52.0,"Ohio State University, Columbus",United States of America,0.0,0,0.0,0,0
+53.0,University of Rochester,United States of America,4.5,9766,44.5,0,19156
+54.0,École normale supérieure - Paris,France,0.0,0,0.0,0,0
+55.0,University of Florida,United States of America,18.7,18034,49.25,0,92175
+56.0,Tel Aviv University,Israel,24.4,3836,45.5,0,95908
+57.0,Rice University,United States of America,9.0,8233,47.8,0,17732
+58.0,Dartmouth College,United States of America,6.6,4942,42.8,0,16372
+59.0,Vanderbilt University,United States of America,3.6,7297,51.666666666666664,0,35024
+60.0,University of Edinburgh,United Kingdom,14.1,55672,62.666666666666664,0,64950
+61.0,École Polytechnique,France,4.8,3644,52.0,0,9959
+62.0,Boston University,United States of America,8.6,25285,58.333333333333336,0,62468
+63.0,Pierre-and-Marie-Curie University,France,0.0,0,0.0,0,0
+64.0,"Pennsylvania State University, University Park",United States of America,0.0,0,0.0,0,0
+65.0,University of Geneva,Switzerland,15.0,30553,36.6,0,30553
+66.0,Brown University,United States of America,10.1,9864,59.666666666666664,0,51918
+67.0,University of British Columbia,Canada,17.6,75228,63.833333333333336,0,138420
+68.0,"University of Maryland, College Park",United States of America,8.4,16919,41.833333333333336,0,97753
+69.0,Swiss Federal Institute of Technology in Lausanne,Switzerland,0.0,0,0.0,0,0
+70.0,Karolinska Institute,Sweden,11.5,8551,62.4,0,11661
+71.0,University of Pittsburgh - Pittsburgh Campus,United States of America,0.0,0,0.0,0,0
+72.0,Rutgers University-New Brunswick,United States of America,0.0,0,0.0,0,0
+73.0,"Texas A&M University, College Station",United States of America,0.0,0,0.0,0,0
+74.0,Nagoya University,Japan,0.0,0,0.0,0,0
+75.0,Seoul National University,South Korea,13.9,15833,70.33333333333333,0,158334
+76.0,University of Manchester,United Kingdom,15.3,59395,58.6,0,83851
+77.0,Sapienza University of Rome,Italy,0.0,0,0.0,0,0
+78.0,Case Western Reserve University,United States of America,6.4,7870,54.8,0,24073
+79.0,Tohoku University,Japan,5.0,6020,55.6,0,64500
+80.0,Arizona State University,United States of America,29.899999999999995,44947,36.833333333333336,0,249708
+81.0,Emory University,United States of America,4.5,11104,53.4,0,27144
+82.0,Ruprecht Karl University of Heidelberg,Germany,0.0,0,0.0,0,0
+83.0,Ludwig Maximilian University of Munich,Germany,0.0,0,0.0,0,0
+84.0,University of Virginia,United States of America,10.2,17168,48.833333333333336,0,68674
+85.0,Leiden University,Netherlands,17.1,12733,47.166666666666664,0,52206
+86.0,Tufts University,United States of America,10.0,7287,50.8,0,23943
+87.0,Georgia Institute of Technology,United States of America,20.1,31149,64.0,0,82663
+88.0,University of Zurich,Switzerland,6.5,25254,48.4,0,57153
+89.0,University of Helsinki,Finland,15.1,7052,41.0,0,39959
+90.0,Technical University of Munich,Germany,31.5,42678,51.0,0,142971
+91.0,University of Oslo,Norway,18.8,19540,36.25,0,108556
+92.0,University of Queensland,Australia,0.0,0,0.0,0,0
+93.0,University of Copenhagen,Denmark,4.1,26168,38.4,0,45449
+94.0,University of Sydney,Australia,20.2,58615,53.0,0,90016
+95.0,Williams College,United States of America,0.0,0,0.0,0,0
+96.0,University of Texas MD Anderson Cancer Center,United States of America,0.0,0,0.0,0,0
+97.0,University of Nottingham,United Kingdom,15.0,48833,42.166666666666664,0,83197
+98.0,University of Bristol,United Kingdom,14.0,26859,46.0,0,50495
+99.0,Utrecht University,Netherlands,15.4,12927,42.666666666666664,0,75716
+100.0,Mines ParisTech,France,5.6,282,42.0,0,924
+101.0,Keio University,Japan,0.0,0,0.0,0,0
+102.0,King's College London,United Kingdom,0.0,0,0.0,0,0
+103.0,Indiana University - Bloomington,United States of America,0.0,0,0.0,0,0
+104.0,National University of Singapore,Singapore,15.5,64448,69.66666666666667,0,96672
+105.0,Stony Brook University,United States of America,10.9,26290,38.0,0,54770
+106.0,Lomonosov Moscow State University,Russia,7.7,6164,56.0,0,17569
+107.0,Australian National University,Australia,19.2,30668,57.5,0,42060
+108.0,University of Alberta,Canada,21.600000000000005,50093,48.5,0,98007
+109.0,Paris Diderot University - Paris 7,France,0.0,0,0.0,0,0
+110.0,Waseda University,Japan,0.0,0,0.0,0,0
+111.0,Peking University,China,8.3,33724,76.66666666666667,0,240888
+112.0,University of Notre Dame,United States of America,13.800000000000002,7097,46.5,0,39745
+113.0,National Taiwan University,Taiwan,11.9,11162,50.0,0,97268
+114.0,Tsinghua University,China,13.7,19882,70.8,0,135194
+115.0,Kyushu University,Japan,0.0,0,0.0,0,0
+116.0,Katholieke Universiteit Leuven,Belgium,0.0,0,0.0,0,0
+117.0,Tokyo Institute of Technology,Japan,7.3,6231,56.6,0,41699
+118.0,University of Melbourne,Australia,23.7,84269,61.333333333333336,0,108346
+119.0,University of Bonn,Germany,70.4,16886,39.0,0,58453
+120.0,Royal Institute of Technology,Sweden,0.0,0,0.0,0,0
+121.0,Erasmus University Rotterdam,Netherlands,18.9,22226,37.833333333333336,0,64210
+122.0,Yonsei University,South Korea,11.6,10405,45.0,0,74322
+123.0,Michigan State University,United States of America,15.7,33563,50.0,0,109638
+124.0,University of the Witwatersrand,South Africa,0.0,0,0.0,0,0
+125.0,Lund University,Sweden,11.5,21188,38.6,0,141255
+126.0,Georgetown University,United States of America,8.5,10786,55.2,0,36209
+127.0,Aarhus University,Denmark,13.6,16727,33.4,0,54959
+128.0,University of Barcelona,Spain,12.2,9498,36.0,0,36093
+129.0,Baylor College of Medicine,United States of America,0.0,0,0.0,0,0
+130.0,University of Amsterdam,Netherlands,14.4,16216,43.666666666666664,0,69287
+131.0,Uppsala University,Sweden,18.2,18192,44.833333333333336,0,65186
+132.0,University of Iowa,United States of America,11.6,15139,46.4,0,66062
+133.0,University of Groningen,Netherlands,25.600000000000005,17680,39.0,0,70721
+134.0,Korea Advanced Institute of Science and Technology (KAIST),South Korea,10.0,4875,63.0,0,43330
+135.0,Radboud University Nijmegen,Netherlands,13.0,7085,31.0,0,29758
+136.0,Korea University,South Korea,0.0,0,0.0,0,0
+137.0,University of São Paulo,Brazil,14.6,6512,62.5,0,84658
+138.0,University of Colorado Denver,United States of America,0.0,0,0.0,0,0
+139.0,University of Montreal,Canada,20.3,38264,49.5,0,65814
+140.0,Albert Ludwig University of Freiburg,Germany,0.0,0,0.0,0,0
+141.0,Ghent University,Belgium,34.1,17370,44.166666666666664,0,82988
+142.0,University of Glasgow,United Kingdom,16.0,32793,38.4,0,48624
+143.0,University of Miami,United States of America,5.7,8560,45.25,0,30572
+144.0,Université libre de Bruxelles,Belgium,26.1,7622,23.0,0,10957
+145.0,McMaster University,Canada,19.3,14294,39.25,0,44787
+146.0,University of Birmingham,United Kingdom,16.4,34907,43.833333333333336,0,69814
+147.0,University of Texas at Dallas,United States of America,22.8,7501,29.5,0,18263
+148.0,VU University Amsterdam,Netherlands,16.3,8381,35.833333333333336,0,61459
+149.0,Wake Forest University,United States of America,4.6,1465,41.25,0,14359
+150.0,University of Southampton,United Kingdom,13.5,30341,38.6,0,49174
+151.0,Nanyang Technological University,Singapore,16.2,49555,43.5,0,78087
+152.0,University of New South Wales,Australia,25.9,63210,43.8,0,101519
+153.0,Osaka City University,Japan,0.0,0,0.0,0,0
+154.0,University of Leeds,United Kingdom,14.7,29088,41.4,0,58176
+155.0,Western University (The University of Western Ontario),Canada,0.0,0,0.0,0,0
+156.0,Kobe University,Japan,0.0,0,0.0,0,0
+157.0,University of Basel,Switzerland,17.3,15061,41.2,0,28867
+158.0,University of Hong Kong,Hong Kong,17.6,37687,68.8,0,46612
+159.0,Indiana University-Purdue University Indianapolis,United States of America,0.0,0,0.0,0,0
+160.0,Humboldt University of Berlin,Germany,52.5,28788,53.166666666666664,0,179922
+161.0,Free University of Berlin,Germany,39.3,33062,50.0,0,69430
+162.0,University of Tübingen,Germany,38.9,13597,42.25,0,47589
+163.0,Goethe University Frankfurt,Germany,9.3,14337,34.0,0,38233
+164.0,University of Houston,United States of America,0.0,0,0.0,0,0
+165.0,"University of California, Santa Cruz",United States of America,22.7,870,31.0,0,40899
+166.0,University of Alabama at Birmingham,United States of America,0.0,0,0.0,0,0
+167.0,Icahn School of Medicine at Mount Sinai,United States of America,0.0,0,0.0,0,0
+168.0,University of Calgary,Canada,0.0,0,0.0,0,0
+169.0,University of Gothenburg,Sweden,0.0,0,0.0,0,0
+170.0,University of Göttingen,Germany,25.6,15349,50.0,0,62673
+171.0,Monash University,Australia,40.5,109905,43.5,0,134328
+172.0,Southern Methodist University,United States of America,0.0,0,0.0,0,0
+173.0,Yeshiva University,United States of America,5.5,2364,50.4,0,15870
+174.0,University of South Florida - Tampa,United States of America,0.0,0,0.0,0,0
+175.0,Hanyang University,South Korea,0.0,0,0.0,0,0
+176.0,Oregon Health & Science University,United States of America,0.0,0,0.0,0,0
+177.0,University of Strasbourg,France,0.0,0,0.0,0,0
+178.0,University of Cincinnati,United States of America,15.7,2166,44.0,0,16610
+179.0,University of Sheffield,United Kingdom,15.5,43358,44.5,0,69933
+180.0,University of Hamburg,Germany,0.0,0,0.0,0,0
+181.0,George Washington University,United States of America,12.0,16433,48.8,0,45190
+182.0,University of Milan,Italy,0.0,0,0.0,0,0
+183.0,Iowa State University,United States of America,17.4,16495,38.0,0,83975
+184.0,"University of Maryland, Baltimore",United States of America,0.0,0,0.0,0,0
+185.0,University of Padua,Italy,0.0,0,0.0,0,0
+186.0,University of New Mexico,United States of America,0.0,0,0.0,0,0
+187.0,Pohang University of Science and Technology,South Korea,10.1,733,57.666666666666664,0,14664
+188.0,Stockholm University,Sweden,23.7,12686,29.8,0,60259
+189.0,Hokkaido University,Japan,0.0,0,0.0,0,0
+190.0,Fudan University,China,12.2,3539,46.0,0,16088
+191.0,University of Sussex,United Kingdom,17.4,25202,33.833333333333336,0,33123
+192.0,Université catholique de Louvain,Belgium,42.0,21931,34.0,0,53095
+193.0,Wayne State University,United States of America,0.0,0,0.0,0,0
+194.0,University of Massachusetts Medical School,United States of America,0.0,0,0.0,0,0
+195.0,University of Lausanne,Switzerland,13.1,13160,32.0,0,59820
+196.0,Shanghai Jiao Tong University,China,0.0,0,0.0,0,0
+197.0,University of Missouri–Columbia,United States of America,0.0,0,0.0,0,0
+198.0,Technical University of Denmark,Denmark,5.0,8991,39.0,0,36464
+199.0,Complutense University of Madrid,Spain,0.0,0,0.0,0,0
+200.0,University of Cologne,Germany,43.4,4761,42.0,0,17312
+201.0,"Trinity College, Dublin",Ireland,0.0,0,0.0,0,0
+202.0,University of Bern,Switzerland,22.5,8236,41.75,0,27063
+203.0,Chinese University of Hong Kong,Hong Kong,10.2,15766,47.75,0,33682
+204.0,University of Kansas,United States of America,0.0,0,0.0,0,0
+205.0,Sungkyunkwan University,South Korea,0.0,0,0.0,0,0
+206.0,University of Vienna,Austria,20.5,51977,42.333333333333336,0,68609
+207.0,Zhejiang University,China,15.9,2375,55.0,0,28030
+208.0,University of Georgia,United States of America,0.0,0,0.0,0,0
+209.0,University of Massachusetts Amherst,United States of America,0.0,0,0.0,0,0
+210.0,Cardiff University,United Kingdom,0.0,0,0.0,0,0
+211.0,University of Münster,Germany,0.0,0,0.0,0,0
+212.0,University of Liverpool,United Kingdom,13.6,33867,35.0,0,54187
+213.0,University of Ottawa,Canada,26.3,22040,38.5,0,58773
+214.0,University of Erlangen-Nuremberg,Germany,0.0,0,0.0,0,0
+215.0,Queen Mary University of London,United Kingdom,14.0,34224,33.166666666666664,0,41069
+216.0,Karlsruhe Institute of Technology,Germany,24.6,20235,41.0,0,93588
+217.0,Louisiana State University - Baton Rouge,United States of America,0.0,0,0.0,0,0
+218.0,Nanjing University,China,13.3,2974,52.0,0,16061
+219.0,University of Illinois at Chicago,United States of America,9.2,16533,52.75,0,45708
+220.0,University of Bologna,Italy,0.0,0,0.0,0,0
+221.0,University of Manitoba,Canada,0.0,0,0.0,0,0
+222.0,Joseph Fourier University,France,12.1,6291,38.0,0,48390
+223.0,"University of California, Riverside",United States of America,22.0,12376,30.2,0,50534
+224.0,Julius-Maximilian's University of Würzburg,Germany,0.0,0,0.0,0,0
+225.0,Aix-Marseille University,France,0.0,0,0.0,0,0
+226.0,University of Western Australia,Australia,20.7,28149,34.2,0,52128
+227.0,Laval University,Canada,0.0,0,0.0,0,0
+228.0,"University of Tennessee, Knoxville",United States of America,0.0,0,0.0,0,0
+229.0,North Carolina State University,United States of America,0.0,0,0.0,0,0
+230.0,Newcastle University,United Kingdom,15.2,23402,36.25,0,40348
+231.0,Claude Bernard University Lyon 1,France,0.0,0,0.0,0,0
+232.0,University of Turin,Italy,0.0,0,0.0,0,0
+233.0,University of Kiel,Germany,0.0,0,0.0,0,0
+234.0,University of Connecticut,United States of America,0.0,0,0.0,0,0
+235.0,Tulane University,United States of America,0.0,0,0.0,0,0
+236.0,University of Oklahoma - Norman Campus,United States of America,0.0,0,0.0,0,0
+237.0,Brandeis University,United States of America,12.6,3627,26.666666666666668,0,7418
+238.0,Dresden University of Technology,Germany,0.0,0,0.0,0,0
+239.0,RWTH Aachen University,Germany,27.6,30334,42.0,0,130814
+240.0,University of Texas Health Science Center at San Antonio,United States of America,0.0,0,0.0,0,0
+241.0,Virginia Commonwealth University,United States of America,0.0,0,0.0,0,0
+242.0,University of Montpellier 2,France,0.0,0,0.0,0,0
+243.0,Dalian University of Technology,China,0.0,0,0.0,0,0
+244.0,Rensselaer Polytechnic Institute,United States of America,15.0,4269,37.25,0,18679
+245.0,Paul Sabatier University - Toulouse III,France,0.0,0,0.0,0,0
+246.0,Paris Descartes University,France,0.0,0,0.0,0,0
+247.0,National Cheng Kung University,Taiwan,0.0,0,0.0,0,0
+248.0,University of Delaware,United States of America,15.9,9631,30.0,0,42376
+249.0,Vrije Universiteit Brussel,Belgium,0.0,0,0.0,0,0
+250.0,Johannes Gutenberg University of Mainz,Germany,0.0,0,0.0,0,0
+251.0,Maastricht University,Netherlands,18.9,30002,34.0,0,27502
+252.0,University of Düsseldorf,Germany,0.0,0,0.0,0,0
+253.0,University of Dundee,United Kingdom,15.300000000000002,8721,25.666666666666668,0,13954
+254.0,University of Tsukuba,Japan,0.0,0,0.0,0,0
+255.0,Autonomous University of Barcelona,Spain,12.3,3054,40.0,0,12521
+256.0,Florida State University,United States of America,0.0,0,0.0,0,0
+257.0,University of Texas at San Antonio,United States of America,0.0,0,0.0,0,0
+258.0,London School of Hygiene & Tropical Medicine,United Kingdom,0.0,0,0.0,0,0
+259.0,Lehigh University,United States of America,0.0,0,0.0,0,0
+260.0,University of Kentucky,United States of America,0.0,0,0.0,0,0
+261.0,Thomas Jefferson University,United States of America,0.0,0,0.0,0,0
+262.0,Drexel University,United States of America,10.8,3728,45.0,0,10771
+263.0,Colorado State University - Fort Collins,United States of America,0.0,0,0.0,0,0
+264.0,University of Leicester,United Kingdom,13.4,20357,30.75,0,26755
+265.0,Durham University,United Kingdom,15.699999999999998,22304,39.5,0,42750
+266.0,Oregon State University,United States of America,0.0,0,0.0,0,0
+267.0,University of Florence,Italy,0.0,0,0.0,0,0
+268.0,University of Cape Town,South Africa,12.1,18036,31.8,0,47094
+269.0,"University at Buffalo, The State University of New York",United States of America,0.0,0,0.0,0,0
+270.0,University College Dublin,Ireland,24.5,20418,31.25,0,88772
+271.0,University of Science and Technology of China,China,7.9,286,39.0,0,14290
+272.0,Virginia Polytechnic Institute and State University,United States of America,0.0,0,0.0,0,0
+273.0,University of Naples Federico II,Italy,0.0,0,0.0,0,0
+274.0,University of Auckland,New Zealand,18.9,41702,30.6,0,68510
+275.0,University of Texas Health Science Center at Houston,United States of America,0.0,0,0.0,0,0
+276.0,Delft University of Technology,Netherlands,19.4,19900,56.4,0,58904
+277.0,University of Aberdeen,United Kingdom,15.8,21348,31.4,0,29757
+278.0,Queen's University,Canada,0.0,0,0.0,0,0
+279.0,University of Lisbon,Portugal,0.0,0,0.0,0,0
+280.0,Hiroshima University,Japan,0.0,0,0.0,0,0
+281.0,University of Waterloo,Canada,24.2,4302,35.0,0,16899
+282.0,Okayama University,Japan,0.0,0,0.0,0,0
+283.0,University of Ulm,Germany,0.0,0,0.0,0,0
+284.0,Chulalongkorn University,Thailand,0.0,0,0.0,0,0
+285.0,Dalhousie University,Canada,14.4,2712,42.0,0,6779
+286.0,Saint Petersburg State University,Russia,0.0,0,0.0,0,0
+287.0,Norwegian University of Science and Technology,Norway,0.0,0,0.0,0,0
+288.0,University of Reading,United Kingdom,14.800000000000002,10122,37.333333333333336,0,16268
+289.0,Wageningen University and Research Centre,Netherlands,0.0,0,0.0,0,0
+290.0,Umeå University,Sweden,0.0,0,0.0,0,0
+291.0,University of Porto,Portugal,0.0,0,0.0,0,0
+292.0,Hong Kong University of Science and Technology,Hong Kong,23.8,24592,51.833333333333336,0,68310
+293.0,Sun Yat-sen University,China,16.6,4108,46.0,0,25162
+294.0,Medical College of Wisconsin,United States of America,0.0,0,0.0,0,0
+295.0,City College of New York,United States of America,0.0,0,0.0,0,0
+296.0,Hannover Medical School,Germany,0.0,0,0.0,0,0
+297.0,"Washington State University, Pullman",United States of America,0.0,0,0.0,0,0
+298.0,Technical University of Berlin,Germany,0.0,0,0.0,0,0
+299.0,University of South Carolina - Columbia,United States of America,0.0,0,0.0,0,0
+300.0,Leipzig University,Germany,0.0,0,0.0,0,0
+301.0,University of Stuttgart,Germany,0.0,0,0.0,0,0
+302.0,University of Valencia,Spain,0.0,0,0.0,0,0
+303.0,Linköping University,Sweden,0.0,0,0.0,0,0
+304.0,University of Duisburg-Essen,Germany,0.0,0,0.0,0,0
+305.0,Ruhr University Bochum,Germany,0.0,0,0.0,0,0
+306.0,University of Bergen,Norway,11.1,2790,34.5,0,9298
+307.0,London School of Economics,United Kingdom,0.0,0,0.0,0,0
+308.0,Wesleyan University,United States of America,0.0,0,0.0,0,0
+309.0,University of Pisa,Italy,0.0,0,0.0,0,0
+310.0,Autonomous University of Madrid,Spain,0.0,0,0.0,0,0
+311.0,Medical University of Vienna,Austria,0.0,0,0.0,0,0
+312.0,Stellenbosch University,South Africa,0.0,0,0.0,0,0
+313.0,Medical University of South Carolina,United States of America,0.0,0,0.0,0,0
+314.0,Charles University in Prague,Czech Republic,0.0,0,0.0,0,0
+315.0,Kyungpook National University,South Korea,0.0,0,0.0,0,0
+316.0,"University of Science, Malaysia",Malaysia,0.0,0,0.0,0,0
+317.0,University of Liège,Belgium,0.0,0,0.0,0,0
+318.0,University of Hull,United Kingdom,0.0,0,0.0,0,0
+319.0,Northeastern University,United States of America,15.1,9640,35.0,0,18539
+320.0,Kansas State University,United States of America,0.0,0,0.0,0,0
+321.0,University of Vermont,United States of America,0.0,0,0.0,0,0
+322.0,Rush University,United States of America,0.0,0,0.0,0,0
+323.0,University of Louisville,United States of America,0.0,0,0.0,0,0
+324.0,University of St Andrews,United Kingdom,12.699999999999998,23513,41.333333333333336,0,22012
+325.0,University of Warwick,United Kingdom,16.6,34279,43.4,0,48175
+326.0,University of Rome Tor Vergata,Italy,0.0,0,0.0,0,0
+327.0,University of Innsbruck,Austria,16.9,7102,38.0,0,8376
+328.0,Darmstadt University of Technology,Germany,0.0,0,0.0,0,0
+329.0,Indian Institute of Technology Delhi,India,0.0,0,0.0,0,0
+330.0,Federal University of Rio de Janeiro,Brazil,0.0,0,0.0,0,0
+331.0,University of Antwerp,Belgium,30.3,5926,34.333333333333336,0,16297
+332.0,National and Kapodistrian University of Athens,Greece,0.0,0,0.0,0,0
+333.0,Boston College,United States of America,17.4,12555,31.6,0,30397
+334.0,Vita-Salute San Raffaele University,Italy,0.0,0,0.0,0,0
+335.0,Gwangju Institute of Science and Technology,South Korea,0.0,0,0.0,0,0
+336.0,University of Nebraska–Lincoln,United States of America,0.0,0,0.0,0,0
+337.0,University of York,United Kingdom,0.0,0,0.0,0,0
+338.0,National Autonomous University of Mexico,Mexico,0.0,0,0.0,0,0
+339.0,University of Regensburg,Germany,0.0,0,0.0,0,0
+340.0,Yokohama National University,Japan,0.0,0,0.0,0,0
+341.0,University of Adelaide,Australia,30.100000000000005,16201,39.0,0,32403
+342.0,University of Genoa,Italy,0.0,0,0.0,0,0
+343.0,Queen's University Belfast,United Kingdom,0.0,0,0.0,0,0
+344.0,University of Marburg,Germany,0.0,0,0.0,0,0
+345.0,University of Pavia,Italy,0.0,0,0.0,0,0
+346.0,"St George's, University of London",United Kingdom,0.0,0,0.0,0,0
+347.0,University of Oregon,United States of America,0.0,0,0.0,0,0
+348.0,University of Navarra,Spain,0.0,0,0.0,0,0
+349.0,San Diego State University,United States of America,0.0,0,0.0,0,0
+350.0,Nankai University,China,0.0,0,0.0,0,0
+351.0,University of East Anglia,United Kingdom,14.7,20989,30.0,0,31483
+352.0,University of Nebraska Medical Center,United States of America,0.0,0,0.0,0,0
+353.0,University of Southern Denmark,Denmark,0.0,0,0.0,0,0
+354.0,Eindhoven University of Technology,Netherlands,16.0,5723,42.0,0,33113
+355.0,Xiamen University,China,0.0,0,0.0,0,0
+356.0,University of Otago,New Zealand,0.0,0,0.0,0,0
+357.0,University of Santiago de Compostela,Spain,0.0,0,0.0,0,0
+358.0,University of Exeter,United Kingdom,18.8,29828,34.0,0,49004
+359.0,University of Jena,Germany,0.0,0,0.0,0,0
+360.0,University of Perugia,Italy,0.0,0,0.0,0,0
+361.0,Justus Liebig University Giessen,Germany,0.0,0,0.0,0,0
+362.0,College of William and Mary,United States of America,0.0,0,0.0,0,0
+363.0,Ben-Gurion University of the Negev,Israel,0.0,0,0.0,0,0
+364.0,Saint Louis University,United States of America,0.0,0,0.0,0,0
+365.0,Colorado School of Mines,United States of America,18.2,1903,24.666666666666668,0,11737
+366.0,Oklahoma State University–Stillwater,United States of America,0.0,0,0.0,0,0
+367.0,University of Guelph,Canada,0.0,0,0.0,0,0
+368.0,University of Trieste,Italy,0.0,0,0.0,0,0
+369.0,University of Verona,Italy,0.0,0,0.0,0,0
+370.0,"University at Albany, SUNY",United States of America,0.0,0,0.0,0,0
+371.0,Tongji University,China,0.0,0,0.0,0,0
+372.0,Eötvös Loránd University,Hungary,0.0,0,0.0,0,0
+373.0,University of Alabama - Tuscaloosa,United States of America,0.0,0,0.0,0,0
+374.0,University of Eastern Finland,Finland,0.0,0,0.0,0,0
+375.0,Ewha Womans University,South Korea,0.0,0,0.0,0,0
+376.0,City University of Hong Kong,Hong Kong,7.099999999999999,8413,32.0,0,14722
+377.0,Tokyo Medical and Dental University,Japan,0.0,0,0.0,0,0
+378.0,University of Victoria,Canada,21.5,5802,19.666666666666668,0,23207
+379.0,University of Buenos Aires,Argentina,0.0,0,0.0,0,0
+380.0,University of Texas Medical Branch at Galveston,United States of America,0.0,0,0.0,0,0
+381.0,Kyung Hee University,South Korea,0.0,0,0.0,0,0
+382.0,Hong Kong Polytechnic University,Hong Kong,25.9,5737,39.0,0,10811
+383.0,Saarland University,Germany,0.0,0,0.0,0,0
+384.0,Scuola Normale Superiore di Pisa,Italy,16.5,46,51.0,0,665
+385.0,University of Seville,Spain,0.0,0,0.0,0,0
+386.0,Beijing Normal University,China,0.0,0,0.0,0,0
+387.0,Chiba University,Japan,0.0,0,0.0,0,0
+388.0,University of Ferrara,Italy,0.0,0,0.0,0,0
+389.0,University of Bari Aldo Moro,Italy,0.0,0,0.0,0,0
+390.0,Polytechnic University of Milan,Italy,0.0,0,0.0,0,0
+391.0,Temple University,United States of America,0.0,0,0.0,0,0
+392.0,University of Turku,Finland,0.0,0,0.0,0,0
+393.0,Aalto University,Finland,0.0,0,0.0,0,0
+394.0,Simon Fraser University,Canada,28.3,5062,33.0,0,11988
+395.0,Tianjin University,China,0.0,0,0.0,0,0
+396.0,Chalmers University of Technology,Sweden,0.0,0,0.0,0,0
+397.0,Middle East Technical University,Turkey,22.2,3609,43.0,0,28872
+398.0,Cranfield University,United Kingdom,0.0,0,0.0,0,0
+399.0,York University,Canada,0.0,0,0.0,0,0
+400.0,Xi'an Jiaotong University,China,0.0,0,0.0,0,0
+401.0,Chonnam National University,South Korea,0.0,0,0.0,0,0
+402.0,University of Central Florida,United States of America,0.0,0,0.0,0,0
+403.0,University of Lorraine,France,0.0,0,0.0,0,0
+404.0,University of Bordeaux II,France,0.0,0,0.0,0,0
+405.0,University of New Hampshire,United States of America,0.0,0,0.0,0,0
+406.0,Versailles Saint-Quentin-en-Yvelines University,France,0.0,0,0.0,0,0
+407.0,Chonbuk National University,South Korea,0.0,0,0.0,0,0
+408.0,Kumamoto University,Japan,0.0,0,0.0,0,0
+409.0,Huazhong University of Science and Technology,China,0.0,0,0.0,0,0
+410.0,Brunel University,United Kingdom,0.0,0,0.0,0,0
+411.0,Polytechnic University of Catalonia,Spain,0.0,0,0.0,0,0
+412.0,National Chiao Tung University,Taiwan,16.6,632,53.0,0,9232
+413.0,Southeast University,China,0.0,0,0.0,0,0
+414.0,Tokyo University of Science,Japan,0.0,0,0.0,0,0
+415.0,Catholic University of the Sacred Heart,Italy,0.0,0,0.0,0,0
+416.0,Brigham Young University,United States of America,0.0,0,0.0,0,0
+417.0,Technical University of Madrid,Spain,0.0,0,0.0,0,0
+418.0,Nagasaki University,Japan,0.0,0,0.0,0,0
+419.0,National Tsing Hua University,Taiwan,13.5,511,52.0,0,6848
+420.0,University of Warsaw,Poland,0.0,0,0.0,0,0
+421.0,King Saud University,Saudi Arabia,0.0,0,0.0,0,0
+422.0,University of Bath,United Kingdom,0.0,0,0.0,0,0
+423.0,Concordia University,Canada,0.0,0,0.0,0,0
+424.0,Georgia Regents University,United States of America,0.0,0,0.0,0,0
+425.0,Niigata University,Japan,0.0,0,0.0,0,0
+426.0,University of Oulu,Finland,0.0,0,0.0,0,0
+427.0,Pompeu Fabra University,Spain,18.3,5669,27.5,0,17878
+428.0,Vienna University of Technology,Austria,0.0,0,0.0,0,0
+429.0,Sogang University,South Korea,0.0,0,0.0,0,0
+430.0,Gyeongsang National University,South Korea,0.0,0,0.0,0,0
+431.0,University of Tampere,Finland,0.0,0,0.0,0,0
+432.0,University of Milan - Bicocca,Italy,0.0,0,0.0,0,0
+433.0,University of Bordeaux I,France,0.0,0,0.0,0,0
+434.0,Swedish University of Agricultural Sciences,Sweden,0.0,0,0.0,0,0
+435.0,George Mason University,United States of America,0.0,0,0.0,0,0
+436.0,Jilin University,China,0.0,0,0.0,0,0
+437.0,University of Delhi,India,0.0,0,0.0,0,0
+438.0,University of Campinas,Brazil,0.0,0,0.0,0,0
+439.0,Wuhan University,China,0.0,0,0.0,0,0
+440.0,West Virginia University,United States of America,0.0,0,0.0,0,0
+441.0,Pusan National University,South Korea,0.0,0,0.0,0,0
+442.0,University of Mississippi - Oxford Campus,United States of America,0.0,0,0.0,0,0
+443.0,University of Arkansas for Medical Sciences,United States of America,0.0,0,0.0,0,0
+444.0,Miami University,United States of America,0.0,0,0.0,0,0
+445.0,University of Tokushima,Japan,0.0,0,0.0,0,0
+446.0,University of Twente,Netherlands,12.0,6896,38.0,0,16710
+447.0,Loyola University Chicago,United States of America,0.0,0,0.0,0,0
+448.0,Ajou University,South Korea,0.0,0,0.0,0,0
+449.0,Syracuse University,United States of America,15.9,2949,32.0,0,8847
+450.0,Lancaster University,United Kingdom,14.9,22794,36.5,0,33155
+451.0,Pontifical Catholic University of Chile,Chile,0.0,0,0.0,0,0
+452.0,University of Chile,Chile,0.0,0,0.0,0,0
+453.0,Innsbruck Medical University,Austria,0.0,0,0.0,0,0
+454.0,University of Granada,Spain,0.0,0,0.0,0,0
+455.0,Kanazawa University,Japan,0.0,0,0.0,0,0
+456.0,University of Parma,Italy,0.0,0,0.0,0,0
+457.0,University of Siena,Italy,0.0,0,0.0,0,0
+458.0,Shandong University,China,0.0,0,0.0,0,0
+459.0,Technical University of Dortmund,Germany,0.0,0,0.0,0,0
+460.0,University of KwaZulu-Natal,South Africa,0.0,0,0.0,0,0
+461.0,"University of Nevada, Reno",United States of America,0.0,0,0.0,0,0
+462.0,Yokohama City University,Japan,0.0,0,0.0,0,0
+463.0,École normale supérieure de Lyon,France,8.0,1553,40.4,0,5656
+464.0,University College Cork,Ireland,0.0,0,0.0,0,0
+465.0,Ohio University,United States of America,0.0,0,0.0,0,0
+466.0,Central South University,China,0.0,0,0.0,0,0
+467.0,University of Modena and Reggio Emilia,Italy,0.0,0,0.0,0,0
+468.0,New Mexico State University,United States of America,0.0,0,0.0,0,0
+469.0,University of Konstanz,Germany,59.1,3935,36.666666666666664,0,15083
+470.0,University of Hawaii at Manoa,United States of America,0.0,0,0.0,0,0
+471.0,University of Nebraska Omaha,United States of America,0.0,0,0.0,0,0
+472.0,Shinshu University,Japan,0.0,0,0.0,0,0
+473.0,University of Strathclyde,United Kingdom,0.0,0,0.0,0,0
+474.0,Baylor University,United States of America,0.0,0,0.0,0,0
+475.0,Polytechnic University of Valencia,Spain,0.0,0,0.0,0,0
+476.0,Harbin Institute of Technology,China,0.0,0,0.0,0,0
+477.0,University of Rennes 1,France,0.0,0,0.0,0,0
+478.0,University of Arkansas - Fayetteville,United States of America,0.0,0,0.0,0,0
+479.0,Aristotle University of Thessaloniki,Greece,0.0,0,0.0,0,0
+480.0,Jagiellonian University,Poland,0.0,0,0.0,0,0
+481.0,Texas Tech University (TTU),United States of America,0.0,0,0.0,0,0
+482.0,University of Rostock,Germany,0.0,0,0.0,0,0
+483.0,University of Akron,United States of America,0.0,0,0.0,0,0
+484.0,University of Saskatchewan,Canada,0.0,0,0.0,0,0
+485.0,Juntendo University,Japan,0.0,0,0.0,0,0
+486.0,University of Wyoming,United States of America,0.0,0,0.0,0,0
+487.0,Macquarie University,Australia,0.0,0,0.0,0,0
+488.0,University of Canterbury,New Zealand,0.0,0,0.0,0,0
+489.0,University of Denver,United States of America,0.0,0,0.0,0,0
+490.0,Illinois Institute of Technology,United States of America,0.0,0,0.0,0,0
+491.0,Creighton University,United States of America,0.0,0,0.0,0,0
+492.0,Bielefeld University,Germany,0.0,0,0.0,0,0
+493.0,University of Malaya,Malaysia,0.0,0,0.0,0,0
+494.0,University of Ulsan,South Korea,0.0,0,0.0,0,0
+495.0,City University London,United Kingdom,0.0,0,0.0,0,0
+496.0,Grenoble Institute of Technology,France,0.0,0,0.0,0,0
+497.0,Federal University of Minas Gerais,Brazil,0.0,0,0.0,0,0
+498.0,University of Hanover,Germany,0.0,0,0.0,0,0
+499.0,South China University of Technology,China,0.0,0,0.0,0,0
+500.0,University of Surrey,United Kingdom,0.0,0,0.0,0,0
+501.0,Otto-von-Guericke University Magdeburg,Germany,0.0,0,0.0,0,0
+502.0,Indian Institute of Science,India,0.0,0,0.0,0,0
+503.0,Tokyo Metropolitan University,Japan,0.0,0,0.0,0,0
+504.0,Bar-Ilan University,Israel,0.0,0,0.0,0,0
+505.0,Mississippi State University,United States of America,0.0,0,0.0,0,0
+506.0,"University of Maryland, Baltimore County",United States of America,0.0,0,0.0,0,0
+507.0,University of Wollongong,Australia,0.0,0,0.0,0,0
+508.0,Flinders University,Australia,0.0,0,0.0,0,0
+509.0,Martin Luther University of Halle-Wittenberg,Germany,0.0,0,0.0,0,0
+510.0,Graduate University for Advanced Studies,Japan,0.0,0,0.0,0,0
+511.0,Clemson University,United States of America,0.0,0,0.0,0,0
+512.0,University of Brescia,Italy,0.0,0,0.0,0,0
+513.0,Georgia State University,United States of America,0.0,0,0.0,0,0
+514.0,Dongguk University,South Korea,0.0,0,0.0,0,0
+515.0,University of Fribourg,Switzerland,0.0,0,0.0,0,0
+516.0,Sichuan University,China,0.0,0,0.0,0,0
+517.0,University of Iceland,Iceland,0.0,0,0.0,0,0
+518.0,University of Sherbrooke,Canada,0.0,0,0.0,0,0
+519.0,University of Graz,Austria,0.0,0,0.0,0,0
+520.0,University of Málaga,Spain,0.0,0,0.0,0,0
+521.0,University of Zaragoza,Spain,0.0,0,0.0,0,0
+522.0,New York Medical College,United States of America,0.0,0,0.0,0,0
+523.0,SUNY Downstate Medical Center,United States of America,0.0,0,0.0,0,0
+524.0,École Centrale Paris,France,0.0,0,0.0,0,0
+525.0,Utah State University,United States of America,0.0,0,0.0,0,0
+526.0,University of Ljubljana,Slovenia,0.0,0,0.0,0,0
+527.0,University of Montpellier 1,France,0.0,0,0.0,0,0
+528.0,Victoria University of Wellington,New Zealand,0.0,0,0.0,0,0
+529.0,East China University of Science and Technology,China,0.0,0,0.0,0,0
+530.0,Konkuk University,South Korea,0.0,0,0.0,0,0
+531.0,University of Potsdam,Germany,0.0,0,0.0,0,0
+532.0,University of the Basque Country,Spain,0.0,0,0.0,0,0
+533.0,University of Nice Sophia Antipolis,France,0.0,0,0.0,0,0
+534.0,University of Udine,Italy,0.0,0,0.0,0,0
+535.0,National Yang-Ming University,Taiwan,0.0,0,0.0,0,0
+536.0,Indian Institute of Technology Bombay,India,0.0,0,0.0,0,0
+537.0,University of Bayreuth,Germany,0.0,0,0.0,0,0
+538.0,University of Wisconsin–Milwaukee,United States of America,0.0,0,0.0,0,0
+539.0,University of Dayton,United States of America,0.0,0,0.0,0,0
+540.0,Nihon University,Japan,0.0,0,0.0,0,0
+541.0,Montana State University - Bozeman,United States of America,0.0,0,0.0,0,0
+542.0,"Royal Holloway, University of London",United Kingdom,15.9,19418,31.833333333333332,0,22567
+543.0,Tokyo Women's Medical University,Japan,0.0,0,0.0,0,0
+544.0,Panjab University,India,0.0,0,0.0,0,0
+545.0,Tampere University of Technology,Finland,0.0,0,0.0,0,0
+546.0,University of Coimbra,Portugal,0.0,0,0.0,0,0
+547.0,University of Newcastle,Australia,0.0,0,0.0,0,0
+548.0,Nara Institute of Science and Technology,Japan,0.0,0,0.0,0,0
+549.0,Auburn University,United States of America,0.0,0,0.0,0,0
+550.0,University of Bremen,Germany,0.0,0,0.0,0,0
+551.0,Mahidol University,Thailand,0.0,0,0.0,0,0
+552.0,University of Crete,Greece,0.0,0,0.0,0,0
+553.0,Bangor University,United Kingdom,0.0,0,0.0,0,0
+554.0,University of Aveiro,Portugal,0.0,0,0.0,0,0
+555.0,University of Palermo,Italy,0.0,0,0.0,0,0
+556.0,Nagoya City University,Japan,0.0,0,0.0,0,0
+557.0,University of Tartu,Estonia,0.0,0,0.0,0,0
+558.0,University of Savoy,France,0.0,0,0.0,0,0
+559.0,University of Tromsø - The Arctic University of Norway,Norway,0.0,0,0.0,0,0
+560.0,University of Missouri–Kansas City,United States of America,0.0,0,0.0,0,0
+561.0,Beihang University,China,0.0,0,0.0,0,0
+562.0,American University of Beirut,Lebanon,0.0,0,0.0,0,0
+563.0,University of Nantes,France,0.0,0,0.0,0,0
+564.0,University of Essex,United Kingdom,0.0,0,0.0,0,0
+565.0,University of Zagreb,Croatia,0.0,0,0.0,0,0
+566.0,National Central University,Taiwan,0.0,0,0.0,0,0
+567.0,University Lille 1: Sciences and Technologies,France,0.0,0,0.0,0,0
+568.0,University of Catania,Italy,0.0,0,0.0,0,0
+569.0,National Polytechnic Institute of Toulouse,France,0.0,0,0.0,0,0
+570.0,Indian Institute of Technology Kanpur,India,0.0,0,0.0,0,0
+571.0,Kagoshima University,Japan,0.0,0,0.0,0,0
+572.0,Lanzhou University,China,0.0,0,0.0,0,0
+573.0,James Cook University,Australia,0.0,0,0.0,0,0
+574.0,Shizuoka University,Japan,0.0,0,0.0,0,0
+575.0,Indian Institute of Technology Kharagpur,India,0.0,0,0.0,0,0
+576.0,Second University of Naples,Italy,0.0,0,0.0,0,0
+577.0,Indian Institute of Technology Madras,India,0.0,0,0.0,0,0
+578.0,Plymouth University,United Kingdom,0.0,0,0.0,0,0
+579.0,International School for Advanced Studies,Italy,0.0,0,0.0,0,0
+580.0,Polytechnic University of Turin,Italy,0.0,0,0.0,0,0
+581.0,University of Oviedo,Spain,0.0,0,0.0,0,0
+582.0,Ehime University,Japan,0.0,0,0.0,0,0
+583.0,University of Ioannina,Greece,0.0,0,0.0,0,0
+584.0,University of Cagliari,Italy,0.0,0,0.0,0,0
+585.0,Tottori University,Japan,0.0,0,0.0,0,0
+586.0,Federal University of Rio Grande do Sul,Brazil,0.0,0,0.0,0,0
+587.0,Kent State University,United States of America,19.0,1850,34.0,0,9711
+588.0,University of Los Andes (Colombia),Colombia,0.0,0,0.0,0,0
+589.0,Hunan University,China,0.0,0,0.0,0,0
+590.0,Tokai University,Japan,0.0,0,0.0,0,0
+591.0,LSU Health Sciences Center New Orleans,United States of America,0.0,0,0.0,0,0
+592.0,Southern Illinois University Carbondale,United States of America,0.0,0,0.0,0,0
+593.0,Tata Institute of Fundamental Research,India,0.0,0,0.0,0,0
+594.0,Aalborg University,Denmark,0.0,0,0.0,0,0
+595.0,Osaka Prefecture University,Japan,0.0,0,0.0,0,0
+596.0,Chang Gung University,Taiwan,0.0,0,0.0,0,0
+597.0,Northern Illinois University,United States of America,0.0,0,0.0,0,0
+598.0,University of Trento,Italy,43.2,1347,31.0,0,8252
+599.0,Semmelweis University,Hungary,0.0,0,0.0,0,0
+600.0,University of Science and Technology Beijing,China,0.0,0,0.0,0,0
+601.0,"National University of Ireland, Galway",Ireland,0.0,0,0.0,0,0
+602.0,Dankook University,South Korea,0.0,0,0.0,0,0
+603.0,Istanbul University,Turkey,0.0,0,0.0,0,0
+604.0,Tokyo University of Agriculture and Technology,Japan,0.0,0,0.0,0,0
+605.0,University of Montana - Missoula,United States of America,0.0,0,0.0,0,0
+606.0,Queensland University of Technology,Australia,0.0,0,0.0,0,0
+607.0,Binghamton University,United States of America,0.0,0,0.0,0,0
+608.0,Université de Namur,Belgium,0.0,0,0.0,0,0
+609.0,University of Tasmania,Australia,0.0,0,0.0,0,0
+610.0,University of Pretoria,South Africa,0.0,0,0.0,0,0
+611.0,Central China Normal University,China,0.0,0,0.0,0,0
+612.0,Indian Institute of Technology Roorkee,India,0.0,0,0.0,0,0
+613.0,Curtin University,Australia,0.0,0,0.0,0,0
+614.0,Deakin University,Australia,0.0,0,0.0,0,0
+615.0,Tilburg University,Netherlands,0.0,0,0.0,0,0
+616.0,Inha University,South Korea,0.0,0,0.0,0,0
+617.0,University of New Orleans,United States of America,0.0,0,0.0,0,0
+618.0,Paris-Est Créteil Val-de-Marne University,France,0.0,0,0.0,0,0
+619.0,University of L'Aquila,Italy,0.0,0,0.0,0,0
+620.0,Chungnam National University,South Korea,0.0,0,0.0,0,0
+621.0,University of Salamanca,Spain,0.0,0,0.0,0,0
+622.0,University of Alaska Fairbanks,United States of America,0.0,0,0.0,0,0
+623.0,University of Poitiers,France,0.0,0,0.0,0,0
+624.0,Albany Medical College,United States of America,0.0,0,0.0,0,0
+625.0,"Birkbeck, University of London",United Kingdom,17.2,10778,31.666666666666668,0,12763
+626.0,Griffith University,Australia,0.0,0,0.0,0,0
+627.0,Federal University of São Paulo,Brazil,0.0,0,0.0,0,0
+628.0,Carleton University,Canada,0.0,0,0.0,0,0
+629.0,Massey University,New Zealand,0.0,0,0.0,0,0
+630.0,Catholic University of Korea,South Korea,0.0,0,0.0,0,0
+631.0,Open University (UK),United Kingdom,0.0,0,0.0,0,0
+632.0,University of Patras,Greece,0.0,0,0.0,0,0
+633.0,Universidade Nova de Lisboa,Portugal,0.0,0,0.0,0,0
+634.0,Texas A&M Health Science Center,United States of America,0.0,0,0.0,0,0
+635.0,Braunschweig University of Technology,Germany,0.0,0,0.0,0,0
+636.0,National Chung Hsing University,Taiwan,0.0,0,0.0,0,0
+637.0,La Trobe University,Australia,0.0,0,0.0,0,0
+638.0,Missouri University of Science and Technology,United States of America,0.0,0,0.0,0,0
+639.0,University of Idaho,United States of America,0.0,0,0.0,0,0
+640.0,Louisiana Tech University,United States of America,0.0,0,0.0,0,0
+641.0,University of Portsmouth,United Kingdom,0.0,0,0.0,0,0
+642.0,University of La Laguna,Spain,0.0,0,0.0,0,0
+643.0,Florida International University,United States of America,0.0,0,0.0,0,0
+644.0,Medical University of Graz,Austria,0.0,0,0.0,0,0
+645.0,Howard University,United States of America,0.0,0,0.0,0,0
+646.0,University of Hertfordshire,United Kingdom,0.0,0,0.0,0,0
+647.0,State University of New York Upstate Medical University,United States of America,0.0,0,0.0,0,0
+648.0,Royal College of Surgeons in Ireland,Ireland,0.0,0,0.0,0,0
+649.0,National Technical University of Athens,Greece,0.0,0,0.0,0,0
+650.0,University of Windsor,Canada,0.0,0,0.0,0,0
+651.0,Rovira i Virgili University,Spain,0.0,0,0.0,0,0
+652.0,University of Burgundy,France,0.0,0,0.0,0,0
+653.0,Gunma University,Japan,0.0,0,0.0,0,0
+654.0,AGH University of Science and Technology,Poland,0.0,0,0.0,0,0
+655.0,Gifu University,Japan,0.0,0,0.0,0,0
+656.0,Hacettepe University,Turkey,0.0,0,0.0,0,0
+657.0,Örebro University,Sweden,0.0,0,0.0,0,0
+658.0,Memorial University of Newfoundland,Canada,0.0,0,0.0,0,0
+659.0,Kindai University,Japan,0.0,0,0.0,0,0
+660.0,University of Rhode Island,United States of America,0.0,0,0.0,0,0
+661.0,University of Alicante,Spain,0.0,0,0.0,0,0
+662.0,New Jersey Institute of Technology,United States of America,0.0,0,0.0,0,0
+663.0,Lille 2 University of Health and Law,France,0.0,0,0.0,0,0
+664.0,Keele University,United Kingdom,0.0,0,0.0,0,0
+665.0,University of Jyväskylä,Finland,0.0,0,0.0,0,0
+666.0,Rochester Institute of Technology,United States of America,0.0,0,0.0,0,0
+667.0,Sapporo Medical University,Japan,0.0,0,0.0,0,0
+668.0,Banaras Hindu University,India,0.0,0,0.0,0,0
+669.0,King Abdullah University of Science and Technology,Saudi Arabia,0.0,0,0.0,0,0
+670.0,Northeast Normal University,China,0.0,0,0.0,0,0
+671.0,Portland State University,United States of America,0.0,0,0.0,0,0
+672.0,University of Québec at Montreal,Canada,0.0,0,0.0,0,0
+673.0,East China Normal University,China,0.0,0,0.0,0,0
+674.0,University of Debrecen,Hungary,0.0,0,0.0,0,0
+675.0,Loma Linda University,United States of America,0.0,0,0.0,0,0
+676.0,Old Dominion University,United States of America,0.0,0,0.0,0,0
+677.0,University of Insubria,Italy,0.0,0,0.0,0,0
+678.0,"University of Nevada, Las Vegas",United States of America,0.0,0,0.0,0,0
+679.0,Hong Kong Baptist University,Hong Kong,11.0,2610,33.0,0,4072
+680.0,University of Minho,Portugal,0.0,0,0.0,0,0
+681.0,University of Messina,Italy,0.0,0,0.0,0,0
+682.0,University of Texas at Arlington,United States of America,0.0,0,0.0,0,0
+683.0,"University François Rabelais, Tours",France,0.0,0,0.0,0,0
+684.0,"UNESP, São Paulo State University",Brazil,0.0,0,0.0,0,0
+685.0,Toho University,Japan,0.0,0,0.0,0,0
+686.0,Beijing University of Chemical Technology,China,0.0,0,0.0,0,0
+687.0,"Rutgers, The State University of New Jersey - Newark",United States of America,0.0,0,0.0,0,0
+688.0,Johannes Kepler University of Linz,Austria,0.0,0,0.0,0,0
+689.0,Warsaw University of Technology,Poland,0.0,0,0.0,0,0
+690.0,University of Paris 13,France,0.0,0,0.0,0,0
+691.0,University of Toyama,Japan,0.0,0,0.0,0,0
+692.0,University of Toledo,United States of America,0.0,0,0.0,0,0
+693.0,University of Vigo,Spain,0.0,0,0.0,0,0
+694.0,University of Kent,United Kingdom,0.0,0,0.0,0,0
+695.0,Jichi Medical University,Japan,0.0,0,0.0,0,0
+696.0,Roma Tre University,Italy,0.0,0,0.0,0,0
+697.0,Chung Yuan Christian University,Taiwan,0.0,0,0.0,0,0
+698.0,University of Haifa,Israel,0.0,0,0.0,0,0
+699.0,Åbo Akademi University,Finland,0.0,0,0.0,0,0
+700.0,Swansea University,United Kingdom,0.0,0,0.0,0,0
+701.0,China Agricultural University,China,0.0,0,0.0,0,0
+702.0,Marche Polytechnic University,Italy,0.0,0,0.0,0,0
+703.0,"University of Maine, Orono",United States of America,0.0,0,0.0,0,0
+704.0,Heriot-Watt University,United Kingdom,0.0,0,0.0,0,0
+705.0,Marquette University,United States of America,0.0,0,0.0,0,0
+706.0,Loughborough University,United Kingdom,0.0,0,0.0,0,0
+707.0,Kaiserslautern University of Technology,Germany,0.0,0,0.0,0,0
+708.0,Aston University,United Kingdom,0.0,0,0.0,0,0
+709.0,University of Girona,Spain,0.0,0,0.0,0,0
+710.0,Hasselt University,Belgium,0.0,0,0.0,0,0
+711.0,Nanjing University of Science and Technology,China,0.0,0,0.0,0,0
+712.0,"University of Natural Resources and Life Sciences, Vienna",Austria,0.0,0,0.0,0,0
+713.0,University of Szeged,Hungary,0.0,0,0.0,0,0
+714.0,Soochow University (Suzhou),China,0.0,0,0.0,0,0
+715.0,University of the Balearic Islands,Spain,0.0,0,0.0,0,0
+716.0,Fuzhou University,China,0.0,0,0.0,0,0
+717.0,University of Memphis,United States of America,0.0,0,0.0,0,0
+718.0,San Francisco State University,United States of America,0.0,0,0.0,0,0
+719.0,East Carolina University,United States of America,0.0,0,0.0,0,0
+720.0,University of Augsburg,Germany,0.0,0,0.0,0,0
+721.0,University of Missouri–St. Louis,United States of America,0.0,0,0.0,0,0
+722.0,Kyoto Prefectural University of Medicine,Japan,0.0,0,0.0,0,0
+723.0,Shanghai University,China,0.0,0,0.0,0,0
+724.0,University of South Australia,Australia,0.0,0,0.0,0,0
+725.0,Liverpool John Moores University,United Kingdom,0.0,0,0.0,0,0
+726.0,Graz University of Technology,Austria,0.0,0,0.0,0,0
+727.0,Kitasato University,Japan,0.0,0,0.0,0,0
+728.0,University of North Carolina at Charlotte,United States of America,0.0,0,0.0,0,0
+729.0,"G. d'Annunzio University, Chieti-Pescara",Italy,0.0,0,0.0,0,0
+730.0,University of Cantabria,Spain,0.0,0,0.0,0,0
+731.0,Miguel Hernández University of Elche,Spain,0.0,0,0.0,0,0
+732.0,Donghua University,China,0.0,0,0.0,0,0
+733.0,Comenius University in Bratislava,Slovakia,0.0,0,0.0,0,0
+734.0,University of Alabama in Huntsville,United States of America,0.0,0,0.0,0,0
+735.0,Mie University,Japan,0.0,0,0.0,0,0
+736.0,University of Stirling,United Kingdom,0.0,0,0.0,0,0
+737.0,Hunter College,United States of America,0.0,0,0.0,0,0
+738.0,Swinburne University of Technology,Australia,0.0,0,0.0,0,0
+739.0,University of Ulster,United Kingdom,0.0,0,0.0,0,0
+740.0,University of Évry Val d'Essonne,France,0.0,0,0.0,0,0
+741.0,University of Salerno,Italy,0.0,0,0.0,0,0
+742.0,National University of La Plata,Argentina,0.0,0,0.0,0,0
+743.0,Masaryk University,Czech Republic,0.0,0,0.0,0,0
+744.0,Yamaguchi University,Japan,0.0,0,0.0,0,0
+745.0,University of Yamanashi,Japan,0.0,0,0.0,0,0
+746.0,Showa University,Japan,0.0,0,0.0,0,0
+747.0,North Dakota State University - Main Campus,United States of America,0.0,0,0.0,0,0
+748.0,"University of North Texas, Denton",United States of America,0.0,0,0.0,0,0
+749.0,University of Mississippi Medical Center,United States of America,0.0,0,0.0,0,0
+750.0,University of Tehran,Iran,0.0,0,0.0,0,0
+751.0,"Paul Valéry University, Montpellier III",France,0.0,0,0.0,0,0
+752.0,Wuhan University of Technology,China,0.0,0,0.0,0,0
+753.0,University of Hyogo,Japan,0.0,0,0.0,0,0
+754.0,The Catholic University of America,United States of America,0.0,0,0.0,0,0
+755.0,University of Neuchâtel,Switzerland,0.0,0,0.0,0,0
+756.0,National Polytechnic Institute,Mexico,0.0,0,0.0,0,0
+757.0,Jikei University School of Medicine,Japan,0.0,0,0.0,0,0
+758.0,University of Valladolid,Spain,0.0,0,0.0,0,0
+759.0,University of Calabria,Italy,0.0,0,0.0,0,0
+760.0,University of Lübeck,Germany,0.0,0,0.0,0,0
+761.0,Kurume University,Japan,0.0,0,0.0,0,0
+762.0,Peking Union Medical College,China,0.0,0,0.0,0,0
+763.0,Yamagata University,Japan,0.0,0,0.0,0,0
+764.0,University of Córdoba (Spain),Spain,0.0,0,0.0,0,0
+765.0,University of Mons,Belgium,0.0,0,0.0,0,0
+766.0,Saga University,Japan,0.0,0,0.0,0,0
+767.0,Clarkson University,United States of America,0.0,0,0.0,0,0
+768.0,University of South Alabama,United States of America,0.0,0,0.0,0,0
+769.0,Inje University,South Korea,0.0,0,0.0,0,0
+770.0,University of Caen Lower Normandy,France,0.0,0,0.0,0,0
+771.0,University of Castilla–La Mancha,Spain,0.0,0,0.0,0,0
+772.0,Czech Technical University in Prague,Czech Republic,0.0,0,0.0,0,0
+773.0,Saitama Medical University,Japan,0.0,0,0.0,0,0
+774.0,Istanbul Technical University,Turkey,16.0,1728,30.0,0,22803
+775.0,Kaohsiung Medical University,Taiwan,0.0,0,0.0,0,0
+776.0,University of Electro-Communications,Japan,0.0,0,0.0,0,0
+777.0,Yeungnam University,South Korea,0.0,0,0.0,0,0
+778.0,Jawaharlal Nehru Centre for Advanced Scientific Research,India,0.0,0,0.0,0,0
+779.0,"Putra University, Malaysia",Malaysia,0.0,0,0.0,0,0
+780.0,Institut national des sciences Appliquées de Lyon,France,0.0,0,0.0,0,0
+781.0,University of Perpignan Via Domitia,France,0.0,0,0.0,0,0
+782.0,University of Miyazaki,Japan,0.0,0,0.0,0,0
+783.0,Second Military Medical University,China,0.0,0,0.0,0,0
+784.0,Northern Arizona University,United States of America,0.0,0,0.0,0,0
+785.0,École Polytechnique de Montréal,Canada,0.0,0,0.0,0,0
+786.0,University of Salento,Italy,0.0,0,0.0,0,0
+787.0,Fukuoka University,Japan,0.0,0,0.0,0,0
+788.0,Nagoya Institute of Technology,Japan,0.0,0,0.0,0,0
+789.0,Ankara University,Turkey,0.0,0,0.0,0,0
+790.0,Blaise Pascal University,France,0.0,0,0.0,0,0
+791.0,University of Electronic Science and Technology of China,China,0.0,0,0.0,0,0
+792.0,National Sun Yat-sen University,Taiwan,19.6,373,46.0,0,5882
+793.0,University of Rouen,France,0.0,0,0.0,0,0
+794.0,Bowling Green State University,United States of America,0.0,0,0.0,0,0
+795.0,Norwegian University of Life Sciences,Norway,0.0,0,0.0,0,0
+796.0,University of Picardie Jules Verne,France,0.0,0,0.0,0,0
+797.0,Michigan Technological University,United States of America,0.0,0,0.0,0,0
+798.0,University of Concepción,Chile,0.0,0,0.0,0,0
+799.0,China Medical University (Taiwan),Taiwan,0.0,0,0.0,0,0
+800.0,University of Hohenheim,Germany,0.0,0,0.0,0,0
+801.0,Aberystwyth University,United Kingdom,0.0,0,0.0,0,0
+802.0,Wilfrid Laurier University,Canada,0.0,0,0.0,0,0
+803.0,Cairo University,Egypt,0.0,0,0.0,0,0
+804.0,University of Murcia,Spain,0.0,0,0.0,0,0
+805.0,"Palacký University, Olomouc",Czech Republic,0.0,0,0.0,0,0
+806.0,Taipei Medical University,Taiwan,0.0,0,0.0,0,0
+807.0,University of Bradford,United Kingdom,0.0,0,0.0,0,0
+808.0,King Fahd University of Petroleum and Minerals,Saudi Arabia,0.0,0,0.0,0,0
+809.0,Ege University,Turkey,0.0,0,0.0,0,0
+810.0,University of Belgrade,Serbia,0.0,0,0.0,0,0
+811.0,"University of Eastern Piedmont Amedeo Avogadro""""",Italy,0.0,0,0.0,0,0
+812.0,Budapest University of Technology and Economics,Hungary,0.0,0,0.0,0,0
+813.0,University of Salzburg,Austria,0.0,0,0.0,0,0
+814.0,University of Massachusetts Lowell,United States of America,0.0,0,0.0,0,0
+815.0,Jaume I University,Spain,0.0,0,0.0,0,0
+816.0,Chongqing University,China,0.0,0,0.0,0,0
+817.0,Beijing Institute of Technology,China,0.0,0,0.0,0,0
+818.0,Manchester Metropolitan University,United Kingdom,0.0,0,0.0,0,0
+819.0,Zhengzhou University,China,0.0,0,0.0,0,0
+820.0,Dublin City University,Ireland,0.0,0,0.0,0,0
+821.0,"National University of Ireland, Maynooth",Ireland,0.0,0,0.0,0,0
+822.0,Kangwon National University,South Korea,0.0,0,0.0,0,0
+823.0,"Royal Veterinary College, University of London",United Kingdom,0.0,0,0.0,0,0
+824.0,Wright State University - Dayton,United States of America,0.0,0,0.0,0,0
+825.0,Capital Medical University,China,0.0,0,0.0,0,0
+826.0,University of Brighton,United Kingdom,0.0,0,0.0,0,0
+827.0,Sofia University,Bulgaria,0.0,0,0.0,0,0
+828.0,University of Regina,Canada,0.0,0,0.0,0,0
+829.0,Magna Græcia University of Catanzaro,Italy,0.0,0,0.0,0,0
+830.0,Chungbuk National University,South Korea,0.0,0,0.0,0,0
+831.0,Kōchi University,Japan,0.0,0,0.0,0,0
+832.0,University of New Brunswick,Canada,0.0,0,0.0,0,0
+833.0,Sejong University,South Korea,0.0,0,0.0,0,0
+834.0,Sharif University of Technology,Iran,0.0,0,0.0,0,0
+835.0,Chung-Ang University,South Korea,0.0,0,0.0,0,0
+836.0,"Queens College, City University of New York",United States of America,0.0,0,0.0,0,0
+837.0,Murdoch University,Australia,0.0,0,0.0,0,0
+838.0,Chosun University,South Korea,0.0,0,0.0,0,0
+839.0,Vilnius University,Lithuania,0.0,0,0.0,0,0
+840.0,University of Maribor,Slovenia,0.0,0,0.0,0,0
+841.0,Ritsumeikan University,Japan,0.0,0,0.0,0,0
+842.0,University of Sassari,Italy,0.0,0,0.0,0,0
+843.0,Nanjing Normal University,China,0.0,0,0.0,0,0
+844.0,University of Franche-Comté,France,0.0,0,0.0,0,0
+845.0,University of Texas at El Paso,United States of America,0.0,0,0.0,0,0
+846.0,Rio de Janeiro State University,Brazil,0.0,0,0.0,0,0
+847.0,Jinan University,China,0.0,0,0.0,0,0
+848.0,University of Massachusetts Boston,United States of America,0.0,0,0.0,0,0
+849.0,University of Alcalá,Spain,0.0,0,0.0,0,0
+850.0,Tehran University of Medical Sciences,Iran,0.0,0,0.0,0,0
+851.0,University of the Ryukyus,Japan,0.0,0,0.0,0,0
+852.0,University of Angers,France,0.0,0,0.0,0,0
+853.0,Fluminense Federal University,Brazil,0.0,0,0.0,0,0
+854.0,Florida Institute of Technology,United States of America,13.7,2292,18.0,1,5819
+855.0,Trent University,Canada,0.0,0,0.0,0,0
+856.0,National Chung Cheng University,Taiwan,0.0,0,0.0,0,0
+857.0,Bilkent University,Turkey,0.0,0,0.0,0,0
+858.0,National Taiwan Normal University,Taiwan,0.0,0,0.0,0,0
+859.0,Saitama University,Japan,0.0,0,0.0,0,0
+860.0,RMIT University,Australia,0.0,0,0.0,0,0
+861.0,Hamamatsu University School of Medicine,Japan,0.0,0,0.0,0,0
+862.0,University of Greifswald,Germany,0.0,0,0.0,0,0
+863.0,University of Pécs,Hungary,0.0,0,0.0,0,0
+864.0,University of Fukui,Japan,0.0,0,0.0,0,0
+865.0,Oakland University,United States of America,0.0,0,0.0,0,0
+866.0,Nanjing University of Technology,China,0.0,0,0.0,0,0
+867.0,"University of Technology, Sydney",Australia,0.0,0,0.0,0,0
+868.0,University of North Carolina at Greensboro,United States of America,0.0,0,0.0,0,0
+869.0,"All India Institute of Medical Sciences, New Delhi",India,0.0,0,0.0,0,0
+870.0,Kyoto Institute of Technology,Japan,0.0,0,0.0,0,0
+871.0,Ocean University of China,China,0.0,0,0.0,0,0
+872.0,Chiang Mai University,Thailand,0.0,0,0.0,0,0
+873.0,University of Camerino,Italy,0.0,0,0.0,0,0
+874.0,Hirosaki University,Japan,0.0,0,0.0,0,0
+875.0,University of North Dakota,United States of America,0.0,0,0.0,0,0
+876.0,University of Extremadura,Spain,0.0,0,0.0,0,0
+877.0,Teikyo University,Japan,0.0,0,0.0,0,0
+878.0,Jiangnan University,China,0.0,0,0.0,0,0
+879.0,Adam Mickiewicz University in Poznań,Poland,0.0,0,0.0,0,0
+880.0,University of Waikato,New Zealand,0.0,0,0.0,0,0
+881.0,University of Veterinary Medicine Vienna,Austria,0.0,0,0.0,0,0
+882.0,University of Cádiz,Spain,0.0,0,0.0,0,0
+883.0,Florida Atlantic University,United States of America,0.0,0,0.0,0,0
+884.0,Huazhong Agricultural University,China,0.0,0,0.0,0,0
+885.0,Brock University,Canada,0.0,0,0.0,0,0
+886.0,University of Lleida,Spain,0.0,0,0.0,0,0
+887.0,Shanghai Normal University,China,0.0,0,0.0,0,0
+888.0,Jean Monnet University,France,0.0,0,0.0,0,0
+889.0,Shimane University,Japan,0.0,0,0.0,0,0
+890.0,University of Orléans,France,0.0,0,0.0,0,0
+891.0,University of Siegen,Germany,0.0,0,0.0,0,0
+892.0,Makerere University,Uganda,0.0,0,0.0,0,0
+893.0,"University of Wales, Trinity Saint David",United Kingdom,0.0,0,0.0,0,0
+894.0,National Taiwan University of Science and Technology,Taiwan,0.0,0,0.0,0,0
+895.0,University of Brasília,Brazil,0.0,0,0.0,0,0
+896.0,University of Western Brittany,France,0.0,0,0.0,0,0
+897.0,Nanjing Agricultural University,China,0.0,0,0.0,0,0
+898.0,National University of Córdoba,Argentina,0.0,0,0.0,0,0
+899.0,Federal University of Santa Catarina,Brazil,0.0,0,0.0,0,0
+900.0,National Taiwan Ocean University,Taiwan,0.0,0,0.0,0,0
+901.0,Gazi University,Turkey,0.0,0,0.0,0,0
+902.0,National University of Colombia,Colombia,0.0,0,0.0,0,0
+903.0,University of Jaén,Spain,0.0,0,0.0,0,0
+904.0,Boğaziçi University,Turkey,25.0,1611,24.0,0,11506
+905.0,Jadavpur University,India,0.0,0,0.0,0,0
+906.0,Pukyong National University,South Korea,0.0,0,0.0,0,0
+907.0,University of Western Sydney,Australia,0.0,0,0.0,0,0
+908.0,Northeastern University (China),China,0.0,0,0.0,0,0
+909.0,University of Mannheim,Germany,0.0,0,0.0,0,0
+910.0,University of Osnabrück,Germany,0.0,0,0.0,0,0
+911.0,Charles Darwin University,Australia,0.0,0,0.0,0,0
+912.0,University of Hyderabad,India,0.0,0,0.0,0,0
+913.0,Northwest University (China),China,0.0,0,0.0,0,0
+914.0,University of Southern Mississippi,United States of America,0.0,0,0.0,0,0
+915.0,University of Wrocław,Poland,0.0,0,0.0,0,0
+916.0,Carlos III University of Madrid,Spain,0.0,0,0.0,0,0
+917.0,Novosibirsk State University,Russia,0.0,0,0.0,0,0
+918.0,Nanjing Medical University,China,0.0,0,0.0,0,0
+919.0,Nicolaus Copernicus University in Toruń,Poland,0.0,0,0.0,0,0
+920.0,Federal University of Santa Maria,Brazil,0.0,0,0.0,0,0
+921.0,Chemnitz University of Technology,Germany,0.0,0,0.0,0,0
+922.0,Southwest University,China,0.0,0,0.0,0,0
+923.0,Wrocław University of Technology,Poland,0.0,0,0.0,0,0
+924.0,"University of California, Merced",United States of America,0.0,0,0.0,0,0
+925.0,United Arab Emirates University,United Arab Emirates,0.0,0,0.0,0,0
+926.0,Federal University of São Carlos,Brazil,0.0,0,0.0,0,0
+927.0,University of Thessaly,Greece,0.0,0,0.0,0,0
+928.0,University of Basilicata,Italy,0.0,0,0.0,0,0
+929.0,Feng Chia University,Taiwan,0.0,0,0.0,0,0
+930.0,Federal University of Paraná,Brazil,0.0,0,0.0,0,0
+931.0,University of Almería,Spain,0.0,0,0.0,0,0
+932.0,Hallym University,South Korea,0.0,0,0.0,0,0
+933.0,Fourth Military Medical University,China,0.0,0,0.0,0,0
+934.0,University of the Republic (Uruguay),Uruguay,0.0,0,0.0,0,0
+935.0,Dokuz Eylül University,Turkey,0.0,0,0.0,0,0
+936.0,Nanjing University of Aeronautics and Astronautics,China,0.0,0,0.0,0,0
+937.0,Public University of Navarre,Spain,0.0,0,0.0,0,0
+938.0,University of A Coruña,Spain,0.0,0,0.0,0,0
+939.0,Isfahan University of Technology,Iran,0.0,0,0.0,0,0
+940.0,University of New England (Australia),Australia,0.0,0,0.0,0,0
+941.0,Federal University of Pernambuco,Brazil,0.0,0,0.0,0,0
+942.0,Jiangsu University,China,0.0,0,0.0,0,0
+943.0,Third Military Medical University,China,0.0,0,0.0,0,0
+944.0,South China Normal University,China,0.0,0,0.0,0,0
+945.0,University of Limerick,Ireland,0.0,0,0.0,0,0
+946.0,Xiangtan University,China,0.0,0,0.0,0,0
+947.0,Yangzhou University,China,0.0,0,0.0,0,0
+948.0,Northwestern Polytechnical University,China,0.0,0,0.0,0,0
+949.0,University of Reims Champagne-Ardenne,France,0.0,0,0.0,0,0
+950.0,Ibaraki University,Japan,0.0,0,0.0,0,0
+951.0,Chung Shan Medical University,Taiwan,0.0,0,0.0,0,0
+952.0,Alexandria University,Egypt,23.3,1274,30.0,0,68813
+953.0,Yuan Ze University,Taiwan,0.0,0,0.0,0,0
+954.0,University of Cyprus,Cyprus,0.0,0,0.0,0,0
+955.0,University of Silesia,Poland,0.0,0,0.0,0,0
+956.0,Southern Medical University,China,0.0,0,0.0,0,0
+957.0,Shiraz University,Iran,0.0,0,0.0,0,0
+958.0,University of Bucharest,Romania,0.0,0,0.0,0,0
+959.0,Mansoura University,Egypt,0.0,0,0.0,0,0
+960.0,Amirkabir University of Technology,Iran,0.0,0,0.0,0,0
+961.0,Beijing Jiaotong University,China,0.0,0,0.0,0,0
+962.0,University of Valenciennes and Hainaut-Cambresis,France,0.0,0,0.0,0,0
+963.0,University of the Algarve,Portugal,0.0,0,0.0,0,0
+964.0,"University of Chemistry and Technology, Prague",Czech Republic,0.0,0,0.0,0,0
+965.0,Federal University of Ceará,Brazil,0.0,0,0.0,0,0
+966.0,Ain Shams University,Egypt,0.0,0,0.0,0,0
+967.0,University of Oldenburg,Germany,0.0,0,0.0,0,0
+968.0,Federal University of Bahia,Brazil,0.0,0,0.0,0,0
+969.0,Hunan Normal University,China,0.0,0,0.0,0,0
+970.0,Western Michigan University,United States of America,0.0,0,0.0,0,0
+971.0,University of Seoul,South Korea,0.0,0,0.0,0,0
+972.0,Federico Santa María Technical University,Chile,0.0,0,0.0,0,0
+973.0,Ryerson University,Canada,0.0,0,0.0,0,0
+974.0,South China Agricultural University,China,0.0,0,0.0,0,0
+975.0,Fu Jen Catholic University,Taiwan,0.0,0,0.0,0,0
+976.0,China Pharmaceutical University,China,0.0,0,0.0,0,0
+977.0,Tarbiat Modares University,Iran,0.0,0,0.0,0,0
+978.0,University of Puerto Rico at Mayagüez,Puerto Rico,0.0,0,0.0,0,0
+979.0,National University of Rosario,Argentina,0.0,0,0.0,0,0
+980.0,University of Pau and Pays de l'Adour,France,0.0,0,0.0,0,0
+981.0,Xidian University,China,0.0,0,0.0,0,0
+982.0,Zhejiang University of Technology,China,0.0,0,0.0,0,0
+983.0,China Medical University (PRC),China,0.0,0,0.0,0,0
+984.0,Federal University of ABC,Brazil,0.0,0,0.0,0,0
+985.0,King Juan Carlos University,Spain,0.0,0,0.0,0,0
+986.0,Beijing University of Technology,China,0.0,0,0.0,0,0
+987.0,Guangxi University,China,0.0,0,0.0,0,0
+988.0,Northwest A&F University,China,0.0,0,0.0,0,0
+989.0,Shanxi University,China,0.0,0,0.0,0,0
+990.0,Tamkang University,Taiwan,0.0,0,0.0,0,0
+991.0,Harbin Medical University,China,0.0,0,0.0,0,0
+992.0,Zhejiang Normal University,China,0.0,0,0.0,0,0
+993.0,King Abdulaziz University,Saudi Arabia,0.0,0,0.0,0,0
+994.0,Iran University of Science and Technology,Iran,0.0,0,0.0,0,0
+995.0,I-Shou University,Taiwan,0.0,0,0.0,0,0
+996.0,University of Maine (Le Mans),France,0.0,0,0.0,0,0
+997.0,National Dong Hwa University,Taiwan,0.0,0,0.0,0,0
+998.0,National Taipei University of Technology,Taiwan,0.0,0,0.0,0,0
+999.0,Shaanxi Normal University,China,0.0,0,0.0,0,0
+1000.0,National University of Defense Technology,China,0.0,0,0.0,0,0
+1001.0,Yanbian University,China,0.0,0,0.0,0,0
+1002.0,University of Montpellier,France,0.0,0,0.0,0,0
+1003.0,Moscow Institute of Physics and Technology,Russia,0.0,0,0.0,0,0
+1004.0,University of Bordeaux,France,0.0,0,0.0,0,0
+1005.0,University of Oklahoma Health Sciences Center,United States of America,0.0,0,0.0,0,0
+1006.0,Renmin University of China,China,0.0,0,0.0,0,0
+1007.0,École normale supérieure de Cachan,France,0.0,0,0.0,0,0
+1008.0,National Research Nuclear University MEPhI,Russia,0.0,0,0.0,0,0
+1009.0,Jacobs University Bremen,Germany,0.0,0,0.0,0,0
+1010.0,École centrale de Lyon,France,0.0,0,0.0,0,0
+1011.0,Hefei University of Technology,China,0.0,0,0.0,0,0
+1012.0,University of Calcutta,India,0.0,0,0.0,0,0
+1013.0,China University of Geosciences (Wuhan),China,0.0,0,0.0,0,0
+1014.0,University of Lethbridge,Canada,0.0,0,0.0,0,0
+1015.0,Shahid Beheshti University of Medical Sciences,Iran,0.0,0,0.0,0,0
+1016.0,University of Central Lancashire,United Kingdom,0.0,0,0.0,0,0
+1017.0,Gachon University,South Korea,0.0,0,0.0,0,0
+1018.0,Harbin Engineering University,China,0.0,0,0.0,0,0
+1019.0,Ulsan National Institute of Science and Technology,South Korea,0.0,0,0.0,0,0
+1020.0,Shenzhen University,China,0.0,0,0.0,0,0
+1021.0,Tianjin Medical University,China,0.0,0,0.0,0,0
+1022.0,Babeș-Bolyai University,Romania,0.0,0,0.0,0,0
+1023.0,Henan Normal University,China,0.0,0,0.0,0,0
+1024.0,Southwest Jiaotong University,China,0.0,0,0.0,0,0
+1025.0,ETH Zurich – Swiss Federal Institute of Technology Zurich,Switzerland,14.699999999999998,40355,78.66666666666667,0,75257
+1026.0,University of Michigan,United States of America,9.0,40115,76.5,0,130372
+1027.0,University of Washington,United States of America,11.800000000000002,34336,68.5,0,124136
+1028.0,University of Illinois at Urbana-Champaign,United States of America,18.7,51272,68.0,0,135872
+1029.0,Washington University in St Louis,United States of America,5.7,10649,61.4,0,62640
+1030.0,École Normale Supérieure,France,7.900000000000001,2880,60.166666666666664,0,7776
+1031.0,University of Wisconsin,United States of America,0.0,0,0.0,0,0
+1032.0,École Polytechnique Fédérale de Lausanne,Switzerland,10.5,31318,56.5,0,42337
+1033.0,University of Minnesota,United States of America,18.0,30436,62.2,0,112380
+1034.0,University of Massachusetts,United States of America,13.0,37593,49.666666666666664,0,174295
+1035.0,LMU Munich,Germany,15.5,27839,63.0,0,81375
+1036.0,University of Pittsburgh,United States of America,5.8,15891,52.0,0,77866
+1037.0,Ohio State University,United States of America,13.4,30877,61.0,0,131228
+1038.0,William & Mary,United States of America,11.800000000000002,1652,44.666666666666664,0,10856
+1039.0,Trinity College Dublin,Ireland,18.0,23282,39.0,0,40044
+1040.0,King’s College London,United Kingdom,11.4,47495,54.666666666666664,0,50062
+1041.0,The University of Queensland,Australia,32.7,46869,48.6,0,81587
+1042.0,Heidelberg University,Germany,24.5,29459,59.5,0,77979
+1043.0,London School of Economics and Political Science,United Kingdom,0.0,0,0.0,0,0
+1044.0,"Rutgers, the State University of New Jersey",United States of America,17.3,14813,47.8,0,90728
+1045.0,Purdue University,United States of America,18.1,43182,55.2,0,113842
+1046.0,Pennsylvania State University,United States of America,12.4,32041,52.5,0,144183
+1047.0,University of Hawai’i at Mānoa,United States of America,0.0,0,0.0,0,0
+1048.0,KU Leuven,Belgium,41.9,45903,55.333333333333336,0,117308
+1049.0,University of Freiburg,Germany,31.2,25408,43.5,0,76225
+1050.0,Pierre and Marie Curie University,France,8.7,25076,52.8,0,72441
+1051.0,Wageningen University and Research Center,Netherlands,17.0,9710,50.0,0,20346
+1052.0,Indiana University,United States of America,13.6,40604,47.0,0,146800
+1053.0,Georgia Health Sciences University,United States of America,0.0,0,0.0,0,0
+1054.0,University of Würzburg,Germany,38.4,2126,49.0,0,11428
+1055.0,KTH Royal Institute of Technology,Sweden,14.6,15198,44.666666666666664,0,50660
+1056.0,University of Wisconsin-Madison,United States of America,10.8,21810,70.6,0,97155
+1057.0,Texas A&M University,United States of America,21.4,18237,44.25,0,107393
+1058.0,Paris Diderot University – Paris 7,France,14.8,23593,27.0,0,51349
+1059.0,Queen’s University,Canada,22.1,2049,40.0,0,8605
+1060.0,Technion Israel Institute of Technology,Israel,19.4,554,45.0,0,9006
+1061.0,Ulm University,Germany,11.2,919,35.0,0,4869
+1062.0,University at Buffalo,United States of America,19.0,14631,42.0,0,40812
+1063.0,University of Medicine and Dentistry of New Jersey,United States of America,0.0,0,0.0,0,0
+1064.0,University of South Carolina,United States of America,0.0,0,0.0,0,0
+1065.0,University of Western Ontario,Canada,0.0,0,0.0,0,0
+1066.0,Colorado State University,United States of America,0.0,0,0.0,0,0
+1067.0,State University of New York Albany,United States of America,0.0,0,0.0,0,0
+1068.0,University of Milan-Bicocca,Italy,0.0,0,0.0,0,0
+1069.0,University of Missouri,United States of America,0.0,0,0.0,0,0
+1070.0,Brunel University London,United Kingdom,0.0,0,0.0,0,0
+1071.0,Queen’s University Belfast,United Kingdom,17.9,5382,34.0,0,8252
+1072.0,TU Dresden,Germany,37.4,4258,40.0,0,20582
+1073.0,Montpellier University,France,0.0,0,0.0,0,0
+1074.0,State University of Campinas,Brazil,0.0,0,0.0,0,0
+1075.0,Technical University of Darmstadt,Germany,0.0,0,0.0,0,0
+1076.0,Tokyo Medical and Dental University (TMDU),Japan,0.0,0,0.0,0,0
+1077.0,UiT The Arctic University of Norway,Norway,0.0,0,0.0,0,0
+1078.0,"Binghamton University, State University of New York",United States of America,0.0,0,0.0,0,0
+1079.0,National Taiwan University of Science and Technology (Taiwan Tech),Taiwan,0.0,0,0.0,0,0
+1080.0,Sungkyunkwan University (SKKU),South Korea,20.3,4386,49.5,0,29725
+1081.0,University of Oklahoma,United States of America,0.0,0,0.0,0,0
+1082.0,University of South Florida,United States of America,0.0,0,0.0,0,0
+1083.0,Washington State University,United States of America,0.0,0,0.0,0,0
+1084.0,Leibniz University of Hanover,Germany,0.0,0,0.0,0,0
+1085.0,New University of Lisbon,Portugal,0.0,0,0.0,0,0
+1086.0,University of Paris North – Paris 13,France,0.0,0,0.0,0,0
+1087.0,Paris-Sud University,France,15.0,18770,40.0,0,110412
+1088.0,"St George’s, University of London",United Kingdom,13.4,503,23.0,0,1154
+1089.0,Koç University,Turkey,0.0,0,0.0,0,0
+1090.0,Bayreuth University,Germany,0.0,0,0.0,0,0
+1091.0,University of Montana,United States of America,0.0,0,0.0,0,0
+1092.0,King Mongkut’s University of Technology Thonburi,Thailand,0.0,0,0.0,0,0
+1093.0,Paris Dauphine University,France,0.0,0,0.0,0,0
+1094.0,University of Technology Sydney,Australia,0.0,0,0.0,0,0
+1095.0,"University of the Andes, Colombia",Colombia,0.0,0,0.0,0,0
+1096.0,University of Nebraska-Lincoln,United States of America,0.0,0,0.0,0,0
+1097.0,"China Medical University, Taiwan",Taiwan,0.0,0,0.0,0,0
+1098.0,University of Rovira i Virgili,Spain,0.0,0,0.0,0,0
+1099.0,Sabancı University,Turkey,15.9,164,26.0,0,1671
+1100.0,Lappeenranta University of Technology,Finland,0.0,0,0.0,0,0
+1101.0,University of Macau,Macau,0.0,0,0.0,0,0
+1102.0,University of Marrakech Cadi Ayyad,Morocco,0.0,0,0.0,0,0
+1103.0,University of Rome III,Italy,0.0,0,0.0,0,0
+1104.0,Western Sydney University,Australia,0.0,0,0.0,0,0
+1105.0,Scuola Superiore Sant’Anna,Italy,0.0,0,0.0,0,0
+1106.0,University of Luxembourg,Luxembourg,0.0,0,0.0,0,0
+1107.0,Charité - Universitätsmedizin Berlin,Germany,6.6,1096,37.0,0,2467
+1108.0,Copenhagen Business School,Denmark,0.0,0,0.0,0,0
+1109.0,Oregon Health and Science University,United States of America,0.0,0,0.0,0,0
+1110.0,Peter the Great St Petersburg Polytechnic University,Russia,0.0,0,0.0,0,0
+1111.0,Royal Veterinary College,United Kingdom,0.0,0,0.0,0,0
+1112.0,Tomsk Polytechnic University,Russia,0.0,0,0.0,0,0
+1113.0,Kazan Federal University,Russia,0.0,0,0.0,0,0
+1114.0,Toulouse 1 Capitole University,France,0.0,0,0.0,0,0
+1115.0,VŠB - Technical University of Ostrava,Czech Republic,0.0,0,0.0,0,0
+1116.0,University of St Gallen,Switzerland,0.0,0,0.0,0,0
+1117.0,Instituto Superior Técnico Lisboa,Portugal,0.0,0,0.0,0,0
+1118.0,Panthéon-Sorbonne University – Paris 1,France,0.0,0,0.0,0,0
+1119.0,University of South Dakota,United States of America,0.0,0,0.0,0,0
+1120.0,Lille 2 University – Health and Law,France,0.0,0,0.0,0,0
+1121.0,Verona University,Italy,0.0,0,0.0,0,0
+1122.0,American University,United States of America,0.0,0,0.0,0,0
+1123.0,Bournemouth University,United Kingdom,0.0,0,0.0,0,0
+1124.0,Brno University of Technology,Czech Republic,0.0,0,0.0,0,0
+1125.0,Ca’ Foscari University of Venice,Italy,0.0,0,0.0,0,0
+1126.0,University of Kaiserslautern,Germany,0.0,0,0.0,0,0
+1127.0,Louisiana State University,United States of America,0.0,0,0.0,0,0
+1128.0,National Institute of Applied Sciences of Lyon (INSA Lyon),France,0.0,0,0.0,0,0
+1129.0,The Open University,United Kingdom,0.0,0,0.0,0,0
+1130.0,Oxford Brookes University,United Kingdom,0.0,0,0.0,0,0
+1131.0,University of Rome II – Tor Vergata,Italy,0.0,0,0.0,0,0
+1132.0,University of San Francisco,United States of America,0.0,0,0.0,0,0
+1133.0,Southern Cross University,Australia,0.0,0,0.0,0,0
+1134.0,Ulster University,United Kingdom,0.0,0,0.0,0,0
+1135.0,Université du Québec à Montréal,Canada,0.0,0,0.0,0,0
+1136.0,Universiti Teknologi Malaysia,Malaysia,0.0,0,0.0,0,0
+1137.0,University of Urbino Carlo Bo,Italy,0.0,0,0.0,0,0
+1138.0,University of Arkansas,United States of America,0.0,0,0.0,0,0
+1139.0,Bauman Moscow State Technical University,Russia,0.0,0,0.0,0,0
+1140.0,University of Canberra,Australia,0.0,0,0.0,0,0
+1141.0,Central Queensland University,Australia,0.0,0,0.0,0,0
+1142.0,De Montfort University,United Kingdom,0.0,0,0.0,0,0
+1143.0,Edith Cowan University,Australia,0.0,0,0.0,0,0
+1144.0,Indian Institute of Technology Guwahati,India,0.0,0,0.0,0,0
+1145.0,Montana State University,United States of America,0.0,0,0.0,0,0
+1146.0,Monterrey Institute of Technology and Higher Education,Mexico,0.0,0,0.0,0,0
+1147.0,Oklahoma State University,United States of America,0.0,0,0.0,0,0
+1148.0,Otto von Guericke University of Magdeburg,Germany,0.0,0,0.0,0,0
+1149.0,Palacký University in Olomouc,Czech Republic,0.0,0,0.0,0,0
+1150.0,Pontifical Catholic University of Rio de Janeiro (PUC-Rio),Brazil,0.0,0,0.0,0,0
+1151.0,Quaid-i-azam University,Pakistan,0.0,0,0.0,0,0
+1152.0,Université de Sherbrooke,Canada,0.0,0,0.0,0,0
+1153.0,Soochow University,China,0.0,0,0.0,0,0
+1154.0,Tallinn University of Technology,Estonia,0.0,0,0.0,0,0
+1155.0,University of Tulsa,United States of America,0.0,0,0.0,0,0
+1156.0,University of Wisconsin-Milwaukee,United States of America,0.0,0,0.0,0,0
+1157.0,Xi’an Jiaotong University,China,0.0,0,0.0,0,0
+1158.0,Adam Mickiewicz University,Poland,0.0,0,0.0,0,0
+1159.0,Alexandru Ioan Cuza University,Romania,0.0,0,0.0,0,0
+1160.0,Aligarh Muslim University,India,0.0,0,0.0,0,0
+1161.0,American University of Sharjah,United Arab Emirates,0.0,0,0.0,0,0
+1162.0,Amrita University,India,0.0,0,0.0,0,0
+1163.0,Anadolu University,Turkey,0.0,0,0.0,0,0
+1164.0,Andhra University,India,0.0,0,0.0,0,0
+1165.0,University of Antioquia,Colombia,0.0,0,0.0,0,0
+1166.0,"Asia University, Taiwan",Taiwan,0.0,0,0.0,0,0
+1167.0,Athens University of Economics and Business,Greece,0.0,0,0.0,0,0
+1168.0,Auckland University of Technology,New Zealand,0.0,0,0.0,0,0
+1169.0,Austral University of Chile,Chile,0.0,0,0.0,0,0
+1170.0,Belarusian State University,Belarus,0.0,0,0.0,0,0
+1171.0,"Birla Institute of Technology and Science, Pilani",India,0.0,0,0.0,0,0
+1172.0,"California State University, Long Beach",United States of America,0.0,0,0.0,0,0
+1173.0,University of Castilla-La Mancha,Spain,0.0,0,0.0,0,0
+1174.0,University of Cergy-Pontoise,France,0.0,0,0.0,0,0
+1175.0,China University of Petroleum (Beijing),China,0.0,0,0.0,0,0
+1176.0,Coventry University,United Kingdom,0.0,0,0.0,0,0
+1177.0,University of Dhaka,Bangladesh,0.0,0,0.0,0,0
+1178.0,Dublin Institute of Technology,Ireland,0.0,0,0.0,0,0
+1179.0,Erciyes University,Turkey,0.0,0,0.0,0,0
+1180.0,Federal University of Paraná (UFPR),Brazil,0.0,0,0.0,0,0
+1181.0,Federal University of Viçosa,Brazil,0.0,0,0.0,0,0
+1182.0,Federal University of Lavras,Brazil,0.0,0,0.0,0,0
+1183.0,Gdańsk University of Technology,Poland,0.0,0,0.0,0,0
+1184.0,University of Ghana,Ghana,0.0,0,0.0,0,0
+1185.0,Glasgow Caledonian University,United Kingdom,0.0,0,0.0,0,0
+1186.0,University of Greenwich,United Kingdom,0.0,0,0.0,0,0
+1187.0,University of Huddersfield,United Kingdom,0.0,0,0.0,0,0
+1188.0,University of Ibadan,Nigeria,0.0,0,0.0,0,0
+1189.0,University of Indonesia,Indonesia,0.0,0,0.0,0,0
+1190.0,University of Jordan,Jordan,0.0,0,0.0,0,0
+1191.0,Jordan University of Science and Technology,Jordan,0.0,0,0.0,0,0
+1192.0,K.N. Toosi University of Technology,Iran,0.0,0,0.0,0,0
+1193.0,Khon Kaen University,Thailand,0.0,0,0.0,0,0
+1194.0,Kingston University,United Kingdom,0.0,0,0.0,0,0
+1195.0,Kinki University,Japan,0.0,0,0.0,0,0
+1196.0,Kyushu Institute of Technology,Japan,0.0,0,0.0,0,0
+1197.0,University of Latvia,Latvia,0.0,0,0.0,0,0
+1198.0,Lille 1 University – Science and Technology,France,0.0,0,0.0,0,0
+1199.0,University of Lincoln,United Kingdom,0.0,0,0.0,0,0
+1200.0,Middlesex University,United Kingdom,0.0,0,0.0,0,0
+1201.0,University of Nairobi,Kenya,0.0,0,0.0,0,0
+1202.0,National Chengchi University,Taiwan,0.0,0,0.0,0,0
+1203.0,National University of Science and Technology (MISiS),Russia,0.0,0,0.0,0,0
+1204.0,National University of Sciences and Technology,Pakistan,0.0,0,0.0,0,0
+1205.0,Northumbria University,United Kingdom,0.0,0,0.0,0,0
+1206.0,Nottingham Trent University,United Kingdom,0.0,0,0.0,0,0
+1207.0,University of Pardubice,Czech Republic,0.0,0,0.0,0,0
+1208.0,Paris-Sorbonne University – Paris 4,France,0.0,0,0.0,0,0
+1209.0,Pontifical Catholic University of Paraná,Brazil,0.0,0,0.0,0,0
+1210.0,Pontifical Catholic University of Rio Grande do Sul (PUCRS),Brazil,0.0,0,0.0,0,0
+1211.0,Pontifical Catholic University of Valparaíso,Chile,0.0,0,0.0,0,0
+1212.0,Prince of Songkla University,Thailand,0.0,0,0.0,0,0
+1213.0,Qatar University,Qatar,0.0,0,0.0,0,0
+1214.0,Rio de Janeiro State University (UERJ),Brazil,0.0,0,0.0,0,0
+1215.0,University of Salford,United Kingdom,0.0,0,0.0,0,0
+1216.0,"University of Santiago, Chile (USACH)",Chile,0.0,0,0.0,0,0
+1217.0,São Paulo State University (UNESP),Brazil,0.0,0,0.0,0,0
+1218.0,Savitribai Phule Pune University,India,0.0,0,0.0,0,0
+1219.0,Shahid Beheshti University,Iran,0.0,0,0.0,0,0
+1220.0,Shantou University,China,0.0,0,0.0,0,0
+1221.0,Sheffield Hallam University,United Kingdom,0.0,0,0.0,0,0
+1222.0,University of Silesia in Katowice,Poland,0.0,0,0.0,0,0
+1223.0,Slovak University of Technology in Bratislava,Slovakia,0.0,0,0.0,0,0
+1224.0,Sophia University,Japan,0.0,0,0.0,0,0
+1225.0,University of South Africa,South Africa,0.0,0,0.0,0,0
+1226.0,Southern Federal University,Russia,0.0,0,0.0,0,0
+1227.0,University of Southern Queensland,Australia,0.0,0,0.0,0,0
+1228.0,Suez Canal University,Egypt,0.0,0,0.0,0,0
+1229.0,Sultan Qaboos University,Oman,0.0,0,0.0,0,0
+1230.0,Suranaree University of Technology,Thailand,0.0,0,0.0,0,0
+1231.0,Taras Shevchenko National University of Kyiv,Ukraine,0.0,0,0.0,0,0
+1232.0,Texas Tech University,United States of America,0.0,0,0.0,0,0
+1233.0,Tokushima University,Japan,0.0,0,0.0,0,0
+1234.0,Tokyo University of Marine Science and Technology,Japan,0.0,0,0.0,0,0
+1235.0,Tomsk State University,Russia,0.0,0,0.0,0,0
+1236.0,Toyohashi University of Technology,Japan,0.0,0,0.0,0,0
+1237.0,Universiti Kebangsaan Malaysia,Malaysia,0.0,0,0.0,0,0
+1238.0,Universiti Putra Malaysia,Malaysia,0.0,0,0.0,0,0
+1239.0,Universiti Sains Malaysia,Malaysia,0.0,0,0.0,0,0
+1240.0,Universiti Teknologi MARA,Malaysia,0.0,0,0.0,0,0
+1241.0,Ural Federal University,Russia,0.0,0,0.0,0,0
+1242.0,V.N. Karazin Kharkiv National University,Ukraine,0.0,0,0.0,0,0
+1243.0,University of West Bohemia,Czech Republic,0.0,0,0.0,0,0
+1244.0,University of the West of England,United Kingdom,0.0,0,0.0,0,0
+1245.0,West University of Timişoara,Romania,0.0,0,0.0,0,0
+1246.0,University of Westminster,United Kingdom,0.0,0,0.0,0,0
+1247.0,Yıldız Technical University,Turkey,0.0,0,0.0,0,0

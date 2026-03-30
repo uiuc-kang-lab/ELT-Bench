@@ -1,0 +1,555 @@
+CUSTOMER_ID,NAME,ADDRESS,NUM_REVIEWS,PURCHASED_BEER_BY_ASB,DATE_FIRST_BOUGHT,NUM_NON_SWEETENED,BOUGHT_BEERS_CONTAIN_ARTIFICIAL_SWEETENER
+101811.0,Kenneth Walton,6715 Commonwealth Dr Sacramento CA,4,0,2015-06-06,5,1
+103508.0,Madeleine Jones,3603 Leola Way Sacramento CA,0,0,2015-03-06,7,0
+104939.0,Damen Wheeler,6740 Branwood Way Orangevale CA,0,0,2015-07-29,6,1
+105549.0,Kevin Gilbert,3198 Livingston Way Folsom CA,2,0,2015-07-10,5,0
+105771.0,John Young,663 Westward Way Sacramento CA,2,0,2015-09-14,7,0
+108708.0,Tommy Kono,3179 Camelia River Way Isleton CA,1,0,2014-08-12,12,1
+109251.0,Anna Himes,5507 Chimango Way Sacramento CA,1,0,2014-12-01,12,1
+110363.0,Marjorie Love,3462 Mellowoods Way Sacramento CA,2,0,2015-09-05,18,1
+111486.0,Nina Schreiner,1182 Dornajo Way Sacramento CA,4,0,2015-07-04,11,1
+111991.0,Marc Newfield,6887 Conklin Ct Sacramento CA,1,0,2015-01-27,10,1
+112690.0,Tom Hanks,9375 Ahart Way Ryde CA,0,0,2014-10-03,4,0
+116690.0,Christian Wellisch,8725 Capistrano Way Sacramento CA,3,0,2015-08-29,10,0
+116934.0,Audrey Tapp,2816 West Pkwy Sacramento CA,1,0,2015-05-10,16,1
+119406.0,Dallas Braden,9638 Chambord Ct Sacramento CA,1,0,2015-08-14,9,0
+121639.0,D.J. Countess,608 Alder Creek Dr Sacramento CA,1,0,2015-01-26,5,0
+122818.0,Beatrice Abramson,716 Durness Way Sacramento CA,2,0,2014-09-26,6,0
+127472.0,George Stanich,4486 Gloriann Way Ryde CA,2,0,2015-04-19,6,0
+128131.0,Tim Ocel,6962 Gardenside Ct Sacramento CA,0,0,2015-06-03,14,0
+132454.0,Dawn Childress,4237 Rock House Cir N Sacramento CA,1,0,2014-11-06,14,0
+134457.0,Alice Novak,1573 Layton Dr Sacramento CA,2,0,2015-03-24,6,0
+137696.0,Sherry Metz,9054 Ladefonos Ct Ryde CA,6,0,2014-11-26,16,0
+143878.0,Sylvia Finley,4892 Waterash Way Sacramento CA,3,0,2015-08-28,16,1
+145929.0,Joyce Meadows,3426 Cliff Breeze Pl Sacramento CA,2,0,2015-04-25,12,0
+147216.0,Cassandra Whyte,7635 Amelia Earhart Ave Sacramento CA,2,0,2015-06-04,20,1
+147218.0,Madeleine Savoie,884 J St Sacramento CA,2,0,2015-09-29,6,0
+147543.0,Bud Stewart,211 Maple Glen Rd Sacramento CA,2,0,2014-10-06,11,1
+149240.0,Frenchy Bordagaray,7125 Fig St Sacramento CA,2,0,2014-12-04,16,1
+154427.0,Mark McLemore,1215 Rodeo Dr Sacramento CA,0,0,2015-01-26,10,1
+157388.0,David Cooke,9830 Bradshaw Rd Sacramento CA,2,0,2014-12-09,15,1
+157695.0,Catherine Doane,7530 Silent Wings Way Sacramento CA,2,0,2015-03-16,18,0
+158310.0,Doris Garrett,2178 Yellowhammer Ct Carmichael CA,1,0,2014-10-22,9,0
+158528.0,Lauren McFall,7229 Calle Verde Ct Sacramento CA,2,0,2015-07-20,14,1
+160392.0,Randall Bal,136 Marble Crest Ct Courtland CA,0,0,2015-06-03,9,1
+161175.0,Adam Jennings,1063 Wintermist Ct Sacramento CA,2,0,2015-08-27,12,0
+161942.0,Harvey Nitz,8146 Meghan Way Sacramento CA,3,0,2014-08-30,16,0
+162236.0,Naomi Donald,3661 Symphony Ct Sacramento CA,1,0,2015-02-09,7,0
+166135.0,Adam Jahn,138 Petaluma Ct Folsom CA,1,0,2014-11-10,11,0
+166612.0,Eric Hansen,809 Rancho Roble Way Sacramento CA,1,0,2014-07-17,15,1
+166735.0,Susan Howard,9290 Winoco Ct Sacramento CA,2,0,2015-01-31,10,1
+168607.0,Angela Metzger,4482 Stillwater Way Sacramento CA,3,0,2015-05-20,8,0
+170500.0,Violet Ramey,2398 Brand Way Sacramento CA,3,0,2015-05-25,10,1
+173125.0,Timothy Busfield,7453 Halo Ave Sacramento CA,0,0,2015-08-02,8,1
+173380.0,Charles Mann,3691 Fox Hollow Ln Citrus Heights CA,1,0,2015-09-17,4,0
+175871.0,Larry Linville,4792 Butterfield Way Sacramento CA,6,0,2015-05-06,9,0
+175940.0,Derek Miles,4409 Brook Bay Way Walnut Grove CA,3,0,2014-09-04,19,1
+178806.0,Mary Whipple,8552 Meadowglen Ave Sacramento CA,2,0,2015-03-21,5,0
+182040.0,Matt Walbeck,910 Garner Ct Sacramento CA,0,0,2015-07-12,9,1
+183797.0,Maxine Hamer,383 Colonsay Way Rancho Cordova CA,1,0,2014-12-26,14,0
+185863.0,Constance Gonzalez,1684 Country Haven Ct Elk Grove CA,4,0,2015-06-15,11,1
+186353.0,Edith Hutton,5581 Merton Way Sacramento CA,2,0,2015-07-02,6,0
+189441.0,Jim Loscutoff,1526 Holiday Cove Ct Sacramento CA,2,0,2015-05-20,7,0
+189953.0,Brenda Song,7324 Moddison Ave Carmichael CA,4,0,2014-11-23,16,0
+190721.0,Priscilla Oliver,1339 Loazell Ct Sacramento CA,6,0,2015-03-06,13,1
+191050.0,Charlene Boss,9938 Longridge Way Sacramento CA,3,0,2015-09-15,8,0
+191951.0,Megan Musgrove,3465 Pepperwood Knoll Ln Sacramento CA,1,0,2015-05-13,12,0
+192738.0,Steve Sax,3117 Glacken Way Sacramento CA,1,0,2015-08-26,9,1
+193914.0,Toni Storey,6919 Middle River Ct Sacramento CA,1,0,2015-05-13,19,0
+193968.0,Marjorie Pettus,2049 Meadowbrook Rd Sacramento CA,0,0,2014-11-06,15,0
+194680.0,Sasha Victorine,2258 Bowie Ct Courtland CA,2,0,2015-06-12,17,1
+196068.0,Theresa Mireles,1869 Bulwick Ct Sacramento CA,0,0,2015-07-29,11,1
+197102.0,Renee Galyan,8918 Mossy Bank Dr Sacramento CA,2,0,2015-07-27,8,1
+199895.0,Philip Levine,6467 Ferragamo Way Sacramento CA,2,0,2014-10-22,12,1
+200272.0,Jane O'Neill,3709 Sunfaire Ln Mather CA,0,0,2015-05-28,14,1
+202612.0,LeVar Burton,9224 Belladonna Ct Sacramento CA,4,0,2015-07-29,14,0
+203787.0,Amanda Kershaw,4297 Ewing Way Sacramento CA,1,0,2014-11-27,11,1
+204295.0,Opal Barnette,8828 Ost Pl Sacramento CA,1,0,2015-02-17,8,0
+205190.0,Lincoln Steffens,61 Explorer Dr Folsom CA,1,0,2015-06-01,5,0
+205878.0,Ryan Coogler,8369 Sadie Ct Sacramento CA,1,0,2015-09-18,15,1
+205927.0,Anthony Swofford,465 Jacinto Ave North Highlands CA,2,0,2015-09-02,12,0
+206078.0,Marcos Breton,4004 Fall River Way Sacramento CA,1,0,2015-03-25,4,0
+207846.0,Urijah Faber,7424 Long River Dr Sacramento CA,2,0,2014-07-13,16,1
+214537.0,Sue Gregory,5936 Cedar Rock Cir Sacramento CA,3,0,2014-10-22,12,0
+216081.0,Jeff Float,9135 Roemer Ln Sacramento CA,4,0,2015-04-30,9,0
+216475.0,Eleanor Dillow,4027 Mountain View Ave Sacramento CA,0,0,2015-08-31,12,1
+218889.0,Doris Morelli,736 Mahonia Cir Isleton CA,3,0,2015-02-15,10,0
+220206.0,Brent Bourgeois,4967 Kimmie Ct Sacramento CA,2,0,2015-03-16,16,1
+224094.0,Lynn Newhart,1676 San Mateo Ct Antelope CA,6,0,2015-03-18,5,0
+225489.0,Annette Woolard,342 Manmar Way Walnut Grove CA,2,0,2015-02-19,12,0
+226209.0,Tim McCord,5383 Tanzanite Way Wilton CA,1,0,2015-08-26,8,0
+226909.0,Sandie Reed,8291 Munson Way Sacramento CA,3,0,2015-09-10,14,1
+227372.0,Peg Winchester,3546 Glen Springs Way Elverta CA,3,0,2014-11-16,13,0
+227456.0,Kathy Kerr,6709 Ashford Hill Pl Sacramento CA,1,0,2015-01-29,8,0
+229742.0,Annette Nielsen,9472 Calistoga Way Carmichael CA,2,0,2015-02-06,7,0
+230467.0,Erik Lobo,224 Tennis Ct Sacramento CA,3,0,2015-08-20,10,1
+230602.0,May Tapp,1672 Olympic Way Sacramento CA,1,0,2014-12-20,12,1
+231615.0,Richard Rodriguez,8026 Bowen Cir Sacramento CA,0,0,2015-08-25,9,0
+233813.0,J.P. Howell,4946 Dylan Ave Sacramento CA,3,0,2015-07-23,11,1
+233956.0,James Irvin,4934 Sage Thrasher Cir Elverta CA,1,0,2015-02-18,9,0
+235720.0,Loreto Garza,6290 Sandpointe Ct Sacramento CA,2,0,2015-08-29,11,1
+236554.0,Rich Manning,919 Idle Wild Way Sacramento CA,2,0,2015-04-30,13,1
+238347.0,Candace Askins,1014 Viking Dr Sacramento CA,2,0,2014-12-28,12,0
+240205.0,Anna Mcconnell,4241 Elbert Way Sacramento CA,1,0,2015-03-25,6,0
+241144.0,Verna Alfred,5388 Delwood Way Sacramento CA,1,0,2015-08-02,9,0
+242720.0,Randy Lerch,690 E Elkhorn Blvd North Highlands CA,4,0,2015-05-02,19,1
+244282.0,Sabrina Hansen,9 Dondra Way Sacramento CA,2,0,2015-03-19,6,0
+245577.0,Kevin Sharp,8650 Moffatt Way Sacramento CA,3,0,2015-01-29,14,1
+247216.0,Chloe Sutton,3571 Weldon Way Sacramento CA,1,0,2014-12-07,14,0
+249188.0,Isaiah Ross,6790 Los Coches Way Orangevale CA,3,0,2015-04-11,10,0
+249779.0,Scott Pruett,5766 Parklite Cir Antelope CA,2,0,2015-06-05,14,1
+250266.0,Mildred Shafer,2288 Piercy Way Sacramento CA,4,0,2015-02-22,9,1
+253106.0,Candace Moriarty,2737 Vallecitos Way Sacramento CA,2,0,2015-05-27,15,1
+256181.0,William Everson,1952 Husch Way Sacramento CA,3,0,2015-01-12,12,1
+262579.0,Mattie Ryan,7930 Staggs Way Elk Grove CA,2,0,2015-06-13,7,0
+262638.0,Brian Henninger,9729 Koyama Ct Sacramento CA,4,0,2015-09-14,10,0
+265133.0,Denise Steele,2232 Boswell Ct Sacramento CA,4,0,2015-05-21,7,0
+265339.0,Jamie Bottoms,8246 Singleton Ct Sacramento CA,2,0,2015-05-12,7,0
+265707.0,Marko Cavka,6677 Southland Way Sacramento CA,1,0,2014-12-28,13,0
+266633.0,Etu Molden,955 Munger Way Sacramento CA,5,0,2015-06-03,10,1
+267632.0,Randy Veres,7939 Ruge Ct Sacramento CA,3,0,2015-07-29,8,1
+269687.0,Scott Smith,8867 Belle Fleur Way Isleton CA,2,0,2014-09-10,10,0
+270853.0,Helen Oliver,1281 Poinsettia Ct Sacramento CA,0,0,2015-07-21,16,1
+271531.0,Mildred Masters,9480 Irvin Way Sacramento CA,1,0,2015-05-19,7,1
+274541.0,Joanna Benson,422 Adkinson Ct Sacramento CA,5,0,2014-08-09,9,0
+275152.0,Anthony Padilla,1968 Rosa Del Rio Way Sacramento CA,0,0,2015-02-25,9,0
+276549.0,John Bowker,3500 Carsington Way Sacramento CA,1,0,2015-04-04,9,0
+277310.0,Delores Ramey,4055 Tenwoods Ct Sacramento CA,5,0,2015-07-28,7,1
+277373.0,Mike Flanagan,5486 Gustine Way Elk Grove CA,3,0,2014-11-07,7,0
+278204.0,Ann Spencer,338 Raymar Way Sacramento CA,3,0,2015-04-13,7,0
+278809.0,Darrin Nelson,5964 Pintado Ct Sacramento CA,0,0,2014-12-04,9,0
+283158.0,Thelma Armstead,9078 Shadowglen Rd Sacramento CA,2,0,2015-04-05,10,1
+286196.0,Matt Bouza,2228 Shepard Ave Elverta CA,1,0,2014-11-20,8,1
+289693.0,Scott Galbraith,6725 Sher Ct Sacramento CA,2,0,2015-01-22,8,0
+292402.0,Onterrio Smith,3849 Frizell Ave Sacramento CA,0,0,2014-10-25,14,0
+296208.0,Leticia Delisle,2816 Hesket Way Sacramento CA,4,0,2014-12-25,7,0
+296353.0,Greg Vaughn,6109 River Grove Cir Citrus Heights CA,0,0,2015-08-19,17,1
+296886.0,Pam Doane,2241 L St Fair Oaks CA,0,0,2015-08-25,11,0
+297686.0,Constance Weaver,134 La Gama Ct Sacramento CA,1,0,2015-06-17,9,1
+298508.0,Emily Jardine,6106 Tiogawoods Dr Sacramento CA,0,0,2015-08-05,10,0
+301793.0,Eric Heiden,778 Acero Ct Sacramento CA,0,0,2015-05-06,11,0
+302774.0,Mike Patterson,9198 Temwoods Way Sacramento CA,3,0,2015-05-30,12,0
+304344.0,Mark Allen,9791 Turnbridge Dr Sacramento CA,0,0,2015-01-24,18,1
+305005.0,Spencer Levin,3474 Breanna Ct Sacramento CA,3,0,2015-04-01,15,1
+306475.0,Kris Ryan,6768 Oaken Bucket Ct Sacramento CA,1,0,2014-08-14,12,0
+306853.0,Bob Forsch,6497 Verna Way Sacramento CA,2,0,2015-06-22,10,0
+308505.0,Andy Fox,484 Dickson St Sacramento CA,0,0,2015-03-23,15,0
+308662.0,Annette Schmitt,8791 Flowerwood Way Sacramento CA,4,0,2015-01-14,8,0
+308688.0,Tammy Reynolds,5229 Middlesax Way Sacramento CA,3,0,2015-08-24,5,0
+310195.0,Lori Breazeale,4672 Tungsten Way Sacramento CA,2,0,2015-01-15,8,1
+315634.0,Karen Kijewski,5473 Pasadena Ave Elk Grove CA,0,0,2015-07-27,8,1
+317461.0,Megan Hsu,8265 Predial Way Sacramento CA,2,0,2015-05-18,14,1
+317807.0,Joel Jones,3463 Durney Ct Sacramento CA,2,0,2015-03-23,13,1
+319387.0,Malachi Davis,6230 Eversley Ct Sacramento CA,2,0,2015-05-17,9,1
+323830.0,Darnell Hillman,5530 Reef Ct Sacramento CA,2,0,2015-09-25,3,0
+324435.0,Teddy Bruschi,5355 Surf Way Sacramento CA,2,0,2014-08-02,12,0
+325263.0,Kathleen Boehmer,607 Arrowood Ct Rancho Cordova CA,3,0,2014-12-26,17,1
+327750.0,Ethel Atherton,9102 Peridot Ct Sacramento CA,3,0,2015-09-22,8,1
+329994.0,Thomas Kelly,3823 Schiro Ct Sacramento CA,2,0,2014-12-19,9,1
+330223.0,Mel Hutchins,1046 Auburn Blvd Sacramento CA,4,0,2015-03-05,12,0
+330570.0,Tyson Griffin,5874 Priscilla Ln Sacramento CA,3,0,2015-09-04,6,1
+331115.0,Janet Koons,5726 Jefferson Ave North Highlands CA,5,0,2015-01-27,14,1
+332324.0,Sheila Hudson,4685 Flowerwood Way Sacramento CA,2,0,2015-01-14,11,0
+336644.0,Charlie Zink,4011 Life Ave Sacramento CA,3,0,2014-10-23,14,1
+343021.0,Brad Lidge,7335 Loma Oak Ct Herald CA,1,0,2015-03-25,9,0
+344702.0,John Gibson,2000 De Costa Ave Rancho Cordova CA,1,0,2015-05-07,22,1
+345348.0,Ada Belle,7669 Gardenwood Way Sacramento CA,0,0,2015-07-31,10,1
+345748.0,Vance Worley,1297 Goethe Rd Sacramento CA,2,0,2015-08-12,7,0
+346006.0,Kristi Kirk,8664 Beret Ln North Highlands CA,4,0,2015-04-01,18,1
+347189.0,Blanche Decker,9874 Accrington Way Sacramento CA,2,0,2015-03-18,9,1
+347659.0,Isabel Kerr,3904 Faldo Ct Sacramento CA,2,0,2015-07-14,13,1
+352644.0,Jimmy Smith,9978 Glenleigh Ct Sacramento CA,3,0,2015-05-23,16,0
+353846.0,Roberta Otten,7033 Calmo Way Sacramento CA,0,0,2015-09-30,8,0
+355107.0,Ephraim Salaam,7309 Sea Glass Way Sacramento CA,1,0,2015-05-07,15,0
+357579.0,Cynthia Robinson,9816 Gold Point Way Carmichael CA,1,0,2014-12-16,9,0
+358901.0,Michelle Carpenter,6724 Gallop Ct Sacramento CA,4,0,2015-02-02,16,1
+363931.0,Ryan Dinwiddie,1818 Coberly Ct Sacramento CA,0,0,2015-01-15,8,1
+366695.0,Audrey Higginbotham,3540 Richfield Way Carmichael CA,2,0,2015-03-01,13,0
+370366.0,Dion James,6548 Maybrook Dr Sacramento CA,5,0,2015-09-19,5,0
+370870.0,Nicholas Sparks,9201 Thermiac Gulf Way Sacramento CA,3,0,2014-09-15,10,0
+371731.0,Veronica Bouchart,6229 Blaze Ct Sacramento CA,0,0,2015-05-18,17,1
+373200.0,Rene Syler,1551 Holford Way Sacramento CA,1,0,2015-09-18,24,0
+378374.0,Vic Grimes,5318 Silver Sea Way Mather CA,2,0,2014-10-24,20,0
+380003.0,Amobi Okugo,7399 Mariposa Ave Sacramento CA,1,0,2014-12-15,9,1
+383684.0,Derrick Lewis,735 Fuchsia Ct Sacramento CA,3,0,2015-08-30,3,1
+384899.0,Charles Schwab,4188 Clarity Ct Sacramento CA,1,0,2015-09-16,8,1
+385115.0,Pete Ranzany,3661 Napa Ave Citrus Heights CA,1,0,2015-05-16,12,0
+386336.0,Maxine Perrin,9352 Oterol Ct Sacramento CA,3,0,2014-10-16,6,0
+386950.0,Sheri O'Brian,5649 Proper Ct Sacramento CA,3,0,2015-02-04,5,0
+390130.0,Sab Shimono,2316 Akins Ct Sacramento CA,0,0,2015-04-20,6,1
+393120.0,Lula Hsu,9127 Deer Fern Ct Rancho Cordova CA,0,0,2015-03-31,10,1
+393893.0,Donald Butler,7465 Bevil St Fair Oaks CA,2,0,2015-09-11,11,1
+395125.0,Rowland Office,1070 Bandon Way Sacramento CA,2,0,2015-09-02,11,1
+396166.0,Nina Sanders,1750 Villajoy Way Sacramento CA,1,0,2015-06-27,18,0
+403000.0,Teresa Wilber,5557 Old Kent Ln Sacramento CA,3,0,2015-07-11,10,0
+404678.0,Anna Kirk,6693 Goldsboro Ct Folsom CA,2,0,2015-01-07,19,1
+405322.0,Phil Tayag,5939 De Rosa Ct Sacramento CA,3,0,2015-02-04,5,0
+405671.0,Toni Case,1130 Deer Lake Dr Sacramento CA,1,0,2015-09-18,5,0
+407605.0,Leland Glass,2047 Historic Aly Sacramento CA,4,0,2015-06-05,21,1
+408341.0,Emily Fender,4793 Fox Hollow Ln Sacramento CA,1,0,2015-02-18,12,0
+409910.0,Lester Holt,8563 Bailey Way Sacramento CA,1,0,2014-12-21,7,0
+412235.0,Olivia Fulks,4511 E Socap Walk Sacramento CA,2,0,2015-08-18,12,0
+412544.0,Jay Hughes,5622 Mathews Way Sacramento CA,2,0,2015-07-12,18,0
+412876.0,Leila Olson,6584 Roseville Rd Sacramento CA,3,0,2015-03-31,7,0
+412929.0,Ashley Boyd,8949 Colgate Ct Sacramento CA,2,0,2015-04-04,10,1
+413292.0,Verna Drayton,9115 Fawnridge Way Sacramento CA,3,0,2014-10-24,13,0
+413495.0,Jeremy Powell,3118 Lakewood Rd Sacramento CA,4,0,2014-10-28,5,0
+414509.0,Amanda Blake,8755 Castro Way Sacramento CA,1,0,2015-05-29,8,0
+415869.0,Joyce Fulks,9600 Andrea Blvd Sacramento CA,4,0,2015-03-18,9,0
+416523.0,Lynne Metz,9386 Down River Ct Citrus Heights CA,3,0,2014-11-06,13,1
+417823.0,Joyce Krieg,8319 Delcliff Cir Sacramento CA,1,0,2015-06-01,11,1
+418506.0,Dusty Baker,4248 Mullein Ct Rio Linda CA,2,0,2015-03-29,13,0
+418521.0,Holly Jacobsen,2319 Cannon St Sacramento CA,0,0,2015-05-03,6,0
+418635.0,Scott Schwartz,9396 Danbrook Dr Sacramento CA,3,0,2014-12-28,13,1
+420981.0,Tom Johnson,5531 Delagua Way Sacramento CA,2,0,2015-07-17,9,1
+421074.0,N.T. McQueen,4900 Monument Dr Sacramento CA,5,0,2014-12-25,9,0
+422592.0,Pete Dexter,5731 Princeton St Sacramento CA,0,0,2014-11-23,4,0
+422717.0,April Kalvert,3722 Floxtree Ct Sacramento CA,1,0,2014-12-13,11,0
+422951.0,Mandisa Hundley,3653 Bakula Way Sacramento CA,2,0,2014-11-19,19,0
+425051.0,Charlie Peacock,5356 Gleneagle Way Sacramento CA,3,0,2015-07-15,11,0
+426830.0,Malcom Floyd,7936 Woody Ct Carmichael CA,3,0,2015-09-17,10,1
+426984.0,Seneca Wallace,6296 Fowler Ave Sacramento CA,2,0,2015-02-20,12,1
+427391.0,Dale Maharidge,6027 Derby Park Ct McClellan CA,3,0,2015-07-16,16,0
+427826.0,Rufus Reid,9681 Torino Way Sacramento CA,2,0,2015-03-14,13,0
+429748.0,Kevin Goldthwaite,7412 Auntine Burney S Sacramento CA,2,0,2015-03-21,7,1
+432113.0,Harold Green,1426 Harvey Way Sacramento CA,1,0,2014-12-11,5,1
+432268.0,Aaron Garcia,1802 Ozro Ct Sacramento CA,0,0,2015-04-19,12,0
+433442.0,Pauline Justis,269 Bradford Dr Ryde CA,1,0,2015-07-12,21,0
+435907.0,Jennie Yates,6305 Barnaby Ct Elverta CA,2,0,2014-10-13,7,0
+437454.0,Doug Henry,8046 William Bird Ave Sacramento CA,2,0,2015-05-13,8,0
+441628.0,Sheri Asberry,5648 Alturas Way Sacramento CA,3,0,2015-05-13,17,1
+442254.0,Ann Lane,3371 PO River Way Sacramento CA,3,0,2015-09-02,18,0
+442691.0,Rosemary Shafer,7404 Ruger Ct Sacramento CA,3,0,2015-09-15,14,0
+447368.0,Gerald Willhite,317 Sorenson Way Sacramento CA,3,0,2014-10-12,12,1
+447601.0,Anthony Kennedy,2023 Tiogawoods Dr Rancho Murieta CA,3,0,2014-08-26,13,1
+448739.0,Jim Breech,3937 Glynis Falls Ct Sacramento CA,2,0,2015-02-21,27,1
+448993.0,Rachel Jim,3791 Court Pkwy Sacramento CA,1,0,2015-07-19,10,1
+452874.0,Craig Chaquico,7191 Shoal Ct Sacramento CA,0,0,2015-07-12,8,0
+454015.0,Tony Lopez,2501 Orrington Cir Sacramento CA,4,0,2014-12-22,13,0
+454143.0,Joey Hand,4235 Blues Aly Antelope CA,1,0,2015-08-08,10,0
+456457.0,Edith Alcorn,8075 Huckleberry Ln Sacramento CA,1,0,2015-03-27,10,1
+458448.0,Robin Casiano,9977 Twin Trails Dr Sacramento CA,0,0,2015-07-31,6,0
+459243.0,Marcus McCauley,7210 Payton St Rio Linda CA,3,0,2015-02-20,7,1
+464277.0,Mike Thomas,1864 Serenata Ct Sacramento CA,4,0,2015-08-29,8,0
+464782.0,Mary Youngblood,2319 Sunnyfield Way Sacramento CA,0,0,2015-04-11,13,1
+464984.0,Kevin Johnson,2423 Spring Azure Way Sacramento CA,1,0,2014-09-17,14,1
+465275.0,Jill Hollenbeck,5720 Ada Ln Sacramento CA,1,0,2014-09-21,18,0
+468100.0,Buck Martinez,3346 Essen Way Elk Grove CA,0,0,2014-11-06,5,0
+468692.0,Betsy Sodaro,4962 Becerra Way Sacramento CA,3,0,2015-09-07,10,0
+469564.0,Elsie Slone,1970 Salt Ct Rio Linda CA,2,0,2015-07-30,12,0
+470304.0,Adrienne Barbeau,8259 Park Ranch Way Sacramento CA,2,0,2014-09-02,8,0
+471187.0,Rodney Hannah,9889 Austell Way Herald CA,0,0,2015-05-21,10,0
+475216.0,Dustin Pedroia,8397 Callecita St Elk Grove CA,0,0,2015-09-25,6,0
+478274.0,Dick Jurgens,8475 Anchor Bend Pl Sacramento CA,5,0,2015-05-25,14,1
+479497.0,Donna Ramage,4243 San Felice Cir Mather CA,1,0,2015-02-23,14,1
+480298.0,Greg Knapp,5226 Hatteras Way Sacramento CA,1,0,2014-10-08,9,1
+482274.0,Jayne Collins,4349 Westholme Way Sacramento CA,7,0,2014-07-26,7,1
+484909.0,Raphael Saadiq,4593 Havenwood Cir Sacramento CA,1,0,2015-06-18,10,1
+485769.0,Merrin Dungey,7988 Sam Ave Sacramento CA,1,0,2015-08-05,13,0
+487346.0,Herb Caen,9371 Laura Ct Sacramento CA,2,0,2015-07-18,8,1
+488295.0,Johnny Colla,7550 Homeland Ct Sacramento CA,1,0,2015-04-27,6,0
+488803.0,Brittney Pardue,8459 Kit Ln Sacramento CA,0,0,2014-11-26,11,0
+491380.0,Eric Lynch,99 Rushden Dr Rancho Murieta CA,2,0,2014-12-07,17,1
+493552.0,Adrian Ross,3850 Jo Ann Dr Orangevale CA,1,0,2015-06-02,10,1
+494106.0,Margie Kowalewski,8880 Trouville Ln Sacramento CA,1,0,2015-09-02,12,1
+498153.0,Jennifer O'Brian,2814 Deer Cross Way Sacramento CA,2,0,2015-02-27,8,1
+498970.0,Katie Calkins,6705 Sandpointe Ct Sacramento CA,1,0,2015-07-15,20,0
+500350.0,Cheryl Burgess,7675 Jefferson St Elk Grove CA,1,0,2015-06-10,13,0
+500733.0,Don Verlin,7102 Windward Way Sacramento CA,1,0,2015-01-13,7,0
+500828.0,Rae Carruth,6322 Carle Ln Sacramento CA,2,0,2014-12-11,18,1
+507743.0,May O'Donnell,5158 Hopkins St Sacramento CA,0,0,2015-06-17,7,0
+513968.0,Giselle Fern��ndez,2817 Mossbeach Ct Sacramento CA,0,0,2015-01-04,17,0
+515753.0,Jeff Watson,2793 York Glen Way Sacramento CA,0,0,2015-04-08,8,1
+515790.0,Cornel West,6210 Maple Crest St Sacramento CA,0,0,2015-05-02,10,0
+516619.0,Nick Johnson,5112 Turret Ct Sacramento CA,2,0,2015-09-09,11,0
+517477.0,Sherri Pickett,2143 Harding Ave Sacramento CA,0,0,2015-03-21,9,1
+520078.0,Don Doll,2043 Maruyama Ct Rancho Cordova CA,0,0,2015-04-19,3,0
+520196.0,Cindy Stilwell,7155 Grovehill Way Sacramento CA,1,0,2015-06-06,15,1
+520377.0,Donte Stallworth,1811 Rio Barco Way McClellan CA,0,0,2015-07-17,13,0
+524667.0,Summer Sanders,9744 Martinson Ct Sacramento CA,0,0,2015-07-23,15,0
+528475.0,Pam Verdin,5839 Funston Dr Sacramento CA,0,0,2014-12-28,7,0
+534481.0,Joyce Judd,2247 Risley Ct Sacramento CA,1,0,2015-02-05,9,1
+537796.0,Michael Hedges,860 Watson St Rancho Murieta CA,0,0,2015-05-13,6,0
+537860.0,Brandi Angulo,4811 Ute River Ct Carmichael CA,1,0,2014-10-28,12,0
+547890.0,Joe Carnahan,5017 Sawyer Cir Rancho Cordova CA,0,0,2015-08-12,8,0
+548546.0,Mike Burton,5838 Chantry Ct Herald CA,1,0,2015-06-19,7,0
+548800.0,Katherine Kayes,8961 Prudhoe Ct Sacramento CA,0,0,2015-04-28,19,0
+549823.0,Delano Thomas,3754 Bold Ln Rancho Cordova CA,0,0,2015-09-04,15,1
+550661.0,Katie Spears,8166 Los Gatos Cir Sacramento CA,3,0,2015-07-20,5,1
+550824.0,Ken O'Brien,137 Greenview Ln Sacramento CA,2,0,2015-07-29,13,1
+551950.0,Rick Cunningham,7594 Nimitz St Orangevale CA,1,0,2014-11-30,9,0
+552124.0,Rose Melberg,7891 Red River Ct Sacramento CA,0,0,2015-07-18,9,0
+553931.0,Bob Jones,4162 Wegat Ln Sacramento CA,1,0,2014-09-16,5,1
+554099.0,Ruth Wilhelm,6734 Cortez Ln Sacramento CA,0,0,2015-09-11,6,0
+556152.0,Mary Love,8866 Kincaid Way Sacramento CA,2,0,2014-12-13,10,1
+556619.0,Laura Michalski,2230 Vichy Cir Sacramento CA,0,0,2015-02-14,7,0
+558749.0,Haley Anderson,7803 La Casa Way Sacramento CA,0,0,2015-05-20,5,0
+559054.0,Bill Cartwright,1523 Warrington Ct Sacramento CA,1,0,2015-02-15,6,0
+559190.0,Eric Thomas,7885 W Vista Way Sacramento CA,0,0,2015-08-26,6,0
+559486.0,Emily Eyre,2165 Blackridge Ave Sacramento CA,0,0,2014-11-01,15,0
+559688.0,Maria Pace,1309 Clothier Way Sacramento CA,3,0,2015-06-04,16,1
+561305.0,Morton Downey,6272 Mesa Grande Ct Sacramento CA,0,0,2015-03-22,14,1
+563468.0,Mildred Deluca,8844 Northview Dr Folsom CA,0,0,2014-09-17,10,1
+563500.0,Sally Otten,5550 Dresher Park Way Sacramento CA,1,0,2015-02-20,12,0
+565259.0,Don Imus,5747 Desi Way Sacramento CA,0,0,2015-07-25,8,0
+566192.0,Eileen Payton,5037 Tierra Green Way North Highlands CA,1,0,2014-12-22,10,0
+567388.0,Lynn Anderson,33 Lupine Field Ct Sacramento CA,0,0,2014-11-13,14,1
+567719.0,Ramona Keegan,760 Winfield Way Sacramento CA,1,0,2015-08-15,10,0
+568217.0,Bessie Major,6465 Tarragon Ct Sacramento CA,2,0,2015-08-19,12,0
+575041.0,Larry Bowa,8342 Minden Ct Sacramento CA,5,0,2015-07-22,18,1
+575903.0,Carlos Alazraqui,1679 Windsong Ct Sacramento CA,1,0,2015-03-03,3,1
+578275.0,Jennifer Rosenheim,9162 Hilldale Rd Sacramento CA,0,0,2015-03-04,14,0
+580674.0,Kort Schubert,9119 Smoketree Dr Sacramento CA,2,0,2015-08-09,2,1
+580783.0,Christine Hamilton,5617 Scrub Oak Way Sacramento CA,0,0,2015-04-16,16,0
+585972.0,Juan Lazcano,4293 Timbercreek Way Orangevale CA,2,0,2015-04-07,11,1
+586201.0,Sylvia Russell,3016 Alden Way Fair Oaks CA,1,0,2015-07-23,17,0
+590517.0,Constance Jeter,2194 Greenhead Ct Sacramento CA,2,0,2015-07-06,10,1
+590616.0,Jim Eakins,7257 Capitol Mall Sacramento CA,0,0,2015-07-04,12,0
+592528.0,Geoff Jenkins,4024 Merton Way Sacramento CA,0,0,2015-08-09,6,1
+592592.0,Laura Brooks,6107 Socorro Way Sacramento CA,1,0,2015-07-02,13,0
+592726.0,Janet Saville,4779 Mountain View Ave Sacramento CA,0,0,2014-11-01,13,0
+593317.0,Betty Carvajal,9229 Portinao Cir Sacramento CA,1,0,2015-07-31,10,1
+599995.0,Miguel Ponce,657 Mafic Ct Sacramento CA,1,0,2015-07-06,13,0
+601753.0,Dominic Sandoval,4838 Loma Linda Ct Sacramento CA,0,0,2015-09-03,5,1
+605188.0,Glenda Tedford,2566 Tamworth Way Fair Oaks CA,1,0,2015-04-30,15,0
+606155.0,Bertha Slone,6313 Stonefield Ct Sacramento CA,1,0,2015-07-03,10,1
+607810.0,Delores Lang,4194 Vowell St Sacramento CA,2,0,2015-09-14,8,0
+608290.0,Joan Lunden,4245 Drawbridge Ct Sacramento CA,0,0,2015-04-06,13,1
+610766.0,Dick Ruthven,6783 Los Padres Way Sacramento CA,0,0,2014-07-13,11,0
+611078.0,Marcus Arroyo,7078 Crooked Stick Dr Sacramento CA,1,0,2015-06-30,6,1
+611848.0,Henry Hathaway,2448 Johanson Cir Sacramento CA,0,0,2015-05-30,21,0
+612681.0,Colin Hanks,4957 Alderwood Way Antelope CA,0,0,2015-06-18,22,0
+616028.0,Janet Corcoran,9774 W Harvard Ave Folsom CA,0,0,2014-09-04,13,0
+616258.0,Jessica Alcorn,1187 Outer Banks Pl Sacramento CA,1,0,2015-06-12,5,0
+616392.0,Jarrett Bush,5748 Scotty Way Sacramento CA,0,0,2015-08-06,11,0
+618955.0,Nick Watney,3799 Kahara Ct Sacramento CA,0,0,2015-07-22,8,1
+619910.0,Daniel Fells,4887 Doreen Way Sacramento CA,0,0,2015-06-22,5,0
+622131.0,Lonie Paxton,3468 Elvas Fwy Rancho Cordova CA,0,0,2015-07-03,6,0
+622506.0,Cassandra Davis,150 Stacy Ave Sacramento CA,0,0,2015-07-20,12,0
+624668.0,Ann Bannon,4399 Irma Way Citrus Heights CA,0,0,2015-03-13,6,1
+627324.0,Bob Elliott,792 Green Glen Way Sacramento CA,1,0,2015-05-11,16,0
+628132.0,Susan Kalvert,4314 Jackdaw Ct Folsom CA,1,0,2015-04-06,8,1
+632495.0,Opal Hillyer,8545 Inlet Ct Sacramento CA,2,0,2014-11-29,5,0
+643214.0,Erik Coleman,3257 Loma Mar Ct Sacramento CA,1,0,2015-02-13,13,1
+643305.0,Taylor Graham,7662 Blachly Way Sacramento CA,2,0,2014-10-01,12,0
+646700.0,Myra Work,5698 Lirios Ave Sacramento CA,0,0,2015-06-21,12,0
+646953.0,Amber Demers,6484 Tywood Ct Sacramento CA,0,0,2015-05-05,7,0
+649551.0,Steve Holm,9489 Lori Ct Sacramento CA,1,0,2015-01-19,17,1
+651462.0,Toby Hall,7527 Stillwell Ct Sacramento CA,1,0,2015-09-01,15,0
+656512.0,Joyce Olson,2843 Savannah Ln Sacramento CA,0,0,2014-10-08,7,0
+656728.0,Edith Keenan,3026 N Edge Dr Sacramento CA,0,0,2014-08-31,7,0
+657495.0,Lauren Ray,3530 Fletcher Farm Dr Sacramento CA,1,0,2015-03-09,13,0
+657736.0,Mildred Nester,596 Eileen Way Sacramento CA,1,0,2015-01-26,14,0
+659695.0,Sydney Crew,7835 Sergio Way Elk Grove CA,2,0,2015-09-07,13,0
+660634.0,Chris Oldham,6285 Stretto Ct North Highlands CA,0,0,2015-04-27,6,0
+663029.0,Lynda Ethridge,4440 Kinsella Ln Citrus Heights CA,1,0,2014-10-21,9,1
+664411.0,Anne Boisvert,2657 Danbrook Dr Sacramento CA,0,0,2015-07-24,11,0
+664934.0,Scott Boras,5033 Zoram Ct Sacramento CA,1,0,2015-09-02,11,0
+665282.0,Constance Wheat,3321 Southampton Way Sacramento CA,0,0,2015-03-08,10,0
+665313.0,Michael Stember,8295 Grand View Rd Sacramento CA,1,0,2014-09-19,9,0
+667170.0,Vladimir Sabich,9377 Nimes Ln Sacramento CA,0,0,2015-05-11,11,1
+668931.0,Myrtle Jackman,8844 Barr Way Sacramento CA,0,0,2015-03-04,16,0
+670707.0,Brandon League,8813 Pavilions Place Ln Sacramento CA,0,0,2015-09-01,11,0
+671101.0,Kathy Rowell,7249 Wreyford Ct Folsom CA,0,0,2015-08-07,11,0
+671363.0,Ricky Reynolds,542 Odom Ct Citrus Heights CA,0,0,2015-01-18,9,0
+672834.0,Amber Bounds,903 Whisper Ln Ryde CA,0,0,2015-05-25,14,1
+676018.0,Rosemary Ellinger,5221 Johns Dr Sacramento CA,0,0,2015-03-30,14,0
+676155.0,Jack Gallagher,4873 Juan Way Carmichael CA,1,0,2015-04-19,11,0
+678940.0,Anne Mullins,180 Seyferth Way Sacramento CA,0,0,2015-08-30,13,0
+679354.0,Dan Bunz,6481 Coker Ct Sacramento CA,1,0,2015-09-13,9,0
+680104.0,Louis Stanfill,9077 Shada Way Sacramento CA,1,0,2015-06-21,8,0
+689877.0,Jeannette Fluker,7177 I St Sacramento CA,0,0,2014-10-22,19,0
+690100.0,Don Rogers,5769 Silk Tree Way Sacramento CA,1,0,2014-10-20,14,1
+693531.0,Virginia Czyenski,1003 Heather Tree Dr Elk Grove CA,0,0,2014-12-15,8,0
+694281.0,Sarah Colangelo,2231 Vichy Cir Sacramento CA,0,0,2015-03-03,13,0
+695276.0,Pauline Gonzalez,9696 Fernwood Way Ryde CA,0,0,2015-08-28,6,0
+696852.0,Jamie Nieto,6075 Dewey Blvd Courtland CA,0,0,2014-11-11,7,0
+701211.0,Lillian Chambers,2814 Southbury Ct Sacramento CA,1,0,2015-08-22,8,1
+701816.0,Jermaine Dye,497 Durney Ct Ryde CA,0,0,2014-11-19,12,1
+702197.0,Ian Hecox,1148 Cool Water Ct Sacramento CA,0,0,2015-07-19,6,0
+703083.0,Derrek Lee,5253 Longboat Key Way Sacramento CA,1,0,2015-05-01,6,0
+706101.0,Carla Boisvert,9275 Ashland Way Sacramento CA,1,0,2015-06-15,13,1
+706884.0,Pat Morita,1585 Benham Way Sacramento CA,2,0,2015-05-08,11,0
+707458.0,Barbi Benton,7315 Timberwood Ct Sacramento CA,1,0,2014-10-22,11,0
+710047.0,Jeanne Bluhm,5427 Veralee Ln Orangevale CA,0,0,2015-06-03,10,0
+714277.0,Edith Ryan,5987 Narwal Pl Elk Grove CA,0,0,2014-08-01,9,0
+714947.0,Erika Michel,3628 Kam Ct Sacramento CA,1,0,2015-08-19,7,1
+717234.0,Dale Brown,8322 Esquire Dr Sacramento CA,1,0,2015-09-10,9,0
+719921.0,Geoff Jenkins,4319 Explorer Dr Sacramento CA,1,0,2015-05-31,15,0
+720602.0,Lori Tucker,8335 Deeble St Sacramento CA,1,0,2014-10-30,16,1
+722547.0,Charles Roberts,9788 Tyne Fell Ct Sacramento CA,0,0,2014-10-31,5,0
+723057.0,Justin Bannan,9790 Silverleaf Way Folsom CA,2,0,2015-02-17,16,1
+723819.0,Casey Weathers,552 Stewart Rd Sacramento CA,1,0,2015-01-02,10,0
+724700.0,Steve Cronin,6200 Waterash Way Wilton CA,0,0,2015-05-08,6,0
+724813.0,Bill Munson,3591 Barbara St Sacramento CA,3,0,2014-12-13,12,0
+728908.0,Laura Sampson,9457 Wesley Ave Sacramento CA,0,0,2015-09-20,6,0
+729740.0,Mark Spitz,5856 Jade Ct Sacramento CA,2,0,2015-10-01,1,0
+730305.0,Natalie Zeller,9479 Macarlen Way Rancho Murieta CA,0,0,2015-07-29,19,1
+731346.0,Jeff Blauser,3569 Inman Way Sacramento CA,1,0,2015-08-05,11,0
+734514.0,Deborah Blum,7444 Cassatt Way Sacramento CA,2,0,2015-03-28,13,0
+734624.0,Brittany Hatcher,5957 Gleneagle Way Sacramento CA,1,0,2015-02-11,14,1
+736500.0,Ken Rose,2921 Pelican Way Sacramento CA,0,0,2014-07-31,19,1
+737707.0,Cecil Wallace,2568 Boscastle Way Sacramento CA,3,0,2015-01-20,8,1
+738357.0,Margie Pittman,5311 El Valle Way Sacramento CA,0,0,2015-03-03,7,1
+739393.0,Lisa Ling,6496 Fairgate Rd Sacramento CA,1,0,2015-09-08,10,0
+739440.0,Marjorie Storey,1031 Shadow Creek Dr Elk Grove CA,0,0,2015-02-02,11,0
+739669.0,Max Baer,8392 Southbreeze Dr Sacramento CA,1,0,2014-10-17,26,1
+741398.0,Nora Rhea,8373 Sitton Way Sacramento CA,2,0,2015-06-04,10,1
+741514.0,Annie Matthews,7382 Village Center Dr Sacramento CA,1,0,2015-04-09,16,0
+742620.0,Joan Didion,355 Spinnaker Way Sacramento CA,0,0,2015-05-29,11,0
+743517.0,Margaret Hodel,3016 Lido Isle Ln Elk Grove CA,0,0,2014-12-30,10,0
+744416.0,Giovanni Carmazzi,3132 Arnold Ct Sacramento CA,1,0,2015-08-31,6,0
+744648.0,Mark Goodson,3034 Gaylord Ct Sacramento CA,1,0,2015-06-15,19,0
+744780.0,Sammie Stroughter,6943 Cobblefield Dr Sacramento CA,1,0,2015-09-11,10,0
+745543.0,Donna Hume,375 Sheedy Ct Sacramento CA,2,0,2015-03-26,14,1
+746134.0,Patrick Ianni,323 Malt Ct Sacramento CA,0,0,2015-02-06,13,0
+747066.0,Lance Briggs,2794 California Loop Sacramento CA,2,0,2015-03-12,11,0
+748326.0,Eric Stevens,6211 Sea Hawk Pl Sacramento CA,0,0,2014-12-31,11,1
+755271.0,Rosalie Mclaurin,8654 Seaborg Way Sacramento CA,0,0,2014-10-15,12,0
+756769.0,Syd'Quan Thompson,920 Foppiano Way Sacramento CA,0,0,2015-02-14,11,1
+756928.0,William Vollmann,1227 McClatchy Way Sacramento CA,0,0,2015-02-21,8,1
+757525.0,Brian Posehn,7425 Aljo Way Sacramento CA,0,0,2015-02-25,11,0
+757780.0,Bertha Kirby,8389 Attawa Ave Sacramento CA,2,0,2014-11-30,17,1
+759995.0,Mark Twain,2319 Hillcrest Way Rio Linda CA,0,0,2015-05-19,11,0
+761615.0,James Campen,8067 Nashua Way Sacramento CA,1,0,2015-06-11,15,1
+762509.0,Jason Sehorn,9072 Land Park Dr Elk Grove CA,0,0,2015-09-08,12,0
+765237.0,Chris Bosio,9109 Piccadilly Cir Sacramento CA,1,0,2015-01-11,13,0
+766161.0,Dora Gray,2351 Winterhaven Ave Ryde CA,0,0,2015-08-11,14,1
+766737.0,Nathaniel Hackett,4843 Kintyre Pen Pl Elk Grove CA,0,0,2015-05-07,15,1
+767570.0,Otis Griffin,6322 Mary Lou Way Sacramento CA,0,0,2015-02-01,9,1
+771285.0,Brian Lewis,3514 Wolfboro Ct Sacramento CA,0,0,2015-03-10,18,0
+772690.0,David Terrell,4799 Saints Way Sacramento CA,4,0,2015-08-30,5,0
+775449.0,John Cox,1232 Chambord Ct Citrus Heights CA,1,0,2015-03-30,13,1
+776775.0,Bob Stubbs,5792 Pasadena Ave Sacramento CA,0,0,2015-01-22,7,0
+777145.0,Anne Leibowitz,9316 Earlcort Cir Rancho Cordova CA,1,0,2015-06-13,7,1
+781523.0,Lillian Kershaw,2815 Artesian Ct Sacramento CA,0,0,2015-04-18,13,0
+781968.0,Doug Davis,2161 Baldwin Way Sacramento CA,0,0,2014-12-09,10,1
+782947.0,Kris Gonzalez,5791 Gandy Way Sacramento CA,0,0,2015-03-15,16,1
+783369.0,Debra Sellers,6981 Cloud Crest Way Sacramento CA,0,0,2015-05-31,7,0
+784218.0,Keith Lewis,6307 Paul Ave Sacramento CA,1,0,2015-03-21,8,0
+785444.0,Myra Sabo,6250 Wah Ave Sacramento CA,0,0,2015-03-17,10,1
+789065.0,Molly Ringwald,5838 Enclave Pl Folsom CA,0,0,2015-05-15,7,0
+789308.0,Sherry Farrington,8138 Calderwood Ln Antelope CA,1,0,2014-08-09,7,0
+789500.0,Gabe Gardner,9591 Hood Franklin Rd Sacramento CA,0,0,2014-11-07,11,0
+791559.0,Katherine Sabo,4757 Klingon Ct Sacramento CA,0,0,2015-02-04,8,0
+791850.0,Priscilla Wald,9315 Reichmuth Way Sacramento CA,1,0,2014-10-16,13,1
+793987.0,Eason Ramson,7998 Manitoba Ave Sacramento CA,0,0,2015-03-14,14,0
+795957.0,Emily Rath,1558 Wood Gate Way Sacramento CA,0,0,2014-09-26,12,0
+796796.0,Scott McCarron,4808 Wilshire Ave Citrus Heights CA,2,0,2015-02-28,18,1
+797968.0,Mike Lincoln,5215 Mulberry Ln Carmichael CA,0,0,2015-08-15,11,0
+798336.0,Sally Edwards,3818 Fell St Sacramento CA,0,0,2015-06-20,7,1
+800121.0,Jamie Anderson,3240 Villanova Cir Sacramento CA,1,0,2015-03-15,3,1
+803700.0,Michael Stewart,4527 Helsinki Way Sacramento CA,0,0,2015-05-19,14,1
+806545.0,Rhonda Kraus,2953 Morena Way Sacramento CA,1,0,2014-12-16,11,0
+808177.0,Faye Champion,8713 Pennywood Ct Sacramento CA,0,0,2015-07-13,11,1
+808421.0,Kevin Sutherland,3895 Magical Walk Sacramento CA,0,0,2015-02-14,16,0
+808869.0,Ryan Anderson,114 Parkside Ct Sacramento CA,1,0,2015-07-17,6,0
+810369.0,Bob Lunn,310 Linnet Ct Sacramento CA,1,0,2014-10-17,10,0
+813719.0,Diego Corrales,3964 Torrance Ave Sacramento CA,0,0,2015-08-04,7,0
+814317.0,Alyssa Anderson,8686 Scranton Cir Sacramento CA,3,0,2015-05-18,11,0
+814512.0,Max Baer,4707 Holiday Cove Ct Sacramento CA,0,0,2014-11-09,11,0
+815980.0,Dan Boitano,212 Rushden Dr Sacramento CA,0,0,2015-02-05,15,0
+817159.0,Geno Petralli,3889 Majestic Ln Isleton CA,2,0,2015-03-06,10,0
+817274.0,Viola Kraus,9907 Dutton Way Sacramento CA,1,0,2015-09-03,7,1
+817500.0,Genevieve Matthews,391 New Sacto Way Sacramento CA,0,0,2015-06-09,7,0
+818287.0,Ramona Mullins,1291 Chesterton Way Carmichael CA,1,0,2015-05-30,12,1
+822823.0,Debbie Meyer,1972 Morrow St Sacramento CA,0,0,2015-06-02,17,0
+825249.0,Robert Awalt,5952 Jumilla Way Sacramento CA,2,0,2015-04-12,9,0
+826590.0,Belinda Ellis,4452 Golden Poplar Ave Sacramento CA,1,0,2015-08-24,13,0
+832914.0,Michael Roe,8040 Elster Ct Sacramento CA,2,0,2014-10-02,6,1
+833180.0,Jessica Chastain,8736 Arabis Ct Sacramento CA,0,0,2015-04-27,11,0
+837763.0,Alex Honnold,2968 Syracuse Way Sacramento CA,0,0,2015-03-15,8,0
+838924.0,Reggie Rogers,9756 Prodperine Pl Sacramento CA,1,0,2015-08-24,8,0
+840096.0,Dek Bake,8975 Silk Ct Sacramento CA,0,0,2015-03-14,10,1
+840970.0,Sam Warburg,1680 Red Robin Ln Sacramento CA,0,0,2015-02-18,6,0
+841141.0,Trevor Matich,2305 Red Wolf Dr Sacramento CA,1,0,2014-09-03,7,0
+841831.0,Joe Inglett,8657 Normington Dr Sacramento CA,0,0,2015-01-20,15,0
+842028.0,Jean Zeller,6156 Sachi Way Sacramento CA,0,0,2015-05-20,14,0
+846558.0,David de Berry,3420 Yale St Sacramento CA,0,0,2015-02-24,14,1
+846722.0,Bessie Gold,1397 Lieto Way Sacramento CA,0,0,2015-09-19,6,1
+847289.0,Jennifer Hopper,7225 Mill Branch Ct Sacramento CA,1,0,2015-03-25,14,0
+850933.0,Spencer Havner,2523 San Joaquin St Sacramento CA,0,0,2015-05-13,9,1
+850952.0,Phil Snow,4862 Mira Vista St Sacramento CA,0,0,2015-02-25,7,0
+852319.0,Stan Hack,3339 Royal Down Cir Sacramento CA,0,0,2015-04-30,8,1
+852925.0,Ellyse Casteel,8881 Libra Ave Sacramento CA,0,0,2014-11-28,9,0
+857548.0,Stan Atkinson,9421 W Lincoln Ave Sacramento CA,2,0,2015-08-27,11,0
+860057.0,Daimon Shelton,9337 Dutton Way Sacramento CA,1,0,2014-08-19,14,0
+862302.0,Tammy Hansen,8455 Tracy Ct Sacramento CA,0,0,2014-08-05,9,0
+864896.0,Frank-Paul Santangelo,2743 Mohamed Oaks Ct Elk Grove CA,0,0,2014-07-07,13,0
+866556.0,James House,3028 Rio Cresta Way Galt CA,3,0,2015-02-15,7,1
+866847.0,Natalie Gulbis,2984 Comanche Way Fair Oaks CA,0,0,2015-02-21,9,0
+872851.0,Sheri Mcabee,8694 Macfinley Way Sacramento CA,0,0,2014-10-15,6,0
+877877.0,Kathy Murphy,7967 Icarus Ct McClellan CA,0,0,2015-09-03,9,0
+879173.0,Mabel Bales,4355 Volga Way Wilton CA,0,0,2015-03-02,14,0
+880238.0,Lynn Bell,5963 Shepard Ave Sacramento CA,0,0,2014-11-29,14,0
+882493.0,Myra Bashaw,5600 Inspiration Ln Sacramento CA,0,0,2015-07-19,10,0
+884368.0,Cheryl Walker,6739 Bimini Ct Sacramento CA,2,0,2015-02-15,10,1
+884607.0,Skylar Thomas,577 Don Merlino Ct Sacramento CA,0,0,2014-11-05,8,1
+884729.0,Sam Elliott,7532 Squirewood Ct Sacramento CA,1,0,2015-04-03,13,1
+885548.0,Richard Hellesen,6110 Vanier Ct Sacramento CA,0,0,2015-04-11,12,1
+888759.0,Ann Bingaman,9411 Kirk Way Sacramento CA,1,0,2015-06-05,12,0
+888952.0,Jerry Royster,2329 Yuma Cir Herald CA,0,0,2015-05-19,11,1
+889686.0,Suzi Gardner,5592 Strawberry Ln Sacramento CA,0,0,2015-08-22,9,1
+890270.0,John O'Sullivan,5131 Lamont Way Sacramento CA,3,0,2014-10-03,10,0
+890497.0,Brie Larson,161 David Way Sacramento CA,0,0,2015-07-01,8,1
+890651.0,Sonia Dunkin,7979 Arroyo Vista Dr Folsom CA,0,0,2015-08-01,5,0
+891738.0,Gary Hoffman,856 William Way Sacramento CA,1,0,2015-07-08,13,1
+892883.0,Leona Weber,5188 Vorden Rd Sacramento CA,2,0,2015-04-02,14,1
+893039.0,Kathy Decker,993 Lomax Ct McClellan CA,0,0,2014-12-04,8,0
+897614.0,John Vukovich,9558 Agree Ct Sacramento CA,2,0,2015-07-21,8,0
+897980.0,Josephine Hoff,826 Chatfield Dr Sacramento CA,0,0,2015-08-17,9,0
+900440.0,Kayla Isham,977 Glenmont Way Citrus Heights CA,2,0,2015-05-07,17,0
+901388.0,Victor Wong,7122 El Viento Way Sacramento CA,2,0,2015-05-11,7,1
+905670.0,Joyce Fernandez,1813 El Centro Rd Sacramento CA,3,0,2014-12-06,21,1
+908328.0,Callie Douglas,2928 Gramont Way Sacramento CA,0,0,2015-05-07,11,1
+908768.0,Doris Coley,7129 Caswell Ct Sacramento CA,1,0,2015-03-01,12,0
+911171.0,Dawn Oxley,4382 Gazania Ct Sacramento CA,1,0,2015-05-01,14,1
+912671.0,Maxine Hamilton,8884 Samwood Ct Rancho Cordova CA,0,0,2015-05-25,16,1
+915766.0,Fernando Vi_a,6189 Kathryn Way Sacramento CA,2,0,2015-09-09,8,0
+917728.0,Maxine Wylie,3796 Northfield Dr Sacramento CA,1,0,2015-04-18,6,0
+918682.0,Matt Barnes,684 Naponee Ct Elk Grove CA,0,0,2015-07-14,10,1
+921792.0,Candace Storms,1328 Schutt Way Sacramento CA,1,0,2015-02-15,12,0
+921901.0,Fannie Wooldridge,1806 Tetlow Ct Sacramento CA,0,0,2015-07-29,8,1
+924361.0,Ben Campbell,1325 Dundalk Ct Elk Grove CA,0,0,2015-08-31,8,0
+924649.0,Manny Parra,5695 Chapeau Ct Sacramento CA,1,0,2014-10-24,15,0
+924947.0,Bob Wilkins,8171 Boston Ct Sacramento CA,0,0,2015-05-09,6,0
+925565.0,Raymond Carver,7078 Reenel Way Folsom CA,0,0,2015-03-18,13,0
+926144.0,Jackie Greene,7537 San Luis Ct Sacramento CA,0,0,2015-03-23,11,1
+926289.0,Cindy Ramirez,3827 Durfee Way Sacramento CA,0,0,2014-10-17,10,1
+927518.0,Clancy Barone,6266 Dalhart Way Sacramento CA,0,0,2015-08-08,21,0
+929344.0,Jack Parker,1204 Chamonix Way Sacramento CA,1,0,2015-01-26,14,0
+932618.0,Natasha Lyon,7922 Rivershore Ct Sacramento CA,1,0,2015-03-28,19,1
+933331.0,Angela Boehmer,9034 Pournelle Way Sacramento CA,1,0,2015-06-17,8,1
+936214.0,DeMarcus Nelson,5355 Emerson Rd Sacramento CA,1,0,2015-05-12,7,0
+938006.0,Ellen Ontiveros,1805 Gypsy Star Way Sacramento CA,2,0,2015-01-28,12,1
+938393.0,James Donaldson,326 Beachcraft Way Sacramento CA,0,0,2015-04-20,6,0
+938417.0,Jerry Manuel,6887 Lorton Ct Sacramento CA,1,0,2014-11-03,20,1
+940912.0,Darren Oliver,4401 Ladino Rd Sacramento CA,0,0,2015-04-26,2,0
+941876.0,Helen Price,7193 Canna Ct Sacramento CA,2,0,2015-08-10,18,0
+944523.0,Sabrina Bastian,3646 Rio De Oro Way Sacramento CA,2,0,2015-08-04,16,1
+950299.0,Pearl Green,5141 Academy Way Sacramento CA,2,0,2014-10-05,16,1
+951701.0,Stacy Smith,5498 Grant Ln Elverta CA,0,0,2014-09-15,10,0
+951702.0,Shaka Ford,7239 Cecile Way Sacramento CA,3,0,2015-03-05,10,1
+954812.0,Mildred Rosenheim,876 Kylaglen Ct Orangevale CA,0,0,2015-08-05,10,1
+955591.0,Evelyn Ashford,6574 El Dala Ln Sacramento CA,1,0,2015-07-07,10,1
+958321.0,Rush Limbaugh,6923 Park River Oak Ct Sacramento CA,2,0,2015-02-19,10,1
+961080.0,Anne Ross,5522 Spinning Rod Ct Sacramento CA,1,0,2014-07-28,13,0
+964403.0,David Garibaldi,2778 Foppiano Way Sacramento CA,1,0,2015-03-04,9,0
+964619.0,Lee Greenwood,1151 Yellowtail Way Sacramento CA,2,0,2015-08-28,11,1
+970794.0,Reneau Peurifoy,4565 Feather River Way Sacramento CA,0,0,2015-06-13,13,0
+972329.0,Gregg Coffin,2193 Woodville Ln Citrus Heights CA,1,0,2015-08-31,4,0
+973766.0,Carla Pfeifer,5601 Monte Casino Way Sacramento CA,2,0,2015-02-14,9,0
+974503.0,Vicki Abramson,4824 Mackinaw Way Elk Grove CA,0,0,2015-04-30,10,1
+976778.0,Bobby Clark,4355 Amwell Ct Wilton CA,0,0,2015-08-26,8,1
+977759.0,Natalie Dorris,318 Pelligrini Ct Sacramento CA,1,0,2015-08-27,10,1
+979679.0,Adrienne Ibrahim,3708 Amazon Ave Sacramento CA,1,0,2015-07-28,4,0
+981529.0,Anne Gray,7031 Sierra Blvd Sacramento CA,1,0,2015-04-14,6,1
+992895.0,Royce Clayton,8565 Den Ave Sacramento CA,2,0,2015-07-09,9,0
+992956.0,Ken Forsch,1495 Canadeo Way Sacramento CA,2,0,2014-11-20,9,1
+994056.0,Ruby Bastian,4967 Clairidge Oak Ct Sacramento CA,1,0,2014-12-05,13,0
+994185.0,Theresa Carpenter,8927 Rivercrest Dr Sacramento CA,1,0,2015-03-24,19,0
+994199.0,Renee Caceres,8720 Rivera Dr Sacramento CA,3,0,2014-12-25,17,0
+994269.0,Derwin Williams,7945 Rose Petal Way Sacramento CA,0,0,2015-09-27,6,0
+995599.0,Timothy Schmit,2089 Zet Ct Sacramento CA,4,0,2015-01-16,11,0
+996970.0,Alice Colletti,3826 Doreen Way Antelope CA,2,0,2015-06-01,9,1
+999915.0,Ricky Ray,7837 El Cerro Ct Sacramento CA,1,0,2015-07-21,20,0

@@ -1,0 +1,19 @@
+TITLE_ID,TITLE,TYPE,HAS_YTD_SALES_HIGHER_THAN_AVERAGE,HAS_ABOVE_AVERAGE_ROYALTY_RATE,SOLD_MORE_THAN_AVERAGE,NUMBER_OF_SALES_IN_CALIFORNIA_STORES,ORDERED_QUANTITY_1992
+BU1032,The Busy Executive's Database Guide,business,0,0,0,0,0.0
+BU1111,Cooking with Computers: Surreptitious Balance Sheets,business,0,1,0,0,0.0
+BU2075,You Can Combat Computer Stress!,business,1,1,1,35,0.0
+BU7832,Straight Talk About Computers,business,0,1,0,15,0.0
+MC2222,Silicon Valley Gastronomic Treats,mod_cook,0,0,0,10,0.0
+MC3021,The Gourmet Microwave,mod_cook,1,1,1,0,0.0
+MC3026,The Psychology of Computer Cooking,UNDECIDED,0,0,0,0,
+PC1035,But Is It User Friendly?,popular_comp,1,0,0,0,0.0
+PC8888,Secrets of Silicon Valley,popular_comp,0,0,1,50,0.0
+PC9999,Net Etiquette,popular_comp,0,0,0,0,
+PS1372,Computer Phobic AND Non-Phobic Individuals: Behavior Variations,psychology,0,0,0,0,0.0
+PS2091,Is Anger the Enemy?,psychology,0,0,1,85,0.0
+PS2106,Life Without Fear,psychology,0,0,0,0,0.0
+PS3333,Prolonged Data Deprivation: Four Case Studies,psychology,0,0,0,0,0.0
+PS7777,Emotional Security: A New Algorithm,psychology,0,0,0,0,0.0
+TC3218,"Onions, Leeks, and Garlic: Cooking Secrets of the Mediterranean",trad_cook,0,1,1,40,40.0
+TC4203,Fifty Years in Buckingham Palace Kitchens,trad_cook,1,1,0,20,20.0
+TC7777,"Sushi, Anyone?",trad_cook,0,0,0,20,20.0

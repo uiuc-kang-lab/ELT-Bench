@@ -1,0 +1,794 @@
+CUSTOMER_ID,CUSTOMER_NAME,SEGMENT,THE_LARGEST_TOTAL_COST_OF_PRODUCTS_IN_A_SINGLE_ORDER,NAME_OF_THE_PRODUCT_THAT_WAS_ORDERED_RECENTLY,ITEM_ORDERED_WITH_THE_HIGHEST_QUANTITY_IN_THE_EAST_REGION,NUMBER_OF_ORDERS_IN_2016_FROM_THE_EAST_SUPERSTORE,NUMBER_OF_ORDERS_WITH_MORE_THAN_3_KINDS_OF_PRODUCTS_ORDERED
+AA-10315,Alex Avila,Consumer,4406.072,Avery Binding System Hidden Tab Executive Style Index Sets,Easy-staple paper,0,2
+AA-10375,Allen Armold,Consumer,513.52,Clear Mylar Reinforcing Strips,Avoid Verbal Orders Carbonless Minifold Book,2,0
+AA-10480,Andrew Allen,Consumer,1157.98,Xerox 1967,DAX Wood Document Frame,0,4
+AA-10645,Anna Andreadi,Consumer,1971.46,Xerox 1996,"Hon Deluxe Fabric Upholstered Stacking Chairs, Rounded Back",0,4
+AB-10015,Aaron Bergman,Consumer,563.94,Samsung Convoy 3,,0,0
+AB-10060,Adam Bellavance,Home Office,4438.686,Hon 2090 __illow Soft_ Series Mid Back Swivel/Tilt Chairs,Xerox 231,1,2
+AB-10105,Adrian Barton,Consumer,9892.74,"3M Polarizing Task Lamp with Clamp Arm, Light Gray","Belkin 19"" Center-Weighted Shelf, Gray",0,4
+AB-10150,Aimee Bixby,Consumer,705.562,Acme Elite Stainless Steel Scissors,GBC Wire Binding Combs,1,4
+AB-10165,Alan Barnes,Consumer,413.942,GBC Wire Binding Combs,Zebra Zazzle Fluorescent Highlighters,1,0
+AB-10255,Alejandro Ballentine,Home Office,479.984,Brother DCP1000 Digital 3 in 1 Multifunction Machine,Xerox 1912,3,0
+AB-10600,Ann Blume,Corporate,1475.054,Adtran 1202752G1,,0,2
+AC-10420,Alyssa Crouse,Corporate,706.064,Fellowes Bankers Box Stor/Drawer Steel Plus,"Recycled Interoffice Envelopes with String and Button Closure, 10 x 13",0,0
+AC-10450,Amy Cox,Consumer,1793.98,Martin Yale Chadless Opener Electric Letter Opener,Storex Dura Pro Binders,1,0
+AC-10615,Ann Chong,Corporate,2255.868,"Eldon Delta Triangular Chair Mat, 52"" x 58"", Clear","ACCOHIDE 3-Ring Binder, Blue, 1""",3,2
+AC-10660,Anna Chung,Consumer,201.584,Fellowes Officeware Wire Shelving,Xerox 1897,0,0
+AD-10180,Alan Dominguez,Home Office,4189.38,Global Comet Stacking Armless Chair,"Eldon Expressions Punched Metal & Wood Desk Accessories, Pewter & Cherry",4,2
+AF-10870,Art Ferguson,Consumer,1562.086,Office Star Flex Back Scooter Chair with White Frame,Ampad #10 Peel & Seel Holiday Envelopes,0,2
+AF-10885,Art Foster,Consumer,372.28499999999997,Acco Perma 4000 Stacking Storage Drawers,"Premier Elliptical Ring Binder, Black",0,0
+AG-10270,Alejandro Grove,Consumer,2374.73,"Eldon Expressions Punched Metal & Wood Desk Accessories, Black & Cherry",GBC Standard Plastic Binding Systems' Combs,2,2
+AG-10300,Aleksandra Gannaway,Corporate,248.568,"Premium Writing Pencils, Soft, #2 by Central Association for the Blind",O'Sullivan 5-Shelf Heavy-Duty Bookcases,0,0
+AG-10330,Alex Grayson,Consumer,248.82000000000002,"Cardinal HOLDit! Binder Insert Strips,Extra Strips",,0,0
+AG-10390,Allen Goldenen,Consumer,129.32999999999998,"C-Line Magnetic Cubicle Keepers, Clear Polypropylene",Avery 514,0,0
+AG-10495,Andrew Gjertsen,Corporate,937.6080000000001,"Adams Write n' Stick Phone Message Book, 11"" X 5 1/4"", 200 Messages",Eldon Simplefile Box Office,1,4
+AG-10525,Andy Gerbode,Corporate,654.7719999999999,"Acco Pressboard Covers with Storage Hooks, 9 1/2"" x 11"", Executive Red",KeyTronic_E03601U1 -_Keyboard_- Beige,1,2
+AG-10675,Anna Gayman,Consumer,2620.9376,Avery Durable Poly Binders,,0,2
+AG-10765,Anthony Garverick,Home Office,113.1,Catalog Binders with Expanding Posts,"Acco Pressboard Covers with Storage Hooks, 14 7/8"" x 11"", Light Blue",0,0
+AG-10900,Arthur Gainer,Consumer,1520.376,Steel Personal Filing/Posting Tote,Acme Forged Steel Scissors with Black Enamel Handles,1,2
+AH-10030,Aaron Hawkins,Corporate,991.26,Avery Fluorescent Highlighter Four-Color Set,Staple envelope,1,0
+AH-10075,Adam Hart,Corporate,1169.98,Newell 347,"Wirebound Message Book, 4 per Page",3,2
+AH-10120,Adrian Hane,Home Office,610.418,Newell 350,,0,2
+AH-10195,Alan Haines,Corporate,1410.066,Avery Recycled Flexi-View Covers for Binding Systems,DXL Angle-View Binders with Locking Rings by Samsill,2,0
+AH-10210,Alan Hwang,Consumer,1577.94,Office Impressions Heavy Duty Welded Shelving & Multimedia Storage Drawers,Digium D40 VoIP phone,1,0
+AH-10465,Amy Hunt,Consumer,1757.8536,Google Nexus 5,Google Nexus 5,1,0
+AH-10585,Angele Hood,Consumer,447.88,Xerox 1921,,0,0
+AH-10690,Anna Häberlin,Corporate,4317.3,Polycom SoundPoint IP 450 VoIP phone,Easy-staple paper,0,4
+AI-10855,Arianne Irving,Consumer,1679.96,Hon Valutask Swivel Chairs,Xerox 1923,2,2
+AJ-10780,Anthony Jacobs,Corporate,2583.19,Green Bar Computer Printout Paper,Hon 94000 Series Round Tables,1,2
+AJ-10795,Anthony Johnson,Corporate,1365.6299999999999,"Atlantic Metals Mobile 4-Shelf Bookcases, Custom Colors",Round Ring Binders,0,6
+AJ-10945,Ashley Jarboe,Consumer,774.47,Avery Hi-Liter Smear-Safe Highlighters,,0,2
+AJ-10960,Astrea Jones,Consumer,460.21999999999997,Economy #2 Pencils,"Cardinal HOLDit! Binder Insert Strips,Extra Strips",0,0
+AM-10360,Alice McCarthy,Corporate,432.69,3-ring staple pack,"Bush Westfield Collection Bookcases, Medium Cherry Finish",1,2
+AM-10705,Anne McFarland,Consumer,2116.5060000000003,Berol Giant Pencil Sharpener,Lumber Crayons,0,4
+AO-10810,Anthony O'Donnell,Corporate,161.28,"Barricks 18"" x 48"" Non-Folding Utility Table with Bottom Storage Shelf",,0,0
+AP-10720,Anne Pryor,Home Office,1018.3019999999999,"Acco Data Flex Cable Posts For Top & Bottom Load Binders, 6"" Capacity","Acco Data Flex Cable Posts For Top & Bottom Load Binders, 6"" Capacity",1,2
+AP-10915,Arthur Prichep,Consumer,968.3,"Atlantic Metals Mobile 5-Shelf Bookcases, Custom Colors",,0,8
+AR-10345,Alex Russell,Corporate,775.728,"Eberhard Faber 3 1/2"" Golf Pencils",ClearSounds CSC500 Amplified Spirit Phone Corded phone,1,0
+AR-10405,Allen Rosenblatt,Corporate,1488.424,"Office Impressions End Table, 20-1/2""H x 24""W x 20""D",Sony 16GB Class 10 Micro SDHC R40 Memory Card,2,0
+AR-10510,Andrew Roberts,Consumer,89.97,Peel & Stick Add-On Corner Pockets,Newell 317,0,0
+AR-10540,Andy Reiter,Consumer,5802.7,"Acco Four Pocket Poly Ring Binder with Label Holder, Smoke, 1""",Xerox 1970,2,0
+AR-10570,Anemone Ratner,Consumer,88.15,Cardinal Holdit Data Disk Pockets,,0,0
+AR-10825,Anthony Rawles,Corporate,1629.712,Premier Automatic Letter Opener,Tenex B1-RE Series Chair Mats for Low Pile Carpets,3,0
+AS-10045,Aaron Smayling,Corporate,1476.27,"Lesro Sheffield Collection Coffee Table, End Table, Center Table, Corner Table",Xerox 1956,0,0
+AS-10090,Adam Shillingsburg,Consumer,1085.16,Newell 309,"Premium Transparent Presentation Covers, No Pattern/Clear, 8 1/2"" x 11""",1,6
+AS-10135,Adrian Shami,Home Office,54.64,Avery Printable Repositionable Plastic Tabs,Avery Printable Repositionable Plastic Tabs,1,0
+AS-10225,Alan Schoenberger,Corporate,2216.8,Belkin 8-Outlet Premiere SurgeMaster II Surge Protectors,Electrix 20W Halogen Replacement Bulb for Zoom-In Desk Lamp,1,2
+AS-10240,Alan Shonely,Consumer,370.78200000000004,Deluxe Heavy-Duty Vinyl Round Ring Binder,Deluxe Heavy-Duty Vinyl Round Ring Binder,2,2
+AS-10285,Alejandro Savely,Corporate,2678.94,Enermax Briskie RF Wireless Keyboard and Mouse Combo,Anker Astro Mini 3000mAh Ultra-Compact Portable Charger,0,0
+AS-10630,Ann Steele,Home Office,372.44599999999997,"#10- 4 1/8"" x 9 1/2"" Recycled Envelopes","Acco Clips to Go Binder Clips, 24 Clips in Two Sizes",0,0
+AT-10435,Alyssa Tate,Home Office,1096.4879999999998,Bevis 36 x 72 Conference Tables,Newell 318,1,0
+AT-10735,Annie Thurman,Consumer,2643.06,Deflect-o Glass Clear Studded Chair Mats,"Sanyo Counter Height Refrigerator with Crisper, 3.6 Cubic Foot, Stainless Steel/Black",2,0
+AW-10840,Anthony Witt,Consumer,321.248,Electrix Halogen Magnifier Lamp,Xerox 210,1,0
+AW-10930,Arthur Wiediger,Home Office,1117.92,Security-Tint Envelopes,Avery 511,0,2
+AY-10555,Andy Yotov,Corporate,222.03199999999998,"DAX Two-Tone Rosewood/Black Document Frame, Desktop, 5 x 7","Eldon Spacemaker Box, Quick-Snap Lid, Clear",0,4
+AZ-10750,Annie Zypern,Consumer,918.9659999999999,"Hunt PowerHouse Electric Pencil Sharpener, Blue","Iceberg Nesting Folding Chair, 19w x 6d x 43h",1,2
+BB-10990,Barry Blumstein,Corporate,374.076,"Ampad Gold Fibre Wirebound Steno Books, 6"" x 9"", Gregg Ruled","Eureka Sanitaire  Multi-Pro Heavy-Duty Upright, Disposable Bags",1,0
+BB-11545,Brenda Bowman,Corporate,2017.3200000000002,Anker Astro 15000mAh USB Portable Charger,Hon 4700 Series Mobuis Mid-Back Task Chairs with Adjustable Arms,1,2
+BC-11125,Becky Castell,Home Office,726.828,Boston 16801 Nautilus Battery Pencil Sharpener,Logitech Trackman Marble Mouse,1,4
+BD-11320,Bill Donatelli,Consumer,2567.84,Eldon 200 Class Desk Accessories,Storex Dura Pro Binders,1,2
+BD-11500,Bradley Drucker,Consumer,3002.6499999999996,DMI Eclipse Executive Suite Bookcases,,0,0
+BD-11560,Brendan Dodson,Home Office,168.58,Unpadded Memo Slips,,0,0
+BD-11605,Brian Dahlen,Consumer,1679.749,"Dot Matrix Printer Tape Reel Labels, White, 5000/Box",Staples,1,4
+BD-11620,Brian DeCherney,Consumer,582.0699999999999,Bevis 36 x 72 Conference Tables,AT&T 17929 Lendline Telephone,0,0
+BD-11635,Brian Derr,Consumer,419.726,Memorex Froggy Flash Drive 8 GB,Belkin F5C206VTEL 6 Outlet Surge,1,0
+BD-11725,Bruce Degenhardt,Consumer,675.06,Longer-Life Soft White Bulbs,Staple envelope,0,0
+BD-11770,Bryan Davis,Consumer,240.784,"Atlantic Metals Mobile 5-Shelf Bookcases, Custom Colors",Micropad Numeric Keypads,2,2
+BE-11335,Bill Eplett,Home Office,3480.96,Fellowes High-Stak Drawer Files,Southworth 25% Cotton Premium Laser Paper and Envelopes,1,0
+BE-11410,Bobby Elias,Consumer,1649.75,Xerox 1941,Xerox 1912,0,0
+BE-11455,Brad Eason,Home Office,979.626,Avaya 5410 Digital phone,DAX Solid Wood Frames,2,2
+BF-10975,Barbara Fisher,Corporate,328.54,Self-Adhesive Address Labels for Typewriters with Dispenser Box,Self-Adhesive Address Labels for Typewriters with Dispenser Box,2,2
+BF-11005,Barry Franz,Home Office,739.736,"Acco Six-Outlet Power Strip, 4' Cord Length",,0,2
+BF-11020,Barry Französisch,Corporate,1035.8,Panasonic KX-TG6844B Expandable Digital Cordless Telephone,Star Micronics TSP100 TSP143LAN Receipt Printer,1,6
+BF-11080,Bart Folk,Consumer,225.61,Avery 52,Fellowes Basic Home/Office Series Surge Protectors,2,0
+BF-11170,Ben Ferrer,Home Office,1843.402,"Acco Banker's Clasps, 5 3/4""-Long","Acco Banker's Clasps, 5 3/4""-Long",1,6
+BF-11215,Benjamin Farhat,Home Office,780.086,"Multi-Use Personal File Cart and Caster Set, Three Stacking Bins","Eldon 200 Class Desk Accessories, Black",0,2
+BF-11275,Beth Fritzler,Corporate,388.70399999999995,Polycom SoundPoint IP 450 VoIP phone,,0,0
+BG-11035,Barry Gonzalez,Consumer,1664.1319999999998,Sanford 52201 APSCO Electric Pencil Sharpener,,0,0
+BG-11695,Brooke Gillingham,Corporate,845.488,Fellowes Bases and Tops For Staxonsteel/High-Stak Systems,Staple holder,1,0
+BG-11740,Bruce Geld,Consumer,486.368,"SAFCO PlanMaster Boards, 60w x 37-1/2d, White Melamine",DAX Wood Document Frame,1,0
+BH-11710,Brosina Hoffman,Consumer,3714.304,"Eureka The Boss Lite 10-Amp Upright Vacuum, Blue",GBC ProClick Punch Binding System,1,4
+BK-11260,Berenike Kampe,Consumer,314.54999999999995,"Verbatim 25 GB 6x Blu-ray Single Layer Recordable Disc, 10/Pack",Acme Box Cutter Scissors,0,4
+BM-11140,Becky Martin,Consumer,10539.896,Tripp Lite TLP810NET Broadband Surge for Modem/Fax,Easy-staple paper,0,4
+BM-11575,Brendan Murry,Corporate,405.91999999999996,Acco Perma 3000 Stacking Storage Drawers,GBC Twin Loop Wire Binding Elements,1,0
+BM-11650,Brian Moss,Corporate,3013.78,"Eldon 200 Class Desk Accessories, Black",Adjustable Depth Letter/Legal Cart,4,4
+BM-11785,Bryan Mills,Consumer,475.944,"Verbatim Slim CD and DVD Storage Cases, 50/Pack",Acco D-Ring Binder w/DublLock,2,2
+BN-11470,Brad Norvell,Corporate,192.424,Staple magnet,Staples,1,0
+BN-11515,Bradley Nguyen,Consumer,821.2239999999999,Newell 317,"DAX Value U-Channel Document Frames, Easel Back",1,6
+BO-11350,Bill Overfelt,Corporate,1604.73,Avery 495,"Wilson Jones Elliptical Ring 3 1/2"" Capacity Binders, 800 sheets",1,2
+BO-11425,Bobby Odegard,Consumer,124.75,Large Capacity Hanging Post Binders,Manco Dry-Lighter Erasable Highlighter,1,0
+BP-11050,Barry Pond,Corporate,883.3199999999999,"SAFCO Mobile Desk Side File, Wire Frame",Konica Minolta magicolor 1690MF Multifunction Printer,1,0
+BP-11095,Bart Pistole,Corporate,832.1379999999999,"Bush Andora Bookcase, Maple/Graphite Gray Finish",Binder Clips by OIC,2,2
+BP-11155,Becky Pak,Consumer,1109.95,Xerox 1907,"Acco Pressboard Covers with Storage Hooks, 14 7/8"" x 11"", Executive Red",2,2
+BP-11185,Ben Peterman,Corporate,1203.441,Nu-Dell Executive Frame,Logitech Wireless Headset h800,1,2
+BP-11230,Benjamin Patterson,Consumer,1022.97,Safco Drafting Table,Cisco Unified IP Phone 7945G VoIP phone,1,0
+BP-11290,Beth Paige,Consumer,651.496,"Fellowes Twister Kit, Gray/Clear, 3/pkg","Xerox Color Copier Paper, 11"" x 17"", Ream",2,4
+BS-11365,Bill Shonely,Corporate,9135.19,"Eldon Image Series Desk Accessories, Burgundy",Hon Olson Stacker Stools,0,0
+BS-11380,Bill Stewart,Corporate,1915.6239999999998,Aluminum Screw Posts,GBC Therma-A-Bind 250T Electric Binding System,2,2
+BS-11590,Brendan Sweed,Corporate,1280.992,Office Star - Professional Matrix Back Chair with 2-to-1 Synchro Tilt and Mesh Fabric Seat,"Cardinal Slant-D Ring Binder, Heavy Gauge Vinyl",1,0
+BS-11665,Brian Stugart,Consumer,1873.606,36X48 HARDFLOOR CHAIRMAT,Sony 64GB Class 10 Micro SDHC R40 Memory Card,0,2
+BS-11755,Bruce Stewart,Consumer,933.95,Acco Glide Clips,Tripp Lite Isotel 6 Outlet Surge Protector with Fax/Modem Protection,1,2
+BS-11800,Bryan Spruell,Home Office,760.8,Avery File Folder Labels,Computer Printout Paper with Letter-Trim Fine Perforations,1,2
+BT-11305,Beth Thompson,Home Office,2061.01,"DAX Executive Solid Wood Document Frame, Desktop or Hang, Mahogany, 5 x 7",,0,0
+BT-11395,Bill Tyler,Corporate,1126.8300000000002,"Lesro Sheffield Collection Coffee Table, End Table, Center Table, Corner Table","Eldon Spacemaker Box, Quick-Snap Lid, Clear",1,0
+BT-11440,Bobby Trafton,Consumer,440.04799999999994,Xerox 1937,"Commercial WindTunnel Clean Air Upright Vacuum, Replacement Belts, Filtration Bags",0,2
+BT-11485,Brad Thomas,Home Office,384.85999999999996,"DAX Charcoal/Nickel-Tone Document Frame, 5 x 7",Xerox 1950,1,0
+BT-11530,Bradley Talbott,Home Office,2110.72,Razer Kraken PRO Over Ear PC and Music Headset,Panasonic Kx-TS550,0,2
+BT-11680,Brian Thompson,Consumer,1133.8200000000002,Staple-based wall hangings,GBC Recycled VeloBinder Covers,2,4
+BV-11245,Benjamin Venier,Corporate,670.001,AT&T 841000 Phone,9-3/4 Diameter Round Wall Clock,0,2
+BW-11065,Barry Weirich,Consumer,324.744,"Tennsco Stur-D-Stor Boltless Shelving, 5 Shelves, 24"" Deep, Sand","Tennsco Stur-D-Stor Boltless Shelving, 5 Shelves, 24"" Deep, Sand",1,0
+BW-11110,Bart Watters,Corporate,3059.982,Hon 4700 Series Mobuis Mid-Back Task Chairs with Adjustable Arms,"Adams Phone Message Book, Professional, 400 Message Capacity, 5 3/6_ x 11_",0,4
+BW-11200,Ben Wallace,Consumer,891.7760000000001,Newell 351,"Metal Folding Chairs, Beige, 4/Carton",0,2
+CA-11965,Carol Adams,Corporate,1999.96,Security-Tint Envelopes,Security-Tint Envelopes,1,0
+CA-12055,Cathy Armstrong,Home Office,1016.184,Brown Kraft Recycled Envelopes,GBC Premium Transparent Covers with Diagonal Lined Pattern,0,0
+CA-12265,Christina Anderson,Consumer,912.75,Avery 481,Xerox 1952,2,4
+CA-12310,Christine Abelman,Corporate,495.3,Fiskars Spring-Action Scissors,"Recycled Interoffice Envelopes with String and Button Closure, 10 x 13",1,2
+CA-12775,Cynthia Arntzen,Consumer,1639.711,Harbour Creations 67200 Series Stacking Chairs,Xerox 1995,1,4
+CB-12025,Cassandra Brandow,Consumer,2645.021,Anker Ultrathin Bluetooth Wireless Keyboard Aluminum Cover with Stand,Xerox 1945,1,6
+CB-12415,Christy Brittain,Consumer,1439.976,Advantus Rolling Drawer Organizers,Hewlett Packard LaserJet 3310 Copier,3,0
+CB-12535,Claudia Bergmann,Corporate,1672.31,"Quartet Omega Colored Chalk, 12/Pack",Iceberg Mobile Mega Data/Printer Cart,3,4
+CC-12100,Chad Cunningham,Home Office,1308.196,Newell 328,GBC Standard Plastic Binding Systems' Combs,1,4
+CC-12145,Charles Crestani,Consumer,2147.3360000000002,Prismacolor Color Pencil Set,,0,2
+CC-12220,Chris Cortes,Consumer,962.406,Convenience Packs of Business Envelopes,Plantronics Voyager Pro HD - Bluetooth Headset,2,2
+CC-12370,Christopher Conant,Consumer,8539.02,"Eldon 200 Class Desk Accessories, Black",Xerox 1905,1,2
+CC-12430,Chuck Clark,Home Office,868.452,"Eureka The Boss Plus 12-Amp Hard Box Upright Vacuum, Red",White Computer Printout Paper by Universal,2,0
+CC-12475,Cindy Chapman,Consumer,686.4,Recycled Eldon Regeneration Jumbo File,Rubber Band Ball,2,0
+CC-12550,Clay Cheatham,Consumer,55.488,Xerox 1998,,0,0
+CC-12610,Corey Catlett,Corporate,1812.0100000000002,Fellowes Superior 10 Outlet Split Surge Protector,Fellowes Superior 10 Outlet Split Surge Protector,1,0
+CC-12670,Craig Carreira,Consumer,956.8035,Acco 3-Hole Punch,Acco 3-Hole Punch,1,2
+CC-12685,Craig Carroll,Consumer,1884.144,Canon PC-428 Personal Copier,Wilson Jones Easy Flow II Sheet Lifters,1,2
+CD-11920,Carlos Daly,Consumer,1559.6680000000001,Boston KS Multi-Size Manual Pencil Sharpener,Xerox 1968,1,2
+CD-11980,Carol Darley,Consumer,318.96,Xerox 1906,Xerox 1906,1,2
+CD-12280,Christina DeMoss,Consumer,796.036,Binder Clips by OIC,GBC Prestige Therm-A-Bind Covers,1,4
+CD-12790,Cynthia Delaney,Home Office,1058.27,Micropad Numeric Keypads,Micropad Numeric Keypads,0,4
+CG-12040,Catherine Glotzbach,Home Office,538.022,Prestige Round Ring Binders,"Wirebound Message Books, 2 7/8"" x 5"", 3 Forms per Page",1,2
+CG-12520,Claire Gute,Consumer,993.9000000000001,"SimpliFile Personal File, Black Granite, 15w x 6-15/16d x 11-1/4h",,0,0
+CH-12070,Cathy Hwang,Home Office,1127.976,Samsung Galaxy S4 Mini,Xerox 211,1,0
+CJ-11875,Carl Jackson,Corporate,16.52,Newell 31,Newell 31,0,0
+CJ-12010,Caroline Jumper,Consumer,4835.976,Bulldog Vacuum Base Pencil Sharpener,Staple-based wall hangings,0,4
+CK-12205,Chloris Kastensmidt,Consumer,1242.6319999999998,"3D Systems Cube Printer, 2nd Generation, White",Texas Instrument TI-15 Fraction Calculator,3,2
+CK-12325,Christine Kargatis,Home Office,1448.853,Staples in misc. colors,"SAFCO PlanMaster Boards, 60w x 37-1/2d, White Melamine",1,2
+CK-12595,Clytie Kelty,Consumer,699.4000000000001,Plantronics S12 Corded Telephone Headset System,PureGear Roll-On Screen Protector,2,4
+CK-12760,Cyma Kinney,Corporate,719.095,"Bevis Oval Conference Table, Walnut",Maxell DVD-RAM Discs,0,2
+CL-11890,Carl Ludwig,Consumer,1081.69,"Atlantic Metals Mobile 3-Shelf Bookcases, Custom Colors",Wilson Jones Heavy-Duty Casebound Ring Binders with Metal Hinges,2,2
+CL-12565,Clay Ludtke,Consumer,3251.34,"Global Leather and Oak Executive Chair, Black","Eldon ""L"" Workstation Diamond Chairmat",0,6
+CL-12700,Craig Leslie,Home Office,1344.4199999999998,KeyTronic_E03601U1 -_Keyboard_- Beige,Plantronics Audio 478 Stereo USB Headset,1,0
+CM-11815,Candace McMahon,Corporate,994.4639999999999,Fellowes Stor/Drawer Steel Plus Storage Drawers,,0,0
+CM-11935,Carlos Meador,Consumer,530.272,DMI Eclipse Executive Suite Bookcases,,0,0
+CM-12115,Chad McGuire,Consumer,782.4,Kensington Expert Mouse Optical USB Trackball for PC or Mac,"Rediform S.O.S. 1-Up Phone Message Bk, 4-1/4x3-1/16 Bk, 1 Form/Pg, 40 Messages/Bk, 3/Pk",2,0
+CM-12160,Charles McCrossin,Consumer,2003.52,Storex Dura Pro Binders,Logitech Desktop MK120 Mouse and keyboard Combo,3,0
+CM-12190,Charlotte Melton,Consumer,638.68,"Fellowes Personal Hanging Folder Files, Navy",iOttie HLCRIO102 Car Mount,2,0
+CM-12235,Chris McAfee,Consumer,1399.944,Fellowes PB200 Plastic Comb Binding Machine,Fellowes PB200 Plastic Comb Binding Machine,0,0
+CM-12385,Christopher Martinez,Consumer,6412.7699999999995,Avery File Folder Labels,,0,2
+CM-12445,Chuck Magee,Consumer,132.95,"Black Print Carbonless Snap-Off Rapid Letter, 8 1/2"" x 7""",,0,2
+CM-12655,Corinna Mitchell,Home Office,2294.9,"Bevis Oval Conference Table, Walnut",Fellowes Powershred HS-440 4-Sheet High Security Shredder,1,0
+CM-12715,Craig Molinari,Corporate,1488.774,"Atlantic Metals Mobile 5-Shelf Bookcases, Custom Colors","Acco Six-Outlet Power Strip, 4' Cord Length",0,4
+CP-12085,Cathy Prescott,Corporate,4619.33,Nu-Dell Leatherette Frames,Nu-Dell Leatherette Frames,1,2
+CP-12340,Christine Phan,Corporate,3455.13,Angle-D Ring Binders,Xerox 1926,1,2
+CR-12580,Clay Rozendal,Home Office,1872.934,Chromcraft Round Conference Tables,3-ring staple pack,0,0
+CR-12625,Corey Roper,Home Office,334.68,"Global Value Mid-Back Manager's Chair, Gray",Boston Heavy-Duty Trimline Electric Pencil Sharpeners,0,0
+CR-12730,Craig Reiter,Consumer,904.9,Avanti 4.4 Cu. Ft. Refrigerator,Avanti 4.4 Cu. Ft. Refrigerator,1,0
+CR-12820,Cyra Reiten,Home Office,702.8424,"Adams Telephone Message Book W/Dividers/Space For Phone Numbers, 5 1/4""X8 1/2"", 200/Messages",Logitech G430 Surround Sound Gaming Headset with Dolby 7.1 Technology,1,0
+CS-11845,Cari Sayre,Corporate,1051.912,"Adams Telephone Message Book W/Dividers/Space For Phone Numbers, 5 1/4""X8 1/2"", 300/Messages",,0,0
+CS-11860,Cari Schnelling,Consumer,479.984,"Eureka Sanitaire  Multi-Pro Heavy-Duty Upright, Disposable Bags","Eureka Sanitaire  Multi-Pro Heavy-Duty Upright, Disposable Bags",2,0
+CS-11950,Carlos Soltero,Consumer,730.009,Magnifier Swing Arm Lamp,"GBC Velobind Prepunched Cover Sets, Regency Series",2,4
+CS-12130,Chad Sievert,Consumer,472.044,AT&T 17929 Lendline Telephone,,0,0
+CS-12175,Charles Sheldon,Corporate,551.038,Compact Automatic Electric Letter Opener,"Performers Binder/Pad Holder, Black",0,2
+CS-12250,Chris Selesnick,Corporate,1287.26,"Adams Telephone Message Book W/Dividers/Space For Phone Numbers, 5 1/4""X8 1/2"", 300/Messages",Acco Perma 4000 Stacking Storage Drawers,0,8
+CS-12355,Christine Sundaresam,Consumer,919.49,DYMO CardScan Personal V9 Business Card Scanner,Logitech Wireless Performance Mouse MX for PC and Mac,3,2
+CS-12400,Christopher Schild,Home Office,1735.8505,Staples in misc. colors,ClearOne CHATAttach 160 -_speaker phone,0,2
+CS-12460,Chuck Sachs,Consumer,311.96000000000004,AT&T 1080 Corded phone,GBC Premium Transparent Covers with Diagonal Lined Pattern,1,2
+CS-12490,Cindy Schnelling,Corporate,562.2925,Acco Perma 3000 Stacking Storage Drawers,Anker 24W Portable Micro USB Car Charger,1,2
+CS-12505,Cindy Stewart,Consumer,5016.548999999999,Fellowes 8 Outlet Superior Workstation Surge Protector w/o Phone/Fax/Modem Protection,Cubify CubeX 3D Printer Double Head Print,0,0
+CT-11995,Carol Triggs,Consumer,1091.35,ACCOHIDE Binder by Acco,"Lifetime Advantage Folding Chairs, 4/Carton",0,4
+CV-12295,Christina VanderZanden,Consumer,1190.84,Cardinal EasyOpen D-Ring Binders,Plastic Binding Combs,0,2
+CV-12805,Cynthia Voltz,Corporate,1013.7919999999999,Magnifier Swing Arm Lamp,"Sortfiler Multipurpose Personal File Organizer, Black",3,4
+CW-11905,Carl Weiss,Home Office,592.74,"Recycled Data-Pak for Archival Bound Computer Printouts, 12-1/2 x 12-1/2 x 16",GBC Twin Loop Wire Binding Elements,3,0
+CY-12745,Craig Yedwab,Corporate,895.944,"#10 Gummed Flap White Envelopes, 100/Box",Logitech Wireless Gaming Headset G930,1,0
+Co-12640,Corey-Lock,Consumer,564.768,Fellowes Bankers Box Stor/Drawer Steel Plus,Avery 488,0,0
+DA-13450,Dianna Arnett,Home Office,77.75999999999999,Flat Face Poster Frame,Xerox 195,1,0
+DB-12910,Daniel Byrd,Home Office,1027.676,O'Sullivan 3-Shelf Heavy-Duty Bookcases,,0,2
+DB-12970,Darren Budd,Corporate,1179.822,Fellowes Stor/Drawer Steel Plus Storage Drawers,Hon 4070 Series Pagoda Round Back Stacking Chairs,0,4
+DB-13060,Dave Brooks,Consumer,1326.69,"Eldon 200 Class Desk Accessories, Black",Wireless Extenders zBoost YX545 SOHO Signal Booster,0,2
+DB-13120,David Bremer,Corporate,1568.862,Xerox 4200 Series MultiUse Premium Copy Paper (20Lb. and 84 Bright),"Riverside Furniture Oval Coffee Table, Oval End Table, End Table with Drawer",2,0
+DB-13210,Dean Braden,Consumer,1024.637,"Acme Hot Forged Carbon Steel Scissors with Nickel-Plated Handles, 3 7/8"" Cut, 8""L","6"" Cubicle Wall Clock, Black",1,4
+DB-13270,Deborah Brumfield,Home Office,2781.77,Anker Ultra-Slim Mini Bluetooth 3.0 Wireless Keyboard,Eldon 500 Class Desk Accessories,1,0
+DB-13360,Dennis Bolton,Home Office,434.646,Logitech G700s Rechargeable Gaming Mouse,Universal Premium White Copier/Laser Paper (20Lb. and 87 Bright),2,0
+DB-13405,Denny Blanton,Consumer,601.44,Eldon Antistatic Chair Mats for Low to Medium Pile Carpets,"Neat Ideas Personal Hanging Folder Files, Black",2,2
+DB-13555,Dorothy Badders,Corporate,1407.2048,3.6 Cubic Foot Counter Height Office Refrigerator,Staple envelope,2,2
+DB-13615,Doug Bickford,Consumer,979.104,Belkin 5 Outlet SurgeMaster Power Centers,,0,0
+DB-13660,Duane Benoit,Consumer,878.816,"DAX Charcoal/Nickel-Tone Document Frame, 5 x 7",Tennsco Industrial Shelving,3,0
+DC-12850,Dan Campbell,Consumer,2382.9260000000004,Staple remover,O'Sullivan Living Dimensions 3-Shelf Bookcases,0,2
+DC-13285,Debra Catini,Consumer,598.352,DAX Wood Document Frame.,,0,0
+DD-13570,Dorothy Dickinson,Consumer,109.62,OIC Binder Clips,Avery 491,1,0
+DE-13255,Deanra Eno,Home Office,1423.34,Cyber Acoustics AC-202b Speech Recognition Stereo Headset,Xerox 2,0,0
+DF-13135,David Flashing,Consumer,2067.7960000000003,Avery Durable Binders,Xerox 1906,1,0
+DG-13300,Deirdre Greer,Corporate,2059.85,"Blue String-Tie & Button Interoffice Envelopes, 10 x 13",Google Nexus 5,2,0
+DH-13075,Dave Hallsten,Corporate,1445.674,DAX Black Cherry Wood-Tone Poster Frame,Fellowes PB200 Plastic Comb Binding Machine,1,8
+DH-13675,Duane Huffman,Home Office,460.092,12-1/2 Diameter Round Wall Clock,"Deflect-o DuraMat Lighweight, Studded, Beveled Mat for Low Pile Carpeting",1,2
+DJ-13420,Denny Joy,Corporate,1454.9,Global Executive Mid-Back Manager's Chair,,0,0
+DJ-13510,Don Jones,Corporate,1603.136,SanDisk Ultra 16 GB MicroSDHC Class 10 Memory Card,Xerox 209,3,2
+DJ-13630,Doug Jacobs,Consumer,2888.518,Kensington 7 Outlet MasterPiece HOMEOFFICE Power Control Center,Kensington 7 Outlet MasterPiece HOMEOFFICE Power Control Center,1,2
+DK-12835,Damala Kotsonis,Corporate,927.44,Global Executive Mid-Back Manager's Chair,Newell 319,1,2
+DK-12895,Dana Kaydos,Consumer,2531.88,"Howard Miller 13-1/2"" Diameter Rosebrook Wall Clock",,0,4
+DK-12985,Darren Koutras,Consumer,646.2,"Executive Impressions 14"" Two-Color Numerals Wall Clock",,0,0
+DK-13090,Dave Kipp,Consumer,1030.742,"Belkin SportFit Armband For iPhone 5s/5c, Fuchsia",Regeneration Desk Collection,1,4
+DK-13150,David Kendrick,Corporate,433.56,GBC Premium Transparent Covers with Diagonal Lined Pattern,Xerox 1881,1,0
+DK-13225,Dean Katz,Corporate,1632.362,Wilson Jones Leather-Like Binders with DublLock Round Rings,Staples,2,2
+DK-13375,Dennis Kane,Consumer,1137.4,Hoover Commercial Lightweight Upright Vacuum,Newell 312,2,6
+DL-12865,Dan Lawera,Consumer,1059.088,"Avery Trapezoid Ring Binder, 3"" Capacity, Black, 1040 sheets","Dixon My First Ticonderoga Pencil, #2",1,2
+DL-12925,Daniel Lacy,Consumer,1299.99,Avery 513,"Master Big Foot Doorstop, Beige",0,0
+DL-13315,Delfina Latchford,Consumer,442.5,"C-Line Cubicle Keepers Polyproplyene Holder w/Velcro Back, 8-1/2x11, 25/Bx","Fellowes Personal Hanging Folder Files, Navy",1,4
+DL-13330,Denise Leinenbach,Consumer,508.11,9-3/4 Diameter Round Wall Clock,BIC Brite Liner Highlighters,0,2
+DL-13495,Dionis Lloyd,Corporate,1801.632,"Avery 4027 File Folder Labels for Dot Matrix Printers, 5000 Labels per Box, White",Tennsco Single-Tier Lockers,2,2
+DM-12955,Dario Medina,Corporate,795.408,Eureka The Boss Cordless Rechargeable Stick Vac,Eureka Sanitaire  Commercial Upright,0,0
+DM-13015,Darrin Martin,Consumer,4283.792,"Mead 1st Gear 2"" Zipper Binder, Asst. Colors",Xerox 198,2,4
+DM-13345,Denise Monton,Corporate,2747.25,"Performers Binder/Pad Holder, Black",Plantronics Audio 478 Stereo USB Headset,1,2
+DM-13525,Don Miller,Corporate,1082.15,Staples,Fellowes Staxonsteel Drawer Files,1,2
+DN-13690,Duane Noonan,Consumer,884.6800000000001,"Electrix Architect's Clamp-On Swing Arm Lamp, Black",Xerox 197,0,0
+DO-13435,Denny Ordway,Consumer,459.4335,"Wilson Jones Elliptical Ring 3 1/2"" Capacity Binders, 800 sheets",Spigen Samsung Galaxy S5 Case Wallet,2,0
+DO-13645,Doug O'Connell,Consumer,498.15000000000003,Global Low Back Tilter Chair,Xerox 200,2,0
+DP-13000,Darren Powers,Consumer,383.61,"Seth Thomas 16"" Steel Case Clock","Premium Transparent Presentation Covers, No Pattern/Clear, 8 1/2"" x 11""",1,2
+DP-13105,Dave Poirier,Corporate,1671.08,GBC Instant Index System for Binding Systems,Trimflex Flexible Post Binders,2,0
+DP-13165,David Philippe,Consumer,1050.6,Avery Fluorescent Highlighter Four-Color Set,"Angle-D Binders with Locking Rings, Label Holders",0,0
+DP-13390,Dennis Pardue,Home Office,4685.076,Wilson Jones Turn Tabs Binder Tool for Ring Binders,BIC Liqua Brite Liner,0,0
+DR-12880,Dan Reichenbach,Corporate,2971.7920000000004,AT&T 1080 Corded phone,Razer Kraken 7.1 Surround Sound Over Ear USB Gaming Headset,3,4
+DR-12940,Daniel Raglin,Home Office,5549.41,GBC VeloBinder Strips,Hewlett Packard LaserJet 3310 Copier,1,2
+DS-13030,Darrin Sayre,Home Office,654.242,Dana Halogen Swing-Arm Architect Lamp,LG Electronics Tone+ HBS-730 Bluetooth Headset,1,6
+DS-13180,David Smith,Corporate,740.088,Binder Clips by OIC,Translucent Push Pins by OIC,0,2
+DV-13045,Darrin Van Huff,Corporate,873.811,BoxOffice By Design Rectangular and Half-Moon Meeting Room Tables,"Safco Chair Connectors, 6/Carton",1,2
+DV-13465,Dianna Vittorini,Consumer,1170.72,AT&T SB67148 SynJ,Self-Adhesive Removable Labels,2,4
+DW-13195,David Wiener,Corporate,448.418,KI Conference Tables,,0,0
+DW-13480,Dianna Wilson,Home Office,3745.6299999999997,Binding Machine Supplies,,0,2
+DW-13540,Don Weiss,Consumer,158.28,Avery Printable Repositionable Plastic Tabs,Boston 16801 Nautilus Battery Pencil Sharpener,0,0
+DW-13585,Dorothy Wardle,Corporate,498.492,Eldon Advantage Chair Mats for Low to Medium Pile Carpets,Staples,3,0
+Dl-13600,Dorris liebe,Corporate,658.746,"Eldon 200 Class Desk Accessories, Burgundy","Hon Deluxe Fabric Upholstered Stacking Chairs, Rounded Back",1,0
+Dp-13240,Dean percer,Home Office,2437.672,Adjustable Depth Letter/Legal Cart,Xerox 222,4,4
+EA-14035,Erin Ashbrook,Corporate,599.99,Xerox 1991,"Floodlight Indoor Halogen Bulbs, 1 Bulb per Pack, 60 Watts",1,4
+EB-13705,Ed Braxton,Corporate,1293.488,"Avery Durable Slant Ring Binders, No Labels","Global Wood Trimmed Manager's Task Chair, Khaki",2,0
+EB-13750,Edward Becker,Corporate,1522.638,"Adams Telephone Message Book W/Dividers/Space For Phone Numbers, 5 1/4""X8 1/2"", 200/Messages",Hon Every-Day Series Multi-Task Chairs,1,2
+EB-13840,Ellis Ballard,Corporate,3393.68,"GBC White Gloss Covers, Plain Front",Belkin OmniView SE Rackmount Kit,0,2
+EB-13870,Emily Burns,Consumer,1044.63,Insertable Tab Indexes For Data Binders,Office Star - Contemporary Task Swivel Chair,2,0
+EB-13930,Eric Barreto,Consumer,526.344,Hon Every-Day Series Multi-Task Chairs,,0,0
+EB-13975,Erica Bern,Corporate,959.968,"Cardinal Slant-D Ring Binder, Heavy Gauge Vinyl",,0,0
+EB-14110,Eugene Barchas,Consumer,1628.6100000000001,Aastra 6757i CT Wireless VoIP phone,"Seth Thomas 13 1/2"" Wall Clock",3,0
+EB-14170,Evan Bailliet,Consumer,817.798,Avoid Verbal Orders Carbonless Minifold Book,,0,0
+EC-14050,Erin Creighton,Consumer,299.07,Storex DuraTech Recycled Plastic Frosted Binders,Xerox 1980,1,0
+ED-13885,Emily Ducich,Home Office,2621.322,36X48 HARDFLOOR CHAIRMAT,Hon Olson Stacker Chairs,1,2
+EG-13900,Emily Grady,Consumer,1165.328,Global Deluxe Steno Chair,Xerox 1964,1,2
+EH-13765,Edward Hooks,Corporate,4940.87,GBC DocuBind TL200 Manual Binding Machine,Xerox 1960,2,4
+EH-13945,Eric Hoffmann,Consumer,296.668,Xerox 2,Binding Machine Supplies,0,2
+EH-13990,Erica Hackney,Consumer,327.996,Wireless Extenders zBoost YX545 SOHO Signal Booster,"Global Value Steno Chair, Gray",1,0
+EH-14005,Erica Hernandez,Home Office,405.45599999999996,Carina Double Wide Media Storage Towers in Natural & Black,"Belkin SportFit Armband For iPhone 5s/5c, Fuchsia",1,0
+EH-14125,Eugene Hildebrand,Home Office,748.752,"TRENDnet 56K USB 2.0 Phone, Internet and Fax Modem",Xerox 1881,3,0
+EH-14185,Evan Henry,Consumer,588.784,Xerox 1927,Xerox 1927,1,0
+EJ-13720,Ed Jacobs,Consumer,1219.7920000000001,Imation Bio 2GB USB_Flash Drive Imation_Corp,Fellowes High-Stak Drawer Files,1,0
+EJ-14155,Eva Jacobs,Consumer,1517.049,HP Standard 104 key PS/2 Keyboard,"Executive Impressions 14""",0,2
+EK-13795,Eileen Kiefer,Home Office,1198.33,Newell 328,,0,0
+EL-13735,Ed Ludwig,Home Office,86.62,"Acco PRESSTEX Data Binder with Storage Hooks, Dark Blue, 14 7/8"" X 11""","Acco PRESSTEX Data Binder with Storage Hooks, Dark Blue, 14 7/8"" X 11""",1,0
+EM-13810,Eleni McCrary,Corporate,2048.8559999999998,"Neat Ideas Personal Hanging Folder Files, Black","Neat Ideas Personal Hanging Folder Files, Black",2,0
+EM-13825,Elizabeth Moffitt,Corporate,1107.68,Nortel Meridian M3904 Professional Digital phone,Xerox 1889,1,2
+EM-13960,Eric Murdock,Consumer,572.8,"Fellowes Mobile File Cart, Black",Rogers Handheld Barrel Pencil Sharpener,2,0
+EM-14065,Erin Mull,Consumer,165.94,"Personal Folder Holder, Ebony","Premium Writing Pencils, Soft, #2 by Central Association for the Blind",1,0
+EM-14095,Eudokia Martin,Corporate,520.03,Adjustable Personal File Tote,Adjustable Personal File Tote,1,2
+EM-14140,Eugene Moren,Home Office,1499.95,Cush Cases Heavy Duty Rugged Cover Case for Samsung Galaxy S5 - Purple,Microsoft Sculpt Comfort Mouse,1,6
+EM-14200,Evan Minnotte,Home Office,298.116,Safco Drafting Table,,0,0
+EN-13780,Edward Nazzal,Consumer,1562.694,Peel-Off China Markers,"Linden 10"" Round Wall Clock, Black",1,2
+EP-13915,Emily Phan,Consumer,2007.9048,Newell 327,Jabra Supreme Plus Driver Edition_Headset,2,4
+ER-13855,Elpida Rittenbach,Corporate,1106.924,BPI Conference Tables,,0,0
+ES-14020,Erica Smith,Consumer,2911.7839999999997,Office Star - Mesh Screen back chair with Vinyl seat,Razer Kraken PRO Over Ear PC and Music Headset,0,0
+ES-14080,Erin Smith,Corporate,1443.72,AT&T CL2909,Rogers Handheld Barrel Pencil Sharpener,3,2
+FA-14230,Frank Atkinson,Corporate,1365.48,Socket Bluetooth Cordless Hand Scanner (CHS),,0,4
+FC-14245,Frank Carlisle,Home Office,2377.56,Avanti 1.7 Cu. Ft. Refrigerator,"SlimView Poly Binder, 3/8""",2,2
+FC-14335,Fred Chung,Corporate,2011.9,Xerox 218,Fellowes Neat Ideas Storage Cubes,1,0
+FG-14260,Frank Gastineau,Home Office,711.6800000000001,Binding Machine Supplies,GBC ProClick Punch Binding System,2,0
+FH-14275,Frank Hawley,Corporate,1362.056,GBC Standard Therm-A-Bind Covers,Fellowes PB300 Plastic Comb Binding Machine,2,2
+FH-14350,Fred Harton,Consumer,1142.43,"Cardinal HOLDit! Binder Insert Strips,Extra Strips",Xerox 1924,1,2
+FH-14365,Fred Hopkins,Corporate,4607.27,GBC DocuBind P50 Personal Binding Machine,Office Star - Mid Back Dual function Ergonomic High Back Chair with 2-Way Adjustable Arms,4,0
+FM-14215,Filia McAdams,Corporate,1048.35,"Tenex Traditional Chairmats for Medium Pile Carpet, Standard Lip, 36"" x 48""","Adams Phone Message Book, 200 Message Capacity, 8 1/16_ x 11_",2,2
+FM-14290,Frank Merwin,Home Office,1507.938,Avery Durable Binders,"TRENDnet 56K USB 2.0 Phone, Internet and Fax Modem",2,4
+FM-14380,Fred McMath,Consumer,663.952,Logitech G700s Rechargeable Gaming Mouse,Avery 477,0,0
+FO-14305,Frank Olsen,Consumer,1441.3,Newell 314,"Acme Hot Forged Carbon Steel Scissors with Nickel-Plated Handles, 3 7/8"" Cut, 8""L",2,0
+FP-14320,Frank Preis,Consumer,1384.924,Cisco SPA301,Staple remover,1,0
+FW-14395,Fred Wasserman,Corporate,43.6,Kensington K72356US Mouse-in-a-Box USB Desktop Mouse,"LF Elite 3D Dazzle Designer Hard Case Cover, Lf Stylus Pen and Wiper For Apple Iphone 5c Mini Lite",0,0
+GA-14515,George Ashbrook,Consumer,2572.5,Fellowes Bases and Tops For Staxonsteel/High-Stak Systems,"Deflect-o RollaMat Studded, Beveled Mat for Medium Pile Carpeting",1,2
+GA-14725,Guy Armstrong,Consumer,535.27,Newell 34,"Linden 10"" Round Wall Clock, Black",1,4
+GB-14530,George Bell,Corporate,419.87,Things To Do Today Pad,Things To Do Today Pad,1,2
+GB-14575,Giulietta Baptist,Consumer,3631.96,Adjustable Depth Letter/Legal Cart,Coloredge Poster Frame,1,2
+GD-14590,Giulietta Dortch,Corporate,1099.5,Tuff Stuff Recycled Round Ring Binders,Cisco 8x8 Inc. 6753i IP Business Phone System,0,0
+GG-14650,Greg Guthrie,Corporate,1007.936,"Cardinal Slant-D Ring Binder, Heavy Gauge Vinyl",XtraLife ClearVue Slant-D Ring Binders by Cardinal,1,4
+GH-14410,Gary Hansen,Home Office,1584.866,Swingline SM12-08 MicroCut Jam Free Shredder,Fellowes Bases and Tops For Staxonsteel/High-Stak Systems,1,0
+GH-14425,Gary Hwang,Consumer,3290.516,Memorex Mini Travel Drive 16 GB USB 2.0 Flash Drive,,0,2
+GH-14485,Gene Hale,Corporate,1288.4640000000002,"Electrix Architect's Clamp-On Swing Arm Lamp, Black",,0,0
+GH-14665,Greg Hansen,Consumer,106.02080000000001,"Bush Westfield Collection Bookcases, Medium Cherry Finish",,0,0
+GK-14620,Grace Kelly,Corporate,2875.544,Avery 511,GBC DocuBind TL300 Electric Binding System,0,0
+GM-14440,Gary McGarr,Consumer,1897.92,Office Star - Ergonomically Designed Knee Chair,Sanford Liquid Accent Highlighters,3,0
+GM-14455,Gary Mitchum,Home Office,1077.47,Kensington Expert Mouse Optical USB Trackball for PC or Mac,Avery 481,1,0
+GM-14500,Gene McClure,Consumer,743.426,BIC Brite Liner Highlighters,GBC Imprintable Covers,2,0
+GM-14680,Greg Matthias,Consumer,1769.784,Polycom SoundPoint Pro SE-225 Corded phone,"O'Sullivan Elevations Bookcase, Cherry Finish",1,2
+GM-14695,Greg Maxwell,Corporate,4251.92,Chromcraft Bull-Nose Wood Oval Conference Tables & Bases,,0,4
+GP-14740,Guy Phonely,Corporate,191.62,Aluminum Screw Posts,Large Capacity Hanging Post Binders,1,2
+GR-14560,Georgia Rosenberg,Corporate,1271.42,Xerox 211,"Premier Elliptical Ring Binder, Black",0,2
+GT-14635,Grant Thornton,Corporate,8167.419999999999,Cubify CubeX 3D Printer Triple Head Print,Wilson Jones Century Plastic Molded Ring Binders,1,0
+GT-14710,Greg Tran,Consumer,6160.616,Advantus T-Pin Paper Clips,DMI Eclipse Executive Suite Bookcases,1,4
+GT-14755,Guy Thornton,Consumer,96.604,GBC Premium Transparent Covers with Diagonal Lined Pattern,,0,0
+GW-14605,Giulietta Weimer,Consumer,631.176,GBC DocuBind 300 Electric Binding Machine,PureGear Roll-On Screen Protector,2,0
+GZ-14470,Gary Zandusky,Consumer,2073.35,"Binney & Smith Crayola Metallic Crayons, 16-Color Pack",Electrix Halogen Magnifier Lamp,1,0
+GZ-14545,George Zrebassa,Corporate,2012.3020000000001,"Global Airflow Leather Mesh Back Chair, Black","Decoflex Hanging Personal Folder File, Blue",0,0
+HA-14905,Helen Abelman,Consumer,582.304,Office Star - Ergonomic Mid Back Chair with 2-Way Adjustable Arms,GBC Recycled Regency Composition Covers,2,0
+HA-14920,Helen Andreada,Consumer,671.93,Memorex Froggy Flash Drive 8 GB,Memorex Froggy Flash Drive 8 GB,1,2
+HD-14785,Harold Dahlen,Home Office,122.052,Newell 341,Xerox 200,2,0
+HE-14800,Harold Engle,Corporate,469.65999999999997,"Maxell 74 Minute CDR, 10/Pack",Newell 325,1,2
+HF-14995,Herbert Flentye,Consumer,556.665,Economy Binders,Avery 486,0,4
+HG-14845,Harry Greene,Consumer,364.3879999999999,"SimpliFile Personal File, Black Granite, 15w x 6-15/16d x 11-1/4h",Durable Pressboard Binders,2,2
+HG-14965,Henry Goldwyn,Corporate,1889.99,Ibico EPK-21 Electric Binding System,SanDisk Ultra 32 GB MicroSDHC Class 10 Memory Card,2,0
+HG-15025,Hunter Glantz,Consumer,2003.1200000000001,DMI Arturo Collection Mission-style Design Wood Chair,"DXL Angle-View Binders with Locking Rings, Black",2,0
+HH-15010,Hilary Holden,Corporate,123.28,Ampad #10 Peel & Seel Holiday Envelopes,,0,2
+HJ-14875,Heather Jas,Home Office,163.88,"Neat Ideas Personal Hanging Folder Files, Black",,0,0
+HK-14890,Heather Kirkland,Corporate,2737.672,GBC Prestige Therm-A-Bind Covers,"Iceberg Nesting Folding Chair, 19w x 6d x 43h",1,2
+HL-15040,Hunter Lopez,Consumer,10499.97,Canon imageCLASS 2200 Advanced Copier,Canon imageCLASS 2200 Advanced Copier,2,2
+HM-14860,Harry Marie,Corporate,4909.610000000001,3M Hangers With Command Adhesive,Boston 16801 Nautilus Battery Pencil Sharpener,2,2
+HM-14980,Henry MacAllister,Consumer,569.336,Luxo Economy Swing Arm Lamp,Avery Binding System Hidden Tab Executive Style Index Sets,0,0
+HP-14815,Harold Pawlan,Home Office,1311.372,Lock-Up Easel 'Spel-Binder',Xerox 1935,2,0
+HR-14770,Hallie Redmond,Home Office,687.4,GBC Plastic Binding Combs,Sannysis Cute Owl Design Soft Skin Case Cover for Samsung Galaxy S4,0,2
+HR-14830,Harold Ryan,Corporate,2399.96,Hewlett Packard LaserJet 3310 Copier,Harbour Creations Steel Folding Chair,3,2
+HW-14935,Helen Wasserman,Corporate,4472.32,"Avery Hi-Liter Comfort Grip Fluorescent Highlighter, Yellow Ink","Belkin 325VA UPS Surge Protector, 6'",0,4
+HZ-14950,Henia Zydlo,Consumer,723.92,O'Sullivan Manor Hill 2-Door Library in Brianna Oak,Advantus Panel Wall Acrylic Frame,1,0
+IG-15085,Ivan Gibson,Consumer,370.14,Binding Machine Supplies,Honeywell Enviracaire Portable HEPA Air Cleaner for up to 10 x 16 Room,1,0
+IL-15100,Ivan Liston,Consumer,1645.8700000000001,Aastra 57i VoIP phone,Office Star - Contemporary Swivel Chair with Padded Adjustable Arms and Flex Back,2,0
+IM-15055,Ionia McGrath,Consumer,2824.23,Round Ring Binders,,0,0
+IM-15070,Irene Maddox,Consumer,1979.8899999999999,Fellowes PB200 Plastic Comb Binding Machine,Fellowes Bankers Box Staxonsteel Drawer File/Stacking System,1,4
+JA-15970,Joseph Airdo,Consumer,4749.327,"Speediset Carbonless Redi-Letter 7"" x 8 1/2""",Martin Yale Chadless Opener Electric Letter Opener,3,4
+JB-15400,Jennifer Braxton,Corporate,387.99,Wilson Jones International Size A4 Ring Binders,"Holmes Replacement Filter for HEPA Air Cleaner, Very Large Room, HEPA Filter",3,0
+JB-15925,Joni Blumstein,Consumer,627.924,"Executive Impressions 14"" Two-Color Numerals Wall Clock","While You Were Out Pads, 50 per Pad, 4 x 5 1/4, Green Cycle",1,2
+JB-16000,Joy Bell-,Consumer,327.7328,"Atlantic Metals Mobile 2-Shelf Bookcases, Custom Colors",Avery 487,1,0
+JB-16045,Julia Barnett,Home Office,1311.97,DAX Wood Document Frame,Grandstream GXP1160 VoIP phone,1,0
+JC-15340,Jasper Cacioppo,Consumer,47.94,Tenex Chairmats For Use With Carpeted Floors,"C-Line Peel & Stick Add-On Filing Pockets, 8-3/4 x 5-1/8, 10/Pack",0,0
+JC-15385,Jenna Caffey,Consumer,1058.108,"Dot Matrix Printer Tape Reel Labels, White, 5000/Box",,0,2
+JC-15775,John Castell,Consumer,705.544,Acme Galleria Hot Forged Steel Scissors with Colored Handles,"Wirebound Message Books, Four 2 3/4 x 5 Forms per Page, 200 Sets per Book",2,2
+JC-16105,Julie Creighton,Corporate,435.132,Avery 476,"Eldon 200 Class Desk Accessories, Smoke",1,2
+JD-15790,John Dryer,Consumer,1801.632,Acco Perma 3000 Stacking Storage Drawers,Hon Comfortask Task/Swivel Chairs,0,0
+JD-15895,Jonathan Doherty,Corporate,2145.25,Acme Softgrip Scissors,Staples,0,10
+JD-16015,Joy Daniels,Consumer,132.6,3M Organizer Strips,SanDisk Ultra 32 GB MicroSDHC Class 10 Memory Card,2,0
+JD-16060,Julia Dunbar,Consumer,375.71,Advantus Map Pennant Flags and Round Head Tacks,,0,2
+JD-16150,Justin Deggeller,Corporate,2521.4799999999996,Hoover Shoulder Vac Commercial Portable Vacuum,Hoover Shoulder Vac Commercial Portable Vacuum,3,0
+JE-15475,Jeremy Ellison,Consumer,885.03,Acco D-Ring Binder w/DublLock,Anker Ultrathin Bluetooth Wireless Keyboard Aluminum Cover with Stand,2,2
+JE-15610,Jim Epp,Corporate,3165.744,Acco 3-Hole Punch,Fellowes Bankers Box Recycled Super Stor/Drawer,0,4
+JE-15715,Joe Elijah,Consumer,2563.056,Newell 347,Hon 4700 Series Mobuis Mid-Back Task Chairs with Adjustable Arms,1,4
+JE-15745,Joel Eaton,Consumer,2717.31,Eldon Wave Desk Accessories,"Padded Folding Chairs, Black, 4/Carton",1,2
+JE-16165,Justin Ellison,Corporate,2657.81,"Eldon Expressions Wood Desk Accessories, Oak",,0,2
+JF-15190,Jamie Frazer,Consumer,847.46,Avery 517,Prismacolor Color Pencil Set,3,4
+JF-15295,Jason Fortune-,Consumer,303.544,Avery 491,,0,2
+JF-15355,Jay Fein,Consumer,1446.784,ClearSounds CSC500 Amplified Spirit Phone Corded phone,invisibleSHIELD by ZAGG Smudge-Free Screen Protector,2,2
+JF-15415,Jennifer Ferguson,Consumer,1820.208,Avery 473,Storex Dura Pro Binders,1,4
+JF-15490,Jeremy Farry,Consumer,357.462,"Neat Ideas Personal Hanging Folder Files, Black",Xerox 222,3,0
+JF-15565,Jill Fjeld,Consumer,1611.01,"1.7 Cubic Foot Compact ""Cube"" Office Refrigerators",Logitech 910-002974 M325 Wireless Mouse for Web Scrolling,0,2
+JG-15115,Jack Garza,Consumer,2046.354,GBC DocuBind P50 Personal Binding Machine,,0,2
+JG-15160,James Galang,Consumer,1941.81,Adtran 1202752G1,Wilson Jones Legal Size Ring Binders,1,0
+JG-15310,Jason Gross,Corporate,916.14,Novimex Turbo Task Chair,"Wilson Jones 1"" Hanging DublLock Ring Binders",1,2
+JG-15805,John Grady,Corporate,718.95,Bulldog Table or Wall-Mount Pencil Sharpener,Prang Colored Pencils,1,0
+JH-15430,Jennifer Halladay,Consumer,141.0,"Eldon 400 Class Desk Accessories, Black Carbon",Lock-Up Easel 'Spel-Binder',1,0
+JH-15820,John Huston,Consumer,228.92,Recycled Steel Personal File for Hanging File Folders,Security-Tint Envelopes,2,0
+JH-15910,Jonathan Howell,Consumer,395.436,BPI Conference Tables,Avery 501,1,0
+JH-15985,Joseph Holt,Consumer,4297.644,"Advantus Push Pins, Aluminum Head",,0,2
+JH-16180,Justin Hirsh,Consumer,887.966,Novimex Fabric Task Chair,Premier Automatic Letter Opener,1,0
+JJ-15445,Jennifer Jackson,Consumer,601.5,Crate-A-Files,"Fellowes Premier Superior Surge Suppressor, 10-Outlet, With Phone and Remote",1,0
+JJ-15760,Joel Jenkins,Home Office,119.96,Nokia Lumia 521 (T-Mobile),,0,0
+JK-15205,Jamie Kunitz,Consumer,2026.7800000000002,"""While you Were Out"" Message Book, One Form per Page",Cisco SPA112 2 Port Phone Adapter,1,2
+JK-15325,Jason Klamczynski,Corporate,269.592,Fellowes Basic Home/Office Series Surge Protectors,Staple envelope,0,0
+JK-15370,Jay Kimmel,Consumer,737.2,Eldon Shelf Savers Cubes and Bins,"Leather Task Chair, Black",1,4
+JK-15625,Jim Karlsson,Consumer,1293.4679999999998,Bestar Classic Bookcase,Stanley Contemporary Battery Pencil Sharpeners,2,0
+JK-15640,Jim Kriz,Home Office,4150.972,Logitech 910-002974 M325 Wireless Mouse for Web Scrolling,EcoTones Memo Sheets,5,2
+JK-15730,Joe Kamberova,Consumer,1614.124,Storex DuraTech Recycled Plastic Frosted Binders,Xerox 214,0,4
+JK-16090,Juliana Krohn,Consumer,2479.96,ClearOne CHATAttach 160 -_speaker phone,,0,4
+JK-16120,Julie Kriz,Home Office,900.08,"Hunt PowerHouse Electric Pencil Sharpener, Blue",Xerox 1946,1,2
+JL-15130,Jack Lebron,Consumer,1090.348,"Bevis Round Bullnose 29"" High Table Top",Sterilite Officeware Hinged File Box,1,2
+JL-15175,James Lanier,Home Office,850.92,Acrylic Self-Standing Desk Frames,,0,0
+JL-15235,Janet Lee,Consumer,751.984,Acco Translucent Poly Ring Binders,"Hon Metal Bookcases, Black",1,0
+JL-15505,Jeremy Lonsdale,Consumer,2563.314,Acme Titanium Bonded Scissors,Sauder Barrister Bookcases,0,4
+JL-15835,John Lee,Consumer,2692.329,Avery 492,Samsung Galaxy S III - 16GB - pebble blue (T-Mobile),2,8
+JL-15850,John Lucas,Consumer,1555.244,AT&T 841000 Phone,Wilson Jones Custom Binder Spines & Labels,1,0
+JM-15250,Janet Martin,Consumer,954.902,Memorex Mini Travel Drive 8 GB USB 2.0 Flash Drive,"Global Fabric Manager's Chair, Dark Gray",1,4
+JM-15265,Janet Molinari,Corporate,1045.21,Coloredge Poster Frame,Advantus Push Pins,0,4
+JM-15535,Jessica Myrick,Consumer,799.56,Xerox 228,"DXL Angle-View Binders with Locking Rings, Black",2,0
+JM-15580,Jill Matthias,Consumer,121.092,Bagged Rubber Bands,GBC ProClick Spines for 32-Hole Punch,0,0
+JM-15655,Jim Mitchum,Corporate,402.645,Avery 517,Logitech G602 Wireless Gaming Mouse,0,2
+JM-15865,John Murray,Consumer,4548.81,"Eaton Premium Continuous-Feed Paper, 25% Cotton, Letter Size, White, 1000 Shts/Box",Apple iPhone 5,1,2
+JM-16195,Justin MacKendrick,Consumer,1000.95,Strathmore Photo Mount Cards,Tops Wirebound Message Log Books,0,2
+JO-15145,Jack O'Briant,Corporate,1671.93,Binder Posts,Eldon Radial Chair Mat for Low to Medium Pile Carpets,0,0
+JO-15280,Jas O'Carroll,Consumer,1038.84,Carina Media Storage Towers in Natural & Black,Avery Round Ring Poly Binders,0,2
+JO-15550,Jesus Ocampo,Home Office,570.492,Plymouth Boxed Rubber Bands by Plymouth,"Boston School Pro Electric Pencil Sharpener, 1670",1,2
+JP-15460,Jennifer Patt,Corporate,1091.4399999999998,Aluminum Screw Posts,Newell 331,2,2
+JP-15520,Jeremy Pistek,Consumer,1816.3600000000001,Staple envelope,,0,4
+JP-16135,Julie Prescott,Home Office,558.24,SANFORD Major Accent Highlighters,"Universal Recycled Hanging Pressboard Report Binders, Letter Size",1,0
+JR-15670,Jim Radford,Consumer,604.098,"SAFCO Commercial Wire Shelving, Black","SAFCO Commercial Wire Shelving, Black",0,0
+JR-15700,Jocasta Rupert,Consumer,863.88,Wilson SignalBoost 841262 DB PRO Amplifier Kit,,0,0
+JR-16210,Justin Ritter,Corporate,717.12,GBC DocuBind P100 Manual Binding Machine,Wilson Jones Hanging Recycled Pressboard Data Binders,0,2
+JS-15595,Jill Stevenson,Corporate,783.96,Advantus Plastic Paper Clips,Eldon Shelf Savers Cubes and Bins,0,0
+JS-15685,Jim Sink,Corporate,552.856,"Acco 7-Outlet Masterpiece Power Center, Wihtout Fax/Phone Line Protection",Wilson Jones Turn Tabs Binder Tool for Ring Binders,1,2
+JS-15880,John Stevenson,Consumer,1717.9699999999998,Xerox 1914,Riverside Furniture Stanwyck Manor Table Series,0,0
+JS-15940,Joni Sundaresam,Home Office,254.744,"Eldon 400 Class Desk Accessories, Black Carbon",Fellowes Black Plastic Comb Bindings,0,0
+JS-16030,Joy Smith,Consumer,1110.5,3.6 Cubic Foot Counter Height Office Refrigerator,Zebra Zazzle Fluorescent Highlighters,0,4
+JW-15220,Jane Waco,Corporate,5325.884,BIC Liqua Brite Liner,"iKross Bluetooth Portable Keyboard + Cell Phone Stand Holder + Brush for Apple iPhone 5S 5C 5, 4S 4",2,2
+JW-15955,Joni Wasserman,Consumer,400.39,Fellowes Bankers Box Stor/Drawer Steel Plus,Staples in misc. colors,2,0
+JW-16075,Julia West,Consumer,1270.3790000000001,BIC Brite Liner Highlighters,Newell 319,0,0
+KA-16525,Kelly Andreada,Consumer,518.868,Ames Color-File Green Diamond Border X-ray Mailers,"Southworth 100% Résumé Paper, 24lb.",2,2
+KB-16240,Karen Bern,Corporate,1455.55,Xerox 1959,"White Envelopes, White Envelopes with Clear Poly Window",1,0
+KB-16315,Karl Braun,Consumer,510.82399999999996,DXL Angle-View Binders with Locking Rings by Samsill,Avery 494,2,2
+KB-16405,Katrina Bavinger,Home Office,697.525,Xerox 220,Xerox 189,1,2
+KB-16585,Ken Black,Corporate,1015.816,Martin-Yale Premier Letter Opener,PowerGen Dual USB Car Charger,2,2
+KB-16600,Ken Brennan,Corporate,629.95,Xerox 1915,Nokia Lumia 925,1,0
+KC-16255,Karen Carlisle,Corporate,1319.96,Logitech_Z-906 Speaker sys - home theater - 5.1-CH,Newell 32,1,2
+KC-16540,Kelly Collister,Consumer,3354.98,"Howard Miller 13"" Diameter Pewter Finish Round Wall Clock","Howard Miller 13"" Diameter Pewter Finish Round Wall Clock",1,0
+KC-16675,Kimberly Carter,Corporate,452.464,Global Deluxe Office Fabric Chairs,,0,0
+KD-16270,Karen Daniels,Consumer,6125.822,Panasonic KP-150 Electric Pencil Sharpener,Chromcraft Round Conference Tables,0,4
+KD-16345,Katherine Ducich,Consumer,867.744,Square Credit Card Reader,Newell 324,1,0
+KD-16495,Keith Dawkins,Corporate,5850.514,Fellowes Bases and Tops For Staxonsteel/High-Stak Systems,Fellowes Desktop Hanging File Manager,2,6
+KD-16615,Ken Dana,Corporate,1336.352,Bionaire Personal Warm Mist Humidifier/Vaporizer,Deluxe Heavy-Duty Vinyl Round Ring Binder,0,4
+KE-16420,Katrina Edelman,Corporate,680.78,C-Line Cubicle Keepers Polyproplyene Holder With Velcro Backings,Kensington Orbit Wireless Mobile Trackball for PC and Mac,2,0
+KF-16285,Karen Ferguson,Home Office,4173.812,Acco Perma 3000 Stacking Storage Drawers,Black & Decker Filter for Double Action Dustbuster Cordless Vac BLDV7210,1,2
+KH-16330,Katharine Harms,Corporate,921.228,Apple iPhone 5S,"Memorex 25GB 6X Branded Blu-Ray Recordable Disc, 15/Pack",2,2
+KH-16360,Katherine Hughes,Consumer,1814.6799999999998,DMI Arturo Collection Mission-style Design Wood Chair,Staple-based wall hangings,1,4
+KH-16510,Keith Herrera,Consumer,3955.507,"Bevis Round Conference Table Top, X-Base",,0,4
+KH-16630,Ken Heidel,Corporate,2503.82,"Wirebound Message Books, Four 2 3/4 x 5 Forms per Page, 200 Sets per Book",Safco Industrial Wire Shelving System,2,4
+KH-16690,Kristen Hastings,Corporate,3769.56,Adjustable Depth Letter/Legal Cart,Advantus Rolling Storage Box,1,4
+KL-16555,Kelly Lampkin,Corporate,1883.7240000000002,Kingston Digital DataTraveler 16GB USB 2.0,"Rubbermaid ClusterMat Chairmats, Mat Size- 66"" x 60"", Lip 20"" x 11"" -90 Degree Angle",0,4
+KL-16645,Ken Lonsdale,Consumer,8319.289999999999,Samsung Replacement EH64AVFWE Premium Headset,"Adams Telephone Message Books, 5 1/4_ x 11_",1,8
+KM-16225,Kalyca Meade,Corporate,896.38,Accohide Poly Flexible Ring Binders,Manco Dry-Lighter Erasable Highlighter,3,6
+KM-16375,Katherine Murray,Home Office,2846.22,"Binney & Smith inkTank Desk Highlighter, Chisel Tip, Yellow, 12/Box","Global Fabric Manager's Chair, Dark Gray",0,4
+KM-16660,Khloe Miller,Consumer,273.92600000000004,Hoover Commercial SteamVac,Eldon 500 Class Desk Accessories,0,0
+KM-16720,Kunst Miller,Consumer,1891.316,Belkin 8 Outlet Surge Protector,Belkin 8 Outlet Surge Protector,1,8
+KN-16390,Katherine Nockton,Corporate,637.27,Plantronics MX500i Earset,Samsung Convoy 3,5,0
+KN-16450,Kean Nguyen,Corporate,1840.0430000000001,Howard Miller Distant Time Traveler Alarm Clock,Howard Miller Distant Time Traveler Alarm Clock,1,2
+KN-16705,Kristina Nunn,Home Office,1278.158,Wausau Papers Astrobrights Colored Envelopes,"Wirebound Message Books, Four 2 3/4"" x 5"" Forms per Page, 600 Sets per Book",0,2
+KS-16300,Karen Seio,Corporate,61.876,Euro Pro Shark Stick Mini Vacuum,,0,0
+KT-16465,Kean Takahito,Consumer,1166.7160000000001,Xerox 1915,,0,0
+KT-16480,Kean Thornton,Consumer,1799.97,APC 7 Outlet Network SurgeArrest Surge Protector,Hewlett Packard LaserJet 3310 Copier,2,0
+KW-16435,Katrina Willman,Consumer,3747.9300000000003,"Avery Address/Shipping Labels for Typewriters, 4"" x 2""",Eldon Wave Desk Accessories,1,2
+KW-16570,Kelly Williams,Consumer,241.34,Dana Swing-Arm Lamps,,0,0
+LA-16780,Laura Armstrong,Corporate,3963.57,Assorted Color Push Pins,9-3/4 Diameter Round Wall Clock,0,4
+LB-16735,Larry Blacks,Consumer,26.72,Xerox 1968,,0,0
+LB-16795,Laurel Beltran,Home Office,1215.72,Avery Personal Creations Heavyweight Cards,Zipper Ring Binder Pockets,1,6
+LC-16870,Lena Cacioppo,Consumer,874.8,DAX Two-Tone Silver Metal Document Frame,Newell 34,0,8
+LC-16885,Lena Creighton,Consumer,3184.356,Bretford CR4500 Series Slim Rectangular Table,GBC Plasticlear Binding Covers,2,2
+LC-16930,Linda Cazamias,Corporate,2396.4,"Lifetime Advantage Folding Chairs, 4/Carton",Prang Dustless Chalk Sticks,1,0
+LC-16960,Lindsay Castell,Home Office,2676.672,Aluminum Document Frame,Hoover Portapower Portable Vacuum,1,0
+LC-17050,Liz Carlisle,Consumer,866.4,"Linden 10"" Round Wall Clock, Black",I Need's 3d Hello Kitty Hybrid Silicone Case Cover for HTC One X 4g with 3d Hello Kitty Stylus Pen Green/pink,0,0
+LC-17140,Logan Currie,Consumer,1083.07,"Acco Pressboard Covers with Storage Hooks, 9 1/2"" x 11"", Executive Red",WD My Passport Ultra 2TB Portable External Hard Drive,2,2
+LD-16855,Lela Donovan,Corporate,5.304,Newell 311,,0,0
+LD-17005,Lisa DeCherney,Consumer,1609.32,Digium D40 VoIP phone,"Dual Level, Single-Width Filing Carts",0,2
+LE-16810,Laurel Elliston,Consumer,641.96,Nortel Business Series Terminal T7208 Digital phone,"Perma STOR-ALL Hanging File Box, 13 1/8""W x 12 1/4""D x 10 1/2""H",1,0
+LF-17185,Luke Foster,Consumer,2656.716,Akro-Mils 12-Gallon Tote,"Global Value Mid-Back Manager's Chair, Gray",2,2
+LH-16750,Larry Hughes,Consumer,271.96,Nortel Networks T7316 E Nt8 B27,"Angle-D Binders with Locking Rings, Label Holders",0,0
+LH-16900,Lena Hernandez,Consumer,638.82,Xerox 1884,WD My Passport Ultra 2TB Portable External Hard Drive,0,0
+LH-17020,Lisa Hazard,Consumer,120.783,"Avery Durable Slant Ring Binders, No Labels",JBL Micro Wireless Portable Bluetooth Speaker,1,0
+LH-17155,Logan Haushalter,Consumer,492.28000000000003,"Global Leather Highback Executive Chair with Pneumatic Height Adjustment, Black","GE 48"" Fluorescent Tube, Cool White Energy Saver, 34 Watts, 30/Box",0,0
+LL-16840,Lauren Leatherbury,Consumer,2298.8999999999996,Surelock Post Binders,Dax Clear Box Frame,0,2
+LM-17065,Liz MacKendrick,Consumer,646.776,GBC Instant Report Kit,Fellowes Officeware Wire Shelving,1,0
+LO-17170,Lori Olson,Corporate,247.44,3M Hangers With Command Adhesive,"Advantus Employee of the Month Certificate Frame, 11 x 13-1/2",2,2
+LP-17080,Liz Pelletier,Consumer,524.616,Coloredge Poster Frame,,0,0
+LP-17095,Liz Preis,Consumer,2113.567,Tennsco Single-Tier Lockers,Electrix Halogen Magnifier Lamp,0,2
+LR-16915,Lena Radford,Consumer,2049.816,Okidata C610n Printer,,0,4
+LR-17035,Lisa Ryan,Corporate,806.4090000000001,Acme Kleencut Forged Steel Scissors,Samsung Galaxy Note 3,2,0
+LS-16945,Linda Southworth,Corporate,2331.84,"Cardinal HOLDit! Binder Insert Strips,Extra Strips",Avery 483,1,4
+LS-16975,Lindsay Shagiari,Home Office,1071.7400000000002,Ibico Covers for Plastic or Wire Binding Elements,Luxo Professional Fluorescent Magnifier Lamp with Clamp-Mount Base,2,4
+LS-17200,Luke Schmidt,Corporate,605.34,Iris Project Case,"DAX Executive Solid Wood Document Frame, Desktop or Hang, Mahogany, 5 x 7",0,2
+LS-17230,Lycoris Saunders,Consumer,253.34000000000003,"Avery Framed View Binder, EZD Ring (Locking), Navy, 1 1/2""","Executive Impressions 13"" Chairman Wall Clock",1,0
+LS-17245,Lynn Smith,Consumer,414.63,Executive Impressions Supervisor Wall Clock,"Avery Address/Shipping Labels for Typewriters, 4"" x 2""",0,2
+LT-16765,Larry Tron,Consumer,201.584,"IBM Multi-Purpose Copy Paper, 8 1/2 x 11"", Case","IBM Multi-Purpose Copy Paper, 8 1/2 x 11"", Case",1,0
+LT-17110,Liz Thompson,Consumer,904.13,Motorola L804,Motorola L804,2,2
+LW-16825,Laurel Workman,Corporate,765.494,Colorific Watercolor Pencils,Geemarc AmpliPOWER60,0,4
+LW-16990,Lindsay Williams,Corporate,1691.6080000000002,Enermax Briskie RF Wireless Keyboard and Mouse Combo,,0,0
+LW-17125,Liz Willingham,Consumer,1120.73,Wilson Jones Impact Binders,Wilson Jones Impact Binders,1,0
+LW-17215,Luke Weiss,Consumer,3785.292,GBC Imprintable Covers,HON 5400 Series Task Chairs for Big and Tall,0,4
+MA-17560,Matt Abelman,Home Office,1170.9180000000001,Prang Colored Pencils,Staple-on labels,3,8
+MA-17995,Michelle Arnett,Home Office,1603.136,"Situations Contoured Folding Chairs, 4/Set","Situations Contoured Folding Chairs, 4/Set",1,2
+MB-17305,Maria Bertelson,Consumer,448.44599999999997,Fellowes Superior 10 Outlet Split Surge Protector,Accohide Poly Flexible Ring Binders,3,2
+MB-18085,Mick Brown,Consumer,817.829,DAX Cubicle Frames - 8x10,"Avery Hi-Liter EverBold Pen Style Fluorescent Highlighters, 4/Pack",0,0
+MC-17275,Marc Crier,Consumer,1771.52,Avery 478,Anderson Hickey Conga Table Tops & Accessories,1,2
+MC-17425,Mark Cousins,Corporate,3236.41,Easy-staple paper,Staple envelope,1,2
+MC-17575,Matt Collins,Consumer,353.88,Belkin F9H710-06 7 Outlet SurgeMaster Surge Protector,Panasonic KX-TG9541B DECT 6.0 Digital 2-Line Expandable Cordless Phone With Digital Answering System,2,0
+MC-17590,Matt Collister,Corporate,1273.6229999999998,Razer Kraken 7.1 Surround Sound Over Ear USB Gaming Headset,Bose SoundLink Bluetooth Speaker,0,4
+MC-17605,Matt Connell,Corporate,674.058,Microsoft Wireless Mobile Mouse 4000,Newell 341,1,2
+MC-17635,Matthew Clasen,Corporate,511.948,GBC Binding covers,,0,2
+MC-17845,Michael Chen,Consumer,1669.6,Ideal Clamps,Ideal Clamps,1,2
+MC-18100,Mick Crebagga,Consumer,803.9599999999999,"Executive Impressions 13-1/2"" Indoor/Outdoor Wall Clock",First Data FD10 PIN Pad,3,2
+MC-18130,Mike Caudle,Corporate,1431.078,Bretford Rectangular Conference Table Tops,Rubber Band Ball,1,2
+MD-17350,Maribeth Dona,Consumer,1476.8339999999998,DIXON Oriole Pencils,Tennsco Double-Tier Lockers,2,4
+MD-17860,Michael Dominguez,Corporate,909.12,Avery Durable Slant Ring Binders,Newell 323,2,0
+ME-17320,Maria Etezadi,Home Office,4374.88,"C-Line Magnetic Cubicle Keepers, Clear Polypropylene",,0,2
+ME-17725,Max Engle,Consumer,738.7052,Office Star - Professional Matrix Back Chair with 2-to-1 Synchro Tilt and Mesh Fabric Seat,"BOSTON Ranger #55 Pencil Sharpener, Black",1,0
+ME-18010,Michelle Ellison,Corporate,1173.616,Fellowes Bankers Box Stor/Drawer Steel Plus,Fellowes Bankers Box Stor/Drawer Steel Plus,1,0
+MF-17665,Maureen Fritzler,Corporate,551.985,Ultra Door Pull Handle,Xerox 216,0,2
+MF-18250,Monica Federle,Corporate,1152.8700000000001,"Ativa D5772 2-Line 5.8GHz Digital Expandable Corded/Cordless Phone System with Answering & Caller ID/Call Waiting, Black/Silver","Seth Thomas 16"" Steel Case Clock",1,2
+MG-17650,Matthew Grinstein,Home Office,1310.3359999999998,Magna Visual Magnetic Picture Hangers,Geemarc AmpliPOWER60,2,2
+MG-17680,Maureen Gastineau,Home Office,1515.186,G.E. Longer-Life Indoor Recessed Floodlight Bulbs,"Seth Thomas 14"" Putty-Colored Wall Clock",2,2
+MG-17695,Maureen Gnade,Consumer,835.17,Compact Automatic Electric Letter Opener,Compact Automatic Electric Letter Opener,0,2
+MG-17875,Michael Grace,Home Office,796.425,"Gould Plastics 18-Pocket Panel Bin, 34w x 5-1/4d x 20-1/2h",Kensington 7 Outlet MasterPiece Power Center with Fax/Phone Line Protection,0,0
+MG-17890,Michael Granlund,Home Office,299.75,"Tenex Personal Project File with Scoop Front Design, Black","White Envelopes, White Envelopes with Clear Poly Window",3,0
+MG-18145,Mike Gockenbach,Consumer,1324.574,Logitech G19 Programmable Gaming Keyboard,"White Business Envelopes with Contemporary Seam, Recycled White Business Envelopes",1,0
+MG-18205,Mitch Gastineau,Corporate,16.739,"Acco Pressboard Covers with Storage Hooks, 14 7/8"" x 11"", Light Blue",,0,0
+MH-17290,Marc Harrigan,Home Office,987.1880000000001,"Acco Six-Outlet Power Strip, 4' Cord Length",Nortel Meridian M5316 Digital phone,1,2
+MH-17440,Mark Haberlin,Corporate,241.5,"GBC Laser Imprintable Binding System Covers, Desert Sand","GBC Laser Imprintable Binding System Covers, Desert Sand",0,2
+MH-17455,Mark Hamilton,Consumer,1424.9,Adjustable Depth Letter/Legal Cart,Nu-Dell Executive Frame,1,0
+MH-17620,Matt Hagelstein,Corporate,1170.5639999999999,Super Decoflex Portable Personal File,"Wirebound Four 2-3/4 x 5 Forms per Page, 400 Sets per Book",0,0
+MH-17785,Maya Herman,Corporate,926.44,Xerox 1899,Newell 319,2,0
+MH-18025,Michelle Huthwaite,Consumer,1541.51,"Executive Impressions 14"" Contract Wall Clock","Situations Contoured Folding Chairs, 4/Set",0,2
+MH-18115,Mick Hernandez,Home Office,1416.304,14-7/8 x 11 Blue Bar Computer Printout Paper,Office Star - Mesh Screen back chair with Vinyl seat,4,6
+MJ-17740,Max Jones,Consumer,4823.09,BIC Brite Liner Highlighters,Embossed Ink Jet Note Cards,1,0
+MK-17905,Michael Kennedy,Corporate,1179.27,Bulldog Vacuum Base Pencil Sharpener,Pizazz Global Quick File,0,4
+MK-18160,Mike Kennedy,Consumer,629.86,"Black Print Carbonless Snap-Off Rapid Letter, 8 1/2"" x 7""",,0,2
+ML-17395,Marina Lichtenstein,Corporate,617.12,#6 3/4 Gummed Flap White Envelopes,Southworth 25% Cotton Premium Laser Paper and Envelopes,1,2
+ML-17410,Maris LaWare,Consumer,1298.896,"Global Wood Trimmed Manager's Task Chair, Khaki",Acco 3-Hole Punch,1,4
+ML-17755,Max Ludwig,Home Office,663.936,"Tenex ""The Solids"" Textured Chair Mats",Kensington 7 Outlet MasterPiece Power Center with Fax/Phone Line Protection,2,2
+ML-18040,Michelle Lonsdale,Corporate,674.872,GBC Twin Loop Wire Binding Elements,,0,0
+ML-18265,Muhammed Lee,Consumer,151.96,Logitech M510 Wireless Mouse,,0,0
+MM-17260,Magdelene Morse,Consumer,692.5020000000001,GBC Standard Plastic Binding Systems Combs,Hon 2111 Invitation Series Straight Table,2,0
+MM-17920,Michael Moore,Consumer,1678.0,Acco 6 Outlet Guardian Premium Plus Surge Suppressor,Barrel Sharpener,2,0
+MM-18055,Michelle Moray,Consumer,765.625,Cardinal Slant-D Ring Binders,Hon Mobius Operator's Chair,2,2
+MM-18280,Muhammed MacIntyre,Corporate,262.72,Xerox 1893,Xerox 203,3,0
+MN-17935,Michael Nguyen,Consumer,1115.25,"DataProducts Ampli Magnifier Task Lamp, Black,",Panasonic KX T7731-B Digital phone,2,0
+MO-17500,Mary O'Rourke,Consumer,754.212,"Lesro Round Back Collection Coffee Table, End Table","Atlantic Metals Mobile 5-Shelf Bookcases, Custom Colors",0,0
+MO-17800,Meg O'Connel,Home Office,830.24,Easy-staple paper,"Master Caster Door Stop, Brown",2,0
+MO-17950,Michael Oakman,Consumer,130.288,Imation_8gb Micro Traveldrive Usb 2.0_Flash Drive,,0,0
+MP-17470,Mark Packer,Home Office,1668.988,Ultra Door Push Plate,Ultra Door Push Plate,2,2
+MP-17965,Michael Paige,Corporate,1949.31,Crate-A-Files,"Acco PRESSTEX Data Binder with Storage Hooks, Dark Blue, 14 7/8"" X 11""",4,2
+MP-18175,Mike Pelletier,Home Office,2233.02,"#10- 4 1/8"" x 9 1/2"" Recycled Envelopes","Tennsco Snap-Together Open Shelving Units, Starter Sets and Add-On Units",1,2
+MR-17545,Mathew Reese,Home Office,448.81800000000004,DXL Angle-View Binders with Locking Rings by Samsill,Iris Project Case,1,0
+MS-17365,Maribeth Schnelling,Consumer,4104.174,Avery 498,"Global Armless Task Chair, Royal Blue",1,6
+MS-17530,MaryBeth Skach,Consumer,301.96,"Linden 12"" Wall Clock With Oak Frame",Pressboard Hanging Data Binders for Unburst Sheets,0,0
+MS-17710,Maurice Satty,Consumer,498.93,Avery Durable Slant Ring Binders With Label Holder,"Belkin SportFit Armband For iPhone 5s/5c, Fuchsia",1,2
+MS-17770,Maxwell Schwartz,Consumer,1599.864,Space Solutions Commercial Steel Shelving,Xerox 219,2,4
+MS-17830,Melanie Seite,Consumer,239.372,"Bush Andora Conference Table, Maple/Graphite Gray Finish",Acco 3-Hole Punch,1,0
+MS-17980,Michael Stewart,Corporate,588.008,DIXON Ticonderoga Erasable Checking Pencils,Global Chrome Stack Chair,2,2
+MT-17815,Meg Tillman,Consumer,2503.47,Belkin OmniView SE Rackmount Kit,Panasonic KX T7736-B Digital phone,2,0
+MT-18070,Michelle Tran,Home Office,823.7249999999999,Alphabetical Labels for Top Tab Filing,,0,2
+MV-17485,Mark Van Huff,Consumer,436.596,Tensor Brushed Steel Torchiere Floor Lamp,Xerox 1885,1,2
+MV-18190,Mike Vittorini,Consumer,863.928,"Angle-D Binders with Locking Rings, Label Holders","Angle-D Binders with Locking Rings, Label Holders",1,0
+MW-18220,Mitch Webber,Consumer,3519.37,Sterilite Officeware Hinged File Box,Panasonic KX-TG9541B DECT 6.0 Digital 2-Line Expandable Cordless Phone With Digital Answering System,2,2
+MW-18235,Mitch Willingham,Corporate,3333.8999999999996,Bady BDG101FRU Card Printer,,0,0
+MY-17380,Maribeth Yedwab,Corporate,874.308,Xerox 201,Executive Impressions Supervisor Wall Clock,1,2
+MY-18295,Muhammed Yedwab,Corporate,1661.028,Great White Multi-Use Recycled Paper (20Lb. and 84 Bright),Recycled Steel Personal File for Standard File Folders,1,2
+MZ-17335,Maria Zettner,Home Office,376.97,Contemporary Borderless Frame,,0,0
+MZ-17515,Mary Zewe,Corporate,2158.694,Premier Electric Letter Opener,Premier Electric Letter Opener,2,0
+NB-18580,Nicole Brennan,Corporate,143.952,Tenex Chairmats For Use with Hard Floors,Belkin 8 Outlet SurgeMaster II Gold Surge Protector,0,0
+NB-18655,Nona Balk,Corporate,521.2239999999999,Stockwell Push Pins,Cameo Buff Policy Envelopes,2,2
+NC-18340,Nat Carroll,Consumer,1273.606,"BIC Brite Liner Highlighters, Chisel Tip",SanDisk Ultra 32 GB MicroSDHC Class 10 Memory Card,0,6
+NC-18415,Nathan Cano,Consumer,1729.286,"Avery Hi-Liter GlideStik Fluorescent Highlighter, Yellow Ink",GBC Poly Designer Binding Covers,0,2
+NC-18535,Nick Crebassa,Corporate,5282.648,"Avery Triangle Shaped Sheet Lifters, Black, 2/Pack","Avery Triangle Shaped Sheet Lifters, Black, 2/Pack",1,2
+NC-18625,Noah Childs,Corporate,752.4100000000001,Standard Rollaway File with Lock,Tuf-Vin Binders,1,0
+ND-18370,Natalie DeCherney,Consumer,1952.808,Kensington Orbit Wireless Mobile Trackball for PC and Mac,Safco Contoured Stacking Chairs,1,2
+ND-18460,Neil Ducich,Corporate,1347.52,"Dual Level, Single-Width Filing Carts","Dual Level, Single-Width Filing Carts",1,0
+NF-18385,Natalie Fritzler,Consumer,4190.206,"Chromcraft 48"" x 96"" Racetrack Double Pedestal Table","Eldon 200 Class Desk Accessories, Black",2,2
+NF-18475,Neil Französisch,Home Office,269.98,"GBC Laser Imprintable Binding System Covers, Desert Sand",,0,0
+NF-18595,Nicole Fjeld,Home Office,1242.896,Easy-staple paper,Newell 320,1,2
+NG-18355,Nat Gilpin,Corporate,594.5,Jabra SPEAK 410 Multidevice Speakerphone,Recycled Easel Ring Binders,3,6
+NG-18430,Nathan Gelder,Consumer,779.1600000000001,Tennsco Double-Tier Lockers,Crayola Colored Pencils,0,0
+NH-18610,Nicole Hansen,Corporate,1245.86,4009 Highlighters by Sanford,Hypercom P1300 Pinpad,0,0
+NK-18490,Neil Knudson,Home Office,313.84,Newell 33,Steel Personal Filing/Posting Tote,0,0
+NL-18310,Nancy Lomonaco,Home Office,1158.882,Document Clip Frames,,0,2
+NM-18445,Nathan Mautz,Home Office,4807.372,Wilson Jones __nap_ Scratch Pad Binder Tool for Ring Binders,Panasonic Kx-TS550,1,2
+NM-18520,Neoma Murray,Consumer,1761.8500000000001,Avery 5,Jackery Bar Premium Fast-charging Portable Charger,1,0
+NP-18325,Naresj Patel,Consumer,3385.614,Xerox 1960,KI Conference Tables,1,4
+NP-18670,Nora Paige,Consumer,2258.28,"Adams Telephone Message Book W/Dividers/Space For Phone Numbers, 5 1/4""X8 1/2"", 300/Messages","OIC Colored Binder Clips, Assorted Sizes",1,2
+NP-18685,Nora Pelletier,Home Office,999.98,GBC Plastic Binding Combs,Newell 340,0,0
+NP-18700,Nora Preis,Consumer,4630.5105,Avery File Folder Labels,Tennsco 6- and 18-Compartment Lockers,0,0
+NR-18550,Nick Radford,Consumer,1111.698,"Bravo II Megaboss 12-Amp Hard Body Upright, Replacement Belts, 2 Belts per Pack",O'Sullivan Living Dimensions 2-Shelf Bookcases,0,2
+NS-18505,Neola Schneider,Consumer,1370.5349999999999,Economy Rollaway Files,Strathmore Photo Mount Cards,1,6
+NS-18640,Noel Staavos,Corporate,1252.636,Belkin F9S820V06 8 Outlet Surge,"Acco Six-Outlet Power Strip, 4' Cord Length",1,4
+NW-18400,Natalie Webber,Consumer,3384.518,Staples in misc. colors,Sharp AL-1530CS Digital Copier,1,4
+NZ-18565,Nick Zandusky,Home Office,886.28,36X48 HARDFLOOR CHAIRMAT,Avery 512,0,4
+ON-18715,Odella Nelson,Corporate,630.024,Hon Racetrack Conference Tables,"Global Stack Chair with Arms, Black",1,2
+OT-18730,Olvera Toch,Consumer,1556.694,"Lesro Sheffield Collection Coffee Table, End Table, Center Table, Corner Table",GBC Ibimaster 500 Manual ProClick Binding System,0,0
+PA-19060,Pete Armstrong,Home Office,339.96,Jet-Pak Recycled Peel 'N' Seal Padded Mailers,,0,0
+PB-18805,Patrick Bzostek,Home Office,497.04400000000004,Cyber Acoustics AC-202b Speech Recognition Stereo Headset,,0,4
+PB-19105,Peter Bühler,Consumer,604.656,"Memorex 25GB 6X Branded Blu-Ray Recordable Disc, 15/Pack","Memorex 25GB 6X Branded Blu-Ray Recordable Disc, 15/Pack",1,0
+PB-19150,Philip Brown,Consumer,612.4580000000001,12-1/2 Diameter Round Wall Clock,Peel & Seel Envelopes,1,0
+PB-19210,Phillip Breyer,Corporate,69.93,Mediabridge Sport Armband iPhone 5s,Quality Park Security Envelopes,0,0
+PC-18745,Pamela Coakley,Corporate,1573.488,Avery Reinforcements for Hole-Punch Pages,"Atlantic Metals Mobile 4-Shelf Bookcases, Custom Colors",0,0
+PC-19000,Pauline Chand,Home Office,1011.696,Hon 2111 Invitation Series Corner Table,,0,0
+PF-19120,Peter Fuller,Consumer,7678.228,ARKON Windshield Dashboard Air Vent Car Mount Holder,Avery 485,1,4
+PF-19165,Philip Fox,Consumer,1302.83,DAX Solid Wood Frames,Dell Slim USB Multimedia Keyboard,1,0
+PF-19225,Phillip Flathmann,Consumer,1489.7240000000002,Boston 1799 Powerhouse Electric Pencil Sharpener,,0,2
+PG-18820,Patrick Gardner,Consumer,744.15,BIC Liqua Brite Liner,Enermax Aurora Lite Keyboard,0,6
+PG-18895,Paul Gonzalez,Consumer,536.3599999999999,Standard Line __hile You Were Out_ Hardbound Telephone Message Book,Bagged Rubber Bands,1,2
+PH-18790,Patricia Hirasaki,Home Office,729.648,"Eldon Expressions Desk Accessory, Wood Photo Frame, Mahogany",,0,0
+PJ-18835,Patrick Jones,Corporate,860.07,Canvas Sectional Post Binders,"It's Hot Message Books with Stickers, 2 3/4"" x 5""",1,0
+PJ-19015,Pauline Johnson,Consumer,1418.21,Newell 325,invisibleSHIELD by ZAGG Smudge-Free Screen Protector,2,0
+PK-18910,Paul Knutson,Home Office,1422.252,Cisco SPA301,GBC Ibimaster 500 Manual ProClick Binding System,0,0
+PK-19075,Pete Kriz,Consumer,4337.639999999999,Ibico Presentation Index for Binding Systems,Holmes Odor Grabber,2,4
+PL-18925,Paul Lucas,Home Office,83.976,"Master Giant Foot Doorstop, Safety Yellow",Wilson Jones Century Plastic Molded Ring Binders,1,0
+PM-18940,Paul MacIntyre,Consumer,1056.86,"Iceberg OfficeWorks 42"" Round Tables",,0,0
+PM-19135,Peter McVee,Home Office,3332.974,Logitech G602 Wireless Gaming Mouse,Logitech diNovo Edge Keyboard,1,0
+PN-18775,Parhena Norris,Home Office,563.94,OtterBox Defender Series Case - Samsung Galaxy S4,9-3/4 Diameter Round Wall Clock,1,2
+PO-18850,Patrick O'Brill,Consumer,4590.344,"Recycled Desk Saver Line ""While You Were Out"" Book, 5 1/2"" X 4""",Round Specialty Laser Printer Labels,0,4
+PO-18865,Patrick O'Donnell,Consumer,935.1519999999999,"Bush Westfield Collection Bookcases, Fully Assembled",Gear Head AU3700S Headset,2,0
+PO-19180,Philisse Overcash,Home Office,2165.12,Logitech G600 MMO Gaming Mouse,"Eureka The Boss Plus 12-Amp Hard Box Upright Vacuum, Red",2,2
+PO-19195,Phillina Ober,Home Office,344.372,Motorola HK250 Universal Bluetooth Headset,Motorola HK250 Universal Bluetooth Headset,3,0
+PP-18955,Paul Prost,Home Office,2354.98,Vtech CS6719,Square Credit Card Reader,2,4
+PR-18880,Patrick Ryan,Consumer,1520.15,"Southworth 100% Résumé Paper, 24lb.",,0,2
+PS-18760,Pamela Stobb,Consumer,610.1560000000001,Aluminum Screw Posts,Tensor Track Tree Floor Lamp,1,6
+PS-18970,Paul Stevenson,Home Office,425.056,Dixon Ticonderoga Core-Lock Colored Pencils,Sanford Pocket Accent Highlighters,1,2
+PS-19045,Penelope Sewall,Home Office,3359.952,Canon Imageclass D680 Copier / Fax,Recycled Easel Ring Binders,2,2
+PT-19090,Pete Takahito,Consumer,93.456,DAX Wood Document Frame.,,0,2
+PV-18985,Paul Van Hugh,Home Office,1687.26,"Performers Binder/Pad Holder, Black",Memorex Mini Travel Drive 16 GB USB 2.0 Flash Drive,1,4
+PW-19030,Pauline Webber,Corporate,1433.19,"Letter/Legal File Tote with Clear Snap-On Lid, Black Granite",Motorola L703CM,2,0
+PW-19240,Pierre Wener,Consumer,2541.98,Newell 348,Xerox 226,2,2
+QJ-19255,Quincy Jones,Corporate,4404.9,Logitech ClearChat Comfort/USB Headset H390,Logitech ClearChat Comfort/USB Headset H390,4,0
+RA-19285,Ralph Arnett,Consumer,1230.5,"Bush Andora Bookcase, Maple/Graphite Gray Finish",Steel Personal Filing/Posting Tote,3,0
+RA-19885,Ruben Ausman,Corporate,1215.92,Logitech G430 Surround Sound Gaming Headset with Dolby 7.1 Technology,,0,4
+RA-19915,Russell Applegate,Consumer,2027.144,Binding Machine Supplies,Tops Green Bar Computer Printout Paper,0,2
+RA-19945,Ryan Akin,Consumer,709.0425,"Bevis Round Conference Table Top, X-Base",Maxell 4.7GB DVD-RW 3/Pack,1,0
+RB-19330,Randy Bradley,Consumer,670.3779999999999,"Acco Flexible ACCOHIDE Square Ring Data Binder, Dark Blue, 11 1/2"" X 14"" 7/8""",Hon Every-Day Series Multi-Task Chairs,0,2
+RB-19360,Raymond Buch,Consumer,14052.48,Logitech 910-002974 M325 Wireless Mouse for Web Scrolling,Newell 311,1,2
+RB-19435,Richard Bierner,Consumer,1272.704,"Bravo II Megaboss 12-Amp Hard Body Upright, Replacement Belts, 2 Belts per Pack","Bravo II Megaboss 12-Amp Hard Body Upright, Replacement Belts, 2 Belts per Pack",1,2
+RB-19465,Rick Bensley,Home Office,1064.624,Staple-based wall hangings,"Iceberg OfficeWorks 42"" Round Tables",1,2
+RB-19570,Rob Beeghly,Consumer,199.73,Imation_16GB Mini TravelDrive USB 2.0_Flash Drive,,0,0
+RB-19645,Robert Barroso,Corporate,94.688,Logitech ClearChat Comfort/USB Headset H390,,0,0
+RB-19705,Roger Barcio,Home Office,1770.1899999999998,Flexible Leather- Look Classic Collection Ring Binder,"Office Star - Contemporary Task Swivel chair with Loop Arms, Charcoal",2,2
+RB-19795,Ross Baird,Home Office,3629.9360000000006,"Deflect-o RollaMat Studded, Beveled Mat for Medium Pile Carpeting","Riverside Furniture Oval Coffee Table, Oval End Table, End Table with Drawer",2,2
+RC-19825,Roy Collins,Consumer,409.76,SANFORD Major Accent Highlighters,"Bevis Round Bullnose 29"" High Table Top",0,2
+RC-19960,Ryan Crowe,Consumer,328.914,"Howard Miller 11-1/2"" Diameter Grantwood Wall Clock","OIC Colored Binder Clips, Assorted Sizes",0,2
+RD-19480,Rick Duston,Consumer,1745.3600000000001,QVS USB Car Charger 2-Port 2.1Amp for iPod/iPhone/iPad/iPad 2/iPad 3,"Tennsco Snap-Together Open Shelving Units, Starter Sets and Add-On Units",0,2
+RD-19585,Rob Dowd,Consumer,1220.67,Rogers Deluxe File Chest,Permanent Self-Adhesive File Folder Labels for Typewriters by Universal,2,4
+RD-19660,Robert Dilbeck,Home Office,1577.94,GBC DocuBind 300 Electric Binding Machine,Avery 476,0,0
+RD-19720,Roger Demir,Consumer,545.01,"Wilson Jones 1"" Hanging DublLock Ring Binders","Wilson Jones 1"" Hanging DublLock Ring Binders",2,2
+RD-19810,Ross DeVincentis,Home Office,512.3679999999999,"Acco Data Flex Cable Posts For Top & Bottom Load Binders, 6"" Capacity","OIC Colored Binder Clips, Assorted Sizes",1,4
+RD-19900,Ruben Dartt,Consumer,997.9340000000001,Hanging Personal Folder File,Logitech G105 Gaming Keyboard,0,6
+RD-19930,Russell D'Ascenzo,Consumer,623.96,Global Highback Leather Tilter in Burgundy,,0,2
+RE-19405,Ricardo Emerson,Consumer,48.36,Acco 6 Outlet Guardian Standard Surge Suppressor,Acco 6 Outlet Guardian Standard Surge Suppressor,0,0
+RE-19450,Richard Eichhorn,Consumer,435.53999999999996,"Important Message Pads, 50 4-1/4 x 5-1/2 Forms per Pad",Acco Hot Clips Clips to Go,0,0
+RF-19345,Randy Ferguson,Corporate,2673.6899999999996,Avery 483,"Sanford Colorific Scented Colored Pencils, 12/Pack",0,2
+RF-19735,Roland Fjeld,Consumer,935.74,Avery Durable Binders,Avery 486,1,4
+RF-19840,Roy Französisch,Consumer,440.15999999999997,Staple holder,SpineVue Locking Slant-D Ring Binders by Cardinal,3,0
+RH-19495,Rick Hansen,Consumer,3419.872,"Eaton Premium Continuous-Feed Paper, 25% Cotton, Letter Size, White, 1000 Shts/Box",Plantronics CS510 - Over-the-Head monaural Wireless Headset System,1,0
+RH-19510,Rick Huthwaite,Home Office,3384.45,"Adams Telephone Message Book W/Dividers/Space For Phone Numbers, 5 1/4""X8 1/2"", 200/Messages","Hot File 7-Pocket, Floor Stand",0,2
+RH-19555,Ritsa Hightower,Consumer,732.156,Fellowes High-Stak Drawer Files,,0,0
+RH-19600,Rob Haberlin,Consumer,1305.81,HP Standard 104 key PS/2 Keyboard,,0,4
+RK-19300,Ralph Kennedy,Consumer,1238.33,"RSVP Cards & Envelopes, Blank White, 8-1/2"" X 11"", 24 Cards/25 Envelopes/Set","RSVP Cards & Envelopes, Blank White, 8-1/2"" X 11"", 24 Cards/25 Envelopes/Set",2,2
+RL-19615,Rob Lucas,Consumer,1745.399,Xerox 1945,Xerox 216,1,4
+RM-19375,Raymond Messe,Consumer,637.1800000000001,Avanti 4.4 Cu. Ft. Refrigerator,Newell 341,1,2
+RM-19675,Robert Marley,Home Office,2970.4320000000002,Hewlett Packard LaserJet 3310 Copier,Avery Non-Stick Binders,1,0
+RM-19750,Roland Murray,Consumer,98.35,"Westinghouse Floor Lamp with Metal Mesh Shade, Black","Westinghouse Floor Lamp with Metal Mesh Shade, Black",1,0
+RO-19780,Rose O'Brian,Consumer,1635.018,Avery Hi-Liter Smear-Safe Highlighters,,0,2
+RP-19270,Rachel Payne,Corporate,467.6532,Avery Durable Slant Ring Binders With Label Holder,,0,4
+RP-19390,Resi Pölking,Consumer,2854.48,American Pencil,Surelock Post Binders,3,2
+RP-19855,Roy Phan,Corporate,974.9000000000001,Manco Dry-Lighter Erasable Highlighter,,0,2
+RR-19315,Ralph Ritter,Consumer,608.552,Electrix Halogen Magnifier Lamp,,0,0
+RR-19525,Rick Reed,Corporate,2304.37,Standard Rollaway File with Lock,Staples,0,2
+RS-19420,Ricardo Sperren,Corporate,1217.3799999999999,Permanent Self-Adhesive File Folder Labels for Typewriters by Universal,Permanent Self-Adhesive File Folder Labels for Typewriters by Universal,1,0
+RS-19765,Roland Schwarz,Corporate,1261.33,Motorla HX550 Universal Bluetooth Headset,Bionaire Personal Warm Mist Humidifier/Vaporizer,2,0
+RS-19870,Roy Skaria,Home Office,12.68,Pastel Pink Envelopes,Ideal Clamps,0,0
+RW-19540,Rick Wilson,Corporate,3397.732,Honeywell Quietcare HEPA Air Cleaner,,0,6
+RW-19630,Rob Williams,Corporate,1120.368,Plantronics 81402,Plantronics 81402,1,0
+RW-19690,Robert Waldorf,Consumer,1958.544,Newell 343,Honeywell Enviracaire Portable HEPA Air Cleaner for 17' x 22' Room,1,2
+SA-20830,Sue Ann Reed,Consumer,2735.952,Avery 519,Avery 519,1,4
+SB-20170,Sarah Bern,Consumer,954.548,Angle-D Ring Binders,"TOPS Voice Message Log Book, Flash Format",1,2
+SB-20185,Sarah Brown,Consumer,3862.0980000000004,DMI Eclipse Executive Suite Bookcases,GBC Prestige Therm-A-Bind Covers,2,2
+SB-20290,Sean Braxton,Corporate,5579.9400000000005,Accohide Poly Flexible Ring Binders,Accohide Poly Flexible Ring Binders,1,4
+SC-20020,Sam Craven,Consumer,1353.5296,Iceberg Mobile Mega Data/Printer Cart,Iceberg Mobile Mega Data/Printer Cart,1,4
+SC-20050,Sample Company A,Home Office,3247.1580000000004,9-3/4 Diameter Round Wall Clock,3M Hangers With Command Adhesive,1,0
+SC-20095,Sanjit Chand,Consumer,9900.19,"Telephone Message Books with Fax/Mobile Section, 5 1/2"" x 3 3/16""","Telephone Message Books with Fax/Mobile Section, 5 1/2"" x 3 3/16""",1,8
+SC-20230,Scot Coram,Corporate,3339.1220000000003,"Letter/Legal File Tote with Clear Snap-On Lid, Black Granite",Xerox 1935,0,2
+SC-20260,Scott Cohen,Corporate,1966.5569999999998,Acme Preferred Stainless Steel Scissors,Acme Preferred Stainless Steel Scissors,2,6
+SC-20305,Sean Christensen,Consumer,2803.92,"Acco Pressboard Covers with Storage Hooks, 14 7/8"" x 11"", Dark Blue","Acco Pressboard Covers with Storage Hooks, 14 7/8"" x 11"", Dark Blue",1,0
+SC-20380,Shahid Collister,Consumer,2361.52,Bush Advantage Collection Racetrack Conference Table,Strathmore Photo Mount Cards,2,4
+SC-20440,Shaun Chance,Corporate,1173.03,Blue Parrot B250XT Professional Grade Wireless Bluetooth_Headset_with,Wilson Jones __nap_ Scratch Pad Binder Tool for Ring Binders,5,0
+SC-20575,Sonia Cooley,Consumer,647.84,Newell 334,GBC Prestige Therm-A-Bind Covers,1,0
+SC-20680,Steve Carroll,Home Office,821.94,Sony 64GB Class 10 Micro SDHC R40 Memory Card,,0,0
+SC-20695,Steve Chapman,Corporate,773.59,Acco 6 Outlet Guardian Premium Plus Surge Suppressor,Belkin F5C206VTEL 6 Outlet Surge,0,2
+SC-20725,Steven Cartwright,Consumer,1116.48,Mophie Juice Pack Helium for iPhone,Globe Weis Peel & Seel First Class Envelopes,2,4
+SC-20770,Stewart Carmichael,Corporate,2550.587,"Bush Andora Conference Table, Maple/Graphite Gray Finish","Speediset Carbonless Redi-Letter 7"" x 8 1/2""",0,2
+SC-20800,Stuart Calhoun,Consumer,206.328,Binder Clips by OIC,,0,0
+SC-20845,Sung Chung,Consumer,266.52,"DAX Charcoal/Nickel-Tone Document Frame, 5 x 7",,0,0
+SD-20485,Shirley Daniels,Home Office,3999.7019999999998,"Belkin 19"" Vented Equipment Shelf, Black",Storex DuraTech Recycled Plastic Frosted Binders,0,2
+SE-20110,Sanjit Engle,Consumer,8805.04,"Fellowes Mobile File Cart, Black",Kensington 4 Outlet MasterPiece Compact Power Control Center,1,0
+SF-20065,Sandra Flanagan,Consumer,336.82000000000005,Xerox 1893,Xerox 1939,2,0
+SF-20200,Sarah Foster,Consumer,2690.74,GBC Standard Plastic Binding Systems' Combs,Catalog Binders with Expanding Posts,1,0
+SF-20965,Sylvia Foulston,Corporate,1542.47,Strathmore Photo Mount Cards,"Personal Filing Tote with Lid, Black/Gray",3,4
+SG-20080,Sandra Glassco,Consumer,2562.171,Sanyo 2.5 Cubic Foot Mid-Size Office Refrigerators,,0,2
+SG-20470,Sheri Gordon,Consumer,1044.63,Bretford CR4500 Series Slim Rectangular Table,Bretford CR4500 Series Slim Rectangular Table,3,0
+SG-20605,Speros Goranitis,Consumer,1782.17,Fluorescent Highlighters by Dixon,Logitech_VX Revolution Cordless Laser Mouse for Notebooks (Black),1,2
+SG-20890,Susan Gilcrest,Corporate,19.648,"Acco Pressboard Covers with Storage Hooks, 14 7/8"" x 11"", Light Blue","Sanford EarthWrite Recycled Pencils, Medium Soft, #2",0,0
+SH-19975,Sally Hughsby,Corporate,941.1800000000001,Eldon Wave Desk Accessories,Wilson Jones Century Plastic Molded Ring Binders,0,2
+SH-20395,Shahid Hopkins,Consumer,1395.673,Logitech G602 Wireless Gaming Mouse,3M Organizer Strips,6,2
+SH-20635,Stefanie Holloman,Corporate,1403.92,Howard Miller 12-3/4 Diameter Accuwave DS  Wall Clock,,0,0
+SJ-20125,Sanjit Jacobs,Home Office,1749.902,"Office Star - Contemporary Task Swivel chair with Loop Arms, Charcoal",Xerox 226,2,4
+SJ-20215,Sarah Jordon,Consumer,536.858,Cisco SPA112 2 Port Phone Adapter,,0,0
+SJ-20500,Shirley Jackson,Consumer,840.0,"Acco 7-Outlet Masterpiece Power Center, Wihtout Fax/Phone Line Protection","XtraLife ClearVue Slant-D Ring Binder, White, 3""",0,0
+SK-19990,Sally Knutson,Consumer,631.5989999999999,Angle-D Ring Binders,Panasonic KX-TG9541B DECT 6.0 Digital 2-Line Expandable Cordless Phone With Digital Answering System,2,0
+SL-20155,Sara Luxemburg,Home Office,1702.0300000000002,Bevis Boat-Shaped Conference Table,Boston 16801 Nautilus Battery Pencil Sharpener,0,0
+SM-20005,Sally Matthias,Consumer,117.704,"DAX Two-Tone Rosewood/Black Document Frame, Desktop, 5 x 7",Poly Designer Cover & Back,0,0
+SM-20320,Sean Miller,Home Office,23661.228,Xerox 1989,"SAFCO Commercial Wire Shelving, Black",1,4
+SM-20905,Susan MacKendrick,Consumer,1043.041,Avery 496,Tennsco Industrial Shelving,0,2
+SM-20950,Suzanne McNair,Corporate,2358.672,"Eldon Expressions Wood and Plastic Desk Accessories, Cherry Wood","SAFCO Mobile Desk Side File, Wire Frame",3,2
+SN-20560,Skye Norling,Home Office,762.594,Fellowes PB500 Electric Punch Plastic Comb Binding Machine with Manual Bind,Xerox 208,1,4
+SN-20710,Steve Nguyen,Home Office,1228.9532,"Global Stack Chair without Arms, Black",,0,4
+SO-20335,Sean O'Donnell,Consumer,979.9455,"Hon Metal Bookcases, Putty",Office Star - Ergonomically Designed Knee Chair,1,4
+SP-20545,Sibella Parks,Corporate,459.95,"Acco Recycled 2"" Capacity Laser Printer Hanging Data Binders",Grandstream GXP1160 VoIP phone,1,0
+SP-20620,Stefania Perrino,Corporate,2457.141,"Deflect-o EconoMat Nonstudded, No Bevel Mat","Advantus 10-Drawer Portable Organizer, Chrome Metal Frame, Smoke Drawers",3,4
+SP-20650,Stephanie Phelps,Corporate,787.044,"Wilson Jones Elliptical Ring 3 1/2"" Capacity Binders, 800 sheets","Binney & Smith inkTank Erasable Pocket Highlighter, Chisel Tip, Yellow",0,0
+SP-20860,Sung Pak,Corporate,2904.572,Logitech Wireless Touch Keyboard K400,Xerox 1920,2,4
+SP-20920,Susan Pistek,Consumer,3588.096,Belkin 8 Outlet SurgeMaster II Gold Surge Protector,"Hon Deluxe Fabric Upholstered Stacking Chairs, Rounded Back",1,4
+SR-20425,Sharelle Roach,Home Office,2613.309,"Situations Contoured Folding Chairs, 4/Set",Panasonic KP-310 Heavy-Duty Electric Pencil Sharpener,2,2
+SR-20740,Steven Roelle,Home Office,3505.84,Hewlett-Packard Desktjet 6988DT Refurbished Printer,"Snap-A-Way Black Print Carbonless Ruled Speed Letter, Triplicate",2,2
+SS-20140,Saphhira Shifley,Corporate,997.83,Newell 307,"Master Big Foot Doorstop, Beige",1,2
+SS-20410,Shahid Shariari,Consumer,1363.674,"Acco Clips to Go Binder Clips, 24 Clips in Two Sizes","Bevis Oval Conference Table, Walnut",1,0
+SS-20515,Shirley Schmidt,Home Office,525.95,Memorex Micro Travel Drive 16 GB,"Belkin 325VA UPS Surge Protector, 6'",0,0
+SS-20590,Sonia Sunley,Consumer,199.99,Razer Tiamat Over Ear 7.1 Surround Sound PC Gaming Headset,,0,0
+SS-20875,Sung Shariari,Consumer,403.114,Avery Metallic Poly Binders,"Adams Telephone Message Book W/Dividers/Space For Phone Numbers, 5 1/4""X8 1/2"", 200/Messages",1,4
+ST-20530,Shui Tom,Consumer,139.44,Hoover Portapower Portable Vacuum,Xerox 203,1,2
+SU-20665,Stephanie Ulpright,Home Office,1358.866,Avery Metallic Poly Binders,Southworth 25% Cotton Antique Laid Paper & Envelopes,0,2
+SV-20365,Seth Vernon,Consumer,7359.918,"Adams Phone Message Book, 200 Message Capacity, 8 1/16_ x 11_",Hon 4070 Series Pagoda Armless Upholstered Stacking Chairs,4,2
+SV-20785,Stewart Visinsky,Consumer,1119.1480000000001,Acme Elite Stainless Steel Scissors,"Bravo II Megaboss 12-Amp Hard Body Upright, Replacement Belts, 2 Belts per Pack",3,4
+SV-20815,Stuart Van,Corporate,1102.472,Avery Hi-Liter Smear-Safe Highlighters,,0,0
+SV-20935,Susan Vittorini,Consumer,552.0,Eldon Mobile Mega Data Cart  Mega Stackable  Add-On Trays,Staples,2,2
+SW-20245,Scot Wooten,Consumer,428.70399999999995,Hon Comfortask Task/Swivel Chairs,"GBC White Gloss Covers, Plain Front",2,0
+SW-20275,Scott Williamson,Consumer,885.5699999999999,Home/Office Personal File Carts,BlackBerry Q10,1,0
+SW-20350,Sean Wendt,Home Office,523.18,Dexim XPower Skin Super-Thin Power Case for iPhone 5 - Black,Letter Size File,1,0
+SW-20455,Shaun Weien,Consumer,1217.568,GBC Premium Transparent Covers with Diagonal Lined Pattern,GBC Ibimaster 500 Manual ProClick Binding System,1,0
+SW-20755,Steven Ward,Corporate,663.9639999999999,Acco Hanging Data Binders,Newell 315,0,2
+SZ-20035,Sam Zeldin,Home Office,1349.63,Office Impressions Heavy Duty Welded Shelving & Multimedia Storage Drawers,"Wirebound Four 2-3/4 x 5 Forms per Page, 400 Sets per Book",1,4
+TA-21385,Tom Ashbrook,Home Office,13716.458,Canon imageCLASS 2200 Advanced Copier,Polycom CX600 IP Phone VoIP phone,2,4
+TB-21055,Ted Butterfield,Consumer,655.09,Crate-A-Files,Southworth 25% Cotton Linen-Finish Paper & Envelopes,3,4
+TB-21175,Thomas Boland,Corporate,3291.0699999999997,"Hon Deluxe Fabric Upholstered Stacking Chairs, Rounded Back",Avery Hanging File Binders,0,2
+TB-21190,Thomas Brumley,Home Office,767.214,Dax Clear Box Frame,"Global Push Button Manager's Chair, Indigo",0,0
+TB-21250,Tim Brockman,Consumer,655.88,Acco D-Ring Binder w/DublLock,Xerox 1895,1,4
+TB-21280,Toby Braunhardt,Consumer,1287.45,9-3/4 Diameter Round Wall Clock,Wilson Jones data.warehouse D-Ring Binders with DublLock,0,2
+TB-21355,Todd Boyes,Corporate,524.85,14-7/8 x 11 Blue Bar Computer Printout Paper,"Telephone Message Books with Fax/Mobile Section, 4 1/4"" x 6""",0,2
+TB-21400,Tom Boeckenhauer,Consumer,6999.96,"Acco Pressboard Covers with Storage Hooks, 14 7/8"" x 11"", Dark Blue","HP Designjet T520 Inkjet Large Format Printer - 24"" Color",0,4
+TB-21520,Tracy Blumstein,Consumer,3329.4339999999997,"Telephone Message Books with Fax/Mobile Section, 5 1/2"" x 3 3/16""","Riverside Palais Royal Lawyers Bookcase, Royale Cherry Finish",2,2
+TB-21595,Troy Blackwell,Consumer,754.45,"GE General Purpose, Extra Long Life, Showcase & Floodlight Incandescent Bulbs","Bush Andora Bookcase, Maple/Graphite Gray Finish",0,0
+TB-21625,Trudy Brown,Consumer,1079.316,Global Commerce Series Low-Back Swivel/Tilt Chairs,Imation_8gb Micro Traveldrive Usb 2.0_Flash Drive,4,2
+TC-20980,Tamara Chand,Corporate,18336.74,Newell 3-Hole Punched Plastic Slotted Magazine Holders for Binders,Xerox 1881,1,2
+TC-21145,Theresa Coyne,Corporate,1038.26,"Contico 72""H Heavy-Duty Storage System",Plantronics 81402,1,2
+TC-21295,Toby Carlisle,Consumer,1885.27,"White Dual Perf Computer Printout Paper, 2700 Sheets, 1 Part, Heavyweight, 20 lbs., 14 7/8 x 11",Office Star - Ergonomic Mid Back Chair with 2-Way Adjustable Arms,1,2
+TC-21475,Tony Chapman,Home Office,771.8,GBC ProClick Punch Binding System,"BIC Brite Liner Grip Highlighters, Assorted, 5/Pack",1,0
+TC-21535,Tracy Collins,Home Office,425.954,Acco Economy Flexible Poly Round Ring Binder,"Wirebound Message Books, Two 4 1/4"" x 5"" Forms per Page",2,0
+TD-20995,Tamara Dahlen,Consumer,1167.056,OIC Stacking Trays,OIC Stacking Trays,3,2
+TG-21310,Toby Gnade,Consumer,1054.928,Jensen SMPS-640 -_speaker phone,Jensen SMPS-640 -_speaker phone,1,2
+TG-21640,Trudy Glocke,Consumer,1142.165,"DataProducts Ampli Magnifier Task Lamp, Black,",,0,0
+TH-21100,Thea Hendricks,Consumer,1537.5439999999999,RCA Visys Integrated PBX 8-Line Router,"Eldon 200 Class Desk Accessories, Burgundy",0,0
+TH-21115,Thea Hudgings,Corporate,2027.188,Black & Decker Filter for Double Action Dustbuster Cordless Vac BLDV7210,Wilson Jones Suede Grain Vinyl Binders,1,2
+TH-21235,Tiffany House,Corporate,490.39200000000005,"Rogers Jumbo File, Granite",Belkin F9H710-06 7 Outlet SurgeMaster Surge Protector,0,0
+TH-21550,Tracy Hopkins,Home Office,1633.188,GBC DocuBind P400 Electric Binding System,"White Dual Perf Computer Printout Paper, 2700 Sheets, 1 Part, Heavyweight, 20 lbs., 14 7/8 x 11",3,0
+TM-21010,Tamara Manning,Consumer,1745.71,"Adams Telephone Message Book w/Frequently-Called Numbers Space, 400 Messages per Book",HP Office Recycled Paper (20Lb. and 87 Bright),1,4
+TM-21490,Tony Molinari,Consumer,558.81,Hon Racetrack Conference Tables,Nortel Networks T7316 E Nt8 B27,1,0
+TN-21040,Tanja Norvell,Home Office,1588.323,Sony 32GB Class 10 Micro SDHC R40 Memory Card,Razer Kraken PRO Over Ear PC and Music Headset,1,2
+TP-21130,Theone Pippenger,Consumer,2283.4300000000003,Bevis 44 x 96 Conference Tables,Acme Stainless Steel Office Snips,0,2
+TP-21415,Tom Prescott,Consumer,4416.174,Xerox 1984,HON 5400 Series Task Chairs for Big and Tall,2,2
+TP-21565,Tracy Poddar,Corporate,1465.032,Imation_8GB Mini TravelDrive USB 2.0_Flash Drive,,0,2
+TR-21325,Toby Ritter,Consumer,278.4,Avery 508,Razer Kraken PRO Over Ear PC and Music Headset,1,0
+TS-21085,Thais Sissman,Consumer,2.808,Zipper Ring Binder Pockets,,0,0
+TS-21160,Theresa Swint,Corporate,896.3100000000001,Avery Round Ring Poly Binders,"Super Bands, 12/Pack",1,2
+TS-21205,Thomas Seio,Corporate,2942.784,"Barricks 18"" x 48"" Non-Folding Utility Table with Bottom Storage Shelf","Deflect-o SuperTray Unbreakable Stackable Tray, Letter, Black",0,2
+TS-21340,Toby Swindell,Consumer,568.86,"Acco Pressboard Covers with Storage Hooks, 9 1/2"" x 11"", Executive Red","Master Caster Door Stop, Large Neon Orange",1,4
+TS-21370,Todd Sumrall,Corporate,5509.142,"Adams Telephone Message Book W/Dividers/Space For Phone Numbers, 5 1/4""X8 1/2"", 300/Messages",Tuf-Vin Binders,3,2
+TS-21430,Tom Stivers,Corporate,1367.84,"Acco Four Pocket Poly Ring Binder with Label Holder, Smoke, 1""","Atlantic Metals Mobile 3-Shelf Bookcases, Custom Colors",0,0
+TS-21505,Tony Sayre,Consumer,732.3119999999999,O'Sullivan 2-Shelf Heavy-Duty Bookcases,"SAFCO Commercial Wire Shelving, Black",1,0
+TS-21610,Troy Staebel,Consumer,1231.5,"Avery Durable Slant Ring Binders, No Labels",Chromcraft Rectangular Conference Tables,0,0
+TS-21655,Trudy Schmidt,Consumer,1322.75,Eureka The Boss Cordless Rechargeable Stick Vac,,0,4
+TT-21070,Ted Trevino,Consumer,3321.2780000000002,"Executive Impressions 13"" Chairman Wall Clock","Black Avery Memo-Size 3-Ring Binder, 5 1/2"" x 8 1/2""",2,2
+TT-21220,Thomas Thornton,Consumer,537.544,Xerox 1919,Newell 351,0,2
+TT-21265,Tim Taslimi,Corporate,323.1,Acco 6 Outlet Guardian Premium Plus Surge Suppressor,Kensington 6 Outlet Guardian Standard Surge Protector,0,0
+TT-21460,Tonja Turnell,Home Office,3083.94,Newell 335,,0,2
+TW-21025,Tamara Willingham,Home Office,4210.650000000001,Xerox 1882,Lock-Up Easel 'Spel-Binder',1,2
+TZ-21580,Tracy Zic,Consumer,1167.296,DIXON Oriole Pencils,,0,0
+VB-21745,Victoria Brennan,Corporate,756.8,Xerox 1987,"Tenex Chairmat w/ Average Lip, 45"" x 53""",0,0
+VD-21670,Valerie Dominguez,Consumer,2220.06,"Boston School Pro Electric Pencil Sharpener, 1670",Razer Tiamat Over Ear 7.1 Surround Sound PC Gaming Headset,1,4
+VF-21715,Vicky Freymann,Home Office,651.588,"Wirebound Message Books, 2 7/8"" x 5"", 3 Forms per Page",,0,2
+VG-21790,Vivek Gonzalez,Consumer,211.168,"Bush Westfield Collection Bookcases, Medium Cherry Finish",,0,0
+VG-21805,Vivek Grady,Corporate,331.536,Dixon Ticonderoga Pencils,Dixon Ticonderoga Pencils,1,0
+VM-21685,Valerie Mitchum,Home Office,1294.75,Decoflex Hanging Personal Folder File,Nortel Meridian M5316 Digital phone,2,0
+VM-21835,Vivian Mathis,Consumer,162.51999999999998,Staples,Staples,1,0
+VP-21730,Victor Preis,Home Office,899.1099999999999,Fellowes Officeware Wire Shelving,"Iris 3-Drawer Stacking Bin, Black",1,0
+VP-21760,Victoria Pisteka,Corporate,1893.786,Balt Solid Wood Round Tables,"Wilson Jones Elliptical Ring 3 1/2"" Capacity Binders, 800 sheets",2,0
+VS-21820,Vivek Sundaresam,Consumer,610.3069999999999,"Lesro Sheffield Collection Coffee Table, End Table, Center Table, Corner Table",,0,0
+VT-21700,Valerie Takahito,Home Office,1636.356,Bionaire 99.97% HEPA Air Cleaner,Bionaire 99.97% HEPA Air Cleaner,1,2
+VW-21775,Victoria Wilson,Corporate,1816.6960000000001,"Fellowes Mobile File Cart, Black",Cisco 9971 IP Video Phone Charcoal,2,2
+WB-21850,William Brown,Consumer,1937.924,"Contract Clock, 14"", Brown",Xerox 1959,2,6
+XP-21865,Xylona Preis,Consumer,708.616,Stanley Bostitch Contemporary Electric Pencil Sharpeners,Xerox 1886,2,4
+YC-21895,Yoseph Carroll,Corporate,3116.49,Tennsco Single-Tier Lockers,Smead Adjustable Mobile File Trolley with Lockable Top,0,0
+YS-21880,Yana Sorensen,Corporate,3859.488,Letter Size Cart,"Dual Level, Single-Width Filing Carts",1,0
+ZC-21910,Zuschuss Carroll,Consumer,1716.16,"#10- 4 1/8"" x 9 1/2"" Security-Tint Envelopes",Panasonic KP-4ABK Battery-Operated Pencil Sharpener,1,4
+ZD-21925,Zuschuss Donatelli,Consumer,839.9440000000001,Kensington 6 Outlet Guardian Standard Surge Protector,,0,0

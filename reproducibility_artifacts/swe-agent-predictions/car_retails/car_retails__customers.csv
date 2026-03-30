@@ -1,0 +1,123 @@
+CUSTOMERNUMBER,CUSTOMERNAME,COUNTRY,HAS_CREDIT_LIMIT_NOT_MORE_THAN_100000,TOTAL_PAYMENTS_2003,HAS_PAID_MORE_THAN_THREE_TIMES_IN_2003,TOTAL_ACTUAL_PROFIT_GAINED,TOTAL_PRICE_OF_PRODUCT_SHIPPED_IN_2003
+103.0,Atelier graphique,France,1,14571.44,0,10063.800000000001,14571.44
+112.0,Signal Gift Stores,USA,1,32641.98,0,31312.72,32641.98
+114.0,"Australian Collectors, Co.",Australia,0,53429.11,0,70311.07,53429.11000000001
+119.0,La Rochelle Gifts,France,0,0.0,0,45587.79,0.0
+121.0,Baane Mini Imports,Norway,1,51710.329999999994,0,41391.52,51710.329999999994
+124.0,Mini Gifts Distributors Ltd.,USA,0,167783.08,0,232494.29,167783.08
+125.0,Havel & Zbyszek Co,Poland,1,0.0,0,0.0,0.0
+128.0,"Blauer See Auto, Co.",Germany,1,34650.82000000001,0,27728.34,34650.82000000001
+129.0,Mini Wheels Co.,USA,1,40461.78,0,28092.43,40461.780000000006
+131.0,Land of Toys Inc.,USA,0,22292.62,0,41953.17,22292.620000000003
+141.0,Euro+ Shopping Channel,Spain,0,189840.15,1,263439.51,189840.14999999994
+144.0,"Volvo Model Replicas, Co",Sweden,1,7674.94,0,17391.49,7674.9400000000005
+145.0,Danish Wholesale Imports,Denmark,1,53959.21,0,34831.08,53959.21
+146.0,"Saveley & Henriot, Co.",France,0,39712.1,0,53211.19,39712.1
+148.0,"Dragon Souveniers, Ltd.",Singapore,0,150123.15,0,60477.38,150123.14999999997
+151.0,Muscle Machine Inc,USA,0,117634.88,0,72370.09,117634.88000000002
+157.0,Diecast Classics Inc.,USA,0,0.0,0,38278.23,0.0
+161.0,Technics Stores Inc.,USA,1,89418.78,0,41510.76,89418.78000000001
+166.0,Handji Gifts& Co,Singapore,1,0.0,0,41305.17,0.0
+167.0,Herkku Gifts,Norway,1,85024.46,0,40592.06,85024.45999999999
+168.0,American Souvenirs Inc,USA,1,0.0,0,0.0,0.0
+169.0,Porto Imports Co.,Portugal,1,0.0,0,0.0,0.0
+171.0,Daedalus Designs Imports,France,1,42783.81,0,27143.39,42783.81
+172.0,"La Corne D'abondance, Co.",France,1,33383.14,0,34650.17,33383.14
+173.0,Cambridge Collectables Co.,USA,1,0.0,0,13734.7,0.0
+175.0,Gift Depot Inc.,USA,1,24879.08,0,41313.51,24879.08
+177.0,Osaka Souveniers Co.,Japan,1,0.0,0,24360.18,0.0
+181.0,Vitachrome Inc.,USA,1,5494.78,0,28279.5,5494.78
+186.0,"Toys of Finland, Co.",Finland,1,37602.48,0,38808.53,37602.48
+187.0,"AV Stores, Co.",UK,0,48425.69,0,60095.86,48425.689999999995
+189.0,"Clover Collections, Co.",Ireland,1,0.0,0,19588.29,0.0
+198.0,Auto-Moto Classics Inc.,USA,1,6036.96,0,6586.0199999999995,6036.959999999999
+201.0,"UK Collectables, Ltd.",UK,1,23908.24,0,25872.38,23908.24
+202.0,Canadian Gift Exchange Network,Canada,1,36527.61,0,28882.99,36527.61
+204.0,Online Mini Collectables,USA,1,0.0,0,24296.899999999998,0.0
+205.0,Toys4GrownUps.com,USA,1,54222.7,0,22705.09,54222.700000000004
+206.0,"Asian Shopping Network, Co",Singapore,1,0.0,0,0.0,0.0
+209.0,Mini Caravy,France,1,0.0,0,31526.600000000002,0.0
+211.0,"King Kong Collectables, Co.",Hong Kong,1,45480.79,0,16868.68,45480.79
+216.0,Enaco Distributors,Spain,1,43575.26,0,24113.54,43575.259999999995
+219.0,Boards & Toys Co.,USA,1,4465.85,0,2610.870000000001,4465.85
+223.0,Natürlich Autos,Germany,1,0.0,0,0.0,0.0
+227.0,Heintze Collectables,Denmark,0,36164.46,0,34655.62,36164.46000000001
+233.0,Québec Home Shopping Network,Canada,1,16909.84,0,25856.86,16909.84
+237.0,ANG Resellers,Spain,1,0.0,0,0.0,0.0
+239.0,Collectable Mini Designs Co.,USA,0,0.0,0,31594.7,0.0
+240.0,giftsbymail.co.uk,UK,1,0.0,0,26808.79,0.0
+242.0,Alpha Cognac,France,1,48051.03999999999,0,23905.16,48051.03999999999
+247.0,Messner Shopping Network,Germany,1,0.0,0,0.0,0.0
+249.0,Amica Models & Co.,Italy,0,0.0,0,34100.63,0.0
+250.0,Lyon Souveniers,France,1,23419.47,0,28390.81,23419.47
+256.0,Auto Associés & Cie.,France,1,0.0,0,24610.8,0.0
+259.0,"Toms Spezialitäten, Ltd",Germany,0,27988.47,0,36744.01,27988.469999999998
+260.0,"Royal Canadian Collectables, Ltd.",Canada,1,0.0,0,24118.93,0.0
+273.0,"Franken Gifts, Co",Germany,1,0.0,0,0.0,0.0
+276.0,"Anna's Decorations, Ltd",Australia,0,80101.92000000001,0,54551.659999999996,80101.91999999998
+278.0,Rovelli Gifts,Italy,0,89875.6,0,52309.63,89875.59999999998
+282.0,Souveniers And Things Co.,Australia,1,24013.52,0,35811.479999999996,24013.519999999997
+286.0,Marta's Replicas Co.,USA,0,0.0,0,36337.69,0.0
+293.0,BG&E Collectables,Switzerland,1,0.0,0,0.0,0.0
+298.0,"Vida Sport, Ltd",Switzerland,0,0.0,0,43393.75,0.0
+299.0,"Norway Gifts By Mail, Co.",Norway,1,36798.88,0,25665.760000000002,36798.88
+303.0,Schuyler Imports,Netherlands,1,0.0,0,0.0,0.0
+307.0,Der Hund Imports,Germany,1,0.0,0,0.0,0.0
+311.0,"Oulu Toy Supplies, Inc.",Finland,1,32723.04,0,38334.95,32723.04
+314.0,Petit Auto,Belgium,1,0.0,0,23029.640000000003,0.0
+319.0,Mini Classics,USA,0,36092.4,0,31815.01,36092.4
+320.0,Mini Creations Ltd.,USA,1,93565.23999999999,0,39136.14,93565.23999999999
+321.0,Corporate Gift Ideas Co.,USA,0,85559.12,0,55674.28,85559.11999999998
+323.0,"Down Under Souveniers, Inc",New Zealand,1,2880.0,0,60013.99,2880.0
+324.0,"Stylish Desk Decors, Co.",UK,1,66884.91,0,31667.93,66884.91
+328.0,Tekni Collectables Inc.,USA,1,0.0,0,17209.230000000003,0.0
+333.0,"Australian Gift Network, Co",Australia,1,33757.85,0,22579.18,33757.850000000006
+334.0,Suominen Souveniers,Finland,1,29716.86,0,40095.85,29716.86
+335.0,"Cramer Spezialitäten, Ltd",Germany,1,0.0,0,0.0,0.0
+339.0,"Classic Gift Ideas, Inc",USA,1,34606.28,0,20737.79,34606.280000000006
+344.0,CAF Imports,Spain,1,31428.21,0,18953.3,31428.210000000003
+347.0,"Men 'R' US Retailers, Ltd.",USA,1,20452.5,0,14928.369999999999,20452.5
+348.0,"Asian Treasures, Inc.",Ireland,1,0.0,0,0.0,0.0
+350.0,Marseille Mini Autos,France,1,50824.66,0,27184.739999999998,50824.659999999996
+353.0,Reims Collectables,France,1,30620.730000000003,0,52698.659999999996,30620.730000000003
+356.0,"SAR Distributors, Co",South Africa,1,0.0,0,0.0,0.0
+357.0,GiftsForHim.com,New Zealand,1,20220.04,0,23079.64,20220.039999999997
+361.0,Kommission Auto,Germany,1,0.0,0,0.0,0.0
+362.0,Gifts4AllAges.com,USA,1,0.0,0,14963.93,0.0
+363.0,Online Diecast Creations Co.,USA,0,65649.6,0,45090.39,65649.59999999999
+369.0,"Lisboa Souveniers, Inc",Portugal,1,0.0,0,0.0,0.0
+376.0,Precious Collectables,Switzerland,1,0.0,0,0.0,0.0
+379.0,Collectables For Less Inc.,USA,1,32680.31,0,28969.09,32680.31
+381.0,Royale Belge,Belgium,1,2755.76,0,11693.99,2755.7599999999998
+382.0,Salzburg Collectables,Austria,1,35826.33,0,54724.68,35826.33
+385.0,Cruz & Sons Co.,Philippines,1,71645.46,0,35987.68,71645.46
+386.0,L'ordine Souveniers,Italy,0,38524.29,0,48516.67,38524.29
+398.0,"Tokyo Collectables, Ltd",Japan,1,0.0,0,43487.88,0.0
+406.0,Auto Canal+ Petit,France,1,0.0,0,38755.5,0.0
+409.0,Stuttgart Collectable Exchange,Germany,1,0.0,0,0.0,0.0
+412.0,"Extreme Desk Decorations, Ltd",New Zealand,1,0.0,0,38399.18,0.0
+415.0,"Bavarian Collectables Imports, Co.",Germany,1,0.0,0,13033.35,0.0
+424.0,Classic Legends Inc.,USA,1,43708.35,0,26001.55,43708.35
+443.0,"Feuer Online Stores, Inc",Germany,1,0.0,0,0.0,0.0
+447.0,Gift Ideas Corp.,USA,1,23663.65,0,18957.41,23663.649999999998
+448.0,Scandinavian Gift Ideas,Sweden,0,0.0,0,30383.28,0.0
+450.0,The Sharp Gifts Warehouse,USA,1,0.0,0,34788.34,0.0
+452.0,Mini Auto Werke,Austria,1,42252.87,0,8473.59,15130.969999999998
+455.0,Super Scale Inc.,USA,1,38139.18,0,29265.9,38139.18
+456.0,Microscale Inc.,USA,1,0.0,0,13066.02,0.0
+458.0,"Corrida Auto Replicas, Ltd",Spain,0,57131.92,0,49192.39,57131.920000000006
+459.0,Warburg Exchange,Germany,1,0.0,0,0.0,0.0
+462.0,FunGiftIdeas.com,USA,1,9977.85,0,36886.05,9977.849999999999
+465.0,"Anton Designs, Ltd.",Spain,1,0.0,0,0.0,0.0
+471.0,"Australian Collectables, Ltd",Australia,1,35505.63,0,18625.69,35505.630000000005
+473.0,Frau da Collezione,Italy,1,17746.26,0,9532.93,17746.260000000002
+475.0,West Coast Collectables Co.,USA,1,7678.25,0,17186.93,7678.25
+477.0,Mit Vergnügen & Co.,Germany,1,0.0,0,0.0,0.0
+480.0,"Kremlin Collectables, Co.",Russia,1,0.0,0,0.0,0.0
+481.0,"Raanan Stores, Inc",Israel,1,0.0,0,0.0,0.0
+484.0,"Iberia Gift Imports, Corp.",Spain,1,47513.19,0,21225.649999999998,47513.19
+486.0,Motor Mint Distributors Inc.,USA,1,25833.14,0,33598.57,25833.14
+487.0,Signal Collectibles Ltd.,USA,1,29997.09,0,17230.12,29997.090000000004
+489.0,"Double Decker Gift Stores, Ltd",UK,1,22275.73,0,10868.04,22275.73
+495.0,Diecast Collectables,USA,1,59265.14,0,25244.690000000002,59265.14
+496.0,Kelly's Gift Shop,New Zealand,0,32077.44,0,43604.11,32077.44

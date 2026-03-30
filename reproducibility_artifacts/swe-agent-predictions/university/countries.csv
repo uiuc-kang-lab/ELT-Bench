@@ -1,0 +1,75 @@
+COUNTRY_ID,COUNTRY_NAME,NUM_UNIVERSITIES,UNIVERSITY_WITH_HIGHEST_SCORE_IN_CITATIONS_CRITERIA_2016,HAS_UNIVERSITY_WITH_NUM_STUDENTS_GREATER_THAN_98_PER_AVG_2013,NUM_INTERNATIONAL_STUDENTS_2015,MOST_POPULATED_UNIVERSITY_2014
+1,Argentina,4,,0,0,
+2,Australia,35,University of Melbourne,1,82243,Monash University
+3,Austria,12,University of Vienna,1,8663,University of Vienna
+4,Bangladesh,1,,0,0,
+5,Belarus,1,,0,0,
+6,Belgium,11,KU Leuven,1,18003,KU Leuven
+7,Brazil,27,,1,0,
+8,Bulgaria,1,,0,0,
+9,Canada,37,University of British Columbia,1,58605,University of Toronto
+10,Chile,7,,0,0,
+11,China,96,Peking University,1,13136,Peking University
+12,Colombia,4,,0,0,
+13,Croatia,1,,0,0,
+14,Cyprus,1,,0,0,
+15,Czech Republic,10,,0,0,
+16,Denmark,6,,1,10377,University of Copenhagen
+17,Egypt,5,,0,0,
+18,Estonia,2,,0,0,
+19,Finland,10,,0,1410,University of Helsinki
+20,France,68,Paris Diderot University – Paris 7,1,18042,Pierre and Marie Curie University
+21,Germany,68,Heidelberg University,1,57370,RWTH Aachen University
+22,Ghana,1,,0,0,
+23,Greece,8,,0,0,
+24,Hong Kong,6,Hong Kong University of Science and Technology,0,18382,University of Hong Kong
+25,Hungary,6,,0,0,
+26,Iceland,1,,0,0,
+27,India,22,,0,0,
+28,Indonesia,1,,0,0,
+29,Iran,11,,0,0,
+30,Ireland,10,Trinity College Dublin,0,3880,University College Dublin
+31,Israel,8,Hebrew University of Jerusalem,1,959,Tel Aviv University
+32,Italy,54,University of Trento,0,23,
+33,Japan,81,University of Tokyo,1,8750,University of Tokyo
+34,Jordan,2,,0,0,
+35,Kenya,1,,0,0,
+36,Latvia,1,,0,0,
+37,Lebanon,1,,0,0,
+38,Lithuania,1,,0,0,
+39,Luxembourg,1,,0,0,
+40,Macau,1,,0,0,
+41,Malaysia,8,,0,0,
+42,Mexico,3,,0,0,
+43,Morocco,1,,0,0,
+44,Netherlands,14,Erasmus University Rotterdam,1,31366,Utrecht University
+45,New Zealand,7,,1,8340,University of Auckland
+46,Nigeria,1,,0,0,
+47,Norway,6,University of Oslo,0,4885,University of Oslo
+48,Oman,1,,0,0,
+49,Pakistan,2,,0,0,
+50,Poland,12,,0,0,
+51,Portugal,9,,0,0,
+52,Puerto Rico,1,,0,0,
+53,Qatar,1,,0,0,
+54,Romania,4,,0,0,
+55,Russia,13,,0,6164,
+56,Saudi Arabia,4,,0,0,
+57,Serbia,1,,0,0,
+58,Singapore,2,Nanyang Technological University,1,19001,National University of Singapore
+59,Slovakia,2,,0,0,
+60,Slovenia,2,,0,0,
+61,South Africa,6,,0,3607,University of Cape Town
+62,South Korea,37,Pohang University of Science and Technology,1,5766,Seoul National University
+63,Spain,43,Autonomous University of Barcelona,0,1417,Pompeu Fabra University
+64,Sweden,12,Karolinska Institute,1,14050,Stockholm University
+65,Switzerland,12,École Polytechnique Fédérale de Lausanne,1,30810,University of Zurich
+66,Taiwan,29,,1,2232,National Taiwan University
+67,Thailand,7,,0,0,
+68,Turkey,15,,0,4502,Boğaziçi University
+69,Uganda,1,,0,0,
+70,Ukraine,2,,0,0,
+71,United Arab Emirates,2,,0,0,
+72,United Kingdom,89,University of Oxford,1,162373,University of Manchester
+73,United States of America,273,California Institute of Technology,1,271982,Arizona State University
+74,Uruguay,1,,0,0,

@@ -1,0 +1,55 @@
+# Annotations by: eng2
+# Date: 2026-03-24
+# Instructions: For each column, assign ONE category (use number like "2" or name like "Logic Error")
+# Format: database__table__COLUMN | Category
+
+citeseer__citeseer_paper_ML_AND_CITED_BUTZ01ALGORITHMIC | 4.2
+app_store__apps_NUM_REVIEWS_WITH_NEUTRAL_ATTITUDE | 4.2
+marketo__email_sends_STEP_ID | 5.1
+qualtrics__qualtrics__contact_MAILING_LIST_IDS | 4.2
+book_publishing_company__book_publishers_MOST_EXPENSIVE_BOOK | 7
+mailchimp__mailchimp__automation_activities_MEMBER_ID | 5.5
+regional_sales__regional_sales__customers_HIGHEST_NET_PROFIIT_FOR_ORDER | 2
+xero__xero__general_ledger_CONTACT_NAME | 4.2
+apple_store__source_type_report__IMPRESSIONS | 3
+financial__clients_NUM_WITHDRAWALS_IN_CASH_TRANSACTIONS | 2
+sales__sales__customers_ABOVE_AVERAGE_BOUGHT_QUANTITY | 2
+social_media__countries_NUMBER_OF_LIKES | 4.2
+european_football_2__teams__NUM_WON_2010 | 1
+qualtrics__qualtrics__contact_CREATED_AT | 4.2
+superstore__products_HAS_A_PROFIT_GREATER_THAN_98_PER_OF_THE_AVERAGE_PROFIT_OF_ALL_PRODUCTS_IN_THE_EAST_REGION | 2
+app_store__apps_NUM_NAN_OR_NULL_COMMENT_REVIEWS | 4.2
+books__authors_AUTHOR_ID | 3
+apple_store__source_type_report__DATE_DAY | 3
+book_publishing_company__book_publishers_MOST_YTD_SALE_TITLE | 7
+apple_store__source_type_report__FIRST_TIME_DOWNLOADS | 3
+marketo__email_sends_COUNT_DELIVERIES | 5.1
+sales_in_weather__stores__NUM_ITEMS_SOLD_DURING_A_SNOWY_DAY | 1
+amplitude__amplitude__event_enhanced_CLIENT_EVENT_TIME | 5.1
+youtube_analytics__youtube__video_report_AVERAGE_VIEW_DURATION_PERCENTAGE | 2
+facebook_ads__facebook_ads__ad_set_report_CONVERSIONS | 4.2
+shakespeare__shakespeare__works_NUM_CHARACTERS | 2
+youtube_analytics__youtube__demographics_report_VIEWS_PERCENTAGE | 5.2
+social_media__countries_PERCENTAGE_OF_MALE_USERS | 1
+microsoft_ads__microsoft_ads__ad_report_SPEND | 5.5
+regional_sales__regional_sales__customers_AVG_PRICE_OF_ORDER_AFTER_DISCOUNT | 2
+microsoft_ads__microsoft_ads__account_report_CONVERSIONS | 2
+ice_hockey_draft__players_DIFF_GOALS_BEWTEEN_RS_AND_PF | 4.2
+hockey__hockey__goalies_NUMBER_OF_SEASONS_PLAYED | 2
+twitter_organic__tweets__APP_CLICKS | 8
+apple_store__source_type_report__INSTALLATIONS | 3
+mailchimp__mailchimp__automation_activities_ACTIVITY_ID | 8
+microsoft_ads__microsoft_ads__url_report_CAMPAIGN_NAME | 5.1
+movies_4__person_PERSON_NAME | 5.2
+cars__countries_FASTEST_CAR | 4.2
+microsoft_ads__microsoft_ads__ad_report_CONVERSIONS | 2
+books__publishers_TITLE_OF_THE_OLDEST_BOOK | 5.1
+twitter_organic__tweets__TWEET_TEXT | 8
+twitter_organic__tweets__VIDEO_CONTENT_STARTS | 8
+car_retails__car_retails__products_AVERAGE_ACTUAL_PROFIT | 2
+menu__menus__DISH_WITH_HIGHEST_PRICE | 7
+movies_4__production_company_CATEGORY_RUNNING_TIME_PER_MOVIE_2016 | 9
+regional_sales__regional_sales__products_TOTAL_NET_PROFIT | 2
+apple_store__platform_version_report__ACTIVE_DEVICES_LAST_30_DAYS | 3
+microsoft_ads__microsoft_ads__ad_group_report_ALL_CONVERSIONS | 2
+amplitude__amplitude__event_enhanced_SESSION_STARTED_AT_DAY | 5.1

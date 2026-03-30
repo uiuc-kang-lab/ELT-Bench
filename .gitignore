@@ -1,0 +1,84 @@
+# =============================================
+# ELT-Bench-Verified .gitignore
+# =============================================
+
+# ---------------------------------------------
+# Data directory (all generated/downloaded content)
+# ---------------------------------------------
+data/
+
+# Temporary data
+tmp/
+
+# ---------------------------------------------
+# Credentials (user must create from examples)
+# ---------------------------------------------
+setup/airbyte/airbyte_credential.json
+setup/destination/snowflake_credential.json
+
+# ---------------------------------------------
+# Evaluation (exclude data, keep scripts)
+# ---------------------------------------------
+evaluation/agent_results/
+evaluation/gt/
+
+# ---------------------------------------------
+# SWE-agent artifacts
+# ---------------------------------------------
+agents/SWE-agent*/trajectories/
+agents/SWE-agent*/outputs/
+agents/SWE-agent*/workspace/
+agents/SWE-agent*/.env
+agents/SWE-agent*/sweagent/__pycache__/
+agents/SWE-agent*/sweagent/agent/__pycache__/
+agents/SWE-agent*/sweagent/agent/hooks/__pycache__/
+agents/SWE-agent*/sweagent/environment/__pycache__/
+agents/SWE-agent*/sweagent/environment/hooks/__pycache__/
+agents/SWE-agent*/sweagent/run/__pycache__/
+agents/SWE-agent*/sweagent/run/hooks/__pycache__/
+agents/SWE-agent*/sweagent/tools/__pycache__/
+agents/SWE-agent*/sweagent.egg-info/PKG-INFO
+agents/SWE-agent-v1.1.0/costs/*
+
+# ---------------------------------------------
+# Temporary and debug files
+# ---------------------------------------------
+tmp/*
+successful_trajectories/*
+T_debug/*
+
+# ---------------------------------------------
+# IDE and editor files
+# ---------------------------------------------
+.vscode/
+.idea/
+
+# ---------------------------------------------
+# Python artifacts
+# ---------------------------------------------
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# ---------------------------------------------
+# OS files
+# ---------------------------------------------
+.DS_Store
+**/.DS_Store
+Thumbs.db
+
+# ---------------------------------------------
+# Environment files
+# ---------------------------------------------
+.env
+*.env.local
+
+# ---------------------------------------------
+# Downloaded archives (cleaned up by setup)
+# ---------------------------------------------
+setup/*.zip

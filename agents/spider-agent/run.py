@@ -113,7 +113,7 @@ def test(
         max_steps=args.max_steps,
         use_plan=args.plan
     )
-    databases = [f.name for f in os.scandir('../../elt-bench') if f.is_dir()]
+    databases = [f.name for f in os.scandir('../../tasks') if f.is_dir()]
     databases.sort()
 
     for db in databases:
@@ -153,7 +153,7 @@ def test(
             "init_args": {
                 "name": experiment_id,
                 "work_dir": "/workspace",
-                "network": "elt-docker_elt_network"
+                "network": "docker_elt_network"
             }
         }
         env_config["image_name"] = "elt_agent-image"
