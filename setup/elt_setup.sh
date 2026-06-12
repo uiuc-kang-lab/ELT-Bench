@@ -33,7 +33,7 @@ fi
 if [ -f "ground_truth.zip" ]; then
     echo "      ground_truth.zip already exists, skipping download"
 else
-    gdown 'https://drive.google.com/uc?id=1C9hZ4OQHpFK3K94hjXmpu9NdihWtV9pJ' -O ground_truth.zip || { echo "ERROR: Failed to download ground_truth.zip"; exit 1; }
+    gdown 'https://drive.google.com/uc?id=1AzSYAOjDr3Tz_GZVVIs49zWV6q8HST22' -O ground_truth.zip || { echo "ERROR: Failed to download ground_truth.zip"; exit 1; }
 fi
 
 echo "      Downloads complete."
