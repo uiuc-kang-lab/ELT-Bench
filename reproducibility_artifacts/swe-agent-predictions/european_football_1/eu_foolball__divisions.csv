@@ -1,0 +1,22 @@
+DIVISION,NAME,COUNTRY,NUM_TEAMS_2012,HIGHEST_FINAL_TIME_SCORE_2021,NUM_0_0_GAMES,PER_GAMES_DRAWN,TEAM_WITH_HIGHEST_WIN_PERCENTAGE_AS_LOCAL
+B1,Division 1A,Belgium,16,10.0,283,24.9,Club Brugge
+D1,Bundesliga,Deutschland,18,8.0,318,25.1,Bayern Munich
+D2,2. Bundesliga,Deutschland,18,11.0,391,27.84,Stuttgart
+E0,Premier League,England,20,9.0,475,24.46,Man United
+E1,EFL Championship,England,24,9.0,696,27.71,Newcastle
+E2,EFL League One,England,24,8.0,649,26.61,Norwich
+E3,EFL League Two,England,24,9.0,688,27.31,Doncaster
+EC,National League,England,24,9.0,617,25.61,Accrington
+F1,Ligue 1,France,20,8.0,562,28.01,Paris SG
+F2,Ligue 2,France,20,9.0,649,30.97,Toulouse
+G1,Superleague,Greece,16,7.0,416,25.77,Olympiakos
+I1,Seria A,Italy,20,8.0,466,26.2,Juventus
+I2,Seria B,Italy,22,8.0,716,31.78,Juventus
+N1,Eredivisie,Netherlands,18,13.0,241,23.1,PSV Eindhoven
+P1,Liga NOS,Portugal,16,7.0,382,25.39,Porto
+SC0,Scottish Premiership,Scotland,12,8.0,271,24.17,Celtic
+SC1,Scottish Championship,Scotland,10,8.0,218,26.68,Hearts
+SC2,Scottish League One,Scotland,10,6.0,124,21.38,Rangers
+SP1,LaLiga,Spain,20,7.0,459,24.56,Barcelona
+SP2,LaLiga 2,Spain,22,7.0,727,29.44,Espanol
+T1,Süper Lig,Turkey,18,9.0,426,26.05,Fenerbahce

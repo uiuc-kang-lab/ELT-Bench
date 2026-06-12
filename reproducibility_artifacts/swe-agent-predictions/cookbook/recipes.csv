@@ -1,0 +1,1032 @@
+RECIPE_ID,TITLE,PREP_MIN,NUM_INGREDIENTS,INCLUDES_BAKING_SODA_AND_SERVES_10_OR_MORE_PEOPLE,CONTAINS_VITAMIN_THAT_HELPS_VISION,IS_GOOD_FOR_WOUND_HEALING,CONTAINS_CHEESE_AND_CALORIES_GREATER_THAN_200
+214.0,Raspberry Chiffon Pie,20.0,8,0,1,1,0
+215.0,Apricot Yogurt Parfaits,5.0,6,0,1,1,0
+216.0,Fresh Apricot Bavarian,5.0,5,0,1,1,0
+217.0,Fresh Peaches,10.0,3,0,1,1,0
+218.0,Canned Cherry Crisp,10.0,8,0,1,1,0
+219.0,Low Calorie Blueberry Meringue Tarts,10.0,6,0,1,1,0
+220.0,Chocolate Cream Cheese Frosting,6.0,7,0,1,1,0
+221.0,Sweet Cherry Ice,20.0,7,0,1,1,0
+222.0,Iced Raspberry Mousse,15.0,6,0,1,1,0
+223.0,Kiwifruit Popsicles,10.0,2,0,1,1,0
+224.0,Dessert Fruit Pizza,10.0,7,0,1,1,1
+225.0,Blueberry Cobbler,10.0,10,0,1,1,0
+226.0,Apple Upside Down Cake,20.0,11,0,1,1,0
+227.0,Peaches Amaretto,15.0,4,0,1,1,0
+228.0,Homemade Cherry Pie Filling,10.0,5,0,1,1,0
+229.0,Raspberry-Pear Couscous Cake,15.0,7,0,1,1,0
+230.0,Apricot Almond Bread Pudding,10.0,7,0,1,1,0
+231.0,Oregon Hazelnut Crunch,15.0,7,1,1,1,0
+232.0,Apple Bean Cake,30.0,14,0,1,1,0
+233.0,Foil Baked Banana Peach Delight,5.0,2,0,1,1,0
+234.0,Apricot Meringue Tart,15.0,6,0,1,1,0
+235.0,Basic Blueberry Pie Filling,40.0,4,0,1,1,0
+236.0,Nectarine Meringue Crowns,25.0,6,0,1,1,0
+237.0,Cayuga Cookies,10.0,9,0,1,1,0
+238.0,Chewy Chocolate Hazelnut Cookies,20.0,11,1,1,1,0
+239.0,Oranges in Grand Marnier,15.0,5,0,1,1,0
+240.0,Citrus Pecan Topping,15.0,6,0,1,1,0
+241.0,Brandy Pear Sorbet,15.0,3,0,1,1,0
+242.0,Old-Fashioned Fresh Pear Pie,25.0,5,0,1,1,0
+243.0,Butterscotch Crispies,30.0,9,1,1,1,0
+244.0,Grated Sweet Potato Pudding,10.0,7,0,1,1,0
+245.0,Peach Granita,10.0,4,0,1,1,0
+246.0,Light Apple Cake,20.0,11,0,1,1,0
+247.0,Whole Wheat Sugar Cookies,25.0,11,1,1,1,0
+248.0,Oatmeal Cherry Braid,50.0,13,0,1,1,0
+249.0,Cranberry-Pear Crisp,20.0,9,0,1,1,0
+250.0,Mom's Nectarine Lattice Pie,25.0,3,0,1,1,0
+251.0,Bronx Brownies,15.0,9,0,1,1,0
+252.0,Oregon Hazelnut Brittle,10.0,7,1,1,1,0
+253.0,Tutti Fruitti Rice Pudding,10.0,5,0,1,1,0
+254.0,No-Bake Fruit Crisp,15.0,8,0,1,1,0
+255.0,Super Chocolatey Cupcakes,10.0,9,0,1,0,0
+256.0,Chocolate Dipping Sauce,10.0,7,0,1,1,0
+257.0,California Plum Sorbet,15.0,3,0,1,1,0
+258.0,Blueberry Crisp,20.0,8,0,1,1,0
+259.0,Cherry Yogurt Cheesecake,20.0,9,0,1,1,0
+260.0,Fudgy Date Pudding Cake,15.0,9,0,1,1,0
+261.0,Fruit a la Russe,20.0,4,0,1,1,0
+262.0,Heavenly Strawberry Cheesecake,20.0,11,0,1,1,1
+263.0,Fresh Peach Buttermilk Sherbet,10.0,6,0,1,1,0
+264.0,Peachy Orange Sorbet,15.0,4,0,1,1,0
+265.0,Marshmallow Peach Cake,20.0,9,0,1,1,0
+266.0,Golden Apricot Rice Pudding,20.0,10,0,1,1,0
+267.0,Chocolate Bananas D'amore,15.0,5,0,1,1,0
+268.0,Spirited Date Cake,30.0,10,0,1,1,0
+269.0,Fresh Peach Shortcake,50.0,7,0,1,1,0
+270.0,Bill's Bean Fudge,10.0,5,0,1,1,0
+271.0,Microwave Fudge,10.0,8,0,1,1,0
+272.0,Apple Whole Grain Bread Pudding,15.0,10,0,1,1,0
+273.0,Plum-Nectarine Ambrosia,10.0,3,0,1,1,0
+274.0,Claret Spiced Oranges,10.0,6,0,1,1,0
+275.0,Poached Pear,20.0,8,0,1,1,0
+276.0,Pistachio Berry Vineyard Pears,25.0,4,0,1,1,0
+277.0,Open Sesame Blueberry Pie,20.0,11,0,1,1,0
+278.0,Southern Sweet Potato Pie,15.0,6,0,1,1,0
+279.0,Cantaloupe-Ginger Sorbet,20.0,4,0,1,1,0
+280.0,Sauteed Apple Slices,15.0,4,0,1,1,0
+281.0,Possible Pumpkin Pie,15.0,11,0,1,1,0
+282.0,Sweet Cherry Sauce,15.0,5,0,1,1,0
+283.0,Frozen Nectarine Yogurt,15.0,6,0,1,1,0
+284.0,Lemony Poached Golden Apples,10.0,3,0,1,1,0
+285.0,Old-Fashioned Peach Cobbler,10.0,9,0,1,1,0
+286.0,Pear Zinfandel Ice,15.0,3,0,1,1,0
+287.0,Banana Kiwi Pudding,10.0,5,0,1,1,0
+288.0,It's The Berries Pie,10.0,7,0,1,1,1
+289.0,Nectarine Carrot Picnic Cake,20.0,13,1,1,1,0
+290.0,Nectarine Lime Sorbet,10.0,3,0,1,1,0
+291.0,Strawberry Sorbet,15.0,3,0,1,1,0
+292.0,Peach Oatmeal Cookies,20.0,10,0,1,1,0
+293.0,Apricot Applesauce Cake,20.0,9,1,1,1,0
+294.0,Grape Frozen Yogurt,15.0,6,0,1,1,0
+295.0,Fresh Plum Souffle,20.0,7,0,1,1,0
+296.0,California Summer Fruit Tart,20.0,7,0,1,1,0
+297.0,Very Berry Meringues,15.0,7,0,1,1,0
+298.0,Fresh Apricot Ice Cream,15.0,9,0,1,1,0
+299.0,Peach and Blueberry Crisp,60.0,9,0,1,1,0
+300.0,After School Fruit Cup,20.0,5,0,1,1,0
+301.0,Oh-So-Cool Lime Whip,15.0,9,0,1,1,0
+302.0,Three-Melon Melange,15.0,6,0,1,1,0
+303.0,Buffalo Bread,20.0,9,1,1,1,0
+304.0,Blueberry Sauce,10.0,8,0,1,1,0
+305.0,Nectarine-Strawberry Shortcake Torte,15.0,9,0,1,1,1
+307.0,Blueberry Snack Bars,10.0,11,0,1,1,0
+308.0,Sherry Nectarine Sorbet,10.0,3,0,1,1,0
+309.0,Tart Cherry Salad Mold,10.0,7,0,1,1,0
+310.0,Quick Plum Buttermilk Loaf,10.0,9,1,1,1,0
+311.0,Peach Blueberry Crisp,15.0,7,0,1,1,0
+312.0,Swiss Blueberry Fool,15.0,5,0,1,1,0
+416.0,Orange Date Shake,5.0,3,0,1,1,0
+417.0,Quick Kiwifruit Refresher,5.0,3,0,1,1,0
+418.0,Applesauce the Easy Way,10.0,3,0,1,1,0
+419.0,Brussels Sprouts with Peppers and Potatoes,10.0,4,0,1,1,0
+420.0,Tomato-Cucumber Relish,15.0,10,0,1,1,0
+421.0,Idaho Potato Cream Sauce,10.0,6,0,1,1,0
+422.0,Spicy Cranberry and Peach Salad Mold,5.0,7,0,1,1,0
+423.0,Confetti Appleslaw,15.0,6,0,1,1,0
+424.0,Garden Soup,10.0,5,0,1,1,0
+425.0,Glazed Fruit Kabobs,10.0,4,0,1,1,0
+426.0,Armenian Spinach Plum Salad,15.0,10,0,1,1,0
+427.0,Honey Sesame Dressing,5.0,5,0,1,1,0
+428.0,Mushrooms Oriental,10.0,7,0,1,1,0
+429.0,Chinese Broccoli and Almonds,60.0,9,0,1,1,0
+430.0,Tangy Strawberry Soup,10.0,8,0,1,1,0
+431.0,Dilled Rice Salad,30.0,8,0,1,1,0
+432.0,St. Tropez Vegetables in Parchment,20.0,7,0,1,1,0
+433.0,Squash and Pepper Salad,10.0,1,0,1,1,0
+434.0,Sherried Sweet Potatoes,5.0,6,0,1,1,0
+435.0,Sunshine Salad,15.0,4,0,1,1,0
+436.0,Hot Gazpacho,15.0,8,0,1,1,0
+437.0,Texas Cabbage Fruit Salad,15.0,8,0,1,1,0
+438.0,Black and White Bean Salad,15.0,11,0,1,1,0
+439.0,Creamy Vegetable Dip,5.0,6,0,1,1,0
+440.0,Tangy Cucumber Salad,15.0,9,0,1,1,0
+441.0,Yogurt Potato Salad,30.0,7,0,1,1,0
+442.0,Artichoke Rice Salad,15.0,8,0,1,1,0
+443.0,Steamed Sweet Potatoes,5.0,9,0,1,1,0
+444.0,Zucchini,10.0,4,0,1,1,0
+445.0,Provencale Tomato and Potato Soup,15.0,10,0,1,1,0
+446.0,Butternut Squash Souffle,20.0,6,0,1,1,0
+447.0,Mixed Sweet Bell Peppper & California Avocado Salad,15.0,5,0,1,1,0
+449.0,Fruit Soup,5.0,6,0,1,1,0
+450.0,Citrus Salad with California Avocado,30.0,3,0,1,1,0
+451.0,Pistachio-Stuffed Baked Apples,15.0,8,0,1,1,0
+452.0,Oriental Curry Veggies,15.0,6,0,1,1,0
+453.0,California Avocado and Mushroom Salad,30.0,8,0,1,1,0
+454.0,Green Beans with Mushrooms,10.0,5,0,1,1,0
+455.0,Tomato Stuffed Potatoes,10.0,5,0,1,1,0
+456.0,Very Berry Salad,10.0,6,0,1,1,0
+457.0,Western Spinach Salad,20.0,12,0,1,1,1
+458.0,Fast Pea Soup,10.0,4,0,1,1,0
+459.0,Potato Vegetable Salad,25.0,9,0,1,1,0
+460.0,Green Bean Almond Rice,10.0,7,0,1,1,0
+461.0,Lowfat Date Yogurt Shake,5.0,4,0,1,1,0
+463.0,Fresh Tomato Sauce,10.0,8,0,1,1,0
+464.0,Slim Spud Slices,5.0,5,0,1,1,0
+465.0,Spinach Balls,10.0,6,0,1,1,0
+466.0,Greek Stuffed Potato,15.0,4,0,1,1,1
+467.0,Apple-Grape Salad,5.0,6,0,1,1,0
+468.0,Green Apple-Tomatillo Sauce,20.0,6,0,1,1,0
+469.0,Warm Broccoli-Potato Salad,15.0,7,0,1,1,0
+470.0,Red Cabbage,15.0,5,0,1,1,0
+471.0,Cherry-Berry Conserve,10.0,6,0,1,1,0
+472.0,Cherry Ambrosia Salad,20.0,10,0,1,1,0
+473.0,Microwave Sweet Potato Chips,3.0,3,0,1,1,0
+474.0,Tropical Date Shake,10.0,5,0,1,1,0
+475.0,Moist Golden Cornbread,10.0,7,0,1,1,0
+476.0,Oven Fries,30.0,3,0,1,1,0
+477.0,Red Onion Potato Salad,15.0,7,0,1,1,0
+478.0,Cream of Broccoli Soup,5.0,9,0,1,1,0
+479.0,East Meets West Salad,5.0,6,0,1,1,0
+480.0,Apricot and Walnut Brown Rice Stuffing,15.0,12,0,1,1,0
+481.0,French Potato Salad,15.0,8,0,1,1,0
+482.0,Orange Spaghetti Squash,10.0,5,0,1,1,0
+483.0,Cherry Smoothie,10.0,5,0,1,1,0
+484.0,Fresh Mushroom Soup,10.0,8,0,1,1,0
+485.0,Slimline Blue Cheese Dressing and Dip,10.0,6,0,1,1,0
+486.0,Squash Rolls,15.0,8,0,1,1,0
+487.0,California Marinated Salad,20.0,11,0,1,1,0
+488.0,Ratatouille,20.0,13,0,1,1,0
+489.0,Pear-Yogurt Shake,10.0,4,0,1,1,0
+490.0," Kiwi Fruit, Orange and Avocado Salad ",15.0,4,0,1,1,0
+492.0,Green Bean Saute,10.0,9,0,1,1,0
+493.0,Steamed Pears,15.0,3,0,1,1,0
+494.0,Texas Barbecue Potatoes,10.0,5,0,1,1,0
+495.0,Pistachio Fruits and Fun,15.0,6,0,1,1,0
+496.0,Peach Soup,5.0,4,0,1,1,0
+497.0," Microwave Glazed Carrots, Apples and Zucchini ",10.0,7,0,1,1,0
+499.0,Honeydew Melon Shake,5.0,3,0,1,1,0
+500.0,Tomato Pilaf,10.0,9,0,1,1,0
+501.0,Strawberry-Banana Shake,10.0,4,0,1,1,0
+502.0,Herbed Vegetable Combo,10.0,8,0,1,1,0
+503.0,Puree of Potatoes and Parsnips,10.0,1,0,1,1,0
+504.0,Pepper Relish,20.0,4,0,1,1,0
+505.0,Mint-Glazed Carrots and Snow Peas,10.0,5,0,1,1,0
+506.0,Tomatillo Relish,15.0,4,0,1,1,0
+507.0,Vegetable Packets,10.0,3,0,1,1,0
+508.0,Brown Rice Royal,5.0,4,0,1,1,0
+509.0,Lite 'n Lovely Gelatin Salad,20.0,9,0,1,1,0
+510.0,Steamed Carrots with Apricots,105.0,5,0,1,1,0
+511.0,Confetti Potato Salad,15.0,5,0,1,1,0
+512.0,Cherry Sweet Potatoes,5.0,4,0,1,1,0
+513.0,Acorn Squash and Apple Puree,15.0,1,0,1,1,0
+514.0,Harvest Rice,10.0,8,0,1,1,0
+515.0,Tote-Along Dressing,5.0,9,0,1,1,0
+516.0,Beef Brisket,15.0,11,0,1,1,0
+517.0,Beef and Two Pepper Stew,20.0,11,0,1,1,0
+518.0,Sherried Steak Strips,10.0,5,0,1,1,0
+519.0,Steak and Pepper Sandwiches,10.0,3,0,1,1,0
+520.0,Lamb Stew Provencal,20.0,10,0,1,1,0
+521.0,Greek-Style Lamb and Bean Skillet Dinner,8.0,7,0,1,1,0
+522.0,Butterflied Lamb Leg,15.0,8,0,1,1,0
+523.0,Quick Spanish Rice,5.0,10,0,1,1,1
+524.0,Zesty Lamb Taco Casserole,15.0,8,0,1,1,0
+525.0,Quick Lamb and Pasta Dinner Skillet,5.0,9,0,1,1,0
+526.0,Microwavable Savory Lamb Potatoes,5.0,6,0,1,1,0
+527.0,Grilled Lamb with Spanish Sherry Sauce,20.0,8,0,1,1,0
+528.0,Warm Moroccan Potato Lamb Salad,20.0,9,0,1,1,0
+529.0,Mesa Lamb and Bean Salad,20.0,11,0,1,1,0
+530.0,Mandarin Lamb with Oriental Noodles,10.0,7,0,1,1,0
+531.0,Lamb Tortellini Minestrone,5.0,8,0,1,1,1
+532.0,Stir Fry Vegetables,20.0,15,0,1,1,0
+533.0,Boonville Baked Beans,783.0,8,0,1,1,0
+534.0,Baja Beef and Pistachio Plate,15.0,8,0,1,1,0
+535.0,Italian-Style Pistachio Pasta,15.0,11,0,1,1,1
+536.0,Daube of Beef with Dried Mushrooms,25.0,6,0,1,1,0
+537.0,Middle Eastern Meatballs,35.0,10,0,1,1,0
+538.0,Braised Eye of the Round,15.0,8,0,1,1,0
+539.0,California Beef and Black Bean Chili,15.0,15,0,1,1,0
+540.0,Spinach Salad with Fruit and Beef,20.0,11,0,1,1,0
+541.0,Thai-Style Beef Salad,40.0,13,0,1,1,0
+542.0,Mediterranean Beef Stew,20.0,12,0,1,1,0
+543.0,Beef Fajitas,250.0,6,0,1,1,0
+544.0,Beef Pizza,20.0,6,0,1,1,1
+545.0,Beef and Spinach Pita Pockets,20.0,9,0,1,1,0
+546.0,Ginger-Orange Barbecued Beef Back Ribs,1455.0,11,0,1,1,0
+547.0,Roast Beef Pita Bread Sandwich,10.0,4,0,1,1,0
+548.0,Soft Taco,20.0,4,0,1,1,0
+549.0,Sesame Potato Sticks with Oriental Beef and Peppers,20.0,10,0,1,1,0
+550.0,Potato Sticks with Glazed Pork and Cabbage,20.0,7,0,1,1,0
+551.0,Western Pork Barbecue Supper,15.0,9,0,1,1,0
+552.0,Beef Jambalaya,20.0,8,0,1,1,0
+553.0,Gourmet Beef Burgers,20.0,8,0,1,1,0
+554.0,Spicy Beef Tortillas,5.0,3,0,1,1,0
+555.0,Summertime Beef Salad,30.0,9,0,1,1,0
+556.0,Apricot Relish Steak,15.0,6,0,1,1,0
+557.0,Meatball-Rice Soup,30.0,13,0,1,1,0
+558.0,Light and Colorful Stuffed Peppers,5.0,8,0,1,1,0
+559.0,Citrus Beef Ribbons,120.0,6,0,1,1,0
+560.0,Ranch-Style Beans,20.0,9,0,1,1,0
+562.0,Rigatoni in Wild Mushroom Broth,15.0,12,0,1,1,1
+563.0,Mushroom and Beef Stir-Up,20.0,10,0,1,1,0
+564.0,Pork-Sweet Potato Stir-Fry,20.0,9,0,1,1,0
+565.0,Sweet Potato-Sausage Casserole,30.0,6,0,1,1,0
+566.0,Summer Beef Salad,30.0,13,0,1,1,0
+567.0,Oriental Pork and Beans,15.0,4,0,1,1,0
+568.0,Southwestern Black Beans and Rice,20.0,11,0,1,1,0
+569.0,Strawberry-Pork Salad,20.0,8,0,1,1,0
+570.0,Italian Brunch Rice,15.0,8,0,1,1,1
+571.0,Kabobs with Thyme Rice,240.0,6,0,1,1,0
+572.0,Spiced Pork and Apples,10.0,12,0,1,1,0
+573.0,Gingered Beef Stir Fry,20.0,13,0,1,1,0
+574.0,Five-Spice Fried Rice,15.0,8,0,1,1,0
+575.0,Vegetable Pork Stir-Fry,20.0,8,0,1,1,0
+576.0,Sherried Beef,60.0,6,0,1,1,0
+577.0,Holiday Stuffed Pork Roast,20.0,13,0,1,1,0
+578.0,Hot Hoppin' John Salad,20.0,10,0,1,1,0
+579.0,Peach Pita Sandwiches,10.0,3,0,1,1,1
+580.0,Sweet'N'Sour Pot Roast,10.0,6,0,1,1,0
+581.0,Mock Enchilada Casserole,10.0,4,0,1,1,0
+582.0,Ham Hock and Lima Bean Soup,15.0,1,0,1,1,0
+583.0,Ham and Bean Soup,240.0,4,0,1,1,0
+584.0,Hearty Ribs and Bean Bake,20.0,9,0,1,1,0
+585.0,Greek-Style Beans and Lamb,240.0,8,0,1,1,0
+586.0,Lima Beans and Ham,20.0,12,0,1,1,0
+587.0,Hoppin' John,240.0,8,0,1,1,0
+588.0,Pioneer Bean Pot,240.0,6,0,1,1,0
+589.0,Mixed Bean Casserole,10.0,8,0,1,1,0
+590.0,Mexican-Style Bean Sandwiches,20.0,11,0,1,1,0
+591.0,Bean Soup Romana,240.0,11,0,1,1,0
+592.0,Broiled Marinated Beef Top Loin,1440.0,8,0,1,1,0
+593.0,Stir-Fry Pork and Apricots,10.0,7,0,1,1,0
+594.0,Peppered Beef Tenderloin Bundles,30.0,6,0,1,1,0
+595.0,Beef Fajitas with Fresh Tomatoes,30.0,11,0,1,1,0
+596.0," Tomato, Pork and Pepper Kabob ",30.0,9,0,1,1,0
+597.0,Oriental Pork,70.0,10,0,1,1,0
+598.0,Hazelnut Beef Stir Fry,40.0,5,0,1,1,0
+599.0,Noodle-Crusted Quiche Noel,30.0,8,0,1,1,1
+600.0,Sweet and Sour Cherry Ham Salad,30.0,8,0,1,1,0
+601.0,Pears and Ribs in Honey Sauce,15.0,7,0,1,1,0
+602.0,Fruited Ham and Blueberry Salad,20.0,10,0,1,1,0
+603.0," Hearty Roast Beef, Pear and Pea Pod Salad ",20.0,5,0,1,1,0
+604.0,Lime-Basted Lamb Kabobs,40.0,9,0,1,1,0
+605.0,Tandoori Pork Saute,20.0,11,0,1,1,0
+606.0,Nectarine Beef Saute,15.0,6,0,1,1,0
+607.0,Southwest Spaghetti Pie,20.0,12,0,1,1,1
+608.0,German Egg Noodle and Meatball Soup,30.0,8,0,1,1,0
+609.0,Orzo and Pumpkin Soup with Sage,15.0,7,0,1,1,0
+610.0,Fettuccine with Lamb and Mint,10.0,7,0,1,1,0
+611.0,Texas Chili 'n Pasta,20.0,11,0,1,1,0
+612.0,Baked Beans,720.0,6,0,1,1,0
+613.0,Sweet and Sour Barbecue Sauce,10.0,10,0,1,1,0
+614.0,Western Beans and Rice,10.0,9,0,1,1,0
+615.0,Moroccan Egg Salad,20.0,7,0,1,1,0
+616.0,Three Cheese Potatoes,10.0,8,0,1,1,1
+617.0,Asparagus Mushroom Frittata,10.0,8,0,1,1,0
+618.0,Hot or Cold Layered Potato Salad,20.0,4,0,1,1,0
+619.0,Pasta and Walnut Fruit Salad,20.0,8,0,1,1,0
+620.0,Springsweet Texas Onion Caviar,10.0,8,0,1,1,0
+621.0,Spaghetti Squash,10.0,4,0,1,1,0
+622.0,Pear Waldorf Salad,10.0,5,0,1,1,0
+623.0,Plum Wild Rice,20.0,13,0,1,1,0
+624.0,Greek Beans 'n Eggs,5.0,5,0,1,1,0
+625.0,Bean 'n' Vegetable Medley,10.0,8,0,1,1,0
+626.0,Spicy Vegetarian Chili,15.0,9,0,1,1,0
+627.0,Fettuccine with Walnuts and California Avocado,15.0,8,0,1,1,0
+628.0,Pasta-Veggie Scramble,10.0,8,0,1,1,1
+629.0,Pasta with Sauteed Artichokes,15.0,6,0,1,1,0
+630.0,Rice Primavera,10.0,10,0,1,1,1
+631.0,Apple Stuffed Squash,15.0,10,0,1,1,0
+632.0,Basil Tomato Salad,10.0,6,0,1,1,0
+633.0,Pasta Pizza,20.0,10,0,1,1,1
+634.0,Sauce Raito,20.0,14,0,1,1,0
+635.0,Avocado Pizza Pie,20.0,8,0,1,1,1
+636.0,Cheese Stuffed Tomatoes,15.0,7,0,1,1,0
+637.0,California Quesadilla,140.0,8,0,1,1,1
+638.0,California Sunshine Salad,30.0,13,0,1,1,0
+639.0,Homemade Corn Tortillas,15.0,2,0,0,0,0
+640.0,Brunch Rice,15.0,9,0,1,1,1
+641.0,Sherried Black Bean Soup,15.0,13,0,1,1,0
+642.0,Italian Stuffed Tomato Salad,20.0,9,0,1,1,0
+643.0,California Tree Fruit Salad with Honey-Vanilla Dressing,15.0,5,0,1,1,0
+644.0,Deep Dish Vegetable Pizza,15.0,9,0,1,1,1
+645.0,Broccoli Amandine,17.0,8,0,1,1,0
+646.0,Mushroom and Spinach Lasagne,25.0,10,0,1,1,1
+647.0,Brown Rice and Lentil Stew,15.0,10,0,1,1,0
+648.0,Warm Tomato-Pepper Pasta,10.0,10,0,1,1,1
+649.0,Curried Bean and Rice Salad,15.0,13,0,1,1,0
+650.0,Lasagne-Spinach Spirals,30.0,9,0,1,1,1
+651.0,Mama's Macaroni and Cheese,20.0,9,0,1,1,1
+652.0,Party-Fare Pistachio Pasta,15.0,10,0,1,1,1
+653.0,Rice Gazpacho,20.0,6,0,1,1,0
+654.0,Squash Stuffed with Rice,10.0,7,0,1,1,0
+655.0,Cheese and Chili Skins,10.0,4,0,1,1,1
+656.0,Stewed Tomatoes with Chickpeas,10.0,9,0,1,1,0
+657.0,Meatless Chili,10.0,11,0,1,1,0
+658.0,Santa Fe Salad,15.0,9,0,1,1,0
+659.0,Ratatouille Pasta,15.0,5,0,1,1,1
+660.0,Pasta with Peanut Sauce,20.0,10,0,1,1,0
+661.0,Frijoles Rancheros,10.0,5,0,1,1,0
+662.0,Tuscan Bean Salad,140.0,8,0,1,1,0
+663.0,Bryani,20.0,8,0,1,1,0
+664.0,Fresh Greens with Honey and Oranges,20.0,5,0,1,1,0
+665.0,Pear Brown Rice,20.0,9,0,1,1,0
+666.0,Saffron Risotto Primavera,20.0,12,0,1,1,0
+667.0,Bake Mine Vegetarian,25.0,10,0,1,1,1
+668.0,Fresh Greens with Pasta,10.0,4,0,1,1,0
+669.0,Mixed Bean Salad,15.0,9,0,1,1,0
+670.0,V-Egg-ie Good Pocket Sandwich,15.0,5,0,1,1,0
+671.0,Spring Butterflies,20.0,9,0,1,1,0
+672.0,Summer Vegetable Paella,10.0,2,0,1,1,0
+673.0," Middle Eastern ""Sweet Spice"" Brown Rice with Olives ",0.0,10,0,1,1,0
+674.0,Star-Studded Tomatoes,40.0,6,0,1,1,1
+675.0,Cheery Cherry Pasta Salad,10.0,8,0,1,1,0
+676.0,Double Corn Brunch Bake,10.0,8,0,1,1,0
+677.0,Slenderized Vichyssoise,10.0,4,0,1,1,0
+678.0,Peach Spinach Salad,20.0,7,0,1,1,0
+679.0,Gruyere Sauced Potatoes,15.0,8,0,1,1,1
+680.0,Spaghetti with Eggplant Sauce,15.0,7,0,1,1,0
+681.0,Bean Burritos,15.0,8,0,1,1,1
+682.0,6 Bean Soup,240.0,16,0,1,1,0
+683.0,California Brown Rice Salad,135.0,9,0,1,1,0
+684.0,Keep 'em Low-Cal Topping,15.0,7,0,1,1,1
+685.0,Tofu Baked Ziti,15.0,12,0,1,1,1
+686.0,Mexican Fiesta Quiche,20.0,8,0,1,1,1
+687.0,Corn Chowder,20.0,9,0,1,1,0
+688.0,Plum Ratatouille,15.0,8,0,1,1,0
+689.0," White Bean, Olive and Tomato Salad ",15.0,11,0,1,1,0
+690.0,Apple Brown Rice Stuffing,15.0,11,0,1,1,0
+691.0,Red Beans and Rice,10.0,6,0,0,1,0
+692.0,Top Hat Pizza,20.0,10,0,1,1,1
+693.0,Pistachio Pasta Salad Florentine,10.0,10,0,1,1,0
+694.0,Snappy Bean Dip,15.0,6,0,1,1,0
+695.0,Artichoke and Mushroom Phyllo Pockets,15.0,4,0,1,1,0
+696.0,Crunchy Wild Rice Pilaf,15.0,9,0,1,1,0
+697.0,Three-Peas-in-a-Pasta,15.0,13,0,1,1,1
+698.0,Hazelnut Stuffed French Bread,155.0,10,0,1,1,1
+699.0,Stuffed Baked Potato,15.0,4,0,1,1,1
+700.0,Springtime Pasta,15.0,9,0,1,1,0
+701.0,Tortellini and Artichokes in Garlic Cream Sauce,10.0,7,0,1,1,1
+702.0,Fresh Tomato and Red Pepper Sauce,10.0,11,0,1,1,0
+703.0,Lentil and Rice Salad,15.0,7,0,1,1,0
+704.0,Hazelnut Medley,30.0,12,0,1,1,0
+705.0,Sheepherder's Hearty Soup,15.0,12,0,1,1,1
+706.0,Pasta Stuffed Tomatoes,20.0,12,0,1,1,0
+707.0,Oriental Stuffed Tomatoes,10.0,7,0,1,1,0
+708.0,Black Bean and Rice Salad,15.0,7,0,1,1,1
+709.0,Asparagus and Herb-Scrambled Egg,10.0,4,0,1,1,0
+710.0,White Bean Pistachio Salad Vinaigrette,15.0,9,0,1,1,0
+711.0,Sicilian Deep Dish Pizza,30.0,9,0,1,1,1
+712.0,New Zealand Brown Rice Salad,150.0,8,0,1,1,0
+713.0,Pizza in a Tomato Shell,20.0,7,0,1,1,0
+714.0,-Sauteed Mushrooms-,15.0,2,0,1,1,0
+715.0,-Steamed Broccoli-,15.0,1,0,1,1,0
+716.0,-Green Beans and New Potatoes-,15.0,1,0,1,1,0
+717.0,-Steamed or Sauteed Zucchini-,10.0,1,0,1,1,0
+718.0,-Corn on the Cob-,10.0,0,0,1,1,0
+719.0,-Baked Potatoes-,5.0,0,0,0,1,0
+720.0,-Boiled or Mashed Potatoes-,15.0,0,0,0,1,0
+721.0,-Baked Sweet Potatoes-,10.0,0,0,1,1,0
+722.0,-Boiled or Mashed Sweet Potato-,10.0,0,0,1,1,0
+724.0,-Fresh Green Peas-,20.0,1,0,1,1,0
+725.0,-Boiled Fresh Snow Peas-,10.0,1,0,1,1,0
+726.0,-Asparagus Spears-,15.0,1,0,1,1,0
+727.0,-Beets-,10.0,1,0,1,1,0
+728.0,-Brussels Sprouts-,10.0,1,0,1,1,0
+729.0,-Cooked Cabbage-,10.0,1,0,1,1,0
+730.0,-Cooked Carrots-,10.0,1,0,1,1,0
+731.0,-Cauliflower-,10.0,1,0,1,1,0
+732.0,-Swiss Chard-,15.0,1,0,1,1,0
+733.0,-Broiled Eggplant-,10.0,2,0,1,1,0
+734.0,-Jicama-,10.0,1,0,0,1,0
+735.0,-Kale-,15.0,1,0,1,1,0
+736.0,-Frozen Lima Beans-,3.0,1,0,1,1,0
+737.0,-Creamed Corn-,2.0,1,0,1,1,0
+738.0,-Steamed Okra-,10.0,1,0,1,1,0
+739.0,-Boiled Onions-,10.0,1,0,0,1,0
+740.0,-Boiled Parsnips-,10.0,1,0,0,1,0
+741.0,-Sauteed Green Peppers-,10.0,2,0,1,1,0
+742.0,-Boiled Rutabaga-,10.0,1,0,0,1,0
+743.0,-Spinach-,15.0,1,0,1,1,0
+744.0,-Fresh Tomatoes-,10.0,1,0,1,1,0
+745.0,-Turnips-,10.0,1,0,0,1,0
+746.0,-Turnip Greens-,15.0,1,0,1,1,0
+747.0,-Cucumbers-,10.0,1,0,1,1,0
+748.0,-Iceberg Lettuce-,10.0,0,0,1,1,0
+749.0,-Celery Sticks-,10.0,1,0,1,1,0
+750.0,-Carrot Sticks-,10.0,1,0,1,1,0
+751.0,Applesauce,20.0,4,0,1,1,0
+752.0,-Bananas-,5.0,0,0,1,1,0
+753.0,-Apples-,3.0,0,0,1,1,0
+754.0,-Apricots-,5.0,1,0,1,1,0
+755.0,-Avocados-,5.0,1,0,1,1,0
+756.0,-Berries-,10.0,1,0,1,1,0
+757.0,-Blueberries-,5.0,1,0,1,1,0
+758.0,-Strawberries-,10.0,1,0,1,1,0
+759.0,-Cranberries-,10.0,1,0,1,1,0
+760.0,-Raspberries-,5.0,1,0,1,1,0
+761.0,-Sweet Cherries-,20.0,1,0,1,1,0
+762.0,-Figs-,5.0,0,0,1,1,0
+763.0,-Grapefruit-,10.0,0,0,1,1,0
+764.0,-Grapes-,10.0,1,0,1,1,0
+765.0,-Kiwi Fruit-,10.0,0,0,1,1,0
+766.0,-Kumquats-,5.0,0,0,1,1,0
+767.0,-Cantaloupe-,10.0,1,0,1,1,0
+768.0,-Casaba Melon-,10.0,0,0,1,1,0
+769.0,-Honeydew Melon-,10.0,0,0,1,1,0
+770.0,-Watermelon-,10.0,1,0,1,1,0
+771.0,-Nectarines-,5.0,0,0,1,1,0
+772.0,-Oranges-,5.0,0,0,1,1,0
+773.0,-Papayas-,5.0,1,0,1,1,0
+774.0,-Peaches-,5.0,0,0,1,1,0
+775.0,-Pears-,5.0,0,0,1,1,0
+776.0,-Persimmons-,5.0,0,0,1,1,0
+777.0,-Fresh Pineapple-,10.0,0,0,1,1,0
+778.0,-Plums-,5.0,1,0,1,1,0
+779.0,-Pomegranates-,15.0,0,0,0,1,0
+780.0,-Stewed Rhubarb-,10.0,3,0,1,1,0
+781.0,-Tangerines-,3.0,0,0,1,1,0
+782.0,-Dates-,5.0,0,0,1,0,0
+783.0,-Raisins-,3.0,1,0,1,1,0
+784.0,-Stewed Prunes-,2.0,1,0,1,1,0
+785.0,-Mangoes-,5.0,0,0,1,1,0
+786.0,-Asian Pears-,3.0,1,0,1,1,0
+787.0,-Steamed Artichokes-,15.0,2,0,1,1,0
+788.0,-Steamed Bok Choy-,15.0,1,0,1,1,0
+789.0,-Canned Peaches-,2.0,1,0,1,1,0
+790.0,-Canned Pears-,3.0,1,0,0,1,0
+791.0,-Unsweetened Canned Pineapple-,3.0,1,0,1,1,0
+792.0,-Canned Fruit Cocktail-,3.0,1,0,1,1,0
+793.0,-Canned Plums-,3.0,1,0,1,1,0
+794.0,-Canned Apricots-,3.0,1,0,1,1,0
+795.0,-Canned Sweet Cherries-,3.0,1,0,1,1,0
+796.0,-Canned Mandarin Oranges-,3.0,1,0,1,1,0
+797.0,-Canned Grapefruit Slices-,3.0,1,0,0,1,0
+798.0,-Canned Cranberry Sauce-,3.0,1,0,1,1,0
+799.0,-Canned Blueberries-,3.0,1,0,1,1,0
+800.0,-Canned Blackberries-,3.0,1,0,1,1,0
+801.0,-Canned Peas-,3.0,1,0,1,1,0
+802.0,-Canned Cut Green Beans-,3.0,1,0,1,1,0
+803.0,-Canned French Green Beans-,3.0,1,0,1,1,0
+804.0,-Canned Corn-,3.0,1,0,1,1,0
+805.0,-Canned Beets-,3.0,1,0,1,1,0
+806.0,-Canned Yams-,3.0,1,0,1,1,0
+807.0,-Canned Asparagus-,3.0,1,0,1,1,0
+808.0,-Canned Lima Beans-,3.0,1,0,1,1,0
+809.0,-Canned Spinach-,3.0,1,0,1,1,0
+810.0,-Canned Carrots-,3.0,1,0,1,1,0
+811.0,-Canned Tomatoes-,3.0,1,0,1,1,0
+812.0,-Brown Rice-,5.0,3,0,0,0,0
+813.0,-White Rice-,5.0,3,0,0,0,0
+814.0,-Polenta-,5.0,3,0,1,0,0
+815.0,-Steamed Barley-,5.0,2,0,1,0,0
+816.0,-Hominy Grits-,2.0,2,0,1,0,0
+818.0,-Whole Hominy-,720.0,2,0,0,0,0
+819.0,-Millet-,5.0,2,0,1,0,0
+820.0,-Rolled Oats-,2.0,2,0,1,0,0
+821.0,-Pasta-,2.0,1,0,1,0,0
+822.0,-Noodles-,2.0,1,0,1,0,0
+823.0,-Macaroni-,2.0,1,0,0,0,0
+824.0,-Wild Rice-,5.0,3,0,1,0,0
+825.0,-Whole Wheat Bread-,3.0,1,0,0,0,0
+826.0,-Enriched White Bread-,3.0,1,0,0,0,0
+827.0,-French Bread-,2.0,0,0,0,0,0
+828.0,-Italian Bread-,2.0,1,0,0,0,0
+829.0,-Rye Bread-,3.0,1,0,0,0,0
+830.0,-Soda Crackers-,3.0,0,0,0,0,0
+831.0,-Wheat Thins Crackers-,3.0,0,0,0,0,0
+832.0,-Ritz Crackers-,3.0,0,0,1,0,0
+833.0,-Butter Crackers-,3.0,1,0,1,0,0
+834.0,-Cheese Crackers-,3.0,1,0,1,0,0
+835.0,-Oyster Crackers-,3.0,1,0,0,0,0
+836.0,-Graham Crackers-,3.0,0,0,0,0,0
+837.0,-Animal Crackers-,3.0,1,0,1,1,0
+838.0,-Flour Tortillas-,3.0,0,0,0,0,0
+839.0,-Corn Tortillas-,3.0,0,0,0,0,0
+840.0,-Bagels-,3.0,0,0,0,0,0
+841.0,-Pumpernickel Bread-,3.0,1,0,0,0,0
+842.0,-Malt-O-Meal-,2.0,2,0,0,0,0
+843.0,-Cream of Wheat-,3.0,1,0,0,0,0
+844.0,-Hot Oat Bran Cereal-,3.0,2,0,0,0,0
+845.0,-Black Beans-,240.0,2,0,1,0,0
+846.0,-Baby Lima Beans-,240.0,2,0,0,0,0
+847.0,-Great Northern Beans-,240.0,2,0,1,1,0
+848.0,-Black-Eyed Peas-,240.0,2,0,1,1,0
+849.0,-Garbanzo Beans-,240.0,3,0,1,1,0
+850.0,-Kidney Beans-,240.0,2,0,1,1,0
+851.0,-Lentils-,5.0,2,0,1,1,0
+852.0,-Pinto Beans-,240.0,2,0,1,1,0
+853.0,-Navy Beans-,240.0,2,0,1,1,0
+854.0,-Split Peas-,5.0,2,0,1,1,0
+856.0,-Tea-,5.0,2,0,0,0,0
+857.0,-Coffee-,10.0,2,0,0,0,0
+858.0,-Cappuccino-,5.0,1,0,0,0,0
+859.0,-Cafe Mocha-,0.0,2,0,0,0,0
+860.0,-Herb Tea-,5.0,1,0,0,0,0
+861.0,-Orange Juice-,3.0,1,0,1,1,0
+862.0,-Apple Juice-,0.0,1,0,1,1,0
+863.0,-Grapefruit Juice-,3.0,1,0,0,1,0
+864.0,-Lemonade-,5.0,1,0,1,1,0
+865.0,-Limeade-,5.0,1,0,0,1,0
+866.0,-Cranberry Juice Cocktail-,2.0,1,0,1,1,0
+867.0,-Grape Juice-,2.0,1,0,1,1,0
+868.0,-Red Wine-,2.0,1,0,0,0,0
+869.0,-White Wine-,3.0,1,0,0,0,0
+870.0,-Rose Wine-,3.0,1,0,0,0,0
+871.0,-Beer-,0.0,1,0,0,0,0
+872.0,-Light Beer-,2.0,1,0,0,0,0
+873.0,-Buttermilk-,0.0,1,0,1,1,0
+874.0,-Whole Milk-,3.0,1,0,1,1,0
+875.0,-2% Lowfat Milk-,0.0,1,0,1,1,0
+876.0,-1% Lowfat Milk-,0.0,1,0,1,1,0
+877.0,-Skim Milk-,2.0,1,0,1,1,0
+879.0,-Chocolate Milk Shake-,5.0,3,0,1,1,0
+880.0,-Vanilla Milk Shake-,10.0,3,0,1,1,0
+881.0,-Hot Chocolate-,10.0,1,0,1,1,0
+882.0,-Chocolate Milk-,7.0,2,0,1,1,0
+883.0,-Cola Drink-,2.0,1,0,0,0,0
+884.0,-Diet Soda Drink-,2.0,1,0,0,0,0
+885.0,-Club Soda-,2.0,1,0,0,0,0
+886.0,-Lemon-Lime Soda-,2.0,1,0,0,0,0
+887.0,-Lowfat Fruit Yogurt-,2.0,1,0,1,1,0
+888.0,-Nonfat Yogurt with Fruit-,2.0,1,0,1,1,0
+889.0,-Catsup-,3.0,1,0,1,1,0
+890.0,-Prepared Horseradish-,2.0,1,0,0,0,0
+891.0,-Prepared Mustard-,2.0,1,0,0,0,0
+892.0,-Dill Pickle-,2.0,0,0,1,1,0
+893.0,-Sweet Pickle-,3.0,0,0,1,1,0
+894.0,-Barbecue Sauce-,0.0,1,0,1,1,0
+895.0,-Soy Sauce-,2.0,1,0,0,0,0
+896.0,-Teriyaki Sauce-,3.0,1,0,0,0,0
+897.0,-Honey-,2.0,1,0,0,1,0
+898.0,-Jam-,2.0,1,0,1,1,0
+899.0,-Brown Sugar-,0.0,1,0,0,0,0
+900.0,-White Granulated Sugar-,1.0,1,0,0,0,0
+901.0,-Maple Flavored Syrup-,2.0,1,0,0,0,0
+902.0,-Blackstrap Molasses-,0.0,1,0,0,0,0
+903.0,-Peanut Butter-,3.0,1,0,0,0,0
+904.0,-Mayonnaise-,3.0,1,0,1,0,0
+905.0,-Low-Calorie Mayonnaise-,3.0,1,0,0,0,0
+906.0,-Blue Cheese Salad Dressing-,0.0,1,0,1,1,0
+907.0,-Low-Calorie Blue Cheese Salad Dressing-,3.0,1,0,1,0,0
+908.0,-French Salad Dressing-,2.0,1,0,1,0,0
+909.0,-Low-Calorie French Salad Dressing-,5.0,1,0,0,0,0
+910.0,-Italian Salad Dressing-,3.0,1,0,1,0,0
+911.0,-Low-Calorie Italian Salad Dressing-,3.0,1,0,0,0,0
+912.0,-Thousand Island Salad Dressing-,3.0,1,0,1,0,0
+913.0,-Low-Cal Thousand Island Salad Dressing-,3.0,1,0,0,0,0
+914.0,-Ranch Style Salad Dressing-,3.0,1,0,1,0,0
+915.0,-Low-Calorie Ranch Style Salad Dressing-,0.0,1,0,1,0,0
+916.0,-Steak Sauce-,0.0,1,0,0,0,0
+917.0,-Lowfat Cottage Cheese-,5.0,1,0,1,0,0
+918.0,-Dry Curd Cottage Cheese-,3.0,1,0,1,0,0
+919.0,-Whole Dry Roasted Almonds-,3.0,1,0,0,1,0
+920.0,-Whole Unsalted Cashew Nuts-,3.0,1,0,0,0,0
+921.0," -Dry Roasted, Salted Mixed Nuts- ",5.0,1,0,1,1,0
+922.0," -Roasted, Salted Peanuts- ",3.0,1,0,0,0,0
+923.0," -Dry Roasted, Unsalted Peanuts- ",2.0,1,0,0,0,0
+924.0," -Dried, Unsalted Pecan Halves- ",2.0,1,0,1,1,0
+925.0," -Dried, Unshelled Pistachio Nuts- ",2.0,1,0,1,1,0
+926.0,-Dry Roasted Sunflower Seeds-,0.0,1,0,0,1,0
+927.0,-Corn Chips-,3.0,1,0,1,0,0
+928.0,-Tortilla Chips-,3.0,1,0,0,0,0
+929.0,-Pretzel Twists-,3.0,1,0,0,0,0
+930.0,-Potato Chips-,2.0,1,0,0,1,0
+931.0,-All-Bran Cereal-,0.0,1,0,1,1,0
+932.0,-Cheerios Cereal-,3.0,1,0,1,1,0
+933.0,-Corn Flakes Cereal-,2.0,1,0,1,1,0
+934.0,-Raisin Bran Cereal-,3.0,1,0,1,0,0
+935.0,-Grape Nuts Cereal-,3.0,1,0,1,0,0
+936.0,-Special K Cereal-,5.0,1,0,1,1,0
+937.0,-Shredded Wheat Cereal-,3.0,1,0,0,0,0
+938.0,-Wheaties Cereal-,3.0,1,0,1,1,0
+939.0,-Cheddar Cheese-,3.0,1,0,1,0,0
+940.0,-Swiss Cheese-,5.0,1,0,1,0,0
+941.0,-Mozzarella Cheese-,3.0,1,0,1,0,0
+942.0,-Monterey Jack Cheese-,3.0,1,0,1,0,0
+943.0,-American Processed Cheese-,0.0,1,0,1,0,0
+944.0,-Cream Cheese-,2.0,1,0,1,0,0
+945.0,-Parmesan Cheese-,2.0,1,0,1,0,0
+946.0,-Turkey Bologna-,3.0,1,0,0,1,0
+947.0,-Sliced Beef Lunchmeat-,3.0,1,0,0,1,0
+948.0,-Sliced Ham-,3.0,1,0,0,1,0
+949.0,-Hamburger Patty-,5.0,1,0,0,0,0
+1020.0,Healthclub Chicken Salad,25.0,14,0,1,1,0
+1021.0,Saffron Rice Salad,60.0,9,0,1,1,0
+1022.0,Turkey Pot Roast,20.0,8,0,1,1,0
+1023.0,Pop's Crusty Chicken,140.0,9,0,1,1,0
+1024.0,Turkey with Orange,15.0,8,0,1,1,0
+1025.0,Tart and Tasty Stuffing,10.0,8,0,1,1,0
+1026.0,Turkey Citrus Salad,30.0,11,0,1,1,0
+1027.0,Chicken-Pistachio Roll-Ups,35.0,5,0,1,1,1
+1028.0,Warm Chinese Chicken Salad,30.0,8,0,1,1,0
+1029.0,Chicken Lentil Salad,20.0,11,0,1,1,0
+1030.0,Tropical Stuffed Cornish Hens,15.0,9,0,1,1,0
+1031.0,Chicken in Tomato Marsala Sauce,15.0,7,0,1,1,0
+1032.0,Turkey Ring Meatloaf,15.0,11,0,1,1,0
+1033.0,Apple-Stuffed Turkey Tenderloins,20.0,5,0,1,1,0
+1034.0,Chicken and Rice Casserole with Summer Vegetables,20.0,8,0,1,1,0
+1035.0,Turkey Spaghetti Pie,10.0,10,0,1,1,1
+1036.0,Smoked Chicken Pizza,15.0,6,0,1,1,1
+1037.0,Gourmet Chicken Bake,720.0,10,0,1,1,0
+1038.0,Chicken Chutney Salad,25.0,10,0,1,1,0
+1039.0,Brown Rice Waldorf Salad,20.0,8,0,1,1,0
+1040.0,Idaho Potato Supreme,20.0,11,0,1,1,1
+1041.0,Stir-Fry Turkey Italiano,10.0,10,0,1,1,0
+1042.0,Turkey Pockets Al Greco,15.0,7,0,1,1,1
+1043.0,Chicken Spiral Pasta Salad,20.0,12,0,1,1,0
+1044.0,Chicken Paprika,10.0,9,0,1,1,0
+1045.0,Chicken Nachos,10.0,6,0,1,1,0
+1046.0,Chicken Zucchini Stew,20.0,6,0,1,1,0
+1047.0,Apple Pie Turkey Salad,25.0,8,0,1,1,0
+1048.0,Ginger Chicken Stir-Fry,130.0,9,0,1,1,0
+1049.0,Turkey Parmigiana,10.0,6,0,1,1,1
+1050.0,Polynesian Pineapple Turkey,15.0,9,0,1,1,0
+1051.0,Tomato Cajun Chicken Salad,20.0,11,0,1,1,0
+1052.0,Chicken Provencale,15.0,10,0,1,1,0
+1053.0,Chicken Parmiagiana Spud,10.0,9,0,1,1,1
+1054.0,Lemon Rice,10.0,7,0,1,1,0
+1055.0,Southern Sweet Potato Chicken,10.0,8,0,1,1,0
+1057.0,Jambalaya,20.0,10,0,1,1,0
+1058.0,Poached Turkey Tenderloins with Tarragon Sauce,15.0,6,0,1,1,0
+1059.0,Chunky Chicken and Cucumber Salad,25.0,5,0,1,1,0
+1060.0,Breast of Chicken Italian,135.0,8,0,1,1,1
+1061.0,Poached Turkey Normandy,10.0,8,0,1,1,0
+1062.0,Hawaiian Turkey Salad,20.0,8,0,1,1,0
+1063.0,Dad's Favorite Turkey Kebabs,135.0,3,0,1,1,0
+1064.0,New England Turkey Chowder,15.0,11,0,1,1,0
+1065.0,Red Square Pistachio Stir Fry,20.0,12,0,1,1,0
+1066.0,Savory Grilled Peaches,5.0,0,0,1,1,0
+1067.0,Scandinavian Chicken Soup,15.0,8,0,1,1,0
+1068.0,Turkey Tetrazzini,15.0,13,0,1,1,1
+1069.0,Easy Skillet Chicken,10.0,8,0,1,1,0
+1070.0,Chicken Rice Medley,15.0,6,0,1,1,0
+1071.0,Turkey Kabobs,20.0,5,0,1,1,0
+1072.0,Turkey Ham Strata,735.0,7,0,1,1,1
+1073.0,Barbecued Chicken on a Bun,20.0,8,0,1,1,1
+1074.0,Turkey Tenderloin Bundles,15.0,8,0,1,1,0
+1075.0,Poached Turkey Tenderloins,10.0,7,0,1,1,0
+1076.0,Pistachio Turkey Taco Salad,25.0,8,0,1,1,0
+1077.0,Turkey Rice Burgers,10.0,7,0,1,1,0
+1078.0,Chicken Tarragon,20.0,8,0,1,1,0
+1079.0,Oriental Stir-Fry,10.0,4,0,1,1,0
+1080.0,Peruvian Chicken with Plums,15.0,8,0,1,1,0
+1081.0,Poached Turkey Tenderloins - Microwave,5.0,6,0,1,1,0
+1082.0,Chicken Pocket Sandwich,20.0,8,0,1,1,0
+1083.0,Turkey Rolls Italian Style,10.0,4,0,1,1,1
+1084.0,Sonoma Turkey Risotto,10.0,7,0,1,1,0
+1085.0,Brown Rice Chicken Bake,10.0,9,0,1,1,0
+1086.0,Lemon Chicken and Rice,15.0,10,0,1,1,0
+1087.0,Turkey Topper,10.0,10,0,1,1,1
+1088.0,Chicken Mushroom Soup,15.0,9,0,1,1,0
+1089.0,Chicken Pasta Salad,15.0,7,0,1,1,0
+1090.0,Turkey Waldorf Sandwich,20.0,7,0,1,1,0
+1091.0,Chicken-Cabbage Stir-Fry,10.0,7,0,1,1,0
+1092.0,Hearty Healthy Chicken Salad,20.0,9,0,1,1,0
+1093.0,Peachy Parmesan Chicken,20.0,8,0,1,1,1
+1094.0,Turkey Sausage Patties,10.0,9,0,1,1,0
+1095.0,California-Style Turkey Burger,5.0,8,0,1,1,0
+1096.0,Tomato-Turkey Noodle Bake,15.0,12,0,1,1,1
+1097.0,Dilly Turkey Stuffed Tomatoes,20.0,9,0,1,1,0
+1098.0,Tipsy Turkey Stew,15.0,12,0,1,1,0
+1099.0,Sonoma Turkey Bouillabaisse,20.0,8,0,1,1,0
+1100.0,Simply Deluxe Microwave Chicken,10.0,6,0,1,1,0
+1101.0,Layered Chicken Salad,25.0,5,0,1,1,0
+1102.0,Grilled Chicken Salad,90.0,9,0,1,1,0
+1103.0,Turkey and Pineapple on Skewers,10.0,5,0,1,1,0
+1104.0,Turkey Pastrami and Swiss in Rye,10.0,2,0,1,1,1
+1105.0,Turkey Potato Salad,15.0,5,0,1,1,0
+1106.0,Turkey Medallions Piccata,15.0,5,0,1,1,0
+1107.0,Citrus Chicken,10.0,11,0,1,1,0
+1108.0,Turkey Yakitori,255.0,7,0,1,1,0
+1109.0,Basic Turkey Burger Plus,15.0,7,0,1,1,0
+1110.0,Chicken Italian,15.0,4,0,1,1,0
+1111.0,Best Bartlett Bake,15.0,7,0,1,1,0
+1112.0,Turkey Tarragon Pitas,80.0,5,0,1,1,0
+1113.0,Stuffed Chicken Breasts,25.0,8,0,1,1,1
+1114.0,Autumn Medley Stew,15.0,6,0,1,1,0
+1115.0,Pasta Shells A La Turkey Waldorf,20.0,7,0,1,1,0
+1116.0,Turkey Fajitas,75.0,9,0,1,1,0
+1117.0,Sesame Chicken Salad,30.0,10,0,1,1,0
+1118.0,Ginger Turkey Stir-Fry,85.0,15,0,1,1,0
+1119.0,Sonoma Turkey and Vegetables,15.0,6,0,1,1,0
+1120.0,Garlic Lime Chicken,40.0,5,0,1,1,0
+1121.0,Fresh Shrimp Sandwich,20.0,9,0,1,1,0
+1122.0,Dilled Potato Rounds Fish Fillets,15.0,7,0,1,1,0
+1123.0," Pacific Chicken, Shrimp and Kiwifruit Kabobs ",25.0,9,0,1,1,0
+1124.0,Ragout of Tuna,20.0,7,0,1,1,0
+1125.0,Blue Crab Salad,20.0,8,0,1,1,0
+1126.0,Gravlox,15.0,6,0,1,1,0
+1127.0,Shrimp-Stuffed Shells,15.0,8,0,1,1,0
+1128.0,Poached Fish with Horseradish Sauce,5.0,8,0,1,1,0
+1129.0,Shrimp Marinara Pasta,10.0,11,0,1,1,0
+1130.0,Seafood Risotto,15.0,11,0,1,1,1
+1131.0," Fish Baked with Summer Squash, Onion and Herbs ",15.0,6,0,1,1,0
+1132.0,Tropical Date Sauce for Fish,0.0,3,0,1,1,0
+1133.0,Oysters on Pasta,15.0,13,0,1,1,0
+1134.0,Bell Peppers Stuffed with Shrimp,20.0,9,0,1,1,0
+1135.0,Simply Snapper,20.0,6,0,1,1,0
+1136.0,Steamed Fish,10.0,4,0,1,1,0
+1137.0,Stir-Fry Shrimp Scramble,10.0,7,0,1,1,0
+1138.0,Sandlapper Salad,20.0,3,0,1,1,0
+1139.0,Gulf Coast Stir-Fry,20.0,9,0,1,1,0
+1140.0,Baked Tilapia with Mustard,5.0,2,0,1,0,0
+1141.0,Risotto Con Frutti Di Mare,15.0,13,0,1,1,1
+1142.0,Orange-Currant Couscous,5.0,5,0,1,1,0
+1143.0,Fish Florentine,10.0,6,0,1,1,1
+1144.0,Fish Chowder,140.0,10,0,1,1,0
+1145.0,English Style Catfish,15.0,5,0,1,1,0
+1146.0,Swordfish Skewers with Pears,10.0,8,0,1,1,0
+1147.0,Sheepshead Bay Sea Bass,15.0,4,0,1,1,0
+1148.0,Risotto,15.0,9,0,1,1,1
+1149.0,Summer Seafood Salad,15.0,10,0,1,1,0
+1150.0,Seafood Marinara with Pasta,10.0,12,0,1,1,0
+1151.0,Chinese Steamed Fish,10.0,7,0,1,1,0
+1152.0,Shrimp with Snow Peas,10.0,12,0,1,1,0
+1153.0,Mariner Bean Salad Plate,20.0,10,0,1,1,1
+1154.0,Shrimp-Pear Pasta Salad,15.0,8,0,1,1,0
+1155.0,Shrimp Stir-Fry,20.0,9,0,1,1,0
+1156.0,Moroccan Catfish Couscous,25.0,7,0,1,1,0
+1157.0,Sole and Broccoli Roll-Ups,20.0,8,0,1,1,0
+1158.0,Seafood Pear Pasta,10.0,7,0,1,1,1
+1159.0,Native American Catfish,10.0,7,0,1,1,0
+1160.0,Stuffed Fish Turbans,15.0,8,0,1,1,1
+1161.0,Fish with Pear Jardiniere,15.0,7,0,1,1,0
+1162.0,Smoky Broiled Catfish,5.0,4,0,1,1,0
+1163.0,Shrimp Fried Rice,10.0,7,0,1,1,0
+1164.0,Elegant Oysters,15.0,12,0,1,1,0
+1165.0,Seafood Jambalaya,10.0,14,0,1,1,0
+1167.0,Spanish Clams and Rice,15.0,6,0,1,1,0
+1168.0,Crunchy Tuna Salad,15.0,10,0,1,1,0
+1169.0,Chinese Seafood Salad,20.0,13,0,1,1,0
+1170.0,Braised Catfish Fillet,0.0,7,0,1,1,0
+1171.0,Fisherman's Cioppino,10.0,12,0,1,1,0
+1172.0,Garlic-Soy Dipping Sauce,5.0,1,0,0,1,0
+1173.0,Shrimp Provencal,15.0,10,0,1,1,0
+1174.0,Clams Mariniere,15.0,4,0,1,1,0
+1175.0,Grilled Fish with Veracruz Sauce,10.0,3,0,1,1,0
+1176.0,Poached Shark,10.0,4,0,1,1,0
+1177.0,Fish and Vegetables in Foil,10.0,2,0,1,1,0
+1178.0,Quick Crawfish Jambalaya,15.0,11,0,1,1,0
+1179.0,Microwaved Fish with Italian Flair,10.0,3,0,1,1,0
+1180.0,Linguine with Clam Sauce,15.0,6,0,1,1,0
+1181.0,Basic Poached Fish,10.0,4,0,1,1,0
+1182.0,The 'T and T Deluxe',15.0,6,0,1,1,0
+1183.0,Crab Mousse,20.0,11,0,1,1,0
+1184.0,Red Snapper Orlando,15.0,9,0,1,1,0
+1185.0,Microwave Trout Amandine,5.0,5,0,1,1,0
+1186.0,Fruitful Sole and Nectarines Remoulade,15.0,7,0,1,1,0
+1187.0,Catfish and Shrimp Soup,15.0,11,0,1,1,0
+1188.0,Baked Fish,10.0,7,0,1,1,0
+1189.0,Clam Chowder,20.0,2,0,1,1,0
+1190.0,Salmon Yakatori with Peaches,10.0,7,0,1,1,0
+1191.0,Basil Baked Cod Fillets,15.0,7,0,1,1,0
+1192.0,Green and Gold Fettuccine,15.0,8,0,1,1,0
+1193.0,Microwaved Oriental Swordfish Steaks,45.0,10,0,1,1,0
+1194.0,Sweet-Sour Shrimp,15.0,6,0,1,1,0
+1195.0,Molded Crabmeat Mousse,15.0,5,0,1,1,0
+1196.0,Cracked Wheat and Seafood Casserole,15.0,8,0,1,1,0
+1197.0,Wisconsin Berry Celebration Shrimp Salad,15.0,5,0,1,1,0
+1198.0,Soy Barbecued Shrimp,15.0,7,0,1,1,0
+1199.0,Catfish and Wild Rice Soup,15.0,13,0,1,1,0
+1200.0,Halibut in Tarragon,10.0,6,0,1,1,0
+1201.0,Fish and Tomato Zucchini Saffron Coulis,15.0,6,0,1,1,1
+1202.0,Shark Kabobs,75.0,8,0,1,1,0
+1203.0,Mushroom Baked Sole,15.0,7,0,1,1,0
+1204.0,Broiled Baby Snapper,10.0,5,0,1,1,0
+1205.0,Deviled Crab,15.0,9,0,1,1,0
+1206.0,Surimi Seafood Pilaf,15.0,10,0,1,1,0
+1207.0,Soy-Mustard Vinegar Dipping Sauce,10.0,5,0,1,1,0
+1208.0,Long Island Fisherman Stew,25.0,11,0,1,1,0
+1209.0,Saffron Crawfish Risotto,15.0,13,0,1,1,1
+1210.0,Baked Sole Pacifica,10.0,7,0,1,1,0
+1211.0,Sweet-and-Sour Sauce,10.0,9,0,1,1,0
+1212.0,Grilled Halibut,15.0,7,0,1,1,0
+1213.0,Seafood Seasoning,0.0,10,0,1,1,0
+1214.0,Broiled Scallops,10.0,7,0,1,1,0
+1215.0,Mussels with Linguine,20.0,9,0,1,1,0
+1216.0,Mesquite Grilled Shrimp,20.0,5,0,1,1,0
+1217.0,Catfish Pasta Primavera,20.0,10,0,1,1,1
+1218.0,Texas Shrimp Slaw,30.0,9,0,1,1,0
+1219.0,Crab Linguine,10.0,13,0,1,1,1
+1220.0,Grilled Tuna Steaks,20.0,3,0,1,1,0
+1344.0,Herbs and Orange Grilled Chicken,15.0,9,0,1,1,0
+1345.0,Easy Whole Salmon,30.0,7,0,1,1,0
+1346.0,Grilled Whole Salmon,20.0,2,0,1,1,0
+1347.0,Iceberg Salad Athena,20.0,9,0,1,1,1
+1348.0,Kahlua Chocolate Cheesecake,40.0,8,0,1,1,1
+1349.0,Double Chocolate Mousse,90.0,6,0,1,1,0
+1350.0,Fruit and Green Salad,10.0,5,0,1,1,0
+1351.0,B.L.T. Salad,15.0,6,0,1,1,0
+1352.0,Mushroom-Orange Toss,10.0,4,0,1,1,0
+1353.0,Pineapple-Mushroom Salad,255.0,9,0,1,1,0
+1354.0,Creamy Mushroom Salad,20.0,8,0,1,1,0
+1356.0,Avocado Raspberry Spice Salad,30.0,8,0,1,1,0
+1359.0,Freeze and Bake Pie Crust,30.0,4,0,0,0,0
+1360.0,French Apple Pie,30.0,6,0,1,1,0
+1361.0,Pat-In-The-Pan Nut Cookie Crust,15.0,7,0,1,1,0
+1366.0,-Garlic Bread-,10.0,3,0,1,1,0
+1372.0,Chocolate Snack Cake,10.0,9,0,1,0,0
+1375.0,Marinated Flank Steak,250.0,13,0,1,1,1
+1376.0,Onion-Beer Tri-Tip Roast,380.0,5,0,1,1,0
+1377.0,Beef Kabobs Au Poivre,45.0,8,0,1,1,0
+1378.0,Dijon Vinaigrette,5.0,8,0,1,1,0
+1379.0,Fresh Citrus Dressing,5.0,6,0,1,1,0
+1380.0,Refreshing Mint Dressing,5.0,4,0,1,1,0
+1381.0,Herb-Marinated Beef Steak,370.0,8,0,1,1,0
+1382.0,Peppercorn Beef Kabobs,15.0,4,0,1,1,0
+1383.0,Caribbean Style Steak,367.0,5,0,1,1,0
+1384.0,Salsa Flavored Beef Steak,370.0,6,0,1,1,0
+1385.0,Orange-Rosemary Steaks,35.0,7,0,1,1,0
+1387.0,Sunshine Valley Salad,15.0,4,0,1,1,0
+1389.0,Darvish Dressing,10.0,7,0,1,1,0
+1390.0,Dill-Parsley Dressing,5.0,4,0,1,1,0
+1391.0,Lemon-Mint Dressing,5.0,4,0,1,1,0
+1392.0,Honey Dressing,5.0,4,0,1,1,0
+1393.0,Hazelnut Bleu Cheese Dressing,15.0,11,0,1,1,1
+1394.0,Sweet and Sour Dressing,5.0,6,0,0,1,0
+1395.0,Raspberry Walnut Dressing,15.0,5,0,1,1,0
+1396.0,Athena Dressing,5.0,5,0,1,1,0
+1397.0,Caesar Salad Dressing,5.0,5,0,1,1,0
+1398.0,Yogurt-Honey Dressing,5.0,4,0,1,1,0
+1399.0,Oriental Ginger-Nut Dressing,10.0,6,0,1,0,0
+1400.0,Creamy Dressing,5.0,6,0,1,1,0
+1401.0,Honey Lime Dressing,10.0,6,0,1,1,0
+1408.0,Fudge Brownie Pie,20.0,10,0,1,1,0
+1409.0,Chocolate Banana Cream Pie,150.0,7,0,1,1,0
+1410.0,No-Bake Chocolate Cheesecake,30.0,13,0,1,1,1
+1411.0,Mexican Cocoa Torte,90.0,7,0,1,1,0
+1415.0," Endive, Apple and Walnut Trio ",15.0,5,0,1,1,1
+1423.0,-Quinoa-,2.0,2,0,0,0,0
+1424.0,-Cooked Wheat Berries-,3.0,2,0,0,0,0
+1425.0,-Triticale-,3.0,2,0,0,0,0
+1426.0,-Pancakes-,10.0,7,0,1,1,0
+1427.0,-Waffles-,10.0,7,0,1,1,0
+1428.0,-French Toast-,5.0,3,0,1,1,0
+1429.0,-Mixed Green Salad-,0.0,1,0,1,1,0
+1432.0,Curried Chicken Livers Topped Spud,20.0,12,0,1,1,0
+1436.0,T.B.P.B. Smoothie,5.0,2,0,1,1,0
+1437.0,,,0,0,0,0,0
+1438.0,,,0,0,0,0,0
+1439.0,,,0,0,0,0,0
+1440.0,,,0,0,0,0,0
+1441.0,,,0,0,0,0,0
+1442.0,,,0,0,0,0,0
+1443.0,,,0,0,0,0,0
+1444.0,,,0,0,0,0,0
+1445.0,,,0,0,0,0,0
+1446.0,,,0,0,0,0,0
+1447.0,,,0,0,0,0,0
+1448.0,,,0,0,0,0,0
+1449.0,,,0,0,0,0,0
+1450.0,,,0,0,0,0,0
+1451.0,,,0,0,0,0,0
+1452.0,,,0,0,0,0,0
+1453.0,,,0,0,0,0,0
+1454.0,,,0,0,0,0,0
+1455.0,,,0,0,0,0,0
+1456.0,,,0,0,0,0,0
+1457.0,,,0,0,0,0,0
+1458.0,,,0,0,0,0,0
+1459.0,,,0,0,0,0,0
+1460.0,,,0,0,0,0,0
+1461.0,,,0,0,0,0,0
+1462.0,,,0,0,0,0,0
+1463.0,,,0,0,0,0,0
+1464.0,,,0,0,0,0,0
+1465.0,,,0,0,0,0,0
+1466.0,,,0,0,0,0,0
+1467.0,,,0,0,0,0,0
+1468.0,,,0,0,0,0,0
+1469.0,,,0,0,0,0,0
+1470.0,,,0,0,0,0,0
+1471.0,,,0,0,0,0,0
+1472.0,,,0,0,0,0,0
+1473.0,,,0,0,0,0,0
+1474.0,,,0,0,0,0,0
+1475.0,,,0,0,0,0,0
+1476.0,,,0,0,0,0,0
+1477.0,,,0,0,0,0,0
+1478.0,,,0,0,0,0,0
+1479.0,,,0,0,0,0,0
+1480.0,,,0,0,0,0,0
+1481.0,,,0,0,0,0,0
+1482.0,,,0,0,0,0,0
+1483.0,,,0,0,0,0,0
+1484.0,,,0,0,0,0,0
+1485.0,,,0,0,0,0,0
+1486.0,,,0,0,0,0,0
+1487.0,,,0,0,0,0,0
+1488.0,,,0,0,0,0,0
+1489.0,,,0,0,0,0,0
+1490.0,,,0,0,0,0,0
+1491.0,,,0,0,0,0,0
+1492.0,,,0,0,0,0,0
+1493.0,,,0,0,0,0,0
+1494.0,,,0,0,0,0,0
+1495.0,,,0,0,0,0,0
+1496.0,,,0,0,0,0,0
+1497.0,,,0,0,0,0,0
+1498.0,,,0,0,0,0,0
+1499.0,,,0,0,0,0,0
+1500.0,,,0,0,0,0,0
+1501.0,,,0,0,0,0,0
+1502.0,,,0,0,0,0,0
+1503.0,,,0,0,0,0,0
+1504.0,,,0,0,0,0,0
+1505.0,,,0,0,0,0,0
+1506.0,,,0,0,0,0,0
+1507.0,,,0,0,0,0,0
+1508.0,,,0,0,0,0,0
+1509.0,,,0,0,0,0,0
+1510.0,,,0,0,0,0,0
+1511.0,,,0,0,0,0,0
+1512.0,,,0,0,0,0,0
+1513.0,,,0,0,0,0,0
+1514.0,,,0,0,0,0,0
+1515.0,,,0,0,0,0,0
+1516.0,,,0,0,0,0,0
+1517.0,,,0,0,0,0,0
+1518.0,,,0,0,0,0,0
+1519.0,,,0,0,0,0,0
+1520.0,,,0,0,0,0,0
+1521.0,,,0,0,0,0,0
+1522.0,,,0,0,0,0,0
+1523.0,,,0,0,0,0,0
+1524.0,,,0,0,0,0,0
+1525.0,,,0,0,0,0,0
+1526.0,,,0,0,0,0,0
+1527.0,,,0,0,0,0,0
+1528.0,,,0,0,0,0,0
+1529.0,,,0,0,0,0,0
+1530.0,,,0,0,0,0,0
+1531.0,,,0,0,0,0,0
+1532.0,,,0,0,0,0,0
+1533.0,,,0,0,0,0,0
+1534.0,,,0,0,0,0,0
+1535.0,,,0,0,0,0,0
+1536.0,,,0,0,0,0,0
+1537.0,,,0,0,0,0,0
+1538.0,,,0,0,0,0,0
+1539.0,,,0,0,0,0,0
+1540.0,,,0,0,0,0,0
+1541.0,,,0,0,0,0,0
+1542.0,,,0,0,0,0,0
+1543.0,,,0,0,0,0,0
+1544.0,,,0,0,0,0,0
+1545.0,,,0,0,0,0,0
+1546.0,,,0,0,0,0,0
+1547.0,,,0,0,0,0,0
+1548.0,,,0,0,0,0,0
+1549.0,,,0,0,0,0,0
+1550.0,,,0,0,0,0,0
+1551.0,,,0,0,0,0,0
+1552.0,,,0,0,0,0,0
+1553.0,,,0,0,0,0,0
+1554.0,,,0,0,0,0,0
+1555.0,,,0,0,0,0,0
+1556.0,,,0,0,0,0,0
+1557.0,,,0,0,0,0,0
+1558.0,,,0,0,0,0,0
+1559.0,,,0,0,0,0,0
+1560.0,,,0,0,0,0,0
+1561.0,,,0,0,0,0,0
+1562.0,,,0,0,0,0,0
+1563.0,,,0,0,0,0,0
+1564.0,,,0,0,0,0,0
+1565.0,,,0,0,0,0,0
+1566.0,,,0,0,0,0,0
+1567.0,,,0,0,0,0,0
+1568.0,,,0,0,0,0,0
+1569.0,,,0,0,0,0,0
+1570.0,,,0,0,0,0,0
+1571.0,,,0,0,0,0,0
+1572.0,,,0,0,0,0,0
+1573.0,,,0,0,0,0,0
+1574.0,,,0,0,0,0,0
+1575.0,,,0,0,0,0,0
+1576.0,,,0,0,0,0,0
+1577.0,,,0,0,0,0,0
+1578.0,,,0,0,0,0,0
+1579.0,,,0,0,0,0,0
+1580.0,,,0,0,0,0,0
+1581.0,,,0,0,0,0,0
+1582.0,,,0,0,0,0,0
+1583.0,,,0,0,0,0,0
+1584.0,,,0,0,0,0,0
+1585.0,,,0,0,0,0,0
+1586.0,,,0,0,0,0,0
+1587.0,,,0,0,0,0,0
+1588.0,,,0,0,0,0,0
+1589.0,,,0,0,0,0,0

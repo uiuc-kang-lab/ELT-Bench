@@ -1,0 +1,23 @@
+DISTRICT_NO,DISTRICT_NAME,EMAIL,NUM_CRIMES_JAN_2018,NUM_CRIMES,DIFF_BEWTEEN_VEHICULAR_HIJACKINGS_AND_AGGRAVATED_VEHICULAR_HIJACKINGS,PER_CRIMES_HEPPENED_INSIDE_THE_HOUSE,NUM_DOMESTIC_VIOLENCE
+1,Central, CAPS001District@chicagopolice.org,1246,15684,-1,7.38,0
+10,Ogden, CAPS010District@chicagopolice.org,930,12630,-12,31.56,0
+11,Harrison, CAPS.011District@chicagopolice.org,1447,19201,-26,28.27,0
+12,Near West, CAPS012District@chicagopolice.org,916,13139,-24,24.77,0
+14,Shakespeare, CAPS.014District@chicagopolice.org,651,9391,-6,27.17,0
+15,Austin, CAPS015District@chicagopolice.org,747,10081,-16,38.2,0
+16,Jefferson Park, CAPS016District@chicagopolice.org,769,8790,-4,38.15,0
+17,Albany Park, CAPS.017District@chicagopolice.org,634,7639,-4,32.87,0
+18,Near North, CAPS018District@chicagopolice.org,1302,16211,1,12.21,0
+19,Town Hall, CAPS019District@chicagopolice.org,896,12287,1,27.48,0
+2,Wentworth, CAPS002District@chicagopolice.org,912,11883,-5,34.14,0
+20,Lincoln, CAPS020District@chicagopolice.org,402,4949,-4,33.76,0
+22,Morgan Park, CAPS022District@chicagopolice.org,664,8467,-11,41.44,0
+24,Rogers Park, CAPS.024District@chicagopolice.org,584,7713,-1,37.62,0
+25,Grand Central, CAPS025District@chicagopolice.org,1112,13372,-2,38.17,0
+3,Grand Crossing, CAPS003District@chicagopolice.org,978,12119,-13,46.05,0
+4,South Chicago, caps.004district@chicagopolice.org,1043,14188,-8,44.57,0
+5,Calumet, CAPS005District@chicagopolice.org,844,11994,-22,42.47,0
+6,Gresham, CAPS006District@chicagopolice.org,1232,16515,-17,40.81,0
+7,Englewood, CAPS007District@chicagopolice.org,1052,14300,-4,41.75,0
+8,Chicago Lawn, CAPS008District@chicagopolice.org,1240,16388,4,39.39,0
+9,Deering, caps.009district@chicagopolice.org,832,11051,2,34.81,0

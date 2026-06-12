@@ -1,0 +1,552 @@
+ID,NAME,SETCODE,NUM_CARDS,NUM_TRANSLATIONS,HAS_JAPANESE_TRANSLATION_AND_ONLY_AVAILABLE_IN_NON_FOIL,PER_CARDS_WITH_A_CONVERTED_MANA_COST_10,CARD_HAS_HIGHEST_CONVERTED_MANA_COST
+1,Tenth Edition,10E,508,10,0,0.19685,Time Stretch
+10,Seventh Edition,7ED,354,10,0,0.0,Crimson Hellkite
+100,Eldritch Moon,EMN,223,10,0,0.44843,"Emrakul, the Promised End"
+101,Eventide,EVE,180,10,0,0.0,Altar Golem
+102,Duel Decks Anthology: Elves vs. Goblins,EVG,62,0,0,0.0,Allosaurus Rider
+103,Exodus,EXO,143,10,0,0.0,Pit Spawn
+104,Zendikar Expeditions,EXP,45,0,0,0.0,Ancient Tomb
+105,Friday Night Magic 2001,F01,7,0,0,0.0,Fireblast
+106,Friday Night Magic 2002,F02,12,0,0,0.0,Aura of Silence
+107,Friday Night Magic 2003,F03,13,0,0,0.0,Krosan Tusker
+108,Friday Night Magic 2004,F04,12,0,0,0.0,Slice and Dice
+109,Friday Night Magic 2005,F05,12,0,0,0.0,Blastoderm
+11,Eighth Edition,8ED,361,10,0,0.0,Plague Wind
+110,Friday Night Magic 2006,F06,14,0,0,0.0,Arrogant Wurm
+111,Friday Night Magic 2007,F07,12,0,0,0.0,Roar of the Wurm
+112,Friday Night Magic 2008,F08,12,0,0,0.0,Resurrection
+113,Friday Night Magic 2009,F09,12,0,0,0.0,Myr Enforcer
+114,Friday Night Magic 2010,F10,12,0,0,0.0,Bloodbraid Elf
+115,Friday Night Magic 2011,F11,12,0,0,0.0,Artisan of Kozilek
+116,Friday Night Magic 2012,F12,12,0,0,0.0,Acidic Slime
+117,Friday Night Magic 2013,F13,12,0,0,0.0,Ghor-Clan Rampager
+118,Friday Night Magic 2014,F14,12,0,0,0.0,Stoke the Flames
+119,Friday Night Magic 2015,F15,12,0,0,0.0,Abzan Beastmaster
+12,Ninth Edition,9ED,359,10,0,0.0,Plague Wind
+120,Friday Night Magic 2016,F16,12,0,0,0.0,Rise from the Tides
+121,Friday Night Magic 2017,F17,9,0,0,0.0,Reverse Engineer
+122,Friday Night Magic 2018,F18,0,0,0,0.0,
+123,Foreign Black Border,FBB,307,0,0,0.325733,Aladdin's Lamp
+124,Fallen Empires,FEM,187,0,0,0.0,Deep Spawn
+125,Jumpstart Front Cards,FJMP,0,0,0,0.0,
+126,Mystery Booster Retail Edition Foils,FMB1,124,0,0,0.806452,Reaper King
+127,Friday Night Magic 2000,FNM,11,0,0,0.0,Staunch Defenders
+128,Fate Reforged,FRF,185,10,0,0.0,Temporal Trespass
+129,Future Sight,FUT,180,10,0,0.0,Angel of Salvation
+13,Masters 25,A25,249,0,0,0.0,Krosan Colossus
+130,Judge Gift Cards 2000,G00,2,0,0,0.0,Counterspell
+131,Judge Gift Cards 2001,G01,2,0,0,0.0,Ball Lightning
+132,Judge Gift Cards 2002,G02,2,0,0,0.0,Tradewind Rider
+133,Judge Gift Cards 2003,G03,3,0,0,0.0,Living Death
+134,Judge Gift Cards 2004,G04,6,0,0,0.0,Deranged Hermit
+135,Judge Gift Cards 2005,G05,4,0,0,0.0,Regrowth
+136,Judge Gift Cards 2006,G06,4,0,0,0.0,Exalted Angel
+137,Judge Gift Cards 2007,G07,5,0,0,0.0,Decree of Justice
+138,Judge Gift Cards 2008,G08,5,0,0,0.0,Mind's Desire
+139,Judge Gift Cards 2009,G09,10,0,0,0.0,Burning Wish
+14,Aether Revolt,AER,197,10,0,0.0,Aetherwind Basker
+140,Judge Gift Cards 2010,G10,8,0,0,0.0,Morphling
+141,Judge Gift Cards 2011,G11,8,0,0,0.0,Doubling Season
+142,2017 Gift Pack,G17,5,0,0,0.0,Forest
+143,M19 Gift Pack,G18,5,0,0,0.0,Angler Turtle
+144,Judge Gift Cards 1999,G99,1,0,0,0.0,Memory Lapse
+145,GRN Guild Kit,GK1,128,0,0,0.0,"Razia, Boros Archangel"
+146,RNA Guild Kit,GK2,133,0,0,0.0,Utvara Hellkite
+147,Game Night 2019,GN2,64,0,0,0.0,"Ghalta, Primal Hunger"
+148,Game Night,GNT,68,0,0,0.0,"Ghalta, Primal Hunger"
+149,Guildpact,GPT,165,10,0,0.606061,Storm Herd
+15,Jumpstart Arena Exclusives,AJMP,18,0,0,0.0,Carnifex Demon
+150,Guilds of Ravnica,GRN,283,0,0,0.353357,Impervious Greatwurm
+151,Global Series Jiang Yanggu & Mu Yanling,GS1,40,0,0,0.0,Ancestor Dragon
+152,Gatecrash,GTC,249,10,0,0.0,Enter the Infinite
+153,Duel Decks Anthology: Garruk vs. Liliana,GVL,63,0,0,0.0,Krosan Tusker
+154,Premium Deck Series: Slivers,H09,41,0,0,0.0,Fury Sliver
+155,HasCon 2017,H17,4,0,0,0.0,Nerf War
+156,Historic Anthology 1,HA1,20,0,0,0.0,Captain Sisay
+157,Historic Anthology 2,HA2,25,0,0,0.0,Platinum Angel
+158,Historic Anthology 3,HA3,27,0,0,3.703704,"Ulamog, the Ceaseless Hunger"
+159,Happy Holidays,HHO,18,0,0,0.0,Naughty // Nice
+16,Amonkhet,AKH,302,10,0,0.662252,Rags // Riches
+160,Homelands,HML,140,10,0,0.0,Baron Sengir
+161,Planechase,HOP,171,0,0,0.584795,Broodstar
+162,Hour of Devastation,HOU,219,0,0,0.0,"Nicol Bolas, the Deceiver"
+163,2016 Heroes of the Realm,HTR,3,0,0,0.0,"Nira, Hellkite Duelist"
+164,2017 Heroes of the Realm,HTR17,3,0,0,0.0,Diabolical Salvation
+165,Heroes of the Realm 2018,HTR18,4,0,0,0.0,Kharis & The Beholder
+166,Ice Age,ICE,383,10,0,0.0,Polar Kraken
+167,Ikoria: Lair of Behemoths,IKO,388,10,0,0.0,Titanoth Rex
+168,Iconic Masters,IMA,249,0,0,0.401606,"Jin-Gitaxias, Core Augur"
+169,Invasion,INV,356,0,0,0.0,Reya Dawnbringer
+17,Amonkhet Remastered,AKR,364,0,0,0.549451,Rags // Riches
+170,Innistrad,ISD,284,0,0,0.0,Blasphemous Act
+171,Introductory Two-Player Set,ITP,66,0,0,0.0,Clockwork Beast
+172,Judge Gift Cards 2012,J12,8,0,0,0.0,Karmic Guide
+173,Judge Gift Cards 2013,J13,8,0,0,0.0,Overwhelming Forces
+174,Judge Gift Cards 2014,J14,14,0,0,0.0,"Karador, Ghost Chieftain"
+175,Judge Gift Cards 2015,J15,8,0,0,0.0,Temporal Manipulation
+176,Judge Gift Cards 2016,J16,8,0,0,0.0,Mystic Confluence
+177,Judge Gift Cards 2017,J17,9,0,0,0.0,"Avacyn, Angel of Hope"
+178,Judge Gift Cards 2018,J18,8,0,0,0.0,Commander's Sphere
+179,Judge Gift Cards 2019,J19,8,0,0,0.0,Sliver Legion
+18,Shards of Alara,ALA,249,10,0,0.0,Empyrial Archangel
+180,Judge Gift Cards 2020,J20,10,0,0,0.0,Arena Rector
+181,Judge Gift Cards 2021,J21,3,0,0,0.0,The Gitrog Monster
+182,Judge Gift Cards 1998,JGP,3,0,0,0.0,Stroke of Genius
+183,Jumpstart,JMP,496,0,0,0.0,"Ghalta, Primal Hunger"
+184,Journey into Nyx,JOU,165,10,0,0.0,Bearer of the Heavens
+185,Judgment,JUD,143,10,0,0.0,Crush of Wurms
+186,Duel Decks Anthology: Jace vs. Chandra,JVC,62,0,0,0.0,Errant Ephemeron
+187,Kaldheim Commander,KHC,119,0,0,0.840336,Storm Herd
+188,Kaldheim,KHM,438,0,0,0.0,Icebreaker Kraken
+189,Kaladesh,KLD,278,10,0,0.0,Metalwork Colossus
+19,Alliances,ALL,199,0,0,0.0,Gargantuan Gorilla
+190,Kaladesh Remastered,KLR,302,0,0,0.0,Metalwork Colossus
+191,Khans of Tarkir,KTK,269,10,0,0.371747,Dead Drop
+192,League Tokens 2012,L12,0,0,0,0.0,
+193,League Tokens 2013,L13,0,0,0,0.0,
+194,League Tokens 2014,L14,0,0,0,0.0,
+195,League Tokens 2015,L15,0,0,0,0.0,
+196,League Tokens 2016,L16,0,0,0,0.0,
+197,League Tokens 2017,L17,0,0,0,0.0,
+198,Limited Edition Alpha,LEA,294,0,0,0.0,Lord of the Pit
+199,Limited Edition Beta,LEB,301,0,0,0.0,Lord of the Pit
+2,Unlimited Edition,2ED,302,0,0,0.0,Lord of the Pit
+20,Modern Horizons Art Series,AMH1,0,0,0,0.0,
+200,Legends,LEG,310,0,0,0.0,Akron Legionnaire
+201,Legions,LGN,145,10,0,0.689655,Krosan Cloudscraper
+202,Lorwyn,LRW,301,10,0,0.0,Hearthcage Giant
+203,Magic 2010,M10,249,10,0,0.0,Darksteel Colossus
+204,Magic 2011,M11,249,0,0,0.0,Demon of Death's Gate
+205,Magic 2012,M12,249,0,0,0.0,Scrambleverse
+206,Magic 2013,M13,249,0,0,0.401606,Omniscience
+207,Magic 2014,M14,249,10,0,0.0,Darksteel Forge
+208,Magic 2015,M15,284,10,0,0.0,Feral Incarnation
+209,Core Set 2019,M19,315,0,0,0.634921,Apex of Power
+21,Arena New Player Experience,ANA,40,0,0,0.0,Forest
+210,Core Set 2020,M20,345,10,0,0.0,"Vilis, Broker of Blood"
+211,Core Set 2021,M21,397,10,0,0.0,Volcanic Salvo
+212,Mystery Booster,MB1,1700,0,0,0.235294,Draco
+213,Mirrodin Besieged,MBS,155,10,0,0.0,Blightsteel Colossus
+214,Modern Event Deck 2014,MD1,26,0,0,0.0,Spectral Procession
+215,Masters Edition,ME1,195,0,0,0.0,Polar Kraken
+216,Masters Edition II,ME2,245,0,0,0.0,Fire Dragon
+217,Masters Edition III,ME3,230,0,0,0.0,Zodiac Dragon
+218,Masters Edition IV,ME4,269,0,0,0.0,Colossus of Sardia
+219,Mythic Edition,MED,24,0,0,0.0,"Nicol Bolas, Planeswalker"
+22,Arena Beginner Set,ANB,116,0,0,0.0,Demon of Loathing
+220,Multiverse Gift Box,MGB,10,0,0,0.0,Necrosavant
+221,Modern Horizons,MH1,255,0,0,0.0,"Hogaak, Arisen Necropolis"
+222,Mirage,MIR,351,0,0,0.0,Crimson Hellkite
+223,Modern Masters 2015,MM2,249,10,0,0.401606,"Emrakul, the Aeons Torn"
+224,Modern Masters 2017,MM3,249,0,0,0.0,Craterhoof Behemoth
+225,Modern Masters,MMA,229,10,0,0.873362,Greater Gargadon
+226,Mercadian Masques,MMQ,350,10,0,0.0,Tidal Kraken
+227,Morningtide,MOR,150,10,0,0.0,Walker of the Grove
+228,Amonkhet Invocations,MP2,54,0,0,1.851852,Omniscience
+229,Magic Player Rewards 2001,MPR,1,0,0,0.0,Wasteland
+23,Apocalypse,APC,148,10,0,0.0,Bloodfire Colossus
+230,Kaladesh Inventions,MPS,54,0,0,0.0,Sundering Titan
+231,Mirrodin,MRD,306,10,0,0.326797,Broodstar
+232,Zendikar Rising Minigames,MZNR,0,0,0,0.0,
+233,Nemesis,NEM,143,0,0,0.0,Flowstone Thopter
+234,New Phyrexia,NPH,175,0,0,0.571429,"Jin-Gitaxias, Core Augur"
+235,Arena New Player Experience Cards,OANA,14,0,0,0.0,Inspiring Commander
+236,Archenemy Schemes,OARC,45,0,0,0.0,A Display of My Dark Power
+237,Commander 2013 Oversized,OC13,15,0,0,0.0,Thraximundar
+238,Commander 2014 Oversized,OC14,5,0,0,0.0,"Teferi, Temporal Archmage"
+239,Commander 2015 Oversized,OC15,5,0,0,0.0,"Ezuri, Claw of Progress"
+24,Alara Reborn,ARB,145,10,0,0.0,Filigree Angel
+240,Commander 2016 Oversized,OC16,5,0,0,0.0,"Atraxa, Praetors' Voice"
+241,Commander 2017 Oversized,OC17,4,0,0,0.0,The Ur-Dragon
+242,Commander 2018 Oversized,OC18,4,0,0,0.0,Lord Windgrace
+243,Commander 2019 Oversized,OC19,4,0,0,0.0,"Ghired, Conclave Exile"
+244,Commander 2020 Oversized,OC20,5,0,0,0.0,"Otrimi, the Ever-Playful"
+245,Commander's Arsenal Oversized,OCM1,10,0,0,0.0,"Karrthus, Tyrant of Jund"
+246,Commander 2011 Oversized,OCMD,15,0,0,0.0,"Karador, Ghost Chieftain"
+247,Odyssey,ODY,352,10,0,0.284091,Time Stretch
+248,Archenemy: Nicol Bolas Schemes,OE01,20,0,0,0.0,A Reckoning Approaches
+249,Oath of the Gatewatch,OGW,187,10,0,0.534759,"Kozilek, the Great Distortion"
+25,Archenemy,ARC,151,10,0,0.0,Artisan of Kozilek
+250,Planechase Planes,OHOP,40,0,0,0.0,Academy at Tolaria West
+251,Legacy Championship,OLGC,15,0,0,0.0,Force of Will
+252,Onslaught,ONS,350,10,0,0.0,Krosan Colossus
+253,Planechase 2012 Planes,OPC2,40,0,0,0.0,Akoum
+254,Planechase Anthology Planes,OPCA,86,0,0,0.0,Academy at Tolaria West
+255,Magic Origins,ORI,293,10,0,0.0,The Great Aurora
+256,Vintage Championship,OVNT,23,0,0,0.0,Timetwister
+257,Portal Second Age,P02,165,0,0,0.0,Brimstone Dragon
+258,Magic Player Rewards 2003,P03,1,0,0,0.0,Voidmage Prodigy
+259,Magic Player Rewards 2004,P04,1,0,0,0.0,Powder Keg
+26,Arabian Nights,ARN,92,0,0,1.086957,Aladdin's Lamp
+260,Magic Player Rewards 2005,P05,6,0,0,0.0,Psychatog
+261,Magic Player Rewards 2006,P06,7,0,0,0.0,Zombify
+262,Magic Player Rewards 2007,P07,7,0,0,0.0,Wrath of God
+263,Magic Player Rewards 2008,P08,7,0,0,0.0,Corrupt
+264,Magic Player Rewards 2009,P09,9,0,0,0.0,Flame Javelin
+265,Magic Player Rewards 2010,P10,9,0,0,0.0,Bituminous Blast
+266,Tenth Edition Promos,P10E,1,0,0,0.0,Reya Dawnbringer
+267,Magic Player Rewards 2011,P11,5,0,0,0.0,Day of Judgment
+268,15th Anniversary Cards,P15A,2,0,0,0.0,"Kamahl, Pit Fighter"
+269,Two-Headed Giant Tournament,P2HG,1,0,0,0.0,Underworld Dreams
+27,Anthologies,ATH,85,0,0,0.0,Lady Orca
+270,Fifth Dawn Promos,P5DN,1,0,0,0.0,Helm of Kaldra
+271,Eighth Edition Promos,P8ED,1,0,0,0.0,Rukh Egg
+272,Ninth Edition Promos,P9ED,2,0,0,0.0,Force of Nature
+273,Aether Revolt Promos,PAER,65,0,0,0.0,Aetherwind Basker
+274,Amonkhet Promos,PAKH,87,0,0,4.597701,Rags // Riches
+275,Arena League 2000,PAL00,11,0,0,0.0,Pillage
+276,Arena League 2001,PAL01,12,0,0,0.0,Creeping Mold
+277,Arena League 2002,PAL02,5,0,0,0.0,Arc Lightning
+278,Arena League 2003,PAL03,8,0,0,0.0,Elvish Aberration
+279,Arena League 2004,PAL04,14,0,0,0.0,Granny's Payback
+28,Antiquities,ATQ,101,0,0,0.0,Colossus of Sardia
+280,Arena League 2005,PAL05,8,0,0,0.0,Okina Nightwatch
+281,Arena League 2006,PAL06,9,0,0,0.0,Wee Dragonauts
+282,Arena League 1999,PAL99,10,0,0,0.0,"Karn, Silver Golem"
+283,Shards of Alara Promos,PALA,1,0,0,0.0,Ajani Vengeant
+284,Asia Pacific Land Program,PALP,15,0,0,0.0,Forest
+285,MTG Arena Promos,PANA,57,0,0,0.0,"Ghalta, Primal Hunger"
+286,Apocalypse Promos,PAPC,1,0,0,0.0,Fungal Shambler
+287,Alara Reborn Promos,PARB,2,0,0,0.0,Dragon Broodmother
+288,Promotional Schemes,PARC,5,0,0,0.0,Drench the Soil in Their Blood
+289,Arena League 1996,PARL,7,0,0,0.0,Disenchant
+29,Avacyn Restored,AVR,244,0,0,0.409836,Primal Surge
+290,Astral Cards,PAST,12,0,0,0.0,Pandora's Box
+291,Avacyn Restored Promos,PAVR,5,0,0,0.0,Moonsilver Spear
+292,Battlebond Promos,PBBD,22,0,0,0.0,Khorvath Brightflame
+293,Battle for Zendikar Promos,PBFZ,87,0,0,2.298851,Desolation Twin
+294,Born of the Gods Promos,PBNG,9,0,0,0.0,Eater of Hope
+295,Betrayers of Kamigawa Promos,PBOK,3,0,0,0.0,"Ink-Eyes, Servant of Oni"
+296,Miscellaneous Book Promos,PBOOK,1,0,0,0.0,Jace Beleren
+297,Planechase 2012,PC2,156,10,0,0.0,Maelstrom Wanderer
+298,Planechase Anthology,PCA,156,10,0,0.0,Maelstrom Wanderer
+299,Celebration Cards,PCEL,7,0,0,0.0,Shichifukujin Dragon
+3,Double Masters,2XM,384,0,0,0.0,Blightsteel Colossus
+30,Zendikar Rising Art Series,AZNR,0,0,0,0.0,
+300,Champions of Kamigawa Promos,PCHK,1,0,0,0.0,"Ryusei, the Falling Star"
+301,Commander 2011 Launch Party,PCMD,5,0,0,0.0,"Vish Kal, Blood Arbiter"
+302,Champs and States,PCMP,12,0,0,0.0,"Niv-Mizzet, the Firemind"
+303,Conspiracy Promos,PCNS,1,0,0,0.0,Magister of Worth
+304,Conflux Promos,PCON,2,0,0,0.0,Malfegor
+305,Coldsnap Promos,PCSP,1,0,0,0.0,Allosaurus Rider
+306,Prophecy,PCY,144,10,0,0.0,Blessed Wind
+307,Premium Deck Series: Fire and Lightning,PD2,34,10,0,0.0,Fireblast
+308,Premium Deck Series: Graveborn,PD3,30,0,0,0.0,Blazing Archon
+309,Dragon's Maze Promos,PDGM,7,0,0,0.0,Breaking // Entering
+31,Battlebond,BBD,256,0,0,0.0,Lava-Field Overlord
+310,Dissension Promos,PDIS,2,0,0,0.0,Avatar of Discord
+311,Dark Ascension Promos,PDKA,7,0,0,0.0,Zombie Apocalypse
+312,Dominaria Promos,PDOM,118,0,0,0.0,"Slinn Voda, the Rising Deep"
+313,Duels of the Planeswalkers 2010 Promos,PDP10,2,0,0,0.0,Liliana Vess
+314,Duels of the Planeswalkers 2012 Promos,PDP12,3,0,0,0.0,Frost Titan
+315,Duels of the Planeswalkers 2013 Promos,PDP13,3,0,0,0.0,Serra Avatar
+316,Duels of the Planeswalkers 2014 Promos,PDP14,3,0,0,0.0,Bonescythe Sliver
+317,Duels of the Planeswalkers 2015 Promos,PDP15,2,0,0,0.0,Soul of Ravnica
+318,Dragon Con,PDRC,1,0,0,0.0,Nalathni Dragon
+319,Darksteel Promos,PDST,1,0,0,0.0,Shield of Kaldra
+32,Battle for Zendikar,BFZ,299,10,0,0.668896,Desolation Twin
+320,Dragons of Tarkir Promos,PDTK,51,0,0,0.0,Arashin Sovereign
+321,Duels of the Planeswalkers 2009 Promos,PDTP,1,0,0,0.0,Garruk Wildspeaker
+322,Throne of Eldraine Promos,PELD,150,0,0,0.0,The Cauldron of Eternity
+323,European Land Program,PELP,15,0,0,0.0,Forest
+324,Eldritch Moon Promos,PEMN,78,0,0,1.282051,"Emrakul, the Promised End"
+325,Eventide Promos,PEVE,2,0,0,0.0,Overbeing of Myth
+326,Exodus Promos,PEXO,1,0,0,0.0,Monstrous Hound
+327,MagicFest 2019,PF19,7,0,0,0.0,Lightning Bolt
+328,MagicFest 2020,PF20,6,0,0,0.0,Path to Exile
+329,Fate Reforged Promos,PFRF,42,0,0,0.0,"Atarka, World Render"
+33,Born of the Gods,BNG,165,10,0,0.0,Archetype of Endurance
+330,Future Sight Promos,PFUT,2,0,0,0.0,"Korlash, Heir to Blackblade"
+331,Gateway 2007,PG07,9,0,0,0.0,Reckless Wurm
+332,Gateway 2008,PG08,8,0,0,0.0,Lava Axe
+333,Guildpact Promos,PGPT,2,0,0,0.0,Djinn Illuminatus
+334,Grand Prix Promos,PGPX,20,0,0,5.0,Progenitus
+335,Guilds of Ravnica Promos,PGRN,89,0,0,0.0,Connive // Concoct
+336,Guru,PGRU,5,0,0,0.0,Forest
+337,Gatecrash Promos,PGTC,9,0,0,0.0,Skarrg Goliath
+338,Gateway 2006,PGTW,3,0,0,0.0,Fiery Temper
+339,Open the Helvault,PHEL,5,0,0,0.0,"Avacyn, Angel of Hope"
+34,Betrayers of Kamigawa,BOK,170,10,0,0.588235,Sway of the Stars
+340,Hobby Japan Promos,PHJ,5,0,0,0.0,Ihsan's Shade
+341,Promotional Planes,PHOP,6,0,0,0.0,Celestine Reef
+342,Hour of Devastation Promos,PHOU,65,0,0,0.0,Overwhelming Splendor
+343,HarperPrism Book Promos,PHPR,5,0,0,0.0,Sewers of Estark
+344,Hachette UK,PHUK,62,0,0,0.0,Patron of the Nezumi
+345,IDW Comics 2013,PI13,5,0,0,0.0,Corrupt
+346,IDW Comics 2014,PI14,3,0,0,0.0,Acquire
+347,IDW Comics 2012,PIDW,9,0,0,0.0,Breath of Malfegor
+348,Ikoria: Lair of Behemoths Promos,PIKO,136,0,0,0.0,Colossification
+349,Invasion Promos,PINV,1,0,0,0.0,Raging Kavu
+35,Battle Royale Box Set,BRB,136,10,0,0.0,Scaled Wurm
+350,Innistrad Promos,PISD,7,0,0,0.0,Elite Inquisitor
+351,Junior APAC Series,PJAS,6,0,0,0.0,Shard Phoenix
+352,Japan Junior Tournament,PJJT,12,0,0,0.0,Two-Headed Dragon
+353,Journey into Nyx Promos,PJOU,9,0,0,0.0,Scourge of Fleets
+354,Junior Series Europe,PJSE,8,0,0,0.0,Shard Phoenix
+355,Judgment Promos,PJUD,1,0,0,0.0,Glory
+356,Kaldheim Commander Promos,PKHC,0,0,0,0.0,
+357,Kaldheim Promos,PKHM,201,0,0,0.0,Icebreaker Kraken
+358,Kaladesh Promos,PKLD,82,0,0,0.0,Metalwork Colossus
+359,Khans of Tarkir Promos,PKTK,56,0,0,0.0,Necropolis Fiend
+36,Beatdown Box Set,BTD,90,10,0,0.0,Leviathan
+360,2021 Lunar New Year,PL21,1,0,0,0.0,"Sethron, Hurloon General"
+361,Planar Chaos,PLC,168,10,0,0.0,Dichotomancy
+362,DCI Legend Membership,PLGM,2,0,0,0.0,Counterspell
+363,Legions Promos,PLGN,1,0,0,0.0,Feral Throwback
+364,Love Your LGS,PLGS,2,0,0,0.0,Hangarback Walker
+365,The List,PLIST,356,0,0,1.123596,"Emrakul, the Aeons Torn"
+366,2018 Lunar New Year,PLNY,0,0,0,0.0,
+367,Lorwyn Promos,PLRW,2,0,0,0.0,Shriekmaw
+368,Planeshift,PLS,146,0,0,0.684932,Draco
+369,Magic 2010 Promos,PM10,5,0,0,0.0,Ant Queen
+37,Commander 2013,C13,357,10,0,0.0,Army of the Damned
+370,Magic 2011 Promos,PM11,5,0,0,0.0,Ancient Hellkite
+371,Magic 2012 Promos,PM12,5,0,0,0.0,Garruk's Horde
+372,Magic 2013 Promos,PM13,5,0,0,0.0,Staff of Nin
+373,Magic 2014 Promos,PM14,5,0,0,0.0,Colossal Whale
+374,Magic 2015 Promos,PM15,13,0,0,0.0,In Garruk's Wake
+375,Core Set 2019 Promos,PM19,95,0,0,2.105263,Apex of Power
+376,Core Set 2020 Promos,PM20,143,0,0,0.0,"Vilis, Broker of Blood"
+377,Core Set 2021 Promos,PM21,142,0,0,0.0,Volcanic Salvo
+378,Mirrodin Besieged Promos,PMBS,6,0,0,0.0,Thopter Assembly
+379,Magazine Inserts,PMEI,40,0,0,0.0,Archangel
+38,Commander 2014,C14,337,10,0,0.296736,Deep-Sea Kraken
+380,Modern Horizons Promos,PMH1,1,0,0,0.0,Astral Drift
+381,MicroProse Promos,PMIC,1,0,0,0.0,Aswan Jaguar
+382,Mercadian Masques Promos,PMMQ,1,0,0,0.0,Overtaker
+383,Magic Online Avatars,PMOA,85,0,0,0.0,"Akroma, Angel of Wrath Avatar"
+384,Morningtide Promos,PMOR,2,0,0,0.0,Earwig Squad
+385,Magic Premiere Shop 2005,PMPS,20,0,0,0.0,Forest
+386,Magic Premiere Shop 2006,PMPS06,5,0,0,0.0,Forest
+387,Magic Premiere Shop 2007,PMPS07,5,0,0,0.0,Forest
+388,Magic Premiere Shop 2008,PMPS08,6,0,0,0.0,"Jaya Ballard, Task Mage"
+389,Magic Premiere Shop 2009,PMPS09,5,0,0,0.0,Forest
+39,Commander 2015,C15,342,10,0,0.0,Ezuri's Predation
+390,Magic Premiere Shop 2010,PMPS10,5,0,0,0.0,Forest
+391,Magic Premiere Shop 2011,PMPS11,5,0,0,0.0,Forest
+392,Mirrodin Promos,PMRD,1,0,0,0.0,Sword of Kaldra
+393,Nationals Promos,PNAT,1,0,0,0.0,Flooded Strand
+394,Nemesis Promos,PNEM,1,0,0,0.0,Rathi Assassin
+395,New Phyrexia Promos,PNPH,6,0,0,0.0,"Sheoldred, Whispering One"
+396,Odyssey Promos,PODY,1,0,0,0.0,Stone-Tongue Basilisk
+397,Oath of the Gatewatch Promos,POGW,65,0,0,1.538462,"Kozilek, the Great Distortion"
+398,Onslaught Promos,PONS,1,0,0,0.0,Silent Specter
+399,Portal,POR,250,0,0,0.0,Fire Dragon
+4,Revised Edition,3ED,306,0,0,0.326797,Aladdin's Lamp
+40,Commander 2016,C16,353,10,0,0.0,Primeval Protector
+400,Magic Origins Promos,PORI,58,0,0,0.0,"Alhammarret, High Arbiter"
+401,M15 Prerelease Challenge,PPC1,1,0,0,0.0,Garruk the Slayer
+402,Prophecy Promos,PPCY,1,0,0,0.0,Avatar of Hope
+403,Planar Chaos Promos,PPLC,2,0,0,0.0,"Oros, the Avenger"
+404,Planeshift Promos,PPLS,1,0,0,0.0,Questing Phelddagrif
+405,Portal Demo Game,PPOD,6,0,0,0.0,Bull Hippo
+406,M20 Promo Packs,PPP1,5,0,0,0.0,Forest
+407,Pro Tour Promos,PPRO,23,0,0,0.0,"Emrakul, the Aeons Torn"
+408,Portal: Three Kingdoms Promos,PPTK,2,0,0,0.0,"Lu Bu, Master-at-Arms"
+409,Magic Player Rewards 2002,PR2,0,0,0,0.0,
+41,Commander 2017,C17,309,10,0,0.0,Clone Legion
+410,Ravnica: City of Guilds Promos,PRAV,2,0,0,0.0,Gleancrawler
+411,Redemption Program,PRED,1,0,0,0.0,Nalathni Dragon
+412,Resale Promos,PRES,26,0,0,0.0,Terastodon
+413,Rivals of Ixalan Promos,PRIX,103,0,0,0.0,"Ghalta, Primal Hunger"
+414,Magic Online Promos,PRM,1362,0,0,0.073421,"Emrakul, the Aeons Torn"
+415,Ravnica Allegiance Promos,PRNA,81,0,0,0.0,Bedeck // Bedazzle
+416,Rise of the Eldrazi Promos,PROE,6,0,0,0.0,"Emrakul, the Aeons Torn"
+417,Return to Ravnica Promos,PRTR,10,0,0,0.0,Archon of the Triumvirate
+418,RNA Ravnica Weekend,PRW2,10,0,0,0.0,Forest
+419,GRN Ravnica Weekend,PRWK,10,0,0,0.0,Forest
+42,Commander 2018,C18,308,0,0,0.324675,Ancient Stone Idol
+420,Salvat 2011,PS11,224,0,0,0.0,Denizen of the Deep
+421,San Diego Comic-Con 2014,PS14,6,0,0,0.0,"Garruk, Apex Predator"
+422,San Diego Comic-Con 2015,PS15,10,0,0,0.0,"Chandra, Fire of Kaladesh // Chandra, Roaring Flame"
+423,San Diego Comic-Con 2016,PS16,5,0,0,0.0,"Chandra, Flamecaller"
+424,San Diego Comic-Con 2017,PS17,6,0,0,0.0,"Nicol Bolas, God-Pharaoh"
+425,San Diego Comic-Con 2018,PS18,5,0,0,0.0,"Nissa, Vital Force"
+426,San Diego Comic-Con 2019,PS19,5,0,0,0.0,God-Eternal Bontu
+427,Salvat 2005,PSAL,725,0,0,0.0,Sanguine Praetor
+428,Scourge Promos,PSCG,1,0,0,0.0,Soul Collector
+429,San Diego Comic-Con 2013,PSDC,5,0,0,0.0,"Garruk, Caller of Beasts"
+43,Commander 2019,C19,305,0,0,0.655738,Desolation Twin
+430,Sega Dreamcast Cards,PSDG,10,0,0,0.0,Velican Dragon
+431,Shadowmoor Promos,PSHM,2,0,0,0.0,Demigod of Revenge
+432,Shadows over Innistrad Promos,PSOI,100,0,0,0.0,Angel of Deliverance
+433,Saviors of Kamigawa Promos,PSOK,2,0,0,0.0,"Kiyomaro, First to Stand"
+434,Scars of Mirrodin Promos,PSOM,5,0,0,0.0,Steel Hellkite
+435,BFZ Standard Series,PSS1,5,0,0,0.0,Canopy Vista
+436,XLN Standard Showdown,PSS2,5,0,0,0.0,Forest
+437,M19 Standard Showdown,PSS3,5,0,0,0.0,Forest
+438,Stronghold Promos,PSTH,1,0,0,0.0,Revenant
+439,Summer of Magic,PSUM,2,0,0,0.0,Faerie Conclave
+44,Commander 2020,C20,323,0,0,0.0,"Akroma, Angel of Wrath"
+440,Junior Super Series,PSUS,18,0,0,0.0,Serra Avatar
+441,Pro Tour Collector Set,PTC,307,0,0,0.0,Autumn Willow
+442,Ponies: The Galloping,PTG,4,0,0,0.0,Nightmare Moon // Princess Luna
+443,Theros Beyond Death Promos,PTHB,136,0,0,0.0,Kiora Bests the Sea God
+444,Theros Promos,PTHS,10,0,0,0.0,Abhorrent Overlord
+445,Portal Three Kingdoms,PTK,180,0,0,0.0,Zodiac Dragon
+446,Tarkir Dragonfury,PTKDF,4,0,0,0.0,Foe-Razer Regent
+447,Tempest Promos,PTMP,1,0,0,0.0,Dirtcowl Wurm
+448,Torment Promos,PTOR,3,0,0,0.0,Laquatus's Champion
+449,Time Spiral Promos,PTSP,2,0,0,0.0,Sudden Shock
+45,Commander Collection: Green,CC1,8,0,0,0.0,Bane of Progress
+450,Urza's Destiny Promos,PUDS,1,0,0,0.0,False Prophet
+451,Urza's Legacy Promos,PULG,2,0,0,0.0,Beast of Burden
+452,Ultimate Box Topper,PUMA,40,0,0,2.5,"Emrakul, the Aeons Torn"
+453,Unhinged Promos,PUNH,1,0,0,0.0,Ass Whuppin'
+454,URL/Convention Promos,PURL,9,0,0,0.0,Chandra's Fury
+455,Urza's Saga Promos,PUSG,1,0,0,0.0,Lightning Dragon
+456,Unstable Promos,PUST,1,0,0,0.0,Earl of Squirrel
+457,Vanguard Series,PVAN,32,0,0,0.0,Ashnod
+458,War of the Spark Promos,PWAR,175,0,0,0.0,Parhelion II
+459,World Magic Cup Qualifiers,PWCQ,5,0,0,0.0,Vengevine
+46,Collectors’ Edition,CED,301,0,0,0.0,Lord of the Pit
+460,World Championship Promos,PWOR,2,0,0,0.0,Balduvian Horde
+461,Wizards of the Coast Online Store,PWOS,1,0,0,0.0,Serra Angel
+462,Wizards Play Network 2009,PWP09,8,0,0,0.0,Mind Control
+463,Wizards Play Network 2010,PWP10,10,0,0,0.0,Pathrazer of Ulamog
+464,Wizards Play Network 2011,PWP11,14,0,0,0.0,Maul Splicer
+465,Wizards Play Network 2012,PWP12,3,0,0,0.0,Curse of Thirst
+466,Wizards Play Network 2008,PWPN,2,0,0,0.0,Sprouting Thrinax
+467,Worldwake Promos,PWWK,6,0,0,0.0,Comet Storm
+468,Ixalan Promos,PXLN,130,0,0,0.0,"Gishath, Sun's Avatar"
+469,XLN Treasure Chest,PXTC,20,0,0,0.0,Conqueror's Galleon // Conqueror's Foothold
+47,Intl. Collectors’ Edition,CEI,301,0,0,0.0,Lord of the Pit
+470,Legendary Cube Prize Pack,PZ1,149,0,0,0.0,Reya Dawnbringer
+471,Treasure Chest,PZ2,282,0,0,0.35461,Primeval Protector
+472,Zendikar Promos,PZEN,5,0,0,0.0,Rampaging Baloths
+473,Zendikar Rising Promos,PZNR,200,0,0,0.0,Ondu Inversion // Ondu Skyruins
+474,Ravnica: City of Guilds,RAV,306,10,0,0.0,Autochthon Wurm
+475,Renaissance,REN,122,0,0,0.0,Colossus of Sardia
+476,Rinascimento,RIN,69,0,0,0.0,Colossus of Sardia
+477,Rivals of Ixalan,RIX,212,10,0,0.0,"Ghalta, Primal Hunger"
+478,Ravnica Allegiance,RNA,283,10,0,0.0,Bedeck // Bedazzle
+479,Rise of the Eldrazi,ROE,248,0,0,0.806452,"Emrakul, the Aeons Torn"
+48,Champions of Kamigawa,CHK,317,10,0,0.630915,Myojin of Infinite Rage
+480,Rivals Quick Start Set,RQS,64,0,0,0.0,Clockwork Beast
+481,Return to Ravnica,RTR,274,10,0,0.0,Worldspine Wurm
+482,Starter 2000,S00,20,0,0,0.0,Trained Orgg
+483,Starter 1999,S99,173,0,0,0.0,Denizen of the Deep
+484,Scourge,SCG,143,10,0,1.398601,Decree of Annihilation
+485,Shadowmoor,SHM,302,10,0,0.331126,Reaper King
+486,Secret Lair Drop,SLD,204,0,0,0.490196,Darksteel Colossus
+487,Secret Lair: Ultimate Edition,SLU,25,0,0,0.0,Arid Mesa
+488,Shadows over Innistrad,SOI,335,10,0,0.0,Angel of Deliverance
+489,Saviors of Kamigawa,SOK,170,10,0,0.588235,Iname as One
+49,Chronicles,CHR,125,10,0,0.0,Akron Legionnaire
+490,Scars of Mirrodin,SOM,249,0,0,0.0,Liege of the Tangle
+491,Signature Spellbook: Jace,SS1,8,0,0,0.0,Gifts Ungiven
+492,Signature Spellbook: Gideon,SS2,8,0,0,0.0,Martyr's Bond
+493,Signature Spellbook: Chandra,SS3,8,0,0,0.0,"Chandra, Torch of Defiance"
+494,Stronghold,STH,143,10,0,0.0,Flame Wave
+495,Summer Magic / Edgar,SUM,305,0,0,0.327869,Aladdin's Lamp
+496,Zendikar Rising Substitute Cards,SZNR,0,0,0,0.0,
+497,Battle the Horde,TBTH,10,0,0,0.0,Altar of Mogis
+498,Magic Online Theme Decks,TD0,198,0,0,0.0,Avatar of Woe
+499,Duel Decks: Mirrodin Pure vs. New Phyrexia,TD2,88,0,0,0.0,Darksteel Gargoyle
+5,Fourth Edition Foreign Black Border,4BB,378,0,0,0.26455,Aladdin's Lamp
+50,Commander's Arsenal,CM1,18,10,0,0.0,Decree of Pain
+500,Defeat a God,TDAG,8,0,0,0.0,Dance of Flame
+501,Face the Hydra,TFTH,10,0,0,0.0,Disorienting Glower
+502,Theros Beyond Death,THB,358,10,0,0.0,Deathbellow War Cry
+503,Theros Hero's Path,THP1,7,0,0,0.0,The Avenger
+504,Born of the Gods Hero's Path,THP2,7,0,0,0.0,The Explorer
+505,Journey into Nyx Hero's Path,THP3,8,0,0,0.0,Hall of Triumph
+506,Theros,THS,249,10,0,0.0,Ashen Rider
+507,Tempest,TMP,350,10,0,0.0,Benthic Behemoth
+508,Torment,TOR,143,10,0,0.0,Hypnox
+509,Tempest Remastered,TPR,269,10,0,0.0,Verdant Force
+51,Commander Anthology Volume II,CM2,313,0,0,0.0,Artisan of Kozilek
+510,Time Spiral Timeshifted,TSB,122,0,0,0.819672,Krosan Cloudscraper
+511,Time Spiral,TSP,301,10,0,0.996678,Curse of the Cabal
+512,Time Spiral Remastered,TSR,5,0,0,0.0,Relentless Rats
+513,Urza's Destiny,UDS,143,10,0,0.0,Blizzard Elemental
+514,Ugin's Fate,UGIN,26,0,0,0.0,"Ugin, the Spirit Dragon"
+515,Unglued,UGL,88,0,0,0.0,B.F.M. (Big Furry Monster)
+516,Urza's Legacy,ULG,143,10,0,0.0,Palinchron
+517,Ultimate Masters,UMA,255,0,0,0.392157,"Emrakul, the Aeons Torn"
+518,Unsanctioned,UND,100,0,0,1.0,Who // What // When // Where // Why
+519,Unhinged,UNH,173,0,0,0.578035,Gleemax
+52,Commander Anthology,CMA,320,0,0,0.3125,Dread Cacodemon
+520,Urza's Saga,USG,356,10,0,0.0,Great Whale
+521,Unstable,UST,268,0,0,0.0,Angelic Rocket
+522,From the Vault: Exiled,V09,15,10,0,0.0,Gifts Ungiven
+523,From the Vault: Relics,V10,15,10,0,0.0,Sundering Titan
+524,From the Vault: Legends,V11,15,10,0,6.666667,"Ulamog, the Infinite Gyre"
+525,From the Vault: Realms,V12,15,10,0,0.0,Ancient Tomb
+526,From the Vault: Twenty,V13,20,10,0,0.0,Cruel Ultimatum
+527,From the Vault: Annihilation,V14,15,10,0,6.666667,Decree of Annihilation
+528,From the Vault: Angels,V15,15,10,0,0.0,"Iona, Shield of Emeria"
+529,From the Vault: Lore,V16,15,10,0,0.0,Conflux
+53,Mystery Booster Playtest Cards,CMB1,125,0,0,0.0,Cyclopean Titan
+530,From the Vault: Transform,V17,29,0,0,0.0,"Brisela, Voice of Nightmares"
+531,Visions,VIS,167,0,0,0.0,Archangel
+532,Vintage Masters,VMA,325,0,0,0.0,Baleful Force
+533,Welcome Deck 2016,W16,16,0,0,0.0,Aegis Angel
+534,Welcome Deck 2017,W17,30,0,0,0.0,Garruk's Horde
+535,War of the Spark,WAR,311,10,0,0.0,Parhelion II
+536,World Championship Decks 2000,WC00,107,0,0,0.0,Phyrexian Colossus
+537,World Championship Decks 2001,WC01,131,0,0,0.0,Obliterate
+538,World Championship Decks 2002,WC02,146,0,0,0.0,Phantom Nishoba
+539,World Championship Decks 2003,WC03,132,0,0,0.0,Symbiotic Wurm
+54,Commander 2011,CMD,320,10,0,0.625,Dread Cacodemon
+540,World Championship Decks 2004,WC04,93,0,0,0.0,Furnace Dragon
+541,World Championship Decks 1997,WC97,121,0,0,0.0,Pyrokinesis
+542,World Championship Decks 1998,WC98,107,0,0,0.0,Spirit of the Night
+543,World Championship Decks 1999,WC99,100,0,0,0.0,Wildfire
+544,Weatherlight,WTH,167,10,0,0.0,Xanthic Statue
+545,Worldwake,WWK,145,0,0,0.0,Terastodon
+546,Arena New Player Experience Extras,XANA,30,0,0,0.0,Chaos Maw
+547,Ixalan,XLN,299,0,0,0.0,Ancient Brontodon
+548,Zendikar,ZEN,269,0,0,0.0,"Iona, Shield of Emeria"
+549,Zendikar Rising Commander,ZNC,144,0,0,0.0,In Garruk's Wake
+55,Commander Legends,CMR,720,0,0,0.277778,Apex Devastator
+550,Zendikar Rising Expeditions,ZNE,30,0,0,0.0,Ancient Tomb
+551,Zendikar Rising,ZNR,445,0,0,0.0,Ondu Inversion // Ondu Skyruins
+56,Conspiracy: Take the Crown,CN2,222,10,0,0.0,Expropriate
+57,Conspiracy,CNS,210,10,0,0.0,Reya Dawnbringer
+58,Conflux,CON,145,10,0,0.689655,Progenitus
+59,Magic 2015 Clash Pack,CP1,6,0,0,0.0,Hydra Broodmaster
+6,Fourth Edition,4ED,378,10,0,0.26455,Aladdin's Lamp
+60,Fate Reforged Clash Pack,CP2,6,0,0,0.0,Necropolis Fiend
+61,Magic Origins Clash Pack,CP3,6,0,0,0.0,"Dromoka, the Eternal"
+62,Coldsnap,CSP,155,10,0,0.0,Allosaurus Rider
+63,Coldsnap Theme Decks,CST,62,0,0,0.0,Storm Elemental
+64,Duel Decks: Elves vs. Goblins,DD1,62,10,0,0.0,Allosaurus Rider
+65,Duel Decks: Jace vs. Chandra,DD2,64,10,0,0.0,Errant Ephemeron
+66,Duel Decks: Divine vs. Demonic,DDC,62,10,0,0.0,"Kuro, Pitlord"
+67,Duel Decks: Garruk vs. Liliana,DDD,63,10,0,0.0,Krosan Tusker
+68,Duel Decks: Phyrexia vs. the Coalition,DDE,71,10,0,0.0,Phyrexian Colossus
+69,Duel Decks: Elspeth vs. Tezzeret,DDF,79,10,0,0.0,Angel of Salvation
+7,Fifth Dawn,5DN,165,10,0,0.0,Blinkmoth Infusion
+70,Duel Decks: Knights vs. Dragons,DDG,81,10,0,0.0,Bogardan Hellkite
+71,Duel Decks: Ajani vs. Nicol Bolas,DDH,83,10,0,0.0,"Nicol Bolas, Planeswalker"
+72,Duel Decks: Venser vs. Koth,DDI,77,10,0,0.0,Volley of Boulders
+73,Duel Decks: Izzet vs. Golgari,DDJ,92,10,0,0.0,Djinn Illuminatus
+74,Duel Decks: Sorin vs. Tibalt,DDK,80,10,0,0.0,Absorb Vis
+75,Duel Decks: Heroes vs. Monsters,DDL,81,10,0,0.0,Krosan Tusker
+76,Duel Decks: Jace vs. Vraska,DDM,88,10,0,0.0,Errant Ephemeron
+77,Duel Decks: Speed vs. Cunning,DDN,81,10,0,0.0,Fury of the Horde
+78,Duel Decks: Elspeth vs. Kiora,DDO,65,10,0,0.0,Inkwell Leviathan
+79,Duel Decks: Zendikar vs. Eldrazi,DDP,75,10,0,0.0,It That Betrays
+8,Fifth Edition,5ED,459,10,0,0.0,Colossus of Sardia
+80,Duel Decks: Blessed vs. Cursed,DDQ,76,10,0,0.0,Dearly Departed
+81,Duel Decks: Nissa vs. Ob Nixilis,DDR,70,10,0,0.0,Pestilence Demon
+82,Duel Decks: Mind vs. Might,DDS,65,0,0,1.538462,Deep-Sea Kraken
+83,Duel Decks: Merfolk vs. Goblins,DDT,63,0,0,0.0,Battle Squadron
+84,Duel Decks: Elves vs. Inventors,DDU,76,0,0,0.0,Gladehart Cavalry
+85,Dragon's Maze,DGM,171,0,0,0.0,Catch // Release
+86,Dissension,DIS,190,10,0,0.0,Hit // Run
+87,Dark Ascension,DKA,171,0,0,0.0,Alpha Brawl
+88,Deckmasters,DKM,58,10,0,0.0,Jokulhaups
+89,Dominaria,DOM,280,10,0,0.0,"Slinn Voda, the Rising Deep"
+9,Classic Sixth Edition,6ED,351,10,0,0.0,Crimson Hellkite
+90,Duels of the Planeswalkers,DPA,113,0,0,0.0,Denizen of the Deep
+91,From the Vault: Dragons,DRB,15,0,0,0.0,Draco
+92,The Dark,DRK,122,0,0,0.0,Leviathan
+93,Darksteel,DST,165,10,0,0.606061,Darksteel Colossus
+94,Dragons of Tarkir,DTK,264,10,0,0.0,Clone Legion
+95,Duel Decks Anthology: Divine vs. Demonic,DVD,62,0,0,0.0,"Kuro, Pitlord"
+96,Archenemy: Nicol Bolas,E01,106,0,0,0.0,Avatar of Fury
+97,Explorers of Ixalan,E02,47,0,0,0.0,Blatant Thievery
+98,Throne of Eldraine,ELD,457,10,0,0.0,The Cauldron of Eternity
+99,Eternal Masters,EMA,249,10,0,0.0,Inkwell Leviathan

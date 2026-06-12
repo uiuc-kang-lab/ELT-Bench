@@ -1,0 +1,9 @@
+LOCATION_ID,LOCATION_STATE,LOCATION_ADDRESS,NUM_EMPLOYEES,HIGHEST_PAID_EMPLOYEE,NUM_OF_TRAINEE,NUM_ACCOUNT_REPRESENTATIVES_WITH_AVERAGE_PERFORMANCE,NUM_EMPLOYEES_HAVE_GOOD_PERFOMANCE
+1.0,GA,450 Peachtree Rd,4,Tracy Coulter,2,0,2
+2.0,MA,3 Commons Blvd,5,David Whitehead,0,2,1
+3.0,IL,500 Loop Highway,6,Melissa Roberts,0,2,3
+4.0,FL,210 Biscayne Blvd,3,Bill Marlin,0,0,1
+5.0,NY,1650 Washington Blvd,4,Jose Rodriguez,1,0,3
+6.0,CO,312 Mount View Dr,2,Sandy Johanson,0,0,1
+7.0,UT,316 S. State St,1,David Webster,0,0,0
+8.0,CA,1400 Main St,0,,0,0,0

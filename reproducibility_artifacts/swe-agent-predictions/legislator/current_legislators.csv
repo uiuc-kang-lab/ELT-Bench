@@ -1,0 +1,542 @@
+BIOGUIDE_ID,GENDER_BIO,FULL_NAME,NUM_SERVED_TERMS,HAS_SERVED_IN_MAINE,IS_MALE_BUT_IS_NOT_SENATOR,IS_JEWISH_BUT_DOES_NOT_HAVE_FACEBOOK,HAS_A_NICKNAME
+A000055,M,Robert B. Aderholt,11,0,1,0,0
+A000360,M,Lamar Alexander,3,0,1,0,0
+A000367,M,Justin Amash,4,0,1,0,0
+A000369,M,Mark E. Amodei,4,0,1,0,0
+A000370,F,Alma S. Adams,3,0,0,0,0
+A000371,M,Pete Aguilar,2,0,1,0,0
+A000372,M,Rick W. Allen,2,0,1,0,0
+A000374,M,Ralph Lee Abraham,2,0,1,0,0
+A000375,M,Jodey C. Arrington,1,0,1,0,0
+B000213,M,Joe Barton,17,0,1,0,0
+B000287,M,Xavier Becerra,13,0,1,0,0
+B000490,M,"Sanford D. Bishop, Jr.",13,0,1,0,0
+B000574,M,Earl Blumenauer,12,0,1,0,0
+B000575,M,Roy Blunt,9,0,1,0,0
+B000755,M,Kevin Brady,11,0,1,0,0
+B000944,M,Sherrod Brown,9,0,1,0,0
+B001135,M,Richard Burr,8,0,1,0,0
+B001227,M,Robert A. Brady,11,0,1,0,0
+B001230,F,Tammy Baldwin,8,0,0,0,0
+B001236,M,John Boozman,7,0,1,0,0
+B001243,F,Marsha Blackburn,8,0,0,0,0
+B001245,F,Madeleine Z. Bordallo,8,0,0,0,0
+B001248,M,Michael C. Burgess,8,0,1,0,0
+B001250,M,Rob Bishop,8,0,1,0,0
+B001251,M,G. K. Butterfield,8,0,1,0,1
+B001257,M,Gus M. Bilirakis,7,0,1,0,0
+B001260,M,Vern Buchanan,6,0,1,0,0
+B001261,M,John Barrasso,2,0,1,0,0
+B001267,M,Michael F. Bennet,3,0,1,0,0
+B001269,M,Lou Barletta,4,0,1,0,0
+B001270,F,Karen Bass,4,0,0,0,0
+B001273,F,Diane Black,4,0,0,0,0
+B001274,M,Mo Brooks,4,0,1,0,0
+B001275,M,Larry Bucshon,4,0,1,0,0
+B001277,M,Richard Blumenthal,2,0,1,0,0
+B001278,F,Suzanne Bonamici,4,0,0,0,0
+B001281,F,Joyce Beatty,3,0,0,0,0
+B001282,M,Andy Barr,3,0,1,0,1
+B001283,M,Jim Bridenstine,3,0,1,0,0
+B001284,F,Susan W. Brooks,3,0,0,0,0
+B001285,F,Julia Brownley,3,0,0,0,0
+B001286,F,Cheri Bustos,3,0,0,0,0
+B001287,M,Ami Bera,3,0,1,0,0
+B001288,M,Cory A. Booker,2,0,1,0,0
+B001289,M,Bradley Byrne,3,0,1,0,0
+B001290,M,Dave Brat,3,0,1,0,1
+B001291,M,Brian Babin,2,0,1,0,0
+B001292,M,"Donald S. Beyer, Jr.",2,0,1,0,0
+B001293,M,Mike Bishop,2,0,1,0,0
+B001294,M,Rod Blum,2,0,1,0,0
+B001295,M,Mike Bost,2,0,1,0,0
+B001296,M,Brendan F. Boyle,2,0,1,0,0
+B001297,M,Ken Buck,2,0,1,0,0
+B001298,M,Don Bacon,1,0,1,0,0
+B001299,M,Jim Banks,1,0,1,0,0
+B001300,F,Nanette Diaz Barragán,1,0,0,0,0
+B001301,M,Jack Bergman,1,0,1,0,0
+B001302,M,Andy Biggs,1,0,1,0,0
+B001303,F,Lisa Blunt Rochester,1,0,0,0,0
+B001304,M,Anthony G. Brown,1,0,1,0,0
+B001305,M,Ted Budd,1,0,1,0,0
+C000059,M,Ken Calvert,13,0,1,0,0
+C000127,F,Maria Cantwell,4,0,0,0,0
+C000141,M,Benjamin L. Cardin,12,0,1,0,0
+C000174,M,Thomas R. Carper,8,0,1,0,0
+C000266,M,Steve Chabot,11,0,1,0,0
+C000537,M,James E. Clyburn,14,0,1,0,1
+C000567,M,Thad Cochran,10,0,1,0,0
+C000714,M,"John Conyers, Jr.",27,0,1,0,0
+C000754,M,Jim Cooper,14,0,1,0,0
+C000880,M,Mike Crapo,7,0,1,0,0
+C000984,M,Elijah E. Cummings,12,0,1,0,0
+C001035,F,Susan M. Collins,4,1,0,0,0
+C001037,M,Michael E. Capuano,10,0,1,0,0
+C001038,M,Joseph Crowley,10,0,1,0,1
+C001047,F,Shelley Moore Capito,9,0,0,0,0
+C001048,M,John Abney Culberson,9,0,1,0,0
+C001049,M,Wm. Lacy Clay,10,0,1,0,0
+C001051,M,John R. Carter,8,0,1,0,0
+C001053,M,Tom Cole,8,0,1,0,0
+C001056,M,John Cornyn,5,0,1,0,0
+C001059,M,Jim Costa,7,0,1,0,0
+C001061,M,Emanuel Cleaver,7,0,1,0,0
+C001062,M,K. Michael Conaway,7,0,1,0,0
+C001063,M,Henry Cuellar,7,0,1,0,0
+C001066,F,Kathy Castor,6,0,0,0,0
+C001067,F,Yvette D. Clarke,6,0,0,0,0
+C001068,M,Steve Cohen,6,0,1,0,0
+C001069,M,Joe Courtney,6,0,1,0,0
+C001070,M,"Robert P. Casey, Jr.",2,0,1,0,1
+C001071,M,Bob Corker,2,0,1,0,0
+C001072,M,André Carson,7,0,1,0,0
+C001075,M,Bill Cassidy,4,0,1,0,0
+C001076,M,Jason Chaffetz,5,0,1,0,0
+C001077,M,Mike Coffman,5,0,1,0,0
+C001078,M,Gerald E. Connolly,5,0,1,0,0
+C001080,F,Judy Chu,5,0,0,0,0
+C001084,M,David N. Cicilline,4,0,1,0,0
+C001087,M,"Eric A. ""Rick"" Crawford",4,0,1,0,1
+C001088,M,Christopher A. Coons,2,0,1,0,0
+C001090,M,Matt Cartwright,3,0,1,0,0
+C001091,M,Joaquin Castro,3,0,1,0,0
+C001092,M,Chris Collins,3,0,1,0,0
+C001093,M,Doug Collins,3,0,1,0,0
+C001094,M,Paul Cook,3,0,1,0,0
+C001095,M,Tom Cotton,2,0,1,0,0
+C001096,M,Kevin Cramer,3,0,1,0,0
+C001097,M,Tony Cárdenas,3,0,1,0,0
+C001098,M,Ted Cruz,1,0,1,0,0
+C001101,F,Katherine M. Clark,3,0,0,0,0
+C001103,M,"Earl L. ""Buddy"" Carter",2,0,1,0,0
+C001105,F,Barbara Comstock,2,0,0,0,0
+C001106,M,Ryan A. Costello,2,0,1,0,0
+C001107,M,Carlos Curbelo,2,0,1,0,0
+C001108,M,James Comer,2,0,1,0,0
+C001109,F,Liz Cheney,1,0,0,0,0
+C001110,M,J. Luis Correa,1,0,1,0,0
+C001111,M,Charlie Crist,1,0,1,0,0
+C001112,M,Salud O. Carbajal,1,0,1,0,0
+C001113,F,Catherine Cortez Masto,1,0,0,0,0
+D000096,M,Danny K. Davis,11,0,1,0,0
+D000191,M,Peter A. DeFazio,16,0,1,0,0
+D000197,F,Diana DeGette,11,0,0,0,0
+D000216,F,Rosa L. DeLauro,14,0,0,0,0
+D000399,M,Lloyd Doggett,12,0,1,0,0
+D000482,M,Michael F. Doyle,12,0,1,0,1
+D000533,M,"John J. Duncan, Jr.",17,0,1,0,1
+D000563,M,Richard J. Durbin,16,0,1,0,0
+D000598,F,Susan A. Davis,9,0,0,0,0
+D000600,M,Mario Diaz-Balart,9,0,1,0,0
+D000604,M,Charles W. Dent,7,0,1,0,0
+D000607,M,Joe Donnelly,4,0,1,0,0
+D000610,M,Theodore E. Deutch,5,0,1,0,0
+D000612,M,Jeff Denham,4,0,1,0,0
+D000614,M,Sean P. Duffy,4,0,1,0,0
+D000615,M,Jeff Duncan,4,0,1,0,0
+D000616,M,Scott DesJarlais,4,0,1,0,0
+D000617,F,Suzan K. DelBene,4,0,0,0,0
+D000618,M,Steve Daines,2,0,1,0,0
+D000619,M,Rodney Davis,3,0,1,0,0
+D000620,M,John K. Delaney,3,0,1,0,0
+D000621,M,Ron DeSantis,3,0,1,0,0
+D000622,F,Tammy Duckworth,3,0,0,0,0
+D000623,M,Mark DeSaulnier,2,0,1,0,0
+D000624,F,Debbie Dingell,2,0,0,0,0
+D000625,M,"Daniel M. Donovan, Jr.",2,0,1,0,0
+D000626,M,Warren Davidson,2,0,1,0,0
+D000627,F,Val Butler Demings,1,0,0,0,0
+D000628,M,Neal P. Dunn,1,0,1,0,0
+E000179,M,Eliot L. Engel,15,0,1,0,0
+E000215,F,Anna G. Eshoo,13,0,0,0,0
+E000285,M,Michael B. Enzi,4,0,1,0,0
+E000288,M,Keith Ellison,6,0,1,0,0
+E000293,F,Elizabeth H. Esty,3,0,0,0,0
+E000294,M,Tom Emmer,2,0,1,0,0
+E000295,F,Joni Ernst,1,0,0,0,0
+E000296,M,Dwight Evans,2,0,1,0,0
+E000297,M,Adriano Espaillat,1,0,1,0,0
+F000062,F,Dianne Feinstein,5,0,0,0,0
+F000372,M,Rodney P. Frelinghuysen,15,0,1,0,0
+F000444,M,Jeff Flake,7,0,1,0,0
+F000448,M,Trent Franks,8,0,1,0,0
+F000449,M,Jeff Fortenberry,7,0,1,0,0
+F000450,F,Virginia Foxx,7,0,0,0,0
+F000454,M,Bill Foster,5,0,1,0,0
+F000455,F,Marcia L. Fudge,6,0,0,0,0
+F000457,M,Al Franken,2,0,1,0,1
+F000459,M,"Charles J. ""Chuck"" Fleischmann",4,0,1,0,1
+F000460,M,Blake Farenthold,4,0,1,0,0
+F000461,M,Bill Flores,4,0,1,0,0
+F000462,F,Lois Frankel,3,0,0,0,0
+F000463,F,Deb Fischer,1,0,0,0,0
+F000464,M,John J. Faso,1,0,1,0,0
+F000465,M,A. Drew Ferguson IV,1,0,1,0,0
+F000466,M,Brian K. Fitzpatrick,1,0,1,0,0
+G000289,M,Bob Goodlatte,13,0,1,0,0
+G000359,M,Lindsey Graham,7,0,1,0,0
+G000377,F,Kay Granger,11,0,0,0,0
+G000386,M,Chuck Grassley,10,0,1,0,1
+G000410,M,Gene Green,13,0,1,0,0
+G000535,M,Luis V. Gutiérrez,13,0,1,0,0
+G000546,M,Sam Graves,9,0,1,0,0
+G000551,M,Raúl M. Grijalva,8,0,1,0,0
+G000552,M,Louie Gohmert,7,0,1,0,0
+G000553,M,Al Green,7,0,1,0,0
+G000555,F,Kirsten E. Gillibrand,4,0,0,0,0
+G000558,M,Brett Guthrie,5,0,1,0,0
+G000559,M,John Garamendi,5,0,1,0,0
+G000560,M,Tom Graves,5,0,1,0,0
+G000562,M,Cory Gardner,3,0,1,0,0
+G000563,M,Bob Gibbs,4,0,1,0,0
+G000565,M,Paul A. Gosar,4,0,1,0,0
+G000566,M,Trey Gowdy,4,0,1,0,0
+G000568,M,H. Morgan Griffith,4,0,1,0,0
+G000571,F,Tulsi Gabbard,3,0,0,0,0
+G000574,M,Ruben Gallego,2,0,1,0,0
+G000576,M,Glenn Grothman,2,0,1,0,0
+G000577,M,Garret Graves,2,0,1,0,0
+G000578,M,Matt Gaetz,1,0,1,0,0
+G000579,M,Mike Gallagher,1,0,1,0,0
+G000580,M,"Thomas A. Garrett, Jr.",1,0,1,0,0
+G000581,M,Vicente Gonzalez,1,0,1,0,0
+G000582,F,Jenniffer González-Colón,1,0,0,0,0
+G000583,M,Josh Gottheimer,1,0,1,0,0
+H000324,M,Alcee L. Hastings,13,0,1,0,0
+H000338,M,Orrin G. Hatch,7,0,1,0,0
+H000874,M,Steny H. Hoyer,20,0,1,0,0
+H001036,M,Jeb Hensarling,8,0,1,0,0
+H001038,M,Brian Higgins,7,0,1,0,0
+H001041,M,Dean Heller,5,0,1,0,0
+H001042,F,Mazie K. Hirono,4,0,0,0,0
+H001045,M,Gregg Harper,5,0,1,0,0
+H001046,M,Martin Heinrich,3,0,1,0,0
+H001047,M,James A. Himes,5,0,1,0,0
+H001048,M,Duncan Hunter,6,0,1,0,0
+H001050,F,Colleen Hanabusa,4,0,0,0,0
+H001052,M,Andy Harris,4,0,1,0,0
+H001053,F,Vicky Hartzler,4,0,0,0,0
+H001056,F,Jaime Herrera Beutler,4,0,0,0,0
+H001058,M,Bill Huizenga,4,0,1,0,0
+H001059,M,Randy Hultgren,4,0,1,0,0
+H001061,M,John Hoeven,2,0,1,0,0
+H001064,M,Denny Heck,3,0,1,0,0
+H001065,M,George Holding,3,0,1,0,0
+H001067,M,Richard Hudson,3,0,1,0,0
+H001068,M,Jared Huffman,3,0,1,0,0
+H001069,F,Heidi Heitkamp,1,0,0,0,0
+H001071,M,Jody B. Hice,2,0,1,0,0
+H001072,M,J. French Hill,2,0,1,0,0
+H001073,M,Will Hurd,2,0,1,0,0
+H001074,M,Trey Hollingsworth,1,0,1,0,0
+H001075,F,Kamala D. Harris,1,0,0,0,0
+H001076,F,Margaret Wood Hassan,1,0,0,0,1
+H001077,M,Clay Higgins,1,0,1,0,0
+I000024,M,James M. Inhofe,9,0,1,0,1
+I000055,M,Johnny Isakson,6,0,1,0,1
+I000056,M,Darrell E. Issa,9,0,1,0,0
+J000032,F,Sheila Jackson Lee,12,0,0,0,0
+J000126,F,Eddie Bernice Johnson,13,0,0,0,0
+J000174,M,Sam Johnson,14,0,1,0,0
+J000255,M,Walter B. Jones,13,0,1,0,0
+J000288,M,"Henry C. ""Hank"" Johnson, Jr.",6,0,1,0,1
+J000289,M,Jim Jordan,6,0,1,0,0
+J000290,F,Lynn Jenkins,5,0,0,0,0
+J000292,M,Bill Johnson,4,0,1,0,0
+J000293,M,Ron Johnson,2,0,1,0,0
+J000294,M,Hakeem S. Jeffries,3,0,1,0,0
+J000295,M,David P. Joyce,3,0,1,0,0
+J000297,M,Evan H. Jenkins,2,0,1,0,0
+J000298,F,Pramila Jayapal,1,0,0,0,0
+J000299,M,Mike Johnson,1,0,1,0,0
+K000009,F,Marcy Kaptur,18,0,0,0,0
+K000188,M,Ron Kind,11,0,1,0,0
+K000210,M,Peter T. King,13,0,1,0,1
+K000362,M,Steve King,8,0,1,0,0
+K000367,F,Amy Klobuchar,2,0,0,0,0
+K000375,M,William R. Keating,4,0,1,0,0
+K000376,M,Mike Kelly,4,0,1,0,0
+K000378,M,Adam Kinzinger,4,0,1,0,0
+K000379,M,Joseph P. Kennedy III,8,0,1,0,0
+K000380,M,Daniel T. Kildee,4,0,1,0,0
+K000381,M,Derek Kilmer,3,0,1,0,0
+K000382,F,Ann M. Kuster,3,0,0,0,0
+K000383,M,"Angus S. King, Jr.",1,1,1,0,0
+K000384,M,Tim Kaine,1,0,1,0,0
+K000385,F,Robin L. Kelly,3,0,0,0,0
+K000386,M,John Katko,2,0,1,0,0
+K000387,M,Stephen Knight,2,0,1,0,0
+K000388,M,Trent Kelly,2,0,1,0,0
+K000389,M,Ro Khanna,1,0,1,0,0
+K000390,M,Ruben Kihuen,1,0,1,0,0
+K000391,M,Raja Krishnamoorthi,1,0,1,0,0
+K000392,M,David Kustoff,1,0,1,0,0
+K000393,M,John Kennedy,1,0,1,0,0
+L000174,M,Patrick J. Leahy,8,0,1,0,0
+L000263,M,Sander M. Levin,19,0,1,0,0
+L000287,M,John Lewis,16,0,1,0,0
+L000397,F,Zoe Lofgren,12,0,0,0,0
+L000480,F,Nita M. Lowey,15,0,0,0,0
+L000491,M,Frank D. Lucas,13,0,1,0,0
+L000551,F,Barbara Lee,11,0,0,0,0
+L000554,M,Frank A. LoBiondo,12,0,1,0,0
+L000557,M,John B. Larson,10,0,1,0,0
+L000559,M,James R. Langevin,9,0,1,0,1
+L000560,M,Rick Larsen,9,0,1,0,0
+L000562,M,Stephen F. Lynch,9,0,1,0,0
+L000563,M,Daniel Lipinski,8,0,1,0,0
+L000564,M,Doug Lamborn,6,0,1,0,0
+L000565,M,David Loebsack,6,0,1,0,0
+L000566,M,Robert E. Latta,7,0,1,0,0
+L000567,M,Leonard Lance,5,0,1,0,0
+L000569,M,Blaine Luetkemeyer,5,0,1,0,0
+L000570,M,Ben Ray Luján,5,0,1,0,0
+L000573,M,Raúl R. Labrador,4,0,1,0,0
+L000575,M,James Lankford,4,0,1,0,0
+L000576,M,Billy Long,4,0,1,0,0
+L000577,M,Mike Lee,2,0,1,0,0
+L000578,M,Doug LaMalfa,3,0,1,0,0
+L000579,M,Alan S. Lowenthal,3,0,1,0,0
+L000580,F,Michelle Lujan Grisham,3,0,0,0,0
+L000581,F,Brenda L. Lawrence,2,0,0,0,0
+L000582,M,Ted Lieu,2,0,1,0,0
+L000583,M,Barry Loudermilk,2,0,1,0,0
+L000584,F,Mia B. Love,2,0,0,0,0
+L000585,M,Darin LaHood,2,0,1,0,0
+L000586,M,"Al Lawson, Jr.",1,0,1,0,0
+L000587,M,Jason Lewis,1,0,1,0,0
+M000087,F,Carolyn B. Maloney,13,0,0,0,0
+M000133,M,Edward J. Markey,22,0,1,0,1
+M000303,M,John McCain,8,0,1,0,0
+M000312,M,James P. McGovern,11,0,1,0,1
+M000355,M,Mitch McConnell,10,0,1,0,0
+M000639,M,Robert Menendez,11,0,1,0,1
+M000934,M,Jerry Moran,9,0,1,0,0
+M001111,F,Patty Murray,5,0,0,0,0
+M001137,M,Gregory W. Meeks,11,0,1,0,0
+M001143,F,Betty McCollum,9,0,0,0,0
+M001151,M,Tim Murphy,8,0,1,0,0
+M001153,F,Lisa Murkowski,5,0,0,0,0
+M001156,M,Patrick T. McHenry,7,0,1,0,0
+M001157,M,Michael T. McCaul,7,0,1,0,0
+M001158,M,Kenny Marchant,7,0,1,0,0
+M001159,F,Cathy McMorris Rodgers,7,0,0,0,0
+M001160,F,Gwen Moore,7,0,0,0,0
+M001163,F,Doris O. Matsui,8,0,0,0,0
+M001165,M,Kevin McCarthy,8,0,1,0,0
+M001166,M,Jerry McNerney,6,0,1,0,0
+M001169,M,Christopher Murphy,4,0,1,0,0
+M001170,F,Claire McCaskill,2,0,0,0,0
+M001176,M,Jeff Merkley,2,0,1,0,0
+M001177,M,Tom McClintock,5,0,1,0,0
+M001179,M,Tom Marino,4,0,1,0,0
+M001180,M,David B. McKinley,4,0,1,0,0
+M001181,M,Patrick Meehan,4,0,1,0,0
+M001182,M,Mick Mulvaney,4,0,1,0,0
+M001183,M,"Joe Manchin, III",2,0,1,0,0
+M001184,M,Thomas Massie,4,0,1,0,0
+M001185,M,Sean Patrick Maloney,3,0,1,0,0
+M001187,M,Mark Meadows,3,0,1,0,0
+M001188,F,Grace Meng,3,0,0,0,0
+M001189,M,Luke Messer,3,0,1,0,0
+M001190,M,Markwayne Mullin,3,0,1,0,0
+M001193,M,Thomas MacArthur,2,0,1,0,0
+M001194,M,John R. Moolenaar,2,0,1,0,0
+M001195,M,Alexander X. Mooney,2,0,1,0,0
+M001196,M,Seth Moulton,2,0,1,0,0
+M001197,F,Martha McSally,2,0,0,0,0
+M001198,M,Roger W. Marshall,1,0,1,0,0
+M001199,M,Brian J. Mast,1,0,1,0,0
+M001200,M,A. Donald McEachin,1,0,1,0,0
+M001201,M,Paul Mitchell,1,0,1,0,0
+M001202,F,Stephanie N. Murphy,1,0,0,0,0
+N000002,M,Jerrold Nadler,14,0,1,0,0
+N000015,M,Richard E. Neal,15,0,1,0,0
+N000032,M,Bill Nelson,9,0,1,0,0
+N000127,M,Richard M. Nolan,6,0,1,0,0
+N000147,F,Eleanor Holmes Norton,14,0,0,0,0
+N000179,F,Grace F. Napolitano,10,0,0,0,0
+N000181,M,Devin Nunes,8,0,1,0,0
+N000184,F,Kristi L. Noem,4,0,0,0,0
+N000188,M,Donald Norcross,3,0,1,0,0
+N000189,M,Dan Newhouse,2,0,1,0,0
+O000168,M,Pete Olson,5,0,1,0,0
+O000170,M,Beto O'Rourke,3,0,1,0,0
+O000171,M,Tom O'Halleran,1,0,1,0,0
+P000034,M,"Frank Pallone, Jr.",16,0,1,0,0
+P000096,M,"Bill Pascrell, Jr.",11,0,1,0,0
+P000197,F,Nancy Pelosi,18,0,0,0,0
+P000258,M,Collin C. Peterson,14,0,1,0,0
+P000449,M,Rob Portman,9,0,1,0,1
+P000523,M,David E. Price,15,0,1,0,0
+P000588,M,Stevan Pearce,7,0,1,0,1
+P000591,M,Tom Price,7,0,1,0,0
+P000592,M,Ted Poe,7,0,1,0,0
+P000593,M,Ed Perlmutter,6,0,1,0,0
+P000594,M,Erik Paulsen,5,0,1,0,0
+P000595,M,Gary C. Peters,4,0,1,0,0
+P000597,F,Chellie Pingree,5,1,0,0,0
+P000598,M,Jared Polis,5,0,1,0,0
+P000599,M,Bill Posey,5,0,1,0,0
+P000601,M,Steven M. Palazzo,4,0,1,0,0
+P000602,M,Mike Pompeo,4,0,1,0,0
+P000603,M,Rand Paul,3,0,1,0,0
+P000604,M,"Donald M. Payne, Jr.",5,0,1,0,0
+P000605,M,Scott Perry,3,0,1,0,0
+P000606,M,Robert Pittenger,3,0,1,0,0
+P000607,M,Mark Pocan,3,0,1,0,0
+P000608,M,Scott H. Peters,3,0,1,0,0
+P000609,M,Gary J. Palmer,2,0,1,0,0
+P000610,F,Stacey E. Plaskett,2,0,0,0,0
+P000611,M,Bruce Poliquin,2,1,1,0,0
+P000612,M,David Perdue,1,0,1,0,0
+P000613,M,Jimmy Panetta,1,0,1,0,0
+Q000023,M,Mike Quigley,5,0,1,0,0
+R000122,M,Jack Reed,7,0,1,0,1
+R000307,M,Pat Roberts,12,0,1,0,0
+R000395,M,Harold Rogers,19,0,1,0,1
+R000409,M,Dana Rohrabacher,15,0,1,0,0
+R000435,F,Ileana Ros-Lehtinen,15,0,0,0,0
+R000486,F,Lucille Roybal-Allard,14,0,0,0,0
+R000487,M,Edward R. Royce,13,0,1,0,1
+R000515,M,Bobby L. Rush,13,0,1,0,0
+R000570,M,Paul D. Ryan,11,0,1,0,0
+R000575,M,Mike Rogers,8,0,1,0,0
+R000576,M,C. A. Dutch Ruppersberger,8,0,1,0,0
+R000577,M,Tim Ryan,8,0,1,0,0
+R000578,M,David G. Reichert,7,0,1,0,0
+R000580,M,Peter J. Roskam,6,0,1,0,0
+R000582,M,David P. Roe,5,0,1,0,1
+R000583,M,Thomas J. Rooney,5,0,1,0,0
+R000584,M,James E. Risch,2,0,1,0,0
+R000585,M,Tom Reed,5,0,1,0,0
+R000586,M,James B. Renacci,4,0,1,0,0
+R000588,M,Cedric L. Richmond,4,0,1,0,0
+R000591,F,Martha Roby,4,0,0,0,0
+R000592,M,Todd Rokita,4,0,1,0,0
+R000593,M,Dennis A. Ross,4,0,1,0,0
+R000595,M,Marco Rubio,2,0,1,0,0
+R000597,M,Tom Rice,3,0,1,0,0
+R000598,M,Keith J. Rothfus,3,0,1,0,0
+R000599,M,Raul Ruiz,3,0,1,0,0
+R000600,F,Aumua Amata Coleman Radewagen,2,0,0,0,0
+R000601,M,John Ratcliffe,2,0,1,0,0
+R000602,F,Kathleen M. Rice,2,0,0,0,0
+R000603,M,David Rouzer,2,0,1,0,0
+R000604,M,Steve Russell,2,0,1,0,0
+R000605,M,Mike Rounds,1,0,1,0,0
+R000606,M,Jamie Raskin,1,0,1,0,0
+R000607,M,Francis Rooney,1,0,1,0,0
+R000608,F,Jacky Rosen,1,0,0,0,0
+R000609,M,John H. Rutherford,1,0,1,0,0
+S000033,M,Bernard Sanders,10,0,1,0,1
+S000051,M,Mark Sanford,6,0,1,0,1
+S000148,M,Charles E. Schumer,13,0,1,0,1
+S000185,M,"Robert C. ""Bobby"" Scott",13,0,1,0,1
+S000244,M,"F. James Sensenbrenner, Jr.",20,0,1,0,0
+S000248,M,José E. Serrano,15,0,1,0,0
+S000250,M,Pete Sessions,11,0,1,0,0
+S000320,M,Richard C. Shelby,10,0,1,0,0
+S000344,M,Brad Sherman,11,0,1,0,0
+S000364,M,John Shimkus,11,0,1,0,0
+S000480,F,Louise McIntosh Slaughter,16,0,0,0,0
+S000510,M,Adam Smith,11,0,1,0,0
+S000522,M,Christopher H. Smith,19,0,1,0,1
+S000583,M,Lamar Smith,16,0,1,0,0
+S000770,F,Debbie Stabenow,5,0,0,0,0
+S001141,M,Jeff Sessions,4,0,1,0,1
+S001145,F,Janice D. Schakowsky,10,0,0,0,1
+S001148,M,Michael K. Simpson,10,0,1,0,1
+S001150,M,Adam B. Schiff,9,0,1,0,0
+S001154,M,Bill Shuster,10,0,1,0,0
+S001156,F,Linda T. Sánchez,9,0,0,0,0
+S001157,M,David Scott,8,0,1,0,0
+S001165,M,Albio Sires,7,0,1,0,0
+S001168,M,John P. Sarbanes,7,0,1,0,0
+S001170,F,Carol Shea-Porter,4,0,0,0,0
+S001172,M,Adrian Smith,6,0,1,0,0
+S001175,F,Jackie Speier,6,0,0,0,0
+S001176,M,Steve Scalise,7,0,1,0,0
+S001177,M,Gregorio Kilili Camacho Sablan,5,0,1,0,0
+S001180,M,Kurt Schrader,5,0,1,0,0
+S001181,F,Jeanne Shaheen,2,0,0,0,0
+S001183,M,David Schweikert,4,0,1,0,0
+S001184,M,Tim Scott,4,0,1,0,0
+S001185,F,Terri A. Sewell,4,0,0,0,0
+S001187,M,Steve Stivers,4,0,1,0,0
+S001189,M,Austin Scott,4,0,1,0,0
+S001190,M,Bradley Scott Schneider,2,0,1,0,0
+S001191,F,Kyrsten Sinema,3,0,0,0,0
+S001192,M,Chris Stewart,3,0,1,0,0
+S001193,M,Eric Swalwell,3,0,1,0,0
+S001194,M,Brian Schatz,3,0,1,0,0
+S001195,M,Jason Smith,3,0,1,0,0
+S001196,F,Elise M. Stefanik,2,0,0,0,0
+S001197,M,Ben Sasse,1,0,1,0,0
+S001198,M,Daniel Sullivan,1,0,1,0,0
+S001199,M,Lloyd Smucker,1,0,1,0,0
+S001200,M,Darren Soto,1,0,1,0,0
+S001201,M,Thomas R. Suozzi,1,0,1,0,0
+T000193,M,Bennie G. Thompson,13,0,1,0,0
+T000238,M,Mac Thornberry,12,0,1,0,0
+T000250,M,John Thune,6,0,1,0,0
+T000460,M,Mike Thompson,10,0,1,0,0
+T000461,M,Patrick J. Toomey,5,0,1,0,1
+T000462,M,Patrick J. Tiberi,9,0,1,0,1
+T000463,M,Michael R. Turner,8,0,1,0,0
+T000464,M,Jon Tester,2,0,1,0,0
+T000465,F,Niki Tsongas,7,0,0,0,0
+T000467,M,Glenn Thompson,5,0,1,0,0
+T000468,F,Dina Titus,4,0,0,0,0
+T000469,M,Paul Tonko,5,0,1,0,0
+T000470,M,Scott R. Tipton,4,0,1,0,0
+T000472,M,Mark Takano,3,0,1,0,0
+T000474,F,Norma J. Torres,2,0,0,0,0
+T000475,M,David A. Trott,2,0,1,0,0
+T000476,M,Thom Tillis,1,0,1,0,0
+T000477,M,Scott Taylor,1,0,1,0,0
+T000478,F,Claudia Tenney,1,0,0,0,0
+U000031,M,Fred Upton,16,0,1,0,0
+U000039,M,Tom Udall,11,0,1,0,0
+V000081,F,Nydia M. Velázquez,13,0,0,0,0
+V000108,M,Peter J. Visclosky,17,0,1,0,0
+V000128,M,Chris Van Hollen,8,0,1,0,0
+V000129,M,David G. Valadao,3,0,1,0,0
+V000130,M,Juan Vargas,3,0,1,0,0
+V000131,M,Marc A. Veasey,3,0,1,0,0
+V000132,M,Filemon Vela,3,0,1,0,0
+W000187,F,Maxine Waters,14,0,0,0,0
+W000437,M,Roger F. Wicker,9,0,1,0,0
+W000779,M,Ron Wyden,13,0,1,1,0
+W000791,M,Greg Walden,10,0,1,0,0
+W000795,M,Joe Wilson,9,0,1,0,0
+W000797,F,Debbie Wasserman Schultz,7,0,0,0,0
+W000798,M,Tim Walberg,5,0,1,0,0
+W000799,M,Timothy J. Walz,6,0,1,0,0
+W000800,M,Peter Welch,6,0,1,0,0
+W000802,M,Sheldon Whitehouse,2,0,1,0,0
+W000804,M,Robert J. Wittman,6,0,1,0,0
+W000805,M,Mark R. Warner,2,0,1,0,0
+W000806,M,Daniel Webster,4,0,1,0,0
+W000808,F,Frederica S. Wilson,4,0,0,0,0
+W000809,M,Steve Womack,4,0,1,0,0
+W000810,M,Rob Woodall,4,0,1,0,0
+W000812,F,Ann Wagner,3,0,0,0,0
+W000813,F,Jackie Walorski,3,0,0,0,0
+W000814,M,"Randy K. Weber, Sr.",3,0,1,0,0
+W000815,M,Brad R. Wenstrup,3,0,1,0,0
+W000816,M,Roger Williams,3,0,1,0,0
+W000817,F,Elizabeth Warren,1,0,0,0,0
+W000819,M,Mark Walker,2,0,1,0,0
+W000820,F,Mimi Walters,2,0,0,0,0
+W000821,M,Bruce Westerman,2,0,1,0,0
+W000822,F,Bonnie Watson Coleman,2,0,0,0,0
+Y000033,M,Don Young,23,0,1,0,0
+Y000062,M,John A. Yarmuth,6,0,1,0,0
+Y000063,M,Kevin Yoder,4,0,1,0,0
+Y000064,M,Todd Young,4,0,1,0,0
+Y000065,M,Ted S. Yoho,3,0,1,0,0
+Y000066,M,David Young,2,0,1,0,0
+Z000017,M,Lee M. Zeldin,2,0,1,0,0
+Z000018,M,Ryan K. Zinke,2,0,1,0,0

@@ -1,0 +1,12 @@
+LEAGUE_ID,COUNTRY_NAME,LEAGUE_NAME,NUM_GOALS_2016,AWAY_TEAM_WON_MOST_2010,NUM_DRAW_MATCHES_2016,AVG_GOAL_BY_HOME_TEAM_HIGHER_THAN_AWAY_TEAM,NUM_MATCHES_2008_2009_SEASON
+1,Belgium,Belgium Jupiler League,694,RSC Anderlecht,59,1,306
+10257,Italy,Italy Serie A,979,Inter,95,1,380
+13274,Netherlands,Netherlands Eredivisie,912,Ajax,74,1,306
+15722,Poland,Poland Ekstraklasa,635,Wisła Kraków,74,1,240
+1729,England,England Premier League,1026,Manchester United,107,1,380
+17642,Portugal,Portugal Liga ZON Sagres,831,SL Benfica,76,1,240
+19694,Scotland,Scotland Premier League,650,Celtic,52,1,228
+21518,Spain,Spain LIGA BBVA,1043,FC Barcelona,92,1,380
+24558,Switzerland,Switzerland Super League,566,FC Basel,47,1,180
+4769,France,France Ligue 1,960,AJ Auxerre,108,1,380
+7809,Germany,Germany 1. Bundesliga,866,SV Werder Bremen,71,1,306

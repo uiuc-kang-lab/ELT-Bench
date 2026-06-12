@@ -1,0 +1,43 @@
+# Missing tasks T stage and why
+
+task: debit_card_specializing
+reason: Error: Execution failed on sql 'SELECT * FROM debit_card_specializing.airbyte_schema.debit_card__customers ORDER BY customerid;': 000904 (42000): SQL compilation error: error line 1 at position 84 invalid identifier 'CUSTOMERID'
+
+task: language_corpus
+reason: Failed EL stage (Not_found_table: ['words'], Incorrect_size_tables: ['biwords', 'pages_words'])
+
+task: movie_platform
+reason: Failed EL stage (Incorrect_size_tables: ['movies'])
+
+task: olympics
+reason: Failed EL stage (Not_found_table: ['medal'], Incorrect_size_tables: ['event', 'games_city', 'person_region'])
+
+task: professional_basketball
+reason:
+- Error: Execution failed on sql 'select * from professional_basketball.airbyte_schema.professional_basketball__players order by player_id;': 002003 (42S02): SQL compilation error: Object 'PROFESSIONAL_BASKETBALL.AIRBYTE_SCHEMA.PROFESSIONAL_BASKETBALL__PLAYERS' does not exist or not authorized.
+- Error: Execution failed on sql 'select * from professional_basketball.airbyte_schema.professional_basketball__teams order by team_id;': 002003 (42S02): SQL compilation error: Object 'PROFESSIONAL_BASKETBALL.AIRBYTE_SCHEMA.PROFESSIONAL_BASKETBALL__TEAMS' does not exist or not authorized.
+- Error: Execution failed on sql 'select * from professional_basketball.airbyte_schema.professional_basketball__coaches order by coachID;': 002003 (42S02): SQL compilation error: Object 'PROFESSIONAL_BASKETBALL.AIRBYTE_SCHEMA.PROFESSIONAL_BASKETBALL__COACHES' does not exist or not authorized.
+
+task: recurly
+reason:
+- Error: Execution failed on sql 'SELECT * FROM recurly.airbyte_schema.recurly__balance_transactions ORDER BY balance_transaction_id, TRANSACTION_ID;': 002003 (42S02): SQL compilation error: Object 'RECURLY.AIRBYTE_SCHEMA.RECURLY__BALANCE_TRANSACTIONS' does not exist or not authorized.
+- Error: Execution failed on sql 'SELECT * FROM recurly.airbyte_schema.recurly__account_overview ORDER BY account_id;': 002003 (42S02): SQL compilation error: Object 'RECURLY.AIRBYTE_SCHEMA.RECURLY__ACCOUNT_OVERVIEW' does not exist or not authorized.
+- Error: Execution failed on sql 'SELECT * FROM recurly.airbyte_schema.recurly__subscription_overview ORDER BY subscription_id;': 002003 (42S02): SQL compilation error: Object 'RECURLY.AIRBYTE_SCHEMA.RECURLY__SUBSCRIPTION_OVERVIEW' does not exist or not authorized.
+- Error: Execution failed on sql 'SELECT * FROM recurly.airbyte_schema.recurly__churn_analysis ORDER BY subscription_id;': 002003 (42S02): SQL compilation error: Object 'RECURLY.AIRBYTE_SCHEMA.RECURLY__CHURN_ANALYSIS' does not exist or not authorized.
+
+task: retail_world
+reason: Error: Execution failed on sql 'select * from retail_world.airbyte_schema.retail_world__customers order by customerid;': 000904 (42000): SQL compilation error: error line 1 at position 75 invalid identifier 'CUSTOMERID'
+
+task: retails
+reason: Failed EL stage (Incorrect_size_tables: ['customer', 'part', 'partsupp'])
+
+task: thrombosis_prediction
+reason: Error: Execution failed on sql 'SELECT * FROM thrombosis_prediction.airbyte_schema.patients ORDER BY id;': 000904 (42000): SQL compilation error: error line 1 at position 69 invalid identifier 'ID'
+
+task: zuora
+reason: Error: Execution failed on sql 'SELECT * FROM zuora.airbyte_schema.zuora__billing_history ORDER BY invoice_id;': 002003 (42S02): SQL compilation error: Object 'ZUORA.AIRBYTE_SCHEMA.ZUORA__BILLING_HISTORY' does not exist or not authorized.
+
+
+# Summary:
+Schema Errors (T stage, right before evaluation): 6
+EL Failed: 4

@@ -1,0 +1,71 @@
+STATION_ID,NAME,CITY,NUM_BORROWED_BIKE,DATE_MOST_BIKES_AVAILABLE,ABOVE_AVG_DURATION_TRIPS,PER_SUBSCRIBER,DIFF_BEWTEEN_AS_START_STATION_AND_AS_END_STATION
+2.0,San Jose Diridon Caltrain Station,San Jose,9513,2014-07-17,0,94.365605,159
+3.0,San Jose Civic Center,San Jose,1492,2013/09/07,1,50.938338,-181
+4.0,Santa Clara at Almaden,San Jose,3838,2013/09/04,0,91.505993,151
+5.0,Adobe on Almaden,San Jose,1198,2013/10/24,1,80.96828,75
+6.0,San Pedro Square,San Jose,2875,2013/09/01,1,78.991304,-247
+7.0,Paseo de San Antonio,San Jose,2196,2014-04-05,1,81.375228,-264
+8.0,San Salvador at 1st,San Jose,1673,2015-01-06,1,82.546324,-19
+9.0,Japantown,San Jose,1869,2014-08-29,1,72.926699,-296
+10.0,San Jose City Hall,San Jose,2374,2015-02-08,1,88.837405,736
+11.0,MLK Library,San Jose,1997,2014-04-14,1,80.02003,-477
+12.0,SJSU 4th at San Carlos,San Jose,1147,2013/10/28,1,73.670445,-260
+13.0,St James Park,San Jose,1666,2015-07-29,0,87.755102,193
+14.0,Arena Green / SAP Center,San Jose,1448,2013/10/19,1,78.176796,119
+16.0,SJSU - San Salvador at 9th,San Jose,1453,2013/09/01,1,80.867171,3
+21.0,Franklin at Maple,Redwood City,222,2014-09-12,1,65.315315,-30
+22.0,Redwood City Caltrain Station,Redwood City,1535,2015-05-09,1,84.625407,295
+23.0,San Mateo County Center,Redwood City,287,2015-06-23,1,82.578397,-63
+24.0,Redwood City Public Library,Redwood City,201,2013/10/07,1,70.646766,-66
+25.0,Stanford in Redwood City,Redwood City,484,2015-06-15,1,83.677686,-5
+26.0,Redwood City Medical Center,Redwood City,310,2013/10/28,1,89.354839,-141
+27.0,Mountain View City Hall,Mountain View,2938,2013/11/06,1,88.563649,-304
+28.0,Mountain View Caltrain Station,Mountain View,6399,2014-08-21,1,88.670105,-113
+29.0,San Antonio Caltrain Station,Mountain View,1950,2013/10/12,1,82.769231,-72
+30.0,Evelyn Park and Ride,Mountain View,1649,2014-10-28,1,83.383869,299
+31.0,San Antonio Shopping Center,Mountain View,1791,2014-06-26,1,90.78727,-5
+32.0,Castro Street and El Camino Real,Mountain View,1970,2014-04-24,1,86.649746,205
+33.0,Rengstorff Avenue / California Street,Mountain View,964,2014-05-06,1,68.257261,-23
+34.0,Palo Alto Caltrain Station,Palo Alto,2026,2013/10/10,1,72.951629,265
+35.0,University and Emerson,Palo Alto,1423,2013/09/09,1,26.985242,-294
+36.0,California Ave Caltrain Station,Palo Alto,989,2015-01-08,1,52.275025,-116
+37.0,Cowper at University,Palo Alto,1349,2013/10/07,1,75.982209,171
+38.0,Park at Olive,Palo Alto,714,2014-11-18,1,57.563025,-53
+39.0,Powell Street BART,San Francisco,17878,2013/09/06,1,80.803222,-1543
+41.0,Clay at Battery,San Francisco,9822,2013/09/30,0,84.107106,19
+42.0,Davis at Jackson,San Francisco,9864,2013/09/01,0,90.115572,-537
+45.0,Commercial at Montgomery,San Francisco,11799,2013/08/29,0,90.804305,587
+46.0,Washington at Kearney,San Francisco,5559,2013/09/10,1,66.7746,-1513
+47.0,Post at Kearney,San Francisco,9325,2014-04-02,0,83.785523,205
+48.0,Embarcadero at Vallejo,San Francisco,10209,2013/08/30,1,66.43158,-1698
+49.0,Spear at Folsom,San Francisco,11869,2013/10/01,0,90.125537,452
+50.0,Harry Bridges Plaza (Ferry Building),San Francisco,31882,2013/09/12,1,73.696757,-454
+51.0,Embarcadero at Folsom,San Francisco,13896,2013/09/23,0,88.406736,481
+54.0,Embarcadero at Bryant,San Francisco,14560,2013/09/07,0,83.427198,1590
+55.0,Temporary Transbay Terminal (Howard at Beale),San Francisco,26026,2013/09/24,0,96.246062,3004
+56.0,Beale at Market,San Francisco,15565,2013/11/30,0,91.044009,3515
+57.0,5th at Howard,San Francisco,13336,2013/09/04,0,87.20006,-1339
+58.0,San Francisco City Hall,San Francisco,4372,2014-04-11,1,75.754803,1083
+59.0,Golden Gate at Polk,San Francisco,7227,2014-05-14,1,87.103916,1361
+60.0,Embarcadero at Sansome,San Francisco,26520,2013/08/30,1,65.109351,-2736
+61.0,2nd at Townsend,San Francisco,25522,2014-03-03,0,88.076953,-2675
+62.0,2nd at Folsom,San Francisco,15794,2013/12/04,0,93.237938,6256
+63.0,Howard at 2nd,San Francisco,13035,2013/09/12,0,91.469122,-853
+64.0,2nd at South Park,San Francisco,18326,2013/08/29,0,92.27873,1611
+65.0,Townsend at 7th,San Francisco,23567,2013/09/08,0,93.834599,-2915
+66.0,South Van Ness at Market,San Francisco,12721,2013/09/02,1,88.672274,1803
+67.0,Market at 10th,San Francisco,19993,2013/12/02,0,87.77072,2438
+68.0,Yerba Buena Center of the Arts (3rd @ Howard),San Francisco,11045,2013/09/12,0,82.354006,-890
+69.0,San Francisco Caltrain 2 (330 Townsend),San Francisco,33577,2013/09/03,0,95.187182,-1365
+70.0,San Francisco Caltrain (Townsend at 4th),San Francisco,48757,2013/08/29,0,94.009065,-14000
+71.0,Powell at Post (Union Square),San Francisco,12051,2013/10/05,1,72.508506,3934
+72.0,Civic Center BART (7th at Market),San Francisco,13832,2013/09/15,1,85.64199,-266
+73.0,Grant Avenue at Columbus Avenue,San Francisco,16011,2013/08/30,1,84.248329,7144
+74.0,Steuart at Market,San Francisco,24462,2014-03-28,0,87.744256,-130
+75.0,Mechanics Plaza (Market at Battery),San Francisco,11992,2013/09/20,0,85.548699,147
+76.0,Market at 4th,San Francisco,19651,2013/09/15,1,79.583736,281
+77.0,Market at Sansome,San Francisco,23834,2014-03-06,0,88.969539,-3946
+80.0,Santa Clara County Civic Center,San Jose,849,2014-07-04,1,88.574794,2
+82.0,Broadway St at Battery St,San Francisco,10170,2014-04-28,0,92.605703,942
+83.0,Mezes Park,Redwood City,337,2014-06-26,1,86.053412,56
+84.0,Ryland Park,San Jose,1726,2014-09-19,1,87.659328,307

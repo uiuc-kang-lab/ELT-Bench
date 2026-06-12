@@ -1,0 +1,6 @@
+SURVEY_ID,SURVEY_NAME,SURVEY_STATUS,BRAND_BASE_URL,BRAND_ID,OWNER_USER_ID,PROJECT_CATEGORY,PROJECT_TYPE,SCORING_SUMMARY_AFTER_QUESTIONS,SCORING_SUMMARY_AFTER_SURVEY,LAST_ACTIVATED_AT,LAST_MODIFIED_AT,IS_DELETED,OWNER_EMAIL,COUNT_QUESTIONS,COUNT_SURVEY_RESPONSES,COUNT_COMPLETED_SURVEY_RESPONSES
+SV_08GFzuA5eDhxx53,Untitled Project,Inactive,https://fivetrandev.ca1.qualtrics.com,fivetrandev,UR_cYdNGsrFUemlDbD,CX,,False,False,,2020-07-01 10:25:18.000000,False,developers@puppy.com,0,0,0
+SV_1XGe0Xykmeo0lyB,Untitled Project,Inactive,https://fivetrandev.ca1.qualtrics.com,fivetrandev,UR_cYdNGsrFUemlDbD,CORE,,False,False,,2020-08-06 05:38:26.000000,False,developers@puppy.com,0,0,0
+SV_8GsOFOOKnw9KAmx,TestSurvey2,Active,https://fivetrandev.ca1.qualtrics.com,fivetrandev,UR_cYdNGsrFUemlDbD,CX,,False,False,2020-06-30 11:24:41.000000,2020-07-01 08:57:47.000000,False,developers@puppy.com,0,0,0
+SV_8vvMJsA88y5AZxA,SurveyWithMAQ1,Inactive,https://fivetrandev.ca1.qualtrics.com,fivetrandev,UR_cYdNGsrFUemlDbD,CORE,,False,False,,2021-02-04 10:59:03.000000,False,developers@puppy.com,0,0,0
+SV_cARsuFqXn9bksDk,TestSurvey_FilterAPI,Inactive,https://fivetrandev.ca1.qualtrics.com,fivetrandev,UR_cYdNGsrFUemlDbD,CX,CustomerSatisfactionScore,False,False,,2022-07-15 15:31:11.000000,False,developers@puppy.com,0,0,0

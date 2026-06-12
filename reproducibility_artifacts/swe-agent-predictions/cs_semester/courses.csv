@@ -1,0 +1,14 @@
+COURSE_ID,NAME,CREDIT,NUM_STUDENTS_GOT_A,PER_OF_STUDENTS_HIGHEST_SATISFACTION_SCORE_FOR_THE_COURSE,NUMBER_OF_STUDENTS_FAIL,PERCENTAGE_OF_UG,AVERAGE_SATISFYING_DEGREE
+1.0,Machine Learning Theory,3.0,1,14.285714,0,14.285714,3.714286
+2.0,Intro to Database 1,2.0,4,20.0,0,20.0,3.0
+3.0,Intro to Database 2,2.0,1,16.666667,0,33.333333,3.333333
+4.0,Natural Language Processing,3.0,3,42.857143,0,14.285714,3.714286
+5.0,Intro to BlockChain,3.0,1,0.0,0,33.333333,2.666667
+6.0,Computer Network,2.0,4,11.111111,0,22.222222,3.888889
+7.0,Computer Vision,3.0,3,42.857143,0,42.857143,3.0
+8.0,Advanced Operating System,3.0,4,20.0,0,30.0,3.6
+9.0,C for Programmers,2.0,2,25.0,0,25.0,3.0
+10.0,Data Structure and Algorithms,2.0,3,25.0,0,37.5,3.5
+11.0,Advanced Database Systems,2.0,2,30.0,0,30.0,3.1
+12.0,Applied Deep Learning,3.0,5,41.666667,0,33.333333,3.0
+13.0,Statistical learning,3.0,4,33.333333,0,33.333333,3.0

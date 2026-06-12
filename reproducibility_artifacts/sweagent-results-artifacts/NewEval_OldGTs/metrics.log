@@ -1,0 +1,26 @@
+________________________________________________________________________________
+SRDEL: 96.00 % (over 100 tasks)
+SRDT: 30.05 % (over 203 models)
+Total data models (considering only correctly loaded tasks): 194
+Total correct data models: 61
+Total matched columns: 1858
+Total unmatched columns: 374
+Databases where ALL tables are perfect: 16
+  - app_store (1 table(s))
+  - authors (1 table(s))
+  - beer_factory (2 table(s))
+  - california_schools (1 table(s))
+  - food_inspection (1 table(s))
+  - human_resources (2 table(s))
+  - ice_hockey_draft (1 table(s))
+  - instagram_business (1 table(s))
+  - law_episode (2 table(s))
+  - linkedin (3 table(s))
+  - menu (1 table(s))
+  - music_tracker (1 table(s))
+  - pinterest (4 table(s))
+  - simpson_episodes (1 table(s))
+  - social_media (1 table(s))
+  - toxicology (1 table(s))
+________________________________________________________________________________
+

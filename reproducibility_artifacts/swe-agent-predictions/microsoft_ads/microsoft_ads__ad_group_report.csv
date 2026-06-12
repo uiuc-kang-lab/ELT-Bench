@@ -1,0 +1,183 @@
+DATE_DAY,ACCOUNT_NAME,ACCOUNT_ID,CAMPAIGN_NAME,CAMPAIGN_ID,AD_GROUP_NAME,AD_GROUP_ID,DEVICE_OS,DEVICE_TYPE,NETWORK,CURRENCY_CODE,CLICKS,IMPRESSIONS,SPEND,CONVERSIONS,CONVERSIONS_VALUE,ALL_CONVERSIONS,ALL_CONVERSIONS_VALUE
+2019-04-08,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,7Cmqte55GaD2sSkv932xhg==,1334807376555972,iOS,Smartphone,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-08,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,7Cmqte55GaD2sSkv932xhg==,1334807376555972,Unknown,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-12,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,7Cmqte55GaD2sSkv932xhg==,1334807376555972,Windows,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-15,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,7Cmqte55GaD2sSkv932xhg==,1334807376555972,Windows,Computer,Bing and Yahoo! search,USD,0,2,0.0,0,0.0,0,0.0
+2019-04-16,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,7Cmqte55GaD2sSkv932xhg==,1334807376555972,Windows,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-16,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,7Cmqte55GaD2sSkv932xhg==,1334807376555972,iOS,Smartphone,Syndicated search partners,USD,0,2,0.0,0,0.0,0,0.0
+2019-04-17,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,7Cmqte55GaD2sSkv932xhg==,1334807376555972,iOS,Smartphone,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-18,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,7Cmqte55GaD2sSkv932xhg==,1334807376555972,Unknown,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-22,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,7Cmqte55GaD2sSkv932xhg==,1334807376555972,Windows,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-23,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,7Cmqte55GaD2sSkv932xhg==,1334807376555972,Windows,Computer,Bing and Yahoo! search,USD,0,2,0.0,0,0.0,0,0.0
+2019-04-25,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,7Cmqte55GaD2sSkv932xhg==,1334807376555972,Unknown,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-29,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,7Cmqte55GaD2sSkv932xhg==,1334807376555972,Windows,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-18,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,7Cmqte55GaD2sSkv932xhg==,1334807376555972,Windows,Computer,Syndicated search partners,USD,0,2,0.0,0,0.0,0,0.0
+2019-05-25,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,7Cmqte55GaD2sSkv932xhg==,1334807376555972,Unknown,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-23,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,9NAPGRgb38BHSVSkMmL+vw==,1335906887703461,Unknown,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-07,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,9NAPGRgb38BHSVSkMmL+vw==,1335906887703461,Unknown,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-13,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,9NAPGRgb38BHSVSkMmL+vw==,1335906887703461,Unknown,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-15,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,9NAPGRgb38BHSVSkMmL+vw==,1335906887703461,Unknown,Computer,Syndicated search partners,USD,0,2,0.0,0,0.0,0,0.0
+2019-05-23,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,9NAPGRgb38BHSVSkMmL+vw==,1335906887703461,Unknown,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-10,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,5Cvq/En19h+GeWy49cvDag==,1342503957467547,Windows,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-15,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,5Cvq/En19h+GeWy49cvDag==,1342503957467547,Windows,Computer,Bing and Yahoo! search,USD,0,2,0.0,0,0.0,0,0.0
+2019-04-17,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,5Cvq/En19h+GeWy49cvDag==,1342503957467547,Windows,Computer,Bing and Yahoo! search,USD,0,3,0.0,0,0.0,0,0.0
+2019-04-19,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,5Cvq/En19h+GeWy49cvDag==,1342503957467547,Windows,Computer,Bing and Yahoo! search,USD,0,2,0.0,0,0.0,0,0.0
+2019-04-21,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,5Cvq/En19h+GeWy49cvDag==,1342503957467547,Windows,Computer,Syndicated search partners,USD,0,2,0.0,0,0.0,0,0.0
+2019-04-22,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,5Cvq/En19h+GeWy49cvDag==,1342503957467547,Windows,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-23,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,5Cvq/En19h+GeWy49cvDag==,1342503957467547,Windows,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-23,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,5Cvq/En19h+GeWy49cvDag==,1342503957467547,Unknown,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-24,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,5Cvq/En19h+GeWy49cvDag==,1342503957467547,Windows,Computer,Bing and Yahoo! search,USD,0,3,0.0,0,0.0,0,0.0
+2019-04-25,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,5Cvq/En19h+GeWy49cvDag==,1342503957467547,Unknown,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-26,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,5Cvq/En19h+GeWy49cvDag==,1342503957467547,Windows,Computer,Bing and Yahoo! search,USD,1,1,7.94,0,0.0,0,0.0
+2019-04-30,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,5Cvq/En19h+GeWy49cvDag==,1342503957467547,Windows,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-06,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,5Cvq/En19h+GeWy49cvDag==,1342503957467547,Windows,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-06,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,5Cvq/En19h+GeWy49cvDag==,1342503957467547,Unknown,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-07,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,5Cvq/En19h+GeWy49cvDag==,1342503957467547,Unknown,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-09,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,5Cvq/En19h+GeWy49cvDag==,1342503957467547,Windows,Computer,Bing and Yahoo! search,USD,0,2,0.0,0,0.0,0,0.0
+2019-05-10,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,5Cvq/En19h+GeWy49cvDag==,1342503957467547,Windows,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-13,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,5Cvq/En19h+GeWy49cvDag==,1342503957467547,Windows,Computer,Bing and Yahoo! search,USD,2,5,7.68,0,0.0,0,0.0
+2019-05-14,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,5Cvq/En19h+GeWy49cvDag==,1342503957467547,Unknown,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-14,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,5Cvq/En19h+GeWy49cvDag==,1342503957467547,Windows,Computer,Bing and Yahoo! search,USD,0,2,0.0,0,0.0,0,0.0
+2019-05-16,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,5Cvq/En19h+GeWy49cvDag==,1342503957467547,Windows,Computer,Bing and Yahoo! search,USD,0,2,0.0,0,0.0,0,0.0
+2019-05-17,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,5Cvq/En19h+GeWy49cvDag==,1342503957467547,Windows,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-20,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,5Cvq/En19h+GeWy49cvDag==,1342503957467547,Windows,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-22,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,5Cvq/En19h+GeWy49cvDag==,1342503957467547,Windows,Computer,Bing and Yahoo! search,USD,0,2,0.0,0,0.0,0,0.0
+2019-05-23,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,5Cvq/En19h+GeWy49cvDag==,1342503957467547,Windows,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-08,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,2,0.0,0,0.0,0,0.0
+2019-04-08,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Unknown,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-09,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-10,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,1,8,6.95,0,0.0,0,0.0
+2019-04-10,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Unknown,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-11,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Syndicated search partners,USD,0,2,0.0,0,0.0,0,0.0
+2019-04-11,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,2,0.0,0,0.0,0,0.0
+2019-04-11,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Unknown,Computer,Bing and Yahoo! search,USD,0,5,0.0,0,0.0,0,0.0
+2019-04-12,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,1,5,9.72,0,0.0,0,0.0
+2019-04-14,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,4,0.0,0,0.0,0,0.0
+2019-04-15,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-15,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,8,0.0,0,0.0,0,0.0
+2019-04-16,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Syndicated search partners,USD,0,3,0.0,0,0.0,0,0.0
+2019-04-16,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,4,0.0,0,0.0,0,0.0
+2019-04-17,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Unknown,Computer,Syndicated search partners,USD,0,6,0.0,0,0.0,0,0.0
+2019-04-17,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,8,0.0,0,0.0,0,0.0
+2019-04-17,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-18,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,7,0.0,0,0.0,0,0.0
+2019-04-19,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,12,0.0,0,0.0,0,0.0
+2019-04-20,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-21,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Unknown,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-22,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,2,0.0,0,0.0,0,0.0
+2019-04-22,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-23,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Unknown,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-23,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,9,0.0,0,0.0,0,0.0
+2019-04-24,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,10,0.0,0,0.0,0,0.0
+2019-04-25,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,iOS,Smartphone,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-25,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,1,10,6.5,0,0.0,0,0.0
+2019-04-26,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,4,0.0,0,0.0,0,0.0
+2019-04-29,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,13,0.0,0,0.0,0,0.0
+2019-04-29,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,iOS,Smartphone,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-30,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,iOS,Smartphone,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-30,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,iOS,Smartphone,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-30,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,1,5,5.95,0,0.0,0,0.0
+2019-05-01,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Android,Smartphone,Bing and Yahoo! search,USD,0,3,0.0,0,0.0,0,0.0
+2019-05-01,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,iOS,Smartphone,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-01,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-01,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,5,0.0,0,0.0,0,0.0
+2019-05-02,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,1,5,9.24,0,0.0,0,0.0
+2019-05-03,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Unknown,Computer,Bing and Yahoo! search,USD,0,2,0.0,0,0.0,0,0.0
+2019-05-03,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,2,0.0,0,0.0,0,0.0
+2019-05-03,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-04,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,iOS,Smartphone,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-04,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Unknown,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-04,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-05,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,iOS,Smartphone,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-05,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Unknown,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-06,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-06,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,4,0.0,0,0.0,0,0.0
+2019-05-07,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,8,0.0,0,0.0,0,0.0
+2019-05-07,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Unknown,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-08,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,iOS,Smartphone,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-08,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,5,0.0,0,0.0,0,0.0
+2019-05-08,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-08,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Unknown,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-08,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Android,Smartphone,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-09,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,6,0.0,0,0.0,0,0.0
+2019-05-10,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Unknown,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-10,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Syndicated search partners,USD,0,3,0.0,0,0.0,0,0.0
+2019-05-10,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,7,0.0,0,0.0,0,0.0
+2019-05-12,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Unknown,Computer,Syndicated search partners,USD,0,4,0.0,0,0.0,0,0.0
+2019-05-13,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,8,0.0,0,0.0,0,0.0
+2019-05-13,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Syndicated search partners,USD,0,2,0.0,0,0.0,0,0.0
+2019-05-14,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Android,Smartphone,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-14,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Unknown,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-14,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,5,0.0,0,0.0,0,0.0
+2019-05-14,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,iOS,Smartphone,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-14,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Unknown,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-14,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Syndicated search partners,USD,0,2,0.0,0,0.0,0,0.0
+2019-05-15,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-16,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,1,3,8.82,0,0.0,0,0.0
+2019-05-16,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Syndicated search partners,USD,0,2,0.0,0,0.0,0,0.0
+2019-05-16,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Unknown,Computer,Syndicated search partners,USD,0,2,0.0,0,0.0,0,0.0
+2019-05-16,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,iOS,Smartphone,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-17,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,3,0.0,0,0.0,0,0.0
+2019-05-18,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,2,0.0,0,0.0,0,0.0
+2019-05-19,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Unknown,Computer,Bing and Yahoo! search,USD,0,2,0.0,0,0.0,0,0.0
+2019-05-20,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Unknown,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-20,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-20,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,10,0.0,0,0.0,0,0.0
+2019-05-21,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,3,12,16.86,2,0.01,4,0.02
+2019-05-22,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,13,0.0,0,0.0,0,0.0
+2019-05-23,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Android,Smartphone,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-23,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-23,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-24,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Unknown,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-24,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,3,0.0,0,0.0,0,0.0
+2019-05-25,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,3,0.0,0,0.0,0,0.0
+2019-05-26,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-27,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-28,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,ifhG8mR4i/r1jE778F3k6w==,1343603469570956,Windows,Computer,Bing and Yahoo! search,USD,0,3,0.0,0,0.0,0,0.0
+2019-04-09,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,MpoB/dtaVSJlFwsCxXnIXw==,1344702981488349,Windows,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-15,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,MpoB/dtaVSJlFwsCxXnIXw==,1344702981488349,Windows,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-15,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,MpoB/dtaVSJlFwsCxXnIXw==,1344702981488349,Android,Smartphone,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-18,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,MpoB/dtaVSJlFwsCxXnIXw==,1344702981488349,Unknown,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-22,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,MpoB/dtaVSJlFwsCxXnIXw==,1344702981488349,Windows,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-24,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,MpoB/dtaVSJlFwsCxXnIXw==,1344702981488349,Unknown,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-24,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,MpoB/dtaVSJlFwsCxXnIXw==,1344702981488349,Windows,Computer,Bing and Yahoo! search,USD,0,2,0.0,0,0.0,0,0.0
+2019-04-25,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,MpoB/dtaVSJlFwsCxXnIXw==,1344702981488349,Unknown,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-27,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,MpoB/dtaVSJlFwsCxXnIXw==,1344702981488349,Windows,Computer,Bing and Yahoo! search,USD,0,3,0.0,0,0.0,0,0.0
+2019-04-29,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,MpoB/dtaVSJlFwsCxXnIXw==,1344702981488349,Unknown,Computer,Syndicated search partners,USD,0,3,0.0,0,0.0,0,0.0
+2019-04-30,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,MpoB/dtaVSJlFwsCxXnIXw==,1344702981488349,Unknown,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-01,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,MpoB/dtaVSJlFwsCxXnIXw==,1344702981488349,Unknown,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-02,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,MpoB/dtaVSJlFwsCxXnIXw==,1344702981488349,Windows,Computer,Bing and Yahoo! search,USD,1,3,9.73,0,0.0,0,0.0
+2019-05-03,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,MpoB/dtaVSJlFwsCxXnIXw==,1344702981488349,Windows,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-04,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,MpoB/dtaVSJlFwsCxXnIXw==,1344702981488349,Windows,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-04,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,MpoB/dtaVSJlFwsCxXnIXw==,1344702981488349,Windows,Computer,Syndicated search partners,USD,0,2,0.0,0,0.0,0,0.0
+2019-05-06,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,MpoB/dtaVSJlFwsCxXnIXw==,1344702981488349,Unknown,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-07,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,MpoB/dtaVSJlFwsCxXnIXw==,1344702981488349,Windows,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-07,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,MpoB/dtaVSJlFwsCxXnIXw==,1344702981488349,iOS,Smartphone,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-09,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,MpoB/dtaVSJlFwsCxXnIXw==,1344702981488349,Windows,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-10,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,MpoB/dtaVSJlFwsCxXnIXw==,1344702981488349,Unknown,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-11,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,MpoB/dtaVSJlFwsCxXnIXw==,1344702981488349,iOS,Smartphone,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-14,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,MpoB/dtaVSJlFwsCxXnIXw==,1344702981488349,Windows,Computer,Bing and Yahoo! search,USD,0,2,0.0,0,0.0,0,0.0
+2019-05-16,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,MpoB/dtaVSJlFwsCxXnIXw==,1344702981488349,Windows,Computer,Bing and Yahoo! search,USD,0,4,0.0,0,0.0,0,0.0
+2019-05-16,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,MpoB/dtaVSJlFwsCxXnIXw==,1344702981488349,Windows,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-17,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,MpoB/dtaVSJlFwsCxXnIXw==,1344702981488349,Unknown,Computer,Syndicated search partners,USD,0,2,0.0,0,0.0,0,0.0
+2019-05-18,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,MpoB/dtaVSJlFwsCxXnIXw==,1344702981488349,Unknown,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-20,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,MpoB/dtaVSJlFwsCxXnIXw==,1344702981488349,Windows,Computer,Bing and Yahoo! search,USD,1,1,5.64,0,0.0,0,0.0
+2019-05-22,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,MpoB/dtaVSJlFwsCxXnIXw==,1344702981488349,Windows,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-23,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,MpoB/dtaVSJlFwsCxXnIXw==,1344702981488349,Windows,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-24,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,MpoB/dtaVSJlFwsCxXnIXw==,1344702981488349,Unknown,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-25,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,MpoB/dtaVSJlFwsCxXnIXw==,1344702981488349,Windows,Computer,Bing and Yahoo! search,USD,1,1,7.2,0,0.0,0,0.0
+2019-05-27,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,MpoB/dtaVSJlFwsCxXnIXw==,1344702981488349,Windows,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-09,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,/dMrkGFoHttSxVS9m78HEg==,1346902004272815,Unknown,Computer,Syndicated search partners,USD,0,2,0.0,0,0.0,0,0.0
+2019-04-10,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,/dMrkGFoHttSxVS9m78HEg==,1346902004272815,Unknown,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-20,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,/dMrkGFoHttSxVS9m78HEg==,1346902004272815,Windows,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-21,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,/dMrkGFoHttSxVS9m78HEg==,1346902004272815,Unknown,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-04-22,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,/dMrkGFoHttSxVS9m78HEg==,1346902004272815,Unknown,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-02,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,/dMrkGFoHttSxVS9m78HEg==,1346902004272815,Windows,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-03,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,/dMrkGFoHttSxVS9m78HEg==,1346902004272815,Windows,Computer,Syndicated search partners,USD,0,4,0.0,0,0.0,0,0.0
+2019-05-03,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,/dMrkGFoHttSxVS9m78HEg==,1346902004272815,Windows,Computer,Bing and Yahoo! search,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-06,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,/dMrkGFoHttSxVS9m78HEg==,1346902004272815,Unknown,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-13,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,/dMrkGFoHttSxVS9m78HEg==,1346902004272815,Unknown,Computer,Bing and Yahoo! search,USD,0,3,0.0,0,0.0,0,0.0
+2019-05-14,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,/dMrkGFoHttSxVS9m78HEg==,1346902004272815,Android,Smartphone,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-14,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,/dMrkGFoHttSxVS9m78HEg==,1346902004272815,Unknown,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0
+2019-05-17,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,/dMrkGFoHttSxVS9m78HEg==,1346902004272815,Unknown,Computer,Syndicated search partners,USD,0,2,0.0,0,0.0,0,0.0
+2019-05-20,Fivetran,150175881,PafijluKrvfPOb+f94eCDw==,359751135,/dMrkGFoHttSxVS9m78HEg==,1346902004272815,Unknown,Computer,Syndicated search partners,USD,0,1,0.0,0,0.0,0,0.0

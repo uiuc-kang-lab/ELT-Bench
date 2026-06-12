@@ -1,0 +1,239 @@
+COUNTRY_NAME,COUNTRY_AREA,COUNTRY_POPULATION,THE_MAJORITY_ETHNIC_GROUP,NUM_ETHNIC_GROUPS,NUM_LANGUAGES_SPOKEN,HAS_OVER_1_ORGANIZATIONS_AND_AN_INFLATION_RATE_OF_OVER_3_PER,NUM_NEIGHBORS
+Afghanistan,647500.0,22664136.0,Pashtun,4,3,0,6
+Albania,28750.0,3249136.0,Albanian,2,0,1,4
+Algeria,2381740.0,29183032.0,Arab-Berber,2,0,1,7
+American Samoa,199.0,65628.0,Samoan,3,3,0,0
+Andorra,450.0,72766.0,Spanish,3,0,0,2
+Angola,1246700.0,10342899.0,Ovimbundu,4,0,1,4
+Anguilla,102.0,14436.0,Black,3,1,1,0
+Antigua and Barbuda,442.0,65647.0,,0,1,1,0
+Argentina,2766890.0,34672997.0,Indian,1,0,0,5
+Armenia,29800.0,3463574.0,Armenian,3,2,1,4
+Aruba,193.0,103065.0,European/Caribbean Indian,1,0,1,0
+Australia,7686850.0,18260863.0,Caucasian,2,1,1,0
+Austria,83850.0,8023244.0,German,3,1,0,8
+Azerbaijan,86600.0,7676953.0,Azeri,4,3,1,5
+Bahamas,13940.0,259367.0,,0,0,0,0
+Bahrain,620.0,590042.0,Bahraini,4,0,0,0
+Bangladesh,144000.0,123062800.0,Bengali,1,0,1,2
+Barbados,430.0,257030.0,African,2,1,0,0
+Belarus,207600.0,10415973.0,Byelorussian,4,0,1,5
+Belgium,30510.0,10170241.0,Fleming,2,3,0,4
+Belize,22960.0,219296.0,Creole,3,0,0,2
+Benin,112620.0,5709529.0,African,1,0,1,4
+Bermuda,53.3,67837.0,Black,3,0,0,0
+Bhutan,47000.0,1822625.0,Bhote,2,0,1,2
+Bolivia,1098580.0,7165257.0,Quechua,3,0,1,5
+Bosnia and Herzegovina,51233.0,2656240.0,Serb,3,1,0,3
+Botswana,600370.0,1477630.0,Batswana,2,0,1,3
+Brazil,8511960.0,162661214.0,African,1,0,1,10
+British Virgin Islands,153.0,24491.0,Black,4,1,0,0
+Brunei,5770.0,299939.0,Malay,2,0,0,1
+Bulgaria,110910.0,8612757.0,Bulgarian,6,1,1,5
+Burkina Faso,274200.0,10623323.0,Mossi,1,0,1,6
+Burundi,27830.0,5943057.0,,0,0,1,3
+Cambodia,181040.0,10861218.0,Khmer,3,0,1,3
+Cameroon,475440.0,14261557.0,Cameroon Highlanders,7,0,1,6
+Canada,9976140.0,28820671.0,British Isles,5,0,0,1
+Cape Verde,4030.0,449066.0,Creole,3,0,1,0
+Cayman Islands,262.0,49035.0,Mixed,3,2,1,0
+Central African Republic,622980.0,3274426.0,Baya,6,0,1,5
+Chad,1284000.0,6976845.0,,0,0,1,6
+Chile,756950.0,14333258.0,European European-Indian,2,1,1,3
+China,9596960.0,1210004956.0,Han Chinese,1,0,1,16
+Christmas Island,135.0,1402.0,Chinese,3,0,0,0
+Cocos Islands,14.0,596.0,,0,0,0,0
+Colombia,1138910.0,36813161.0,black-Indian,2,1,1,5
+Comoros,2170.0,569237.0,,0,0,1,0
+Congo,342000.0,2527841.0,,0,0,1,5
+Cook Islands,240.0,11870.0,Polynesian,1,0,0,0
+Costa Rica,51100.0,3463083.0,Chinese,2,0,1,2
+Cote dIvoire,322460.0,14762445.0,Baoule,4,0,1,5
+Croatia,56538.0,5004112.0,Croat,5,1,1,5
+Cuba,110860.0,10951334.0,Chinese,1,1,0,0
+Cyprus,9251.0,744609.0,,0,0,0,0
+Czech Republic,78703.0,10321120.0,Czech,6,0,1,4
+Denmark,43070.0,5249632.0,,0,0,0,1
+Djibouti,22000.0,427642.0,Somali,3,0,1,3
+Dominica,746.0,82926.0,Carib Indians,1,0,0,0
+Dominican Republic,48730.0,8088881.0,,0,1,1,1
+Ecuador,283560.0,11466291.0,Indian,2,0,1,2
+Egypt,1001450.0,63575107.0,Eastern Hamitic,2,0,1,4
+El Salvador,21040.0,5828987.0,Indian,1,0,1,2
+Equatorial Guinea,28050.0,431282.0,,0,0,1,2
+Eritrea,121320.0,3427883.0,Tigrinya,4,0,1,3
+Estonia,45100.0,1459428.0,Estonian,5,0,1,2
+Ethiopia,1127130.0,57171662.0,Oromo,7,0,1,5
+Falkland Islands,12173.0,3140.0,Christian,2,1,0,0
+Faroe Islands,1400.0,43857.0,Scandinavian,1,0,0,0
+Fiji,18270.0,782381.0,Fijian,2,0,0,0
+Finland,337030.0,5105230.0,,0,2,0,3
+France,547030.0,58317450.0,,0,1,0,8
+French Guiana,91000.0,151187.0,Amerindian,1,1,0,2
+French Polynesia,4167.0,287032.0,Polynesian,3,2,0,0
+Gabon,267670.0,1172798.0,,0,0,1,3
+Gambia,11300.0,1204984.0,African,1,0,0,1
+Gaza Strip,360.0,813332.0,Palestinian Arab,2,0,0,2
+Georgia,69700.0,5219810.0,Georgian,6,4,0,4
+Germany,356910.0,83536115.0,German,5,1,0,9
+Ghana,238540.0,17698271.0,African,2,0,1,3
+Gibraltar,6.5,28765.0,,0,0,0,1
+Greece,131940.0,10538594.0,Greek,1,0,1,4
+Greenland,2175600.0,58203.0,Greenlander,2,0,0,0
+Grenada,344.0,94961.0,African,1,0,0,0
+Guadeloupe,1780.0,407768.0,Chinese,1,1,1,0
+Guam,541.3,178430.0,Chamorro,2,3,0,0
+Guatemala,108890.0,11277614.0,Mestizo - Amerindian-Spanish,2,2,1,4
+Guernsey,194.0,62920.0,Norman-French,1,0,0,0
+Guinea,245860.0,7411981.0,Peuhl,3,1,1,6
+Guinea-Bissau,36120.0,1151330.0,African,2,0,1,2
+Guyana,214970.0,712091.0,East Indian,3,0,1,3
+Haiti,27750.0,6731539.0,European,1,1,1,1
+Holy See,0.44,840.0,,0,0,0,1
+Honduras,112090.0,5605193.0,Indian,1,0,1,3
+Hong Kong,1092.0,7055071.0,Chinese,3,2,0,1
+Hungary,93030.0,10002541.0,Hungarian,6,1,1,7
+Iceland,103000.0,270292.0,Celt,1,1,0,0
+India,3287590.0,952107694.0,Indo-Aryan,3,1,1,6
+Indonesia,1919440.0,206611600.0,Javanese,4,0,1,3
+Iran,1648000.0,66094264.0,Persian,8,7,1,7
+Iraq,437072.0,21422292.0,Arab,3,0,0,6
+Ireland,70280.0,3566833.0,,0,0,0,1
+Israel,20770.0,5421995.0,Jewish,1,0,1,6
+Italy,301230.0,57460274.0,,0,0,1,6
+Jamaica,10991.0,2595275.0,African,4,0,1,0
+Japan,377835.0,125449703.0,Japanese,1,1,0,0
+Jersey,117.0,87848.0,Norman-French,1,0,0,0
+Jordan,89213.0,4212152.0,Arab,3,0,0,5
+Kazakstan,2717300.0,16916463.0,Kazak,6,1,1,5
+Kenya,582650.0,28176686.0,Kikuyu,8,0,0,5
+Kiribati,717.0,80919.0,Micronesian,1,0,1,0
+Kosovo,10887.0,1804838.0,Albanian,2,0,0,5
+Kuwait,17820.0,1950047.0,Kuwaiti,4,0,1,2
+Kyrgyzstan,198500.0,4529648.0,Kirghiz,5,0,1,4
+Laos,236800.0,4975772.0,Lao Loum,4,0,1,5
+Latvia,64100.0,2468982.0,Latvian,5,0,1,4
+Lebanon,10400.0,3776317.0,Arab,2,0,1,2
+Lesotho,30350.0,1970781.0,Sotho,1,0,1,1
+Liberia,111370.0,2109789.0,African,2,1,1,3
+Libya,1759540.0,5445436.0,Berber Arab,1,0,1,6
+Liechtenstein,160.0,31122.0,Alemannic,2,0,1,2
+Lithuania,65200.0,3646041.0,Lithuanian,4,0,1,4
+Luxembourg,2586.0,415870.0,,0,0,1,3
+Macau,16.0,496837.0,Chinese,2,1,1,1
+Macedonia,25333.0,2104035.0,Macedonian,5,4,1,5
+Madagascar,587041.0,13670507.0,,0,0,1,0
+Malawi,118480.0,9452844.0,,0,0,1,3
+Malaysia,329750.0,19962893.0,Malay,3,0,1,3
+Maldives,300.0,270758.0,,0,0,1,0
+Mali,1240000.0,9653261.0,Mande,5,1,1,7
+Malta,320.0,375576.0,,0,0,1,0
+Man,588.0,73837.0,,0,0,0,0
+Marshall Islands,181.3,58363.0,Micronesian,1,0,1,0
+Martinique,1128.0,399151.0,African-white-Indian,2,0,1,0
+Mauritania,1030700.0,2336048.0,Black Maur,2,0,1,4
+Mauritius,2040.0,1140256.0,Indo-Mauritian,4,0,1,0
+Mayotte,374.0,223765.0,,0,0,0,0
+Mexico,1972550.0,95772462.0,Amerindian,2,0,1,3
+Micronesia,702.0,125377.0,Polynesian,1,0,0,0
+Moldova,33700.0,4463847.0,Moldavian/Romanian,6,0,1,2
+Monaco,1.9,31719.0,French,3,0,0,1
+Mongolia,1565000.0,2496617.0,Mongol,4,1,1,2
+Montenegro,14026.0,672180.0,Montenegrin,4,4,1,4
+Montserrat,102.0,5097.0,,0,1,0,0
+Morocco,446550.0,29779156.0,Arab-Berber,2,0,1,2
+Mozambique,801590.0,17877927.0,Euro-African,3,1,1,6
+Myanmar,678500.0,45975625.0,Burman,7,1,1,5
+Namibia,825418.0,1677243.0,,0,3,1,4
+Nauru,21.0,10273.0,Nauruan,4,0,0,0
+Nepal,140800.0,22094033.0,,0,1,1,2
+Netherlands,37330.0,15568034.0,Dutch,1,1,0,2
+Netherlands Antilles,960.0,227049.0,Mixed Black,1,0,0,0
+New Caledonia,19060.0,227436.0,Melanesian,5,0,0,0
+New Zealand,268680.0,3547983.0,European,3,0,0,0
+Nicaragua,129494.0,4272352.0,Indian,1,1,1,2
+Niger,1267000.0,9113001.0,Hausa,6,0,1,7
+Nigeria,923770.0,103912489.0,African,1,0,1,4
+Niue,260.0,1398.0,Polynesian,1,0,1,0
+Norfolk Island,34.6,2209.0,,0,0,0,0
+North Korea,120540.0,23904124.0,,0,1,0,3
+Northern Mariana Islands,477.0,88662.0,Asian,3,5,0,0
+Norway,324220.0,4383807.0,,0,1,0,3
+Oman,212460.0,2186548.0,,0,0,0,3
+Pakistan,803940.0,129275660.0,,0,8,1,4
+Palau,458.0,16952.0,,0,0,0,0
+Panama,78200.0,2655094.0,West Indian,2,1,0,2
+Papua New Guinea,461690.0,4394537.0,,0,1,1,1
+Paraguay,406750.0,5504146.0,Amerindians,1,0,1,3
+Peru,1285220.0,24523408.0,Indian,1,0,1,5
+Philippines,299764.0,74480848.0,Malay,2,0,1,0
+Pitcairn Islands,47.0,48.0,Bounty,1,1,0,0
+Poland,312683.0,38642565.0,Polish,4,1,1,7
+Portugal,92080.0,9865114.0,,0,1,1,1
+Puerto Rico,8870.0,3971020.0,White,4,0,1,0
+Qatar,11000.0,547761.0,Arab,4,0,0,1
+Reunion,2510.0,679198.0,,0,0,0,0
+Romania,237500.0,21657162.0,Romanian,4,0,1,5
+Russia,17075200.0,148178487.0,Russian,7,1,1,14
+Rwanda,26340.0,6853359.0,Hutu,3,0,1,4
+Saint Helena,413.0,7637.0,African descent,3,1,0,0
+Saint Kitts and Nevis,269.0,41369.0,African,1,1,0,0
+Saint Lucia,620.0,157862.0,African,2,0,0,0
+Saint Martin,54.0,29820.0,,0,0,0,1
+Saint Pierre and Miquelon,242.0,6809.0,Basques Bretons,1,1,0,0
+Saint Vincent and the Grenadines,389.0,118344.0,,0,0,0,0
+Samoa,2860.0,214384.0,Samoan,3,0,1,0
+San Marino,60.0,24521.0,,0,1,1,1
+Sao Tome and Principe,1001.0,144128.0,Europeans,1,1,1,0
+Saudi Arabia,1960580.0,19409058.0,Arab,2,1,1,7
+Senegal,196190.0,9092749.0,Wolof,7,0,1,5
+Serbia,77474.0,7379339.0,Serb,6,4,1,8
+Seychelles,455.0,77575.0,Seychellois,1,0,1,0
+Sierra Leone,71740.0,4793121.0,African,2,0,1,2
+Singapore,632.6,3396924.0,Chinese,3,0,0,0
+Slovakia,48845.0,5374362.0,Slovak,8,0,1,5
+Slovenia,20256.0,1951443.0,Slovene,4,2,1,4
+Solomon Islands,28450.0,412902.0,Melanesian,5,1,1,0
+Somalia,637660.0,9639151.0,Somali,1,0,0,3
+South Africa,1219910.0,41743459.0,Colored,2,0,1,6
+South Korea,98480.0,45482291.0,,0,0,1,1
+Spain,504750.0,39181114.0,Mediterranean Nordic,1,3,1,4
+Sri Lanka,65610.0,18553074.0,Sinhalese,4,2,1,0
+Sudan,2505810.0,31547543.0,Arab,2,0,1,9
+Suriname,163270.0,436418.0,Hindustani,6,0,1,3
+Svalbard,62049.0,2116.0,Norwegian,2,0,0,0
+Swaziland,17360.0,998730.0,African,2,0,1,2
+Sweden,449964.0,8900954.0,foreign-born first-generation,1,1,0,2
+Switzerland,41290.0,7207060.0,,0,4,0,5
+Syria,185180.0,15608648.0,Arab,1,0,1,5
+Taiwan,36179.0,21465881.0,Taiwanese,2,0,1,0
+Tajikistan,143100.0,5916373.0,Tajik,3,0,1,4
+Tanzania,945090.0,29058470.0,,0,0,1,8
+Thailand,514000.0,58851357.0,Thai,2,0,1,4
+Timor-Leste,15007.0,1131612.0,,0,0,1,1
+Togo,56790.0,4570530.0,African,2,0,1,3
+Tonga,748.0,106466.0,,0,0,0,0
+Trinidad and Tobago,5130.0,1272385.0,East Indian,2,0,1,0
+Tunisia,163610.0,9019687.0,Arab-Berber,3,0,1,2
+Turkey,780580.0,62484478.0,Turkish,2,0,1,8
+Turkmenistan,488100.0,4149283.0,Turkmen,4,3,1,4
+Turks and Caicos Islands,430.0,22942.0,African,1,1,1,0
+Tuvalu,26.0,10146.0,Polynesian,1,0,0,0
+Uganda,236040.0,20158176.0,Baganda,12,0,1,5
+Ukraine,603700.0,50864009.0,Ukrainian,3,0,1,7
+United Arab Emirates,75581.0,3057337.0,South Asian,3,0,1,2
+United Kingdom,244820.0,58489975.0,English,5,0,1,1
+United States,9372610.0,266476278.0,Asian,2,0,0,2
+Uruguay,176220.0,3238952.0,,0,0,1,2
+Uzbekistan,447400.0,23418381.0,Uzbek,6,3,1,5
+Vanuatu,14760.0,177504.0,Melanesian,2,0,1,0
+Venezuela,912050.0,21983188.0,Amerindian,1,0,1,3
+Vietnam,329560.0,73976973.0,Vietnamese,2,0,1,3
+Virgin Islands,352.0,97120.0,,0,0,0,0
+Wallis and Futuna,274.0,15289.0,Polynesian,1,3,0,0
+West Bank,5860.0,1427741.0,Palestinian Arab,2,0,0,2
+Western Sahara,266000.0,222631.0,,0,0,0,3
+Yemen,527970.0,13483178.0,,0,1,1,2
+Zaire,2345410.0,46498539.0,Mangbetu-Azande,1,0,1,9
+Zambia,752610.0,9159072.0,African,2,0,1,7
+Zimbabwe,390580.0,11271314.0,African,2,0,1,4

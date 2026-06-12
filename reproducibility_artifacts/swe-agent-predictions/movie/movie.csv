@@ -1,0 +1,635 @@
+MOVIEID,TITLE,RATING,ACTOR_WITH_LONGEST_SCREENTIME,PERCENTAGE_OF_THE_USA_ACTORS,PERCENTAGE_OF_THE_ACTOR_BORN_AFTER_19700101,NUM_DISTINCT_CHARACTERS,NUMBER_OF_USA_MALE_ACTORS
+1,Look Who's Talking,5.9,Abe Vigoda,66.666667,0.0,7,3
+2,Driving Miss Daisy,7.4,Alvin M. Sugarman,44.444444,0.0,9,1
+3,Turner & Hooch,7.2,,0.0,0.0,0,0
+4,Born on the Fourth of July,7.2,Anne Bobby,66.666667,22.222222,9,4
+5,Field of Dreams,7.5,Amy Madigan,100.0,22.222222,9,7
+6,Uncle Buck,7.0,Amy Madigan,44.444444,33.333333,9,1
+7,When Harry Met Sally...,7.6,Billy Crystal,33.333333,0.0,9,2
+8,Dead Poets Society,8.1,Allelon Ruggiero,22.222222,11.111111,9,2
+9,Parenthood,7.0,Dianne Wiest,77.777778,11.111111,9,3
+10,Lethal Weapon 2,7.2,Danny Glover,66.666667,0.0,9,4
+11,The War of the Roses,6.8,Dan Castellaneta,77.777778,11.111111,9,5
+12,National Lampoon's Christmas Vacation,7.6,Beverly D'Angelo,88.888889,22.222222,9,4
+13,"Honey, I Shrunk the Kids",6.3,Amy O'Neill,88.888889,11.111111,9,5
+14,Batman,7.5,Jerry Hall,88.888889,0.0,9,6
+15,Ghostbusters II,6.6,Annie Potts,77.777778,0.0,9,5
+16,The Little Mermaid,7.6,Buddy Hackett,88.888889,22.222222,9,5
+17,Back to the Future Part II,7.8,Billy Zane,77.777778,0.0,9,5
+18,Indiana Jones and the Last Crusade,8.2,Alison Doody,22.222222,11.111111,9,2
+19,Tango & Cash,6.8,,0.0,0.0,0,0
+20,Steel Magnolias,7.3,Daryl Hannah,100.0,0.0,9,3
+21,Three Men and a Little Lady,6.1,,0.0,0.0,0,0
+22,Teenage Mutant Ninja Turtles,6.8,Brian Tochi,66.666667,11.111111,6,5
+23,Pretty Woman,7.0,Alex Hyde-White,88.888889,0.0,9,4
+24,Kindergarten Cop,6.1,Arnold Schwarzenegger,88.888889,22.222222,8,3
+25,Home Alone,7.6,Angela Goethals,88.888889,33.333333,9,6
+26,Bird on a Wire,6.0,Alex Bruhanski,88.888889,0.0,9,6
+27,Misery,7.8,Frances Sternhagen,55.555556,0.0,9,3
+28,Edward Scissorhands,7.9,Anthony Michael Hall,100.0,22.222222,9,4
+29,Ghost,7.0,Christopher J. Keene,66.666667,0.0,8,4
+30,Presumed Innocent,6.9,Bonnie Bedelia,77.777778,0.0,9,6
+31,Dances with Wolves,8.0,Charles Rocket,77.777778,0.0,9,6
+32,Flatliners,6.6,Aeryk Egan,66.666667,11.111111,9,4
+33,The Hunt for Red October,7.6,Alec Baldwin,44.444444,0.0,9,4
+34,Another 48 Hrs.,5.9,Andrew Divoff,88.888889,0.0,9,8
+35,Back to the Future Part III,7.4,Christopher Lloyd,88.888889,0.0,9,5
+36,Dick Tracy,6.1,Charlie Korsmo,44.444444,11.111111,9,4
+37,The Godfather: Part III,7.6,Al Pacino,88.888889,11.111111,9,4
+38,Days of Thunder,6.0,Cary Elwes,88.888889,0.0,9,7
+39,Total Recall,7.5,Arnold Schwarzenegger,66.666667,0.0,9,3
+40,Die Hard 2,7.2,Art Evans,77.777778,0.0,9,6
+41,Fried Green Tomatoes,7.7,Chris O'Donnell,88.888889,11.111111,9,4
+42,The Silence of the Lambs,8.6,Anthony Heald,66.666667,0.0,9,4
+43,Sleeping with the Enemy,6.2,Claudette Nevins,77.777778,0.0,9,2
+44,Father of the Bride,6.5,BD Wong,88.888889,22.222222,9,5
+45,The Naked Gun 2 1/2: The Smell of Fear,6.5,,0.0,0.0,0,0
+46,Teenage Mutant Ninja Turtles II,8.0,,0.0,0.0,0,0
+47,Beauty and the Beast,8.0,Angela Lansbury,66.666667,11.111111,9,5
+48,Hot Shots!,6.8,Cary Elwes,77.777778,0.0,9,6
+49,City Slickers,6.7,Billy Crystal,100.0,0.0,9,6
+50,Star Trek VI: The Undiscovered Country,7.2,DeForest Kelley,66.666667,0.0,9,5
+51,The Addams Family,6.9,Anjelica Huston,66.666667,0.0,9,3
+52,The Prince of Tides,6.7,Barbra Streisand,77.777778,0.0,9,4
+53,What About Bob?,7.0,Bill Murray,100.0,11.111111,9,5
+54,Cape Fear,7.3,Gregory Peck,100.0,11.111111,9,6
+55,JFK,8.0,Anthony Ramirez,33.333333,0.0,9,2
+56,Robin Hood: Prince of Thieves,6.9,Alan Rickman,55.555556,0.0,9,4
+57,Hook,6.8,Amber Scott,55.555556,22.222222,9,3
+58,Backdraft,6.7,Donald Sutherland,88.888889,0.0,9,6
+59,Terminator 2: Judgment Day,8.5,Arnold Schwarzenegger,77.777778,22.222222,9,5
+60,The Crying Game,7.2,Adrian Dunbar,22.222222,0.0,9,2
+61,The Hand that Rocks the Cradle,8.2,,0.0,0.0,0,0
+62,Unforgiven,8.2,Anna Levine,44.444444,0.0,9,3
+63,Home Alone 2: Lost in New York,6.7,Catherine O'Hara,88.888889,55.555556,9,6
+64,Wayne's World,7.0,Brian Doyle-Murray,77.777778,11.111111,9,5
+65,The Bodyguard,6.3,Bill Cobbs,77.777778,0.0,9,6
+66,Aladdin,8.0,Charlie Adler,88.888889,22.222222,9,7
+67,White Men Can't Jump,6.8,Cylk Cozart,100.0,0.0,9,7
+68,Sister Act,6.4,Bill Nunn,88.888889,0.0,9,4
+69,Scent of a Woman,8.0,Al Pacino,77.777778,22.222222,9,6
+70,Lethal Weapon 3,6.7,Damon Hines,77.777778,0.0,9,4
+71,Under Siege,6.5,Damian Chapa,66.666667,0.0,9,6
+72,Boomerang,5.5,Chris Rock,66.666667,0.0,9,3
+73,A League of Their Own,7.2,Ann Cusack,100.0,0.0,9,1
+74,The Last of the Mohicans,7.7,Daniel Day-Lewis,33.333333,11.111111,9,2
+75,Bram Stoker's Dracula,7.4,Anthony Hopkins,33.333333,11.111111,9,2
+76,A Few Good Men,7.7,Christopher Guest,88.888889,0.0,9,7
+77,Patriot Games,6.9,Anne Archer,55.555556,11.111111,9,3
+78,Basic Instinct,6.9,Bruce A. Young,77.777778,0.0,9,2
+79,Batman Returns,7.0,Andrew Bryniarski,88.888889,0.0,9,6
+80,Cool Runnings,6.9,Doug E. Doug,44.444444,11.111111,9,4
+81,Groundhog Day,8.0,Andie MacDowell,88.888889,0.0,9,6
+82,Free Willy,5.9,August Schellenberg,66.666667,22.222222,9,5
+83,Sleepless in Seattle,6.8,Bill Pullman,66.666667,11.111111,9,3
+84,Schindler's List,8.9,Ben Kingsley,11.111111,0.0,9,0
+85,Mrs. Doubtfire,7.0,Harvey Fierstein,77.777778,33.333333,9,4
+86,Tombstone,7.8,Bill Paxton,88.888889,0.0,9,8
+87,Philadelphia,7.7,Buzz Kilman,66.666667,0.0,9,5
+88,Dave,6.8,Ben Kingsley,88.888889,0.0,9,5
+89,Grumpy Old Men,7.0,Ann-Margret,88.888889,0.0,9,7
+90,Indecent Proposal,5.9,Billy Bob Thornton,77.777778,0.0,9,6
+91,Sister Act 2: Back in the Habit,5.6,Barnard Hughes,100.0,0.0,9,4
+92,In the Line of Fire,7.2,Clint Eastwood,77.777778,0.0,9,6
+93,Rising Sun,6.2,Cary-Hiroyuki Tagawa,66.666667,0.0,9,4
+94,The Firm,6.8,David Strathairn,100.0,0.0,9,2
+95,The Fugitive,7.8,Andreas Katsulas,88.888889,0.0,9,1
+96,The Pelican Brief,6.6,Denzel Washington,100.0,0.0,9,5
+97,Demolition Man,6.7,Benjamin Bratt,88.888889,0.0,9,1
+98,Cliffhanger,6.4,Caroline Goodall,66.666667,0.0,9,1
+99,Jurassic Park III,8.9,,0.0,0.0,0,0
+100,Pulp Fiction,8.9,Amanda Plummer,55.555556,0.0,9,3
+101,Ace Ventura: Pet Detective,6.9,Courteney Cox,77.777778,0.0,9,2
+102,Dumb and Dumber,7.3,Charles Rocket,77.777778,0.0,9,2
+103,The Santa Clause,6.4,David Krumholtz,88.888889,33.333333,9,0
+104,The Mask,6.9,Amy Yasbeck,77.777778,0.0,9,0
+105,Speed,7.2,Alan Ruck,77.777778,0.0,9,1
+106,Legends of the Fall,7.5,Aidan Quinn,33.333333,11.111111,9,0
+107,Star Trek: Generations,8.5,,0.0,0.0,0,0
+108,The Lion King,8.5,James Earl Jones,77.777778,11.111111,9,1
+109,The Client,6.7,Anthony Edwards,88.888889,11.111111,9,2
+110,The Specialist,5.6,Chase Randolph,55.555556,0.0,9,0
+111,The Flintstones,4.9,Dann Florek,77.777778,0.0,9,0
+112,Forrest Gump,8.8,Bob Penny,55.555556,0.0,8,1
+113,Stargate,7.1,Alexis Cruz,66.666667,22.222222,9,2
+114,Disclosure,6.1,Caroline Goodall,66.666667,0.0,9,1
+115,Interview with the Vampire,6.9,,0.0,0.0,0,0
+116,Clear and Present Danger,6.9,Anne Archer,66.666667,0.0,9,2
+117,Wolf,6.2,Christopher Plummer,55.555556,0.0,9,1
+118,Maverick,7.0,Alfred Molina,77.777778,0.0,9,2
+119,True Lies,7.2,Arnold Schwarzenegger,77.777778,11.111111,9,2
+120,While You Were Sleeping,6.7,Bill Pullman,88.888889,0.0,9,1
+121,Dangerous Minds,6.5,Beatrice Winde,55.555556,11.111111,9,0
+122,Grumpier Old Men,6.7,Ann Morgan Guilbert,77.777778,11.111111,9,4
+123,Father of the Bride Part II,6.0,BD Wong,88.888889,22.222222,9,5
+124,Toy Story,8.3,Annie Potts,88.888889,22.222222,9,1
+125,Ace Ventura: When Nature Calls,6.4,Adewale Akinnuoye-Agbaje,22.222222,0.0,9,0
+126,Get Shorty,6.9,Danny DeVito,88.888889,0.0,9,3
+127,Mr. Holland's Opus,7.3,Alicia Witt,100.0,33.333333,9,1
+128,Se7en,8.6,Andrew Kevin Walker,55.555556,22.222222,9,1
+129,Casper,6.1,Ben Stein,55.555556,22.222222,9,0
+130,Congo,5.2,Dylan Walsh,88.888889,22.222222,9,2
+131,Apollo 13,7.6,Bill Paxton,88.888889,33.333333,9,3
+132,Crimson Tide,7.3,Denzel Washington,77.777778,0.0,9,2
+133,Pocahontas,6.7,Billy Connolly,66.666667,11.111111,8,1
+134,GoldenEye,7.2,Famke Janssen,11.111111,11.111111,9,1
+135,Jumanji,7.0,Adam Hann-Byrd,77.777778,33.333333,9,2
+136,Braveheart,8.3,Alan Tall,0.0,33.333333,9,0
+137,Die Hard: With a Vengeance,5.4,,0.0,0.0,0,0
+138,Batman Forever,5.4,Chris O'Donnell,77.777778,22.222222,9,3
+139,Waterworld,6.2,Anthony DeMasters,44.444444,11.111111,8,4
+140,Scream,7.2,Carla Hatley,44.444444,33.333333,9,2
+141,The First Wives Club,6.4,Bette Midler,77.777778,0.0,9,2
+142,The English Patient,7.4,Colin Firth,11.111111,0.0,9,0
+143,The Birdcage,7.1,Calista Flockhart,100.0,0.0,9,6
+144,Phenomenon,6.4,Ashley Buccille,100.0,22.222222,9,7
+145,A Time to Kill,7.5,Brenda Fricker,55.555556,0.0,9,4
+146,Star Trek: First Contact,7.6,Alfre Woodard,66.666667,0.0,9,4
+147,Broken Arrow,6.0,Bob Gunton,77.777778,11.111111,9,5
+148,Jerry Maguire,7.3,Bonnie Hunt,100.0,44.444444,9,5
+149,The Nutty Professor,5.6,Dave Chappelle,77.777778,33.333333,9,5
+150,101 Dalmatians,5.7,Glenn Close,22.222222,0.0,9,0
+151,The Rock,7.4,David Morse,88.888889,0.0,9,6
+152,Independence Day,7.0,Bill Pullman,100.0,0.0,9,7
+153,Mission: Impossible,7.1,Emmanuelle Bart,33.333333,0.0,9,3
+154,Ransom,6.6,Brawley Nolte,88.888889,11.111111,9,5
+155,Space Jam,6.4,Bill Murray,77.777778,33.333333,9,3
+156,Twister,6.4,Alan Ruck,77.777778,0.0,9,2
+157,The Hunchback of Notre Dame,6.9,Bill Fagerbakke,88.888889,0.0,9,2
+158,Eraser,6.1,Andy Romano,66.666667,0.0,9,4
+159,Michael,5.7,Andie MacDowell,88.888889,0.0,9,3
+160,Good Will Hunting,8.3,Ben Affleck,44.444444,44.444444,9,0
+161,I Know What You Did Last Summer,5.7,Anne Heche,77.777778,66.666667,9,0
+162,Scream 2,6.2,Heather Graham,44.444444,33.333333,9,1
+163,My Best Friend's Wedding,6.3,Cameron Diaz,77.777778,11.111111,9,0
+164,Liar Liar,6.9,Amanda Donohoe,66.666667,11.111111,9,0
+165,As Good as It Gets,7.7,Cuba Gooding Jr.,77.777778,11.111111,9,3
+166,George of the Jungle,5.4,Abraham Benrubi,88.888889,11.111111,9,0
+167,The Lost World: Jurassic Park,6.6,Arliss Howard,55.555556,22.222222,9,1
+168,Con Air,6.9,Colm Meaney,77.777778,22.222222,9,4
+169,Conspiracy Theory,6.7,Alex McArthur,66.666667,0.0,8,3
+170,Face/Off,7.3,Alessandro Nivola,100.0,22.222222,9,2
+171,Flubber,5.3,Christopher McDonald,100.0,11.111111,9,3
+172,Hercules,7.3,Bobcat Goldthwait,100.0,22.222222,8,2
+173,Air Force One,6.5,Dean Stockwell,77.777778,11.111111,9,1
+174,Men in Black,7.3,Jon Gries,100.0,0.0,9,1
+175,Contact,7.4,David Morse,77.777778,11.111111,9,2
+176,Tomorrow Never Dies,6.5,Gtz Otto,44.444444,0.0,9,1
+177,Batman and Robin,7.8,,0.0,0.0,0,0
+178,Titanic,7.8,Bernard Hill,55.555556,22.222222,9,2
+179,There's Something About Mary,7.1,Ben Stiller,88.888889,11.111111,9,1
+180,The Waterboy,6.1,Adam Sandler,88.888889,22.222222,9,0
+181,Shakespeare in Love,7.1,Antony Sher,0.0,11.111111,9,0
+182,The Rugrats Movie,5.9,Andrea Martin,88.888889,0.0,9,0
+183,Rush Hour,7.0,Chris Penn,33.333333,22.222222,9,0
+184,Stepmom,6.8,Andre B. Blake,88.888889,22.222222,9,0
+185,Patch Adams,6.8,Bob Gunton,88.888889,11.111111,9,2
+186,The Truman Show,8.1,Blair Slater,66.666667,11.111111,9,0
+187,You've Got Mail,6.6,Dabney Coleman,100.0,22.222222,9,2
+188,Saving Private Ryan,8.6,Adam Goldberg,88.888889,44.444444,9,1
+189,The Prince of Egypt,7.1,Danny Glover,66.666667,0.0,9,4
+190,Doctor Dolittle,5.4,Eddie Murphy,88.888889,22.222222,9,2
+191,Deep Impact,6.2,Elijah Wood,77.777778,11.111111,9,3
+192,Mulan,7.6,Eddie Murphy,88.888889,0.0,8,2
+193,Enemy of the State,7.3,Barry Pepper,77.777778,22.222222,9,3
+194,The Mask of Zorro,6.7,Anthony Hopkins,11.111111,11.111111,9,0
+195,A Bug's Life,7.2,Dave Foley,88.888889,11.111111,9,1
+196,Godzilla,5.4,Arabella Field,88.888889,0.0,9,2
+197,Armageddon,6.7,Ben Affleck,88.888889,22.222222,9,1
+198,Lethal Weapon 4,6.6,Chris Rock,77.777778,0.0,9,5
+199,The Blair Witch Project,6.5,Bob Griffin,55.555556,33.333333,9,0
+200,American Pie,7.0,Alyson Hannigan,88.888889,66.666667,9,0
+201,American Beauty,8.3,Allison Janney,100.0,33.333333,9,1
+202,Big Daddy,6.4,Adam Sandler,77.777778,33.333333,8,1
+203,The Sixth Sense,8.1,Bruce Norris,55.555556,55.555556,9,1
+204,Notting Hill,7.1,Dylan Moran,11.111111,11.111111,9,0
+205,The General's Daughter,6.3,Clarence Williams III,88.888889,11.111111,9,2
+206,The Green Mile,8.6,Bonnie Hunt,88.888889,0.0,9,4
+207,The Matrix,8.7,Carrie-Anne Moss,44.444444,22.222222,9,0
+208,Runaway Bride,5.5,Christopher Meloni,88.888889,0.0,9,2
+209,Double Jeopardy,6.5,Annabeth Gish,44.444444,11.111111,9,0
+210,Analyze This,6.7,Bart Tangredi,100.0,11.111111,9,2
+211,The Mummy,7.0,Arnold Vosloo,33.333333,22.222222,9,0
+212,Toy Story 2,7.9,Annie Potts,88.888889,0.0,9,1
+213,Star Wars: Episode I - The Phantom Menace,6.5,Ahmed Best,22.222222,44.444444,9,0
+214,Stuart Little,5.9,Chazz Palminteri,66.666667,11.111111,9,3
+215,The World Is Not Enough,7.4,,0.0,0.0,0,0
+216,Tarzan,7.3,Alex D. Linz,66.666667,22.222222,9,2
+217,Wild Wild West,4.9,Frederique Van Der Wal,44.444444,11.111111,9,2
+218,"Crouching Tiger, Hidden Dragon",7.8,Chen Chang,0.0,22.222222,9,0
+219,Scary Movie,6.2,Anna Faris,33.333333,22.222222,9,0
+220,Big Momma's House,5.1,Anthony Anderson,88.888889,33.333333,9,0
+221,Remember the Titans,7.8,Craig Kirkwood,100.0,66.666667,9,1
+222,Chicken Run,7.0,Imelda Staunton,11.111111,0.0,9,1
+223,Traffic,7.6,Andrew Chavez,33.333333,22.222222,8,1
+224,Erin Brockovich,7.3,Albert Finney,55.555556,0.0,9,0
+225,Meet the Parents,7.0,Ben Stiller,100.0,22.222222,9,2
+226,What Women Want,6.4,Alan Alda,100.0,22.222222,9,1
+227,X-Men,7.4,Anna Paquin,22.222222,33.333333,9,0
+228,Nutty Professor II: The Klumps,4.4,Anna Maria Horsford,66.666667,11.111111,9,3
+229,Cast Away,7.8,David Allen Brooks,33.333333,0.0,9,1
+230,Charlie's Angels,5.5,Bill Murray,88.888889,22.222222,9,1
+231,What Lies Beneath,6.6,Dennison Samaroo,66.666667,33.333333,9,1
+232,Gladiator,8.5,Connie Nielsen,0.0,11.111111,9,0
+233,The Patriot,7.2,Chris Cooper,44.444444,22.222222,9,2
+234,The Perfect Storm,6.4,Allen Payne,100.0,11.111111,9,1
+235,How the Grinch Stole Christmas,6.1,Bill Irwin,77.777778,22.222222,9,0
+236,Mission: Impossible II,6.1,Brendan Gleeson,33.333333,11.111111,9,2
+237,Dinosaur,6.5,Alfre Woodard,88.888889,11.111111,9,1
+238,American Pie 2,6.4,Alyson Hannigan,100.0,100.0,9,0
+239,Spy Kids,5.4,Alan Cumming,77.777778,33.333333,9,1
+240,The Princess Diaries,6.3,Anne Hathaway,77.777778,66.666667,9,1
+241,The Fast and the Furious,6.8,Chad Lindberg,88.888889,66.666667,9,0
+242,Shrek,7.8,Bobby Block,44.444444,11.111111,8,1
+243,A Beautiful Mind,8.2,Adam Goldberg,55.555556,66.666667,9,0
+244,Vanilla Sky,6.9,Cameron Diaz,55.555556,44.444444,9,2
+245,Dr. Dolittle 2,4.7,Andy Richter,88.888889,33.333333,9,1
+246,Ocean's Eleven,7.8,Bernie Mac,55.555556,0.0,9,0
+247,Hannibal,6.8,Anthony Hopkins,33.333333,0.0,9,2
+248,Rush Hour 2,6.6,Alan King,44.444444,44.444444,9,1
+249,Black Hawk Down,7.7,Eric Bana,55.555556,44.444444,9,1
+250,Jurassic Park III,5.9,Alessandro Nivola,66.666667,22.222222,9,1
+251,The Lord of the Rings: The Fellowship of the Ring,8.8,Alan Howard,11.111111,33.333333,9,1
+252,The Mummy Returns,6.3,Alun Armstrong,22.222222,55.555556,9,0
+253,Planet of the Apes,5.7,Cary-Hiroyuki Tagawa,44.444444,22.222222,9,0
+254,Lara Croft: Tomb Raider,5.8,Angelina Jolie,22.222222,11.111111,9,1
+255,"Monsters, Inc.",8.0,Billy Crystal,88.888889,11.111111,9,2
+256,Harry Potter and the Sorcerer's Stone,7.6,Daniel Radcliffe,0.0,22.222222,9,0
+257,Pearl Harbor,6.2,Alec Baldwin,66.666667,77.777778,9,1
+258,My Big Fat Greek Wedding,6.5,Christina Eleusiniotis,22.222222,11.111111,9,0
+259,Sweet Home Alabama,6.2,Candice Bergen,88.888889,44.444444,9,0
+260,The Ring,7.1,Amber Tamblyn,55.555556,44.444444,9,0
+261,Mr. Deeds,5.8,Adam Sandler,77.777778,11.111111,9,0
+262,Ice Age,7.5,Alan Tudyk,77.777778,22.222222,9,0
+263,The Bourne Identity,7.9,Adewale Akinnuoye-Agbaje,55.555556,44.444444,8,0
+264,Austin Powers in Goldmember,6.2,Beyonc,66.666667,33.333333,9,0
+265,The Santa Clause 2,5.6,Danielle Woodman,77.777778,55.555556,9,0
+266,xXx,5.9,Asia Argento,33.333333,44.444444,9,1
+267,Signs,6.7,Abigail Breslin,66.666667,55.555556,9,1
+268,The Lord of the Rings: The Two Towers,8.7,Billy Boyd,11.111111,33.333333,9,1
+269,Lilo & Stitch,6.7,,0.0,0.0,0,0
+270,Scooby-Doo,5.0,Charles Stan Frazier,55.555556,55.555556,9,0
+271,Harry Potter and the Chamber of Secrets,7.4,Daniel Radcliffe,11.111111,44.444444,9,0
+272,Minority Report,7.6,Jessica Capshaw,77.777778,11.111111,7,1
+273,Star Wars: Episode II - Attack of the Clones,6.6,Christopher Lee,11.111111,33.333333,9,1
+274,Spider-Man,7.3,Cliff Robertson,88.888889,44.444444,9,0
+275,Men in Black 2,7.4,,0.0,0.0,0,0
+276,Die Another Day,6.1,Halle Berry,44.444444,33.333333,9,1
+277,Bringing Down the House,5.6,Angus T. Jones,77.777778,55.555556,9,1
+278,Elf,6.9,Bob Newhart,88.888889,22.222222,9,1
+279,Spy Kids 3-D: Game Over,4.2,Alexa PenaVega,55.555556,33.333333,9,0
+280,Cheaper by the Dozen,5.8,Alyson Stoner,100.0,77.777778,9,1
+281,Anger Management,6.2,Adam Sandler,77.777778,11.111111,9,1
+282,2 Fast 2 Furious,5.9,Amaury Nolasco,88.888889,77.777778,9,0
+283,Bruce Almighty,6.7,Catherine Bell,77.777778,0.0,9,1
+284,S.W.A.T.,6.0,Brian Van Holt,77.777778,44.444444,9,2
+285,Something's Gotta Give,6.7,Amanda Peet,77.777778,22.222222,9,1
+286,Seabiscuit,7.3,Carl M. Craig,66.666667,0.0,9,0
+287,Finding Nemo,8.1,Albert Brooks,100.0,11.111111,9,0
+288,The Lord of the Rings: The Return of the King,8.9,Ali Astin,22.222222,33.333333,9,1
+289,X2: X-Men United,7.4,Anna Paquin,33.333333,33.333333,9,0
+290,Bad Boys II,6.6,Gabrielle Union,66.666667,33.333333,9,1
+291,Hulk,5.6,Cara Buono,88.888889,55.555556,9,2
+292,Pirates of the Caribbean: The Curse of the Black Pearl,8.0,Damian O'Hare,22.222222,55.555556,9,1
+293,The Last Samurai,7.7,Billy Connolly,44.444444,11.111111,9,3
+294,The Matrix Reloaded,7.2,Alima Ashton-Sheibu,22.222222,0.0,9,0
+295,The Matrix Revolutions,6.7,Francine Bell,22.222222,22.222222,9,0
+296,Terminator 3: Rise of the Machines,6.3,Arnold Schwarzenegger,88.888889,44.444444,9,1
+297,Fahrenheit 9/11,7.5,Al Gore,88.888889,11.111111,3,0
+298,DodgeBall: A True Underdog Story,6.1,,0.0,0.0,0,0
+299,The Passion of the Christ,7.1,Christo Jivkov,11.111111,11.111111,9,0
+300,The Village,6.5,Adrien Brody,66.666667,33.333333,9,0
+301,50 First Dates,6.8,Adam Sandler,88.888889,22.222222,9,1
+302,The Bourne Supremacy,7.7,Brian Cox,44.444444,55.555556,9,0
+303,Shark Tale,6.0,Angelina Jolie,88.888889,22.222222,9,3
+304,Meet the Fockers,6.3,Barbra Streisand,77.777778,0.0,8,2
+305,The Incredibles,8.0,Craig T. Nelson,66.666667,11.111111,8,1
+306,National Treasure,6.8,Christopher Plummer,44.444444,22.222222,9,3
+307,Ocean's Twelve,6.5,Anne Jacques,33.333333,0.0,9,0
+308,"I, Robot",7.1,Adrian Ricard,66.666667,22.222222,9,2
+309,The Day After Tomorrow,6.4,Arjay Smith,88.888889,55.555556,9,1
+310,Harry Potter and the Prisoner of Azkaban,7.9,Adrian Rawlins,0.0,33.333333,9,0
+311,Lemony Snicket's A Series of Unfortunate Events,6.8,Billy Connolly,33.333333,55.555556,8,0
+312,Shrek 2,7.2,Antonio Banderas,22.222222,11.111111,9,1
+313,Van Helsing,6.1,Alun Armstrong,22.222222,33.333333,9,0
+314,The Polar Express,6.6,Andy Pellick,44.444444,11.111111,7,1
+315,Troy,7.2,Adoni Maropis,33.333333,22.222222,9,0
+316,Spider-Man 2,7.3,Alfred Molina,66.666667,44.444444,9,0
+317,The 40 Year Old Virgin,7.7,,0.0,0.0,0,0
+318,Walk the Line,7.8,Dallas Roberts,77.777778,66.666667,9,1
+319,Wedding Crashers,6.9,Bradley Cooper,55.555556,55.555556,9,1
+320,Flightplan,6.3,Assaf Cohen,66.666667,55.555556,9,0
+321,The Pacifier,5.6,Brad Garrett,88.888889,33.333333,9,0
+322,Hitch,6.6,Adam Arkin,88.888889,55.555556,9,1
+323,Robots,6.3,Amanda Bynes,88.888889,11.111111,9,0
+324,Madagascar,6.9,Andy Richter,77.777778,33.333333,9,1
+325,The Longest Yard,6.4,Adam Sandler,88.888889,11.111111,9,1
+326,Fantastic Four,5.7,Chris Evans,66.666667,55.555556,9,1
+327,Fun with Dick and Jane,6.1,Aaron Michael Drozin,77.777778,22.222222,9,4
+328,Mr. & Mrs. Smith,6.7,,0.0,0.0,0,0
+329,Star Wars: Episode III - Revenge of the Sith,7.5,Anthony Daniels,22.222222,33.333333,9,2
+330,War of the Worlds,6.5,Dakota Fanning,55.555556,33.333333,9,3
+331,Batman Begins,8.2,Christian Bale,11.111111,33.333333,9,0
+332,Charlie and the Chocolate Factory,6.6,Christopher Lee,22.222222,22.222222,9,1
+333,Chicken Little,5.7,Amy Sedaris,88.888889,11.111111,9,3
+334,Harry Potter and the Goblet of Fire,7.7,Daniel Radcliffe,0.0,66.666667,9,0
+335,"The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",6.9,Anna Popplewell,0.0,55.555556,9,0
+336,King Kong,7.2,Adrien Brody,33.333333,33.333333,9,1
+337,Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan,7.3,Charlize Theron,60.0,60.0,4,2
+338,The Devil Wears Prada,6.9,Adrian Grenier,77.777778,66.666667,9,3
+339,Scary Movie 4,5.0,Anna Faris,88.888889,33.333333,9,4
+340,The Break-Up,5.8,Cole Hauser,88.888889,44.444444,9,3
+341,The Pursuit of Happyness,8.0,Brian Howe,77.777778,22.222222,9,5
+342,Dreamgirls,6.5,Anika Noni Rose,88.888889,55.555556,9,4
+343,Talladega Nights: The Ballad of Ricky Bobby,6.6,Amy Adams,77.777778,33.333333,9,2
+344,Ice Age: The Meltdown,6.8,Chris Wedge,77.777778,44.444444,9,3
+345,Over the Hedge,6.7,Allison Janney,66.666667,0.0,9,2
+346,Click,6.4,Adam Sandler,88.888889,44.444444,9,5
+347,The Departed,8.5,Alec Baldwin,88.888889,55.555556,9,3
+348,Happy Feet,6.4,Brittany Murphy,88.888889,55.555556,9,2
+349,Night at the Museum,6.4,Ben Stiller,77.777778,11.111111,9,4
+350,Cars,7.1,Bonnie Hunt,88.888889,0.0,9,2
+351,The Da Vinci Code,6.6,Alfred Molina,11.111111,22.222222,9,1
+352,Mission: Impossible III,6.9,Billy Crudup,77.777778,55.555556,9,3
+353,Casino Royale,8.0,Caterina Murino,11.111111,22.222222,9,0
+354,Pirates of the Caribbean: Dead Man's Chest,7.3,Bill Nighy,22.222222,44.444444,9,1
+355,X-Men: The Last Stand,6.7,Anna Paquin,33.333333,33.333333,9,0
+356,Superman Returns,6.0,Brandon Routh,100.0,44.444444,9,4
+357,Juno,7.4,Allison Janney,66.666667,44.444444,9,2
+358,Knocked Up,6.9,Charlyne Yi,77.777778,88.888889,9,3
+359,Wild Hogs,5.8,Jill Hennessy,66.666667,11.111111,9,2
+360,300,8.1,,0.0,0.0,0,0
+361,Alvin and the Chipmunks,5.2,Allison Karman,77.777778,55.555556,9,3
+362,The Bourne Ultimatum,8.0,Albert Finney,55.555556,44.444444,9,1
+363,The Simpsons Movie,7.3,Albert Brooks,77.777778,0.0,9,2
+364,Enchanted,7.0,Amy Adams,66.666667,44.444444,9,0
+365,American Gangster,7.8,Chiwetel Ejiofor,66.666667,22.222222,9,2
+366,Live Free or Die Hard,7.1,Andrew Friedman,55.555556,44.444444,9,3
+367,Fantastic 4: Rise of the Silver Surfer,5.6,Andre Braugher,77.777778,44.444444,8,0
+368,National Treasure: Book of Secrets,6.5,Bruce Greenwood,66.666667,22.222222,9,3
+369,Rush Hour 3,6.2,Chris Tucker,11.111111,44.444444,9,0
+370,Ratatouille,8.0,Brad Garrett,55.555556,33.333333,9,2
+371,Transformers,7.0,Anthony Anderson,77.777778,66.666667,9,3
+372,Harry Potter and the Order of the Phoenix,7.5,Daniel Radcliffe,11.111111,44.444444,9,0
+373,I Am Legend,7.2,Alice Braga,66.666667,44.444444,9,1
+374,Shrek the Third,6.0,Antonio Banderas,33.333333,22.222222,9,2
+375,Spider-Man 3,6.2,Bryce Dallas Howard,88.888889,55.555556,9,2
+376,Pirates of the Caribbean: At World's End,7.1,Bill Nighy,22.222222,44.444444,9,1
+377,Slumdog Millionaire,8.0,Anil Kapoor,0.0,22.222222,9,0
+378,Gran Torino,8.1,Ahney Her,77.777778,33.333333,9,1
+379,Twilight,5.2,Billy Burke,100.0,77.777778,9,1
+380,Mamma Mia!,6.4,Amanda Seyfried,22.222222,33.333333,9,0
+381,Marley and Me,4.7,,0.0,0.0,0,0
+382,Sex and the City,5.6,Candice Bergen,88.888889,11.111111,9,1
+383,Wanted,6.7,Angelina Jolie,33.333333,44.444444,9,2
+384,Get Smart,6.5,Alan Arkin,88.888889,22.222222,9,3
+385,Horton Hears a Who!,6.8,Amy Poehler,55.555556,66.666667,9,2
+386,Kung Fu Panda,7.5,Angelina Jolie,55.555556,22.222222,9,2
+387,Iron Man,7.9,Bill Smitrovich,88.888889,22.222222,9,1
+388,The Incredible Hulk,6.7,Christina Cabot,77.777778,11.111111,9,2
+389,Hancock,6.4,Charlize Theron,66.666667,55.555556,9,2
+390,Madagascar: Escape 2 Africa,6.6,Alec Baldwin,88.888889,22.222222,9,2
+391,The Curious Case of Benjamin Button,7.8,Brad Pitt,33.333333,11.111111,9,0
+392,WALL-E,7.6,,0.0,0.0,0,0
+393,Indiana Jones and the Kingdom of the Crystal Skull,6.1,Cate Blanchett,44.444444,11.111111,9,2
+394,The Dark Knight,9.0,Aaron Eckhart,44.444444,44.444444,9,2
+395,Quantum of Solace,6.6,Daniel Craig,22.222222,33.333333,9,0
+396,The Chronicles of Narnia: Prince Caspian,6.5,Anna Popplewell,11.111111,66.666667,9,0
+397,Taken,7.6,,0.0,0.0,0,0
+398,Paul Blart: Mall Cop,5.2,Adam Ferrara,87.5,62.5,8,0
+399,The Blind Side,7.6,Adriane Lenox,88.888889,33.333333,9,1
+400,The Hangover,7.7,Bradley Cooper,100.0,55.555556,9,3
+401,The Proposal,6.7,Aasif Mandvi,55.555556,22.222222,9,0
+402,The Twilight Saga: New Moon,4.7,Anna Kendrick,77.777778,77.777778,9,1
+403,Alvin and the Chipmunks: The Squeakquel,4.5,Amy Poehler,100.0,88.888889,9,4
+404,Fast and Furious,8.8,,0.0,0.0,0,0
+405,Ice Age: Dawn of the Dinosaurs,6.9,Bill Hader,66.666667,55.555556,9,1
+406,Sherlock Holmes,7.6,Eddie Marsan,11.111111,33.333333,9,1
+407,X-Men Origins: Wolverine,6.6,Daniel Henney,44.444444,66.666667,9,2
+408,Star Trek,7.9,Bruce Greenwood,44.444444,66.666667,9,3
+409,Night at the Museum: Battle of the Smithsonian,6.0,Alain Chabat,55.555556,11.111111,9,3
+410,Transformers: Revenge of the Fallen,6.0,Isabel Lucas,77.777778,66.666667,9,3
+411,Monsters vs Aliens,7.7,,0.0,0.0,0,0
+412,Up,8.2,Bob Peterson,55.555556,11.111111,9,0
+413,G.I. Joe: The Rise of Cobra,5.8,Adewale Akinnuoye-Agbaje,33.333333,77.777778,9,0
+414,2012,4.3,,0.0,0.0,0,0
+415,Avatar,7.8,CCH Pounder,77.777778,55.555556,9,1
+416,Harry Potter and the Half-Blood Prince,7.6,Bonnie Wright,0.0,44.444444,9,0
+417,The King's Speech,8.0,Adrian Scarborough,0.0,0.0,9,0
+418,True Grit,7.6,Barry Pepper,66.666667,44.444444,9,1
+419,The Karate Kid,6.2,Jackie Chan,22.222222,44.444444,9,1
+420,The Twilight Saga: Eclipse,5.0,Anna Kendrick,66.666667,88.888889,9,0
+421,Despicable Me,7.6,Dana Gaier,44.444444,55.555556,9,1
+422,Shutter Island,8.1,Ben Kingsley,66.666667,33.333333,9,1
+423,Grown Ups,5.9,Adam Sandler,88.888889,11.111111,9,2
+424,Little Fockers,5.5,Barbra Streisand,88.888889,11.111111,9,2
+425,Clash of the Titans,5.8,Alexa Davalos,0.0,44.444444,9,0
+426,Megamind,7.2,Ben Stiller,88.888889,33.333333,9,3
+427,The Last Airbender,4.1,Aasif Mandvi,44.444444,55.555556,9,1
+428,Inception,8.8,Cillian Murphy,44.444444,77.777778,9,2
+429,How to Train Your Dragon,8.1,America Ferrera,55.555556,77.777778,9,3
+430,Shrek Forever After,6.3,Antonio Banderas,55.555556,33.333333,9,3
+431,Tron Legacy,6.9,,0.0,0.0,0,0
+432,Alice in Wonderland,6.4,Alan Rickman,33.333333,33.333333,9,1
+433,Iron Man 2,7.0,Clark Gregg,100.0,22.222222,9,5
+434,Toy Story 3,8.3,Don Rickles,100.0,0.0,9,3
+435,Harry Potter and the Deathly Hallows: Part 1,7.7,Bill Nighy,0.0,55.555556,9,0
+436,Tangled,7.7,Brad Garrett,100.0,22.222222,9,4
+437,The Help,8.1,Ahna O'Reilly,88.888889,66.666667,9,0
+438,Bridesmaids,6.8,Elaine Kao,55.555556,44.444444,8,1
+439,Alvin and the Chipmunks: Chipwrecked,4.3,Amy Poehler,100.0,88.888889,9,3
+440,The Hangover Part II,6.4,Bradley Cooper,88.888889,44.444444,9,4
+441,Rio,6.9,Jane Lynch,44.444444,33.333333,9,1
+442,Rise of the Planet of the Apes,7.6,Andy Serkis,44.444444,33.333333,9,2
+443,The Twilight Saga: Breaking Dawn - Part 1,4.9,Ashley Greene,77.777778,77.777778,9,2
+444,The Smurfs,5.4,Hank Azaria,77.777778,66.666667,7,4
+445,Fast Five,7.3,Gal Gadot,66.666667,88.888889,9,1
+446,Harry Potter and the Deathly Hallows: Part 2,8.1,Alan Rickman,0.0,66.666667,9,0
+447,Sherlock Holmes: A Game of Shadows,7.5,Geraldine James,11.111111,44.444444,9,1
+448,Puss in Boots: The Three Diablos,7.8,,0.0,0.0,0,0
+449,Captain America: The First Avenger,6.9,Chris Evans,44.444444,55.555556,9,1
+450,Mission: Impossible - Ghost Protocol,7.4,Anil Kapoor,33.333333,33.333333,9,1
+451,Thor,7.0,Anthony Hopkins,33.333333,55.555556,9,0
+452,Kung Fu Panda 2,7.2,Angelina Jolie,66.666667,22.222222,9,2
+453,Transformers: Dark of the Moon,6.2,Frances McDormand,88.888889,44.444444,9,4
+454,Cars 2,6.1,Brent Musburger,55.555556,11.111111,9,2
+455,Pirates of the Caribbean: On Stranger Tides,6.6,Astrid Berges-Frisbey,11.111111,44.444444,9,1
+456,Taken 2,6.2,D.B. Sweeney,55.555556,22.222222,9,0
+457,Ted,6.9,Aedin Mincks,77.777778,77.777778,9,2
+458,Les Miserables,7.5,,0.0,0.0,0,0
+459,Lincoln,7.3,Daniel Day-Lewis,88.888889,11.111111,9,0
+460,The Lorax,6.4,Betty White,88.888889,66.666667,9,4
+461,The Hunger Games,7.2,Elizabeth Banks,77.777778,55.555556,9,0
+462,Hotel Transylvania,7.1,Adam Sandler,100.0,33.333333,9,3
+463,Ice Age: Continental Drift,6.6,Alain Chabat,44.444444,33.333333,9,1
+464,Django Unchained,8.4,Christoph Waltz,77.777778,33.333333,9,2
+465,The Twilight Saga: Breaking Dawn - Part 2,5.5,Ashley Greene,77.777778,100.0,9,3
+466,Madagascar 3: Europe's Most Wanted,6.8,Andy Richter,88.888889,22.222222,9,1
+467,Wreck-It Ralph,7.7,Alan Tudyk,100.0,55.555556,9,3
+468,Snow White and the Huntsman,6.1,Bob Hoskins,11.111111,66.666667,9,0
+469,Brave,7.1,Billy Connolly,0.0,22.222222,8,0
+470,Skyfall,7.7,Albert Finney,0.0,44.444444,9,0
+471,The Amazing Spider-Man,6.9,Andrew Garfield,77.777778,22.222222,9,2
+472,The Avengers,8.0,Chris Evans,66.666667,66.666667,9,2
+473,Men in Black 3,6.8,Emma Thompson,77.777778,44.444444,9,5
+474,The Dark Knight Rises,8.4,Anne Hathaway,44.444444,55.555556,9,2
+475,The Hobbit: An Unexpected Journey,7.8,Dean O'Gorman,11.111111,33.333333,9,1
+476,The Conjuring,7.5,Hayley McFarland,100.0,77.777778,9,2
+477,Identity Thief,5.7,Amanda Peet,88.888889,55.555556,9,3
+478,We're The Millers,7.7,,0.0,0.0,0,0
+479,American Hustle,7.2,Amy Adams,66.666667,77.777778,9,2
+480,The Heat,6.6,Dan Bakkedahl,88.888889,55.555556,9,2
+481,Despicable Me 2,7.4,Benjamin Bratt,55.555556,33.333333,9,1
+482,The Great Gatsby,7.3,Adelaide Clemens,0.0,11.111111,9,0
+483,Gravity,7.7,Amy Warren,42.857143,0.0,7,0
+484,The Hunger Games: Catching Fire,7.5,Jack Quaid,66.666667,55.555556,9,3
+485,The Croods,7.2,Catherine Keener,75.0,37.5,8,3
+486,Frozen,7.5,Alan Tudyk,88.888889,77.777778,9,5
+487,Fast & Furious 6,7.0,,0.0,0.0,0,0
+488,Thor: The Dark World,6.9,Anthony Hopkins,22.222222,66.666667,9,1
+489,Star Trek Into Darkness,7.7,Anton Yelchin,33.333333,88.888889,9,2
+490,Oz: The Great and Powerful,6.3,,0.0,0.0,0,0
+491,Iron Man 3,7.2,Ben Kingsley,55.555556,44.444444,9,3
+492,World War Z,7.0,Brad Pitt,55.555556,55.555556,9,3
+493,Monsters University,7.3,Billy Crystal,77.777778,33.333333,9,4
+494,Man of Steel,7.1,Amy Adams,55.555556,44.444444,9,1
+495,The Hobbit: The Desolation of Smaug,7.8,Dean O'Gorman,11.111111,33.333333,9,1
+496,Neighbors,6.3,Brian Huskey,55.555556,66.666667,8,4
+497,22 Jump Street,7.0,Amber Stevens West,66.666667,55.555556,9,4
+498,American Sniper,7.3,Ben Reed,33.333333,33.333333,9,2
+499,The Lego Movie,7.8,Alison Brie,44.444444,55.555556,9,2
+500,Gone Girl,8.1,Ben Affleck,88.888889,55.555556,9,4
+501,Divergent,6.7,Ansel Elgort,66.666667,66.666667,9,3
+502,Teenage Mutant Ninja Turtles,5.8,Alan Ritchson,77.777778,77.777778,8,5
+503,The Hunger Games: Mockingjay - Part 1,6.6,Donald Sutherland,66.666667,55.555556,9,3
+504,How to Train Your Dragon 2,7.8,America Ferrera,55.555556,66.666667,9,3
+505,Godzilla,6.4,Aaron Taylor-Johnson,55.555556,55.555556,9,3
+506,Big Hero 6,7.8,Alan Tudyk,100.0,77.777778,9,5
+507,Interstellar,8.6,Bill Irwin,77.777778,44.444444,9,2
+508,Captain America: The Winter Soldier,7.7,Anthony Mackie,77.777778,66.666667,9,5
+509,Dawn of the Planet of the Apes,7.6,Andy Serkis,44.444444,55.555556,9,3
+510,Guardians of the Galaxy,8.0,Bradley Cooper,77.777778,55.555556,9,4
+511,Maleficent,7.0,,0.0,0.0,0,0
+512,The Amazing Spider-Man 2,6.6,,0.0,0.0,0,0
+513,Transformers: Age of Extinction,5.6,,0.0,0.0,0,0
+514,X-Men: Days of Future Past,7.9,,0.0,0.0,0,0
+515,The Hobbit: The Battle of the Five Armies,7.4,,0.0,0.0,0,0
+516,Straight Outta Compton,7.8,,0.0,0.0,0,0
+517,Pitch Perfect 2,6.4,,0.0,0.0,0,0
+518,Fifty Shades of Grey,4.1,,0.0,0.0,0,0
+519,The SpongeBob Movie: Sponge Out of Water,6.0,,0.0,0.0,0,0
+520,Minions,,,0.0,0.0,0,0
+521,Hotel Transylvania 2,6.7,,0.0,0.0,0,0
+522,Cinderella,6.9,,0.0,0.0,0,0
+523,The Martian,8.0,,0.0,0.0,0,0
+524,San Andreas,6.1,,0.0,0.0,0,0
+525,Ant-Man,7.3,,0.0,0.0,0,0
+526,Home,6.6,,0.0,0.0,0,0
+527,The Revenant,8.0,,0.0,0.0,0,0
+528,Jurassic World,7.0,,0.0,0.0,0,0
+529,Mission: Impossible - Rogue Nation,7.4,,0.0,0.0,0,0
+530,The Hunger Games: Mockingjay - Part 2,6.6,,0.0,0.0,0,0
+531,Inside Out,8.1,,0.0,0.0,0,0
+532,Furious 7,7.1,,0.0,0.0,0,0
+533,Spectre,6.8,,0.0,0.0,0,0
+534,Star Wars: The Force Awakens,7.8,,0.0,0.0,0,0
+535,Avengers: Age of Ultron,7.3,,0.0,0.0,0,0
+536,Hidden Figures,7.9,,0.0,0.0,0,0
+537,La La Land,8.0,,0.0,0.0,0,0
+538,Deadpool,8.0,,0.0,0.0,0,0
+539,The Secret Life of Pets,6.5,,0.0,0.0,0,0
+540,Sing,7.1,,0.0,0.0,0,0
+541,Jason Bourne,6.6,,0.0,0.0,0,0
+542,Trolls,6.4,,0.0,0.0,0,0
+543,Ghostbusters,6.9,,0.0,0.0,0,0
+544,Zootopia,8.0,,0.0,0.0,0,0
+545,Moana,7.6,,0.0,0.0,0,0
+546,Doctor Strange,7.5,,0.0,0.0,0,0
+547,The Jungle Book,7.4,,0.0,0.0,0,0
+548,Suicide Squad,5.9,,0.0,0.0,0,0
+549,X-Men: Apocalypse,6.9,,0.0,0.0,0,0
+550,Fantastic Beasts and Where to Find Them,7.3,,0.0,0.0,0,0
+551,Star Trek Beyond,7.0,,0.0,0.0,0,0
+552,Finding Dory,7.3,,0.0,0.0,0,0
+553,Rogue One: A Star Wars Story,7.3,,0.0,0.0,0,0
+554,Batman v Superman: Dawn of Justice,6.5,,0.0,0.0,0,0
+555,Captain America: Civil War,7.8,,0.0,0.0,0,0
+556,Get Out,7.7,,0.0,0.0,0,0
+557,It,7.3,,0.0,0.0,0,0
+558,The LEGO Batman Movie,7.3,,0.0,0.0,0,0
+559,Despicable Me 3,6.3,,0.0,0.0,0,0
+560,The Greatest Showman,7.6,,0.0,0.0,0,0
+561,Logan,8.1,,0.0,0.0,0,0
+562,Dunkirk,7.8,,0.0,0.0,0,0
+563,The Boss Baby,6.3,,0.0,0.0,0,0
+564,Wonder Woman,7.4,,0.0,0.0,0,0
+565,Jumanji: Welcome to the Jungle,6.9,,0.0,0.0,0,0
+566,Beauty and the Beast,7.1,,0.0,0.0,0,0
+567,Spider-Man: Homecoming,7.4,,0.0,0.0,0,0
+568,Coco,8.4,,0.0,0.0,0,0
+569,Thor: Ragnarok,7.9,,0.0,0.0,0,0
+570,Kong: Skull Island,6.6,,0.0,0.0,0,0
+571,Guardians of the Galaxy Vol. 2,7.6,,0.0,0.0,0,0
+572,Pirates of the Caribbean: Dead Men Tell No Tales,6.5,,0.0,0.0,0,0
+573,The Fate of the Furious,6.6,,0.0,0.0,0,0
+574,Justice League,6.1,,0.0,0.0,0,0
+575,Star Wars: The Last Jedi,6.9,,0.0,0.0,0,0
+576,A Quiet Place,7.5,,0.0,0.0,0,0
+577,Crazy Rich Asians,6.9,,0.0,0.0,0,0
+578,A Star is Born,7.6,,0.0,0.0,0,0
+579,Bohemian Rhapsody,7.9,,0.0,0.0,0,0
+580,Dr. Seuss' The Grinch,6.4,,0.0,0.0,0,0
+581,Hotel Transylvania 3: Summer Vacation,6.3,,0.0,0.0,0,0
+582,Spider-Man: Into the Spider-Verse,8.4,,0.0,0.0,0,0
+583,Deadpool 2,7.7,,0.0,0.0,0,0
+584,Venom,6.7,,0.0,0.0,0,0
+585,Mary Poppins Returns,6.7,,0.0,0.0,0,0
+586,Aquaman,6.9,,0.0,0.0,0,0
+587,Jurassic World: Fallen Kingdom,6.2,,0.0,0.0,0,0
+588,Ralph Breaks the Internet,7.0,,0.0,0.0,0,0
+589,Mission: Impossible - Fallout,7.7,,0.0,0.0,0,0
+590,Ant-Man and the Wasp,7.0,,0.0,0.0,0,0
+591,Black Panther,7.3,,0.0,0.0,0,0
+592,Incredibles 2,7.6,,0.0,0.0,0,0
+593,Fantanstic Beasts: The Crimes of Grindelwald,6.5,,0.0,0.0,0,0
+594,Solo: A Star Wars Story,6.9,,0.0,0.0,0,0
+595,Avengers: Infinity War,8.4,,0.0,0.0,0,0
+596,Glass,6.6,,0.0,0.0,0,0
+597,Us,6.8,,0.0,0.0,0,0
+598,The Upside,7.0,,0.0,0.0,0,0
+599,John Wick: Chapter 3 - Parabellum,7.4,,0.0,0.0,0,0
+600,It: Chapter Two,6.5,,0.0,0.0,0,0
+601,The Secret Life of Pets 2,6.5,,0.0,0.0,0,0
+602,Once Upon a Time in Hollywood,7.6,,0.0,0.0,0,0
+603,The LEGO Movie 2: The Second Part,6.6,,0.0,0.0,0,0
+604,Shazam!,7.0,,0.0,0.0,0,0
+605,How to Train Your Dragon: The Hidden World,7.5,,0.0,0.0,0,0
+606,Pokemon Detective Pikachu,6.6,,0.0,0.0,0,0
+607,Spider-Man: Far from Home,7.4,,0.0,0.0,0,0
+608,Dumbo,6.3,,0.0,0.0,0,0
+609,Captain Marvel,6.8,,0.0,0.0,0,0
+610,Aladdin,6.9,,0.0,0.0,0,0
+611,Godzilla: King of the Monsters,6.0,,0.0,0.0,0,0
+612,Toy Story 4,7.7,,0.0,0.0,0,0
+613,Fast & Furious Presents: Hobbs & Shaw,6.5,,0.0,0.0,0,0
+614,The Lion King,6.8,,0.0,0.0,0,0
+615,Tenet,7.4,,0.0,0.0,0,0
+616,Hamilton,8.4,,0.0,0.0,0,0
+617,The Father,8.3,,0.0,0.0,0,0
+618,A Quiet Place Part 2,7.2,,0.0,0.0,0,0
+619,Emma,6.7,,0.0,0.0,0,0
+620,Wonder Woman,5.4,,0.0,0.0,0,0
+621,Soul,8.1,,0.0,0.0,0,0
+622,Sonic the Hedgehog,6.5,,0.0,0.0,0,0
+623,Enola Holmes,6.6,,0.0,0.0,0,0
+624,Mulan,5.7,,0.0,0.0,0,0
+626,Greenland,6.4,,0.0,0.0,0,0
+627,Avengers: Endgame,8.4,,0.0,0.0,0,0
+628,West Side Story,7.5,,0.0,0.0,0,0
+629,Free Guy,7.2,,0.0,0.0,0,0
+630,Spiderman:No Way Home,8.7,,0.0,0.0,0,0
+631,Encanto,7.3,,0.0,0.0,0,0
+632,Dune,8.1,,0.0,0.0,0,0
+633,No Time to Die,7.3,,0.0,0.0,0,0
+634,"tick, tick…BOOM!",7.5,,0.0,0.0,0,0
+635,Venon: Let There Be Carnage,6.0,,0.0,0.0,0,0

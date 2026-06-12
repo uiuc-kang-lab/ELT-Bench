@@ -1,0 +1,20 @@
+________________________________________________________________________________
+SRDEL: 96.00 % (over 100 tasks)
+SRDT: 22.66 % (over 203 models)
+Total matched columns: 1572
+Total unmatched columns: 660
+Databases where ALL tables are perfect: 12
+  - app_store (1 table(s))
+  - authors (1 table(s))
+  - beer_factory (2 table(s))
+  - food_inspection (1 table(s))
+  - human_resources (2 table(s))
+  - ice_hockey_draft (1 table(s))
+  - instagram_business (1 table(s))
+  - law_episode (2 table(s))
+  - menu (1 table(s))
+  - pinterest (4 table(s))
+  - shakespeare (1 table(s))
+  - simpson_episodes (1 table(s))
+________________________________________________________________________________
+

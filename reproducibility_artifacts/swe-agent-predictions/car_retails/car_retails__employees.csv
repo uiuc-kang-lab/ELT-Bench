@@ -1,0 +1,24 @@
+EMPLOYEENUMBER,OFFICECODE,NAME,NUMBER_OF_CUSTOMERS,IS_IN_SYDNEY,PRODUCT_NAME_OF_THE_HIGHEST_AMOUNT_OF_ORDER,CUSTOMER_MADE_HIGHEST_PAYMENT,HIGHEST_CUSTOMER_CREDIT_LIMIT
+1002,1,Diane Murphy,0,0,,,
+1056,1,Mary Patterson,0,0,,,
+1076,1,Jeff Firrelli,0,0,,,
+1088,6,William Patterson,0,1,,,
+1102,4,Gerard Bondur,0,0,,,
+1143,1,Anthony Bow,0,0,,,
+1165,1,Leslie Jennings,6,0,1952 Alpine Renault 1300,Mini Gifts Distributors Ltd.,210500.0
+1166,1,Leslie Thompson,6,0,1948 Porsche Type 356 Roadster,Toys4GrownUps.com,105000.0
+1188,2,Julie Firrelli,6,0,1952 Alpine Renault 1300,Mini Creations Ltd.,94500.0
+1216,2,Steve Patterson,6,0,1992 Ferrari 360 Spider red,Online Diecast Creations Co.,123700.0
+1286,3,Foon Yue Tseng,7,0,1998 Chrysler Plymouth Prowler,Muscle Machine Inc,138500.0
+1323,3,George Vanauf,8,0,2003 Harley-Davidson Eagle Drag Bike,Land of Toys Inc.,114900.0
+1337,4,Loui Bondur,6,0,2001 Ferrari Enzo,"Saveley & Henriot, Co.",123900.0
+1370,4,Gerard Hernandez,7,0,1992 Ferrari 360 Spider red,Euro+ Shopping Channel,227600.0
+1401,4,Pamela Castillo,10,0,2001 Ferrari Enzo,Rovelli Gifts,121400.0
+1501,7,Larry Bott,8,0,1992 Ferrari 360 Spider red,"AV Stores, Co.",136800.0
+1504,7,Barry Jones,9,0,1968 Ford Mustang,Baane Mini Imports,120400.0
+1611,6,Andy Fixter,5,1,1958 Setra Bus,"Australian Collectors, Co.",117300.0
+1612,6,Peter Marsh,5,1,1917 Grand Touring Sedan,"Down Under Souveniers, Inc",110000.0
+1619,6,Tom King,0,1,,,
+1621,5,Mami Nishi,5,0,1969 Corvair Monza,"Dragon Souveniers, Ltd.",103800.0
+1625,5,Yoshimi Kato,0,0,,,
+1702,4,Martin Gerard,6,0,2001 Ferrari Enzo,"Corrida Auto Replicas, Ltd",141300.0
