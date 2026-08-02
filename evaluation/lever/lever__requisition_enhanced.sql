@@ -1,1 +1,0 @@
-SELECT * FROM lever.airbyte_schema.lever__requisition_enhanced ORDER BY requisition_code;

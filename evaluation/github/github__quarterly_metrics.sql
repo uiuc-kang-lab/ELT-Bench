@@ -1,1 +1,0 @@
-SELECT * FROM github.airbyte_schema.github__quarterly_metrics ORDER BY quarter,REPOSITORY;

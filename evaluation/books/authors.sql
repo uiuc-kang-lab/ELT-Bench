@@ -1,1 +1,0 @@
-SELECT * FROM books.airbyte_schema.authors ORDER BY author_id;

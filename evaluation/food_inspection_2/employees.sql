@@ -1,1 +1,0 @@
-select * from food_inspection_2.airbyte_schema.employees order by employee_id;

@@ -1,1 +1,0 @@
-SELECT * FROM movie.airbyte_schema.actors ORDER BY actorid;

@@ -1,0 +1,1 @@
+SELECT * FROM works_cycles.products ORDER BY product_id;

@@ -1,0 +1,1 @@
+select * from apple_store.apple_store__overview_report order by app_id, DATE_DAY;

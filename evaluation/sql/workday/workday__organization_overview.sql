@@ -1,0 +1,1 @@
+SELECT * FROM workday.workday__organization_overview ORDER BY organization_id;

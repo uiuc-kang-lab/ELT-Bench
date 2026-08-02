@@ -1,0 +1,1 @@
+SELECT * FROM mailchimp.mailchimp__segments ORDER BY segment_id;

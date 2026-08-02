@@ -1,0 +1,1 @@
+select * from sales.sales__customers order by CustomerID

@@ -1,0 +1,1 @@
+SELECT * FROM european_football_2.leagues ORDER BY league_id;

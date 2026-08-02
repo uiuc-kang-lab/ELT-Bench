@@ -1,0 +1,1 @@
+SELECT * FROM cars.countries ORDER BY origin;

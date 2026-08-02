@@ -1,0 +1,1 @@
+select * from retails.nations order by N_NATIONKEY

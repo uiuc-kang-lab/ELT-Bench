@@ -1,1 +1,0 @@
-SELECT * FROM xero.airbyte_schema.xero__general_ledger ORDER BY journal_id, JOURNAL_LINE_ID;

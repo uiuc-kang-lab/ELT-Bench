@@ -1,1 +1,0 @@
-SELECT * FROM microsoft_ads.airbyte_schema.microsoft_ads__campaign_report ORDER BY campaign_id, DATE_DAY;

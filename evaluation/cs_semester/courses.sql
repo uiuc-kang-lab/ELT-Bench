@@ -1,1 +1,0 @@
-SELECT * FROM cs_semester.airbyte_schema.courses ORDER BY course_id;

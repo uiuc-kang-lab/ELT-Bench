@@ -1,1 +1,0 @@
-SELECT * FROM pardot.airbyte_schema.pardot__lists ORDER BY list_id;

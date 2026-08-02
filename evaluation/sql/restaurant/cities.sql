@@ -1,0 +1,1 @@
+SELECT * FROM restaurant.cities ORDER BY city;

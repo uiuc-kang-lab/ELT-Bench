@@ -1,0 +1,31 @@
+models:
+  - name: stores
+    description: Each record represents a store.
+    columns:
+      - name: store_nbr
+        description: Store number.
+      - name: item_5_sold_in_day_with_highest_temp_2012
+        description: The number of units sold for item no. 5 in the store on the day in 2012 with the highest temperature. If multiple days share the highest temperature, return the maximum units sold among those days, replace NULL values with 0.
+      - name: item_7_sold_in_day_with_biggest_temp_range
+        description: The number of units of item no.7 were sold in store on the day the temperature range was the biggest, If multiple days share the biggest temperature range, return the maximum units sold among those days, replace NULL values with 0.
+      - name: per_item_5_sold_2012
+        description: The percentage of the units of item no.5 sold among all units of items sold in store in 2012.
+      - name: avg_item_5_sold_when_max_temp_exceeded_90
+        description: The average number of units of item no.5 sold in store when the maximum temperature exceeded 90.
+      - name: num_items_sold_during_a_snowy_day
+        description: The number of units of  items were sold by the store during a snowy day, replace NULL values with 0.
+  - name: stations
+    description: Each record represents a station.
+    columns:
+      - name: station_nbr
+        description: Station number.
+      - name: num_stores
+        description: The number of stores in the station, replace NULL values with 0.
+      - name: quantity_of_item_5_sold
+        description: The quantity of item number 5 overall in the station, replace NULL values with 0.
+      - name: avg_maximum_temp_Feb_2012
+        description: The station's average maximum temperature in February 2012.
+      - name: most_purchased_products
+        description: The most purchased products  in the station, with ties broken by the ascending order of the item number.
+      - name: item_9_sold_when_avg_temp_less_than_83
+        description: The number of units are being sold for item 9 in the station when the average temperature is less than 83, replace NULL values with 0.

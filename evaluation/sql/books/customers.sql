@@ -1,0 +1,1 @@
+SELECT * FROM books.customers ORDER BY customer_id;

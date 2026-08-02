@@ -1,0 +1,1 @@
+select * from instagram_business.instagram_business__posts order by post_id

@@ -1,0 +1,1 @@
+SELECT * FROM cs_semester.courses ORDER BY course_id;

@@ -1,0 +1,1 @@
+select * from retail_complains.Clients order by client_id;

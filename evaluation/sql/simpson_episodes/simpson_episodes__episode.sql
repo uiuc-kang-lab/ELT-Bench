@@ -1,0 +1,1 @@
+SELECT * FROM simpson_episodes.simpson_episodes__episode ORDER BY episode_id;

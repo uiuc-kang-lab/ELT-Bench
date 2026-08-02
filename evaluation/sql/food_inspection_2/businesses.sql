@@ -1,0 +1,1 @@
+select * from food_inspection_2.businesses order by license_no;

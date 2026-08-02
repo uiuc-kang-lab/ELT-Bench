@@ -1,1 +1,0 @@
-SELECT * FROM sales_in_weather.airbyte_schema.stations ORDER BY station_nbr;

@@ -1,0 +1,1 @@
+SELECT * FROM cs_semester.students ORDER BY student_id;

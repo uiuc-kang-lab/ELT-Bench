@@ -1,0 +1,1 @@
+SELECT * FROM european_football_2.teams ORDER BY team_api_id;

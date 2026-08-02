@@ -1,0 +1,1 @@
+SELECT * FROM public_review_platform.public_review_platform__businesses ORDER BY business_id;

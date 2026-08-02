@@ -1,0 +1,6 @@
+databricks-sdk
+databricks-sql-connector
+numpy<2
+pandas
+redshift-connector
+snowflake-connector-python

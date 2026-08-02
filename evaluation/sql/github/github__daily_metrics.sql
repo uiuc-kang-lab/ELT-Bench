@@ -1,0 +1,1 @@
+SELECT * FROM github.github__daily_metrics ORDER BY day, REPOSITORY;

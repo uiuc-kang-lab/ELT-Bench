@@ -1,0 +1,1 @@
+SELECT * FROM tiktok_ads.tiktok_ads__campaign_report ORDER BY campaign_id;

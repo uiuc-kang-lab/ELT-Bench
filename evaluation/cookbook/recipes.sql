@@ -1,1 +1,0 @@
-SELECT * FROM cookbook.airbyte_schema.recipes ORDER BY recipe_id;

@@ -1,0 +1,1 @@
+select * from european_football_1.eu_foolball__divisions order by division

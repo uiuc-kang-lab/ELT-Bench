@@ -1,0 +1,1 @@
+select * from retail_world.retail_world__customers order by customerid;

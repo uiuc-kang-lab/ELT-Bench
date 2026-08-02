@@ -1,0 +1,1 @@
+select * from sales.sales__employees order by EmployeeID

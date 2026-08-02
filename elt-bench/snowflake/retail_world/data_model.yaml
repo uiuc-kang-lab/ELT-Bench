@@ -1,0 +1,20 @@
+models:
+  - name: retail_world__customers
+    description: Each record represents a customer.
+    columns:
+      - name: customerid
+        description: Unique identifier for the customer.
+      - name: customername
+        description: Name of the customer.
+      - name: country
+        description: Country of the customer.
+      - name: num_orders
+        description: Number of orders placed by the customer, replace NULL values with 0.
+      - name: avg_cost_of_orders
+        description: Average cost of orders placed by the customer.
+      - name: top_shipper
+        description: The shipper with the highest number of orders for a customer, with ties resolved in ascending alphabetical order of the shipper's name.
+      - name: total_quantity_of_products
+        description: Total quantity of products ordered by the customer, replace NULL values with 0.
+      - name: has_bought_product_from_France
+        description: Set to 1 if the customer has bought at least one product from France, 0 otherwise.

@@ -1,1 +1,0 @@
-SELECT * FROM qualtrics.airbyte_schema.qualtrics__contact ORDER BY contact_id;

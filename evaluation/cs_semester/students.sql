@@ -1,1 +1,0 @@
-SELECT * FROM cs_semester.airbyte_schema.students ORDER BY student_id;

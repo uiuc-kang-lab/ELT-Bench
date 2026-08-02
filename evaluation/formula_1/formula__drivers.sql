@@ -1,1 +1,0 @@
-SELECT * FROM formula_1.airbyte_schema.formula__drivers ORDER BY driverId;

@@ -1,1 +1,0 @@
-select * from app_store.airbyte_schema.apps order by app_name;

@@ -1,0 +1,20 @@
+models:
+  - name: card_games__sets
+    description: Each record represents a set.
+    columns:
+      - name: id
+        description: Unique identifier for the set.
+      - name: name
+        description: The name of the set.
+      - name: setCode
+        description: The set code of the set.
+      - name: num_cards
+        description: The number of cards in the set, replace NULL values with 0.
+      - name: num_translations
+        description: The number of translations of the card set, replace NULL values with 0.
+      - name: has_Japanese_translation_and_only_available_in_non_foil
+        description: Set to 1 if the card set has Japanses translation and is only available non-foil.
+      - name: per_cards_with_a_converted_mana_cost_10
+        description: The percentage of the cards with a converted Mana Cost of 10 in the set.
+      - name: card_has_highest_converted_mana_cost
+        description: The name of card in the set with the highest converted mana cost, with ties broken by the ascending order of the card name

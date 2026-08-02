@@ -1,0 +1,1 @@
+SELECT * FROM mailchimp.mailchimp__campaign_activities ORDER BY activity_timestamp;

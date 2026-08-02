@@ -1,0 +1,1 @@
+SELECT * FROM music_platform_2.music_platform__podcasts ORDER BY podcast_id;

@@ -1,0 +1,1 @@
+SELECT * FROM legislator.current_legislators ORDER BY bioguide_id;

@@ -1,1 +1,0 @@
-SELECT * FROM works_cycles.airbyte_schema.products ORDER BY product_id;

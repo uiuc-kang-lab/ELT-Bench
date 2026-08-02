@@ -1,1 +1,0 @@
-SELECT * FROM simpson_episodes.airbyte_schema.simpson_episodes__episode ORDER BY episode_id;

@@ -1,1 +1,0 @@
-select * from codebase_community.airbyte_schema.codebase_community__users order by user_id

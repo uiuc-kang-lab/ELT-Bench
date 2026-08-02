@@ -1,1 +1,0 @@
-SELECT * FROM hockey.airbyte_schema.hockey__goalies ORDER BY playerid;

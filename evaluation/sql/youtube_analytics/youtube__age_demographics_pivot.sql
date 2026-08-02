@@ -1,0 +1,1 @@
+SELECT * FROM youtube_analytics.youtube__age_demographics_pivot ORDER BY VIDEO_ID;

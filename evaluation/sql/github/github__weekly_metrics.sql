@@ -1,0 +1,1 @@
+SELECT * FROM github.github__weekly_metrics ORDER BY week,REPOSITORY;

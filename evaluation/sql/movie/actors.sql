@@ -1,0 +1,1 @@
+SELECT * FROM movie.actors ORDER BY actorid;

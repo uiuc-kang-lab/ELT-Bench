@@ -1,1 +1,0 @@
-SELECT * FROM world_development_indicators.airbyte_schema.countries ORDER BY countrycode;

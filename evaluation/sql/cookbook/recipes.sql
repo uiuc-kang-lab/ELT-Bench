@@ -1,0 +1,1 @@
+SELECT * FROM cookbook.recipes ORDER BY recipe_id;

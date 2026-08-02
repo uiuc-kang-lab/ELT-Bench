@@ -1,0 +1,1 @@
+select * from food_inspection.restaurants order by business_id

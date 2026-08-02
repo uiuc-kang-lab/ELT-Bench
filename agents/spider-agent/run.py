@@ -113,7 +113,7 @@ def test(
         max_steps=args.max_steps,
         use_plan=args.plan
     )
-    databases = [f.name for f in os.scandir('../../elt-bench') if f.is_dir()]
+    databases = [f.name for f in os.scandir('../../elt-bench/snowflake') if f.is_dir()]
     databases.sort()
 
     for db in databases:

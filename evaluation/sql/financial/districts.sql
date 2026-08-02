@@ -1,0 +1,1 @@
+select * from financial.districts order by district_id;

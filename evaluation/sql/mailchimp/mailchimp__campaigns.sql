@@ -1,0 +1,1 @@
+SELECT * FROM mailchimp.mailchimp__campaigns ORDER BY campaign_id;

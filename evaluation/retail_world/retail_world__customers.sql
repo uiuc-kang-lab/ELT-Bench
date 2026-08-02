@@ -1,1 +1,0 @@
-select * from retail_world.airbyte_schema.retail_world__customers order by customerid;

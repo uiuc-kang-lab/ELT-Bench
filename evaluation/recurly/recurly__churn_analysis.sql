@@ -1,1 +1,0 @@
-SELECT * FROM recurly.airbyte_schema.recurly__churn_analysis ORDER BY subscription_id;

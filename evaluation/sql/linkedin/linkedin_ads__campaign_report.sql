@@ -1,0 +1,1 @@
+SELECT * FROM linkedin.linkedin_ads__campaign_report ORDER BY campaign_id;

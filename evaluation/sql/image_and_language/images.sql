@@ -1,0 +1,1 @@
+SELECT * FROM image_and_language.images ORDER BY img_id;

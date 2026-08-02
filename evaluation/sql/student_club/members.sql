@@ -1,0 +1,1 @@
+SELECT * FROM student_club.members ORDER BY member_id;

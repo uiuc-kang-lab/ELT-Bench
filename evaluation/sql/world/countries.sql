@@ -1,0 +1,1 @@
+SELECT * FROM world.countries ORDER BY country_code;

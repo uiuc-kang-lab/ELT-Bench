@@ -1,0 +1,1 @@
+select * from talkingdata.labels order by label_id

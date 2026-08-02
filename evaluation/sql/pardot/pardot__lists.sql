@@ -1,0 +1,1 @@
+SELECT * FROM pardot.pardot__lists ORDER BY list_id;

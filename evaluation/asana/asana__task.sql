@@ -1,1 +1,0 @@
-SELECT * from asana.airbyte_schema.asana__task ORDER BY task_id;

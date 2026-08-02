@@ -1,0 +1,1 @@
+SELECT * FROM mailchimp.mailchimp__lists ORDER BY list_id;

@@ -1,0 +1,1 @@
+SELECT * FROM chicago_crime.community_areas ORDER BY community_area_no;

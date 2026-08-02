@@ -1,1 +1,0 @@
-SELECT * FROM workday.airbyte_schema.workday__employee_overview ORDER BY employee_id;

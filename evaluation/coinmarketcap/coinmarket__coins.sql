@@ -1,1 +1,0 @@
-SELECT * FROM coinmarketcap.airbyte_schema.coinmarket__coins ORDER BY coin_id;

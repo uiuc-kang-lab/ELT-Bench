@@ -1,1 +1,0 @@
-SELECT * FROM pinterest.airbyte_schema.pinterest_ads__advertiser_report ORDER BY DATE_DAY;

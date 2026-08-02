@@ -1,1 +1,0 @@
-SELECT * FROM pardot.airbyte_schema.pardot__opportunities ORDER BY opportunity_id;

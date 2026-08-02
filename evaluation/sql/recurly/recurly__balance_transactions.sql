@@ -1,0 +1,1 @@
+SELECT * FROM recurly.recurly__balance_transactions ORDER BY balance_transaction_id, TRANSACTION_ID;

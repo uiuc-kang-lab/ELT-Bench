@@ -1,1 +1,0 @@
-SELECT * FROM mailchimp.airbyte_schema.mailchimp__campaign_activities ORDER BY activity_timestamp;

@@ -1,1 +1,0 @@
-select * from ice_hockey_draft.airbyte_schema.players order by elite_id;

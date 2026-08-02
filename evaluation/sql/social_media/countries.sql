@@ -1,0 +1,1 @@
+SELECT * FROM social_media.countries ORDER BY country;

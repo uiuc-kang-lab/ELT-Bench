@@ -1,1 +1,0 @@
-select * from talkingdata.airbyte_schema.labels order by label_id

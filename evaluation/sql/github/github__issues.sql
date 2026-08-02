@@ -1,0 +1,1 @@
+SELECT * FROM github.github__issues ORDER BY issue_id;

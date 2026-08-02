@@ -1,1 +1,0 @@
-SELECT * FROM workday.airbyte_schema.workday__position_overview ORDER BY position_id, POSITION_CODE;

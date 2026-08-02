@@ -1,0 +1,860 @@
+{
+    "address": {
+      "states": [
+        "abbreviation"
+      ]
+    },
+    "airline": {
+      "airline__airlines": [
+        "airline_code"
+      ],
+      "airline__airports": [
+        "airport_code"
+      ]
+    },
+    "amplitude": {
+      "amplitude__event_enhanced": [
+        "unique_event_id",
+        "unique_event_type_id"
+      ],
+      "amplitude__sessions": [
+        "unique_session_id"
+      ],
+      "amplitude__user_enhanced": [
+        "amplitude_user_id"
+      ]
+    },
+    "app_store": {
+      "apps": [
+        "app_name"
+      ]
+    },
+    "apple_store": {
+      "apple_store__app_version_report": [
+        "app_version",
+        "DATE_DAY"
+      ],
+      "apple_store__device_report": [
+        "device",
+        "DATE_DAY"
+      ],
+      "apple_store__overview_report": [
+        "app_id",
+        "DATE_DAY"
+      ],
+      "apple_store__platform_version_report": [
+        "platform_version",
+        "DATE_DAY"
+      ],
+      "apple_store__source_type_report": [
+        "source_type",
+        "DATE_DAY"
+      ]
+    },
+    "asana": {
+      "asana__project": [
+        "project_id"
+      ],
+      "asana__tag": [
+        "tag_id"
+      ],
+      "asana__task": [
+        "task_id"
+      ],
+      "asana__team": [
+        "team_id"
+      ],
+      "asana__user": [
+        "user_id"
+      ]
+    },
+    "authors": {
+      "conferences": [
+        "conference_id"
+      ]
+    },
+    "beer_factory": {
+      "beer_factory__customers": [
+        "CUSTOMER_ID"
+      ],
+      "brands": [
+        "brand_id"
+      ]
+    },
+    "bike_share_1": {
+      "stations": [
+        "station_id"
+      ]
+    },
+    "book_publishing_company": {
+      "book_publishers": [
+        "pub_id"
+      ],
+      "book_stores": [
+        "store_id"
+      ],
+      "book_titles": [
+        "title_id"
+      ]
+    },
+    "books": {
+      "authors": [
+        "author_id"
+      ],
+      "customers": [
+        "customer_id"
+      ],
+      "publishers": [
+        "publisher_id"
+      ]
+    },
+    "california_schools": {
+      "ca__schools": [
+        "cdscode"
+      ]
+    },
+    "car_retails": {
+      "car_retails__customers": [
+        "customernumber"
+      ],
+      "car_retails__employees": [
+        "employeenumber"
+      ],
+      "car_retails__products": [
+        "productcode"
+      ]
+    },
+    "card_games": {
+      "card_games__sets": [
+        "id"
+      ]
+    },
+    "cars": {
+      "countries": [
+        "origin"
+      ]
+    },
+    "chicago_crime": {
+      "community_areas": [
+        "cast(community_area_no as integer)"
+      ],
+      "districts": [
+        "cast(district_no as integer)"
+      ]
+    },
+    "citeseer": {
+      "citeseer_paper": [
+        "paper_id"
+      ]
+    },
+    "codebase_comments": {
+      "repository": [
+        "repo_id"
+      ]
+    },
+    "codebase_community": {
+      "codebase_community__posts": [
+        "postid"
+      ],
+      "codebase_community__users": [
+        "user_id"
+      ]
+    },
+    "coinmarketcap": {
+      "coinmarket__coins": [
+        "coin_id"
+      ]
+    },
+    "college_completion": {
+      "states": [
+        "state"
+      ]
+    },
+    "computer_student": {
+      "courses": [
+        "course_id"
+      ]
+    },
+    "cookbook": {
+      "recipes": [
+        "recipe_id"
+      ]
+    },
+    "cs_semester": {
+      "courses": [
+        "course_id"
+      ],
+      "professors": [
+        "prof_id"
+      ],
+      "students": [
+        "cast(student_id as integer)"
+      ]
+    },
+    "debit_card_specializing": {
+      "debit_card__customers": [
+        "customerid"
+      ]
+    },
+    "disney": {
+      "directors": [
+        "director_name"
+      ]
+    },
+    "donor": {
+      "donor__projects": [
+        "project_id"
+      ]
+    },
+    "european_football_1": {
+      "eu_foolball__divisions": [
+        "division"
+      ]
+    },
+    "european_football_2": {
+      "leagues": [
+        "league_id"
+      ],
+      "players": [
+        "player_api_id"
+      ],
+      "teams": [
+        "team_api_id"
+      ]
+    },
+    "facebook_ads": {
+      "facebook_ads__account_report": [
+        "account_id",
+        "DATE_DAY"
+      ],
+      "facebook_ads__ad_report": [
+        "ad_id",
+        "DATE_DAY"
+      ],
+      "facebook_ads__ad_set_report": [
+        "ad_set_id",
+        "DATE_DAY"
+      ],
+      "facebook_ads__campaign_report": [
+        "date_day",
+        "campaign_id"
+      ]
+    },
+    "financial": {
+      "clients": [
+        "client_id"
+      ],
+      "districts": [
+        "cast(district_id as integer)"
+      ]
+    },
+    "food_inspection": {
+      "restaurants": [
+        "business_id"
+      ]
+    },
+    "food_inspection_2": {
+      "businesses": [
+        "license_no"
+      ],
+      "employees": [
+        "employee_id"
+      ]
+    },
+    "formula_1": {
+      "formula__drivers": [
+        "driverId"
+      ]
+    },
+    "genes": {
+      "genes__genes": [
+        "geneid"
+      ]
+    },
+    "github": {
+      "github__daily_metrics": [
+        "day",
+        "REPOSITORY"
+      ],
+      "github__issues": [
+        "issue_id"
+      ],
+      "github__monthly_metrics": [
+        "month",
+        "REPOSITORY"
+      ],
+      "github__pull_requests": [
+        "issue_number",
+        "ISSUE_ID"
+      ],
+      "github__quarterly_metrics": [
+        "quarter",
+        "REPOSITORY"
+      ],
+      "github__weekly_metrics": [
+        "week",
+        "REPOSITORY"
+      ]
+    },
+    "hockey": {
+      "hockey__goalies": [
+        "playerid"
+      ],
+      "hockey__teams": [
+        "team_id"
+      ]
+    },
+    "human_resources": {
+      "locations": [
+        "location_id"
+      ],
+      "positions": [
+        "position_id"
+      ]
+    },
+    "ice_hockey_draft": {
+      "players": [
+        "elite_id"
+      ]
+    },
+    "image_and_language": {
+      "images": [
+        "img_id"
+      ]
+    },
+    "instagram_business": {
+      "instagram_business__posts": [
+        "post_id"
+      ]
+    },
+    "language_corpus": {
+      "language_corpus__words": [
+        "word_id"
+      ]
+    },
+    "law_episode": {
+      "law_episode__episode": [
+        "episode_id"
+      ],
+      "law_episode__person": [
+        "person_id"
+      ]
+    },
+    "legislator": {
+      "current_legislators": [
+        "bioguide_id"
+      ]
+    },
+    "lever": {
+      "lever__posting_enhanced": [
+        "posting_id"
+      ],
+      "lever__requisition_enhanced": [
+        "requisition_code"
+      ]
+    },
+    "linkedin": {
+      "linkedin_ads__account_report": [
+        "account_id",
+        "date_day"
+      ],
+      "linkedin_ads__campaign_group_report": [
+        "campaign_group_id",
+        "date_day"
+      ],
+      "linkedin_ads__campaign_report": [
+        "campaign_id",
+        "date_day"
+      ]
+    },
+    "mailchimp": {
+      "mailchimp__automation_activities": [
+        "automation_email_id",
+        "ACTIVITY_ID"
+      ],
+      "mailchimp__automation_emails": [
+        "automation_email_id"
+      ],
+      "mailchimp__automations": [
+        "automation_id"
+      ],
+      "mailchimp__campaign_activities": [
+        "activity_timestamp"
+      ],
+      "mailchimp__campaign_recipients": [
+        "MEMBER_ID"
+      ],
+      "mailchimp__campaigns": [
+        "campaign_id"
+      ],
+      "mailchimp__lists": [
+        "list_id"
+      ],
+      "mailchimp__members": [
+        "member_id",
+        "LIST_ID"
+      ],
+      "mailchimp__segments": [
+        "segment_id"
+      ]
+    },
+    "marketo": {
+      "marketo__campaigns": [
+        "campaign_id"
+      ],
+      "marketo__email_sends": [
+        "email_send_id"
+      ],
+      "marketo__email_templates": [
+        "email_template_id"
+      ],
+      "marketo__programs": [
+        "program_id"
+      ]
+    },
+    "mental_health_survey": {
+      "surveys": [
+        "survey_id"
+      ]
+    },
+    "menu": {
+      "menus": [
+        "menu_id"
+      ]
+    },
+    "microsoft_ads": {
+      "microsoft_ads__account_report": [
+        "ACCOUNT_ID",
+        "DATE_DAY"
+      ],
+      "microsoft_ads__ad_group_report": [
+        "ad_group_id",
+        "DATE_DAY",
+        "DEVICE_OS",
+        "DEVICE_TYPE",
+        "NETWORK"
+      ],
+      "microsoft_ads__ad_report": [
+        "ad_id",
+        "DATE_DAY",
+        "DEVICE_OS",
+        "DEVICE_TYPE",
+        "NETWORK"
+      ],
+      "microsoft_ads__campaign_report": [
+        "campaign_id",
+        "DATE_DAY",
+        "DEVICE_OS",
+        "DEVICE_TYPE",
+        "NETWORK"
+      ],
+      "microsoft_ads__keyword_report": [
+        "keyword_id",
+        "DATE_DAY"
+      ],
+      "microsoft_ads__search_report": [
+        "date_day"
+      ],
+      "microsoft_ads__url_report": [
+        "date_day",
+        "DEVICE_TYPE",
+        "DEVICE_OS",
+        "AD_ID",
+        "NETWORK"
+      ]
+    },
+    "mondial_geo": {
+      "countries": [
+        "country_name"
+      ]
+    },
+    "movie": {
+      "actors": [
+        "actorid"
+      ],
+      "movie": [
+        "movieid"
+      ]
+    },
+    "movie_3": {
+      "customers": [
+        "customer_id"
+      ],
+      "films": [
+        "film_id"
+      ]
+    },
+    "movie_platform": {
+      "movie_platform__directors": [
+        "director_id"
+      ],
+      "movie_platform__list_users": [
+        "user_id"
+      ],
+      "movie_platform__movies": [
+        "movie_id"
+      ]
+    },
+    "movielens": {
+      "movielens__actors": [
+        "cast(actorid as integer)"
+      ],
+      "movielens__directors": [
+        "cast(directorid as integer)"
+      ],
+      "movielens__movies": [
+        "cast(movieid as integer)"
+      ]
+    },
+    "movies_4": {
+      "movies4__movies": [
+        "movie_id"
+      ],
+      "movies4__person": [
+        "person_id"
+      ],
+      "movies4__production_company": [
+        "company_id"
+      ]
+    },
+    "music_platform_2": {
+      "music_platform__categories": [
+        "category"
+      ],
+      "music_platform__podcasts": [
+        "podcast_id"
+      ]
+    },
+    "music_tracker": {
+      "music_tracker__tags": [
+        "tags"
+      ]
+    },
+    "olympics": {
+      "athletes": [
+        "person_id"
+      ],
+      "regions": [
+        "region_id"
+      ],
+      "sports": [
+        "sport_id"
+      ]
+    },
+    "pardot": {
+      "pardot__campaigns": [
+        "campaign_id"
+      ],
+      "pardot__lists": [
+        "list_id"
+      ],
+      "pardot__opportunities": [
+        "opportunity_id"
+      ],
+      "pardot__prospects": [
+        "prospect_id"
+      ]
+    },
+    "pinterest": {
+      "pinterest_ads__ad_group_report": [
+        "DATE_DAY"
+      ],
+      "pinterest_ads__advertiser_report": [
+        "DATE_DAY"
+      ],
+      "pinterest_ads__campaign_report": [
+        "DATE_DAY"
+      ],
+      "pinterest_ads__keyword_report": [
+        "keyword_id",
+        "DATE_DAY"
+      ]
+    },
+    "professional_basketball": {
+      "professional_basketball__coaches": [
+        "coachID"
+      ],
+      "professional_basketball__players": [
+        "player_id"
+      ],
+      "professional_basketball__teams": [
+        "team_id"
+      ]
+    },
+    "public_review_platform": {
+      "public_review_platform__businesses": [
+        "business_id"
+      ],
+      "public_review_platform__users": [
+        "user_id"
+      ]
+    },
+    "qualtrics": {
+      "qualtrics__contact": [
+        "contact_id"
+      ],
+      "qualtrics__directory": [
+        "directory_id"
+      ],
+      "qualtrics__distribution": [
+        "distribution_id"
+      ],
+      "qualtrics__survey": [
+        "survey_id"
+      ]
+    },
+    "recurly": {
+      "recurly__account_overview": [
+        "account_id"
+      ],
+      "recurly__balance_transactions": [
+        "balance_transaction_id",
+        "TRANSACTION_ID"
+      ],
+      "recurly__churn_analysis": [
+        "subscription_id"
+      ],
+      "recurly__subscription_overview": [
+        "subscription_id"
+      ]
+    },
+    "regional_sales": {
+      "regional_sales__customers": [
+        "customer_id"
+      ],
+      "regional_sales__products": [
+        "product_id"
+      ]
+    },
+    "restaurant": {
+      "cities": [
+        "city"
+      ]
+    },
+    "retail_complains": {
+      "Clients": [
+        "client_id"
+      ]
+    },
+    "retail_world": {
+      "retail_world__customers": [
+        "customerid"
+      ]
+    },
+    "retails": {
+      "customers": [
+        "c_custkey"
+      ],
+      "nations": [
+        "cast(N_NATIONKEY as integer)"
+      ]
+    },
+    "sales": {
+      "sales__customers": [
+        "CustomerID"
+      ],
+      "sales__employees": [
+        "EmployeeID"
+      ],
+      "sales__products": [
+        "ProductID"
+      ]
+    },
+    "sales_in_weather": {
+      "stations": [
+        "station_nbr"
+      ],
+      "stores": [
+        "store_nbr"
+      ]
+    },
+    "shakespeare": {
+      "shakespeare__works": [
+        "id"
+      ]
+    },
+    "shipping": {
+      "drivers": [
+        "cast(driver_id as integer)"
+      ],
+      "trucks": [
+        "truck_id"
+      ]
+    },
+    "simpson_episodes": {
+      "simpson_episodes__episode": [
+        "episode_id"
+      ]
+    },
+    "soccer_2016": {
+      "teams": [
+        "cast(team_id as integer)"
+      ]
+    },
+    "social_media": {
+      "countries": [
+        "country"
+      ]
+    },
+    "software_company": {
+      "geo": [
+        "cast(geoid as integer)"
+      ]
+    },
+    "student_club": {
+      "events": [
+        "event_id"
+      ],
+      "members": [
+        "member_id"
+      ]
+    },
+    "student_loan": {
+      "organization": [
+        "organ"
+      ],
+      "schools": [
+        "school"
+      ],
+      "students": [
+        "name"
+      ]
+    },
+    "superhero": {
+      "superheroes": [
+        "hero_id"
+      ]
+    },
+    "superstore": {
+      "customers": [
+        "customer_id"
+      ],
+      "products": [
+        "product_id",
+        "region"
+      ]
+    },
+    "synthea": {
+      "synthea__patients": [
+        "patient"
+      ]
+    },
+    "talkingdata": {
+      "labels": [
+        "CAST(label_id AS INT)"
+      ]
+    },
+    "thrombosis_prediction": {
+      "patients": [
+        "id"
+      ]
+    },
+    "tiktok_ads": {
+      "tiktok_ads__ad_group_report": [
+        "ad_group_id"
+      ],
+      "tiktok_ads__ad_report": [
+        "ad_id"
+      ],
+      "tiktok_ads__advertiser_report": [
+        "advertiser_id"
+      ],
+      "tiktok_ads__campaign_report": [
+        "campaign_id"
+      ]
+    },
+    "toxicology": {
+      "molecules": [
+        "molecule_id"
+      ]
+    },
+    "trains": {
+      "trains": [
+        "train_id"
+      ]
+    },
+    "twilio": {
+      "twilio__account_overview": [
+        "account_id"
+      ]
+    },
+    "twitter_organic": {
+      "twitter_organic__tweets": [
+        "DATE_DAY",
+        "ORGANIC_TWEET_ID"
+      ]
+    },
+    "university": {
+      "countries": [
+        "cast(country_id as integer)"
+      ],
+      "universities": [
+        "university_id"
+      ]
+    },
+    "video_games": {
+      "publishers": [
+        "publisher_id"
+      ]
+    },
+    "workday": {
+      "workday__employee_overview": [
+        "employee_id"
+      ],
+      "workday__job_overview": [
+        "job_profile_id"
+      ],
+      "workday__organization_overview": [
+        "organization_id"
+      ],
+      "workday__position_overview": [
+        "position_id",
+        "POSITION_CODE"
+      ]
+    },
+    "works_cycles": {
+      "products": [
+        "product_id"
+      ]
+    },
+    "world": {
+      "countries": [
+        "country_code"
+      ]
+    },
+    "world_development_indicators": {
+      "countries": [
+        "countrycode"
+      ]
+    },
+    "xero": {
+      "xero__general_ledger": [
+        "journal_id",
+        "JOURNAL_LINE_ID"
+      ],
+      "xero__invoice_line_items": [
+        "invoice_id",
+        "LINE_ITEM_ID"
+      ]
+    },
+    "youtube_analytics": {
+      "youtube__age_demographics_pivot": [
+        "VIDEO_ID"
+      ],
+      "youtube__demographics_report": [
+        "AGE_GROUP",
+        "COUNTRY_CODE",
+        "GENDER",
+        "VIEWS_PERCENTAGE"
+      ],
+      "youtube__video_report": [
+        "video_id NULLS FIRST",
+        "DATE_DAY NULLS FIRST"
+      ]
+    },
+    "zuora": {
+      "zuora__billing_history": [
+        "invoice_id"
+      ]
+    }
+  }

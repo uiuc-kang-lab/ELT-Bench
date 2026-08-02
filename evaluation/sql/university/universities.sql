@@ -1,0 +1,1 @@
+select * from university.universities order by university_id

@@ -1,1 +1,0 @@
-SELECT * FROM superhero.airbyte_schema.superheroes ORDER BY hero_id;

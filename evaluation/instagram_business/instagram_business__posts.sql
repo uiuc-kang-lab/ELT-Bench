@@ -1,1 +1,0 @@
-select * from instagram_business.airbyte_schema.instagram_business__posts order by post_id

@@ -1,1 +1,0 @@
-select * from law_episode.airbyte_schema.law_episode__episode order by episode_id;

@@ -1,1 +1,0 @@
-SELECT * FROM superstore.airbyte_schema.customers ORDER BY customer_id;

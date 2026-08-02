@@ -1,1 +1,0 @@
-SELECT * FROM music_platform_2.airbyte_schema.music_platform__podcasts ORDER BY podcast_id;

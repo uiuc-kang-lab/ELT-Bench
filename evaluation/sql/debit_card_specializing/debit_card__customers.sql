@@ -1,0 +1,1 @@
+SELECT * FROM debit_card_specializing.debit_card__customers ORDER BY customerid;

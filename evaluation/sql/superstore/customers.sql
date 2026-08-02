@@ -1,0 +1,1 @@
+SELECT * FROM superstore.customers ORDER BY customer_id;

@@ -1,1 +1,0 @@
-select * from european_football_1.airbyte_schema.eu_foolball__divisions order by division

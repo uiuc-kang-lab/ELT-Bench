@@ -1,1 +1,0 @@
-select * from amplitude.airbyte_schema.amplitude__sessions order by unique_session_id;

@@ -1,0 +1,1 @@
+SELECT * FROM qualtrics.qualtrics__contact ORDER BY contact_id;

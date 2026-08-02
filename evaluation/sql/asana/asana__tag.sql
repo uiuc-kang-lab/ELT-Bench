@@ -1,0 +1,1 @@
+SELECT * from asana.asana__tag ORDER BY tag_id;

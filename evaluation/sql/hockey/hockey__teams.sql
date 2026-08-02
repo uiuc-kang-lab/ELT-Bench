@@ -1,0 +1,1 @@
+SELECT * FROM hockey.hockey__teams ORDER BY team_id;

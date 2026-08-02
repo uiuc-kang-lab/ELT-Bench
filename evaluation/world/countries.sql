@@ -1,1 +1,0 @@
-SELECT * FROM world.airbyte_schema.countries ORDER BY country_code;

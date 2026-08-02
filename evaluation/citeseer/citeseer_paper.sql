@@ -1,1 +1,0 @@
-SELECT * FROM citeseer.airbyte_schema.citeseer_paper ORDER BY paper_id;

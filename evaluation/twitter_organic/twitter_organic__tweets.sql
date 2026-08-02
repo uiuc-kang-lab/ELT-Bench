@@ -1,1 +1,0 @@
-select * from twitter_organic.airbyte_schema.twitter_organic__tweets order by DATE_DAY, ORGANIC_TWEET_ID

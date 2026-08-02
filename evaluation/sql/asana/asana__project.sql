@@ -1,0 +1,1 @@
+SELECT * from asana.asana__project ORDER BY project_id;

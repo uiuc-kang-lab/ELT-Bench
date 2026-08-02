@@ -1,0 +1,1 @@
+SELECT * FROM video_games.publishers ORDER BY publisher_id;

@@ -1,0 +1,1 @@
+select * from retails.customers order by c_custkey

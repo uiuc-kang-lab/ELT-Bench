@@ -1,0 +1,1 @@
+SELECT * FROM computer_student.courses ORDER BY course_id;

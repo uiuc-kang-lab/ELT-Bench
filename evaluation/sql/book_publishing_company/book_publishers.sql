@@ -1,0 +1,1 @@
+select * FROM book_publishing_company.book_publishers order by pub_id;

@@ -1,0 +1,1 @@
+SELECT * FROM citeseer.citeseer_paper ORDER BY paper_id;

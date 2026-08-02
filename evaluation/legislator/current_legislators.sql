@@ -1,1 +1,0 @@
-SELECT * FROM legislator.airbyte_schema.current_legislators ORDER BY bioguide_id;

@@ -1,0 +1,1 @@
+SELECT * from asana.asana__team ORDER BY team_id;

@@ -1,1 +1,0 @@
-SELECT * FROM student_club.airbyte_schema.members ORDER BY member_id;

@@ -1,0 +1,1 @@
+SELECT * FROM pardot.pardot__campaigns ORDER BY campaign_id;

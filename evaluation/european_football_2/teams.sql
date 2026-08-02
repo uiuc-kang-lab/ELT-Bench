@@ -1,1 +1,0 @@
-SELECT * FROM european_football_2.airbyte_schema.teams ORDER BY team_api_id;

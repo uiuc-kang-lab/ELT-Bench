@@ -1,1 +1,0 @@
-SELECT * FROM college_completion.airbyte_schema.states ORDER BY state;

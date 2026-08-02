@@ -1,1 +1,0 @@
-SELECT * FROM superstore.airbyte_schema.products ORDER BY product_id;

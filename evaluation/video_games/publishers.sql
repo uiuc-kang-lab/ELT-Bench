@@ -1,1 +1,0 @@
-SELECT * FROM video_games.airbyte_schema.publishers ORDER BY publisher_id;

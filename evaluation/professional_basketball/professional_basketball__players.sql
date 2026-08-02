@@ -1,1 +1,0 @@
-select * from professional_basketball.airbyte_schema.professional_basketball__players order by player_id;

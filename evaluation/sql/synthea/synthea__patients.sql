@@ -1,0 +1,1 @@
+SELECT * FROM synthea.synthea__patients ORDER BY patient;

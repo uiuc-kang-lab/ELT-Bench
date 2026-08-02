@@ -1,1 +1,0 @@
-SELECT * from asana.airbyte_schema.asana__user ORDER BY user_id;

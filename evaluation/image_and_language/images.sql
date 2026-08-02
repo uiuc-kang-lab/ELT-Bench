@@ -1,1 +1,0 @@
-SELECT * FROM image_and_language.airbyte_schema.images ORDER BY img_id;

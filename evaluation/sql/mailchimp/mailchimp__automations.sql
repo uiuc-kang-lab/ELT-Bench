@@ -1,0 +1,1 @@
+SELECT * FROM mailchimp.mailchimp__automations ORDER BY automation_id;

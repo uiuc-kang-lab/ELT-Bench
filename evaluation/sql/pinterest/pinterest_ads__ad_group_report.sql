@@ -1,0 +1,1 @@
+SELECT * FROM pinterest.pinterest_ads__ad_group_report ORDER BY DATE_DAY;

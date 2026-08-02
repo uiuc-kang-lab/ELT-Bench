@@ -1,0 +1,1 @@
+SELECT * FROM facebook_ads.facebook_ads__ad_report ORDER BY ad_id, DATE_DAY;

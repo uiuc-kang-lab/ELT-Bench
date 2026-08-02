@@ -1,0 +1,1 @@
+SELECT * FROM marketo.marketo__campaigns ORDER BY campaign_id;

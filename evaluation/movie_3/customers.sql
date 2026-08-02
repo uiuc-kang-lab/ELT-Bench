@@ -1,1 +1,0 @@
-SELECT * FROM movie_3.airbyte_schema.customers ORDER BY customer_id;

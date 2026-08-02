@@ -1,0 +1,1 @@
+SELECT * from asana.asana__task ORDER BY task_id;

@@ -1,0 +1,1 @@
+SELECT * FROM marketo.marketo__programs ORDER BY program_id;

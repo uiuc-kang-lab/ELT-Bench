@@ -1,0 +1,1 @@
+SELECT * FROM menu.menus ORDER BY menu_id;

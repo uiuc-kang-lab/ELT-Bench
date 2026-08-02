@@ -1,1 +1,0 @@
-SELECT * FROM public_review_platform.airbyte_schema.public_review_platform__users ORDER BY user_id;

@@ -1,0 +1,1 @@
+SELECT * FROM olympics.regions ORDER BY region_id;

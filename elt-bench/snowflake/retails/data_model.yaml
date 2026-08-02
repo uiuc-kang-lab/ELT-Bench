@@ -1,0 +1,39 @@
+models:
+  - name: nations
+    description: Each record represents a nation.
+    columns:
+      - name: n_nationkey
+        description: Unique identifier for the nation.
+      - name: n_name
+        description: The name of the nation.
+      - name: n_regionkey
+        description: The region key of the nation.
+      - name: num_suppliers_in_debt
+        description: The number of suppliers whose accounts are in debt in the nation, replace NULL values with 0.
+      - name: num_customers
+        description: The number of customers come from the nation, replace NULL values with 0.
+      - name: balance_larger_thant_avg_balance
+        description: Set to 1 if the average account balance of the customers in the nation is larger than the average account balance across all customers, otherwise, set to 0
+      - name: total_price_of_all_orders
+        description: The total price of all orders from the nation, replace NULL values with 0.
+      - name: per_indebted_suppliers
+        description: The percentage of suppliers whose accounts are in debt in the nation
+  - name: customers
+    description: Each record represents a customer.
+    columns:
+      - name: c_custkey
+        description: Unique identifier for the customer.
+      - name: c_nationkey
+        description: The nation key of the customer.
+      - name: c_name
+        description: The name of the customer.
+      - name: num_orders
+        description: The number of orders the customer has made, replace NULL values with 0.
+      - name: average_total_price_per_order
+        description: The average total price per order the customer has made.
+      - name: has_above_average_account_balance
+        description: Set to 1 if the account balance of the customer is above the average account balance of all customers, otherwise, set to 0
+      - name: order_date_highest_total_price
+        description: The order date with the highest total price the customer has made, with ties broken by the ascending order of the order date.
+      - name: balance_lower_than_4000_and_in_US
+        description: Set to 1 if the account balance of the customer is lower than 4000 and the customer is from the US, otherwise, set to 0

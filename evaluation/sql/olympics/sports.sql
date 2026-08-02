@@ -1,0 +1,1 @@
+SELECT * FROM olympics.sports ORDER BY sport_id;

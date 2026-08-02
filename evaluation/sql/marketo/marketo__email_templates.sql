@@ -1,0 +1,1 @@
+SELECT * FROM marketo.marketo__email_templates ORDER BY email_template_id;

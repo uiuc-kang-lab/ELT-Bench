@@ -1,0 +1,1 @@
+select * from university.countries order by country_id

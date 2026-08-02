@@ -1,0 +1,1 @@
+SELECT * FROM movie.movie ORDER BY movieid;

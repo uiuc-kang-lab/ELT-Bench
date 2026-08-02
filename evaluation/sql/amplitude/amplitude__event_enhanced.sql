@@ -1,0 +1,1 @@
+select * from amplitude.amplitude__event_enhanced order by unique_event_id, unique_event_type_id;

@@ -1,1 +1,0 @@
-SELECT * FROM student_club.airbyte_schema.events ORDER BY event_id;

@@ -1,0 +1,1 @@
+SELECT * FROM movie_platform.movie_platform__list_users ORDER BY user_id;

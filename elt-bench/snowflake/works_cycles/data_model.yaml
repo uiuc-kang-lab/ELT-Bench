@@ -1,0 +1,20 @@
+models:
+  - name: products
+    description: Each record represents a product.
+    columns:
+      - name: product_id
+        description: The unique id number identifying the product.
+      - name: product_name
+        description: Name of the product.
+      - name: product_number
+        description: The unique product identification number.
+      - name: has_over_1_price_changes
+        description: Set to 1 if the product has more than 1 price changes, 0 otherwise.
+      - name: does_not_have_work_order
+        description: Set to 1 if the product does not have a work order, 0 otherwise.
+      - name: num_reviews
+        description: The number of reviews the product has received, replace null values with 0.
+      - name: sold_by_over_2_vendors
+        description: Set to 1 if the product is sold by more than 2 vendors, 0 otherwise.
+      - name: num_orders
+        description: The number of orders the product has, replace null values with 0.

@@ -1,1 +1,0 @@
-SELECT * FROM github.airbyte_schema.github__daily_metrics ORDER BY day, REPOSITORY;

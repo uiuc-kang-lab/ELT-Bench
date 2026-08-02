@@ -1,0 +1,1 @@
+SELECT * FROM thrombosis_prediction.patients ORDER BY id;

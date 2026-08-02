@@ -1,1 +1,0 @@
-SELECT * FROM student_loan.airbyte_schema.organization ORDER BY organ;

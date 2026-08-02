@@ -1,0 +1,1 @@
+SELECT * FROM zuora.zuora__billing_history ORDER BY invoice_id;

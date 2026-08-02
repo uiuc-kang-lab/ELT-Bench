@@ -1,1 +1,0 @@
-SELECT * FROM microsoft_ads.airbyte_schema.microsoft_ads__account_report ORDER BY ACCOUNT_ID, DATE_DAY;

@@ -1,1 +1,0 @@
-select * from airline.airbyte_schema.airline__airlines order by airline_code

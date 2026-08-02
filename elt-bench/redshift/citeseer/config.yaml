@@ -1,0 +1,41 @@
+Airbyte:
+  config:
+    files_definition_id: 778daa7c-feaf-4db6-96f3-70fd645acc77
+    namespace_definition: destination
+    postgres_definition_id: decd338e-5647-4c0b-adf4-da0e75f5a750
+    server_url: http://airbyte-abctl-control-plane:80/api/public/v1/
+    redshift_definition_id: f7a7d195-377f-cf5b-70a5-be6b819019dc
+custom_api:
+  config:
+    configuration: {}
+    sync_mode: full_refresh_append
+    tables:
+    - cites
+flat_files:
+- format: csv
+  path: https://drive.google.com/uc?export=download&id=1nJCXt-4dIbctfdk-X0b9pj1DTL3-YkDV
+  sync_mode: full_refresh_append
+  table: paper
+postgres:
+  config:
+    database: citeseer
+    host: elt-postgres
+    password: testelt
+    port: 5432
+    schema: public
+    sync_mode: full_refresh_append
+    tables:
+    - content
+    user: postgres
+redshift:
+  config:
+    host: <redshift_hostname>
+    port: <redshift_port>
+    database: <redshift_db>
+    username: <redshift_username>
+    password: <redshift_pwd>
+    schema: citeseer
+    s3_bucket_name: <redshift_s3_bucket>
+    s3_bucket_region: <redshift_s3_region>
+    access_key_id: <redshift_s3_access_key>
+    secret_access_key: <redshift_s3_secret_key>

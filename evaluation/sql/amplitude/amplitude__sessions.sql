@@ -1,0 +1,1 @@
+select * from amplitude.amplitude__sessions order by unique_session_id;

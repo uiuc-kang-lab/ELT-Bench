@@ -1,0 +1,1 @@
+SELECT * FROM mailchimp.mailchimp__members ORDER BY member_id, LIST_ID;

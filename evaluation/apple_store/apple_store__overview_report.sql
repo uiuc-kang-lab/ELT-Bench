@@ -1,1 +1,0 @@
-select * from apple_store.airbyte_schema.apple_store__overview_report order by app_id, DATE_DAY;

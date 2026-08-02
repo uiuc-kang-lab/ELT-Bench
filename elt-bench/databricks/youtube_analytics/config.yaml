@@ -1,0 +1,39 @@
+Airbyte:
+  config:
+    mongodb_definition_id: b2e713cd-cc36-4c0a-b5bd-b47cb8a0561e
+    namespace_definition: destination
+    postgres_definition_id: decd338e-5647-4c0b-adf4-da0e75f5a750
+    server_url: http://airbyte-abctl-control-plane:80/api/public/v1/
+    databricks_definition_id: 072d5540-f236-4294-ba7c-ade8fd918496
+custom_api:
+  config:
+    configuration: {}
+    sync_mode: full_refresh_append
+    tables:
+    - video
+mongodb:
+  config:
+    connection_string: mongodb://elt-mongodb:27017/?directConnection=true
+    database: youtube_analytics
+    sync_mode: full_refresh_append
+    tables:
+    - channel_demographics
+postgres:
+  config:
+    database: youtube_analytics
+    host: elt-postgres
+    password: testelt
+    port: 5432
+    schema: public
+    sync_mode: full_refresh_append
+    tables:
+    - channel_basic
+    user: postgres
+databricks:
+  config:
+    database: <db_database>
+    hostname: <db_hostname>
+    client_id: <db_client_id>
+    secret: <db_secret>
+    schema: youtube_analytics
+    http_path: <db_path>

@@ -1,1 +1,0 @@
-select * from retails.airbyte_schema.nations order by N_NATIONKEY

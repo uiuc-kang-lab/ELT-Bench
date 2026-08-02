@@ -1,0 +1,25 @@
+Airbyte:
+  config:
+    files_definition_id: 778daa7c-feaf-4db6-96f3-70fd645acc77
+    namespace_definition: destination
+    server_url: http://airbyte-abctl-control-plane:80/api/public/v1/
+    databricks_definition_id: 072d5540-f236-4294-ba7c-ade8fd918496
+custom_api:
+  config:
+    configuration: {}
+    sync_mode: full_refresh_append
+    tables:
+    - cars
+flat_files:
+- format: csv
+  path: https://drive.google.com/uc?export=download&id=1w5_eaQI7_bxn5zQVEOwB5WsIAkAu7VCB
+  sync_mode: full_refresh_append
+  table: train
+databricks:
+  config:
+    database: <db_database>
+    hostname: <db_hostname>
+    client_id: <db_client_id>
+    secret: <db_secret>
+    schema: trains
+    http_path: <db_path>

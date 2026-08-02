@@ -1,0 +1,1 @@
+SELECT * FROM human_resources.locations ORDER BY location_id;

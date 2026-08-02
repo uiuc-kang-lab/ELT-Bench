@@ -1,0 +1,110 @@
+models:
+  - name: facebook_ads__ad_report
+    description: Each record represents the daily performance of a Facebook ad. Use the most recent version of the account, ad, campaign, and ad set to ensure the most up-to-date data if there are multiple versions for the same account, ad, campaign, or ad set.
+    columns:
+      - name: date_day
+        description: The date of the performance.
+        format: YYYY-MM-DD
+      - name: account_id
+        description: The ID of the related account.
+      - name: account_name
+        description: The name of the related account.
+      - name: campaign_id
+        description: The ID of the related campaign.
+      - name: campaign_name
+        description: The name of the related campaign.
+      - name: ad_set_id
+        description: The ID of the related ad set.
+      - name: ad_set_name
+        description: The name of the related ad set.
+      - name: ad_id
+        description: The ID of the ad.
+      - name: ad_name
+        description: The name of the ad.
+      - name: clicks
+        description: The number of clicks the ad had on the given day.
+      - name: impressions
+        description: The number of impressions the ad had on the given day.
+      - name: spend
+        description: The spend on the ad in the given day.
+      - name: conversions
+        description: Total number of conversions using the default attribution window on the given day. Set to 0 if the value is NULL.
+      - name: conversions_value
+        description: Total monetary of conversions using the default attribution window on the given day. Set to 0 if the value is NULL.
+
+  - name: facebook_ads__ad_set_report
+    description: Each record represents the daily performance of a Facebook ad set. Use the most recent version of the account, ad, campaign, and ad set to ensure the most up-to-date data if there are multiple versions for the same account, ad, campaign, or ad set.
+    columns:
+      - name: date_day
+        description: The date of the performance.
+        format: YYYY-MM-DD
+      - name: account_id
+        description: The ID of the related account.
+      - name: account_name
+        description: The name of the related account.
+      - name: campaign_id
+        description: The ID of the related campaign.
+      - name: campaign_name
+        description: The name of the related campaign.
+      - name: ad_set_id
+        description: The ID of the ad set.
+      - name: ad_set_name
+        description: The name of the ad set.
+      - name: clicks
+        description: The number of clicks across all ads in the ad set had on the given day.
+      - name: impressions
+        description: The number of impressions across all ads in the ad set had on the given day.
+      - name: spend
+        description: The spend on all ads in the ad set in the given day.
+      - name: conversions
+        description: Total number of conversions using the default attribution window on the given day. Set to 0 if the value is NULL.
+      - name: conversions_value
+        description: Total monetary of conversions using the default attribution window on the given day. Set to 0 if the value is NULL.
+     
+
+  - name: facebook_ads__campaign_report
+    description: Each record represents the daily performance of a Facebook campaign. Use the most recent version of the account, ad, and campaign to ensure the most up-to-date data if there are multiple versions for the same account, ad, or campaign.
+    columns:
+      - name: date_day
+        description: The date of the performance.
+        format: YYYY-MM-DD
+      - name: account_id
+        description: The ID of the related account.
+      - name: account_name
+        description: The name of the related account.
+      - name: campaign_id
+        description: The ID of the campaign.
+      - name: campaign_name
+        description: The name of the campaign.
+      - name: clicks
+        description: The number of clicks across all ads in the campaign had on the given day.
+      - name: impressions
+        description: The number of impressions across all ads in the campaign had on the given day.
+      - name: spend
+        description: The spend across all ads in the campaign in the given day.
+      - name: conversions
+        description: Total number of conversions using the default attribution window on the given day. Set to 0 if the value is NULL.
+      - name: conversions_value
+        description: Total monetary of conversions using the default attribution window on the given day. Set to 0 if the value is NULL.
+
+  - name: facebook_ads__account_report
+    description: Each record represents the daily performance of a Facebook account. Use the latest version of the account to ensure the most up-to-date data if there are multiple versions for the same account.
+    columns:
+      - name: date_day
+        description: The date of the performance.
+        format: YYYY-MM-DD
+      - name: account_id
+        description: The ID of the account.
+      - name: account_name
+        description: The name of the account.
+      - name: clicks
+        description: The number of clicks across all ads in the account had on the given day.
+      - name: impressions
+        description: The number of impressions across all ads in the account had on the given day.
+      - name: spend
+        description: The spend on across all ads in the account in the given day.
+      - name: conversions
+        description: Total number of conversions using the default attribution window on the given day. Set to 0 if the value is NULL.
+      - name: conversions_value
+        description: Total monetary of conversions using the default attribution window on the given day. Set to 0 if the value is NULL.
+  

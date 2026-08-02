@@ -1,0 +1,1 @@
+SELECT * from asana.asana__user ORDER BY user_id;

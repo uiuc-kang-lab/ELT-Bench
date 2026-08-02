@@ -1,0 +1,31 @@
+Airbyte:
+  config:
+    mongodb_definition_id: b2e713cd-cc36-4c0a-b5bd-b47cb8a0561e
+    namespace_definition: destination
+    server_url: http://airbyte-abctl-control-plane:80/api/public/v1/
+    redshift_definition_id: f7a7d195-377f-cf5b-70a5-be6b819019dc
+custom_api:
+  config:
+    configuration: {}
+    sync_mode: full_refresh_append
+    tables:
+    - user_reviews
+mongodb:
+  config:
+    connection_string: mongodb://elt-mongodb:27017/?directConnection=true
+    database: app_store
+    sync_mode: full_refresh_append
+    tables:
+    - playstore
+redshift:
+  config:
+    host: <redshift_hostname>
+    port: <redshift_port>
+    database: <redshift_db>
+    username: <redshift_username>
+    password: <redshift_pwd>
+    schema: app_store
+    s3_bucket_name: <redshift_s3_bucket>
+    s3_bucket_region: <redshift_s3_region>
+    access_key_id: <redshift_s3_access_key>
+    secret_access_key: <redshift_s3_secret_key>

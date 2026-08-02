@@ -1,0 +1,1 @@
+select * from facebook_ads.facebook_ads__campaign_report ORDER BY date_day, campaign_id

@@ -1,1 +1,0 @@
-SELECT * FROM olympics.airbyte_schema.regions ORDER BY region_id;

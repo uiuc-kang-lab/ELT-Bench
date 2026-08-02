@@ -1,1 +1,0 @@
-select * from movielens.airbyte_schema.movielens__directors order by directorid;

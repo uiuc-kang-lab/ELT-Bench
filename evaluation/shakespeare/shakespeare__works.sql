@@ -1,1 +1,0 @@
-SELECT * FROM shakespeare.airbyte_schema.shakespeare__works ORDER BY id;

@@ -1,1 +1,0 @@
-select * from university.airbyte_schema.universities order by university_id

@@ -1,1 +1,0 @@
-select * from book_publishing_company.airbyte_schema.book_stores order by store_id;

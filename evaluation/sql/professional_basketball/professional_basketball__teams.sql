@@ -1,0 +1,1 @@
+select * from professional_basketball.professional_basketball__teams order by team_id;

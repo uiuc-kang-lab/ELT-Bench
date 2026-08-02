@@ -1,1 +1,0 @@
-SELECT * FROM marketo.airbyte_schema.marketo__programs ORDER BY program_id;

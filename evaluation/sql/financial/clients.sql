@@ -1,0 +1,1 @@
+select * from financial.clients order by client_id;

@@ -1,0 +1,4 @@
+column_name,column_description
+Country,the country code
+Name,name of the ethnic group
+Percentage,percentage of the ethnic group in this country.

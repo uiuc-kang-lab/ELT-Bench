@@ -1,1 +1,0 @@
-SELECT * FROM soccer_2016.airbyte_schema.teams ORDER BY team_id;

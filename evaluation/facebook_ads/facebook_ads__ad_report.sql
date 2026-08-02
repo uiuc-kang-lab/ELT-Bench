@@ -1,1 +1,0 @@
-SELECT * FROM facebook_ads.airbyte_schema.facebook_ads__ad_report ORDER BY ad_id, DATE_DAY;

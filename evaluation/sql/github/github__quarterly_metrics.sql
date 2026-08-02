@@ -1,0 +1,1 @@
+SELECT * FROM github.github__quarterly_metrics ORDER BY quarter,REPOSITORY;

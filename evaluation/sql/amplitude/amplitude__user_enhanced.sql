@@ -1,0 +1,1 @@
+select * from amplitude.amplitude__user_enhanced order by amplitude_user_id;

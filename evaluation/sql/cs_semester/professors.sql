@@ -1,0 +1,1 @@
+SELECT * FROM cs_semester.professors ORDER BY prof_id;

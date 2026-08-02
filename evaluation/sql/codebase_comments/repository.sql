@@ -1,0 +1,1 @@
+select * from codebase_comments.repository order by repo_id;

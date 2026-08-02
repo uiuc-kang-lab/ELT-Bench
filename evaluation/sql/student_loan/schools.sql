@@ -1,0 +1,1 @@
+SELECT * FROM student_loan.schools ORDER BY school;

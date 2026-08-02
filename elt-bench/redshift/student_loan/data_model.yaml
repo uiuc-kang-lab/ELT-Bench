@@ -1,0 +1,46 @@
+models:
+  - name: organization
+    description: Each record represents an organization.
+    columns:
+      - name: organ
+        description: Unique identifier for the organization.
+      - name: num_disabled_students
+        description: The number of disabled students in the organization, replace NULL values with 0.
+      - name: per_male_students
+        description: The percentage of male students in the organization.
+      - name: longest_time_absence
+        description: The longest time for a student from the department to be absent from school, replace NULL values with 0.
+      - name: per_students_have_due_payment
+        description: The percentage of students who have a due payment in the organization.
+      - name: ratio_between_female_and_male
+        description: The ratio between the number of female and male students who joined the organization, calculated as the number of female students divided by the number of male students.
+  - name: students
+    description: Each record represents a student.
+    columns:
+      - name: name
+        description: The name of the student.
+      - name: gender
+        description: The gender of the student, set to 'M' for male 'F' for female.
+      - name: female_and_no_due_payments
+        description: Set to 1 if the student is female and has no due payments, otherwise, set to 0
+      - name: join_more_than_one_org
+        description: Set to 1 if the student has joined more than one organization, 0 otherwise.
+      - name: not_file_for_bankruptcy
+        description: Set to 1 if the student has not filed for bankruptcy, 0 otherwise.
+      - name: has_the_longest_absence_duration
+        description: Set to 1 if the student has the longest absence duration from school, otherwise, set to 0.
+  - name: schools
+    description: Each record represents a unique school.
+    columns:
+      - name: school
+        description: The name of the school.
+      - name: num_disabled_students
+        description: The number of disabled students in the school, replace NULL values with 0.
+      - name: per_male_and_air_force
+        description: The percentage of male students in the air force department among all students enrolled in the school.
+      - name: per_disabled_female_students
+        description: The percentage of disabled female students in the school.
+      - name: per_students_file_bankruptcy
+        description: The percentage of students who have filed for bankruptcy in the school.  
+      - name: per_navy_make_up_num_students
+        description: The percentage of enrolled students in the school who enlisted in the navy.

@@ -1,1 +1,0 @@
-SELECT * FROM marketo.airbyte_schema.marketo__email_sends ORDER BY email_send_id;

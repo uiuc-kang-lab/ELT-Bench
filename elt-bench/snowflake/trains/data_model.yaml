@@ -1,0 +1,18 @@
+models:
+  - name: trains
+    description: Each record represents a train.
+    columns:
+      - name: train_id
+        description: Unique identifier for the train.
+      - name: direction
+        description: The direction of the train.
+      - name: run_east_and_has_less_than_4_cars
+        description: Set to 1 if the train runs east and has less than 4 cars, 0 otherwise.
+      - name: has_more_than_2_long_cars
+        description: Set to 1 if the train has more than 2 long cars, 0 otherwise.
+      - name: has_double_sided_cars_in_3rd_position
+        description: Set to 1 if the train has double-sided cars in the 3rd position, 0 otherwise.
+      - name: has_rectangular_shaped_head_cars
+        description: Set to 1 if the train has rectangular-shaped head cars, 0 otherwise.
+      - name: number_of_open_roof_car
+        description: The number of open roof cars in the train, replace NULL values with 0.

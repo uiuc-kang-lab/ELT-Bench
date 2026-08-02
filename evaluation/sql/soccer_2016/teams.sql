@@ -1,0 +1,1 @@
+SELECT * FROM soccer_2016.teams ORDER BY team_id;

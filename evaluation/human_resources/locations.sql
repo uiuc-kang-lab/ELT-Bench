@@ -1,1 +1,0 @@
-SELECT * FROM human_resources.airbyte_schema.locations ORDER BY location_id;

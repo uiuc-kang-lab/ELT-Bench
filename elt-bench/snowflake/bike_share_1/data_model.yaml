@@ -1,0 +1,20 @@
+models:
+  - name: stations
+    description: Each record represents a bike share station.
+    columns:
+      - name: station_id
+        description: Unique identifier for the station.
+      - name: name
+        description: Name of the station.
+      - name: city
+        description: City where the station is located.
+      - name: num_borrowed_bike
+        description: Number of bikes borrowed from the station, replace NULL values with 0.
+      - name: date_most_bikes_available
+        description: Date when the station had the most bikes available, with ties broken by the ascending order of the date.
+      - name: above_avg_duration_trips
+        description: Set to 1 if the average duration of trips starting from the station is above the overall average trip duration; otherwise, set to 0.
+      - name: per_subscriber
+        description: Percentage of trips starting from the station that are made by subscribers.
+      - name: diff_bewteen_as_start_station_and_as_end_station
+        description: Difference between the number of trips starting from the station and the number of trips ending at the station.

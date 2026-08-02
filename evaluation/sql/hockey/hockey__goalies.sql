@@ -1,0 +1,1 @@
+SELECT * FROM hockey.hockey__goalies ORDER BY playerid;

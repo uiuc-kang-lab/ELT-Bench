@@ -1,0 +1,1 @@
+SELECT * FROM movie_3.films ORDER BY film_id;

@@ -1,0 +1,1 @@
+SELECT * FROM software_company.geo ORDER BY geoid;

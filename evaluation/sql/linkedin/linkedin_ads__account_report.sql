@@ -1,0 +1,1 @@
+SELECT * FROM linkedin.linkedin_ads__account_report ORDER BY account_id;

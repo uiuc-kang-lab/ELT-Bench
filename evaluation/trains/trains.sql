@@ -1,1 +1,0 @@
-SELECT * FROM trains.airbyte_schema.trains ORDER BY train_id;

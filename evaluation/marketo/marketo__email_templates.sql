@@ -1,1 +1,0 @@
-SELECT * FROM marketo.airbyte_schema.marketo__email_templates ORDER BY email_template_id;

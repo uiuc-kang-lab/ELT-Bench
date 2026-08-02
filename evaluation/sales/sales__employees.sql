@@ -1,1 +1,0 @@
-select * from sales.airbyte_schema.sales__employees order by EmployeeID

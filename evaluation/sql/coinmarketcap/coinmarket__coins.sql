@@ -1,0 +1,1 @@
+SELECT * FROM coinmarketcap.coinmarket__coins ORDER BY coin_id;

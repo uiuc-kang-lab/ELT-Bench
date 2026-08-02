@@ -1,0 +1,1 @@
+SELECT * FROM superstore.products ORDER BY product_id;

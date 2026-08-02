@@ -1,0 +1,1 @@
+select * from book_publishing_company.book_stores order by store_id;

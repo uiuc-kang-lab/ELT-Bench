@@ -1,1 +1,0 @@
-SELECT * FROM tiktok_ads.airbyte_schema.tiktok_ads__ad_group_report ORDER BY ad_group_id;

@@ -1,0 +1,1 @@
+SELECT * FROM marketo.marketo__email_sends ORDER BY email_send_id;

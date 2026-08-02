@@ -1,1 +1,0 @@
-SELECT * FROM chicago_crime.airbyte_schema.community_areas ORDER BY community_area_no;

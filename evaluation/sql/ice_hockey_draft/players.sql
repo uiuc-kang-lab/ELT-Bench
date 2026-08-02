@@ -1,0 +1,1 @@
+select * from ice_hockey_draft.players order by elite_id;

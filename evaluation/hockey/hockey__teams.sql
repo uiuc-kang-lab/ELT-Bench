@@ -1,1 +1,0 @@
-SELECT * FROM hockey.airbyte_schema.hockey__teams ORDER BY team_id;

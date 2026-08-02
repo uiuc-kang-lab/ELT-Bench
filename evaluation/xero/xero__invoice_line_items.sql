@@ -1,1 +1,0 @@
-SELECT * FROM xero.airbyte_schema.xero__invoice_line_items ORDER BY invoice_id, LINE_ITEM_ID;

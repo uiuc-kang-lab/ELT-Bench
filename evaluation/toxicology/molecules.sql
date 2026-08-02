@@ -1,1 +1,0 @@
-select * from toxicology.airbyte_schema.molecules order by molecule_id

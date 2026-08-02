@@ -1,0 +1,1 @@
+SELECT * FROM language_corpus.language_corpus__words ORDER BY word_id;

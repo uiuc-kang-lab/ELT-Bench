@@ -1,0 +1,1 @@
+SELECT * FROM superhero.superheroes ORDER BY hero_id;

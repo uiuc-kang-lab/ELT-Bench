@@ -1,0 +1,1 @@
+SELECT * FROM microsoft_ads.microsoft_ads__search_report ORDER BY date_day;

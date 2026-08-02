@@ -1,1 +1,0 @@
-SELECT * FROM european_football_2.airbyte_schema.leagues ORDER BY league_id;

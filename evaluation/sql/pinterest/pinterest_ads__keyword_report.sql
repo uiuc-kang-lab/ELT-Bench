@@ -1,0 +1,1 @@
+SELECT * FROM pinterest.pinterest_ads__keyword_report ORDER BY keyword_id, DATE_DAY;

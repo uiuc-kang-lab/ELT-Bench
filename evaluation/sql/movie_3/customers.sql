@@ -1,0 +1,1 @@
+SELECT * FROM movie_3.customers ORDER BY customer_id;

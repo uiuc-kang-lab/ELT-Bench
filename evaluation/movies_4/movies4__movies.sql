@@ -1,1 +1,0 @@
-SELECT * FROM movies_4.airbyte_schema.movies4__movies ORDER BY movie_id;

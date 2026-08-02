@@ -1,0 +1,1 @@
+SELECT * FROM chicago_crime.districts ORDER BY district_no;

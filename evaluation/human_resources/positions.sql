@@ -1,1 +1,0 @@
-SELECT * FROM human_resources.airbyte_schema.positions ORDER BY position_id;

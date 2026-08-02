@@ -1,1 +1,0 @@
-select * from regional_sales.airbyte_schema.regional_sales__customers order by customer_id

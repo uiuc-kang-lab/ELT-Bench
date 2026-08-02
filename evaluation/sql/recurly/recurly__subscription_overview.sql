@@ -1,0 +1,1 @@
+SELECT * FROM recurly.recurly__subscription_overview ORDER BY subscription_id;

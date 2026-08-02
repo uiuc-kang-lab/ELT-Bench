@@ -1,1 +1,0 @@
-SELECT * FROM restaurant.airbyte_schema.cities ORDER BY city;

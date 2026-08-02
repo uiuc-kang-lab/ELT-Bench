@@ -1,0 +1,1 @@
+SELECT * FROM pardot.pardot__opportunities ORDER BY opportunity_id;

@@ -1,1 +1,0 @@
-SELECT * FROM pardot.airbyte_schema.pardot__campaigns ORDER BY campaign_id;

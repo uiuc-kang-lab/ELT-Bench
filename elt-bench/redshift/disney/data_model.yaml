@@ -1,0 +1,16 @@
+models:
+  - name: directors
+    description: Each record represents a director.
+    columns:
+      - name: director_name
+        description: Name of the director.
+      - name: num_comedy_movies
+        description: The number of comedy movies the director has directed, replace NULL values with 0.
+      - name: num_adventure_movies
+        description: The number of adventure movies the director has directed, replace NULL values with 0.
+      - name: total_movie_revenue
+        description: The total revenue of the movies the director has directed, replace NULL values with 0.
+      - name: movie_with_most_voice_actors
+        description: The movie with the most voice actors the director has directed, with ties broken by the ascending order of the movie name
+      - name: movie_with_highest_total_gross
+        description: The movie with the highest total gross the director has directed, with ties broken by the descending order of the movie name

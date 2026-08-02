@@ -1,0 +1,1 @@
+select * from regional_sales.regional_sales__products order by product_id

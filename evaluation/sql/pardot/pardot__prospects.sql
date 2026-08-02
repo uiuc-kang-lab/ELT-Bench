@@ -1,0 +1,1 @@
+SELECT * FROM pardot.pardot__prospects ORDER BY prospect_id;

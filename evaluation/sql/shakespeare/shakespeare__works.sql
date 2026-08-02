@@ -1,0 +1,1 @@
+SELECT * FROM shakespeare.shakespeare__works ORDER BY id;

@@ -1,0 +1,1 @@
+SELECT * FROM card_games.card_games__sets ORDER BY id;

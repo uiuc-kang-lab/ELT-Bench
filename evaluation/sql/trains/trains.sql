@@ -1,0 +1,1 @@
+SELECT * FROM trains.trains ORDER BY train_id;

@@ -1,0 +1,1 @@
+SELECT * FROM tiktok_ads.tiktok_ads__ad_report ORDER BY ad_id;

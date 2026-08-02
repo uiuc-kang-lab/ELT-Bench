@@ -1,0 +1,1 @@
+SELECT * FROM sales_in_weather.stations ORDER BY station_nbr;

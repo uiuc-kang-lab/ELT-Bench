@@ -1,0 +1,1 @@
+SELECT * FROM student_club.events ORDER BY event_id;

@@ -1,1 +1,0 @@
-SELECT * FROM microsoft_ads.airbyte_schema.microsoft_ads__url_report ORDER BY date_day, DEVICE_TYPE, DEVICE_OS;

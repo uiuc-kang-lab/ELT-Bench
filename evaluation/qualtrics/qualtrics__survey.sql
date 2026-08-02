@@ -1,1 +1,0 @@
-SELECT * FROM qualtrics.airbyte_schema.qualtrics__survey ORDER BY survey_id;

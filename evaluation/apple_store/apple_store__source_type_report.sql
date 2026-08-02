@@ -1,1 +1,0 @@
-select * from apple_store.airbyte_schema.apple_store__source_type_report order by source_type, DATE_DAY;

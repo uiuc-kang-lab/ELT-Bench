@@ -1,0 +1,27 @@
+Airbyte:
+  config:
+    mongodb_definition_id: b2e713cd-cc36-4c0a-b5bd-b47cb8a0561e
+    namespace_definition: destination
+    server_url: http://airbyte-abctl-control-plane:80/api/public/v1/
+    databricks_definition_id: 072d5540-f236-4294-ba7c-ade8fd918496
+custom_api:
+  config:
+    configuration: {}
+    sync_mode: full_refresh_append
+    tables:
+    - user_reviews
+mongodb:
+  config:
+    connection_string: mongodb://elt-mongodb:27017/?directConnection=true
+    database: app_store
+    sync_mode: full_refresh_append
+    tables:
+    - playstore
+databricks:
+  config:
+    database: <db_database>
+    hostname: <db_hostname>
+    client_id: <db_client_id>
+    secret: <db_secret>
+    schema: app_store
+    http_path: <db_path>

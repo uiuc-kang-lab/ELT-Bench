@@ -1,0 +1,1 @@
+SELECT * FROM github.github__monthly_metrics ORDER BY month, REPOSITORY;

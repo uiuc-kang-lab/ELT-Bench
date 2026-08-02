@@ -1,0 +1,1 @@
+select * from app_store.apps order by app_name;

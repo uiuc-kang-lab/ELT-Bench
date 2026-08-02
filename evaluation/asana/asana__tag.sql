@@ -1,1 +1,0 @@
-SELECT * from asana.airbyte_schema.asana__tag ORDER BY tag_id;

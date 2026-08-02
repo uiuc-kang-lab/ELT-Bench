@@ -1,1 +1,0 @@
-select * from retail_complains.airbyte_schema.Clients order by client_id;

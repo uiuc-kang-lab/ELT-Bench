@@ -1,0 +1,1 @@
+SELECT * FROM mental_health_survey.surveys ORDER BY survey_id;

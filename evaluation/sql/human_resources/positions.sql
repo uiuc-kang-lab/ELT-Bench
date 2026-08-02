@@ -1,0 +1,1 @@
+SELECT * FROM human_resources.positions ORDER BY position_id;

@@ -1,1 +1,0 @@
-select * from sales.airbyte_schema.sales__products order by ProductID

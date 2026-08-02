@@ -1,0 +1,1 @@
+SELECT * FROM european_football_2.players ORDER BY player_api_id;

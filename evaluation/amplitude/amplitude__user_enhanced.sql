@@ -1,1 +1,0 @@
-select * from amplitude.airbyte_schema.amplitude__user_enhanced order by amplitude_user_id;

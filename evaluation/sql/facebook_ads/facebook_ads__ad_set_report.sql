@@ -1,0 +1,1 @@
+SELECT * FROM facebook_ads.facebook_ads__ad_set_report ORDER BY ad_set_id, DATE_DAY;

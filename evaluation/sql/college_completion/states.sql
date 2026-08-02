@@ -1,0 +1,1 @@
+SELECT * FROM college_completion.states ORDER BY state;

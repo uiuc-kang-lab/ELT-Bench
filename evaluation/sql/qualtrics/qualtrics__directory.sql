@@ -1,0 +1,1 @@
+SELECT * FROM qualtrics.qualtrics__directory ORDER BY directory_id;
