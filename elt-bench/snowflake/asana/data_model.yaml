@@ -115,7 +115,7 @@ models:
       - name: number_of_active_projects
         description: Count of non-archived projects
       - name: active_projects
-        description: Aggregated list of non archived projects associated with the team
+        description: Comma-separated string of non-archived project IDs associated with the team, sorted alphabetically by project ID. NULL if the team has no active projects.
       - name: number_of_archived_projects
         description: Count of archived projects
   

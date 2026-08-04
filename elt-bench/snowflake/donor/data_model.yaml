@@ -15,6 +15,6 @@ models:
       - name: has_resources_provided_by_LLM
         description: Set to 1 if the project has resources provided by 'Lakeshore Learning Materials', otherwise, set to 0
       - name: item_cost_most
-        description: The item with the most cost in the project, with ties broken by the ascending order of the item name
+        description: The item with the most cost (rounded to 2 decimal places) in the project, with ties broken by the ascending order of the item name
       - name: avg_amount_donation
         description: The average amount of donation for the project, excluding optional support (tip).

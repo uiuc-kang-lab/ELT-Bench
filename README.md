@@ -1,4 +1,4 @@
-# ELT-Bench
+# ELT-Bench++
 The first comprehensive, end-to-end benchmark designed to evaluate AI agents in automating ELT pipelines.
 ![ELT](https://anonymous.4open.science/r/ELT-Bench-B51C/materials/elt.svg)
 
@@ -106,6 +106,34 @@ Set up whichever destination you plan to evaluate against.
 
 ## Evaluation
 
+### Download the v5 ground truth
+
+The warehouse-specific ground-truth CSV files are publicly available in the
+[ELT-Bench dataset on Hugging Face](https://huggingface.co/datasets/tttjjj/elt_bench).
+Install the Hugging Face CLI and download the warehouse you want to evaluate
+from the repository root:
+
+```bash
+pip install -U huggingface_hub
+
+# Snowflake
+hf download tttjjj/elt_bench --repo-type dataset \
+  --include "gt_snowflake/**" --local-dir ./ground_truth
+
+# Databricks
+hf download tttjjj/elt_bench --repo-type dataset \
+  --include "gt_databricks/**" --local-dir ./ground_truth
+
+# Redshift
+hf download tttjjj/elt_bench --repo-type dataset \
+  --include "gt_redshift/**" --local-dir ./ground_truth
+```
+
+The downloads preserve the dataset directory structure, producing
+`./ground_truth/gt_snowflake`, `./ground_truth/gt_databricks`, and
+`./ground_truth/gt_redshift`. The dataset is public, so authentication is not
+required.
+
 - To evaluate the performance of an agent, use the following commands:
 
   ```bash
@@ -113,13 +141,13 @@ Set up whichever destination you plan to evaluate against.
   pip install -r requirements.txt
 
   python eva.py --folder run_name --db-type snowflake \
-    --gt-folder /path/to/gt_snowflake
+    --gt-folder ../ground_truth/gt_snowflake
 
   python eva.py --folder run_name --db-type databricks \
-    --database catalog_name --gt-folder /path/to/gt_databricks
+    --database catalog_name --gt-folder ../ground_truth/gt_databricks
 
   python eva.py --folder run_name --db-type redshift \
-    --gt-folder /path/to/gt_redshift
+    --gt-folder ../ground_truth/gt_redshift
   ```
 
   Credentials default to `./setup/destination/<db-type>_credential.json`; override this with `--credential` when needed. Use `--stage 1` or `--stage 2` to run a single stage and `--only db1,db2` to evaluate selected task schemas.
