@@ -100,9 +100,16 @@ Set up whichever destination you plan to evaluate against.
   ```
 
 ## Running agents
-- To evaluate the Spider-Agent and SWE-agent on ELT-Bench, follow the instructions in the `agents` folder. This folder contains detailed steps for running each agent.
+- Codex, Claude, OpenHands, and SWE-agent share one interface across
+  Snowflake, Databricks, and Redshift:
 
-- Agents read the generated input bundles from `../../inputs` by default. For another destination, point them at the matching bundles, e.g. `python run.py -t ../../inputs_databricks/` or `python run.py -t ../../inputs_redshift/`.
+  ```bash
+  python agents/run.py codex --destination snowflake --only books
+  ```
+
+  Replace `codex` with `claude`, `openhands`, or `swe`, and select another
+  warehouse with `--destination`. Paths are selected automatically. See
+  [`agents/README.md`](agents/README.md) for setup and options.
 
 ## Evaluation
 

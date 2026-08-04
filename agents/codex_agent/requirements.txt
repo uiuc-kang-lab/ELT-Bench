@@ -1,0 +1,7 @@
+openai-agents>=0.0.10
+openai>=1.50
+snowflake-connector-python>=3.0
+databricks-sql-connector
+databricks-sdk
+redshift-connector
+PyYAML

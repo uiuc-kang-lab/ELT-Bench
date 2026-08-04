@@ -22,7 +22,7 @@ It does so by using configurable [agent-computer interfaces](https://arxiv.org/a
 
 SWE-agent is built and maintained by researchers from Princeton University and Stanford University.
 
-## Evaluation SWE-Agent on ELT-Bench
+## Evaluate SWE-agent on ELT-Bench
 ``` bash
 cd docker/elt-swe
 docker build -t elt-swe .
@@ -30,11 +30,16 @@ cd ../..
 conda create -n swe python=3.11
 conda activate swe
 python -m pip install --upgrade pip && pip install --editable .
-pip install snowflake fireworks-ai
-bash run_swe.sh
+pip install PyYAML snowflake-connector-python databricks-sql-connector \
+  databricks-sdk redshift-connector
+
+python run_elt.py --destination snowflake --only books
+python run_elt.py --destination databricks --only books
+python run_elt.py --destination redshift --only books
 ```
-To modify the LLM model used in the experiment, update the model name on line 18 of the script run_swe.sh or use line 20.
-If you are using line 20, you can change the model name in ./config/elt_ta.yaml
+
+Use `--model`, `--cost-limit`, `--limit`, and `--overwrite` to configure a
+run. `run_swe.sh` remains as a backward-compatible Snowflake shortcut.
 ## 🚀 Get started!
 
 👉 Try SWE-agent in your browser: [![Open in GitHub Codespaces](https://img.shields.io/badge/Open_in_GitHub_Codespaces-gray?logo=github)](https://codespaces.new/SWE-agent/SWE-agent) ([more information](https://swe-agent.com/latest/installation/codespaces/))

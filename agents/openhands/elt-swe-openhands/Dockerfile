@@ -1,4 +1,4 @@
-FROM python:3.11
+FROM python:3.12
 
 # Update and install dependencies
 RUN apt-get update && apt-get install -y \
@@ -34,9 +34,15 @@ RUN pip install \
     redshift-connector \
     psycopg2-binary
 
+# OpenHands agent stack — runs the agent and its tools (file_editor / terminal /
+# grep / glob) inside this container, sandboxed to /workspace by the bind-mount.
+RUN pip install --no-cache-dir \
+        openhands-sdk==1.19.1 \
+        openhands-tools==1.19.1 \
+        openhands-agent-server==1.19.1
+
 RUN apt-get update && apt-get install -y \
     gnupg \
-    software-properties-common \
     wget \
     lsb-release
 
