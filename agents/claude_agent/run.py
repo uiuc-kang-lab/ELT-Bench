@@ -4,20 +4,26 @@ Uses the `claude-agent-sdk` Python SDK to drive Claude against each ELT task
 in `../../elt-bench/`. For every database it:
 
   1. Resets the configured Snowflake, Databricks, or Redshift namespace.
-  2. Copies the destination-specific task inputs into the
-     per-run output directory, which is mounted as `/workspace` inside a
-     fresh `elt_agent-image` Docker container on the `elt-docker_elt_network`.
-  3. Launches a Claude Agent SDK session with its `cwd` set to that output
-     directory. File tools (Read/Write/Edit/Glob/Grep) operate on the host
-     bind mount and appear inside the container automatically. Shell commands
-     are routed through a custom `container_bash` MCP tool that runs
-     `docker exec` inside the task's container — the native Bash tool is NOT
-     exposed, so the agent cannot run arbitrary host commands.
-  4. Streams the trajectory and writes `claude/result.json` with the
+  2. Copies the destination-specific task inputs into the per-run output
+     directory, which is mounted as `/workspace` inside a fresh
+     `elt-swe-claude` Docker container on the `elt-docker_elt_network`.
+  3. Runs the Claude Code CLI inside that container. The SDK spawns
+     `docker_claude.sh`, which execs `claude` in the container, so every tool
+     the CLI offers (Bash, Read, Write, Edit, Glob, Grep) executes in the
+     container and sees only `/workspace`. The host filesystem, including the
+     task generator's release bundles, is not reachable. A PreToolUse hook
+     refuses writes outside `/workspace/elt`, the rule the task states.
+     The operator's own Claude Code settings, plugins and MCP servers are not
+     loaded (`setting_sources=[]`, `strict_mcp_config`).
+  4. Audits the finished trajectory (`claude/sandbox_audit.json`): writes
+     attempted outside `/workspace/elt` and any reference to a release path
+     are recorded, and the run is marked `sandbox_clean`.
+  5. Streams the trajectory and writes `claude/result.json` with the
      transcript, turn count, cost, and final status.
 
 Usage:
-    export ANTHROPIC_API_KEY=...           # or use any Claude Code-supported auth
+    export ANTHROPIC_API_KEY=...           # passed into the container
+    docker build -t elt-swe-claude agents/claude_agent/elt-swe-claude
     python run.py --destination databricks --suffix eltbench --model claude-opus-4-7
 """
 
@@ -25,6 +31,7 @@ from __future__ import annotations
 
 import argparse
 import asyncio
+import posixpath
 import datetime
 import json
 import logging
@@ -38,15 +45,14 @@ from typing import Any
 from claude_agent_sdk import (
     AssistantMessage,
     ClaudeAgentOptions,
+    HookMatcher,
     ResultMessage,
     SystemMessage,
     TextBlock,
     ToolResultBlock,
     ToolUseBlock,
     UserMessage,
-    create_sdk_mcp_server,
     query,
-    tool,
 )
 
 AGENTS_DIR = Path(__file__).resolve().parents[1]
@@ -54,6 +60,7 @@ if str(AGENTS_DIR) not in sys.path:
     sys.path.insert(0, str(AGENTS_DIR))
 
 from common import (  # noqa: E402
+    DestinationPreparationError,
     adapt_prompt,
     destination_choices,
     get_destination,
@@ -87,17 +94,46 @@ logger.addHandler(_std)
 
 # ---------- constants ----------
 
-IMAGE_NAME = "elt-swe"
+IMAGE_NAME = "elt-swe-claude"
 NETWORK_NAME = "elt-docker_elt_network"
 CONTAINER_WORKDIR = "/workspace"
+CONTAINER_ELT_DIR = f"{CONTAINER_WORKDIR}/elt"
 
-# Pinned to match the Claude Code CLI version used in the original benchmark
-# runs (claude_code_version=2.1.119 in logs/*.log init messages), rather than
-# the claude-agent-sdk's bundled CLI version.
-CLI_PATH = os.path.expanduser("~/.local/bin/claude")
+# The SDK spawns this script instead of a local `claude`; it execs the CLI
+# inside the task container named by $CLAUDE_CONTAINER. The image pins the
+# CLI version (2.1.282, see elt-swe-claude/Dockerfile).
+CLI_WRAPPER = Path(__file__).resolve().parent / "docker_claude.sh"
+
+# Host environment variables copied into the container when present: the
+# API key and the alternative auth/endpoint settings Claude Code reads.
+CONTAINER_ENV_PASSTHROUGH = (
+    "ANTHROPIC_API_KEY",
+    "ANTHROPIC_AUTH_TOKEN",
+    "ANTHROPIC_BASE_URL",
+    "ANTHROPIC_CUSTOM_HEADERS",
+    "CLAUDE_CODE_USE_BEDROCK",
+    "CLAUDE_CODE_USE_VERTEX",
+    "AWS_ACCESS_KEY_ID",
+    "AWS_SECRET_ACCESS_KEY",
+    "AWS_SESSION_TOKEN",
+    "AWS_REGION",
+    "HTTPS_PROXY",
+    "HTTP_PROXY",
+    "NO_PROXY",
+)
+# Fixed container environment: terraform apply and dbt run exceed Claude
+# Code's default 2-minute Bash timeout, and nothing else should leave the
+# container.
+CONTAINER_ENV_FIXED = {
+    "BASH_DEFAULT_TIMEOUT_MS": "600000",
+    "BASH_MAX_TIMEOUT_MS": "1800000",
+    "DISABLE_AUTOUPDATER": "1",
+    "DISABLE_TELEMETRY": "1",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+}
 
 SYSTEM_PROMPT_TEMPLATE = """You are a data engineer skilled in databases, SQL, and building ELT pipelines.
-Your working directory (`cwd`) is the host-side mount of `{container_workdir}` inside a Docker container named `{container}`, running the `{image}` image on the `{network}` network. Any file you create or edit in the cwd appears immediately inside the container at `{container_workdir}`. The cwd contains all the necessary information for your tasks. However, you are only allowed to modify files in `/workspace/elt` (i.e. `<cwd>/elt` on the host).
+You are running inside a Docker container named `{container}` ({image} image on the `{network}` network). Your working directory is `{container_workdir}`; it contains all the necessary information for your tasks. However, you are only allowed to modify files in `{container_workdir}/elt`.
 Your goal is to build an ELT pipeline by extracting data from multiple sources, such as custom APIs, PostgreSQL, MongoDB, flat files, and the cloud service S3.
 The extracted data will be loaded into a target system, Databricks, followed by writing transformation queries to construct final tables for downstream use.
 This task is divided into two stages:
@@ -105,8 +141,8 @@ This task is divided into two stages:
 2. Data Transformation – Using the DBT Project workflow for Databricks.
 
 TOOL USAGE:
-  - Read / Write / Edit / Glob / Grep: operate on files under the cwd. Prefer these over shell utilities for file I/O.
-  - container_bash: run a shell command inside the `{container}` container (cwd = `{container_workdir}`). All commands — terraform, dbt, airbyte-cli, python, psql, etc. — must go through this tool. You do NOT have a host shell; do not try to call `docker`, `docker exec`, or any other host command directly.
+  - Read / Write / Edit / Glob / Grep: operate on files under `{container_workdir}`. Prefer these over shell utilities for file I/O.
+  - Bash: run a shell command in the container (cwd = `{container_workdir}`). All commands — terraform, dbt, python, psql, etc. — run here.
 
 First, you should _always_ include a general thought about what you're going to do next.
 Then issue the corresponding tool call. Wait for the tool result before continuing with more discussion and commands.
@@ -141,13 +177,146 @@ When done (or giving up), print a single final line:
     RESULT: FAIL: <short reason>
 """
 
-# Subset of native Claude Code tools we expose to the agent. Bash is deliberately
-# excluded — the agent must run shell commands inside the container via the
-# `container_bash` MCP tool registered per task in `run_task`.
-NATIVE_ALLOWED_TOOLS = ["Read", "Write", "Edit", "Glob", "Grep"]
-CONTAINER_BASH_MCP_SERVER = "elt"
-CONTAINER_BASH_TOOL = f"mcp__{CONTAINER_BASH_MCP_SERVER}__container_bash"
-DEFAULT_BASH_TIMEOUT_SEC = 600
+# Tools the agent may use, all executed inside the container. Listing Bash
+# here approves every shell command without a prompt.
+ALLOWED_TOOLS = ["Read", "Write", "Edit", "Glob", "Grep", "Bash"]
+# Tools removed from the session: web access, sub-agents, and planning tools
+# the benchmark does not provide.
+DISALLOWED_TOOLS = [
+    "WebFetch",
+    "WebSearch",
+    "Agent",
+    "Task",
+    "NotebookEdit",
+    "NotebookRead",
+    "TodoWrite",
+    "Skill",
+    "EnterPlanMode",
+    "ExitPlanMode",
+]
+# File tools that modify files; the guard limits them to /workspace/elt.
+WRITE_TOOL_MATCHER = "Write|Edit|MultiEdit|NotebookEdit"
+WRITE_TOOLS = frozenset(WRITE_TOOL_MATCHER.split("|"))
+PATH_INPUT_KEYS = ("file_path", "notebook_path")
+# Substrings that identify the task generator's release bundles, which hold
+# the answer keys. They cannot exist in the container; a tool input that
+# names one is reported by the audit.
+FORBIDDEN_PATH_MARKERS = ("answer_key", "/releases/", "ELT-taskgen")
+
+
+def _hook_deny(reason: str) -> dict[str, Any]:
+    return {
+        "hookSpecificOutput": {
+            "hookEventName": "PreToolUse",
+            "permissionDecision": "deny",
+            "permissionDecisionReason": reason,
+        }
+    }
+
+
+class SandboxGuard:
+    """Enforce the task's write rule on the container-side file tools.
+
+    The tools run inside the container, so the host is unreachable without
+    any check here. This guard refuses Write/Edit calls whose target is not
+    under `/workspace/elt`, which the task instruction forbids. Reads are not
+    restricted. Every refusal is recorded for the post-run audit.
+    """
+
+    def __init__(self, workdir: str = CONTAINER_WORKDIR) -> None:
+        self.workdir = workdir
+        self.elt = posixpath.join(workdir, "elt")
+        self.denials: list[dict[str, Any]] = []
+
+    def normalize(self, raw: str) -> str:
+        """Absolute, `..`-free container path for a model-supplied path."""
+        path = raw if raw.startswith("/") else posixpath.join(self.workdir, raw)
+        return posixpath.normpath(path)
+
+    def check(self, tool_name: str, tool_input: dict[str, Any]) -> str | None:
+        """Return the denial reason, or None when the call is allowed."""
+        if tool_name not in WRITE_TOOLS:
+            return None
+        for key in PATH_INPUT_KEYS:
+            raw = tool_input.get(key)
+            if not isinstance(raw, str) or not raw:
+                continue
+            path = self.normalize(raw)
+            if path != self.elt and not path.startswith(self.elt + "/"):
+                return (
+                    f"{tool_name} may only modify files under {self.elt}; "
+                    f"refused {raw!r}"
+                )
+        return None
+
+    async def pre_tool_use(self, input_data: Any, tool_use_id: str | None, context: Any) -> dict[str, Any]:
+        """PreToolUse hook for the write tools: deny with a reason, or no-op."""
+        tool_name = str(input_data.get("tool_name", ""))
+        tool_input = input_data.get("tool_input") or {}
+        if not isinstance(tool_input, dict):
+            tool_input = {}
+        reason = self.check(tool_name, tool_input)
+        if reason is None:
+            return {}
+        self.denials.append({"tool": tool_name, "input": tool_input, "reason": reason})
+        logger.warning("sandbox denied %s: %s", tool_name, reason)
+        return _hook_deny(reason)
+
+    def hooks(self) -> dict[str, list[HookMatcher]]:
+        """The hook table to pass as `ClaudeAgentOptions.hooks`."""
+        return {"PreToolUse": [HookMatcher(matcher=WRITE_TOOL_MATCHER, hooks=[self.pre_tool_use])]}
+
+
+def audit_trajectory(turns: list[dict[str, Any]], guard: SandboxGuard) -> dict[str, Any]:
+    """Scan a finished trajectory for writes outside /workspace/elt.
+
+    A flagged call whose tool result is an error was refused and is recorded
+    as an attempt. A flagged call that returned normally, or has no recorded
+    result, is recorded as an escape. Only escapes and release-path markers
+    make the run unclean.
+    """
+    # tool_use id -> whether its result was an error. Tool results arrive in
+    # user turns and reference the tool_use by id.
+    results: dict[str, bool] = {}
+    for turn in turns:
+        if turn.get("role") != "user":
+            continue
+        for block in turn.get("content", []):
+            if block.get("type") == "tool_result" and block.get("tool_use_id"):
+                results[str(block["tool_use_id"])] = bool(block.get("is_error"))
+    attempts: list[dict[str, Any]] = []
+    escapes: list[dict[str, Any]] = []
+    forbidden_markers: list[dict[str, Any]] = []
+    for turn in turns:
+        if turn.get("role") != "assistant":
+            continue
+        for block in turn.get("content", []):
+            if block.get("type") != "tool_use":
+                continue
+            name = str(block.get("name", ""))
+            tool_input = block.get("input") or {}
+            if isinstance(tool_input, dict):
+                reason = guard.check(name, tool_input)
+                if reason is not None:
+                    record = {"tool": name, "input": tool_input, "reason": reason}
+                    # An error result means the hook or the CLI refused the
+                    # call. A normal result, or a missing result, means it ran.
+                    if results.get(str(block.get("id")), False):
+                        attempts.append(record)
+                    else:
+                        escapes.append(record)
+            text = json.dumps(tool_input, default=str)
+            hits = [marker for marker in FORBIDDEN_PATH_MARKERS if marker in text]
+            if hits:
+                forbidden_markers.append({"tool": name, "markers": hits, "input": text[:400]})
+    return {
+        "workdir": guard.workdir,
+        "denied_attempts": attempts,
+        "escapes": escapes,
+        "forbidden_markers": forbidden_markers,
+        "hook_denials": guard.denials,
+        "sandbox_clean": not (escapes or forbidden_markers),
+    }
 
 
 # ---------- helpers ----------
@@ -158,8 +327,11 @@ def _run(cmd: list[str], check: bool = True, **kw: Any) -> subprocess.CompletedP
 
 
 def ensure_container(container_name: str, mnt_dir: Path) -> None:
-    """(Re)create a fresh ELT container with `mnt_dir` bind-mounted to /workspace."""
-    # Remove any existing container with this name.
+    """(Re)create a fresh ELT container with `mnt_dir` bind-mounted to /workspace.
+
+    The API key and related settings are passed by name (`-e NAME`), so their
+    values do not appear in the process list.
+    """
     existing = _run(
         ["docker", "ps", "-aq", "-f", f"name=^{container_name}$"], check=False
     ).stdout.strip()
@@ -168,11 +340,18 @@ def ensure_container(container_name: str, mnt_dir: Path) -> None:
         _run(["docker", "rm", "-f", container_name], check=False)
 
     mnt_abs = str(mnt_dir.resolve())
+    env_args: list[str] = []
+    for name in CONTAINER_ENV_PASSTHROUGH:
+        if os.environ.get(name):
+            env_args += ["-e", name]
+    for name, value in CONTAINER_ENV_FIXED.items():
+        env_args += ["-e", f"{name}={value}"]
     logger.info("Starting container %s (mount %s -> %s)", container_name, mnt_abs, CONTAINER_WORKDIR)
     _run([
         "docker", "run", "-d", "--rm",
         "--name", container_name,
         "--network", NETWORK_NAME,
+        *env_args,
         "-v", f"{mnt_abs}:{CONTAINER_WORKDIR}",
         "-w", CONTAINER_WORKDIR,
         IMAGE_NAME,
@@ -355,13 +534,12 @@ async def _run_task_body(
     model: str,
     max_turns: int,
 ) -> None:
-    # Prep Databricks DB.
     task_input_dir = inputs_root / db
-    try:
-        namespace = prepare_destination(destination, task_input_dir, credential)
-        logger.info("Prepared %s destination namespace %s", destination, namespace)
-    except Exception as e:  # pragma: no cover
-        logger.warning("Destination preparation for %s failed: %s", db, e)
+
+    # A failed reset means stale warehouse state: abort this attempt before
+    # any container, agent session, or evaluation can observe it.
+    namespace = prepare_destination(destination, task_input_dir, credential)
+    logger.info("Prepared %s destination namespace %s", destination, namespace)
 
     # Copy seed files into the mount dir.
     copy_initial_files(task_input_dir, out_dir)
@@ -378,67 +556,23 @@ async def _run_task_body(
         container_workdir=CONTAINER_WORKDIR,
     )
 
-    @tool(
-        "container_bash",
-        (
-            f"Run a bash command inside the Docker container `{container_name}` "
-            f"(cwd = {CONTAINER_WORKDIR}). Returns stdout, stderr, and exit code. "
-            "Use this for terraform, dbt, python, psql, and any other shell work. "
-            f"Optional `timeout_sec` (default {DEFAULT_BASH_TIMEOUT_SEC}s)."
-        ),
-        {"command": str, "timeout_sec": int},
-    )
-    async def container_bash(args: dict[str, Any]) -> dict[str, Any]:
-        command = args["command"]
-        timeout_sec = int(args.get("timeout_sec") or DEFAULT_BASH_TIMEOUT_SEC)
-        proc = await asyncio.create_subprocess_exec(
-            "docker", "exec", "-w", CONTAINER_WORKDIR, container_name,
-            "bash", "-lc", command,
-            stdout=asyncio.subprocess.PIPE,
-            stderr=asyncio.subprocess.PIPE,
-        )
-        try:
-            stdout_b, stderr_b = await asyncio.wait_for(
-                proc.communicate(), timeout=timeout_sec
-            )
-            exit_code = proc.returncode
-        except asyncio.TimeoutError:
-            proc.kill()
-            await proc.communicate()
-            return {
-                "content": [{
-                    "type": "text",
-                    "text": f"TIMEOUT after {timeout_sec}s: {command!r}",
-                }],
-                "isError": True,
-            }
-        out = stdout_b.decode("utf-8", errors="replace")
-        err = stderr_b.decode("utf-8", errors="replace")
-        body = f"exit_code: {exit_code}\n"
-        if out:
-            body += f"stdout:\n{out}"
-        if err:
-            body += ("\n" if out else "") + f"stderr:\n{err}"
-        return {
-            "content": [{"type": "text", "text": body}],
-            "isError": exit_code != 0,
-        }
-
-    mcp_server = create_sdk_mcp_server(
-        name=CONTAINER_BASH_MCP_SERVER,
-        version="1.0.0",
-        tools=[container_bash],
-    )
-
+    # The CLI runs inside the container through the wrapper, so every tool is
+    # container-scoped. The remaining options remove web and sub-agent tools
+    # and the operator's own Claude Code settings, plugins, and MCP servers.
+    guard = SandboxGuard()
     options = ClaudeAgentOptions(
         system_prompt=system_prompt,
         cwd=str(out_dir.resolve()),
-        allowed_tools=NATIVE_ALLOWED_TOOLS + [CONTAINER_BASH_TOOL],
-        mcp_servers={CONTAINER_BASH_MCP_SERVER: mcp_server},
+        allowed_tools=ALLOWED_TOOLS,
+        disallowed_tools=DISALLOWED_TOOLS,
+        strict_mcp_config=True,
+        setting_sources=[],
+        hooks=guard.hooks(),
         permission_mode="acceptEdits",
         max_turns=max_turns,
         model=model,
-        cli_path=CLI_PATH,
+        cli_path=str(CLI_WRAPPER),
+        env={"CLAUDE_CONTAINER": container_name},
     )
 
     recorder = TrajectoryRecorder()
@@ -461,6 +595,16 @@ async def _run_task_body(
 
     # Persist result.
     (out_dir / "claude").mkdir(parents=True, exist_ok=True)
+    # The audit is written even when the session raised, so a partial
+    # trajectory is still checked.
+    audit = audit_trajectory(recorder.turns, guard)
+    with open(out_dir / "claude" / "sandbox_audit.json", "w") as f:
+        json.dump(audit, f, indent=2, default=str)
+    if audit["sandbox_clean"]:
+        logger.info("sandbox audit clean (%d hook denials)", len(audit["hook_denials"]))
+    else:
+        logger.error("SANDBOX AUDIT FAILED for %s: %s", instance_id,
+                     json.dumps({k: audit[k] for k in ("escapes", "forbidden_markers")}, default=str)[:2000])
     result_json = {
         "instance_id": instance_id,
         "db": db,
@@ -470,6 +614,7 @@ async def _run_task_body(
         "total_cost_usd": recorder.total_cost_usd,
         "usage": recorder.usage,
         "result": recorder.final_text,
+        "sandbox_clean": audit["sandbox_clean"],
         "trajectory": recorder.turns,
     }
     with open(result_path, "w") as f:
@@ -510,6 +655,7 @@ async def main_async(args: argparse.Namespace) -> None:
         databases = databases[: args.limit]
 
     logger.info("Experiment %s — %d tasks", experiment_id, len(databases))
+    failures = 0
     for db in databases:
         try:
             await run_task(
@@ -523,8 +669,13 @@ async def main_async(args: argparse.Namespace) -> None:
                 max_turns=args.max_turns,
                 overwrite=args.overwrite,
             )
+        except DestinationPreparationError as exc:
+            failures += 1
+            logger.error("Task %s aborted before the agent session: %s", db, exc)
         except Exception:
             logger.exception("Task %s failed", db)
+    if failures:
+        raise SystemExit(f"{failures} task(s) aborted: destination preparation failed")
 
 
 def parse_args() -> argparse.Namespace:
@@ -549,11 +700,17 @@ def parse_args() -> argparse.Namespace:
                         "Default 20; pass 0 for no limit.")
     p.add_argument("--overwrite", action="store_true",
                    help="Rerun tasks even if result.json already exists.")
+    p.add_argument("--image", default=IMAGE_NAME,
+                   help="Container image with the Claude Code CLI installed.")
     return p.parse_args()
 
 
 def main() -> None:
+    global IMAGE_NAME
     args = parse_args()
+    IMAGE_NAME = args.image
+    if not CLI_WRAPPER.is_file() or not os.access(CLI_WRAPPER, os.X_OK):
+        raise SystemExit(f"CLI wrapper is missing or not executable: {CLI_WRAPPER}")
     asyncio.run(main_async(args))
 
 
