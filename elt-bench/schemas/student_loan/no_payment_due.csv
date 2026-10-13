@@ -1,3 +1,6 @@
 column_name,column_description
 name,student's name 
-bool,whether the student has payment dues
+bool,"whether the student has payment dues
+commonsense evidence:
+• neg: the student doesn't have payment due
+• pos: the student has payment due"

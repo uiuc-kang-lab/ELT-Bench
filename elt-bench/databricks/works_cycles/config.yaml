@@ -95,7 +95,7 @@ flat_files:
 mongodb:
   config:
     connection_string: mongodb://elt-mongodb:27017/?directConnection=true
-    database: work_cycles
+    database: works_cycles
     sync_mode: full_refresh_append
     tables:
     - Address
@@ -117,7 +117,7 @@ mongodb:
     - SalesPerson
 postgres:
   config:
-    database: work_cycles
+    database: works_cycles
     host: elt-postgres
     password: testelt
     port: 5432
@@ -145,5 +145,5 @@ databricks:
     hostname: <db_hostname>
     client_id: <db_client_id>
     secret: <db_secret>
-    schema: work_cycles
+    schema: works_cycles
     http_path: <db_path>

@@ -13,7 +13,7 @@ models:
       - name: purchased_beer_by_ASB
         description: set to 1 if the customer has purchased at least one root beer produced by AJ Stephans Beverages, otherwise, set to 0
       - name: date_first_bought
-        description: Date the customer first bought a root beer.
+        description: Date the customer first bought a root beer, i.e. the first purchase date recorded in the customer's information.
       - name: num_non_sweetened
         description: Number of non-sweetened root beers the customer has purchased, replace NULL values with 0. Non-sweetened root beers are defined as root beers that do not contain artificial sweetener and honey.
       - name: bought_beers_contain_artificial_sweetener
@@ -26,7 +26,7 @@ models:
       - name: brandname
         description: Name of the brand.
       - name: address
-        description: Address of the brand. Concatenate the city, state, and country with a space separating them.
+        description: Address of the brand. Concatenate the city, state, and country with a space separating them. NULL if any of them is missing.
       - name: num_5_stars
         description: Number of 5-star ratings the brand has received, replace NULL values with 0.
       - name: not_advertise_on_Facebook_and_Twitter

@@ -11,13 +11,13 @@ models:
       - name: headquarter
         description: Set to 'Texas (TX)' if the make is 'Peterbilt', set to 'North Carolina (NC)' if the make is Mack, set to 'Washington (WA)' if the make is 'Kenworth'
       - name: num_shipments
-        description: The number of shipment delivered by the truck model, replace NULL values with 0.
+        description: The number of shipment delivered by the truck, replace NULL values with 0.
       - name: person_receive_heaviest_shipment
-        description: The person who received the heaviest shipment delivered by the truck model, with ties broken by the ascending order of the customer name
+        description: The person who received the heaviest shipment delivered by the truck, with ties broken by the ascending order of the customer name
       - name: per_weight_exceed_10000
-        description: The percentage of shipments that exceed 10,000 pounds among all shipments delivered by the truck model.
+        description: The percentage of shipments that exceed 10,000 pounds among all shipments delivered by the truck.
       - name: num_shipments_change_from_2016_to_2017
-        description: The number of shipments change from 2016 to 2017 delivered by the truck model, replace NULL values with 0.
+        description: The number of shipments change from 2016 to 2017 delivered by the truck, replace NULL values with 0.
   - name: drivers
     description: Each record represents a driver.
     columns:

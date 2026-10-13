@@ -34,6 +34,6 @@ models:
       - name: has_above_average_account_balance
         description: Set to 1 if the account balance of the customer is above the average account balance of all customers, otherwise, set to 0
       - name: order_date_highest_total_price
-        description: The order date with the highest total price the customer has made, with ties broken by the ascending order of the order date.
+        description: The date of the customer's order with the highest total price, with ties broken by the ascending order of the order date.
       - name: balance_lower_than_4000_and_in_US
         description: Set to 1 if the account balance of the customer is lower than 4000 and the customer is from the US, otherwise, set to 0

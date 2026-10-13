@@ -63,9 +63,9 @@ models:
       - name: mailing_list_ids
         description: Comma-separated list of mailing list IDs the record is associated with, sorted in ascending order of mailing list ID.
       - name: count_mailing_lists_subscribed_to
-        description: Count of distinct mailing lists the contact is a member of and has not opted out of.
+        description: Count of distinct mailing lists the contact is a member of and has not opted out of. Set to 0 if NULL.
       - name: count_mailing_lists_unsubscribed_from
-        description: Count of distinct mailing lists that the contact has opted out of receiving emails through.
+        description: Count of distinct mailing lists that the contact has opted out of receiving emails through. Set to 0 if NULL.
       - name: created_at
         description: The creation date and time of the record. If a creation time is not available, the timestamp when the record was last updated is used.
         format: YYYY-MM-DD HH:MM:SS
