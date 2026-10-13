@@ -136,10 +136,10 @@
     },
     "chicago_crime": {
       "community_areas": [
-        "cast(community_area_no as integer)"
+        "community_area_no"
       ],
       "districts": [
-        "cast(district_no as integer)"
+        "district_no"
       ]
     },
     "citeseer": {
@@ -188,7 +188,7 @@
         "prof_id"
       ],
       "students": [
-        "cast(student_id as integer)"
+        "student_id"
       ]
     },
     "debit_card_specializing": {
@@ -245,7 +245,7 @@
         "client_id"
       ],
       "districts": [
-        "cast(district_id as integer)"
+        "district_id"
       ]
     },
     "food_inspection": {
@@ -406,7 +406,7 @@
         "email_send_id"
       ],
       "marketo__email_templates": [
-        "email_template_id"
+        "email_template_history_id"
       ],
       "marketo__programs": [
         "program_id"
@@ -425,7 +425,9 @@
     "microsoft_ads": {
       "microsoft_ads__account_report": [
         "ACCOUNT_ID",
-        "DATE_DAY"
+        "DATE_DAY",
+        "DEVICE_OS",
+        "DEVICE_TYPE"
       ],
       "microsoft_ads__ad_group_report": [
         "ad_group_id",
@@ -453,7 +455,8 @@
         "DATE_DAY"
       ],
       "microsoft_ads__search_report": [
-        "date_day"
+        "date_day",
+        "search_query"
       ],
       "microsoft_ads__url_report": [
         "date_day",
@@ -497,13 +500,13 @@
     },
     "movielens": {
       "movielens__actors": [
-        "cast(actorid as integer)"
+        "actorid"
       ],
       "movielens__directors": [
-        "cast(directorid as integer)"
+        "directorid"
       ],
       "movielens__movies": [
-        "cast(movieid as integer)"
+        "movieid"
       ]
     },
     "movies_4": {
@@ -646,7 +649,7 @@
         "c_custkey"
       ],
       "nations": [
-        "cast(N_NATIONKEY as integer)"
+        "N_NATIONKEY"
       ]
     },
     "sales": {
@@ -675,7 +678,7 @@
     },
     "shipping": {
       "drivers": [
-        "cast(driver_id as integer)"
+        "driver_id"
       ],
       "trucks": [
         "truck_id"
@@ -688,7 +691,7 @@
     },
     "soccer_2016": {
       "teams": [
-        "cast(team_id as integer)"
+        "team_id"
       ]
     },
     "social_media": {
@@ -698,7 +701,7 @@
     },
     "software_company": {
       "geo": [
-        "cast(geoid as integer)"
+        "geoid"
       ]
     },
     "student_club": {
@@ -741,7 +744,7 @@
     },
     "talkingdata": {
       "labels": [
-        "CAST(label_id AS INT)"
+        "label_id"
       ]
     },
     "thrombosis_prediction": {
@@ -786,7 +789,7 @@
     },
     "university": {
       "countries": [
-        "cast(country_id as integer)"
+        "country_id"
       ],
       "universities": [
         "university_id"
@@ -848,8 +851,8 @@
         "VIEWS_PERCENTAGE"
       ],
       "youtube__video_report": [
-        "video_id NULLS FIRST",
-        "DATE_DAY NULLS FIRST"
+        "video_id",
+        "DATE_DAY"
       ]
     },
     "zuora": {

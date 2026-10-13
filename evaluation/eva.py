@@ -32,8 +32,8 @@ def parse_args():
         "--database",
         default="elt",
         help=(
-            "Databricks catalog containing task schemas. The value is ignored "
-            "for the current Snowflake and Redshift layouts."
+            "Snowflake database or Databricks catalog containing one schema "
+            "per task. The value is ignored for the current Redshift layout."
         ),
     )
     parser.add_argument(

@@ -122,8 +122,8 @@ class BaseConnector:
 class SnowflakeConnector(BaseConnector):
     """Snowflake adapter for the current benchmark layout.
 
-    Each logical task schema is stored as its own Snowflake database, with
-    source and model tables under AIRBYTE_SCHEMA.
+    All tasks share one Snowflake database (``--database``); each task's
+    source and model tables live in a schema named after the task.
     """
 
     def _connect(self):
@@ -136,28 +136,10 @@ class SnowflakeConnector(BaseConnector):
     def _norm(self, ident: str) -> str:
         return ident.upper()
 
-    def verify_schema(self, database: str, schema: str) -> bool:
-        df = self.query(
-            f"SELECT schema_name FROM {schema}.information_schema.schemata"
-        )
-        names = {self._norm(x) for x in df.iloc[:, 0].astype(str)}
-        return "AIRBYTE_SCHEMA" in names
-
-    def list_tables(self, database: str, schema: str) -> list:
-        df = self.query(
-            f"SELECT table_name FROM {schema}.information_schema.tables "
-            "WHERE table_schema = 'AIRBYTE_SCHEMA' "
-            "AND table_type = 'BASE TABLE'"
-        )
-        return [str(x) for x in df.iloc[:, 0]]
-
-    def _fqn(self, database: str, schema: str, table: str) -> str:
-        return f"{schema}.AIRBYTE_SCHEMA.{table}"
-
     def prepare_evaluation_sql(self, sql: str, database: str) -> str:
         return self._rewrite_relations(
             sql,
-            lambda schema, table: f"{schema}.AIRBYTE_SCHEMA.{table}",
+            lambda schema, table: f"{database}.{schema}.{table}",
         )
 
     def _schemata_sql(self, database: str) -> str:
