@@ -15,7 +15,7 @@ Supported destinations are `snowflake`, `databricks`, and `redshift`.
 Install the selected runner and all destination connectors:
 
 ```bash
-pip install -r agents/codex_agent/requirements.txt
+pip install -r agents/codex_agent/requirements.txt   # exact pins; use a Python 3.12 env
 pip install -r agents/claude_agent/requirements.txt
 pip install -r agents/openhands/requirements.txt
 ```
@@ -59,5 +59,18 @@ folders have not been generated.
 
 Each agent can also be run directly from its own directory. Run its `run.py
 --help` (or `run_elt.py --help` for SWE-agent) for model, output, task
-selection, and overwrite options. Results are separated by agent and
-destination under `agents/output/`; logs are stored under `agents/logs/`.
+selection, and overwrite options. The Codex, Claude and OpenHands runners
+write results to `<agent dir>/output/` and logs to `<agent dir>/logs/`.
+
+Those three runners share these behaviors:
+
+- `--database NAME`: one shared database (Snowflake; default `elt`) with one
+  schema per task, the layout the evaluator expects.
+- The task container runs as the host user; Codex and OpenHands mount
+  `/workspace` read-only except `/workspace/elt` (Claude guards Write/Edit
+  with a hook).
+- A failed warehouse reset aborts the task. `result.json` records a `status`;
+  attempts the agent ended (`success`, `error_max_turns`, plus `stuck` for
+  OpenHands) are kept, others (API errors, crashes) are rerun by the next
+  invocation without `--overwrite`.
+- `--shard K/N` splits the tasks across N parallel processes.

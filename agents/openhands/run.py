@@ -3,24 +3,26 @@
 Uses the OpenHands Agent SDK (`openhands-sdk`) to drive an OpenHands agent
 against each ELT task in `../../elt-bench/`. For every database it:
 
-  1. Resets the configured Snowflake, Databricks, or Redshift namespace on
-     the host (the agent never sees the separate credential file).
-  2. Copies the destination-specific task inputs into the
-     per-run output directory, which is mounted as `/workspace` inside a
-     fresh `elt-swe` Docker container on the `elt-docker_elt_network`.
-  3. Inside that container, starts `openhands-agent-server` on port 8000
-     (published to the host as `AGENT_SERVER_PORT`). All agent tool calls
-     (file_editor / terminal / grep / glob) execute INSIDE the container,
-     sandboxed by the bind-mount: they cannot see anything on the host
-     other than `/workspace`.
+  1. Copies the destination-specific task inputs into the per-run output
+     directory, points the task at its own schema (`--database` holds one
+     schema per task), and resets that namespace on the host (the agent
+     never sees the separate credential file).
+  2. Mounts that directory as `/workspace` in a fresh `elt-swe-openhands`
+     container on the `elt-docker_elt_network`.
+  3. Inside that container (running as the host user), starts
+     `openhands-agent-server` on port 8000, published on a free 127.0.0.1
+     port. All agent tool calls (file_editor / terminal / grep / glob)
+     execute INSIDE the container, sandboxed by the bind-mount: they cannot
+     see anything on the host other than `/workspace`, which is read-only
+     except for `/workspace/elt`.
   4. The host process drives the LLM and Conversation, talks to the
      in-container agent-server via `RemoteWorkspace`, and writes
      `openhands/result.json` with the trajectory, turn count, cost, and
      final status.
 
 Usage:
-    export LLM_API_KEY=...                 # provider key (Anthropic, OpenAI, ...)
-    python run.py --destination redshift --model anthropic/claude-opus-4-7
+    export LLM_API_KEY=...                 # or ANTHROPIC_API_KEY / OPENAI_API_KEY
+    python run.py --destination snowflake --database openhands_test --model anthropic/claude-opus-4-7
 """
 
 from __future__ import annotations
@@ -31,8 +33,10 @@ import datetime
 import json
 import logging
 import os
+import re
 import secrets
 import shutil
+import socket
 import subprocess
 import sys
 import time
@@ -41,6 +45,7 @@ import urllib.request
 from pathlib import Path
 from typing import Any
 
+import yaml
 from openhands.sdk import (
     LLM,
     Agent,
@@ -55,6 +60,7 @@ from openhands.sdk.event import (
     MessageEvent,
     ObservationEvent,
 )
+from openhands.sdk.event.conversation_error import ConversationErrorEvent
 from openhands.sdk.tool import Tool
 from openhands.sdk.workspace.remote.base import RemoteWorkspace
 
@@ -70,7 +76,8 @@ import openhands.tools.glob  # noqa: F401
 
 from openhands.sdk.context.condenser import LLMSummarizingCondenser
 
-AGENTS_DIR = Path(__file__).resolve().parents[1]
+AGENT_DIR = Path(__file__).resolve().parent
+AGENTS_DIR = AGENT_DIR.parent
 if str(AGENTS_DIR) not in sys.path:
     sys.path.insert(0, str(AGENTS_DIR))
 
@@ -88,15 +95,17 @@ from common import (  # noqa: E402
 
 logger = logging.getLogger("openhands_agent")
 logger.setLevel(logging.DEBUG)
+# The SDK installs its own handler on the root logger; don't print twice.
+logger.propagate = False
 
-LOG_DIR = AGENTS_DIR / "logs/openhands"
+LOG_DIR = AGENT_DIR / "logs"
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 _ts = datetime.datetime.now().strftime("%Y%m%d@%H%M%S")
 _fmt = logging.Formatter(
     "[%(asctime)s %(levelname)s %(name)s] %(message)s",
     datefmt="%Y-%m-%d %H:%M:%S",
 )
-_file = logging.FileHandler(LOG_DIR / f"run-{_ts}.log", encoding="utf-8")
+_file = logging.FileHandler(LOG_DIR / f"run-{_ts}-{os.getpid()}.log", encoding="utf-8")
 _file.setFormatter(_fmt)
 _file.setLevel(logging.DEBUG)
 _std = logging.StreamHandler(sys.stdout)
@@ -111,7 +120,7 @@ logger.addHandler(_std)
 IMAGE_NAME = "elt-swe-openhands"
 NETWORK_NAME = "elt-docker_elt_network"
 CONTAINER_WORKDIR = "/workspace"
-AGENT_SERVER_PORT = 18000  # host port; 8000 is taken by airbyte-abctl-control-plane
+CONTAINER_HOME = "/tmp/home"
 AGENT_SERVER_READY_TIMEOUT_SEC = 120  # cold start ~10s; padded for slower hosts
 
 SYSTEM_PROMPT_TEMPLATE = """You are a data engineer skilled in databases, SQL, and building ELT pipelines.
@@ -163,7 +172,57 @@ When done (or giving up), print a single final line:
     RESULT: FAIL: <short reason>
 """
 
+# LiteLLM (inside the container) reads the provider key from the provider's
+# variable: the first name below is what the container gets; the host may set
+# any of them. LLM_API_KEY on the host overrides the lookup.
+PROVIDER_KEY_ENV: dict[str, tuple[str, ...]] = {
+    "anthropic": ("ANTHROPIC_API_KEY",),
+    "openai": ("OPENAI_API_KEY",),
+    # e.g. together_ai/zai-org/GLM-5.3
+    "together_ai": (
+        "TOGETHER_API_KEY", "TOGETHER_AI_API_KEY", "TOGETHERAI_API_KEY", "TOGETHER_AI_TOKEN",
+    ),
+}
+
+
+# Final statuses that count as a completed attempt (the agent itself ended:
+# it finished, ran out of iterations, or the stuck detector stopped it);
+# anything else (LLM/API errors, crashes) is retried on the next invocation
+# without --overwrite.
+KEEP_STATUSES = frozenset({"success", "error_max_turns", "stuck"})
+# Tool-call markup emitted as plain text (e.g. GLM's <tool_call>/<arg_key>
+# format when the provider fails to parse it). A message without a parsed
+# tool call ends the run, so a "finished" run whose last word is such text
+# ended prematurely and is retried as "error_tool_parse".
+LEAKED_TOOL_CALL = re.compile(r"<tool_call>|<arg_key>|</arg_value>")
+
+
 # ---------- helpers ----------
+
+def resolve_api_key(model: str) -> tuple[str, str]:
+    """Return (container env var name, key) for `model`'s provider.
+
+    The key is taken from LLM_API_KEY, else from the provider's own variable;
+    another provider's key is never used as a fallback.
+    """
+    provider = model.split("/", 1)[0].lower() if "/" in model else "anthropic"
+    names = PROVIDER_KEY_ENV.get(provider, ("LLM_API_KEY",))
+    api_key = os.environ.get("LLM_API_KEY") or next(
+        (os.environ[n] for n in names if os.environ.get(n)), None
+    )
+    if not api_key:
+        raise SystemExit(
+            f"No API key for {model!r}: export LLM_API_KEY or {names[0]}."
+        )
+    return names[0], api_key
+
+
+def free_local_port() -> int:
+    """An unused TCP port on 127.0.0.1 for one task's agent-server."""
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
+        sock.bind(("127.0.0.1", 0))
+        return sock.getsockname()[1]
+
 
 def _run(cmd: list[str], check: bool = True, **kw: Any) -> subprocess.CompletedProcess:
     logger.debug("$ %s", " ".join(cmd))
@@ -176,6 +235,7 @@ def ensure_container(
     port: int,
     session_key: str,
     env_extra: dict[str, str] | None = None,
+    image: str = IMAGE_NAME,
 ) -> None:
     """(Re)create a fresh ELT container running the OpenHands agent-server.
 
@@ -201,23 +261,53 @@ def ensure_container(
     # api_key is a SecretStr and is NOT serialized to the remote). Forward the
     # resolved key here, otherwise the run dies with
     # "litellm.AuthenticationError: Missing Anthropic API Key".
-    env_args: list[str] = ["-e", f"SESSION_API_KEY={session_key}"]
-    for k, v in (env_extra or {}).items():
-        if v:
-            env_args += ["-e", f"{k}={v}"]
+    # Secrets are passed by name (`-e NAME`, value taken from the docker CLI's
+    # environment) so they never appear in the host process list.
+    secret_env = {"SESSION_API_KEY": session_key, **(env_extra or {})}
+    env_args: list[str] = []
+    for k in secret_env:
+        env_args += ["-e", k]
+    uid, gid = os.getuid(), os.getgid()
     _run([
         "docker", "run", "-d", "--rm",
         "--name", container_name,
         "--network", NETWORK_NAME,
-        "-v", f"{mnt_abs}:{CONTAINER_WORKDIR}",
-        "-w", CONTAINER_WORKDIR,
-        "-p", f"{port}:8000",
+        # Run as the host user so files the agent creates stay host-owned
+        # (editable, and removable by --overwrite).
+        "--user", f"{uid}:{gid}",
+        "-e", f"HOME={CONTAINER_HOME}",
+        "-e", "USER=agent",
         *env_args,
-        IMAGE_NAME,
-        "python", "-m", "openhands.agent_server",
-        "--host", "0.0.0.0", "--port", "8000",
+        *_workspace_mounts(mnt_abs),
+        "-w", CONTAINER_WORKDIR,
+        # Only reachable from this host.
+        "-p", f"127.0.0.1:{port}:8000",
+        image,
+        "sh", "-c",
+        # The agent-server keeps conversations/bash events under the relative
+        # path workspace/, so start it from HOME instead of /workspace (the
+        # agent's working dir is set separately via RemoteWorkspace).
+        f"mkdir -p {CONTAINER_HOME} && cd {CONTAINER_HOME} && "
+        "exec python -m openhands.agent_server --host 0.0.0.0 --port 8000",
+    ], env={**os.environ, **{k: v for k, v in secret_env.items() if v}})
+    _run([
+        "docker", "exec", "-u", "0", container_name, "sh", "-c",
+        f"echo 'agent:x:{uid}:{gid}::{CONTAINER_HOME}:/bin/bash' >> /etc/passwd"
+        f" && (getent group {gid} >/dev/null || echo 'agent:x:{gid}:' >> /etc/group)",
     ])
-    _wait_for_agent_server(f"http://localhost:{port}/", AGENT_SERVER_READY_TIMEOUT_SEC)
+    _wait_for_agent_server(f"http://127.0.0.1:{port}/", AGENT_SERVER_READY_TIMEOUT_SEC)
+
+
+def _workspace_mounts(mnt_abs: str) -> list[str]:
+    """Mount the task dir read-only, with only `elt/` writable.
+
+    This enforces the task rule ("you may only modify files under
+    /workspace/elt") for every tool, including the terminal.
+    """
+    return [
+        "-v", f"{mnt_abs}:{CONTAINER_WORKDIR}:ro",
+        "-v", f"{mnt_abs}/elt:{CONTAINER_WORKDIR}/elt",
+    ]
 
 
 def _wait_for_agent_server(url: str, timeout_sec: int) -> None:
@@ -252,6 +342,22 @@ def copy_initial_files(src: Path, dst: Path) -> None:
             shutil.copy2(item, target)
 
 
+def set_task_namespace(
+    config_path: Path, destination: str, db: str, database: str | None
+) -> None:
+    """Place the task in schema `db` of the shared `database`.
+
+    Snowflake task templates default to one database per task with a fixed
+    AIRBYTE_SCHEMA; Databricks/Redshift templates already use schema = task.
+    """
+    with config_path.open(encoding="utf-8") as f:
+        config = yaml.safe_load(f)
+    dest_config = config[destination]["config"]
+    if database:
+        dest_config["database"] = database
+    dest_config["schema"] = db
+    with config_path.open("w", encoding="utf-8") as f:
+        yaml.safe_dump(config, f, sort_keys=False)
 
 
 # ---------- trajectory capture ----------
@@ -265,7 +371,30 @@ class TrajectoryRecorder:
         self.total_cost_usd: float | None = None
         self.usage: dict[str, Any] | None = None
         self.is_error: bool = False
+        # "success", "error_max_turns", "stuck", or "error"/"exception" for
+        # failures worth retrying; set by finalize().
+        self.status: str | None = None
         self.final_text: str = ""
+        self.error_text: str = ""
+        # code of the last ConversationErrorEvent (e.g. "MaxIterationsReached",
+        # or the exception class name of an LLM/runtime failure)
+        self.error_code: str | None = None
+
+    def finalize(self, execution_status: str | None, exc: BaseException | None) -> None:
+        """Derive the attempt status once the run has ended."""
+        if self.error_code == "MaxIterationsReached":
+            self.status = "error_max_turns"
+        elif execution_status == "stuck" or (exc is not None and "stuck" in str(exc)):
+            self.status = "stuck"
+        elif exc is None and execution_status in (None, "finished"):
+            self.status = (
+                "error_tool_parse" if LEAKED_TOOL_CALL.search(self.final_text) else "success"
+            )
+        else:
+            self.status = "exception" if self.error_code is None and exc is not None else "error"
+        self.is_error = self.status != "success"
+        if exc is not None and not self.error_text:
+            self.error_text = str(exc)
 
     def _serialize(self, event: Event) -> dict[str, Any]:
         # Prefer pydantic dump where available; fall back to repr.
@@ -309,6 +438,10 @@ class TrajectoryRecorder:
             self.num_turns += 1
 
         if isinstance(event, MessageEvent):
+            if getattr(event, "source", None) != "agent":
+                # The task prompt (and any other user message) is recorded in
+                # the trajectory but is not the agent's answer.
+                return
             text = ""
             msg = getattr(event, "message", None) or getattr(event, "llm_message", None)
             if msg is not None and getattr(msg, "content", None):
@@ -320,6 +453,12 @@ class TrajectoryRecorder:
                 logger.debug("assistant message:\n%s", text)
                 logger.info("assistant: %s", text.strip()[:500])
         elif isinstance(event, ActionEvent):
+            # The agent's closing summary is the finish tool's message, not a
+            # MessageEvent.
+            if getattr(event, "tool_name", None) == "finish":
+                message = getattr(getattr(event, "action", None), "message", None)
+                if message:
+                    self.final_text = message
             txt = self._action_text(event)
             logger.debug("action:\n%s", txt)
             logger.info("action: %s", txt[:300])
@@ -329,10 +468,13 @@ class TrajectoryRecorder:
             logger.debug("observation:\n%s", txt)
             logger.info("observation: %s", preview)
         elif isinstance(event, AgentErrorEvent):
-            self.is_error = True
-            err = getattr(event, "error", None) or repr(event)
-            self.final_text = f"ERROR: {err}"
-            logger.error("agent error: %s", err)
+            # A tool-call error fed back to the model so it can correct
+            # itself; not a run failure.
+            logger.warning("agent tool error: %s", getattr(event, "error", None) or repr(event))
+        elif isinstance(event, ConversationErrorEvent):
+            self.error_code = getattr(event, "code", None)
+            self.error_text = getattr(event, "detail", None) or repr(event)
+            logger.error("conversation error %s: %s", self.error_code, self.error_text)
 
 
 # ---------- the main loop ----------
@@ -341,20 +483,33 @@ async def run_task(
     db: str,
     destination: str,
     credential: str | None,
+    database: str | None,
     experiment_id: str,
     output_root: Path,
     inputs_root: Path,
     model: str,
     max_turns: int,
     overwrite: bool,
+    image: str = IMAGE_NAME,
 ) -> None:
     instance_id = f"{experiment_id}/{db}"
     out_dir = output_root / instance_id
     result_path = out_dir / "openhands" / "result.json"
 
     if result_path.exists() and not overwrite:
-        logger.info("Skipping %s (result exists)", instance_id)
-        return
+        # Keep attempts the agent itself ended; rerun ones cut short by
+        # infrastructure (API errors, crashes), which would otherwise be
+        # skipped forever.
+        try:
+            with open(result_path) as f:
+                previous = json.load(f)
+        except (OSError, json.JSONDecodeError):
+            previous = {}
+        status = previous.get("status") or ("success" if previous.get("finished") else None)
+        if status in KEEP_STATUSES:
+            logger.info("Skipping %s (result exists, status=%s)", instance_id, status)
+            return
+        logger.info("Rerunning %s (previous status=%s)", instance_id, status)
     if out_dir.exists():
         shutil.rmtree(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -373,6 +528,7 @@ async def run_task(
             db=db,
             destination=destination,
             credential=credential,
+            database=database,
             instance_id=instance_id,
             experiment_id=experiment_id,
             out_dir=out_dir,
@@ -380,6 +536,7 @@ async def run_task(
             inputs_root=inputs_root,
             model=model,
             max_turns=max_turns,
+            image=image,
         )
     finally:
         logger.removeHandler(db_handler)
@@ -390,6 +547,7 @@ async def _run_task_body(
     db: str,
     destination: str,
     credential: str | None,
+    database: str | None,
     instance_id: str,
     experiment_id: str,
     out_dir: Path,
@@ -397,46 +555,42 @@ async def _run_task_body(
     inputs_root: Path,
     model: str,
     max_turns: int,
+    image: str = IMAGE_NAME,
 ) -> None:
     task_input_dir = inputs_root / db
-    try:
-        namespace = prepare_destination(destination, task_input_dir, credential)
-        logger.info("Prepared %s destination namespace %s", destination, namespace)
-    except Exception as e:  # pragma: no cover
-        logger.warning("Destination preparation for %s failed: %s", db, e)
 
-    # Copy seed files into the mount dir.
+    # Copy seed files into the mount dir, then point the task at its own
+    # schema inside the shared experiment database.
     copy_initial_files(task_input_dir, out_dir)
+    (out_dir / "elt").mkdir(exist_ok=True)
+    set_task_namespace(out_dir / "config.yaml", destination, db, database)
 
-    api_key = (
-        os.environ.get("LLM_API_KEY")
-        or os.environ.get("ANTHROPIC_API_KEY")
-        or os.environ.get("OPENAI_API_KEY")
-    )
-    # litellm (running inside the container) reads the key from the provider's
-    # canonical env var, picked from the model's provider prefix.
-    provider = model.split("/", 1)[0].lower() if "/" in model else ""
-    key_env = {"anthropic": "ANTHROPIC_API_KEY", "openai": "OPENAI_API_KEY"}.get(
-        provider, "ANTHROPIC_API_KEY"
-    )
-    if not api_key:
-        raise SystemExit(
-            "No LLM API key found in the environment. Export LLM_API_KEY or "
-            f"{key_env} (for {provider or 'the chosen'} models) before running."
-        )
-    container_env = {key_env: api_key}
+    # Reset the task namespace using the rewritten config. Credentials are not
+    # copied into the mount, so resolve them from the task inputs. A failed
+    # reset means stale warehouse state: abort this attempt.
+    if credential is None:
+        generated = task_input_dir / f"{destination}_credential.json"
+        credential = str(generated) if generated.is_file() else None
+    namespace = prepare_destination(destination, out_dir, credential)
+    logger.info("Prepared %s destination namespace %s", destination, namespace)
 
-    # Spin up the container running the openhands-agent-server.
+    key_env, api_key = resolve_api_key(model)
+
+    # Spin up the container running the openhands-agent-server, on a free
+    # host port so several runner processes can work in parallel.
     container_name = f"{experiment_id}-{db}"
     session_key = secrets.token_urlsafe(24)
+    port = free_local_port()
     ensure_container(
-        container_name, out_dir, AGENT_SERVER_PORT, session_key, env_extra=container_env
+        container_name, out_dir, port, session_key, env_extra={key_env: api_key},
+        image=image,
     )
 
     system_prompt = adapt_prompt(SYSTEM_PROMPT_TEMPLATE, destination).format(
         db=db,
         container=container_name,
-        image=IMAGE_NAME,
+        # Name without the tag, so the prompt is the same for every variant.
+        image=image.split(":", 1)[0],
         network=NETWORK_NAME,
         container_workdir=CONTAINER_WORKDIR,
     )
@@ -471,7 +625,7 @@ async def _run_task_body(
 
     workspace = RemoteWorkspace(
         working_dir=CONTAINER_WORKDIR,
-        host=f"http://localhost:{AGENT_SERVER_PORT}",
+        host=f"http://127.0.0.1:{port}",
         api_key=session_key,
     )
     conversation = Conversation(
@@ -489,6 +643,8 @@ async def _run_task_body(
         f"{adapt_prompt(TASK_INSTRUCTION, destination)}"
     )
 
+    run_exc: BaseException | None = None
+    execution_status: str | None = None
     try:
         conversation.send_message(
             Message(role="user", content=[TextContent(text=prompt)])
@@ -497,10 +653,15 @@ async def _run_task_body(
         # block the event loop.
         await asyncio.to_thread(conversation.run)
     except Exception as e:
-        logger.exception("OpenHands session raised: %s", e)
-        recorder.is_error = True
-        recorder.final_text = f"ERROR: {e}"
+        # The remote run raises ConversationRunError for ERROR/STUCK states
+        # too (incl. hitting max iterations); finalize() classifies it.
+        logger.warning("OpenHands run ended with %s: %s", type(e).__name__, e)
+        run_exc = e
     finally:
+        try:
+            execution_status = str(conversation.state.execution_status.value)
+        except Exception:
+            logger.debug("could not read final execution_status", exc_info=True)
         # Pull cost/usage off the conversation stats. Cost lives on each
         # per-usage_id Metrics (we register two: "agent" and "condenser");
         # ConversationStats.get_combined_metrics() sums them.
@@ -518,6 +679,8 @@ async def _run_task_body(
         except Exception:
             logger.exception("failed to read conversation_stats")
         stop_container(container_name)
+    recorder.finalize(execution_status, run_exc)
+    logger.info("run status: %s (execution_status=%s)", recorder.status, execution_status)
 
     # Persist result.
     (out_dir / "openhands").mkdir(parents=True, exist_ok=True)
@@ -526,6 +689,8 @@ async def _run_task_body(
         "db": db,
         "model": model,
         "finished": not recorder.is_error,
+        "status": recorder.status,
+        "error": recorder.error_text or None,
         "num_turns": recorder.num_turns,
         "total_cost_usd": recorder.total_cost_usd,
         "usage": recorder.usage,
@@ -568,6 +733,11 @@ async def main_async(args: argparse.Namespace) -> None:
         databases = [d for d in databases if d in wanted]
     if args.limit and args.limit > 0:
         databases = databases[: args.limit]
+    if args.shard:
+        # Disjoint slices for running several runner processes in parallel.
+        k, n = args.shard
+        databases = databases[k::n]
+    resolve_api_key(args.model)  # fail fast before touching any task
 
     logger.info("Experiment %s — %d tasks", experiment_id, len(databases))
 
@@ -577,15 +747,27 @@ async def main_async(args: argparse.Namespace) -> None:
                 db=db,
                 destination=args.destination,
                 credential=args.credential,
+                database=args.database,
                 experiment_id=experiment_id,
                 output_root=output_root,
                 inputs_root=inputs_root,
                 model=args.model,
                 max_turns=args.max_turns,
+                image=args.image,
                 overwrite=args.overwrite,
             )
         except Exception:
             logger.exception("Task %s failed", db)
+
+
+def _parse_shard(value: str) -> tuple[int, int]:
+    try:
+        k, n = (int(x) for x in value.split("/"))
+    except ValueError:
+        raise argparse.ArgumentTypeError(f"expected K/N, got {value!r}")
+    if not 0 <= k < n:
+        raise argparse.ArgumentTypeError(f"need 0 <= K < N, got {value!r}")
+    return k, n
 
 
 def parse_args() -> argparse.Namespace:
@@ -595,6 +777,11 @@ def parse_args() -> argparse.Namespace:
         "--credential",
         help="Optional host-side destination credential JSON override.",
     )
+    p.add_argument(
+        "--database",
+        help="Shared database/catalog holding one schema per task "
+             "(default: 'elt' for snowflake; config value otherwise).",
+    )
     p.add_argument("--model", default="openai/gpt-5.4-2026-03-05",
                    help="LiteLLM-style provider/model id (e.g. anthropic/claude-opus-4-7, openai/gpt-4o).")
     p.add_argument("--suffix", "-s", default="eltbench", help="Experiment id suffix.")
@@ -603,14 +790,23 @@ def parse_args() -> argparse.Namespace:
                    help="Per-task inputs directory (default: destination-specific).")
     p.add_argument("--elt_bench",
                    help="Task directory (default: elt-bench/<destination>).")
-    p.add_argument("--output_dir", default=str(AGENTS_DIR / "output"))
+    p.add_argument("--output_dir", default=str(AGENT_DIR / "output"))
     p.add_argument("--only", default="", help="Comma-separated DBs to run (default: all).")
     p.add_argument("--limit", type=int, default=100,
                    help="Run only the first N DBs (after --only filter). "
                         "Default 100; pass 0 for no limit.")
     p.add_argument("--overwrite", action="store_true",
                    help="Rerun tasks even if result.json already exists.")
-    return p.parse_args()
+    p.add_argument("--image", default=IMAGE_NAME,
+                   help="Agent image, e.g. elt-swe-openhands:kimi-k3 for Kimi K3 "
+                        "(see elt-swe-openhands/Dockerfile.kimi-k3).")
+    p.add_argument("--shard", type=_parse_shard, default=None, metavar="K/N",
+                   help="Run only every N-th task starting at K (0-based), e.g. "
+                        "0/3, 1/3, 2/3 in three parallel processes.")
+    args = p.parse_args()
+    if args.database is None and args.destination == "snowflake":
+        args.database = "elt"
+    return args
 
 
 def main() -> None:

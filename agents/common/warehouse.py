@@ -217,8 +217,12 @@ def _prepare_snowflake(config: Mapping[str, Any]) -> str:
 
     import snowflake.connector
 
-    database = _ansi_identifier(config["database"])
-    schema = _ansi_identifier(config["schema"])
+    # Airbyte's Snowflake destination and the evaluator both use unquoted
+    # identifiers, which Snowflake resolves to upper case. Quoting the raw
+    # config value would create e.g. a case-sensitive "address" database that
+    # neither of them can see, so normalize to upper case before quoting.
+    database = _ansi_identifier(str(config["database"]).upper())
+    schema = _ansi_identifier(str(config["schema"]).upper())
     role = config.get("role")
     connection_args = {
         "account": config["account"],
@@ -236,9 +240,29 @@ def _prepare_snowflake(config: Mapping[str, Any]) -> str:
         with connection.cursor() as cursor:
             cursor.execute(f"CREATE DATABASE IF NOT EXISTS {database}")
             cursor.execute(f"DROP SCHEMA IF EXISTS {database}.{schema} CASCADE")
+            # Airbyte keeps raw records for every task in AIRBYTE_INTERNAL as
+            # <schema>_raw__stream_<stream>; drop this task's leftovers so an
+            # append sync does not re-materialize rows from a previous run.
+            cursor.execute(
+                f"SHOW TABLES IN DATABASE {database}"
+            )
+            raw_prefix = f"{str(config['schema']).upper()}_RAW__STREAM_"
+            for row in cursor.fetchall():
+                table_name, schema_name = row[1], row[3]
+                if schema_name.upper() == "AIRBYTE_INTERNAL" and table_name.upper().startswith(raw_prefix):
+                    cursor.execute(
+                        f"DROP TABLE IF EXISTS {database}.{_ansi_identifier(schema_name)}."
+                        f"{_ansi_identifier(table_name)}"
+                    )
             cursor.execute(f"CREATE SCHEMA {database}.{schema}")
             if role:
-                role_identifier = _ansi_identifier(role)
+                role_identifier = _ansi_identifier(str(role).upper())
+                # CREATE SCHEMA lets Airbyte create its shared raw-data schema
+                # (AIRBYTE_INTERNAL) inside the database.
+                cursor.execute(
+                    f"GRANT USAGE, CREATE SCHEMA ON DATABASE {database} "
+                    f"TO ROLE {role_identifier}"
+                )
                 cursor.execute(
                     f"GRANT OWNERSHIP ON SCHEMA {database}.{schema} "
                     f"TO ROLE {role_identifier}"
