@@ -19,7 +19,10 @@ for db, tables in mongo_dbs.items():
   client.drop_database(db)
   mg_db = client[db]
   for table in tables:
-    df = pd.read_csv(f'{args.path}/data/{db}/{table}.csv')
+    # low_memory=False: infer each column's type from the whole file. The
+    # chunked default typed card_games.cards.frameVersion as int in the first
+    # 16384 rows and str after, so Airbyte inferred FLOAT or TEXT at random.
+    df = pd.read_csv(f'{args.path}/data/{db}/{table}.csv', low_memory=False)
 
     df = df.where(pd.notnull(df), None)
     collection = mg_db[table]
