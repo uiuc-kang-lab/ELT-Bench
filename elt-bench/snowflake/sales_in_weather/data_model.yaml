@@ -13,7 +13,7 @@ models:
       - name: avg_item_5_sold_when_max_temp_exceeded_90
         description: The average number of units of item no.5 sold in store when the maximum temperature exceeded 90.
       - name: num_items_sold_during_a_snowy_day
-        description: The number of units of  items were sold by the store during a snowy day, replace NULL values with 0. A snowy day refers to a day with non-zero snowfall.
+        description: The number of units of  items were sold by the store during a snowy day, replace NULL values with 0.
   - name: stations
     description: Each record represents a station.
     columns:

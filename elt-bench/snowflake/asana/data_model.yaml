@@ -130,7 +130,7 @@ models:
         description: Timestamp of when the tag was created
         format: YYYY-MM-DD H[H]:MM:SS
       - name: number_of_open_tasks
-        description: Count of the currently open tasks with this tag. A tagged task counts as open unless it is marked completed. Set to 0 if NULL.
+        description: Count of the currently open tasks in the task catalog with this tag. Set to 0 if NULL.
       - name: number_of_assigned_open_tasks
         description: Count of the open and assigned tasks with this tag. Set to 0 if NULL.
       - name: number_of_tasks_completed

@@ -8,8 +8,8 @@ consumer_complaint_narrative,Consumer complaint narrative
 tags,tags of client
 consumer_consent_provided,"whether the tags labeled under permission of the clients
 commonsense evidence:
-• null, 'N/A' or empty value: indicating that the company didn't get the permission of consent.
-• if the value is not empty: customers provide the consent for this tag."
+• 'Consent provided': the customer provided consent.
+• 'Consent not provided', 'Other', 'N/A', null or empty value: consent was not obtained."
 submitted_via,Submitted via
 date_sent_to_company,Date sent to company
 company_response_to_consumer,Company response to consumer

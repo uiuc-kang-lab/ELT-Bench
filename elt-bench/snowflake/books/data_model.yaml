@@ -34,7 +34,7 @@ models:
       - name: has_ordered_the_oldest_book
         description: Set to 1 if the customer has ordered the oldest book; otherwise, set to 0.
       - name: per_order_shipped_internationally
-        description: the percentage of orders placed by the customer that were shipped internationally, i.e. using the 'International' shipping method
+        description: the percentage of orders placed by the customer that were shipped internationally
   - name: authors
     description: Each record represents an author.
     columns:

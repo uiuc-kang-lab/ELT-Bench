@@ -7,6 +7,4 @@ CardID,Card ID
 GasStationID,Gas Station ID
 ProductID,Product ID
 Amount,Amount
-Price,"Price
-commonsense evidence:
-total price = Amount x Price"
+Price,Price

@@ -26,7 +26,7 @@ models:
       - name: brandname
         description: Name of the brand.
       - name: address
-        description: Address of the brand. Concatenate the city, state, and country with a space separating them. NULL if any of them is missing.
+        description: Address of the brand. Concatenate the city, state, and country with a space separating them.
       - name: num_5_stars
         description: Number of 5-star ratings the brand has received, replace NULL values with 0.
       - name: not_advertise_on_Facebook_and_Twitter
