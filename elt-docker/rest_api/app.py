@@ -13,12 +13,15 @@ app = Flask(__name__)
 def _records(file_path):
   # Parsed once per file: paged syncs request the same table hundreds of
   # times, and re-reading a large CSV per page dominates sync time.
+  # low_memory=False: infer each column's type from the whole file. The
+  # chunked default read california_schools.schools.CharterNum as text in the
+  # first chunks and as numbers in the last one, dropping leading zeros there.
   if '/mondial_geo/' in file_path or '/works_cycles/' in file_path:
     # 'NA' is a country code (Netherlands Antilles in mondial_geo, Namibia in
     # works_cycles), not a missing value; only empty fields are NULL.
-    data = pd.read_csv(file_path, keep_default_na=False, na_values=[''])
+    data = pd.read_csv(file_path, keep_default_na=False, na_values=[''], low_memory=False)
   else:
-    data = pd.read_csv(file_path)
+    data = pd.read_csv(file_path, low_memory=False)
   data = data.replace({np.nan: None})
   return tuple(data.to_dict(orient="records"))
 

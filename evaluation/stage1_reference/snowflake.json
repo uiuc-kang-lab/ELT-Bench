@@ -1,10 +1,10 @@
 {
  "warehouse": "snowflake",
  "rules_version": 3,
- "generated_at": "2026-10-16T00:46:52+00:00",
+ "generated_at": "2026-10-16T03:40:54+00:00",
  "source_database": "GT",
  "snowflake_version": "10.37.102",
- "notes": "GT database: fresh Airbyte load of all 100 tasks (2026-10-11, new account); mondial_geo REST API keeps 'NA'; 'NA' country codes restored in works_cycles CountryRegion/CountryRegionCurrency and mondial_geo encompasses (2026-10-16); rules v3",
+ "notes": "GT database: fresh Airbyte load of all 100 tasks (2026-10-11, new account); mondial_geo REST API keeps 'NA'; 'NA' country codes restored in works_cycles CountryRegion/CountryRegionCurrency and mondial_geo encompasses (2026-10-16); california_schools.schools CharterNum leading zeros restored (2026-10-16); rules v3",
  "probe": {
   "hash": "7373413102964676203",
   "rendered": [
@@ -9946,7 +9946,7 @@
       "TEXT"
      ]
     ],
-    "hash": "-5648593990354745702",
+    "hash": "7754530946899964346",
     "column_hashes": {
      "ADMEMAIL1": "-7881409745932912204",
      "ADMEMAIL2": "5341205429994629867",
@@ -9959,7 +9959,7 @@
      "ADMLNAME3": "7767299456782494244",
      "CDSCODE": "-8526881882323822408",
      "CHARTER": "-4095852412012422700",
-     "CHARTERNUM": "2182690562657622876",
+     "CHARTERNUM": "-6632739709167609748",
      "CITY": "-436122538343807239",
      "CLOSEDDATE": "-6314864876509187412",
      "COUNTY": "1727955197500805392",
@@ -10078,10 +10078,10 @@
      },
      "CHARTERNUM": {
       "non_null": 1801,
-      "distinct": 1764,
+      "distinct": 1763,
       "min": "0000",
-      "max": "990",
-      "total_length": 7153
+      "max": "1838",
+      "total_length": 7204
      },
      "CITY": {
       "non_null": 17393,
@@ -15143,7 +15143,7 @@
       "distinct": 946321,
       "min": "-9.003087E8",
       "max": "6.1298987E19",
-      "sum": 3.1988575265739364e+21
+      "sum": 3.198857526573936e+21
      },
      "CLOSE": {
       "non_null": 4399423,
@@ -15184,21 +15184,21 @@
       "distinct": 3494062,
       "min": "-1.7556E-4",
       "max": "1.4927359E10",
-      "sum": 932126576521.5167
+      "sum": 932126576521.5168
      },
      "MARKET_CAP": {
       "non_null": 3900714,
       "distinct": 3093564,
       "min": "-1.4143909E9",
       "max": "2.5063292E16",
-      "sum": 1.4651427957929667e+17
+      "sum": 1.465142795792967e+17
      },
      "MAX_SUPPLY": {
       "non_null": 1341963,
       "distinct": 1291,
       "min": "-1.E0",
       "max": "1.E18",
-      "sum": 5.7662630343790127e+20
+      "sum": 5.766263034379013e+20
      },
      "NUM_MARKET_PAIRS": {
       "non_null": 2647487,
@@ -15212,7 +15212,7 @@
       "distinct": 3408018,
       "min": "0",
       "max": "1.5146681E10",
-      "sum": 983380477057.7795
+      "sum": 983380477057.7797
      },
      "PERCENT_CHANGE_1H": {
       "non_null": 4437500,
@@ -15240,7 +15240,7 @@
       "distinct": 3913606,
       "min": "0",
       "max": "1.5139886E10",
-      "sum": 1001951708216.1769
+      "sum": 1001951708216.177
      },
      "TIME_HIGH": {
       "non_null": 4392120,
@@ -15261,14 +15261,14 @@
       "distinct": 874358,
       "min": "0",
       "max": "6.884004E26",
-      "sum": 1.5373641793339468e+27
+      "sum": 1.537364179333947e+27
      },
      "VOLUME_24H": {
       "non_null": 4441972,
       "distinct": 3806260,
       "min": "0",
       "max": "1.4102957E15",
-      "sum": 2957119175075050.5
+      "sum": 2957119175075050.0
      }
     }
    }
@@ -16126,7 +16126,7 @@
       "distinct": 1001,
       "min": "0",
       "max": "1.E2",
-      "sum": 27279916.6
+      "sum": 27279916.599999998
      },
      "GRAD_COHORT": {
       "non_null": 889380,
@@ -18035,14 +18035,14 @@
       "distinct": 84104,
       "min": "-1.5E1",
       "max": "1.692E5",
-      "sum": 237522121.30000004
+      "sum": 237522121.3
      },
      "DONATION_TO_PROJECT": {
       "non_null": 3097556,
       "distinct": 75831,
       "min": "-1.275E1",
       "max": "1.47204E5",
-      "sum": 204280464.76999998
+      "sum": 204280464.77
      },
      "DONOR_ACCTID": {
       "non_null": 3097556,
@@ -18645,7 +18645,7 @@
       "distinct": 110532,
       "min": "0",
       "max": "1.250002073E7",
-      "sum": 428152510.8600001
+      "sum": 428152510.86
      }
     }
    },
@@ -19871,7 +19871,7 @@
       "distinct": 101,
       "min": "1.04E0",
       "max": "1.7E1",
-      "sum": 35372.68
+      "sum": 35372.67999999999
      },
      "BWA": {
       "non_null": 22575,
@@ -19892,7 +19892,7 @@
       "distinct": 237,
       "min": "1.03E0",
       "max": "3.4E1",
-      "sum": 57774.95
+      "sum": 57774.95000000001
      },
      "CARD": {
       "non_null": 14217,
@@ -19940,14 +19940,14 @@
       "distinct": 172,
       "min": "1.12E0",
       "max": "3.4E1",
-      "sum": 61648.56
+      "sum": 61648.560000000005
      },
      "GBD": {
       "non_null": 14162,
       "distinct": 84,
       "min": "1.45E0",
       "max": "1.1E1",
-      "sum": 51665.65
+      "sum": 51665.649999999994
      },
      "GBH": {
       "non_null": 14162,
@@ -20220,7 +20220,7 @@
       "distinct": 159,
       "min": "1.1E0",
       "max": "2.5E1",
-      "sum": 93470.95000000001
+      "sum": 93470.95
      },
      "IWD": {
       "non_null": 22520,
@@ -20241,7 +20241,7 @@
       "distinct": 128,
       "min": "1.1E0",
       "max": "5.1E1",
-      "sum": 98915.97000000002
+      "sum": 98915.97
      },
      "LBD": {
       "non_null": 22556,
@@ -20283,21 +20283,21 @@
       "distinct": 1475,
       "min": "1.09E0",
       "max": "4.75E1",
-      "sum": 55535.609000000004
+      "sum": 55535.60900000001
      },
      "PSD": {
       "non_null": 11168,
       "distinct": 665,
       "min": "2.2E0",
       "max": "2.9E1",
-      "sum": 46149.8
+      "sum": 46149.80000000001
      },
      "PSH": {
       "non_null": 11168,
       "distinct": 948,
       "min": "1.04E0",
       "max": "3.6E1",
-      "sum": 31454.082999999995
+      "sum": 31454.083
      },
      "SEASON": {
       "non_null": 25979,
@@ -20339,7 +20339,7 @@
       "distinct": 137,
       "min": "1.04E0",
       "max": "2.3E1",
-      "sum": 43871.945
+      "sum": 43871.94500000001
      },
      "STAGE": {
       "non_null": 25979,
@@ -20360,7 +20360,7 @@
       "distinct": 82,
       "min": "1.62E0",
       "max": "2.6E1",
-      "sum": 87993.723
+      "sum": 87993.72300000001
      },
      "VCH": {
       "non_null": 22568,
@@ -20381,7 +20381,7 @@
       "distinct": 78,
       "min": "1.02E0",
       "max": "1.7E1",
-      "sum": 82729.37999999999
+      "sum": 82729.38
      },
      "WHH": {
       "non_null": 22571,
@@ -43953,7 +43953,7 @@
       "distinct": 671,
       "min": "0",
       "max": "7.8E3",
-      "sum": 744362.919
+      "sum": 744362.9189999999
      },
      "ID": {
       "non_null": 1334410,
@@ -43974,7 +43974,7 @@
       "distinct": 1337,
       "min": "0",
       "max": "1.8E5",
-      "sum": 11403503.5097
+      "sum": 11403503.509699998
      },
      "UPDATED_AT": {
       "non_null": 1334410,
@@ -67526,7 +67526,7 @@
       "distinct": 140231,
       "min": "-9.9998E2",
       "max": "9.99996E3",
-      "sum": 673364193.54
+      "sum": 673364193.5400001
      },
      "C_ADDRESS": {
       "non_null": 150000,
@@ -67692,7 +67692,7 @@
       "distinct": 921772,
       "min": "9.02E2",
       "max": "1.048495E5",
-      "sum": 169188690991.15
+      "sum": 169188690991.15002
      },
      "L_LINENUMBER": {
       "non_null": 4423659,
@@ -67949,7 +67949,7 @@
       "distinct": 1449415,
       "min": "9.1018E2",
       "max": "5.285573E5",
-      "sum": 229545179665.31
+      "sum": 229545179665.31003
      }
     }
    },
@@ -75432,7 +75432,7 @@
       "distinct": 19237,
       "min": "-9221156934682287334",
       "max": "9222488106573038706",
-      "sum": 3.840847440284504e+25
+      "sum": 3.8408474402845046e+25
      },
      "EVENT_ID": {
       "non_null": 32473067,
@@ -75587,7 +75587,7 @@
       "distinct": 60865,
       "min": "-9222956879900151005",
       "max": "9222539910510672930",
-      "sum": -8.734626307505099e+22
+      "sum": -8.734626307505097e+22
      },
      "EVENT_ID": {
       "non_null": 3252950,
