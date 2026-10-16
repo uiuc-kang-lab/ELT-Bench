@@ -1,10 +1,10 @@
 {
  "warehouse": "snowflake",
  "rules_version": 3,
- "generated_at": "2026-10-12T21:03:55+00:00",
+ "generated_at": "2026-10-16T00:46:52+00:00",
  "source_database": "GT",
- "snowflake_version": "10.36.101",
- "notes": "GT database: fresh Airbyte load of all 100 tasks (2026-10-11, new account); mondial_geo REST API keeps 'NA'; rules v3",
+ "snowflake_version": "10.37.102",
+ "notes": "GT database: fresh Airbyte load of all 100 tasks (2026-10-11, new account); mondial_geo REST API keeps 'NA'; 'NA' country codes restored in works_cycles CountryRegion/CountryRegionCurrency and mondial_geo encompasses (2026-10-16); rules v3",
  "probe": {
   "hash": "7373413102964676203",
   "rendered": [
@@ -13694,7 +13694,7 @@
       "distinct": 92299,
       "min": "6.36430963695655E17",
       "max": "6.36482988207178E17",
-      "sum": 2.2328047870856727e+24
+      "sum": 2.2328047870856732e+24
      },
      "SOLUTIONID": {
       "non_null": 3508215,
@@ -15143,7 +15143,7 @@
       "distinct": 946321,
       "min": "-9.003087E8",
       "max": "6.1298987E19",
-      "sum": 3.198857526573936e+21
+      "sum": 3.1988575265739364e+21
      },
      "CLOSE": {
       "non_null": 4399423,
@@ -15177,14 +15177,14 @@
       "distinct": 3529992,
       "min": "0",
       "max": "1.5390284E10",
-      "sum": 1020780663714.6157
+      "sum": 1020780663714.6156
      },
      "LOW": {
       "non_null": 4399423,
       "distinct": 3494062,
       "min": "-1.7556E-4",
       "max": "1.4927359E10",
-      "sum": 932126576521.5168
+      "sum": 932126576521.5167
      },
      "MARKET_CAP": {
       "non_null": 3900714,
@@ -15198,7 +15198,7 @@
       "distinct": 1291,
       "min": "-1.E0",
       "max": "1.E18",
-      "sum": 5.766263034379013e+20
+      "sum": 5.7662630343790127e+20
      },
      "NUM_MARKET_PAIRS": {
       "non_null": 2647487,
@@ -15212,7 +15212,7 @@
       "distinct": 3408018,
       "min": "0",
       "max": "1.5146681E10",
-      "sum": 983380477057.7798
+      "sum": 983380477057.7795
      },
      "PERCENT_CHANGE_1H": {
       "non_null": 4437500,
@@ -15233,7 +15233,7 @@
       "distinct": 2932041,
       "min": "-1.E2",
       "max": "1.2037373E10",
-      "sum": 41463612616.34037
+      "sum": 41463612616.34036
      },
      "PRICE": {
       "non_null": 4441972,
@@ -15268,7 +15268,7 @@
       "distinct": 3806260,
       "min": "0",
       "max": "1.4102957E15",
-      "sum": 2957119175075050.0
+      "sum": 2957119175075050.5
      }
     }
    }
@@ -16112,7 +16112,7 @@
       "distinct": 990,
       "min": "0",
       "max": "1.E2",
-      "sum": 10031385.799999999
+      "sum": 10031385.8
      },
      "GRAD_150": {
       "non_null": 889380,
@@ -18021,7 +18021,7 @@
       "distinct": 23059,
       "min": "-2.25E0",
       "max": "2.1996E4",
-      "sum": 33242597.739999995
+      "sum": 33242597.740000002
      },
      "DONATION_TIMESTAMP": {
       "non_null": 3097556,
@@ -18035,14 +18035,14 @@
       "distinct": 84104,
       "min": "-1.5E1",
       "max": "1.692E5",
-      "sum": 237522121.29999998
+      "sum": 237522121.30000004
      },
      "DONATION_TO_PROJECT": {
       "non_null": 3097556,
       "distinct": 75831,
       "min": "-1.275E1",
       "max": "1.47204E5",
-      "sum": 204280464.77000004
+      "sum": 204280464.76999998
      },
      "DONOR_ACCTID": {
       "non_null": 3097556,
@@ -18526,14 +18526,14 @@
       "distinct": 54449,
       "min": "1.824914E1",
       "max": "6.7258157E1",
-      "sum": 24731638.939480998
+      "sum": 24731638.939481
      },
      "SCHOOL_LONGITUDE": {
       "non_null": 664098,
       "distinct": 54479,
       "min": "-1.76634989E2",
       "max": "-6.6628036E1",
-      "sum": -61990068.742576
+      "sum": -61990068.742575996
      },
      "SCHOOL_MAGNET": {
       "non_null": 664098,
@@ -18554,7 +18554,7 @@
       "distinct": 52213,
       "min": "1.000050087E10",
       "max": "6.10000900044E11",
-      "sum": 1.620870588869583e+17
+      "sum": 1.6208705888695827e+17
      },
      "SCHOOL_NLNS": {
       "non_null": 664098,
@@ -19843,7 +19843,7 @@
       "distinct": 72,
       "min": "1.4E0",
       "max": "1.7E1",
-      "sum": 86746.13999999998
+      "sum": 86746.14
      },
      "B365H": {
       "non_null": 22592,
@@ -19871,14 +19871,14 @@
       "distinct": 101,
       "min": "1.04E0",
       "max": "1.7E1",
-      "sum": 35372.67999999999
+      "sum": 35372.68
      },
      "BWA": {
       "non_null": 22575,
       "distinct": 261,
       "min": "1.1E0",
       "max": "5.1E1",
-      "sum": 99261.11999999998
+      "sum": 99261.12
      },
      "BWD": {
       "non_null": 22575,
@@ -19892,7 +19892,7 @@
       "distinct": 237,
       "min": "1.03E0",
       "max": "3.4E1",
-      "sum": 57774.95000000001
+      "sum": 57774.95
      },
      "CARD": {
       "non_null": 14217,
@@ -20220,7 +20220,7 @@
       "distinct": 159,
       "min": "1.1E0",
       "max": "2.5E1",
-      "sum": 93470.95
+      "sum": 93470.95000000001
      },
      "IWD": {
       "non_null": 22520,
@@ -20241,7 +20241,7 @@
       "distinct": 128,
       "min": "1.1E0",
       "max": "5.1E1",
-      "sum": 98915.97
+      "sum": 98915.97000000002
      },
      "LBD": {
       "non_null": 22556,
@@ -20297,7 +20297,7 @@
       "distinct": 948,
       "min": "1.04E0",
       "max": "3.6E1",
-      "sum": 31454.083
+      "sum": 31454.082999999995
      },
      "SEASON": {
       "non_null": 25979,
@@ -20353,14 +20353,14 @@
       "distinct": 151,
       "min": "1.08E0",
       "max": "6.7E1",
-      "sum": 109235.46199999998
+      "sum": 109235.462
      },
      "VCD": {
       "non_null": 22568,
       "distinct": 82,
       "min": "1.62E0",
       "max": "2.6E1",
-      "sum": 87993.72300000001
+      "sum": 87993.723
      },
      "VCH": {
       "non_null": 22568,
@@ -20374,14 +20374,14 @@
       "distinct": 136,
       "min": "1.08E0",
       "max": "5.1E1",
-      "sum": 101176.43
+      "sum": 101176.43000000001
      },
      "WHD": {
       "non_null": 22571,
       "distinct": 78,
       "min": "1.02E0",
       "max": "1.7E1",
-      "sum": 82729.38
+      "sum": 82729.37999999999
      },
      "WHH": {
       "non_null": 22571,
@@ -46546,10 +46546,10 @@
       "FLOAT"
      ]
     ],
-    "hash": "-1759770341491953310",
+    "hash": "2136957158487595649",
     "column_hashes": {
      "CONTINENT": "7754122601105740536",
-     "COUNTRY": "-2354528768749254734",
+     "COUNTRY": "-3999501523959415372",
      "PERCENTAGE": "4410030573134477715"
     },
     "column_stats": {
@@ -46561,11 +46561,11 @@
       "total_length": 1717
      },
      "COUNTRY": {
-      "non_null": 241,
-      "distinct": 237,
+      "non_null": 242,
+      "distinct": 238,
       "min": "A",
       "max": "ZW",
-      "total_length": 614
+      "total_length": 616
      },
      "PERCENTAGE": {
       "non_null": 242,
@@ -67685,7 +67685,7 @@
       "distinct": 11,
       "min": "0",
       "max": "1.E-1",
-      "sum": 221201.02000000002
+      "sum": 221201.01999999996
      },
      "L_EXTENDEDPRICE": {
       "non_null": 4423659,
@@ -67774,7 +67774,7 @@
       "distinct": 9,
       "min": "0",
       "max": "8.E-2",
-      "sum": 176896.36000000004
+      "sum": 176896.36000000002
      }
     }
    },
@@ -75432,7 +75432,7 @@
       "distinct": 19237,
       "min": "-9221156934682287334",
       "max": "9222488106573038706",
-      "sum": 3.8408474402845046e+25
+      "sum": 3.840847440284504e+25
      },
      "EVENT_ID": {
       "non_null": 32473067,
@@ -75490,7 +75490,7 @@
       "distinct": 15095,
       "min": "-9221156934682287334",
       "max": "9222488106573038706",
-      "sum": 4.393720806072609e+24
+      "sum": 4.39372080607261e+24
      },
      "EVENT_ID": {
       "non_null": 3701900,
@@ -75587,7 +75587,7 @@
       "distinct": 60865,
       "min": "-9222956879900151005",
       "max": "9222539910510672930",
-      "sum": -8.734626307505096e+22
+      "sum": -8.734626307505099e+22
      },
      "EVENT_ID": {
       "non_null": 3252950,
@@ -89253,19 +89253,19 @@
       "TEXT"
      ]
     ],
-    "hash": "-8222229671834305454",
+    "hash": "2527640289364434262",
     "column_hashes": {
-     "COUNTRYREGIONCODE": "4792282635631604747",
+     "COUNTRYREGIONCODE": "5671041501949073713",
      "MODIFIEDDATE": "7424273358019653739",
      "NAME": "2225351473575708699"
     },
     "column_stats": {
      "COUNTRYREGIONCODE": {
-      "non_null": 238,
-      "distinct": 238,
+      "non_null": 239,
+      "distinct": 239,
       "min": "AD",
       "max": "ZW",
-      "total_length": 477
+      "total_length": 479
      },
      "MODIFIEDDATE": {
       "non_null": 239,
@@ -89299,19 +89299,19 @@
       "TEXT"
      ]
     ],
-    "hash": "-4111746446070243378",
+    "hash": "7269833638641308846",
     "column_hashes": {
-     "COUNTRYREGIONCODE": "-7809808671542737346",
+     "COUNTRYREGIONCODE": "-7092564162683080369",
      "CURRENCYCODE": "6374900221505583558",
      "MODIFIEDDATE": "6454415096618274511"
     },
     "column_stats": {
      "COUNTRYREGIONCODE": {
-      "non_null": 108,
-      "distinct": 95,
+      "non_null": 109,
+      "distinct": 96,
       "min": "AE",
       "max": "ZW",
-      "total_length": 216
+      "total_length": 218
      },
      "CURRENCYCODE": {
       "non_null": 109,
