@@ -13,9 +13,9 @@ app = Flask(__name__)
 def _records(file_path):
   # Parsed once per file: paged syncs request the same table hundreds of
   # times, and re-reading a large CSV per page dominates sync time.
-  if '/mondial_geo/' in file_path:
-    # 'NA' is the country code of the Netherlands Antilles, not a missing value;
-    # only empty fields are NULL.
+  if '/mondial_geo/' in file_path or '/works_cycles/' in file_path:
+    # 'NA' is a country code (Netherlands Antilles in mondial_geo, Namibia in
+    # works_cycles), not a missing value; only empty fields are NULL.
     data = pd.read_csv(file_path, keep_default_na=False, na_values=[''])
   else:
     data = pd.read_csv(file_path)
