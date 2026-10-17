@@ -14,13 +14,14 @@ RUNNERS = {
     "claude": AGENTS_DIR / "claude_agent/run.py",
     "openhands": AGENTS_DIR / "openhands/run.py",
     "swe": AGENTS_DIR / "SWE-agent/run_elt.py",
+    "joyagent": AGENTS_DIR / "joyagent/run.py",
 }
 DESTINATIONS = ("snowflake", "databricks", "redshift")
 
 
 def parse_args(argv: list[str] | None = None) -> tuple[argparse.Namespace, list[str]]:
     parser = argparse.ArgumentParser(
-        description="Run Codex, Claude, OpenHands, or SWE-agent on ELT-Bench."
+        description="Run Codex, Claude, OpenHands, SWE-agent, or JoyAgent on ELT-Bench."
     )
     parser.add_argument("agent", choices=RUNNERS)
     parser.add_argument("--destination", choices=DESTINATIONS, default="snowflake")

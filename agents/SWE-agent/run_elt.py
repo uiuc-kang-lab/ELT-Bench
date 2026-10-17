@@ -53,6 +53,17 @@ def copy_task_input(source: Path, destination: Path) -> None:
     )
 
 
+def set_task_namespace(config_path: Path, destination: str, task: str, database: str) -> None:
+    """Place the task in schema `task` of the shared `database`, as the other runners do."""
+    with config_path.open(encoding="utf-8") as f:
+        config = yaml.safe_load(f)
+    dest_config = config[destination]["config"]
+    dest_config["database"] = database
+    dest_config["schema"] = task
+    with config_path.open("w", encoding="utf-8") as f:
+        yaml.safe_dump(config, f, sort_keys=False)
+
+
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--destination", choices=destination_choices(), default="snowflake")
@@ -63,6 +74,11 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--elt_bench")
     parser.add_argument("--output_dir", default=str(AGENTS_DIR / "output"))
     parser.add_argument("--credential", help="Host-side credential JSON override.")
+    parser.add_argument(
+        "--database",
+        help="Shared database holding one schema per task (default: each task's own "
+        "database from its config.yaml).",
+    )
     parser.add_argument("--only", default="", help="Comma-separated task names.")
     parser.add_argument("--limit", type=int, default=100)
     parser.add_argument("--overwrite", action="store_true")
@@ -113,6 +129,8 @@ def main(argv: list[str] | None = None) -> int:
             with tempfile.TemporaryDirectory(prefix=f"elt-bench-{task}-") as workspace_tmp:
                 workspace = Path(workspace_tmp) / "workspace"
                 copy_task_input(task_input, workspace)
+                if args.database:
+                    set_task_namespace(workspace / "config.yaml", args.destination, task, args.database)
                 command = [
                     "sweagent",
                     "run",
@@ -131,8 +149,13 @@ def main(argv: list[str] | None = None) -> int:
 
                 if not args.skip_prepare:
                     try:
+                        credential = args.credential
+                        if credential is None:
+                            generated = task_input / f"{args.destination}_credential.json"
+                            credential = str(generated) if generated.is_file() else None
+                        # The workspace copy carries the (possibly rewritten) namespace.
                         namespace = prepare_destination(
-                            args.destination, task_input, args.credential
+                            args.destination, workspace, credential
                         )
                         print(f"Prepared {namespace}")
                     except Exception as exc:

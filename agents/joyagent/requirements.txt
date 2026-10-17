@@ -1,0 +1,4 @@
+# Runner only (JoyAgent itself runs in the joyagent-genie image). Same pins as
+# agents/codex_agent.
+PyYAML==6.0.3
+snowflake-connector-python==4.8.0
