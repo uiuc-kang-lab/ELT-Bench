@@ -4,6 +4,7 @@ from .warehouse import (
     DESTINATIONS,
     DestinationSpec,
     adapt_prompt,
+    default_database,
     destination_choices,
     get_destination,
     prepare_destination,

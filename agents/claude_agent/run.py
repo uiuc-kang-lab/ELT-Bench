@@ -69,6 +69,7 @@ if str(AGENTS_DIR) not in sys.path:
 
 from common import (  # noqa: E402
     adapt_prompt,
+    default_database,
     destination_choices,
     get_destination,
     prepare_destination,
@@ -831,6 +832,7 @@ def rate_limit_pause_seconds(resets_at: int | None, now: float | None = None) ->
 async def main_async(args: argparse.Namespace) -> None:
     base_id = f"{args.model.split('/')[-1]}-{args.suffix}" if args.suffix else args.model
     experiment_id = f"claude-{base_id}-{args.destination}"
+    database = args.database or default_database(args.destination, experiment_id)
     output_root = Path(args.output_dir)
     inputs_root = resolve_inputs_path(args.destination, args.test_path)
     elt_bench_root = resolve_benchmark_path(args.destination, args.elt_bench)
@@ -858,6 +860,7 @@ async def main_async(args: argparse.Namespace) -> None:
         databases = databases[k::n]
 
     logger.info("Experiment %s — %d tasks", experiment_id, len(databases))
+    logger.info("Destination namespace: database %s, one schema per task", database)
     for db in databases:
         overwrite = args.overwrite
         while True:
@@ -866,7 +869,7 @@ async def main_async(args: argparse.Namespace) -> None:
                     db=db,
                     destination=args.destination,
                     credential=args.credential,
-                    database=args.database,
+                    database=database,
                     experiment_id=experiment_id,
                     output_root=output_root,
                     inputs_root=inputs_root,
@@ -914,8 +917,9 @@ def parse_args() -> argparse.Namespace:
     )
     p.add_argument(
         "--database",
-        help="Shared database/catalog holding one schema per task "
-             "(default: 'elt' for snowflake; config value otherwise).",
+        help="Database/catalog holding one schema per task (default: 'elt' "
+             "for snowflake; one database (redshift) or catalog (databricks) "
+             "per run, named after the experiment).",
     )
     p.add_argument("--model", default="claude-opus-4-7",
                    help="Claude model id (e.g. claude-opus-4-7, claude-sonnet-4-6).")
@@ -943,8 +947,6 @@ def parse_args() -> argparse.Namespace:
                    help="Run only every N-th task starting at K (0-based), e.g. "
                         "0/3, 1/3, 2/3 in three parallel processes.")
     args = p.parse_args()
-    if args.database is None and args.destination == "snowflake":
-        args.database = "elt"
     return args
 
 

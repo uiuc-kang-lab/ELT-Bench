@@ -60,6 +60,7 @@ if str(AGENTS_DIR) not in sys.path:
 from responses_bridge import ResponsesBridge  # noqa: E402
 from common import (  # noqa: E402
     adapt_prompt,
+    default_database,
     destination_choices,
     get_destination,
     prepare_destination,
@@ -808,6 +809,11 @@ def main() -> None:
     base_id = args.model.split("/")[-1]
     experiment_id = f"joyagent-{base_id}-{args.suffix}-{args.destination}" if args.suffix \
         else f"joyagent-{base_id}-{args.destination}"
+    # One database (Redshift) / catalog (Databricks) per run unless --database
+    # is given, so runs of different agents never drop each other's schemas.
+    if args.database is None:
+        args.database = default_database(args.destination, experiment_id)
+    logger.info("Destination namespace: database %s, one schema per task", args.database)
     inputs_root = resolve_inputs_path(args.destination, args.test_path)
     elt_bench_root = resolve_benchmark_path(args.destination, args.elt_bench)
     if not inputs_root.is_dir():
@@ -857,8 +863,9 @@ def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Run JoyAgent-JDGenie on ELT-Bench.")
     p.add_argument("--destination", choices=destination_choices(), default="snowflake")
     p.add_argument("--credential", help="Optional host-side destination credential JSON override.")
-    p.add_argument("--database", help="Shared database holding one schema per task "
-                                      "(default: 'elt' for snowflake; config value otherwise).")
+    p.add_argument("--database", help="Database/catalog holding one schema per task (default: "
+                                      "'elt' for snowflake; one database (redshift) or catalog "
+                                      "(databricks) per run, named after the experiment).")
     p.add_argument("--model", required=True, help="Model id sent to the provider, e.g. zai-org/GLM-5.3.")
     p.add_argument("--base-url", default="https://api.openai.com/v1",
                    help="OpenAI-compatible base URL of the provider.")
@@ -897,10 +904,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--genie-image", default=GENIE_IMAGE)
     p.add_argument("--shard", type=_parse_shard, default=None, metavar="K/N",
                    help="Run only every N-th task starting at K (0-based).")
-    args = p.parse_args()
-    if args.database is None and args.destination == "snowflake":
-        args.database = "elt"
-    return args
+    return p.parse_args()
 
 
 if __name__ == "__main__":

@@ -76,10 +76,11 @@ Results go to
 (with `stats.json` alongside), and logs go to `logs/`, both under this
 directory.
 
-`result.json` records a `status`: `success`, `error_max_turns` and `stuck`
-(the agent itself ended the attempt) are kept; `error` / `exception`
-(LLM/API failures, crashes) are rerun automatically by the next invocation
-without `--overwrite`. A failed warehouse reset aborts the task before the
+`result.json` records a `status`: `success`, `error_max_turns`, `stuck` and
+`error_tool_parse` (the model emitted a tool call as plain text, which ends
+the run) are the agent's own outcome and are kept; `error` / `exception`
+(LLM/API failures such as rate limits, crashes) are rerun automatically by
+the next invocation without `--overwrite`. A failed warehouse reset aborts the task before the
 agent starts.
 
 ## Evaluation

@@ -30,10 +30,12 @@ def parse_args():
     )
     parser.add_argument(
         "--database",
-        default="elt",
+        default=None,
         help=(
-            "Snowflake database or Databricks catalog containing one schema "
-            "per task. The value is ignored for the current Redshift layout."
+            "Database/catalog containing one schema per task (the runner's "
+            "--database). Defaults to 'elt' for Snowflake/Databricks and to the "
+            "credential's database for Redshift; for Redshift the connection "
+            "is opened on this database."
         ),
     )
     parser.add_argument(
@@ -101,7 +103,15 @@ def main():
     result_directory.mkdir(parents=True, exist_ok=True)
     results_log = result_directory / "results.log"
 
-    connector = get_connector(args.db_type, read_json(credential_path))
+    credential = read_json(credential_path)
+    if args.db_type == "redshift":
+        # Redshift connections are per database: open the run's database.
+        if args.database:
+            credential["database"] = args.database
+        args.database = credential.get("database")
+    elif args.database is None:
+        args.database = "elt"
+    connector = get_connector(args.db_type, credential)
     try:
         if args.stage in ("all", "1"):
             # Stage 1 appends as it progresses; start each requested run cleanly.

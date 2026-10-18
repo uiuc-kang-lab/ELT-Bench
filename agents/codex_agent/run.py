@@ -77,6 +77,7 @@ if str(AGENTS_DIR) not in sys.path:
 import codex_cli  # noqa: E402
 from common import (  # noqa: E402
     adapt_prompt,
+    default_database,
     destination_choices,
     get_destination,
     prepare_destination,
@@ -938,6 +939,7 @@ async def main_async(args: argparse.Namespace) -> None:
     base_id = f"{args.model.split('/')[-1]}-{args.suffix}" if args.suffix else args.model.split("/")[-1]
     prefix = "codex-cli" if args.backend == "cli" else "codex"
     experiment_id = f"{prefix}-{base_id}-{args.destination}"
+    database = args.database or default_database(args.destination, experiment_id)
     output_root = Path(args.output_dir)
     inputs_root = resolve_inputs_path(args.destination, args.test_path)
     elt_bench_root = resolve_benchmark_path(args.destination, args.elt_bench)
@@ -965,6 +967,7 @@ async def main_async(args: argparse.Namespace) -> None:
         databases = databases[k::n]
 
     logger.info("Experiment %s — %d tasks", experiment_id, len(databases))
+    logger.info("Destination namespace: database %s, one schema per task", database)
 
     for db in databases:
         overwrite = args.overwrite
@@ -974,7 +977,7 @@ async def main_async(args: argparse.Namespace) -> None:
                     db=db,
                     destination=args.destination,
                     credential=args.credential,
-                    database=args.database,
+                    database=database,
                     experiment_id=experiment_id,
                     output_root=output_root,
                     inputs_root=inputs_root,
@@ -1029,8 +1032,9 @@ def parse_args() -> argparse.Namespace:
     )
     p.add_argument(
         "--database",
-        help="Shared database/catalog holding one schema per task "
-             "(default: 'elt' for snowflake; config value otherwise).",
+        help="Database/catalog holding one schema per task (default: 'elt' "
+             "for snowflake; one database (redshift) or catalog (databricks) "
+             "per run, named after the experiment).",
     )
     p.add_argument("--model", default=None,
                    help="Model id (default: openai/gpt-5.4-2026-03-05 for sdk, gpt-6-astra for cli).")
@@ -1059,8 +1063,6 @@ def parse_args() -> argparse.Namespace:
     args = p.parse_args()
     args.model = args.model or DEFAULT_MODEL[args.backend]
     args.image = args.image or (codex_cli.CLI_IMAGE if args.backend == "cli" else IMAGE_NAME)
-    if args.database is None and args.destination == "snowflake":
-        args.database = "elt"
     return args
 
 

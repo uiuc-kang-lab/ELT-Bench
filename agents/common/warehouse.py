@@ -66,6 +66,22 @@ def get_destination(name: str) -> DestinationSpec:
         raise ValueError(f"Unsupported destination {name!r}; choose one of: {choices}") from exc
 
 
+def default_database(destination: str, experiment_id: str) -> str | None:
+    """Database/catalog holding one schema per task when --database is unset.
+
+    Snowflake runs share the "elt" database. Each Redshift run (agent, model
+    and suffix) gets its own database, and each Databricks run its own
+    Unity Catalog catalog, named after the experiment, so runs of different
+    agents never drop each other's task schemas.
+    """
+    if destination == "snowflake":
+        return "elt"
+    if destination in ("redshift", "databricks"):
+        base = experiment_id.removesuffix(f"-{destination}")
+        return re.sub(r"[^a-z0-9_]", "_", base.lower())
+    return None
+
+
 def resolve_inputs_path(destination: str, path: str | Path | None = None) -> Path:
     spec = get_destination(destination)
     return Path(path).expanduser().resolve() if path else REPO_ROOT / spec.inputs_dir
@@ -167,6 +183,19 @@ def _load_destination_config(
             key: value
             for key, value in credentials.items()
             if key not in {"role", "warehouse", "database", "schema"}
+        }
+    # The Redshift credential names the database the runner connects to in
+    # order to create the run's database; config.yaml names the run's own
+    # database, which must not be overwritten by it.
+    # Same for Databricks: the credential's catalog must not replace the
+    # run's catalog named in config.yaml.
+    elif destination in ("redshift", "databricks"):
+        if credentials.get("database"):
+            result["_connection_database"] = credentials["database"]
+        credentials = {
+            key: value
+            for key, value in credentials.items()
+            if key not in {"database", "schema"}
         }
     result.update(credentials)
     return result
@@ -294,17 +323,45 @@ def _prepare_databricks(config: Mapping[str, Any]) -> str:
     def credential_provider():
         return oauth_service_principal(oauth_config)
 
-    catalog = _backtick_identifier(config["database"])
-    schema = _backtick_identifier(config["schema"])
+    # Unity Catalog names are case-insensitive and stored in lower case.
+    catalog_name = str(config["database"]).lower()
+    schema_name = str(config["schema"]).lower()
+    catalog = _backtick_identifier(catalog_name)
+    schema = _backtick_identifier(schema_name)
     with sql.connect(
         server_hostname=hostname,
         http_path=config["http_path"],
         credentials_provider=credential_provider,
     ) as connection:
         with connection.cursor() as cursor:
+            # One catalog per run; the service principal needs CREATE CATALOG
+            # on the metastore (or the catalog must already exist and be
+            # usable by it).
+            try:
+                cursor.execute(f"CREATE CATALOG IF NOT EXISTS {catalog}")
+            except Exception as exc:
+                raise RuntimeError(
+                    f"Cannot create catalog {catalog_name!r}: grant the service "
+                    f"principal CREATE CATALOG on the metastore "
+                    f"(GRANT CREATE CATALOG ON METASTORE TO `<client_id>`) or "
+                    f"create the catalog and grant it ALL PRIVILEGES. ({exc})"
+                ) from exc
             cursor.execute(f"DROP SCHEMA IF EXISTS {catalog}.{schema} CASCADE")
+            # Airbyte keeps raw records in airbyte_internal as
+            # <schema>_raw__stream_<stream>; drop this task's leftovers so an
+            # append sync does not re-materialize rows from a previous attempt.
+            cursor.execute(f"CREATE SCHEMA IF NOT EXISTS {catalog}.`airbyte_internal`")
+            cursor.execute(f"SHOW TABLES IN {catalog}.`airbyte_internal`")
+            raw_prefix = f"{schema_name}_raw__stream_"
+            for row in cursor.fetchall():
+                table_name = row[1]
+                if str(table_name).lower().startswith(raw_prefix):
+                    cursor.execute(
+                        f"DROP TABLE IF EXISTS {catalog}.`airbyte_internal`."
+                        f"{_backtick_identifier(table_name)}"
+                    )
             cursor.execute(f"CREATE SCHEMA {catalog}.{schema}")
-    return f"{config['database']}.{config['schema']}"
+    return f"{catalog_name}.{schema_name}"
 
 
 def _prepare_redshift(config: Mapping[str, Any]) -> str:
@@ -315,16 +372,57 @@ def _prepare_redshift(config: Mapping[str, Any]) -> str:
 
     import redshift_connector
 
-    schema = _ansi_identifier(str(config["schema"]).lower())
-    with redshift_connector.connect(
-        host=config["host"],
-        port=int(config["port"]),
-        database=config["database"],
-        user=user,
-        password=config["password"],
-    ) as connection:
+    # Unquoted Redshift identifiers fold to lower case; Airbyte, dbt and the
+    # evaluator all use them unquoted.
+    database = str(config["database"]).lower()
+    schema_name = str(config["schema"]).lower()
+    schema = _ansi_identifier(schema_name)
+
+    def connect(db: str):
+        connection = redshift_connector.connect(
+            host=config["host"],
+            port=int(config["port"]),
+            database=db,
+            user=user,
+            password=config["password"],
+        )
         connection.autocommit = True
-        with connection.cursor() as cursor:
-            cursor.execute(f"DROP SCHEMA IF EXISTS {schema} CASCADE")
-            cursor.execute(f"CREATE SCHEMA {schema}")
-    return f"{config['database']}.{str(config['schema']).lower()}"
+        return connection
+
+    # Create the run's database from the credential's (existing) database.
+    bootstrap = str(config.get("_connection_database") or database).lower()
+    if bootstrap != database:
+        with connect(bootstrap) as connection, connection.cursor() as cursor:
+            cursor.execute("SELECT 1 FROM pg_database WHERE datname = %s", (database,))
+            if cursor.fetchone() is None:
+                try:
+                    cursor.execute(f"CREATE DATABASE {_ansi_identifier(database)}")
+                except Exception:
+                    # Another runner process of the same run may have just
+                    # created it.
+                    cursor.execute("SELECT 1 FROM pg_database WHERE datname = %s", (database,))
+                    if cursor.fetchone() is None:
+                        raise
+
+    with connect(database) as connection, connection.cursor() as cursor:
+        cursor.execute(f"DROP SCHEMA IF EXISTS {schema} CASCADE")
+        # Airbyte keeps raw records in airbyte_internal as
+        # <schema>_raw__stream_<stream>; drop this task's leftovers so an
+        # append sync does not re-materialize rows from a previous attempt.
+        cursor.execute(
+            "SELECT table_name FROM information_schema.tables "
+            "WHERE table_schema = 'airbyte_internal'"
+        )
+        raw_prefix = f"{schema_name}_raw__stream_"
+        for (table_name,) in cursor.fetchall():
+            if table_name.lower().startswith(raw_prefix):
+                cursor.execute(
+                    f"DROP TABLE IF EXISTS airbyte_internal.{_ansi_identifier(table_name)}"
+                )
+        cursor.execute(f"CREATE SCHEMA {schema}")
+        # Airbyte's connection check runs CREATE SCHEMA IF NOT EXISTS
+        # airbyte_internal; on Redshift two syncs doing that at once fail
+        # with a pg_namespace unique violation. Creating it here first turns
+        # those into no-ops.
+        cursor.execute("CREATE SCHEMA IF NOT EXISTS airbyte_internal")
+    return f"{database}.{schema_name}"

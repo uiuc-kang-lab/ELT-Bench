@@ -83,6 +83,7 @@ if str(AGENTS_DIR) not in sys.path:
 
 from common import (  # noqa: E402
     adapt_prompt,
+    default_database,
     destination_choices,
     get_destination,
     prepare_destination,
@@ -122,6 +123,10 @@ NETWORK_NAME = "elt-docker_elt_network"
 CONTAINER_WORKDIR = "/workspace"
 CONTAINER_HOME = "/tmp/home"
 AGENT_SERVER_READY_TIMEOUT_SEC = 120  # cold start ~10s; padded for slower hosts
+# Wall-clock cap for one task's conversation. The SDK's default (3600 s)
+# cuts off long but healthy runs (Redshift syncs + dbt can exceed an hour);
+# --max_turns is the intended limit.
+CONVERSATION_TIMEOUT_SEC = 6 * 3600
 
 SYSTEM_PROMPT_TEMPLATE = """You are a data engineer skilled in databases, SQL, and building ELT pipelines.
 
@@ -189,11 +194,12 @@ PROVIDER_KEY_ENV: dict[str, tuple[str, ...]] = {
 # it finished, ran out of iterations, or the stuck detector stopped it);
 # anything else (LLM/API errors, crashes) is retried on the next invocation
 # without --overwrite.
-KEEP_STATUSES = frozenset({"success", "error_max_turns", "stuck"})
+KEEP_STATUSES = frozenset({"success", "error_max_turns", "stuck", "error_tool_parse"})
 # Tool-call markup emitted as plain text (e.g. GLM's <tool_call>/<arg_key>
 # format when the provider fails to parse it). A message without a parsed
 # tool call ends the run, so a "finished" run whose last word is such text
-# ended prematurely and is retried as "error_tool_parse".
+# ended prematurely; it is recorded as "error_tool_parse" and, like hitting
+# max turns, counted as the agent's own failure (kept, not retried).
 LEAKED_TOOL_CALL = re.compile(r"<tool_call>|<arg_key>|</arg_value>")
 
 
@@ -651,7 +657,7 @@ async def _run_task_body(
         )
         # `Conversation.run()` is synchronous in the SDK; offload so we don't
         # block the event loop.
-        await asyncio.to_thread(conversation.run)
+        await asyncio.to_thread(conversation.run, timeout=CONVERSATION_TIMEOUT_SEC)
     except Exception as e:
         # The remote run raises ConversationRunError for ERROR/STUCK states
         # too (incl. hitting max iterations); finalize() classifies it.
@@ -718,6 +724,7 @@ async def _run_task_body(
 async def main_async(args: argparse.Namespace) -> None:
     base_id = f"{args.model.split('/')[-1]}-{args.suffix}" if args.suffix else args.model.split("/")[-1]
     experiment_id = f"openhands-{base_id}-{args.destination}"
+    database = args.database or default_database(args.destination, experiment_id)
     output_root = Path(args.output_dir)
     inputs_root = resolve_inputs_path(args.destination, args.test_path)
     elt_bench_root = resolve_benchmark_path(args.destination, args.elt_bench)
@@ -740,6 +747,7 @@ async def main_async(args: argparse.Namespace) -> None:
     resolve_api_key(args.model)  # fail fast before touching any task
 
     logger.info("Experiment %s — %d tasks", experiment_id, len(databases))
+    logger.info("Destination namespace: database %s, one schema per task", database)
 
     for db in databases:
         try:
@@ -747,7 +755,7 @@ async def main_async(args: argparse.Namespace) -> None:
                 db=db,
                 destination=args.destination,
                 credential=args.credential,
-                database=args.database,
+                database=database,
                 experiment_id=experiment_id,
                 output_root=output_root,
                 inputs_root=inputs_root,
@@ -779,8 +787,9 @@ def parse_args() -> argparse.Namespace:
     )
     p.add_argument(
         "--database",
-        help="Shared database/catalog holding one schema per task "
-             "(default: 'elt' for snowflake; config value otherwise).",
+        help="Database/catalog holding one schema per task (default: 'elt' "
+             "for snowflake; one database (redshift) or catalog (databricks) "
+             "per run, named after the experiment).",
     )
     p.add_argument("--model", default="openai/gpt-5.4-2026-03-05",
                    help="LiteLLM-style provider/model id (e.g. anthropic/claude-opus-4-7, openai/gpt-4o).")
@@ -804,8 +813,6 @@ def parse_args() -> argparse.Namespace:
                    help="Run only every N-th task starting at K (0-based), e.g. "
                         "0/3, 1/3, 2/3 in three parallel processes.")
     args = p.parse_args()
-    if args.database is None and args.destination == "snowflake":
-        args.database = "elt"
     return args
 
 

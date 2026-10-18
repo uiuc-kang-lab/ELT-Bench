@@ -20,6 +20,7 @@ if str(AGENTS_DIR) not in sys.path:
 
 from common import (  # noqa: E402
     adapt_prompt,
+    default_database,
     destination_choices,
     prepare_destination,
     resolve_benchmark_path,
@@ -76,8 +77,9 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--credential", help="Host-side credential JSON override.")
     parser.add_argument(
         "--database",
-        help="Shared database holding one schema per task (default: each task's own "
-        "database from its config.yaml).",
+        help="Database/catalog holding one schema per task (default: 'elt' for "
+        "snowflake; one database (redshift) or catalog (databricks) per run, named "
+        "after the experiment).",
     )
     parser.add_argument("--only", default="", help="Comma-separated task names.")
     parser.add_argument("--limit", type=int, default=100)
@@ -112,6 +114,10 @@ def main(argv: list[str] | None = None) -> int:
         tasks = tasks[: args.limit]
 
     experiment = f"swe-{args.model.split('/')[-1]}-{args.suffix}-{args.destination}"
+    # Same layout as the other runners: one schema per task inside a database
+    # (Redshift) / catalog (Databricks) per run, or the shared Snowflake "elt".
+    database = args.database or default_database(args.destination, experiment)
+    print(f"Destination namespace: database {database}, one schema per task")
     output_root = Path(args.output_dir).expanduser().resolve() / experiment
     failures = 0
 
@@ -129,8 +135,8 @@ def main(argv: list[str] | None = None) -> int:
             with tempfile.TemporaryDirectory(prefix=f"elt-bench-{task}-") as workspace_tmp:
                 workspace = Path(workspace_tmp) / "workspace"
                 copy_task_input(task_input, workspace)
-                if args.database:
-                    set_task_namespace(workspace / "config.yaml", args.destination, task, args.database)
+                if database:
+                    set_task_namespace(workspace / "config.yaml", args.destination, task, database)
                 command = [
                     "sweagent",
                     "run",
