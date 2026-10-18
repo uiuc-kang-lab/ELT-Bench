@@ -258,11 +258,11 @@ models:
         description: The timestamp of the first open for an email.
         format: YYYY-MM-DD HH:MM:SS
       - name: time_to_open_minutes
-        description: The time from send to open in minutes.
+        description: The time from send to open in minutes, counted as calendar minute boundaries crossed (DATEDIFF).
       - name: time_to_open_hours
-        description: The time from send to open in hours.
+        description: The time from send to open in hours, counted as calendar hour boundaries crossed (DATEDIFF).
       - name: time_to_open_days
-        description: The time from send to open in days.
+        description: The time from send to open in days, counted as calendar day boundaries crossed (DATEDIFF).
       - name: was_unsubscribed
         description: Whether the user unsubscribed via the sent email. Set to False if NULL, otherwise True.
 
@@ -292,11 +292,11 @@ models:
         description: The time the campaign was sent.
         format: YYYY-MM-DD HH:MM:SS
       - name: time_since_send_minutes
-        description: The time from send to activity in minutes.
+        description: The time from send to activity in minutes, counted as calendar minute boundaries crossed (DATEDIFF).
       - name: time_since_send_hours
-        description: The time from send to activity in hours.
+        description: The time from send to activity in hours, counted as calendar hour boundaries crossed (DATEDIFF).
       - name: time_since_send_days
-        description: The time from send to activity in days.
+        description: The time from send to activity in days, counted as calendar day boundaries crossed (DATEDIFF).
 
   - name: mailchimp__automations
     description: Each record represents an automation in Mailchimp, enriched with click, open and unsubscribe metrics. (Enabled if you are using automations.)

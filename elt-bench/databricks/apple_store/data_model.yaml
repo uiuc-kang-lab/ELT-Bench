@@ -9,7 +9,7 @@ models:
       - name: app_name
         description: Application Name.
       - name: source_type
-        description: A source is counted when a customer follows a link to your App Store product page. There are 8 types of sources, App Store Browse, App Store Search, App Referrers, Web Referrers, App Clips, Unavailable, Institutional Purchases, and Null. Null is the default value for data that does not provide source types, including crashes, subscription events and subscription summary. 
+        description: A source is counted when a customer follows a link to your App Store product page. There are 7 types of sources, App Store Browse, App Store Search, App Referrers, Web Referrers, App Clips, Unavailable, and Institutional Purchases. Source type is NULL for data that does not provide source types, including crashes, subscription events and subscription summary.
       - name: device
         description: Device type associated with the respective metric(s).
       - name: impressions
@@ -49,7 +49,7 @@ models:
       - name: app_name
         description: Application Name.
       - name: source_type
-        description: A source is counted when a customer follows a link to your App Store product page. There are 8 types of sources App Store Browse, App Store Search, App Referrers, Web Referrers, App Clips, Unavailable, Institutional Purchases, and Null. Null is the default value for data that does not provide source types, including crashes, subscription events and subscription summary. 
+        description: A source is counted when a customer follows a link to your App Store product page. There are 7 types of sources, App Store Browse, App Store Search, App Referrers, Web Referrers, App Clips, Unavailable, and Institutional Purchases. Source type is NULL for data that does not provide source types, including crashes, subscription events and subscription summary.
       - name: impressions
         description: The number of times your app was viewed in the App Store for more than one second. This includes search results, Featured, Explore, Top Charts and App Product Page views.
       - name: page_views
@@ -109,7 +109,7 @@ models:
       - name: app_name
         description: Application Name.
       - name: source_type
-        description: A source is counted when a customer follows a link to your App Store product page. There are 8 types of sources App Store Browse, App Store Search, App Referrers, Web Referrers, App Clips, Unavailable, Institutional Purchases, and Null. Null is the default value for data that does not provide source types, including crashes, subscription events and subscription summary. 
+        description: A source is counted when a customer follows a link to your App Store product page. There are 7 types of sources, App Store Browse, App Store Search, App Referrers, Web Referrers, App Clips, Unavailable, and Institutional Purchases. Source type is NULL for data that does not provide source types, including crashes, subscription events and subscription summary.
       - name: platform_version
         description: The platform version of the device engaging with your app.
       - name: impressions
@@ -150,7 +150,7 @@ models:
       - name: app_name
         description: Application Name.
       - name: source_type
-        description: A source is counted when a customer follows a link to your App Store product page. There are 8 types of sources App Store Browse, App Store Search, App Referrers, Web Referrers, App Clips, Unavailable, Institutional Purchases, and Null. Null is the default value for data that does not provide source types, including crashes, subscription events and subscription summary. 
+        description: A source is counted when a customer follows a link to your App Store product page. There are 7 types of sources, App Store Browse, App Store Search, App Referrers, Web Referrers, App Clips, Unavailable, and Institutional Purchases. Source type is NULL for data that does not provide source types, including crashes, subscription events and subscription summary.
       - name: app_version
         description: The app version of the app that the user is engaging with.
       - name: crashes

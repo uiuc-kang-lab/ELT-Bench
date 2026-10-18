@@ -189,6 +189,7 @@ models:
         format: YYYY-MM-DD HH:MM:SS.fff
       - name: valid_to
         description: The timestamp at which this version stopped being the current version, i.e. the update timestamp of the next version. NULL for the most recent version, which has no successor.
+        format: YYYY-MM-DD HH:MM:SS.fff
       - name: version_type
         description: The type version of the email, either '1' or '2'.
       - name: workspace_name

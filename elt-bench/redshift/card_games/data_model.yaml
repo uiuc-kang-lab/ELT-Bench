@@ -11,9 +11,9 @@ models:
       - name: num_cards
         description: The number of cards in the set, replace NULL values with 0.
       - name: num_translations
-        description: The number of translations of the card set, replace NULL values with 0.
+        description: The number of translations of the card set, counting only languages that have a translated name, replace NULL values with 0.
       - name: has_Japanese_translation_and_only_available_in_non_foil
-        description: Set to 1 if the card set has Japanses translation and is only available non-foil.
+        description: Set to 1 if the card set has a Japanese translation (a translated name in Japanese) and is only available in non-foil, otherwise, set to 0.
       - name: per_cards_with_a_converted_mana_cost_10
         description: The percentage of the cards with a converted Mana Cost of 10 in the set.
       - name: card_has_highest_converted_mana_cost

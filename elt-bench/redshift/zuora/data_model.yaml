@@ -60,7 +60,7 @@ models:
         description: Earliest invoice item service start date for the invoice.
         format: YYYY-MM-DD
       - name: invoice_service_end_date
-        description: Earliest invoice item service end date for the invoice.
+        description: Latest invoice item service end date for the invoice.
         format: YYYY-MM-DD
       - name: payments
         description: The number of payments applied to the invoice.

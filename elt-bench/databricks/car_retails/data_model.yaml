@@ -17,7 +17,7 @@ models:
       - name: total_actual_profit_gained
         description: Total actual profit gained from the customer, replace NULL values with 0.
       - name: total_price_of_product_shipped_in_2003
-        description: Total price of products shipped to the customer in 2003, replace NULL values with 0.
+        description: Total price of products shipped to the customer in 2003, counting only orders with status 'Shipped' and a shipped date in 2003, replace NULL values with 0.
   - name: car_retails__employees
     description: Each record represents an employee.
     columns: 

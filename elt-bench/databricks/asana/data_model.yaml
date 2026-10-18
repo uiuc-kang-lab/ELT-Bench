@@ -87,7 +87,7 @@ models:
         description: The most recent progress status update for the project (free-form string)
       - name: due_date
         description: The date the project is due on, if given
-        format: YYYY-MM-DD H[H]:MM:SS
+        format: YYYY-MM-DD
       - name: last_modified_at
         description: Timestamp of when the project was last modified (doesn't include comments or tasks)
         format: YYYY-MM-DD H[H]:MM:SS
@@ -115,7 +115,7 @@ models:
       - name: number_of_active_projects
         description: Count of non-archived projects
       - name: active_projects
-        description: Comma-separated string of non-archived project IDs associated with the team, sorted alphabetically by project ID. NULL if the team has no active projects.
+        description: String of non-archived project IDs associated with the team, separated by a comma and space and sorted alphabetically by project ID. NULL if the team has no active projects.
       - name: number_of_archived_projects
         description: Count of archived projects
   
@@ -130,7 +130,7 @@ models:
         description: Timestamp of when the tag was created
         format: YYYY-MM-DD H[H]:MM:SS
       - name: number_of_open_tasks
-        description: Count of the currently open tasks with this tag.
+        description: Count of the currently open tasks in the task catalog with this tag. Set to 0 if NULL.
       - name: number_of_assigned_open_tasks
         description: Count of the open and assigned tasks with this tag. Set to 0 if NULL.
       - name: number_of_tasks_completed
