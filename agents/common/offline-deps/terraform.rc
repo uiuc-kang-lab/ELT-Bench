@@ -1,0 +1,9 @@
+disable_checkpoint = true
+
+provider_installation {
+  filesystem_mirror {
+    path    = "/opt/elt/terraform-providers"
+    include = ["registry.terraform.io/airbytehq/airbyte"]
+  }
+  # Deliberately no direct block: unknown providers fail instead of going online.
+}

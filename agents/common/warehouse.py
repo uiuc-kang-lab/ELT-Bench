@@ -223,13 +223,21 @@ def prepare_destination(
     destination: str,
     task_input_dir: str | Path,
     credential_path: str | Path | None = None,
+    source_database: str | None = None,
 ) -> str:
-    """Drop and recreate the task namespace, returning its qualified name."""
+    """Drop and recreate the task namespace, returning its qualified name.
+
+    With `source_database` (transformation-only runs, Snowflake only) the
+    namespace is recreated as a zero-copy clone of the same-named schema in
+    that database, so the agent starts with the source tables loaded.
+    """
     task_input_dir = Path(task_input_dir).expanduser().resolve()
     config = _load_destination_config(destination, task_input_dir, credential_path)
 
+    if source_database and destination != "snowflake":
+        raise ValueError("Transformation-only runs (source_database) support Snowflake only")
     if destination == "snowflake":
-        return _prepare_snowflake(config)
+        return _prepare_snowflake(config, source_database)
     if destination == "databricks":
         return _prepare_databricks(config)
     if destination == "redshift":
@@ -238,7 +246,7 @@ def prepare_destination(
     raise AssertionError("unreachable")
 
 
-def _prepare_snowflake(config: Mapping[str, Any]) -> str:
+def _prepare_snowflake(config: Mapping[str, Any], source_database: str | None = None) -> str:
     _require(config, "account", "password", "database", "schema")
     user = config.get("user") or config.get("username")
     if not user:
@@ -283,7 +291,11 @@ def _prepare_snowflake(config: Mapping[str, Any]) -> str:
                         f"DROP TABLE IF EXISTS {database}.{_ansi_identifier(schema_name)}."
                         f"{_ansi_identifier(table_name)}"
                     )
-            cursor.execute(f"CREATE SCHEMA {database}.{schema}")
+            if source_database:
+                source = _ansi_identifier(str(source_database).upper())
+                cursor.execute(f"CREATE SCHEMA {database}.{schema} CLONE {source}.{schema}")
+            else:
+                cursor.execute(f"CREATE SCHEMA {database}.{schema}")
             if role:
                 role_identifier = _ansi_identifier(str(role).upper())
                 # CREATE SCHEMA lets Airbyte create its shared raw-data schema
@@ -292,10 +304,18 @@ def _prepare_snowflake(config: Mapping[str, Any]) -> str:
                     f"GRANT USAGE, CREATE SCHEMA ON DATABASE {database} "
                     f"TO ROLE {role_identifier}"
                 )
+                # A clone carries over the source schema's grants.
+                copy_grants = " COPY CURRENT GRANTS" if source_database else ""
                 cursor.execute(
                     f"GRANT OWNERSHIP ON SCHEMA {database}.{schema} "
-                    f"TO ROLE {role_identifier}"
+                    f"TO ROLE {role_identifier}{copy_grants}"
                 )
+                if source_database:
+                    # Same privileges as tables Airbyte loads with this role.
+                    cursor.execute(
+                        f"GRANT OWNERSHIP ON ALL TABLES IN SCHEMA {database}.{schema} "
+                        f"TO ROLE {role_identifier} COPY CURRENT GRANTS"
+                    )
     return f"{config['database']}.{config['schema']}"
 
 

@@ -82,7 +82,9 @@ if str(AGENTS_DIR) not in sys.path:
     sys.path.insert(0, str(AGENTS_DIR))
 
 from common import (  # noqa: E402
+    TRANSFORM_TASK_INSTRUCTION,
     adapt_prompt,
+    copy_transform_inputs,
     default_database,
     destination_choices,
     get_destination,
@@ -90,6 +92,13 @@ from common import (  # noqa: E402
     resolve_benchmark_path,
     resolve_inputs_path,
 )
+
+
+from common.network_guard import (  # noqa: E402
+    ContainerNetworkGuard, NETWORK_INSTRUCTION, add_network_arguments,
+    policy_identity, require_matching_network_policy, check_offline_dependencies,
+)
+from common.network_policy import build_network_policy, selected_model_api_base  # noqa: E402
 
 
 # ---------- logging ----------
@@ -142,6 +151,25 @@ The extracted data will be loaded into a target system, Snowflake, followed by w
 This task is divided into two stages:
 1. Data Extraction and Loading – Using Airbyte's Terraform provider.
 2. Data Transformation – Using the DBT Project workflow for Snowflake.
+
+
+First, you should _always_ include a general thought about what you're going to do next.
+Then issue the corresponding tool call. Wait for the tool result before continuing with more discussion and commands.
+"""
+
+# --source_database runs: the source tables are already loaded and only the
+# transformation stage is asked for (task text in common/transform_only.py).
+TRANSFORM_SYSTEM_PROMPT_TEMPLATE = """You are a data engineer skilled in databases, SQL, and building ELT pipelines.
+
+You are running inside Docker container `{container}` ({image} image on the
+{network} network). Your working directory is `{container_workdir}`. All your
+tools (file_editor / terminal / grep / glob) operate inside this container —
+paths are relative to {container_workdir}, and only files under
+{container_workdir} are visible. You may only modify files under
+{container_workdir}/elt.
+
+Your goal is to complete the data transformation stage of an ELT pipeline. The data has already been extracted from multiple sources, such as custom APIs, PostgreSQL, MongoDB, flat files, and the cloud service S3, and loaded into a target system, Snowflake.
+You need to write transformation queries to construct final tables for downstream use, using the DBT Project workflow for Snowflake.
 
 
 First, you should _always_ include a general thought about what you're going to do next.
@@ -242,6 +270,7 @@ def ensure_container(
     session_key: str,
     env_extra: dict[str, str] | None = None,
     image: str = IMAGE_NAME,
+    network_guard: ContainerNetworkGuard | None = None,
 ) -> None:
     """(Re)create a fresh ELT container running the OpenHands agent-server.
 
@@ -269,7 +298,12 @@ def ensure_container(
     # "litellm.AuthenticationError: Missing Anthropic API Key".
     # Secrets are passed by name (`-e NAME`, value taken from the docker CLI's
     # environment) so they never appear in the host process list.
-    secret_env = {"SESSION_API_KEY": session_key, **(env_extra or {})}
+    if network_guard is not None:
+        network_guard.start()
+    secret_env = {
+        "SESSION_API_KEY": session_key, **(env_extra or {}),
+        **(network_guard.environment if network_guard else {}),
+    }
     env_args: list[str] = []
     for k in secret_env:
         env_args += ["-e", k]
@@ -278,6 +312,7 @@ def ensure_container(
         "docker", "run", "-d", "--rm",
         "--name", container_name,
         "--network", NETWORK_NAME,
+        *(network_guard.docker_security_args if network_guard else []),
         # Run as the host user so files the agent creates stay host-owned
         # (editable, and removable by --overwrite).
         "--user", f"{uid}:{gid}",
@@ -289,17 +324,21 @@ def ensure_container(
         # Only reachable from this host.
         "-p", f"127.0.0.1:{port}:8000",
         image,
-        "sh", "-c",
-        # The agent-server keeps conversations/bash events under the relative
-        # path workspace/, so start it from HOME instead of /workspace (the
-        # agent's working dir is set separately via RemoteWorkspace).
-        f"mkdir -p {CONTAINER_HOME} && cd {CONTAINER_HOME} && "
-        "exec python -m openhands.agent_server --host 0.0.0.0 --port 8000",
-    ], env={**os.environ, **{k: v for k, v in secret_env.items() if v}})
+        # No agent process runs until the host has installed the egress policy.
+        "sleep", "infinity",
+    ], env={**os.environ, **secret_env})
     _run([
         "docker", "exec", "-u", "0", container_name, "sh", "-c",
         f"echo 'agent:x:{uid}:{gid}::{CONTAINER_HOME}:/bin/bash' >> /etc/passwd"
         f" && (getent group {gid} >/dev/null || echo 'agent:x:{gid}:' >> /etc/group)",
+    ])
+    if network_guard is not None:
+        network_guard.install(container_name)
+    _run([
+        "docker", "exec", "-d", container_name, "sh", "-c",
+        # Keep the server's state out of the read-only task input mount.
+        f"mkdir -p {CONTAINER_HOME} && cd {CONTAINER_HOME} && "
+        "exec python -m openhands.agent_server --host 0.0.0.0 --port 8000",
     ])
     _wait_for_agent_server(f"http://127.0.0.1:{port}/", AGENT_SERVER_READY_TIMEOUT_SEC)
 
@@ -497,6 +536,9 @@ async def run_task(
     max_turns: int,
     overwrite: bool,
     image: str = IMAGE_NAME,
+    source_database: str | None = None,
+    network_access: str = "restricted",
+    network_allow: tuple[str, ...] = (),
 ) -> None:
     instance_id = f"{experiment_id}/{db}"
     out_dir = output_root / instance_id
@@ -511,6 +553,7 @@ async def run_task(
                 previous = json.load(f)
         except (OSError, json.JSONDecodeError):
             previous = {}
+        require_matching_network_policy(previous, network_access, network_allow)
         status = previous.get("status") or ("success" if previous.get("finished") else None)
         if status in KEEP_STATUSES:
             logger.info("Skipping %s (result exists, status=%s)", instance_id, status)
@@ -543,6 +586,9 @@ async def run_task(
             model=model,
             max_turns=max_turns,
             image=image,
+            source_database=source_database,
+            network_access=network_access,
+            network_allow=network_allow,
         )
     finally:
         logger.removeHandler(db_handler)
@@ -562,12 +608,18 @@ async def _run_task_body(
     model: str,
     max_turns: int,
     image: str = IMAGE_NAME,
+    source_database: str | None = None,
+    network_access: str = "restricted",
+    network_allow: tuple[str, ...] = (),
 ) -> None:
     task_input_dir = inputs_root / db
 
     # Copy seed files into the mount dir, then point the task at its own
     # schema inside the shared experiment database.
-    copy_initial_files(task_input_dir, out_dir)
+    if source_database:
+        copy_transform_inputs(task_input_dir, out_dir, destination)
+    else:
+        copy_initial_files(task_input_dir, out_dir)
     (out_dir / "elt").mkdir(exist_ok=True)
     set_task_namespace(out_dir / "config.yaml", destination, db, database)
 
@@ -577,8 +629,20 @@ async def _run_task_body(
     if credential is None:
         generated = task_input_dir / f"{destination}_credential.json"
         credential = str(generated) if generated.is_file() else None
-    namespace = prepare_destination(destination, out_dir, credential)
-    logger.info("Prepared %s destination namespace %s", destination, namespace)
+    network_guard = None
+    if network_access == "restricted":
+        check_offline_dependencies(image, transform_only=bool(source_database))
+        # Use the account the agent receives, not host-only reset credentials.
+        policy = build_network_policy(
+            out_dir / "config.yaml", destination, runner="openhands", model=model,
+            extra_endpoints=network_allow, transform_only=bool(source_database),
+        )
+        network_guard = ContainerNetworkGuard(
+            policy, NETWORK_NAME, out_dir / "network_policy.json",
+        )
+    namespace = prepare_destination(destination, out_dir, credential, source_database)
+    logger.info("Prepared %s destination namespace %s%s", destination, namespace,
+                f" (cloned from {source_database})" if source_database else "")
 
     key_env, api_key = resolve_api_key(model)
 
@@ -587,138 +651,163 @@ async def _run_task_body(
     container_name = f"{experiment_id}-{db}"
     session_key = secrets.token_urlsafe(24)
     port = free_local_port()
-    ensure_container(
-        container_name, out_dir, port, session_key, env_extra={key_env: api_key},
-        image=image,
-    )
-
-    system_prompt = adapt_prompt(SYSTEM_PROMPT_TEMPLATE, destination).format(
-        db=db,
-        container=container_name,
-        # Name without the tag, so the prompt is the same for every variant.
-        image=image.split(":", 1)[0],
-        network=NETWORK_NAME,
-        container_workdir=CONTAINER_WORKDIR,
-    )
-    # The agent and the condenser each register their LLM in the agent-server's
-    # LLM registry. Distinct `usage_id`s are required — sharing the default
-    # makes the second registration fail with "Usage ID 'default' already
-    # exists in registry."
-    agent_llm = LLM(model=model, api_key=api_key, usage_id="agent")
-    condenser_llm = LLM(model=model, api_key=api_key, usage_id="condenser")
-
-    # All four tools execute inside the container, sandboxed to /workspace
-    # by the bind-mount. There is no host-side execute_bash exposed.
-    agent = Agent(
-        llm=agent_llm,
-        tools=[
-            Tool(name="file_editor"),
-            Tool(name="terminal"),
-            Tool(name="grep"),
-            Tool(name="glob"),
-        ],
-        system_prompt=system_prompt,
-        condenser=LLMSummarizingCondenser(llm=condenser_llm, max_size=240, keep_first=4)
-    )
-
-    recorder = TrajectoryRecorder()
-
-    def on_event(event: Event) -> None:
-        try:
-            recorder.record(event)
-        except Exception:
-            logger.exception("recorder failed for event %r", event)
-
-    workspace = RemoteWorkspace(
-        working_dir=CONTAINER_WORKDIR,
-        host=f"http://127.0.0.1:{port}",
-        api_key=session_key,
-    )
-    conversation = Conversation(
-        agent=agent,
-        workspace=workspace,
-        callbacks=[on_event],
-        max_iteration_per_run=max_turns,
-    )
-
-    destination_name = get_destination(destination).display_name
-    prompt = (
-        f"Build the ELT pipeline for the `{db}` now. "
-        f"All configuration values (including the {destination_name} namespace) "
-        "must come from /workspace/config.yaml.\n\n"
-        f"{adapt_prompt(TASK_INSTRUCTION, destination)}"
-    )
-
-    run_exc: BaseException | None = None
-    execution_status: str | None = None
     try:
-        conversation.send_message(
-            Message(role="user", content=[TextContent(text=prompt)])
+        ensure_container(
+            container_name, out_dir, port, session_key, env_extra={key_env: api_key},
+            image=image, network_guard=network_guard,
         )
-        # `Conversation.run()` is synchronous in the SDK; offload so we don't
-        # block the event loop.
-        await asyncio.to_thread(conversation.run, timeout=CONVERSATION_TIMEOUT_SEC)
-    except Exception as e:
-        # The remote run raises ConversationRunError for ERROR/STUCK states
-        # too (incl. hitting max iterations); finalize() classifies it.
-        logger.warning("OpenHands run ended with %s: %s", type(e).__name__, e)
-        run_exc = e
+
+        template = TRANSFORM_SYSTEM_PROMPT_TEMPLATE if source_database else SYSTEM_PROMPT_TEMPLATE
+        system_prompt = adapt_prompt(template, destination).format(
+            db=db,
+            container=container_name,
+            # Name without the tag, so the prompt is the same for every variant.
+            image=image.split(":", 1)[0],
+            network=NETWORK_NAME,
+            container_workdir=CONTAINER_WORKDIR,
+        )
+        if network_guard is not None:
+            system_prompt += "\n\n" + NETWORK_INSTRUCTION
+
+        # The agent and the condenser each register their LLM in the agent-server's
+        # LLM registry. Distinct `usage_id`s are required — sharing the default
+        # makes the second registration fail with "Usage ID 'default' already
+        # exists in registry."
+        api_base = selected_model_api_base("openhands", model)
+        agent_llm = LLM(model=model, api_key=api_key, base_url=api_base, usage_id="agent")
+        condenser_llm = LLM(model=model, api_key=api_key, base_url=api_base, usage_id="condenser")
+
+        # All four tools execute inside the container, sandboxed to /workspace
+        # by the bind-mount. There is no host-side execute_bash exposed.
+        agent = Agent(
+            llm=agent_llm,
+            tools=[
+                Tool(name="file_editor"),
+                Tool(name="terminal"),
+                Tool(name="grep"),
+                Tool(name="glob"),
+            ],
+            system_prompt=system_prompt,
+            condenser=LLMSummarizingCondenser(llm=condenser_llm, max_size=240, keep_first=4)
+        )
+
+        recorder = TrajectoryRecorder()
+
+        def on_event(event: Event) -> None:
+            try:
+                recorder.record(event)
+            except Exception:
+                logger.exception("recorder failed for event %r", event)
+
+        workspace = RemoteWorkspace(
+            working_dir=CONTAINER_WORKDIR,
+            host=f"http://127.0.0.1:{port}",
+            api_key=session_key,
+        )
+        conversation = Conversation(
+            agent=agent,
+            workspace=workspace,
+            callbacks=[on_event],
+            max_iteration_per_run=max_turns,
+        )
+
+        destination_name = get_destination(destination).display_name
+        if source_database:
+            prompt = (
+                f"Build the data transformation stage of the ELT pipeline for the `{db}` now. "
+                f"All configuration values (including the {destination_name} namespace) "
+                "must come from /workspace/config.yaml.\n\n"
+                f"{adapt_prompt(TRANSFORM_TASK_INSTRUCTION, destination)}"
+            )
+        else:
+            prompt = (
+                f"Build the ELT pipeline for the `{db}` now. "
+                f"All configuration values (including the {destination_name} namespace) "
+                "must come from /workspace/config.yaml.\n\n"
+                f"{adapt_prompt(TASK_INSTRUCTION, destination)}"
+            )
+
+        run_exc: BaseException | None = None
+        execution_status: str | None = None
+        try:
+            conversation.send_message(
+                Message(role="user", content=[TextContent(text=prompt)])
+            )
+            # `Conversation.run()` is synchronous in the SDK; offload so we don't
+            # block the event loop.
+            await asyncio.to_thread(conversation.run, timeout=CONVERSATION_TIMEOUT_SEC)
+        except Exception as e:
+            # The remote run raises ConversationRunError for ERROR/STUCK states
+            # too (incl. hitting max iterations); finalize() classifies it.
+            logger.warning("OpenHands run ended with %s: %s", type(e).__name__, e)
+            run_exc = e
+        finally:
+            try:
+                execution_status = str(conversation.state.execution_status.value)
+            except Exception:
+                logger.debug("could not read final execution_status", exc_info=True)
+            # Pull cost/usage off the conversation stats. Cost lives on each
+            # per-usage_id Metrics (we register two: "agent" and "condenser");
+            # ConversationStats.get_combined_metrics() sums them.
+            try:
+                stats = conversation.conversation_stats
+                combined = stats.get_combined_metrics()
+                recorder.total_cost_usd = combined.accumulated_cost
+                recorder.usage = {
+                    "combined": combined.get_snapshot().model_dump(mode="json"),
+                    "by_usage_id": {
+                        uid: m.get_snapshot().model_dump(mode="json")
+                        for uid, m in stats.usage_to_metrics.items()
+                    },
+                }
+            except Exception:
+                logger.exception("failed to read conversation_stats")
+            stop_container(container_name)
+        recorder.finalize(execution_status, run_exc)
+        logger.info("run status: %s (execution_status=%s)", recorder.status, execution_status)
+
+        # Persist result.
+        (out_dir / "openhands").mkdir(parents=True, exist_ok=True)
+        result_json = {
+            "instance_id": instance_id,
+            "db": db,
+            "model": model,
+            "network_access": policy_identity(network_access, network_allow),
+            "finished": not recorder.is_error,
+            "status": recorder.status,
+            "error": recorder.error_text or None,
+            "num_turns": recorder.num_turns,
+            "total_cost_usd": recorder.total_cost_usd,
+            "usage": recorder.usage,
+            "result": recorder.final_text,
+            "trajectory": recorder.turns,
+        }
+        with open(result_path, "w") as f:
+            json.dump(result_json, f, indent=2, default=str)
+        logger.info("Wrote %s", result_path)
+
+        stats_path = out_dir / "openhands" / "stats.json"
+        stats_json = {
+            "instance_id": instance_id,
+            "db": db,
+            "model": model,
+            "num_turns": recorder.num_turns,
+            "total_cost_usd": recorder.total_cost_usd,
+            "usage": recorder.usage,
+        }
+        with open(stats_path, "w") as f:
+            json.dump(stats_json, f, indent=2, default=str)
+        logger.info("Wrote %s", stats_path)
+
     finally:
         try:
-            execution_status = str(conversation.state.execution_status.value)
-        except Exception:
-            logger.debug("could not read final execution_status", exc_info=True)
-        # Pull cost/usage off the conversation stats. Cost lives on each
-        # per-usage_id Metrics (we register two: "agent" and "condenser");
-        # ConversationStats.get_combined_metrics() sums them.
-        try:
-            stats = conversation.conversation_stats
-            combined = stats.get_combined_metrics()
-            recorder.total_cost_usd = combined.accumulated_cost
-            recorder.usage = {
-                "combined": combined.get_snapshot().model_dump(mode="json"),
-                "by_usage_id": {
-                    uid: m.get_snapshot().model_dump(mode="json")
-                    for uid, m in stats.usage_to_metrics.items()
-                },
-            }
-        except Exception:
-            logger.exception("failed to read conversation_stats")
-        stop_container(container_name)
-    recorder.finalize(execution_status, run_exc)
-    logger.info("run status: %s (execution_status=%s)", recorder.status, execution_status)
-
-    # Persist result.
-    (out_dir / "openhands").mkdir(parents=True, exist_ok=True)
-    result_json = {
-        "instance_id": instance_id,
-        "db": db,
-        "model": model,
-        "finished": not recorder.is_error,
-        "status": recorder.status,
-        "error": recorder.error_text or None,
-        "num_turns": recorder.num_turns,
-        "total_cost_usd": recorder.total_cost_usd,
-        "usage": recorder.usage,
-        "result": recorder.final_text,
-        "trajectory": recorder.turns,
-    }
-    with open(result_path, "w") as f:
-        json.dump(result_json, f, indent=2, default=str)
-    logger.info("Wrote %s", result_path)
-
-    stats_path = out_dir / "openhands" / "stats.json"
-    stats_json = {
-        "instance_id": instance_id,
-        "db": db,
-        "model": model,
-        "num_turns": recorder.num_turns,
-        "total_cost_usd": recorder.total_cost_usd,
-        "usage": recorder.usage,
-    }
-    with open(stats_path, "w") as f:
-        json.dump(stats_json, f, indent=2, default=str)
-    logger.info("Wrote %s", stats_path)
+            stop_container(container_name)
+        finally:
+            if network_guard is not None:
+                try:
+                    network_guard.close()
+                except Exception:
+                    logger.exception("Failed to finalize the network-policy audit")
 
 
 async def main_async(args: argparse.Namespace) -> None:
@@ -763,6 +852,9 @@ async def main_async(args: argparse.Namespace) -> None:
                 max_turns=args.max_turns,
                 image=args.image,
                 overwrite=args.overwrite,
+                source_database=args.source_database,
+                network_access=args.network_access,
+                network_allow=tuple(args.network_allow),
             )
         except Exception:
             logger.exception("Task %s failed", db)
@@ -791,6 +883,12 @@ def parse_args() -> argparse.Namespace:
              "for snowflake; one database (redshift) or catalog (databricks) "
              "per run, named after the experiment).",
     )
+    p.add_argument(
+        "--source_database",
+        help="Transformation-only run (Snowflake): clone each task schema from "
+             "this database of loaded source tables (e.g. GT) and ask only for "
+             "the dbt stage.",
+    )
     p.add_argument("--model", default="openai/gpt-5.4-2026-03-05",
                    help="LiteLLM-style provider/model id (e.g. anthropic/claude-opus-4-7, openai/gpt-4o).")
     p.add_argument("--suffix", "-s", default="eltbench", help="Experiment id suffix.")
@@ -806,13 +904,17 @@ def parse_args() -> argparse.Namespace:
                         "Default 100; pass 0 for no limit.")
     p.add_argument("--overwrite", action="store_true",
                    help="Rerun tasks even if result.json already exists.")
-    p.add_argument("--image", default=IMAGE_NAME,
-                   help="Agent image, e.g. elt-swe-openhands:kimi-k3 for Kimi K3 "
-                        "(see elt-swe-openhands/Dockerfile.kimi-k3).")
+    p.add_argument("--image", default=None,
+                   help="Prepared agent image; defaults to elt-swe-openhands:restricted "
+                        "in restricted mode, otherwise elt-swe-openhands. "
+                        "For Kimi K3 prepare elt-swe-openhands:kimi-k3-restricted.")
     p.add_argument("--shard", type=_parse_shard, default=None, metavar="K/N",
                    help="Run only every N-th task starting at K (0-based), e.g. "
                         "0/3, 1/3, 2/3 in three parallel processes.")
+    add_network_arguments(p)
     args = p.parse_args()
+    if args.image is None:
+        args.image = IMAGE_NAME + (":restricted" if args.network_access == "restricted" else "")
     return args
 
 

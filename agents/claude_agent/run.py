@@ -68,7 +68,9 @@ if str(AGENTS_DIR) not in sys.path:
     sys.path.insert(0, str(AGENTS_DIR))
 
 from common import (  # noqa: E402
+    TRANSFORM_TASK_INSTRUCTION,
     adapt_prompt,
+    copy_transform_inputs,
     default_database,
     destination_choices,
     get_destination,
@@ -76,6 +78,13 @@ from common import (  # noqa: E402
     resolve_benchmark_path,
     resolve_inputs_path,
 )
+
+
+from common.network_guard import (  # noqa: E402
+    ContainerNetworkGuard, NETWORK_INSTRUCTION, add_network_arguments,
+    policy_identity, require_matching_network_policy, check_offline_dependencies,
+)
+from common.network_policy import build_network_policy  # noqa: E402
 
 
 # ---------- logging ----------
@@ -160,6 +169,20 @@ This task is divided into two stages:
 TOOL USAGE:
   - Read / Write / Edit / Glob / Grep: operate on files under `{container_workdir}`. Prefer these over shell utilities for file I/O.
   - Bash: run a shell command in the container (cwd = `{container_workdir}`). All commands — terraform, dbt, python, psql, etc. — run here.
+
+First, you should _always_ include a general thought about what you're going to do next.
+Then issue the corresponding tool call. Wait for the tool result before continuing with more discussion and commands.
+"""
+
+# --source_database runs: the source tables are already loaded and only the
+# transformation stage is asked for (task text in common/transform_only.py).
+TRANSFORM_SYSTEM_PROMPT_TEMPLATE = """You are a data engineer skilled in databases, SQL, and building ELT pipelines.
+You are running inside a Docker container named `{container}` ({image} image on the `{network}` network). Your working directory is `{container_workdir}`; it contains all the necessary information for your tasks. However, you are only allowed to modify files in `{container_workdir}/elt`.
+Your goal is to complete the data transformation stage of an ELT pipeline. The data has already been extracted from multiple sources, such as custom APIs, PostgreSQL, MongoDB, flat files, and the cloud service S3, and loaded into a target system, Databricks. You need to write transformation queries to construct final tables for downstream use, using the DBT Project workflow for Databricks.
+
+TOOL USAGE:
+  - Read / Write / Edit / Glob / Grep: operate on files under `{container_workdir}`. Prefer these over shell utilities for file I/O.
+  - Bash: run a shell command in the container (cwd = `{container_workdir}`). All commands — dbt, python, etc. — run here.
 
 First, you should _always_ include a general thought about what you're going to do next.
 Then issue the corresponding tool call. Wait for the tool result before continuing with more discussion and commands.
@@ -354,7 +377,10 @@ def _run(cmd: list[str], check: bool = True, **kw: Any) -> subprocess.CompletedP
     return subprocess.run(cmd, check=check, text=True, capture_output=True, **kw)
 
 
-def ensure_container(container_name: str, mnt_dir: Path, image: str = IMAGE_NAME) -> None:
+def ensure_container(
+    container_name: str, mnt_dir: Path, image: str = IMAGE_NAME,
+    network_guard: ContainerNetworkGuard | None = None,
+) -> None:
     """(Re)create a fresh ELT container with `mnt_dir` bind-mounted to /workspace.
 
     Auth and related settings are passed by name (`-e NAME`), so their values
@@ -374,6 +400,13 @@ def ensure_container(container_name: str, mnt_dir: Path, image: str = IMAGE_NAME
         logger.info("Removing existing container %s", container_name)
         _run(["docker", "rm", "-f", container_name], check=False)
 
+    if network_guard is not None:
+        network_guard.start()
+        # These fixed values override inherited proxies; direct connections are
+        # independently blocked by the namespace firewall.
+        for name, value in network_guard.environment.items():
+            env_args += ["-e", f"{name}={value}"]
+
     mnt_abs = str(mnt_dir.resolve())
     uid, gid = os.getuid(), os.getgid()
     logger.info("Starting container %s (mount %s -> %s)", container_name, mnt_abs, CONTAINER_WORKDIR)
@@ -381,6 +414,7 @@ def ensure_container(container_name: str, mnt_dir: Path, image: str = IMAGE_NAME
         "docker", "run", "-d", "--rm",
         "--name", container_name,
         "--network", NETWORK_NAME,
+        *(network_guard.docker_security_args if network_guard else []),
         # Run as the host user so files created in the container (dbt project,
         # .terraform, tfstate) stay editable by the host-side file tools and
         # removable by `--overwrite`. HOME must be writable for ~/.claude,
@@ -397,9 +431,12 @@ def ensure_container(container_name: str, mnt_dir: Path, image: str = IMAGE_NAME
     _run([
         "docker", "exec", "-u", "0", container_name, "sh", "-c",
         f"echo 'agent:x:{uid}:{gid}::{CONTAINER_HOME}:/bin/bash' >> /etc/passwd"
-        f" && (getent group {gid} >/dev/null || echo 'agent:x:{gid}:' >> /etc/group)"
-        f" && mkdir -p {CONTAINER_HOME} && chown {uid}:{gid} {CONTAINER_HOME}",
+        f" && (getent group {gid} >/dev/null || echo 'agent:x:{gid}:' >> /etc/group)",
     ])
+    # Create HOME as the workload user; CAP_CHOWN is intentionally unavailable.
+    _run(["docker", "exec", container_name, "mkdir", "-p", CONTAINER_HOME])
+    if network_guard is not None:
+        network_guard.install(container_name)
 
 
 def stop_container(container_name: str) -> None:
@@ -604,6 +641,9 @@ async def run_task(
     allow_overage: bool,
     image: str,
     overwrite: bool,
+    source_database: str | None = None,
+    network_access: str = "restricted",
+    network_allow: tuple[str, ...] = (),
 ) -> "TrajectoryRecorder | None":
     """Run one task; returns its recorder, or None when it was skipped."""
     instance_id = f"{experiment_id}/{db}"
@@ -619,6 +659,7 @@ async def run_task(
                 previous = json.load(f)
         except (OSError, json.JSONDecodeError):
             previous = {}
+        require_matching_network_policy(previous, network_access, network_allow)
         status = previous.get("status") or ("success" if previous.get("finished") else None)
         if status in KEEP_STATUSES:
             logger.info("Skipping %s (result exists, status=%s)", instance_id, status)
@@ -652,6 +693,9 @@ async def run_task(
             max_turns=max_turns,
             allow_overage=allow_overage,
             image=image,
+            source_database=source_database,
+            network_access=network_access,
+            network_allow=network_allow,
         )
     finally:
         logger.removeHandler(db_handler)
@@ -672,12 +716,18 @@ async def _run_task_body(
     max_turns: int,
     allow_overage: bool,
     image: str,
+    source_database: str | None = None,
+    network_access: str = "restricted",
+    network_allow: tuple[str, ...] = (),
 ) -> TrajectoryRecorder:
     task_input_dir = inputs_root / db
 
     # Copy seed files into the mount dir, then point the task at its own
     # schema inside the shared experiment database.
-    copy_initial_files(task_input_dir, out_dir)
+    if source_database:
+        copy_transform_inputs(task_input_dir, out_dir, destination)
+    else:
+        copy_initial_files(task_input_dir, out_dir)
     set_task_namespace(out_dir / "config.yaml", destination, db, database)
 
     # Reset the task namespace using the rewritten config. Credentials are not
@@ -687,112 +737,148 @@ async def _run_task_body(
         credential = str(generated) if generated.is_file() else None
     # A failed reset means stale warehouse state: abort this attempt before
     # any container, agent session, or evaluation can observe it.
-    namespace = prepare_destination(destination, out_dir, credential)
-    logger.info("Prepared %s destination namespace %s", destination, namespace)
+    network_guard = None
+    if network_access == "restricted":
+        check_offline_dependencies(image, transform_only=bool(source_database))
+        # Use the account the agent receives, not host-only reset credentials.
+        policy = build_network_policy(
+            out_dir / "config.yaml", destination, runner="claude", model=model,
+            extra_endpoints=network_allow, transform_only=bool(source_database),
+        )
+        network_guard = ContainerNetworkGuard(
+            policy, NETWORK_NAME, out_dir / "network_policy.json",
+        )
+    namespace = prepare_destination(destination, out_dir, credential, source_database)
+    logger.info("Prepared %s destination namespace %s%s", destination, namespace,
+                f" (cloned from {source_database})" if source_database else "")
 
     # Spin up the container.
     container_name = f"{experiment_id}-{db}"
-    ensure_container(container_name, out_dir, image)
-
-    system_prompt = adapt_prompt(SYSTEM_PROMPT_TEMPLATE, destination).format(
-        db=db,
-        container=container_name,
-        # Name without the tag, so the prompt is identical across CLI versions.
-        image=image.split(":", 1)[0],
-        network=NETWORK_NAME,
-        container_workdir=CONTAINER_WORKDIR,
-    )
-
-    # The CLI runs inside the container through the wrapper, so every tool is
-    # container-scoped. The remaining options remove web and sub-agent tools
-    # and the operator's own Claude Code settings, plugins, and MCP servers.
-    guard = SandboxGuard()
-    options = ClaudeAgentOptions(
-        system_prompt=system_prompt,
-        cwd=str(out_dir.resolve()),
-        # `tools` fixes the built-in tool set (the CLI otherwise also offers
-        # Cron*, worktree, AskUserQuestion, ...); `allowed_tools` only
-        # auto-approves, and `disallowed_tools` is a second line of defense.
-        tools=ALLOWED_TOOLS,
-        allowed_tools=ALLOWED_TOOLS,
-        disallowed_tools=DISALLOWED_TOOLS,
-        strict_mcp_config=True,
-        setting_sources=[],
-        hooks=guard.hooks(),
-        permission_mode="acceptEdits",
-        max_turns=max_turns,
-        model=model,
-        cli_path=str(CLI_WRAPPER),
-        env={"CLAUDE_CONTAINER": container_name},
-    )
-
-    recorder = TrajectoryRecorder()
-    destination_name = get_destination(destination).display_name
-    prompt = (
-        f"Build the ELT pipeline for the `{db}` now. All configuration values "
-        f"(including the {destination_name} namespace) must come from "
-        f"/workspace/config.yaml.\n\n{adapt_prompt(TASK_INSTRUCTION, destination)}"
-    )
-
     try:
-        await consume_session(
-            query(prompt=prompt, options=options), recorder,
-            stop_on_limit=not allow_overage,
+        ensure_container(container_name, out_dir, image, network_guard=network_guard)
+
+        template = TRANSFORM_SYSTEM_PROMPT_TEMPLATE if source_database else SYSTEM_PROMPT_TEMPLATE
+        system_prompt = adapt_prompt(template, destination).format(
+            db=db,
+            container=container_name,
+            # Name without the tag, so the prompt is identical across CLI versions.
+            image=image.split(":", 1)[0],
+            network=NETWORK_NAME,
+            container_workdir=CONTAINER_WORKDIR,
         )
-    except ResultError as e:
-        recorder.record_result_error(e)
-    except Exception as e:
-        logger.exception("Claude session raised: %s", e)
-        recorder.is_error = True
-        recorder.status = "exception"
-        recorder.final_text = f"ERROR: {e}"
+
+        if network_guard is not None:
+            system_prompt += "\n\n" + NETWORK_INSTRUCTION
+
+        # The CLI runs inside the container through the wrapper, so every tool is
+        # container-scoped. The remaining options remove web and sub-agent tools
+        # and the operator's own Claude Code settings, plugins, and MCP servers.
+        guard = SandboxGuard()
+        options = ClaudeAgentOptions(
+            system_prompt=system_prompt,
+            cwd=str(out_dir.resolve()),
+            # `tools` fixes the built-in tool set (the CLI otherwise also offers
+            # Cron*, worktree, AskUserQuestion, ...); `allowed_tools` only
+            # auto-approves, and `disallowed_tools` is a second line of defense.
+            tools=ALLOWED_TOOLS,
+            allowed_tools=ALLOWED_TOOLS,
+            disallowed_tools=DISALLOWED_TOOLS,
+            strict_mcp_config=True,
+            setting_sources=[],
+            hooks=guard.hooks(),
+            permission_mode="acceptEdits",
+            max_turns=max_turns,
+            model=model,
+            cli_path=str(CLI_WRAPPER),
+            env={"CLAUDE_CONTAINER": container_name},
+        )
+
+        recorder = TrajectoryRecorder()
+        destination_name = get_destination(destination).display_name
+        if source_database:
+            prompt = (
+                f"Build the data transformation stage of the ELT pipeline for the `{db}` now. "
+                f"All configuration values (including the {destination_name} namespace) must "
+                f"come from /workspace/config.yaml.\n\n"
+                f"{adapt_prompt(TRANSFORM_TASK_INSTRUCTION, destination)}"
+            )
+        else:
+            prompt = (
+                f"Build the ELT pipeline for the `{db}` now. All configuration values "
+                f"(including the {destination_name} namespace) must come from "
+                f"/workspace/config.yaml.\n\n{adapt_prompt(TASK_INSTRUCTION, destination)}"
+            )
+
+        try:
+            await consume_session(
+                query(prompt=prompt, options=options), recorder,
+                stop_on_limit=not allow_overage,
+            )
+        except ResultError as e:
+            recorder.record_result_error(e)
+        except Exception as e:
+            logger.exception("Claude session raised: %s", e)
+            recorder.is_error = True
+            recorder.status = "exception"
+            recorder.final_text = f"ERROR: {e}"
+        finally:
+            stop_container(container_name)
+        recorder.finalize()
+
+        # Persist result. The audit is written even when the session raised, so a
+        # partial trajectory is still checked.
+        (out_dir / "claude").mkdir(parents=True, exist_ok=True)
+        audit = audit_trajectory(recorder.turns, guard)
+        with open(out_dir / "claude" / "sandbox_audit.json", "w") as f:
+            json.dump(audit, f, indent=2, default=str)
+        if audit["sandbox_clean"]:
+            logger.info("sandbox audit clean (%d hook denials)", len(audit["hook_denials"]))
+        else:
+            logger.error("SANDBOX AUDIT FAILED for %s: %s", instance_id,
+                         json.dumps({k: audit[k] for k in ("escapes", "forbidden_markers")}, default=str)[:2000])
+        result_json = {
+            "instance_id": instance_id,
+            "db": db,
+            "model": model,
+            "network_access": policy_identity(network_access, network_allow),
+            "finished": not recorder.is_error,
+            "status": recorder.status,
+            "rate_limit_resets_at": recorder.rate_limit_resets_at,
+            "num_turns": recorder.num_turns,
+            "total_cost_usd": recorder.total_cost_usd,
+            "usage": recorder.usage,
+            "result": recorder.final_text,
+            "error": recorder.error_text or None,
+            "sandbox_clean": audit["sandbox_clean"],
+            "trajectory": recorder.turns,
+        }
+        with open(result_path, "w") as f:
+            json.dump(result_json, f, indent=2, default=str)
+        logger.info("Wrote %s", result_path)
+
+        stats_path = out_dir / "claude" / "stats.json"
+        stats_json = {
+            "instance_id": instance_id,
+            "db": db,
+            "model": model,
+            "num_turns": recorder.num_turns,
+            "total_cost_usd": recorder.total_cost_usd,
+            "usage": recorder.usage,
+        }
+        with open(stats_path, "w") as f:
+            json.dump(stats_json, f, indent=2, default=str)
+        logger.info("Wrote %s", stats_path)
+        return recorder
+
     finally:
-        stop_container(container_name)
-    recorder.finalize()
-
-    # Persist result. The audit is written even when the session raised, so a
-    # partial trajectory is still checked.
-    (out_dir / "claude").mkdir(parents=True, exist_ok=True)
-    audit = audit_trajectory(recorder.turns, guard)
-    with open(out_dir / "claude" / "sandbox_audit.json", "w") as f:
-        json.dump(audit, f, indent=2, default=str)
-    if audit["sandbox_clean"]:
-        logger.info("sandbox audit clean (%d hook denials)", len(audit["hook_denials"]))
-    else:
-        logger.error("SANDBOX AUDIT FAILED for %s: %s", instance_id,
-                     json.dumps({k: audit[k] for k in ("escapes", "forbidden_markers")}, default=str)[:2000])
-    result_json = {
-        "instance_id": instance_id,
-        "db": db,
-        "model": model,
-        "finished": not recorder.is_error,
-        "status": recorder.status,
-        "rate_limit_resets_at": recorder.rate_limit_resets_at,
-        "num_turns": recorder.num_turns,
-        "total_cost_usd": recorder.total_cost_usd,
-        "usage": recorder.usage,
-        "result": recorder.final_text,
-        "error": recorder.error_text or None,
-        "sandbox_clean": audit["sandbox_clean"],
-        "trajectory": recorder.turns,
-    }
-    with open(result_path, "w") as f:
-        json.dump(result_json, f, indent=2, default=str)
-    logger.info("Wrote %s", result_path)
-
-    stats_path = out_dir / "claude" / "stats.json"
-    stats_json = {
-        "instance_id": instance_id,
-        "db": db,
-        "model": model,
-        "num_turns": recorder.num_turns,
-        "total_cost_usd": recorder.total_cost_usd,
-        "usage": recorder.usage,
-    }
-    with open(stats_path, "w") as f:
-        json.dump(stats_json, f, indent=2, default=str)
-    logger.info("Wrote %s", stats_path)
-    return recorder
+        try:
+            stop_container(container_name)
+        finally:
+            if network_guard is not None:
+                try:
+                    network_guard.close()
+                except Exception:
+                    logger.exception("Failed to finalize the network-policy audit")
 
 
 async def consume_session(
@@ -878,6 +964,9 @@ async def main_async(args: argparse.Namespace) -> None:
                     allow_overage=args.allow_overage,
                     image=args.image,
                     overwrite=overwrite,
+                    source_database=args.source_database,
+                    network_access=args.network_access,
+                    network_allow=tuple(args.network_allow),
                 )
             except Exception:
                 logger.exception("Task %s failed", db)
@@ -921,6 +1010,12 @@ def parse_args() -> argparse.Namespace:
              "for snowflake; one database (redshift) or catalog (databricks) "
              "per run, named after the experiment).",
     )
+    p.add_argument(
+        "--source_database",
+        help="Transformation-only run (Snowflake): clone each task schema from "
+             "this database of loaded source tables (e.g. GT) and ask only for "
+             "the dbt stage.",
+    )
     p.add_argument("--model", default="claude-opus-4-7",
                    help="Claude model id (e.g. claude-opus-4-7, claude-sonnet-4-6).")
     p.add_argument("--suffix", "-s", default="eltbench", help="Experiment id suffix.")
@@ -934,9 +1029,11 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--limit", type=int, default=100,
                    help="Run only the first N DBs (after --only filter). "
                         "Default 20; pass 0 for no limit.")
-    p.add_argument("--image", default=IMAGE_NAME,
-                   help="Agent image (its tag pins the Claude Code CLI version); "
-                        f"default {IMAGE_NAME} = CLI 2.1.119.")
+    p.add_argument("--image", default=None,
+                   help="Prepared agent image (its tag pins the CLI version); "
+                        "default elt-swe-claude:restricted in restricted mode, "
+                        "otherwise elt-swe-claude (CLI 2.1.119). "
+                        "Newer models need a prepared image of the matching CLI.")
     p.add_argument("--allow_overage", action="store_true",
                    help="Keep running on extra usage after the plan's usage "
                         "limit is hit (default: stop the task, pause until "
@@ -946,7 +1043,10 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--shard", type=_parse_shard, default=None, metavar="K/N",
                    help="Run only every N-th task starting at K (0-based), e.g. "
                         "0/3, 1/3, 2/3 in three parallel processes.")
+    add_network_arguments(p)
     args = p.parse_args()
+    if args.image is None:
+        args.image = IMAGE_NAME + (":restricted" if args.network_access == "restricted" else "")
     return args
 
 

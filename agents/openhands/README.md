@@ -49,6 +49,15 @@ Before first run, make sure the ELT-Bench setup is complete (Docker network
 `elt-docker_elt_network`, Airbyte, and generated destination inputs). See the
 top-level `../../README.md`.
 
+Networking is restricted by default. Before running, build the prepared
+`elt-swe-openhands:restricted` image using the offline dependency layer described
+in [the shared runner documentation](../README.md#restricted-networking-for-claude-and-openhands).
+For Kimi K3, prepare `elt-swe-openhands:kimi-k3-restricted` from its matching base
+and select it with `--image`. The runner allows the model API and declared task
+services, installs a container firewall before starting the server, and writes
+`network_policy.json`. Public downloads and external reference SQL are blocked.
+Use a new `--suffix` for these evaluations; historical results lack this policy.
+
 ## Run
 
 ```bash

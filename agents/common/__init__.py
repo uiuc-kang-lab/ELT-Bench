@@ -1,5 +1,6 @@
 """Shared helpers for ELT-Bench agent runners."""
 
+from .transform_only import TRANSFORM_TASK_INSTRUCTION, copy_transform_inputs
 from .warehouse import (
     DESTINATIONS,
     DestinationSpec,
@@ -13,6 +14,8 @@ from .warehouse import (
 )
 
 __all__ = [
+    "TRANSFORM_TASK_INSTRUCTION",
+    "copy_transform_inputs",
     "DESTINATIONS",
     "DestinationSpec",
     "adapt_prompt",
