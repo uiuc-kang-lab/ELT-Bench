@@ -12,3 +12,19 @@ inputs_redshift/
 
 # Evaluation outputs
 evaluation/agent_results/
+
+# Local run outputs and logs
+agents/deepanalyze/logs/
+agents/deepanalyze/output/
+agents/SWE-agent/trajectories/
+agents/*/run.sh
+
+# Ground truth is distributed separately (Hugging Face); local copies
+ground_truth/
+elt-bench/snowflake2/
+
+# Vendored library for mutation testing (see evaluation/mutation_testing/run.py)
+evaluation/mutation_testing/.pylib/
+
+# Credential backups
+setup/airbyte/airbyte_credential.json.*
