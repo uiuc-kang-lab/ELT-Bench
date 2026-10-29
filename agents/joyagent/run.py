@@ -44,6 +44,7 @@ import sys
 import threading
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 import uuid
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -96,6 +97,7 @@ logger.addHandler(_std)
 
 TASK_IMAGE = "elt-swe-joyagent"
 GENIE_IMAGE = "joyagent-genie"
+GENIE_DATAAGENT_IMAGE = "joyagent-genie-dataagent"
 NETWORK_NAME = "elt-docker_elt_network"
 CONTAINER_WORKDIR = "/workspace"
 CONTAINER_HOME = "/tmp/home"
@@ -114,6 +116,11 @@ MCP_CALL_TIMEOUT_SEC = 3600
 IDLE_TIMEOUT_SEC = MCP_CALL_TIMEOUT_SEC + 600
 MCP_TOOLS = ("bash", "read_file", "write_file", "edit_file")
 AGENT_TYPES = {"plan_solve": 3, "react": 5}
+# DataAgent variant: upstream's HTTP limits assume a fast model, but NL2SQL
+# (rewrite, think, SQL) and an analysis (up to 10 steps, each possibly with
+# NL2SQL) take minutes with a reasoning model.
+DATA_AGENT_READ_TIMEOUT_SEC = 900
+DATA_ANALYSIS_TIMEOUT_SEC = 1800
 
 SYSTEM_PROMPT_TEMPLATE = """You are a data engineer skilled in databases, SQL, and building ELT pipelines.
 
@@ -174,6 +181,26 @@ RETRY_STATUS = frozenset({408, 429, 500, 502, 503, 504, 520, 521, 522, 523, 524,
 
 # ---------- LLM proxy ----------
 
+def completion_to_sse(completion: dict[str, Any]) -> bytes:
+    """A chat completion as the chunk stream a `"stream": true` request expects:
+    one chunk with the whole message, one with the finish reason (and usage)."""
+    base = {"id": completion.get("id"), "object": "chat.completion.chunk",
+            "created": completion.get("created"), "model": completion.get("model")}
+    chunks = []
+    for choice in completion.get("choices") or []:
+        message = choice.get("message") or {}
+        delta: dict[str, Any] = {"role": "assistant", "content": message.get("content")}
+        if message.get("tool_calls"):
+            delta["tool_calls"] = [{"index": i, **call} for i, call in enumerate(message["tool_calls"])]
+        index = choice.get("index", 0)
+        chunks.append({**base, "choices": [{"index": index, "delta": delta, "finish_reason": None}]})
+        chunks.append({**base, "choices": [{"index": index, "delta": {},
+                                            "finish_reason": choice.get("finish_reason")}]})
+    if chunks and completion.get("usage"):
+        chunks[-1]["usage"] = completion["usage"]
+    return b"".join(b"data: " + json.dumps(c).encode() + b"\n\n" for c in chunks) + b"data: [DONE]\n\n"
+
+
 class LLMProxy:
     """OpenAI-compatible proxy between JoyAgent and the model provider.
 
@@ -186,6 +213,10 @@ class LLMProxy:
     (see responses_bridge.py): OpenAI's GPT-5.4 rejects function tools
     together with reasoning_effort on /v1/chat/completions, JoyAgent's only
     interface.
+
+    Streaming requests (the DataAgent's genie-tool streams NL2SQL's "think"
+    step and its report) are sent upstream without streaming and the answer
+    is replayed as an SSE chunk stream, so usage is recorded the same way.
     """
 
     def __init__(
@@ -225,12 +256,13 @@ class LLMProxy:
 
             def do_POST(self) -> None:  # noqa: N802
                 body = self.rfile.read(int(self.headers.get("Content-Length") or 0))
+                content_type = "application/json"
                 if self.client_address[0] not in proxy.allowed_ips:
                     status, payload = 403, b'{"error": "forbidden"}'
                 else:
-                    status, payload = proxy.forward(self.path, body)
+                    status, payload, content_type = proxy.forward(self.path, body)
                 self.send_response(status)
-                self.send_header("Content-Type", "application/json")
+                self.send_header("Content-Type", content_type)
                 self.send_header("Content-Length", str(len(payload)))
                 self.end_headers()
                 self.wfile.write(payload)
@@ -262,7 +294,8 @@ class LLMProxy:
         self.server.shutdown()
         self.reset(None)
 
-    def _request_body(self, body: bytes) -> bytes:
+    def _request_body(self, body: bytes) -> tuple[bytes, bool]:
+        """The upstream request (never streamed) and whether the client asked for a stream."""
         params = json.loads(body)
         params["model"] = self.model
         for name in self.drop_params:
@@ -271,30 +304,36 @@ class LLMProxy:
             if old in params:
                 params[new] = params.pop(old)
         params.update(self.extra_params)
-        if params.get("stream"):
-            # Usage is only reported at the end of a stream when asked for.
-            params.setdefault("stream_options", {"include_usage": True})
-        return json.dumps(params).encode()
+        stream = bool(params.pop("stream", False))
+        params.pop("stream_options", None)
+        return json.dumps(params).encode(), stream
 
-    def forward(self, path: str, body: bytes) -> tuple[int, bytes]:
+    def forward(self, path: str, body: bytes) -> tuple[int, bytes, str]:
+        """Returns status, payload and its content type."""
         self.last_activity = time.monotonic()
         if not path.rstrip("/").endswith("/chat/completions"):
-            return 404, json.dumps({"error": f"unsupported path {path}"}).encode()
-        data = self._request_body(body)
+            return 404, json.dumps({"error": f"unsupported path {path}"}).encode(), "application/json"
+        data, stream = self._request_body(body)
         started = time.time()
         if self.bridge:
-            request_body = self.bridge.to_responses(json.loads(data), self.model)
+            params = json.loads(data)
+            request_body = self.bridge.to_responses(params, self.model)
             status, payload = self._post("/responses", json.dumps(request_body).encode())
             if status == 200:
                 try:
-                    payload = json.dumps(self.bridge.to_chat(json.loads(payload))).encode()
+                    payload = json.dumps(self.bridge.to_chat(json.loads(payload), params.get("stop"))).encode()
                 except (ValueError, TypeError, AttributeError) as e:
                     status, payload = 502, json.dumps({"error": f"proxy: bad response: {e}"}).encode()
         else:
             status, payload = self._post("/chat/completions", data)
         self._record(status, payload, time.time() - started)
         self.last_activity = time.monotonic()
-        return status, payload
+        if stream and status == 200:
+            try:
+                return status, completion_to_sse(json.loads(payload)), "text/event-stream"
+            except (ValueError, TypeError, AttributeError) as e:
+                return 502, json.dumps({"error": f"proxy: bad response: {e}"}).encode(), "application/json"
+        return status, payload, "application/json"
 
     def _post(self, endpoint: str, data: bytes) -> tuple[int, bytes]:
         """POST to the provider, retrying rate limits and transient errors."""
@@ -448,8 +487,54 @@ def start_task_container(name: str, mnt_dir: Path, image: str) -> None:
     raise RuntimeError(f"MCP server in {name} not ready")
 
 
-def genie_override(args: argparse.Namespace, proxy_url: str, mcp_url: str) -> dict[str, Any]:
-    """Per-run JoyAgent settings (Spring `additional-location` override)."""
+def data_agent_db_config(destination: str, config_path: Path) -> dict[str, Any]:
+    """The DataAgent's warehouse connection: the task's namespace, with the
+    credentials of the agent's own config.yaml (not the runner's)."""
+    with config_path.open(encoding="utf-8") as f:
+        c = yaml.safe_load(f)[destination]["config"]
+    user = c.get("username") or c.get("user") or ""
+    if destination == "snowflake":
+        # Unquoted identifiers, as Airbyte and dbt create them, are upper case.
+        schema = str(c["schema"]).upper()
+        query = {"db": str(c["database"]).upper(), "schema": schema}
+        query.update({k: c[k] for k in ("warehouse", "role") if c.get(k)})
+        url = f"jdbc:snowflake://{c['account']}.snowflakecomputing.com/?{urllib.parse.urlencode(query)}"
+        return {"type": "Snowflake", "url": url, "schema": schema, "username": user, "password": c["password"]}
+    if destination == "redshift":
+        schema = str(c["schema"]).lower()
+        url = f"jdbc:redshift://{c['host']}:{c['port']}/{str(c['database']).lower()}"
+        return {"type": "Redshift", "url": url, "schema": schema, "username": user, "password": c["password"]}
+    if destination == "databricks":
+        # OAuth machine-to-machine with the service principal of config.yaml.
+        schema = str(c["schema"]).lower()
+        host = str(c["hostname"]).removeprefix("https://")
+        url = (f"jdbc:databricks://{host}:443;httpPath={c['http_path']};AuthMech=11;Auth_Flow=1;"
+               f"OAuth2ClientId={c['client_id']};OAuth2Secret={c['secret']};"
+               f"ConnCatalog={str(c['database']).lower()};ConnSchema={schema}")
+        return {"type": "Databricks", "url": url, "schema": schema, "username": "", "password": ""}
+    raise ValueError(f"no DataAgent connection for destination {destination!r}")
+
+
+def mask_db_config(db_config: dict[str, Any]) -> dict[str, Any]:
+    """The connection without secrets, for the copy of the config kept with the results."""
+    masked = dict(db_config, password="***" if db_config.get("password") else "")
+    masked["url"] = re.sub(r"(OAuth2Secret=)[^;]*", r"\1***", db_config["url"])
+    return masked
+
+
+def write_override(path: Path, override: dict[str, Any]) -> None:
+    path.write_text(yaml.safe_dump(override, allow_unicode=True, sort_keys=False), encoding="utf-8")
+    path.chmod(0o600)
+
+
+def genie_override(args: argparse.Namespace, proxy_url: str, mcp_url: str,
+                   db_config: dict[str, Any] | None = None) -> dict[str, Any]:
+    """Per-run JoyAgent settings (Spring `additional-location` override).
+
+    With `db_config` (DataAgent variant), the data agent connects to the task
+    schema and starts with no data models (upstream ships two demo models);
+    the agent registers models itself with the register_models tool.
+    """
     settings = {
         "model": args.model,
         "maxTokens": args.max_tokens,
@@ -460,7 +545,7 @@ def genie_override(args: argparse.Namespace, proxy_url: str, mcp_url: str) -> di
         "functionCallType": "function_call",
         "maxInputTokens": args.max_input_tokens,
     }
-    return {
+    override = {
         "llm": {"settings": json.dumps({args.model: settings})},
         "autobots": {"autoagent": {
             # The planner's limit also bounds the plan/execute rounds and the
@@ -471,10 +556,14 @@ def genie_override(args: argparse.Namespace, proxy_url: str, mcp_url: str) -> di
             "react": {"model_name": args.model, "max_steps": args.max_turns},
             # No search / code interpreter / report tools: file_tool and the
             # planning tool stay (built in), the task tools come from MCP.
+            # (The DataAgent's own tool set ignores this list.)
             "tool_list": json.dumps({"default": "none"}),
             "mcp_server_url": mcp_url,
         }},
     }
+    if db_config is not None:
+        override["autobots"]["data-agent"] = {"db-config": db_config, "model-list": []}
+    return override
 
 
 def container_ip(name: str) -> str:
@@ -482,9 +571,11 @@ def container_ip(name: str) -> str:
                  f'{{{{(index .NetworkSettings.Networks "{NETWORK_NAME}").IPAddress}}}}', name]).stdout.strip()
 
 
-def start_genie_container(name: str, image: str, config_dir: Path, port: int) -> None:
+def start_genie_container(name: str, image: str, config_dir: Path, port: int,
+                          extra_env: dict[str, str] | None = None) -> None:
     remove_container(name)
     uid, gid = os.getuid(), os.getgid()
+    env_args = [arg for k, v in (extra_env or {}).items() for arg in ("-e", f"{k}={v}")]
     _run([
         "docker", "run", "-d", "--name", name, "--network", NETWORK_NAME,
         "--user", f"{uid}:{gid}", "-e", "HOME=/tmp/home",
@@ -492,6 +583,7 @@ def start_genie_container(name: str, image: str, config_dir: Path, port: int) ->
         "-e", f"GENIE_MCP_SSE_READ_TIMEOUT={MCP_CALL_TIMEOUT_SEC}",
         "-e", "GENIE_AUTO_AGENT_SSE_TIMEOUT_MIN=720",
         "-e", f"GENIE_LOG_DIR={GENIE_LOG_DIR}",
+        *env_args,
         "-v", f"{config_dir.resolve()}:/config:ro",
         "-p", f"127.0.0.1:{port}:8080", image,
     ])
@@ -713,9 +805,18 @@ def _run_task_body(db: str, args: argparse.Namespace, instance_id: str, experime
     genie_container = f"{task_container}-genie"
     mcp_url = f"http://{task_container}:{MCP_PORT}/sse"
     proxy_url = f"http://{gateway}:{proxy.port}"
-    (config_dir / "override.yml").write_text(
-        yaml.safe_dump(genie_override(args, proxy_url, mcp_url), allow_unicode=True, sort_keys=False),
-        encoding="utf-8")
+    data_agent = args.variant == "dataagent"
+    db_config = data_agent_db_config(destination, out_dir / "config.yaml") if data_agent else None
+    override_path = config_dir / "override.yml"
+    write_override(override_path, genie_override(args, proxy_url, mcp_url, db_config))
+    genie_env = {
+        # genie-tool's own LLM calls (NL2SQL, table RAG, analysis) also go to the proxy.
+        "GENIE_LLM_BASE_URL": f"{proxy_url}/v1",
+        "GENIE_LLM_MODEL": args.model,
+        "GENIE_DATA_AGENT_READ_TIMEOUT_SEC": str(DATA_AGENT_READ_TIMEOUT_SEC),
+        "GENIE_ANA_DATA_TIMEOUT_SEC": str(DATA_AGENT_READ_TIMEOUT_SEC),
+        "GENIE_DATA_ANALYSIS_TIMEOUT_SEC": str(DATA_ANALYSIS_TIMEOUT_SEC),
+    } if data_agent else None
 
     proxy.reset(agent_dir / "llm_calls.jsonl")
     recorder = EventRecorder(agent_dir / "events.jsonl")
@@ -725,7 +826,7 @@ def _run_task_body(db: str, args: argparse.Namespace, instance_id: str, experime
     try:
         start_task_container(task_container, out_dir, args.task_image)
         port = free_local_port()
-        start_genie_container(genie_container, args.genie_image, config_dir, port)
+        start_genie_container(genie_container, args.genie_image, config_dir, port, genie_env)
         proxy.allowed_ips = {container_ip(genie_container)}
         tools = check_mcp_tools(genie_container, mcp_url)
         logger.info("MCP tools visible to JoyAgent: %s", tools)
@@ -753,6 +854,9 @@ def _run_task_body(db: str, args: argparse.Namespace, instance_id: str, experime
             "sopPrompt": "",
             "isStream": False,
         }
+        if data_agent:
+            # The web UI's 智能问数 (data agent) product with deep thinking.
+            request["outputStyle"] = "dataAgent"
         ended_by = run_autoagent(port, request, recorder, proxy, args.timeout_hours * 3600, genie_container)
     except Exception as e:  # infrastructure failure: retried next time
         logger.exception("JoyAgent run failed")
@@ -762,6 +866,8 @@ def _run_task_body(db: str, args: argparse.Namespace, instance_id: str, experime
         backend_log = collect_genie_logs(genie_container, agent_dir / "genie-logs")
         remove_container(genie_container)
         remove_container(task_container)
+        if db_config is not None:
+            write_override(override_path, genie_override(args, proxy_url, mcp_url, mask_db_config(db_config)))
 
     status = recorder.status(ended_by) if error is None else "exception"
     if error is None and hit_step_limit(backend_log, request_id):
@@ -781,6 +887,7 @@ def _run_task_body(db: str, args: argparse.Namespace, instance_id: str, experime
         "db": db,
         "model": args.model,
         "mode": args.mode,
+        "variant": args.variant,
         "num_turns": recorder.tool_calls,
         "duration_sec": round(time.time() - started, 1),
         "total_cost_usd": cost,
@@ -807,6 +914,10 @@ def main() -> None:
     if not api_key:
         raise SystemExit(f"No API key: export {args.api_key_env}.")
     base_id = args.model.split("/")[-1]
+    if args.variant == "dataagent":
+        base_id = f"dataagent-{base_id}"
+    if args.genie_image is None:
+        args.genie_image = GENIE_DATAAGENT_IMAGE if args.variant == "dataagent" else GENIE_IMAGE
     experiment_id = f"joyagent-{base_id}-{args.suffix}-{args.destination}" if args.suffix \
         else f"joyagent-{base_id}-{args.destination}"
     # One database (Redshift) / catalog (Databricks) per run unless --database
@@ -873,6 +984,9 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--mode", choices=sorted(AGENT_TYPES), default="plan_solve",
                    help="plan_solve: JoyAgent's planner + executor (its 'deep think' mode); "
                         "react: its single ReAct agent.")
+    p.add_argument("--variant", choices=("default", "dataagent"), default="default",
+                   help="default: main branch (genie/); dataagent: data_agent branch with its data "
+                        "agent connected to the task schema (genie-dataagent/, see README).")
     p.add_argument("--max_turns", type=int, default=100,
                    help="JoyAgent step limit (executor tool-call steps over the whole task, "
                         "planner rounds, ReAct steps).")
@@ -901,7 +1015,8 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--limit", type=int, default=100, help="Run only the first N DBs; 0 for no limit.")
     p.add_argument("--overwrite", action="store_true", help="Rerun tasks even if result.json exists.")
     p.add_argument("--task-image", default=TASK_IMAGE)
-    p.add_argument("--genie-image", default=GENIE_IMAGE)
+    p.add_argument("--genie-image", default=None,
+                   help=f"Default: {GENIE_IMAGE}, or {GENIE_DATAAGENT_IMAGE} with --variant dataagent.")
     p.add_argument("--shard", type=_parse_shard, default=None, metavar="K/N",
                    help="Run only every N-th task starting at K (0-based).")
     return p.parse_args()

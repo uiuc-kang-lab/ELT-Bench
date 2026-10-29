@@ -13,6 +13,10 @@ Reasoning items are requested in encrypted form (`store` is false) and cached
 by the call ids of the function calls they preceded; when JoyAgent sends that
 assistant turn back, they are put in front of it again, as OpenAI recommends
 for reasoning models that call tools.
+
+/responses has no `stop` (smolagents, used by the DataAgent's analysis tool,
+sends one); the returned text is cut at the first stop sequence, as the chat
+API does.
 """
 
 from __future__ import annotations
@@ -23,7 +27,7 @@ from typing import Any
 
 # Chat parameters with no Responses counterpart, or handled separately.
 _SKIP = {"messages", "tools", "tool_choice", "max_tokens", "max_completion_tokens",
-         "reasoning_effort", "stream", "stream_options", "n", "model"}
+         "reasoning_effort", "stream", "stream_options", "n", "model", "stop"}
 
 
 def _text(content: Any) -> str:
@@ -108,7 +112,7 @@ class ResponsesBridge:
                 body[key] = value
         return body
 
-    def to_chat(self, response: dict[str, Any]) -> dict[str, Any]:
+    def to_chat(self, response: dict[str, Any], stop: str | list[str] | None = None) -> dict[str, Any]:
         reasoning: list[dict[str, Any]] = []
         texts: list[str] = []
         tool_calls: list[dict[str, Any]] = []
@@ -128,13 +132,18 @@ class ResponsesBridge:
             with self._lock:
                 self._reasoning[tool_calls[0]["id"]] = reasoning
 
+        text = "".join(texts)
+        cuts = [text.find(s) for s in ([stop] if isinstance(stop, str) else stop or []) if s and s in text]
+        if cuts:
+            text = text[:min(cuts)]
+
         if tool_calls:
             finish = "tool_calls"
-        elif response.get("status") == "incomplete":
+        elif response.get("status") == "incomplete" and not cuts:
             finish = "length"
         else:
             finish = "stop"
-        message: dict[str, Any] = {"role": "assistant", "content": "".join(texts) or None}
+        message: dict[str, Any] = {"role": "assistant", "content": text or None}
         if tool_calls:
             message["tool_calls"] = tool_calls
         usage = response.get("usage") or {}

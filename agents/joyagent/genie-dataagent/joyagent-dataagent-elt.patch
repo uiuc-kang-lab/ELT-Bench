@@ -1,0 +1,1278 @@
+diff --git a/genie-backend/pom.xml b/genie-backend/pom.xml
+index d6b81df..a472044 100644
+--- a/genie-backend/pom.xml
++++ b/genie-backend/pom.xml
+@@ -137,6 +137,22 @@
+             <artifactId>mysql-connector-java</artifactId>
+             <version>5.1.47</version>
+         </dependency>
++        <!-- ELT-Bench: JDBC drivers of the evaluated warehouses -->
++        <dependency>
++            <groupId>net.snowflake</groupId>
++            <artifactId>snowflake-jdbc</artifactId>
++            <version>4.4.0</version>
++        </dependency>
++        <dependency>
++            <groupId>com.databricks</groupId>
++            <artifactId>databricks-jdbc</artifactId>
++            <version>3.4.4</version>
++        </dependency>
++        <dependency>
++            <groupId>com.amazon.redshift</groupId>
++            <artifactId>redshift-jdbc42</artifactId>
++            <version>2.3.0</version>
++        </dependency>
+         <dependency>
+             <groupId>org.junit.jupiter</groupId>
+             <artifactId>junit-jupiter</artifactId>
+diff --git a/genie-backend/src/main/java/com/jd/genie/agent/tool/common/DataAnalysisTool.java b/genie-backend/src/main/java/com/jd/genie/agent/tool/common/DataAnalysisTool.java
+index 5d717b0..b605ce5 100644
+--- a/genie-backend/src/main/java/com/jd/genie/agent/tool/common/DataAnalysisTool.java
++++ b/genie-backend/src/main/java/com/jd/genie/agent/tool/common/DataAnalysisTool.java
+@@ -74,6 +74,16 @@ public class DataAnalysisTool implements BaseTool {
+         long startTime = System.currentTimeMillis();
+         try {
+             Map<String, Object> params = (Map<String, Object>) input;
++            // ELT-Bench: with no registered model every data fetch of the analysis fails (upstream configures the
++            // models statically), so say so instead of running it
++            if (!RegisterModelsTool.hasModels()) {
++                agentContext.getPrinter().send("tool_result", AgentResponse.ToolResult.builder()
++                        .toolName("数据分析智能体")
++                        .toolParam(params)
++                        .toolResult(RegisterModelsTool.NO_MODELS)
++                        .build());
++                return RegisterModelsTool.NO_MODELS;
++            }
+             String task = (String) params.getOrDefault("task", "");
+             String businessKnowledge = (String) params.getOrDefault("businessKnowledge", "");
+ 
+@@ -106,11 +116,14 @@ public class DataAnalysisTool implements BaseTool {
+     public CompletableFuture<String> callAutoAnalysisStream(DataAnalysisRequest analysisRequest) {
+         CompletableFuture<String> future = new CompletableFuture<>();
+         try {
++            // ELT-Bench: an analysis makes up to 10 LLM steps plus NL2SQL calls; the 300 s limit is configurable
++            // via GENIE_DATA_ANALYSIS_TIMEOUT_SEC
++            long analysisTimeout = Long.parseLong(System.getenv().getOrDefault("GENIE_DATA_ANALYSIS_TIMEOUT_SEC", "300"));
+             OkHttpClient client = new OkHttpClient.Builder()
+                     .connectTimeout(60, TimeUnit.SECONDS) // 设置连接超时时间为 60 秒
+-                    .readTimeout(300, TimeUnit.SECONDS)    // 设置读取超时时间为 300 秒
+-                    .writeTimeout(300, TimeUnit.SECONDS)   // 设置写入超时时间为 300 秒
+-                    .callTimeout(300, TimeUnit.SECONDS)    // 设置调用超时时间为 300 秒
++                    .readTimeout(analysisTimeout, TimeUnit.SECONDS)    // 设置读取超时时间为 300 秒
++                    .writeTimeout(analysisTimeout, TimeUnit.SECONDS)   // 设置写入超时时间为 300 秒
++                    .callTimeout(analysisTimeout, TimeUnit.SECONDS)    // 设置调用超时时间为 300 秒
+                     .build();
+ 
+             ApplicationContext applicationContext = SpringContextHolder.getApplicationContext();
+diff --git a/genie-backend/src/main/java/com/jd/genie/agent/tool/common/Nl2SqlQueryTool.java b/genie-backend/src/main/java/com/jd/genie/agent/tool/common/Nl2SqlQueryTool.java
+new file mode 100644
+index 0000000..8d376c4
+--- /dev/null
++++ b/genie-backend/src/main/java/com/jd/genie/agent/tool/common/Nl2SqlQueryTool.java
+@@ -0,0 +1,91 @@
++package com.jd.genie.agent.tool.common;
++
++import com.alibaba.fastjson.JSON;
++import com.jd.genie.agent.agent.AgentContext;
++import com.jd.genie.agent.tool.BaseTool;
++import com.jd.genie.agent.util.SpringContextHolder;
++import com.jd.genie.data.dto.ChatQueryData;
++import com.jd.genie.model.req.DataAgentChatReq;
++import com.jd.genie.service.DataAgentService;
++import lombok.Data;
++import lombok.extern.slf4j.Slf4j;
++
++import java.util.ArrayList;
++import java.util.HashMap;
++import java.util.LinkedHashMap;
++import java.util.List;
++import java.util.Map;
++
++/**
++ * ELT-Bench: exposes the data agent's NL2SQL query (/data/apiChatQuery, otherwise only used by the web UI and the
++ * analysis sub-agent) as a tool, so the agent can obtain SQL. The question goes through the unchanged pipeline
++ * (rewrite, think, split into sub-questions, one SQL each, execution); the result keeps the original fields. Only the
++ * returned rows are cut to the first ROWS_RETURNED so that the result fits in the model's context.
++ */
++@Slf4j
++@Data
++public class Nl2SqlQueryTool implements BaseTool {
++    private static final int ROWS_RETURNED = 20;
++    private AgentContext agentContext;
++
++    @Override
++    public String getName() {
++        return "nl2sql_query";
++    }
++
++    @Override
++    public String getDescription() {
++        return "Ask the data agent a question about the registered data models (see register_models). It rewrites the "
++                + "question, may split it into sub-questions, generates one SQL query per sub-question in the warehouse's "
++                + "dialect and runs it. Returns, per sub-question, the SQL, the number of rows returned and the first "
++                + ROWS_RETURNED + " rows, or the error.";
++    }
++
++    @Override
++    public Map<String, Object> toParams() {
++        Map<String, Object> question = new HashMap<>();
++        question.put("type", "string");
++        question.put("description", "The question, in natural language.");
++        Map<String, Object> parameters = new HashMap<>();
++        parameters.put("type", "object");
++        parameters.put("properties", Map.of("question", question));
++        parameters.put("required", List.of("question"));
++        return parameters;
++    }
++
++    @Override
++    public Object execute(Object input) {
++        try {
++            if (!RegisterModelsTool.hasModels()) {
++                return RegisterModelsTool.NO_MODELS;
++            }
++            Map<String, Object> params = (Map<String, Object>) input;
++            DataAgentChatReq req = new DataAgentChatReq();
++            req.setContent(String.valueOf(params.get("question")));
++            req.setTraceId(agentContext == null ? null : agentContext.getRequestId());
++            DataAgentService service = SpringContextHolder.getApplicationContext().getBean(DataAgentService.class);
++            List<ChatQueryData> results = service.apiChatQueryDataOrThrow(req);
++            List<Map<String, Object>> out = new ArrayList<>();
++            for (ChatQueryData data : results) {
++                Map<String, Object> r = new LinkedHashMap<>();
++                r.put("question", data.getQuestion());
++                r.put("sql", data.getNl2sqlResult());
++                List<Map<String, Object>> rows = data.getDataList() == null ? List.of() : data.getDataList();
++                r.put("rows_returned", rows.size());
++                r.put("rows", rows.subList(0, Math.min(ROWS_RETURNED, rows.size())));
++                if (data.getErrorMessage() != null) {
++                    r.put("error", data.getErrorMessage());
++                }
++                out.add(r);
++            }
++            return JSON.toJSONString(out);
++        } catch (Exception e) {
++            log.error("{} nl2sql_query error", agentContext == null ? "" : agentContext.getRequestId(), e);
++            Throwable root = e;
++            while (root.getCause() != null && root.getCause() != root) {
++                root = root.getCause();
++            }
++            return "nl2sql_query failed: " + root.getMessage();
++        }
++    }
++}
+diff --git a/genie-backend/src/main/java/com/jd/genie/agent/tool/common/RegisterModelsTool.java b/genie-backend/src/main/java/com/jd/genie/agent/tool/common/RegisterModelsTool.java
+new file mode 100644
+index 0000000..ce8e42d
+--- /dev/null
++++ b/genie-backend/src/main/java/com/jd/genie/agent/tool/common/RegisterModelsTool.java
+@@ -0,0 +1,100 @@
++package com.jd.genie.agent.tool.common;
++
++import com.alibaba.fastjson.JSON;
++import com.jd.genie.agent.agent.AgentContext;
++import com.jd.genie.agent.tool.BaseTool;
++import com.jd.genie.agent.util.SpringContextHolder;
++import com.jd.genie.config.data.DataAgentModelConfig;
++import com.jd.genie.service.ChatModelInfoService;
++import lombok.Data;
++import lombok.extern.slf4j.Slf4j;
++
++import java.util.HashMap;
++import java.util.LinkedHashMap;
++import java.util.List;
++import java.util.Map;
++
++/**
++ * ELT-Bench: exposes the data agent's model registration (its data-governance step, normally the model-list
++ * configuration read at start-up) as a tool, because the tables of an ELT task only exist after the agent loads them.
++ * The fields are those of the original model configuration; nothing is filled in on the agent's behalf except a
++ * generated id when none is given.
++ */
++@Slf4j
++@Data
++public class RegisterModelsTool implements BaseTool {
++    /** Returned by nl2sql_query and data_analysis when no model is registered (upstream always has configured models). */
++    public static final String NO_MODELS = "No data models are registered with the data agent. "
++            + "Register the tables you want to query with register_models first.";
++
++    private AgentContext agentContext;
++
++    /** Whether the data agent has at least one registered model. */
++    public static boolean hasModels() {
++        return SpringContextHolder.getApplicationContext().getBean(ChatModelInfoService.class).count() > 0;
++    }
++
++    @Override
++    public String getName() {
++        return "register_models";
++    }
++
++    @Override
++    public String getDescription() {
++        return "Register warehouse tables or SQL queries as data models of the data agent (its data-governance step). "
++                + "nl2sql_query can only use registered models. Each model has the fields of the data agent's model "
++                + "configuration. Registering a model with an existing id replaces it. Column descriptions are read from "
++                + "the warehouse's column comments (COMMENT ON COLUMN), column types and example values from the data. "
++                + "Returns, per model, its id, status, columns or error.";
++    }
++
++    @Override
++    public Map<String, Object> toParams() {
++        Map<String, Object> model = new LinkedHashMap<>();
++        model.put("content", prop("Schema-qualified table name (type table) or a SELECT statement (type sql)."));
++        model.put("type", Map.of("type", "string", "enum", List.of("table", "sql"), "description", "Model type, default table."));
++        model.put("id", prop("Model code used in generated SQL. Generated when omitted."));
++        model.put("name", prop("Business name of the model."));
++        model.put("remark", prop("How the model should be used (passed to NL2SQL as the table's usage rules)."));
++        model.put("businessPrompt", prop("Business rules of the model (passed to NL2SQL)."));
++        model.put("ignoreFields", prop("Comma-separated columns to leave out of the model."));
++        model.put("defaultRecallFields", prop("Comma-separated columns always given to NL2SQL."));
++        model.put("analyzeSuggestFields", prop("Comma-separated columns suggested for analysis."));
++        model.put("analyzeForbidFields", prop("Comma-separated columns that must not be analysed."));
++        model.put("syncValueFields", prop("Comma-separated columns whose values are indexed for value recall."));
++        model.put("columnAliasMap", prop("JSON object mapping a column to comma-separated aliases."));
++        Map<String, Object> item = new HashMap<>();
++        item.put("type", "object");
++        item.put("properties", model);
++        item.put("required", List.of("content"));
++        Map<String, Object> models = new HashMap<>();
++        models.put("type", "array");
++        models.put("items", item);
++        models.put("description", "Models to register.");
++        Map<String, Object> parameters = new HashMap<>();
++        parameters.put("type", "object");
++        parameters.put("properties", Map.of("models", models));
++        parameters.put("required", List.of("models"));
++        return parameters;
++    }
++
++    private static Map<String, Object> prop(String description) {
++        Map<String, Object> p = new HashMap<>();
++        p.put("type", "string");
++        p.put("description", description);
++        return p;
++    }
++
++    @Override
++    public Object execute(Object input) {
++        try {
++            Map<String, Object> params = (Map<String, Object>) input;
++            List<DataAgentModelConfig> configs = JSON.parseArray(JSON.toJSONString(params.get("models")), DataAgentModelConfig.class);
++            ChatModelInfoService service = SpringContextHolder.getApplicationContext().getBean(ChatModelInfoService.class);
++            return JSON.toJSONString(service.registerModels(configs));
++        } catch (Exception e) {
++            log.error("{} register_models error", agentContext == null ? "" : agentContext.getRequestId(), e);
++            return "register_models failed: " + e.getMessage();
++        }
++    }
++}
+diff --git a/genie-backend/src/main/java/com/jd/genie/agent/tool/mcp/McpTool.java b/genie-backend/src/main/java/com/jd/genie/agent/tool/mcp/McpTool.java
+index 904eb4d..a48ce53 100644
+--- a/genie-backend/src/main/java/com/jd/genie/agent/tool/mcp/McpTool.java
++++ b/genie-backend/src/main/java/com/jd/genie/agent/tool/mcp/McpTool.java
+@@ -39,6 +39,11 @@ public class McpTool implements BaseTool {
+         private String data;
+     }
+ 
++    // ELT-Bench: MCP tools run shell commands that can take minutes; the
++    // original 30 s call timeout is configurable via GENIE_MCP_CALL_TIMEOUT_SEC.
++    private static final long CALL_TIMEOUT_SEC = Long.parseLong(
++            System.getenv().getOrDefault("GENIE_MCP_CALL_TIMEOUT_SEC", "30"));
++
+     @Override
+     public String getName() {
+         return "mcp_tool";
+@@ -85,7 +90,7 @@ public class McpTool implements BaseTool {
+                     .server_url(mcpServerUrl)
+                     .arguments(params)
+                     .build();
+-            String response = OkHttpUtil.postJson(mcpClientUrl, JSON.toJSONString(mcpToolRequest), null, 30L);
++            String response = OkHttpUtil.postJson(mcpClientUrl, JSON.toJSONString(mcpToolRequest), null, CALL_TIMEOUT_SEC);
+             log.info("call tool request: {} response: {}", JSON.toJSONString(mcpToolRequest), response);
+             return response;
+         } catch (Exception e) {
+diff --git a/genie-backend/src/main/java/com/jd/genie/agent/util/OkHttpUtil.java b/genie-backend/src/main/java/com/jd/genie/agent/util/OkHttpUtil.java
+index 5ec6478..bd823ef 100644
+--- a/genie-backend/src/main/java/com/jd/genie/agent/util/OkHttpUtil.java
++++ b/genie-backend/src/main/java/com/jd/genie/agent/util/OkHttpUtil.java
+@@ -24,7 +24,9 @@ public class OkHttpUtil {
+                 if (okHttpClient == null) {
+                     okHttpClient = new OkHttpClient.Builder()
+                             .connectTimeout(30, TimeUnit.SECONDS)
+-                            .readTimeout(60, TimeUnit.SECONDS)
++                            // ELT-Bench: NL2SQL calls to genie-tool make several LLM calls; the 60 s read timeout is
++                            // configurable via GENIE_DATA_AGENT_READ_TIMEOUT_SEC
++                            .readTimeout(Long.parseLong(System.getenv().getOrDefault("GENIE_DATA_AGENT_READ_TIMEOUT_SEC", "60")), TimeUnit.SECONDS)
+                             .writeTimeout(10, TimeUnit.SECONDS)
+                             .connectionPool(new ConnectionPool(1000, 10, TimeUnit.MINUTES))
+                             .build();
+diff --git a/genie-backend/src/main/java/com/jd/genie/config/data/DbConfig.java b/genie-backend/src/main/java/com/jd/genie/config/data/DbConfig.java
+index cb61d19..a033e12 100644
+--- a/genie-backend/src/main/java/com/jd/genie/config/data/DbConfig.java
++++ b/genie-backend/src/main/java/com/jd/genie/config/data/DbConfig.java
+@@ -11,4 +11,6 @@ public class DbConfig {
+     private String username;
+     private String password;
+     private String key = "genie-datasource";
++    /** ELT-Bench: full JDBC URL; when set it replaces the URL built from type/host/port/schema. */
++    private String url;
+ }
+diff --git a/genie-backend/src/main/java/com/jd/genie/controller/DataAgentController.java b/genie-backend/src/main/java/com/jd/genie/controller/DataAgentController.java
+index 656e618..3efd75e 100644
+--- a/genie-backend/src/main/java/com/jd/genie/controller/DataAgentController.java
++++ b/genie-backend/src/main/java/com/jd/genie/controller/DataAgentController.java
+@@ -52,6 +52,12 @@ public class DataAgentController {
+         return dataAgentService.webChatQueryData(req);
+     }
+ 
++    /** ELT-Bench: registers or replaces models (same fields as the model-list configuration) at run time. */
++    @PostMapping(value = "registerModels")
++    public List<Map<String, Object>> registerModels(@RequestBody List<com.jd.genie.config.data.DataAgentModelConfig> modelConfigs) {
++        return chatModelInfoService.registerModels(modelConfigs);
++    }
++
+     @PostMapping(value = "apiChatQuery")
+     public List<ChatQueryData> apiChatQuery(@RequestBody DataAgentChatReq req) {
+         return dataAgentService.apiChatQueryData(req);
+diff --git a/genie-backend/src/main/java/com/jd/genie/controller/GenieController.java b/genie-backend/src/main/java/com/jd/genie/controller/GenieController.java
+index c0ed163..e9a6c06 100644
+--- a/genie-backend/src/main/java/com/jd/genie/controller/GenieController.java
++++ b/genie-backend/src/main/java/com/jd/genie/controller/GenieController.java
+@@ -108,7 +108,8 @@ public class GenieController {
+ 
+         log.info("{} auto agent request: {}", request.getRequestId(), JSON.toJSONString(request));
+ 
+-        Long AUTO_AGENT_SSE_TIMEOUT = 60 * 60 * 1000L;
++        Long AUTO_AGENT_SSE_TIMEOUT = Long.parseLong(
++                System.getenv().getOrDefault("GENIE_AUTO_AGENT_SSE_TIMEOUT_MIN", "60")) * 60 * 1000L;
+ 
+         SseEmitter emitter = new SseEmitter(AUTO_AGENT_SSE_TIMEOUT);
+         // SSE心跳
+@@ -190,6 +191,14 @@ public class GenieController {
+             DataAnalysisTool dataAnalysisTool = new DataAnalysisTool();
+             dataAnalysisTool.setAgentContext(agentContext);
+             toolCollection.addTool(dataAnalysisTool);
++
++            // ELT-Bench: the data agent's model registration and NL2SQL query as tools
++            RegisterModelsTool registerModelsTool = new RegisterModelsTool();
++            registerModelsTool.setAgentContext(agentContext);
++            toolCollection.addTool(registerModelsTool);
++            Nl2SqlQueryTool nl2SqlQueryTool = new Nl2SqlQueryTool();
++            nl2SqlQueryTool.setAgentContext(agentContext);
++            toolCollection.addTool(nl2SqlQueryTool);
+         } else {
+             // file
+             FileTool fileTool = new FileTool();
+diff --git a/genie-backend/src/main/java/com/jd/genie/data/jdbc/catalog/WarehouseCatalog.java b/genie-backend/src/main/java/com/jd/genie/data/jdbc/catalog/WarehouseCatalog.java
+new file mode 100644
+index 0000000..7bf78a9
+--- /dev/null
++++ b/genie-backend/src/main/java/com/jd/genie/data/jdbc/catalog/WarehouseCatalog.java
+@@ -0,0 +1,100 @@
++package com.jd.genie.data.jdbc.catalog;
++
++import com.jd.genie.data.SimpleTable;
++import com.jd.genie.data.TableColumn;
++import com.jd.genie.data.exception.CatalogException;
++import com.jd.genie.data.model.StandardColumnType;
++
++import java.sql.Connection;
++import java.sql.PreparedStatement;
++import java.sql.ResultSet;
++import java.util.ArrayList;
++import java.util.List;
++import java.util.Locale;
++import java.util.Objects;
++
++/**
++ * ELT-Bench: catalog for Snowflake, Databricks and Redshift. Tables and columns, including column comments, are read
++ * with one SQL query each; subclasses supply the queries. A table may be given as "table" (the task schema is used)
++ * or as "schema.table"; names are matched case-insensitively.
++ */
++public abstract class WarehouseCatalog extends AbstractJdbcCatalog {
++
++    /** Columns, read by position (drivers differ in the case of labels): table_name, comments, table_type, table_schema. Parameters: schema. */
++    protected abstract String listTablesSql();
++
++    /** Columns, read by position: column_name, data_type, comments, position, nullable ('YES'/'NO'). Parameters: schema, table. */
++    protected abstract String columnsSql();
++
++    @Override
++    public List<SimpleTable> listTables(Connection connection, String schema) throws CatalogException {
++        try (PreparedStatement ps = connection.prepareStatement(listTablesSql())) {
++            ps.setString(1, schema);
++            List<SimpleTable> tables = new ArrayList<>();
++            try (ResultSet rs = ps.executeQuery()) {
++                while (rs.next()) {
++                    SimpleTable st = new SimpleTable();
++                    st.setTableName(rs.getString(1));
++                    st.setComments(Objects.toString(rs.getString(2), ""));
++                    st.setTableType(rs.getString(3));
++                    st.setTableSchema(rs.getString(4));
++                    tables.add(st);
++                }
++            }
++            return tables;
++        } catch (Exception e) {
++            throw new CatalogException(String.format("Failed listing tables of schema %s", schema), e);
++        }
++    }
++
++    @Override
++    public List<TableColumn> getTableColumns(Connection connection, String tablePath, String schema) throws CatalogException {
++        String table = tablePath.replace("`", "").replace("\"", "");
++        int dot = table.lastIndexOf('.');
++        if (dot >= 0) {
++            String prefix = table.substring(0, dot);
++            schema = prefix.substring(prefix.lastIndexOf('.') + 1);
++            table = table.substring(dot + 1);
++        }
++        try (PreparedStatement ps = connection.prepareStatement(columnsSql())) {
++            ps.setString(1, schema);
++            ps.setString(2, table);
++            List<TableColumn> columnList = new ArrayList<>();
++            try (ResultSet rs = ps.executeQuery()) {
++                while (rs.next()) {
++                    String originType = String.valueOf(rs.getString(2)).toUpperCase(Locale.ROOT);
++                    columnList.add(TableColumn.builder()
++                            .name(rs.getString(1))
++                            // "" when there is no comment, as MySQL's information_schema returns (the comment is the column's business name)
++                            .comment(Objects.toString(rs.getString(3), ""))
++                            .dataType(standardType(originType))
++                            .originDataType(originType)
++                            .position(rs.getInt(4))
++                            .nullable(!"NO".equalsIgnoreCase(rs.getString(5)))
++                            .build());
++                }
++            }
++            if (columnList.isEmpty()) {
++                throw new CatalogException(String.format("Table %s not found in schema %s", table, schema));
++            }
++            return columnList;
++        } catch (CatalogException e) {
++            throw e;
++        } catch (Exception e) {
++            throw new CatalogException(String.format("Failed getting table %s", tablePath), e);
++        }
++    }
++
++    /** Maps a warehouse type name to the three types the data agent distinguishes. */
++    public static String standardType(String type) {
++        if (type.startsWith("DATE") || type.startsWith("TIME")) {
++            return StandardColumnType.DATE.name();
++        }
++        if (type.startsWith("NUMBER") || type.startsWith("DECIMAL") || type.startsWith("NUMERIC")
++                || type.contains("INT") || type.startsWith("FLOAT") || type.startsWith("DOUBLE")
++                || type.startsWith("REAL") || type.startsWith("BIGINT")) {
++            return StandardColumnType.DECIMAL.name();
++        }
++        return StandardColumnType.VARCHAR.name();
++    }
++}
+diff --git a/genie-backend/src/main/java/com/jd/genie/data/jdbc/catalog/databricks/DatabricksCatalog.java b/genie-backend/src/main/java/com/jd/genie/data/jdbc/catalog/databricks/DatabricksCatalog.java
+new file mode 100644
+index 0000000..35cab4f
+--- /dev/null
++++ b/genie-backend/src/main/java/com/jd/genie/data/jdbc/catalog/databricks/DatabricksCatalog.java
+@@ -0,0 +1,19 @@
++package com.jd.genie.data.jdbc.catalog.databricks;
++
++import com.jd.genie.data.jdbc.catalog.WarehouseCatalog;
++
++/**
++ * ELT-Bench: Databricks catalog.
++ */
++public class DatabricksCatalog extends WarehouseCatalog {
++
++    @Override
++    protected String listTablesSql() {
++        return "SELECT table_name, comment AS comments, table_type, table_schema FROM information_schema.tables WHERE lower(table_schema) = lower(?) ORDER BY table_name";
++    }
++
++    @Override
++    protected String columnsSql() {
++        return "SELECT column_name, data_type, comment AS comments, ordinal_position AS position, is_nullable AS nullable FROM information_schema.columns WHERE lower(table_schema) = lower(?) AND lower(table_name) = lower(?) ORDER BY ordinal_position";
++    }
++}
+diff --git a/genie-backend/src/main/java/com/jd/genie/data/jdbc/catalog/databricks/DatabricksCatalogFactory.java b/genie-backend/src/main/java/com/jd/genie/data/jdbc/catalog/databricks/DatabricksCatalogFactory.java
+new file mode 100644
+index 0000000..ecc2450
+--- /dev/null
++++ b/genie-backend/src/main/java/com/jd/genie/data/jdbc/catalog/databricks/DatabricksCatalogFactory.java
+@@ -0,0 +1,20 @@
++package com.jd.genie.data.jdbc.catalog.databricks;
++
++import com.google.auto.service.AutoService;
++import com.jd.genie.data.jdbc.catalog.JdbcCatalog;
++import com.jd.genie.data.jdbc.catalog.JdbcCatalogFactory;
++import com.jd.genie.data.jdbc.dialect.DialectEnum;
++
++@AutoService(JdbcCatalogFactory.class)
++public class DatabricksCatalogFactory implements JdbcCatalogFactory {
++
++    @Override
++    public DialectEnum jdbcDialect() {
++        return DialectEnum.DATABRICKS;
++    }
++
++    @Override
++    public JdbcCatalog createCatalog() {
++        return new DatabricksCatalog();
++    }
++}
+diff --git a/genie-backend/src/main/java/com/jd/genie/data/jdbc/catalog/redshift/RedshiftCatalog.java b/genie-backend/src/main/java/com/jd/genie/data/jdbc/catalog/redshift/RedshiftCatalog.java
+new file mode 100644
+index 0000000..9565600
+--- /dev/null
++++ b/genie-backend/src/main/java/com/jd/genie/data/jdbc/catalog/redshift/RedshiftCatalog.java
+@@ -0,0 +1,19 @@
++package com.jd.genie.data.jdbc.catalog.redshift;
++
++import com.jd.genie.data.jdbc.catalog.WarehouseCatalog;
++
++/**
++ * ELT-Bench: Redshift catalog.
++ */
++public class RedshiftCatalog extends WarehouseCatalog {
++
++    @Override
++    protected String listTablesSql() {
++        return "SELECT c.relname AS table_name, obj_description(c.oid, 'pg_class') AS comments, CASE c.relkind WHEN 'v' THEN 'VIEW' ELSE 'TABLE' END AS table_type, n.nspname AS table_schema FROM pg_class c JOIN pg_namespace n ON n.oid = c.relnamespace WHERE c.relkind IN ('r', 'v') AND lower(n.nspname) = lower(?) ORDER BY c.relname";
++    }
++
++    @Override
++    protected String columnsSql() {
++        return "SELECT a.attname AS column_name, format_type(a.atttypid, a.atttypmod) AS data_type, col_description(a.attrelid, a.attnum) AS comments, a.attnum AS position, CASE WHEN a.attnotnull THEN 'NO' ELSE 'YES' END AS nullable FROM pg_attribute a JOIN pg_class c ON c.oid = a.attrelid JOIN pg_namespace n ON n.oid = c.relnamespace WHERE lower(n.nspname) = lower(?) AND lower(c.relname) = lower(?) AND a.attnum > 0 AND NOT a.attisdropped ORDER BY a.attnum";
++    }
++}
+diff --git a/genie-backend/src/main/java/com/jd/genie/data/jdbc/catalog/redshift/RedshiftCatalogFactory.java b/genie-backend/src/main/java/com/jd/genie/data/jdbc/catalog/redshift/RedshiftCatalogFactory.java
+new file mode 100644
+index 0000000..2c19bf6
+--- /dev/null
++++ b/genie-backend/src/main/java/com/jd/genie/data/jdbc/catalog/redshift/RedshiftCatalogFactory.java
+@@ -0,0 +1,20 @@
++package com.jd.genie.data.jdbc.catalog.redshift;
++
++import com.google.auto.service.AutoService;
++import com.jd.genie.data.jdbc.catalog.JdbcCatalog;
++import com.jd.genie.data.jdbc.catalog.JdbcCatalogFactory;
++import com.jd.genie.data.jdbc.dialect.DialectEnum;
++
++@AutoService(JdbcCatalogFactory.class)
++public class RedshiftCatalogFactory implements JdbcCatalogFactory {
++
++    @Override
++    public DialectEnum jdbcDialect() {
++        return DialectEnum.REDSHIFT;
++    }
++
++    @Override
++    public JdbcCatalog createCatalog() {
++        return new RedshiftCatalog();
++    }
++}
+diff --git a/genie-backend/src/main/java/com/jd/genie/data/jdbc/catalog/snowflake/SnowflakeCatalog.java b/genie-backend/src/main/java/com/jd/genie/data/jdbc/catalog/snowflake/SnowflakeCatalog.java
+new file mode 100644
+index 0000000..e951f76
+--- /dev/null
++++ b/genie-backend/src/main/java/com/jd/genie/data/jdbc/catalog/snowflake/SnowflakeCatalog.java
+@@ -0,0 +1,19 @@
++package com.jd.genie.data.jdbc.catalog.snowflake;
++
++import com.jd.genie.data.jdbc.catalog.WarehouseCatalog;
++
++/**
++ * ELT-Bench: Snowflake catalog.
++ */
++public class SnowflakeCatalog extends WarehouseCatalog {
++
++    @Override
++    protected String listTablesSql() {
++        return "SELECT table_name, comment AS comments, table_type, table_schema FROM information_schema.tables WHERE UPPER(table_schema) = UPPER(?) ORDER BY table_name";
++    }
++
++    @Override
++    protected String columnsSql() {
++        return "SELECT column_name, data_type, comment AS comments, ordinal_position AS position, is_nullable AS nullable FROM information_schema.columns WHERE UPPER(table_schema) = UPPER(?) AND UPPER(table_name) = UPPER(?) ORDER BY ordinal_position";
++    }
++}
+diff --git a/genie-backend/src/main/java/com/jd/genie/data/jdbc/catalog/snowflake/SnowflakeCatalogFactory.java b/genie-backend/src/main/java/com/jd/genie/data/jdbc/catalog/snowflake/SnowflakeCatalogFactory.java
+new file mode 100644
+index 0000000..48baa90
+--- /dev/null
++++ b/genie-backend/src/main/java/com/jd/genie/data/jdbc/catalog/snowflake/SnowflakeCatalogFactory.java
+@@ -0,0 +1,20 @@
++package com.jd.genie.data.jdbc.catalog.snowflake;
++
++import com.google.auto.service.AutoService;
++import com.jd.genie.data.jdbc.catalog.JdbcCatalog;
++import com.jd.genie.data.jdbc.catalog.JdbcCatalogFactory;
++import com.jd.genie.data.jdbc.dialect.DialectEnum;
++
++@AutoService(JdbcCatalogFactory.class)
++public class SnowflakeCatalogFactory implements JdbcCatalogFactory {
++
++    @Override
++    public DialectEnum jdbcDialect() {
++        return DialectEnum.SNOWFLAKE;
++    }
++
++    @Override
++    public JdbcCatalog createCatalog() {
++        return new SnowflakeCatalog();
++    }
++}
+diff --git a/genie-backend/src/main/java/com/jd/genie/data/jdbc/connection/JdbcConnectionPoolFactory.java b/genie-backend/src/main/java/com/jd/genie/data/jdbc/connection/JdbcConnectionPoolFactory.java
+index c444daf..2e98d6c 100644
+--- a/genie-backend/src/main/java/com/jd/genie/data/jdbc/connection/JdbcConnectionPoolFactory.java
++++ b/genie-backend/src/main/java/com/jd/genie/data/jdbc/connection/JdbcConnectionPoolFactory.java
+@@ -37,6 +37,10 @@ public class JdbcConnectionPoolFactory implements Serializable {
+             case MYSQL:
+             case H2:
+             case CLICKHOUSE:
++            // ELT-Bench warehouses
++            case SNOWFLAKE:
++            case DATABRICKS:
++            case REDSHIFT:
+                 datasourceWrapper.setDataSource(createHikariDatasource(connConfig, jdbcDialect));
+                 break;
+             default:
+diff --git a/genie-backend/src/main/java/com/jd/genie/data/jdbc/dialect/DialectEnum.java b/genie-backend/src/main/java/com/jd/genie/data/jdbc/dialect/DialectEnum.java
+index 0d05564..47e5898 100644
+--- a/genie-backend/src/main/java/com/jd/genie/data/jdbc/dialect/DialectEnum.java
++++ b/genie-backend/src/main/java/com/jd/genie/data/jdbc/dialect/DialectEnum.java
+@@ -7,7 +7,11 @@ import org.apache.commons.lang3.StringUtils;
+ public enum DialectEnum {
+     MYSQL("MySql", "jdbc:mysql://", "/", ""),
+     H2("h2", "jdbc:h2:mem", ":", ";MODE=MySQL"),
+-    CLICKHOUSE("ClickHouse", "jdbc:clickhouse://", "/", "");
++    CLICKHOUSE("ClickHouse", "jdbc:clickhouse://", "/", ""),
++    // ELT-Bench warehouses; their JDBC URLs are passed whole through DbConfig.url
++    SNOWFLAKE("Snowflake", "jdbc:snowflake://", "/", ""),
++    DATABRICKS("Databricks", "jdbc:databricks://", "/", ""),
++    REDSHIFT("Redshift", "jdbc:redshift://", "/", "");
+ 
+     private final String name;
+     private final String urlPrefix;
+diff --git a/genie-backend/src/main/java/com/jd/genie/data/jdbc/dialect/WarehouseSqlUtils.java b/genie-backend/src/main/java/com/jd/genie/data/jdbc/dialect/WarehouseSqlUtils.java
+new file mode 100644
+index 0000000..2e96e77
+--- /dev/null
++++ b/genie-backend/src/main/java/com/jd/genie/data/jdbc/dialect/WarehouseSqlUtils.java
+@@ -0,0 +1,60 @@
++package com.jd.genie.data.jdbc.dialect;
++
++/**
++ * ELT-Bench helpers shared by the Snowflake, Databricks and Redshift dialects.
++ */
++public final class WarehouseSqlUtils {
++
++    private WarehouseSqlUtils() {
++    }
++
++    /**
++     * The NL2SQL prompt quotes every identifier with backticks (MySQL style). Snowflake and Redshift quote identifiers
++     * with double quotes, so backticks outside string literals are replaced by {@code quote}. Identifiers keep their
++     * case. Redshift folds quoted identifiers to lower case by default, so case does not matter there.
++     */
++    public static String replaceBackticks(String sql, char quote) {
++        return replaceBackticks(sql, quote, false);
++    }
++
++    /**
++     * As {@link #replaceBackticks(String, char)}; with {@code upperSimple}, plain identifiers (letters, digits, _ and $)
++     * are upper-cased inside the quotes. That is how Snowflake resolves unquoted identifiers, and Airbyte and dbt
++     * create upper-case names there, while model fields written in lower case (e.g. sync-value fields) would otherwise
++     * not resolve. Other identifiers (aliases with spaces or Chinese text) keep their case.
++     */
++    public static String replaceBackticks(String sql, char quote, boolean upperSimple) {
++        if (sql == null || sql.indexOf('`') < 0) {
++            return sql;
++        }
++        StringBuilder out = new StringBuilder(sql.length());
++        boolean inString = false;
++        for (int i = 0; i < sql.length(); i++) {
++            char c = sql.charAt(i);
++            if (c == '\'' ) {
++                inString = !inString;
++                out.append(c);
++            } else if (c == '`' && !inString) {
++                int end = sql.indexOf('`', i + 1);
++                if (end < 0) {
++                    out.append(quote);
++                    continue;
++                }
++                String name = sql.substring(i + 1, end);
++                if (upperSimple && name.matches("[A-Za-z_][A-Za-z0-9_$]*")) {
++                    name = name.toUpperCase();
++                }
++                out.append(quote).append(name).append(quote);
++                i = end;
++            } else {
++                out.append(c);
++            }
++        }
++        return out.toString();
++    }
++
++    /** LIMIT/OFFSET paging for warehouses that do not accept MySQL's "LIMIT offset,count". */
++    public static String limitOffset(int start, int pageSize) {
++        return " LIMIT " + pageSize + " OFFSET " + (start * pageSize);
++    }
++}
+diff --git a/genie-backend/src/main/java/com/jd/genie/data/jdbc/dialect/databricks/DatabricksDialect.java b/genie-backend/src/main/java/com/jd/genie/data/jdbc/dialect/databricks/DatabricksDialect.java
+new file mode 100644
+index 0000000..f6b7975
+--- /dev/null
++++ b/genie-backend/src/main/java/com/jd/genie/data/jdbc/dialect/databricks/DatabricksDialect.java
+@@ -0,0 +1,47 @@
++package com.jd.genie.data.jdbc.dialect.databricks;
++
++import com.jd.genie.data.jdbc.dialect.DialectEnum;
++import com.jd.genie.data.jdbc.dialect.JdbcDialect;
++import com.jd.genie.data.jdbc.dialect.WarehouseSqlUtils;
++
++import java.sql.Connection;
++import java.sql.ResultSet;
++import java.sql.SQLException;
++import java.sql.Statement;
++
++/**
++ * ELT-Bench: Databricks dialect.
++ */
++public class DatabricksDialect implements JdbcDialect {
++
++    @Override
++    public DialectEnum dialectName() {
++        return DialectEnum.DATABRICKS;
++    }
++
++    @Override
++    public String driverName() {
++        return "com.databricks.client.jdbc.Driver";
++    }
++
++    @Override
++    public String pagingEnd(int start, int pageSize) {
++        return WarehouseSqlUtils.limitOffset(start, pageSize);
++    }
++
++    @Override
++    public String formatSql(String sql) {
++        // backtick identifiers are native in Databricks SQL
++        return sql;
++    }
++
++    @Override
++    public Statement createStreamStatement(Connection connection, Integer fetchSize) throws SQLException {
++        // the MySQL streaming hint (fetch size Integer.MIN_VALUE) is rejected by this driver
++        Statement statement = connection.createStatement(ResultSet.TYPE_FORWARD_ONLY, ResultSet.CONCUR_READ_ONLY);
++        statement.setFetchSize(DEFAULT_EXPORT_FETCH_SIZE);
++        statement.setMaxRows(EXPORT_MAX_SIZE);
++        statement.setQueryTimeout(QUERY_MAX_TIME);
++        return statement;
++    }
++}
+diff --git a/genie-backend/src/main/java/com/jd/genie/data/jdbc/dialect/databricks/DatabricksDialectFactory.java b/genie-backend/src/main/java/com/jd/genie/data/jdbc/dialect/databricks/DatabricksDialectFactory.java
+new file mode 100644
+index 0000000..d56646a
+--- /dev/null
++++ b/genie-backend/src/main/java/com/jd/genie/data/jdbc/dialect/databricks/DatabricksDialectFactory.java
+@@ -0,0 +1,20 @@
++package com.jd.genie.data.jdbc.dialect.databricks;
++
++import com.google.auto.service.AutoService;
++import com.jd.genie.data.jdbc.dialect.DialectEnum;
++import com.jd.genie.data.jdbc.dialect.JdbcDialect;
++import com.jd.genie.data.jdbc.dialect.JdbcDialectFactory;
++
++@AutoService(JdbcDialectFactory.class)
++public class DatabricksDialectFactory implements JdbcDialectFactory {
++
++    @Override
++    public boolean acceptsURL(String url) {
++        return url.startsWith(DialectEnum.DATABRICKS.getUrlPrefix());
++    }
++
++    @Override
++    public JdbcDialect create() {
++        return new DatabricksDialect();
++    }
++}
+diff --git a/genie-backend/src/main/java/com/jd/genie/data/jdbc/dialect/redshift/RedshiftDialect.java b/genie-backend/src/main/java/com/jd/genie/data/jdbc/dialect/redshift/RedshiftDialect.java
+new file mode 100644
+index 0000000..4391d8f
+--- /dev/null
++++ b/genie-backend/src/main/java/com/jd/genie/data/jdbc/dialect/redshift/RedshiftDialect.java
+@@ -0,0 +1,46 @@
++package com.jd.genie.data.jdbc.dialect.redshift;
++
++import com.jd.genie.data.jdbc.dialect.DialectEnum;
++import com.jd.genie.data.jdbc.dialect.JdbcDialect;
++import com.jd.genie.data.jdbc.dialect.WarehouseSqlUtils;
++
++import java.sql.Connection;
++import java.sql.ResultSet;
++import java.sql.SQLException;
++import java.sql.Statement;
++
++/**
++ * ELT-Bench: Redshift dialect.
++ */
++public class RedshiftDialect implements JdbcDialect {
++
++    @Override
++    public DialectEnum dialectName() {
++        return DialectEnum.REDSHIFT;
++    }
++
++    @Override
++    public String driverName() {
++        return "com.amazon.redshift.Driver";
++    }
++
++    @Override
++    public String pagingEnd(int start, int pageSize) {
++        return WarehouseSqlUtils.limitOffset(start, pageSize);
++    }
++
++    @Override
++    public String formatSql(String sql) {
++        return WarehouseSqlUtils.replaceBackticks(sql, '"');
++    }
++
++    @Override
++    public Statement createStreamStatement(Connection connection, Integer fetchSize) throws SQLException {
++        // the MySQL streaming hint (fetch size Integer.MIN_VALUE) is rejected by this driver
++        Statement statement = connection.createStatement(ResultSet.TYPE_FORWARD_ONLY, ResultSet.CONCUR_READ_ONLY);
++        statement.setFetchSize(DEFAULT_EXPORT_FETCH_SIZE);
++        statement.setMaxRows(EXPORT_MAX_SIZE);
++        statement.setQueryTimeout(QUERY_MAX_TIME);
++        return statement;
++    }
++}
+diff --git a/genie-backend/src/main/java/com/jd/genie/data/jdbc/dialect/redshift/RedshiftDialectFactory.java b/genie-backend/src/main/java/com/jd/genie/data/jdbc/dialect/redshift/RedshiftDialectFactory.java
+new file mode 100644
+index 0000000..c166a39
+--- /dev/null
++++ b/genie-backend/src/main/java/com/jd/genie/data/jdbc/dialect/redshift/RedshiftDialectFactory.java
+@@ -0,0 +1,20 @@
++package com.jd.genie.data.jdbc.dialect.redshift;
++
++import com.google.auto.service.AutoService;
++import com.jd.genie.data.jdbc.dialect.DialectEnum;
++import com.jd.genie.data.jdbc.dialect.JdbcDialect;
++import com.jd.genie.data.jdbc.dialect.JdbcDialectFactory;
++
++@AutoService(JdbcDialectFactory.class)
++public class RedshiftDialectFactory implements JdbcDialectFactory {
++
++    @Override
++    public boolean acceptsURL(String url) {
++        return url.startsWith(DialectEnum.REDSHIFT.getUrlPrefix());
++    }
++
++    @Override
++    public JdbcDialect create() {
++        return new RedshiftDialect();
++    }
++}
+diff --git a/genie-backend/src/main/java/com/jd/genie/data/jdbc/dialect/snowflake/SnowflakeDialect.java b/genie-backend/src/main/java/com/jd/genie/data/jdbc/dialect/snowflake/SnowflakeDialect.java
+new file mode 100644
+index 0000000..7779df5
+--- /dev/null
++++ b/genie-backend/src/main/java/com/jd/genie/data/jdbc/dialect/snowflake/SnowflakeDialect.java
+@@ -0,0 +1,46 @@
++package com.jd.genie.data.jdbc.dialect.snowflake;
++
++import com.jd.genie.data.jdbc.dialect.DialectEnum;
++import com.jd.genie.data.jdbc.dialect.JdbcDialect;
++import com.jd.genie.data.jdbc.dialect.WarehouseSqlUtils;
++
++import java.sql.Connection;
++import java.sql.ResultSet;
++import java.sql.SQLException;
++import java.sql.Statement;
++
++/**
++ * ELT-Bench: Snowflake dialect.
++ */
++public class SnowflakeDialect implements JdbcDialect {
++
++    @Override
++    public DialectEnum dialectName() {
++        return DialectEnum.SNOWFLAKE;
++    }
++
++    @Override
++    public String driverName() {
++        return "net.snowflake.client.jdbc.SnowflakeDriver";
++    }
++
++    @Override
++    public String pagingEnd(int start, int pageSize) {
++        return WarehouseSqlUtils.limitOffset(start, pageSize);
++    }
++
++    @Override
++    public String formatSql(String sql) {
++        return WarehouseSqlUtils.replaceBackticks(sql, '"', true);
++    }
++
++    @Override
++    public Statement createStreamStatement(Connection connection, Integer fetchSize) throws SQLException {
++        // the MySQL streaming hint (fetch size Integer.MIN_VALUE) is rejected by this driver
++        Statement statement = connection.createStatement(ResultSet.TYPE_FORWARD_ONLY, ResultSet.CONCUR_READ_ONLY);
++        statement.setFetchSize(DEFAULT_EXPORT_FETCH_SIZE);
++        statement.setMaxRows(EXPORT_MAX_SIZE);
++        statement.setQueryTimeout(QUERY_MAX_TIME);
++        return statement;
++    }
++}
+diff --git a/genie-backend/src/main/java/com/jd/genie/data/jdbc/dialect/snowflake/SnowflakeDialectFactory.java b/genie-backend/src/main/java/com/jd/genie/data/jdbc/dialect/snowflake/SnowflakeDialectFactory.java
+new file mode 100644
+index 0000000..08dcb6b
+--- /dev/null
++++ b/genie-backend/src/main/java/com/jd/genie/data/jdbc/dialect/snowflake/SnowflakeDialectFactory.java
+@@ -0,0 +1,20 @@
++package com.jd.genie.data.jdbc.dialect.snowflake;
++
++import com.google.auto.service.AutoService;
++import com.jd.genie.data.jdbc.dialect.DialectEnum;
++import com.jd.genie.data.jdbc.dialect.JdbcDialect;
++import com.jd.genie.data.jdbc.dialect.JdbcDialectFactory;
++
++@AutoService(JdbcDialectFactory.class)
++public class SnowflakeDialectFactory implements JdbcDialectFactory {
++
++    @Override
++    public boolean acceptsURL(String url) {
++        return url.startsWith(DialectEnum.SNOWFLAKE.getUrlPrefix());
++    }
++
++    @Override
++    public JdbcDialect create() {
++        return new SnowflakeDialect();
++    }
++}
+diff --git a/genie-backend/src/main/java/com/jd/genie/data/sql/SqlParserUtils.java b/genie-backend/src/main/java/com/jd/genie/data/sql/SqlParserUtils.java
+index 012db85..07c68fc 100644
+--- a/genie-backend/src/main/java/com/jd/genie/data/sql/SqlParserUtils.java
++++ b/genie-backend/src/main/java/com/jd/genie/data/sql/SqlParserUtils.java
+@@ -40,6 +40,10 @@ public class SqlParserUtils {
+                     .withConformance(SqlConformanceEnum.MYSQL_5);
+             case CLICKHOUSE -> ClickHouseSqlDialect2.DEFAULT.configureParser(SqlParser.config())
+                     .withConformance(SqlConformanceEnum.LENIENT);
++            // ELT-Bench: NL2SQL emits backtick-quoted (MySQL-style) SQL for every dialect; it is converted to the
++            // warehouse's quoting only before execution (JdbcDialect.formatSql)
++            case SNOWFLAKE, DATABRICKS, REDSHIFT -> MysqlCustomSqlDialect.DEFAULT.configureParser(SqlParser.config())
++                    .withConformance(SqlConformanceEnum.LENIENT);
+         };
+     }
+ 
+diff --git a/genie-backend/src/main/java/com/jd/genie/data/sql/dialect/SqlDialectUtil.java b/genie-backend/src/main/java/com/jd/genie/data/sql/dialect/SqlDialectUtil.java
+index eed1fb5..42d7999 100644
+--- a/genie-backend/src/main/java/com/jd/genie/data/sql/dialect/SqlDialectUtil.java
++++ b/genie-backend/src/main/java/com/jd/genie/data/sql/dialect/SqlDialectUtil.java
+@@ -10,6 +10,8 @@ public class SqlDialectUtil {
+         return switch (dialectEnum) {
+             case H2,MYSQL -> MysqlCustomSqlDialect.DEFAULT;
+             case CLICKHOUSE -> ClickHouseSqlDialect2.DEFAULT;
++            // ELT-Bench: keep the MySQL (backtick) form; JdbcDialect.formatSql converts it before execution
++            case SNOWFLAKE, DATABRICKS, REDSHIFT -> MysqlCustomSqlDialect.DEFAULT;
+         };
+     }
+ }
+diff --git a/genie-backend/src/main/java/com/jd/genie/service/ChatModelInfoService.java b/genie-backend/src/main/java/com/jd/genie/service/ChatModelInfoService.java
+index 86c99e1..8b14086 100644
+--- a/genie-backend/src/main/java/com/jd/genie/service/ChatModelInfoService.java
++++ b/genie-backend/src/main/java/com/jd/genie/service/ChatModelInfoService.java
+@@ -1,5 +1,11 @@
+ package com.jd.genie.service;
+ 
++import java.util.ArrayList;
++import java.util.LinkedHashMap;
++import java.util.Locale;
++import java.util.Map;
++import java.util.Set;
++import java.util.List;
+ import com.alibaba.fastjson.JSONObject;
+ import com.alibaba.fastjson.TypeReference;
+ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+@@ -202,6 +208,52 @@ public class ChatModelInfoService extends ServiceImpl<ChatModelInfoMapper, ChatM
+     }
+ 
+ 
++    /**
++     * ELT-Bench: registers models while the agent runs (the original reads model-list once at start-up). Each model
++     * goes through the same steps as initModelInfo: read its schema, sample few-shot values, save it. A model whose id
++     * is already registered is replaced. A model without id gets a generated code, as in the original configuration.
++     */
++    public List<Map<String, Object>> registerModels(List<DataAgentModelConfig> modelConfigs) {
++        List<Map<String, Object>> results = new ArrayList<>();
++        for (DataAgentModelConfig modelConfig : modelConfigs) {
++            Map<String, Object> result = new LinkedHashMap<>();
++            try {
++                if (StringUtils.isBlank(modelConfig.getId())) {
++                    modelConfig.setId("t_" + RandomStringUtils.randomAlphabetic(24).toLowerCase(Locale.ROOT));
++                }
++                if (StringUtils.isBlank(modelConfig.getType())) {
++                    modelConfig.setType("table");
++                }
++                if (StringUtils.isBlank(modelConfig.getName())) {
++                    modelConfig.setName(modelConfig.getContent());
++                }
++                result.put("id", modelConfig.getId());
++                result.put("name", modelConfig.getName());
++                List<TableColumn> tableSchema = getModelSchema(modelConfig);
++                Map<String, Set<String>> fewShotMap = queryModelFewShot(modelConfig, tableSchema);
++                removeModel(modelConfig.getId());
++                saveModelInfo(modelConfig, tableSchema, fewShotMap);
++                result.put("status", "registered");
++                result.put("columns", tableSchema.stream().map(TableColumn::getName).toList());
++            } catch (Exception e) {
++                log.warn("register model {} failed", modelConfig.getId(), e);
++                Throwable root = e;
++                while (root.getCause() != null && root.getCause() != root) {
++                    root = root.getCause();
++                }
++                result.put("status", "failed");
++                result.put("error", root.getMessage());
++            }
++            results.add(result);
++        }
++        return results;
++    }
++
++    private void removeModel(String modelCode) {
++        remove(new LambdaQueryWrapper<ChatModelInfo>().eq(ChatModelInfo::getCode, modelCode));
++        chatModelSchemaService.remove(new LambdaQueryWrapper<ChatModelSchema>().eq(ChatModelSchema::getModelCode, modelCode));
++    }
++
+     public List<TableColumn> getModelSchema(DataAgentModelConfig modelConfig) throws SQLException {
+         if ("table".equalsIgnoreCase(modelConfig.getType())) {
+             return getTableSchema(modelConfig);
+diff --git a/genie-backend/src/main/java/com/jd/genie/service/DataAgentService.java b/genie-backend/src/main/java/com/jd/genie/service/DataAgentService.java
+index e310375..e368d89 100644
+--- a/genie-backend/src/main/java/com/jd/genie/service/DataAgentService.java
++++ b/genie-backend/src/main/java/com/jd/genie/service/DataAgentService.java
+@@ -66,6 +66,16 @@ public class DataAgentService {
+         return baseNl2SqlReq;
+     }
+ 
++    /** ELT-Bench: apiChatQueryData for the nl2sql_query tool; a failure is thrown with its cause instead of returning an empty list. */
++    public List<ChatQueryData> apiChatQueryDataOrThrow(DataAgentChatReq req) throws Exception {
++        NL2SQLReq baseNl2SqlReq = getBaseNl2SqlReq(req.getContent());
++        baseNl2SqlReq.setRequestId(UUID.randomUUID().toString());
++        baseNl2SqlReq.setTraceId(req.getTraceId());
++        enrichNl2Sql(baseNl2SqlReq);
++        baseNl2SqlReq.setDbType(dataAgentConfig.getDbConfig().getType());
++        return nl2SqlService.runNL2SQLSync(baseNl2SqlReq);
++    }
++
+     public List<ChatQueryData> apiChatQueryData(DataAgentChatReq req) {
+         long start = System.currentTimeMillis();
+         NL2SQLReq baseNl2SqlReq = getBaseNl2SqlReq(req.getContent());
+diff --git a/genie-backend/src/main/java/com/jd/genie/service/Nl2SqlService.java b/genie-backend/src/main/java/com/jd/genie/service/Nl2SqlService.java
+index d1d9dbd..1f564d1 100644
+--- a/genie-backend/src/main/java/com/jd/genie/service/Nl2SqlService.java
++++ b/genie-backend/src/main/java/com/jd/genie/service/Nl2SqlService.java
+@@ -1,5 +1,6 @@
+ package com.jd.genie.service;
+ 
++import java.util.ArrayList;
+ import com.alibaba.fastjson.JSONObject;
+ import com.jd.genie.agent.util.OkHttpUtil;
+ import com.jd.genie.config.data.DataAgentConfig;
+@@ -127,19 +128,35 @@ public class Nl2SqlService {
+         List<ChatModelInfoDto> schemaInfo = request.getSchemaInfo();
+         Map<String, ChatModelInfoDto> modelMap = schemaInfo.stream().collect(Collectors.toMap(ChatModelInfoDto::getModelCode, v -> v));
+         for (NL2SQLResult.NL2SQLData nl2SQLData : data) {
+-            SqlModel sqlModel = SqlParserUtils.parseSelectSql(nl2SQLData.getNl2sql(), dataAgentConfig.getDbConfig().getType());
+-            String modelCode = sqlModel.getFromTable().getTableName();
+-            ChatModelInfoDto modelInfo = modelMap.get(modelCode);
+-            if (modelInfo == null) {
+-                throw new RuntimeException("modelCode:" + modelCode + "不存在");
+-            }
+-            Map<String, ChatSchemaDto> columnMap = modelInfo.getSchemaList().stream().collect(Collectors.toMap(ChatSchemaDto::getColumnId, t -> t));
+-            List<ChatQueryColumn> chatQueryColumns = parseColumns(sqlModel, columnMap);
+-            List<ChatQueryFilter> chatQueryFilters = parseFilters(sqlModel, columnMap);
+-            String tableName = getTableName(modelInfo);
++            // ELT-Bench: SQL may join several models. A single-model query keeps the original column/filter parsing;
++            // for a join (or SQL the parser cannot read) the columns come from the result, and every model code is
++            // replaced by its own table.
++            List<ChatQueryColumn> chatQueryColumns = new ArrayList<>();
++            List<ChatQueryFilter> chatQueryFilters = new ArrayList<>();
+             String realSql = nl2SQLData.getNl2sql();
+-            for (String key : modelMap.keySet()) {
+-                realSql = realSql.replaceAll(key + "|`" + key + "`", tableName);
++            try {
++                SqlModel sqlModel = SqlParserUtils.parseSelectSql(realSql, dataAgentConfig.getDbConfig().getType());
++                ChatModelInfoDto modelInfo = modelMap.get(sqlModel.getFromTable().getTableName());
++                if (modelInfo != null) {
++                    Map<String, ChatSchemaDto> columnMap = modelInfo.getSchemaList().stream().collect(Collectors.toMap(ChatSchemaDto::getColumnId, t -> t));
++                    chatQueryColumns = parseColumns(sqlModel, columnMap);
++                    chatQueryFilters = parseFilters(sqlModel, columnMap);
++                }
++            } catch (Exception e) {
++                log.info("{},{} sql not parsed as a single-model query ({}), columns are taken from the result",
++                        request.getTraceId(), request.getRequestId(), e.getMessage());
++            }
++            boolean usesModel = false;
++            for (Map.Entry<String, ChatModelInfoDto> model : modelMap.entrySet()) {
++                Pattern code = Pattern.compile("`" + Pattern.quote(model.getKey()) + "`|\\b" + Pattern.quote(model.getKey()) + "\\b");
++                Matcher matcher = code.matcher(realSql);
++                if (matcher.find()) {
++                    usesModel = true;
++                    realSql = matcher.replaceAll(Matcher.quoteReplacement(getTableName(model.getValue())));
++                }
++            }
++            if (!usesModel) {
++                throw new RuntimeException("sql uses no registered model: " + nl2SQLData.getNl2sql());
+             }
+             log.info("{},{} 执行sql:{}", request.getTraceId(), request.getRequestId(), realSql);
+             JdbcQueryRequest jdbcQueryRequest = new JdbcQueryRequest();
+diff --git a/genie-backend/src/main/java/com/jd/genie/util/JdbcUtils.java b/genie-backend/src/main/java/com/jd/genie/util/JdbcUtils.java
+index 4282820..f8fe3c1 100644
+--- a/genie-backend/src/main/java/com/jd/genie/util/JdbcUtils.java
++++ b/genie-backend/src/main/java/com/jd/genie/util/JdbcUtils.java
+@@ -1,5 +1,7 @@
+ package com.jd.genie.util;
+ 
++import org.apache.commons.lang3.StringUtils;
++
+ import com.jd.genie.config.data.DbConfig;
+ import com.jd.genie.data.jdbc.JdbcConnectionConfig;
+ import com.jd.genie.data.jdbc.dialect.DialectEnum;
+@@ -8,7 +10,8 @@ public class JdbcUtils {
+ 
+     public static JdbcConnectionConfig parseJdbcConnectionConfig(DbConfig dbConfig) {
+         JdbcConnectionConfig jdbcConnectionConfig = new JdbcConnectionConfig();
+-        jdbcConnectionConfig.setUrl(createJdbcUrl(dbConfig.getType(), dbConfig.getHost(), dbConfig.getPort(), dbConfig.getSchema()));
++        jdbcConnectionConfig.setUrl(StringUtils.isNotBlank(dbConfig.getUrl()) ? dbConfig.getUrl()
++                : createJdbcUrl(dbConfig.getType(), dbConfig.getHost(), dbConfig.getPort(), dbConfig.getSchema()));
+         jdbcConnectionConfig.setKey(dbConfig.getKey());
+         jdbcConnectionConfig.setUserName(dbConfig.getUsername());
+         jdbcConnectionConfig.setPassword(dbConfig.getPassword());
+diff --git a/genie-backend/src/main/resources/application.yml b/genie-backend/src/main/resources/application.yml
+index 3be3c3c..a99f3de 100644
+--- a/genie-backend/src/main/resources/application.yml
++++ b/genie-backend/src/main/resources/application.yml
+@@ -55,7 +55,7 @@ llm:
+ autobots:
+   autoagent:
+     planner:
+-      system_prompt: '{"default":"\n# 角色\n你是一个智能助手，名叫Genie。\n\n# 说明\n你是任务规划助手，根据用户需求，拆解任务列表，从而确定planning工具入参。每次执行planning工具前，必须先输出本轮思考过程（reasoning），再调用planning工具生成任务列表。\n\n# 技能\n- 擅长将用户任务拆解为具体、独立的任务列表。\n- 对简单任务，避免过度拆解任务。\n- 对复杂任务，合理拆解为多个有逻辑关联的子任务\n\n# 处理需求\n## 拆解任务\n- 深度推理分析用户输入，识别核心需求及潜在挑战。\n- 将复杂问题分解为可管理、可执行、独立且清晰的子任务，任务之间不重复、不交叠。拆解最多不超过5个任务。\n- 任务按顺序或因果逻辑组织，上下任务逻辑连贯。\n- 读取文件后，对文件进行处理，处理完成保存文件应该放到一个子任务中。\n\n## 要求\n- 每一个子任务都是一个完整的子任务，例如读取文件后，将文件中的表格抽取出出来形成表格保存。\n- 调用planning工具前，必须输出500字以内的思考过程，说明本轮任务拆解的依据与目标。\n- 首次规划拆分时，输出整体拆分思路；后续如需调整，也需输出调整思考。\n- 每个子任务为清晰、独立的指令，细化完成标准，不重复、不交叠。\n- 不要输出重复的任务。\n- 任务中间不能输出网页版报告，只能在最后一个任务中，生成一个网页版报告。\n- 最后一个任务是需要输出报告时，如果没有明确要求，优先“输出网页版报告”，如果有指定格式要求，最后一个任务按用户指定的格式输出。\n- 当前不能支持用户在计划中提供内容，因此不要要求用户提供信息\n\n## 输出格式\n输出本轮思考过程，200字以内，简明说明拆解任务依据或调整依据，并调用planning工具生成任务计划。\n\n# 语言设置\n- 所有内容均以 **中文** 输出\n\n{{sopPrompt}}\n\n===\n# 环境变量\n## 当前日期\n<date>\n{{date}}\n</date>\n\n## 当前可用的文件名及描述\n<files>\n{{files}} \n</files>\n\n## 用户历史对话信息\n<history_dialogue>\n{{history_dialogue}}\n</history_dialogue>\n\n## 约束\n- 思考过程中，不要透露你的工具名称\n- 调用planning生成任务列表，完成所有子任务就能完成任务。\n- 以上是你需要遵循的指令，不要输出在结果中。\n\nLet''s think step by step (让我们一步步思考)\n"}'
++      system_prompt: '{"default":"\n# 角色\n你是一个智能助手，名叫Genie。\n\n# 说明\n你是任务规划助手，根据用户需求，拆解任务列表，从而确定planning工具入参。每次执行planning工具前，必须先输出本轮思考过程（reasoning），再调用planning工具生成任务列表。\n\n# 技能\n- 擅长将用户任务拆解为具体、独立的任务列表。\n- 对简单任务，避免过度拆解任务。\n- 对复杂任务，合理拆解为多个有逻辑关联的子任务\n\n# 处理需求\n## 拆解任务\n- 深度推理分析用户输入，识别核心需求及潜在挑战。\n- 将复杂问题分解为可管理、可执行、独立且清晰的子任务，任务之间不重复、不交叠。拆解最多不超过5个任务。\n- 任务按顺序或因果逻辑组织，上下任务逻辑连贯。\n- 读取文件后，对文件进行处理，处理完成保存文件应该放到一个子任务中。\n\n## 要求\n- 每一个子任务都是一个完整的子任务，例如读取文件后，将文件中的表格抽取出出来形成表格保存。\n- 调用planning工具前，必须输出500字以内的思考过程，说明本轮任务拆解的依据与目标。\n- 首次规划拆分时，输出整体拆分思路；后续如需调整，也需输出调整思考。\n- 每个子任务为清晰、独立的指令，细化完成标准，不重复、不交叠。\n- 不要输出重复的任务。\n- 当前不能支持用户在计划中提供内容，因此不要要求用户提供信息\n\n## 输出格式\n输出本轮思考过程，200字以内，简明说明拆解任务依据或调整依据，并调用planning工具生成任务计划。\n\n# 语言设置\n- 所有内容均以 **中文** 输出\n\n{{sopPrompt}}\n\n===\n# 环境变量\n## 当前日期\n<date>\n{{date}}\n</date>\n\n## 当前可用的文件名及描述\n<files>\n{{files}} \n</files>\n\n## 用户历史对话信息\n<history_dialogue>\n{{history_dialogue}}\n</history_dialogue>\n\n## 约束\n- 思考过程中，不要透露你的工具名称\n- 调用planning生成任务列表，完成所有子任务就能完成任务。\n- 以上是你需要遵循的指令，不要输出在结果中。\n\nLet''s think step by step (让我们一步步思考)\n"}'
+       next_step_prompt: '{"default":"工具planing的参数有\n必填参数1：命令command\n可选参数2：当前步状态step_status。\n\n必填参数1：命令command的枚举值有：\n''mark_step'', ''finish''\n含义如下：\n- ''finish'' 根据已有的执行结果，可以判断出任务已经完成，输出任务结束，命令command为：finish\n- ''mark_step'' 标记当前任务规划的状态，设置当前任务的step_status\n\n当参数command值为mark_step时，需要可选参数2step_status，其中当前步状态step_status的枚举值如下：\n- 没有开始''not_started''\n- 进行中''in_progress'' \n- 已完成''completed''\n\n对应如下几种情况：\n1.当前任务是否执行完成，完成以及失败都算执行完成，执行完成将入参step_status设置为`completed`\n\n一步一步分析完成任务，确定工具planing的入参，调用planing工具"}'
+       max_steps: 40
+       model_name: gpt-4.1
+diff --git a/genie-client/app/header.py b/genie-client/app/header.py
+index b2dbf56..d8470b2 100644
+--- a/genie-client/app/header.py
++++ b/genie-client/app/header.py
+@@ -1,3 +1,5 @@
++import os
++
+ from starlette.datastructures import Headers
+ from typing import Optional
+ 
+@@ -14,7 +16,8 @@ class HeaderEntity:
+ 
+     # 默认配置常量
+     DEFAULT_TIMEOUT = 5
+-    DEFAULT_SSE_READ_TIMEOUT = 60 * 5  # 5分钟
++    # ELT-Bench: configurable via GENIE_MCP_SSE_READ_TIMEOUT (seconds); commands run by MCP tools can take longer.
++    DEFAULT_SSE_READ_TIMEOUT = int(os.getenv("GENIE_MCP_SSE_READ_TIMEOUT", str(60 * 5)))  # 5分钟
+     MAX_TIMEOUT_MINUTES = 15
+     TIMEOUT_MULTIPLIER = 60
+ 
+diff --git a/genie-tool/genie_tool/prompt/nl2sql.yaml b/genie-tool/genie_tool/prompt/nl2sql.yaml
+index 32bc848..da8e876 100644
+--- a/genie-tool/genie_tool/prompt/nl2sql.yaml
++++ b/genie-tool/genie_tool/prompt/nl2sql.yaml
+@@ -97,7 +97,7 @@ nl2sql_prompt: |-
+   # 输出
+   1.用户问题拆解query之间使用@@@分割，每个拆解后的问题和sql之间使用###分割，一个子问题只能有一个sql
+   形如：问题1###sql1@@@问题2###sql2
+-  - 问题1对应的sql1仅能使用「表信息以及相关字段信息」中的某一张表，禁止多表之间使用。
++  - 问题1对应的sql1可以使用「表信息以及相关字段信息」中的多张表，需要时使用JOIN关联，关联条件只能基于提供的字段。
+   2.拒绝一切推理、解释、注释、标记（如 ```sql）或任何额外的文本。
+   3.输出 SQL 中表、字段、别名均需要增加``进行标识
+ 
+@@ -115,7 +115,7 @@ nl2sql_prompt: |-
+   {{m_schema_formatted}}
+ 
+   # SQL生成规范
+-  1. 禁止使用JOIN的多表关联
++  1. 允许使用JOIN进行多表关联，关联条件只能基于提供的字段
+   2. 生成的SQL禁止使用字段名称，必须使用字段ID
+   3. 非统计类的查询SQL（如：排序类、明细类），需要对查询的字段使用DISTINCT进行结果去重
+   4. 聚合统计类的查询SQL，需要对聚合或运算字段添加别名，如 SUM(column_id) AS `new_column`
+diff --git a/genie-tool/genie_tool/tool/analysis_component/schema_data.py b/genie-tool/genie_tool/tool/analysis_component/schema_data.py
+index 6a4592a..17e0d1c 100644
+--- a/genie-tool/genie_tool/tool/analysis_component/schema_data.py
++++ b/genie-tool/genie_tool/tool/analysis_component/schema_data.py
+@@ -31,7 +31,10 @@ def get_schema(modelCodeList: List[str], timeout: float = 5, request_id: str = N
+ 
+ 
+ @timer()
+-def get_data(query: str, modelCodeList: List[str], timeout: float = 90, request_id: str = None, **kwargs) -> List:
++def get_data(query: str, modelCodeList: List[str],
++             # ELT-Bench: each call runs NL2SQL (several LLM calls); the 90 s limit is configurable
++             timeout: float = float(os.getenv("GENIE_ANA_DATA_TIMEOUT_SEC", 90)),
++             request_id: str = None, **kwargs) -> List:
+     body = {
+         "traceId": request_id,
+         "content": query,
+diff --git a/genie-tool/genie_tool/tool/auto_analysis.py b/genie-tool/genie_tool/tool/auto_analysis.py
+index 11d1d16..19d4cc6 100644
+--- a/genie-tool/genie_tool/tool/auto_analysis.py
++++ b/genie-tool/genie_tool/tool/auto_analysis.py
+@@ -86,7 +86,9 @@ class AutoAnalysisAgent(object):
+             )
+             
+             insights = await self.analysis(context=context)
+-            file_info = await upload_file(request_id=request_id, content=self.trans_result(task, insights), file_name=f"{task}", file_type ="txt")
++            # ELT-Bench: the task text is the file name; without "/" and cut to 200 bytes it fits the file system
++            file_name = task.replace("/", "_").encode("utf-8")[:200].decode("utf-8", "ignore")
++            file_info = await upload_file(request_id=request_id, content=self.trans_result(task, insights), file_name=f"{file_name}", file_type ="txt")
+             if not isinstance(file_info, list):
+                 file_info = [file_info]
+             result = insights
+diff --git a/genie-tool/genie_tool/tool/nl2sql.py b/genie-tool/genie_tool/tool/nl2sql.py
+index 354b945..1628a46 100644
+--- a/genie-tool/genie_tool/tool/nl2sql.py
++++ b/genie-tool/genie_tool/tool/nl2sql.py
+@@ -124,7 +124,7 @@ class NL2SQLAgent:
+                        use_prompt: str,
+                        **kwargs
+                        ) -> str:
+-        output = [f"\n## 数据表：{table_id}\n如果要使用当前的数据表，只能使用以下的字段，禁止使用其他数据表的字段。该表字段信息的详细描述："]
++        output = [f"\n## 数据表：{table_id}\n如果要使用当前的数据表，只能使用以下的字段；需要其他数据表的字段时，通过JOIN关联对应的数据表。该表字段信息的详细描述："]
+         field_lines = []
+         for column_schema_info in column_schema_lists:
+             field_line = []
+diff --git a/genie-tool/genie_tool/tool/table_rag/table_column_filter.py b/genie-tool/genie_tool/tool/table_rag/table_column_filter.py
+index c499e91..06dde9b 100644
+--- a/genie-tool/genie_tool/tool/table_rag/table_column_filter.py
++++ b/genie-tool/genie_tool/tool/table_rag/table_column_filter.py
+@@ -196,6 +196,9 @@ class ColumnFilterModule:
+         pattern = r'```json\s*([\s\S]*?)\s*```'
+         try:
+             result = re.findall(pattern, result_str)
++            if not result and result_str.strip()[:1] in ("{", "["):
++                # ELT-Bench: the prompt asks for bare JSON without Markdown, which models such as GPT-5.4 return as is
++                return result_str.strip()
+             return result[0]
+         except Exception as e:
+             logger.error(f"生成结果格式不合法:{result_str}，{e}")
+@@ -209,6 +212,7 @@ class ColumnFilterModule:
+             error_msg = None
+             for retry in range(3):
+                 try:
++                    llm_response = ""  # ELT-Bench: one answer per attempt (the original appended every retry's answer)
+                     columns_prompt = self._generate_filter_prompt(table_schema_info, error_msg)
+                     
+                     messages = [
