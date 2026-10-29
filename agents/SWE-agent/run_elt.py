@@ -81,6 +81,18 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         "snowflake; one database (redshift) or catalog (databricks) per run, named "
         "after the experiment).",
     )
+    parser.add_argument(
+        "--completion-kwargs",
+        help="JSON passed to litellm.completion via --agent.model.completion_kwargs, e.g. "
+        '\'{"_skip_responses_api_bridge": true}\' for GPT-5.4 (newer litellm bridges it to the '
+        "Responses API and drops tool calls that come with text).",
+    )
+    parser.add_argument(
+        "--execution-timeout",
+        type=int,
+        help="Per-command timeout in seconds (SWE-agent default 30). Values above 300 run "
+        "sweagent through sweagent_long_commands.py, which lifts aiohttp's 300 s client limit.",
+    )
     parser.add_argument("--only", default="", help="Comma-separated task names.")
     parser.add_argument("--limit", type=int, default=100)
     parser.add_argument("--overwrite", action="store_true")
@@ -137,8 +149,11 @@ def main(argv: list[str] | None = None) -> int:
                 copy_task_input(task_input, workspace)
                 if database:
                     set_task_namespace(workspace / "config.yaml", args.destination, task, database)
+                launcher = ["sweagent"]
+                if args.execution_timeout and args.execution_timeout > 300:
+                    launcher = [sys.executable, str(SWE_ROOT / "sweagent_long_commands.py")]
                 command = [
-                    "sweagent",
+                    *launcher,
                     "run",
                     f"--env.repo.path={workspace}",
                     "--config",
@@ -149,7 +164,11 @@ def main(argv: list[str] | None = None) -> int:
                     "--agent.model.name",
                     args.model,
                 ]
-                print(f"RUN {task}: {' '.join(command)}")
+                if args.completion_kwargs:
+                    command += ["--agent.model.completion_kwargs", args.completion_kwargs]
+                if args.execution_timeout:
+                    command += ["--agent.tools.execution_timeout", str(args.execution_timeout)]
+                print(f"RUN {task}: {' '.join(command)}", flush=True)
                 if args.dry_run:
                     continue
 
