@@ -8,6 +8,7 @@ models:
         description: Display name of the user.
       - name: creation_date
         description: Date when the user was created.
+        format: YYYY-MM-DD HH:MM:SS
       - name: num_badges
         description: Number of badges the user has earned, replace NULL values with 0.
       - name: num_comments
@@ -27,6 +28,7 @@ models:
         description: Number of times the post has been viewed.
       - name: creation_date
         description: Date when the post was created.
+        format: YYYY-MM-DD HH:MM:SS
       - name: num_unique_users_commented
         description: Number of unique users who have commented on the post, replace NULL values with 0.
       - name: has_views_above_average
