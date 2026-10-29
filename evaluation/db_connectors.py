@@ -212,10 +212,15 @@ class RedshiftConnector(BaseConnector):
             config["user"] = self.config["username"]
         try:
             import redshift_connector
-            return redshift_connector.connect(**config)
+            conn = redshift_connector.connect(**config)
         except ImportError:
             import psycopg2
-            return psycopg2.connect(**config)
+            conn = psycopg2.connect(**config)
+        # One transaction per statement: without autocommit a single failing
+        # query (e.g. a model the agent never built) aborts the transaction
+        # and every later query on this connection fails with SQLSTATE 25P02.
+        conn.autocommit = True
+        return conn
 
     def _quote(self, ident: str) -> str:
         return f'"{ident.lower()}"'
