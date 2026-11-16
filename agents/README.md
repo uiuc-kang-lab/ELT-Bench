@@ -34,7 +34,7 @@ docker build -t elt-swe agents/SWE-agent/docker/elt-swe
 OpenHands needs its agent server in the same image:
 
 ```bash
-docker build -t elt-swe agents/openhands/elt-swe-openhands
+docker build -t elt-swe-openhands agents/openhands/elt-swe-openhands
 ```
 
 By default, each destination uses its generated input and benchmark folders:
