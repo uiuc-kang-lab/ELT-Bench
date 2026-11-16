@@ -1,0 +1,434 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "const": 1
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "task_id": {
+          "type": "string"
+        },
+        "agent": {
+          "type": "string"
+        },
+        "snapshot_id": {
+          "type": "string"
+        },
+        "warehouses": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "snowflake",
+              "databricks",
+              "redshift"
+            ]
+          }
+        },
+        "target_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "task_id",
+        "agent",
+        "snapshot_id",
+        "warehouses",
+        "target_id"
+      ],
+      "additionalProperties": false
+    },
+    "review_status": {
+      "type": "string",
+      "enum": [
+        "complete",
+        "incomplete",
+        "insufficient_evidence"
+      ]
+    },
+    "sites": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/site"
+      }
+    },
+    "coverage": {
+      "type": "object",
+      "properties": {
+        "reviewed_models": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "warehouse": {
+                "type": "string",
+                "enum": [
+                  "snowflake",
+                  "databricks",
+                  "redshift"
+                ]
+              },
+              "model_id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "warehouse",
+              "model_id"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "reviewed_artifact_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "scope_note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "reviewed_models",
+        "reviewed_artifact_ids",
+        "scope_note"
+      ],
+      "additionalProperties": false
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "exclusions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "warehouse": {
+            "type": "string",
+            "enum": [
+              "snowflake",
+              "databricks",
+              "redshift"
+            ]
+          },
+          "model_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "numeric_identifier",
+              "null_ordering",
+              "integer_avg",
+              "division_precision",
+              "time_units",
+              "trailing_spaces"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/evidence"
+            }
+          }
+        },
+        "required": [
+          "warehouse",
+          "model_id",
+          "category",
+          "reason",
+          "evidence"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "propagated_failures": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/propagated_failure"
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "metadata",
+    "review_status",
+    "sites",
+    "propagated_failures",
+    "coverage",
+    "limitations",
+    "exclusions"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "evidence": {
+      "type": "object",
+      "properties": {
+        "artifact_id": {
+          "type": "string"
+        },
+        "line_start": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "line_end": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "quote": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "artifact_id",
+        "line_start",
+        "line_end",
+        "quote"
+      ],
+      "additionalProperties": false
+    },
+    "replay": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "none",
+            "analyst_replay",
+            "agent_historical_repair",
+            "counterfactual_probe"
+          ]
+        },
+        "corrected_sql": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/evidence"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "result_evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence"
+          }
+        },
+        "baseline_reproduced": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "fixed_columns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "model_pass_after": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "single_site": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "kind",
+        "corrected_sql",
+        "result_evidence",
+        "baseline_reproduced",
+        "fixed_columns",
+        "model_pass_after",
+        "single_site"
+      ],
+      "additionalProperties": false
+    },
+    "site": {
+      "type": "object",
+      "properties": {
+        "site_id": {
+          "type": "string"
+        },
+        "warehouse": {
+          "type": "string",
+          "enum": [
+            "snowflake",
+            "databricks",
+            "redshift"
+          ]
+        },
+        "model_id": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "numeric_identifier",
+            "null_ordering",
+            "integer_avg",
+            "division_precision",
+            "time_units",
+            "trailing_spaces"
+          ]
+        },
+        "expression": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sql_evidence": {
+          "$ref": "#/$defs/evidence"
+        },
+        "handling": {
+          "type": "string",
+          "enum": [
+            "correct",
+            "insufficient",
+            "unhandled"
+          ]
+        },
+        "inclusion": {
+          "type": "string",
+          "enum": [
+            "counted",
+            "uncertain",
+            "excluded"
+          ]
+        },
+        "native_correct": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "trigger_status": {
+          "type": "string",
+          "enum": [
+            "observed_actual",
+            "verified_counterfactual",
+            "not_verified"
+          ]
+        },
+        "trigger_evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence"
+          }
+        },
+        "supporting_evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence"
+          }
+        },
+        "replay": {
+          "$ref": "#/$defs/replay"
+        },
+        "affected_models": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "failure_attributed": {
+          "type": "boolean"
+        },
+        "reason": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "site_id",
+        "warehouse",
+        "model_id",
+        "category",
+        "expression",
+        "sql_evidence",
+        "handling",
+        "inclusion",
+        "native_correct",
+        "trigger_status",
+        "trigger_evidence",
+        "supporting_evidence",
+        "replay",
+        "affected_models",
+        "failure_attributed",
+        "reason"
+      ],
+      "additionalProperties": false
+    },
+    "propagated_failure": {
+      "type": "object",
+      "properties": {
+        "warehouse": {
+          "type": "string",
+          "enum": [
+            "snowflake",
+            "databricks",
+            "redshift"
+          ]
+        },
+        "model_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "numeric_identifier",
+            "null_ordering",
+            "integer_avg",
+            "division_precision",
+            "time_units",
+            "trailing_spaces"
+          ]
+        },
+        "source_site_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "replay": {
+          "$ref": "#/$defs/replay"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "warehouse",
+        "model_id",
+        "category",
+        "source_site_ids",
+        "replay",
+        "reason"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

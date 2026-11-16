@@ -1,0 +1,3508 @@
+{
+  "cohort_version": "elt-recovery-selected-500-v1",
+  "trajectory_count": 500,
+  "source_paths_relative_to": "repository root",
+  "raw_trajectories_included": false,
+  "trajectories": [
+    {
+      "trajectory_id": "glm_snowflake__address__d90071887d63",
+      "group": "glm_snowflake",
+      "task": "address",
+      "source": "data/glm_snowflake/address/result.json",
+      "source_sha256": "d90071887d63966081794a2c7874968cdbdb44b674eff0a34aaa152bcb1f5264"
+    },
+    {
+      "trajectory_id": "glm_snowflake__airline__f5d4a841af7b",
+      "group": "glm_snowflake",
+      "task": "airline",
+      "source": "data/glm_snowflake/airline/result.json",
+      "source_sha256": "f5d4a841af7b4320772b988c1177b6c326a5e9eee61d63e49cbfc1083ce7747f"
+    },
+    {
+      "trajectory_id": "glm_snowflake__amplitude__3fb205188999",
+      "group": "glm_snowflake",
+      "task": "amplitude",
+      "source": "data/glm_snowflake/amplitude/result.json",
+      "source_sha256": "3fb20518899919d3b7d9dd931edbb0bbb86d8497bd384073881e800daabcb076"
+    },
+    {
+      "trajectory_id": "glm_snowflake__app_store__20af0263095f",
+      "group": "glm_snowflake",
+      "task": "app_store",
+      "source": "data/glm_snowflake/app_store/result.json",
+      "source_sha256": "20af0263095fd0a8fb5a33fe2d12257b8ce2d55d3d6352ccb51b878ddd3e7627"
+    },
+    {
+      "trajectory_id": "glm_snowflake__apple_store__a49e189f3b3a",
+      "group": "glm_snowflake",
+      "task": "apple_store",
+      "source": "data/glm_snowflake/apple_store/result.json",
+      "source_sha256": "a49e189f3b3a5b8ec21fa346aa9cc08b8ab32372eddb097ac5cc1b1b736fcad8"
+    },
+    {
+      "trajectory_id": "glm_snowflake__asana__6dd0a2069e0c",
+      "group": "glm_snowflake",
+      "task": "asana",
+      "source": "data/glm_snowflake/asana/result.json",
+      "source_sha256": "6dd0a2069e0c915e3c405cc9f5b6df28fffc046d5038134c738b6301a9778232"
+    },
+    {
+      "trajectory_id": "glm_snowflake__authors__e113906cf50f",
+      "group": "glm_snowflake",
+      "task": "authors",
+      "source": "data/glm_snowflake/authors/result.json",
+      "source_sha256": "e113906cf50fb53032b74bdb72e96d16d4d563dfbaafab3c7d5cb4f6ecdb2952"
+    },
+    {
+      "trajectory_id": "glm_snowflake__beer_factory__54dbdd7293dd",
+      "group": "glm_snowflake",
+      "task": "beer_factory",
+      "source": "data/glm_snowflake/beer_factory/result.json",
+      "source_sha256": "54dbdd7293dde2e2d4adfad9acdcbe3d8141aa39875d9d0d144f4231b71161b6"
+    },
+    {
+      "trajectory_id": "glm_snowflake__bike_share_1__975de91b34d8",
+      "group": "glm_snowflake",
+      "task": "bike_share_1",
+      "source": "data/glm_snowflake/bike_share_1/result.json",
+      "source_sha256": "975de91b34d8280a1284a0f59397132fa7c764ec14064821a203bf94dcbe616a"
+    },
+    {
+      "trajectory_id": "glm_snowflake__book_publishing_company__8d1e5abf7cb1",
+      "group": "glm_snowflake",
+      "task": "book_publishing_company",
+      "source": "data/glm_snowflake/book_publishing_company/result.json",
+      "source_sha256": "8d1e5abf7cb1d47ba4b289f33e6e67adba9bbacaa9e116c0d4fb5da24cc0fe33"
+    },
+    {
+      "trajectory_id": "glm_snowflake__books__e030100f68a8",
+      "group": "glm_snowflake",
+      "task": "books",
+      "source": "data/glm_snowflake/books/result.json",
+      "source_sha256": "e030100f68a8fc5c3e67558ce67a910036a24c27fff6603d4558c802bf30a884"
+    },
+    {
+      "trajectory_id": "glm_snowflake__california_schools__188c98536f8f",
+      "group": "glm_snowflake",
+      "task": "california_schools",
+      "source": "data/glm_snowflake/california_schools/result.json",
+      "source_sha256": "188c98536f8f7a470e20f6e700ee8c50bbf87cd0e9f179472af76b7f299253b9"
+    },
+    {
+      "trajectory_id": "glm_snowflake__car_retails__7e8afb0ee756",
+      "group": "glm_snowflake",
+      "task": "car_retails",
+      "source": "data/glm_snowflake/car_retails/result.json",
+      "source_sha256": "7e8afb0ee75649254d4a9faf707b4a267cbb808442d73854c9db33d8cd9938c6"
+    },
+    {
+      "trajectory_id": "glm_snowflake__card_games__3993ce5daeb5",
+      "group": "glm_snowflake",
+      "task": "card_games",
+      "source": "data/glm_snowflake/card_games/result.json",
+      "source_sha256": "3993ce5daeb5fc48ccec271645291e9604fe8178d42121ac6f097dcb117f43d2"
+    },
+    {
+      "trajectory_id": "glm_snowflake__cars__2c2da51eb85a",
+      "group": "glm_snowflake",
+      "task": "cars",
+      "source": "data/glm_snowflake/cars/result.json",
+      "source_sha256": "2c2da51eb85adfabf58fbdf778bec081e45aef2554600452db4e6a971e128b13"
+    },
+    {
+      "trajectory_id": "glm_snowflake__chicago_crime__9f8d1ede8fd5",
+      "group": "glm_snowflake",
+      "task": "chicago_crime",
+      "source": "data/glm_snowflake/chicago_crime/result.json",
+      "source_sha256": "9f8d1ede8fd5871c81356ab5c976d723543fe9b829ef282cdc6be2fd6ebe2bb2"
+    },
+    {
+      "trajectory_id": "glm_snowflake__citeseer__f3b4bb2524e2",
+      "group": "glm_snowflake",
+      "task": "citeseer",
+      "source": "data/glm_snowflake/citeseer/result.json",
+      "source_sha256": "f3b4bb2524e242b03d12718cf9dd6b0a4d9a065be9f34e6a4c9f8fedd2a0b188"
+    },
+    {
+      "trajectory_id": "glm_snowflake__codebase_comments__684443687aa4",
+      "group": "glm_snowflake",
+      "task": "codebase_comments",
+      "source": "data/glm_snowflake/codebase_comments/result.json",
+      "source_sha256": "684443687aa4b3239a2fb1548a46c9dfaddd2a5e276caf180ab8e08f04db0694"
+    },
+    {
+      "trajectory_id": "glm_snowflake__codebase_community__da52da08662e",
+      "group": "glm_snowflake",
+      "task": "codebase_community",
+      "source": "data/glm_snowflake/codebase_community/result.json",
+      "source_sha256": "da52da08662ef9d93543dd9d81b1e150d53dd7d33ebf1e595ffcc1501de04b63"
+    },
+    {
+      "trajectory_id": "glm_snowflake__coinmarketcap__be987a96163b",
+      "group": "glm_snowflake",
+      "task": "coinmarketcap",
+      "source": "data/glm_snowflake/coinmarketcap/result.json",
+      "source_sha256": "be987a96163b39cf87a112e331533b8f50e6317b915223dc1f00b197772af0ff"
+    },
+    {
+      "trajectory_id": "glm_snowflake__college_completion__9581f3a37215",
+      "group": "glm_snowflake",
+      "task": "college_completion",
+      "source": "data/glm_snowflake/college_completion/result.json",
+      "source_sha256": "9581f3a3721501fdc0b34d7229dc1de365aa84c1db211359e70b92d01527f326"
+    },
+    {
+      "trajectory_id": "glm_snowflake__computer_student__0c93def5c1a3",
+      "group": "glm_snowflake",
+      "task": "computer_student",
+      "source": "data/glm_snowflake/computer_student/result.json",
+      "source_sha256": "0c93def5c1a39d2a3653eb46786425a40e9a68ec4838c2e4f19db3e0890cd1a6"
+    },
+    {
+      "trajectory_id": "glm_snowflake__cookbook__c33a30f23b86",
+      "group": "glm_snowflake",
+      "task": "cookbook",
+      "source": "data/glm_snowflake/cookbook/result.json",
+      "source_sha256": "c33a30f23b869286c6cd431b13c920069ed0c54c2ef51e1b06dc5b2bc87f57b9"
+    },
+    {
+      "trajectory_id": "glm_snowflake__cs_semester__5c2a5d224bf6",
+      "group": "glm_snowflake",
+      "task": "cs_semester",
+      "source": "data/glm_snowflake/cs_semester/result.json",
+      "source_sha256": "5c2a5d224bf68cc0efcb1f8bb41f384ec77c46e3ed4c55f77904e65a1b66795e"
+    },
+    {
+      "trajectory_id": "glm_snowflake__debit_card_specializing__4e0d24891bf6",
+      "group": "glm_snowflake",
+      "task": "debit_card_specializing",
+      "source": "data/glm_snowflake/debit_card_specializing/result.json",
+      "source_sha256": "4e0d24891bf6509b3c31a855d7f06fbd6214c03b7182ec37c42ae185cd148e29"
+    },
+    {
+      "trajectory_id": "glm_snowflake__disney__d644d8f99370",
+      "group": "glm_snowflake",
+      "task": "disney",
+      "source": "data/glm_snowflake/disney/result.json",
+      "source_sha256": "d644d8f99370c27e5ac88e213858e2e809b6a7930308114e41c25100f293578c"
+    },
+    {
+      "trajectory_id": "glm_snowflake__donor__643b356234a1",
+      "group": "glm_snowflake",
+      "task": "donor",
+      "source": "data/glm_snowflake/donor/result.json",
+      "source_sha256": "643b356234a16bcb748725915ff98d19b9e09a5a40b5ff61458a9cf39048572e"
+    },
+    {
+      "trajectory_id": "glm_snowflake__european_football_1__9bffa1cf2de9",
+      "group": "glm_snowflake",
+      "task": "european_football_1",
+      "source": "data/glm_snowflake/european_football_1/result.json",
+      "source_sha256": "9bffa1cf2de91b93e207393cc59f1189b363c995458ead31a1610b81a934a28c"
+    },
+    {
+      "trajectory_id": "glm_snowflake__european_football_2__414b4d9d0c92",
+      "group": "glm_snowflake",
+      "task": "european_football_2",
+      "source": "data/glm_snowflake/european_football_2/result.json",
+      "source_sha256": "414b4d9d0c9297a11d145e5fd6a65211728c1a6b02864779e534b0f84446f562"
+    },
+    {
+      "trajectory_id": "glm_snowflake__facebook_ads__1bbb050b6e08",
+      "group": "glm_snowflake",
+      "task": "facebook_ads",
+      "source": "data/glm_snowflake/facebook_ads/result.json",
+      "source_sha256": "1bbb050b6e084e52039ef2ef93bc1c7f5c7247097226a08e495db591d0d85af3"
+    },
+    {
+      "trajectory_id": "glm_snowflake__financial__d89f0080ed42",
+      "group": "glm_snowflake",
+      "task": "financial",
+      "source": "data/glm_snowflake/financial/result.json",
+      "source_sha256": "d89f0080ed42933fd8e60a49f2232680d12acab8e86514dfba024784969de6af"
+    },
+    {
+      "trajectory_id": "glm_snowflake__food_inspection_2__1d90ba358017",
+      "group": "glm_snowflake",
+      "task": "food_inspection_2",
+      "source": "data/glm_snowflake/food_inspection_2/result.json",
+      "source_sha256": "1d90ba35801703ec175210438d83bd3ff54398d57e9844220031b3194dd20c90"
+    },
+    {
+      "trajectory_id": "glm_snowflake__food_inspection__af17ca410701",
+      "group": "glm_snowflake",
+      "task": "food_inspection",
+      "source": "data/glm_snowflake/food_inspection/result.json",
+      "source_sha256": "af17ca410701837db1d30c5ad5c12f88029b45a391f1cc105ed9595aa67c2dbc"
+    },
+    {
+      "trajectory_id": "glm_snowflake__formula_1__f95a56b39617",
+      "group": "glm_snowflake",
+      "task": "formula_1",
+      "source": "data/glm_snowflake/formula_1/result.json",
+      "source_sha256": "f95a56b39617b3fa23395c619f8fc1982e46477c813f24250b30e1beb56874af"
+    },
+    {
+      "trajectory_id": "glm_snowflake__genes__564e9f6043e3",
+      "group": "glm_snowflake",
+      "task": "genes",
+      "source": "data/glm_snowflake/genes/result.json",
+      "source_sha256": "564e9f6043e3952fabaee8411540458459aac69d86c6f9bd3a2795c060472ca6"
+    },
+    {
+      "trajectory_id": "glm_snowflake__github__5cd7905e36b7",
+      "group": "glm_snowflake",
+      "task": "github",
+      "source": "data/glm_snowflake/github/result.json",
+      "source_sha256": "5cd7905e36b7a278ce2cfc6b82d00dc95f11b83a2302ea560d75c09692b95456"
+    },
+    {
+      "trajectory_id": "glm_snowflake__hockey__e225e9436c30",
+      "group": "glm_snowflake",
+      "task": "hockey",
+      "source": "data/glm_snowflake/hockey/result.json",
+      "source_sha256": "e225e9436c3061ac006290638aadbe4e240582aebc1e0b8bfd6733207b25dbd6"
+    },
+    {
+      "trajectory_id": "glm_snowflake__human_resources__0ddcc4e738f9",
+      "group": "glm_snowflake",
+      "task": "human_resources",
+      "source": "data/glm_snowflake/human_resources/result.json",
+      "source_sha256": "0ddcc4e738f9bbf5df7c30c8c0a056440647dec26c1373a4b1c429dacf50f429"
+    },
+    {
+      "trajectory_id": "glm_snowflake__ice_hockey_draft__d3570dd99897",
+      "group": "glm_snowflake",
+      "task": "ice_hockey_draft",
+      "source": "data/glm_snowflake/ice_hockey_draft/result.json",
+      "source_sha256": "d3570dd99897a511c03a40ad44fe434a16ab816bac8407b815a0a6bcec355725"
+    },
+    {
+      "trajectory_id": "glm_snowflake__image_and_language__fd72879ea2ab",
+      "group": "glm_snowflake",
+      "task": "image_and_language",
+      "source": "data/glm_snowflake/image_and_language/result.json",
+      "source_sha256": "fd72879ea2ab824c20e1617b00b4a90103455c883cb8f237cbe5e610aff96738"
+    },
+    {
+      "trajectory_id": "glm_snowflake__instagram_business__07b7f74a07ad",
+      "group": "glm_snowflake",
+      "task": "instagram_business",
+      "source": "data/glm_snowflake/instagram_business/result.json",
+      "source_sha256": "07b7f74a07ad0ae9ff798686ce2cd8a61b2ddd84bfab65afdc982b22ef1f4850"
+    },
+    {
+      "trajectory_id": "glm_snowflake__language_corpus__83294d270f35",
+      "group": "glm_snowflake",
+      "task": "language_corpus",
+      "source": "data/glm_snowflake/language_corpus/result.json",
+      "source_sha256": "83294d270f35857cf2856a0584cacedc241798fc4c7e889eb486246bfe8124df"
+    },
+    {
+      "trajectory_id": "glm_snowflake__law_episode__90733179784b",
+      "group": "glm_snowflake",
+      "task": "law_episode",
+      "source": "data/glm_snowflake/law_episode/result.json",
+      "source_sha256": "90733179784b48e4edf6e5f0a73ff6eebeafe2a54714902b917911e6db6b3e1d"
+    },
+    {
+      "trajectory_id": "glm_snowflake__legislator__67a78502fef6",
+      "group": "glm_snowflake",
+      "task": "legislator",
+      "source": "data/glm_snowflake/legislator/result.json",
+      "source_sha256": "67a78502fef628967daaca8edee60a945ebc74bd90fd26d1ef16a0aca9a62b3a"
+    },
+    {
+      "trajectory_id": "glm_snowflake__lever__83cacd3f4f39",
+      "group": "glm_snowflake",
+      "task": "lever",
+      "source": "data/glm_snowflake/lever/result.json",
+      "source_sha256": "83cacd3f4f3907a1631ba74fee3dcc4cd23d195ee8f6bf0fb3d63ace80aa3ca8"
+    },
+    {
+      "trajectory_id": "glm_snowflake__linkedin__ef2d193a3cd3",
+      "group": "glm_snowflake",
+      "task": "linkedin",
+      "source": "data/glm_snowflake/linkedin/result.json",
+      "source_sha256": "ef2d193a3cd3bb60a98a16cb987ba99d6baaecd33c254db1b65113600b040868"
+    },
+    {
+      "trajectory_id": "glm_snowflake__mailchimp__21b31d1014e3",
+      "group": "glm_snowflake",
+      "task": "mailchimp",
+      "source": "data/glm_snowflake/mailchimp/result.json",
+      "source_sha256": "21b31d1014e32527e4e4a51abec4f26ad050631a8e8401be44ad5ffa780fa25a"
+    },
+    {
+      "trajectory_id": "glm_snowflake__marketo__3fad25a5e8f7",
+      "group": "glm_snowflake",
+      "task": "marketo",
+      "source": "data/glm_snowflake/marketo/result.json",
+      "source_sha256": "3fad25a5e8f73e84db937a1cdcce662d2726130444f36056c44425ed75cad235"
+    },
+    {
+      "trajectory_id": "glm_snowflake__mental_health_survey__30cc5e765bca",
+      "group": "glm_snowflake",
+      "task": "mental_health_survey",
+      "source": "data/glm_snowflake/mental_health_survey/result.json",
+      "source_sha256": "30cc5e765bcafbbcaa1dfd7535d36b2d63ea87f61b99745479afac20e3232b90"
+    },
+    {
+      "trajectory_id": "glm_snowflake__menu__4e72ab9bfe39",
+      "group": "glm_snowflake",
+      "task": "menu",
+      "source": "data/glm_snowflake/menu/result.json",
+      "source_sha256": "4e72ab9bfe3971f27bc5ea5d1f82fc16fb85d35e5069722e7d80d993abec55ab"
+    },
+    {
+      "trajectory_id": "glm_snowflake__microsoft_ads__9b93be12c6dc",
+      "group": "glm_snowflake",
+      "task": "microsoft_ads",
+      "source": "data/glm_snowflake/microsoft_ads/result.json",
+      "source_sha256": "9b93be12c6dc42ae3d162a25ea060032da63eae39d3e6441f084d604dd115e68"
+    },
+    {
+      "trajectory_id": "glm_snowflake__mondial_geo__62d7cf3708b2",
+      "group": "glm_snowflake",
+      "task": "mondial_geo",
+      "source": "data/glm_snowflake/mondial_geo/result.json",
+      "source_sha256": "62d7cf3708b2599af3e928a88a7bace0e92884899f109accdc3939df857272a5"
+    },
+    {
+      "trajectory_id": "glm_snowflake__movie_3__65e70d9fd1ce",
+      "group": "glm_snowflake",
+      "task": "movie_3",
+      "source": "data/glm_snowflake/movie_3/result.json",
+      "source_sha256": "65e70d9fd1ce84f1eb9196e3eae2726a6d75d9239302aefa2b2587419756557f"
+    },
+    {
+      "trajectory_id": "glm_snowflake__movie__5f2ae71a26ba",
+      "group": "glm_snowflake",
+      "task": "movie",
+      "source": "data/glm_snowflake/movie/result.json",
+      "source_sha256": "5f2ae71a26ba9059ab70da7fc7df620b74ad5d7212ed1b1c1df5becd560024f9"
+    },
+    {
+      "trajectory_id": "glm_snowflake__movie_platform__50089cdd804d",
+      "group": "glm_snowflake",
+      "task": "movie_platform",
+      "source": "data/glm_snowflake/movie_platform/result.json",
+      "source_sha256": "50089cdd804d73f4aab17707d284efbca2afc84d2df14473dbaa5eecde6966d5"
+    },
+    {
+      "trajectory_id": "glm_snowflake__movielens__24481822e23e",
+      "group": "glm_snowflake",
+      "task": "movielens",
+      "source": "data/glm_snowflake/movielens/result.json",
+      "source_sha256": "24481822e23e011e2e8884d9b62c3e43811b09bcf8ba27713575e6c094321440"
+    },
+    {
+      "trajectory_id": "glm_snowflake__movies_4__078b742d8b53",
+      "group": "glm_snowflake",
+      "task": "movies_4",
+      "source": "data/glm_snowflake/movies_4/result.json",
+      "source_sha256": "078b742d8b5387ba37aa0a9a2e9a763de0ae1653a67e976efcdfc4cbd679922d"
+    },
+    {
+      "trajectory_id": "glm_snowflake__music_platform_2__bd76d3e8cf79",
+      "group": "glm_snowflake",
+      "task": "music_platform_2",
+      "source": "data/glm_snowflake/music_platform_2/result.json",
+      "source_sha256": "bd76d3e8cf7997d9bc9773f5cdae6ff903e5dab6858bd1098377f5ce29eac795"
+    },
+    {
+      "trajectory_id": "glm_snowflake__music_tracker__3bc27887bc9c",
+      "group": "glm_snowflake",
+      "task": "music_tracker",
+      "source": "data/glm_snowflake/music_tracker/result.json",
+      "source_sha256": "3bc27887bc9c97c4a1a27987fa8a0ce590567e2f50e3fb0fecb7c542179f9eeb"
+    },
+    {
+      "trajectory_id": "glm_snowflake__olympics__be75ed103944",
+      "group": "glm_snowflake",
+      "task": "olympics",
+      "source": "data/glm_snowflake/olympics/result.json",
+      "source_sha256": "be75ed1039449645758fc0a318f6c3c33fc6ca992310fd8f5024816c665346aa"
+    },
+    {
+      "trajectory_id": "glm_snowflake__pardot__ef2bb118e8ae",
+      "group": "glm_snowflake",
+      "task": "pardot",
+      "source": "data/glm_snowflake/pardot/result.json",
+      "source_sha256": "ef2bb118e8ae003fe9f802ccaeca1a3a7ec6bc2cbfd27e684f30c1ae4a301bcf"
+    },
+    {
+      "trajectory_id": "glm_snowflake__pinterest__956bf5392bc1",
+      "group": "glm_snowflake",
+      "task": "pinterest",
+      "source": "data/glm_snowflake/pinterest/result.json",
+      "source_sha256": "956bf5392bc18648d5ab97e36dea066170c126708bfd46631ad3105d6ee4c933"
+    },
+    {
+      "trajectory_id": "glm_snowflake__professional_basketball__b1d1f9ac1503",
+      "group": "glm_snowflake",
+      "task": "professional_basketball",
+      "source": "data/glm_snowflake/professional_basketball/result.json",
+      "source_sha256": "b1d1f9ac1503be471e6062422b50ef7010020d64645e40372a474c5723d991e5"
+    },
+    {
+      "trajectory_id": "glm_snowflake__public_review_platform__6fe685f42742",
+      "group": "glm_snowflake",
+      "task": "public_review_platform",
+      "source": "data/glm_snowflake/public_review_platform/result.json",
+      "source_sha256": "6fe685f4274212b3a16d4c13f0986c072c1b4633e32e2b8969dab9472ea33af0"
+    },
+    {
+      "trajectory_id": "glm_snowflake__qualtrics__ea725de8031f",
+      "group": "glm_snowflake",
+      "task": "qualtrics",
+      "source": "data/glm_snowflake/qualtrics/result.json",
+      "source_sha256": "ea725de8031f39ea458e7416d769a421f3c1603305027356f1c21a15d2d3696b"
+    },
+    {
+      "trajectory_id": "glm_snowflake__recurly__fb0b9dd66883",
+      "group": "glm_snowflake",
+      "task": "recurly",
+      "source": "data/glm_snowflake/recurly/result.json",
+      "source_sha256": "fb0b9dd668833443b14a3d992883972c2cf9fde702a92889854354b9c23c4e7e"
+    },
+    {
+      "trajectory_id": "glm_snowflake__regional_sales__c74d6801493d",
+      "group": "glm_snowflake",
+      "task": "regional_sales",
+      "source": "data/glm_snowflake/regional_sales/result.json",
+      "source_sha256": "c74d6801493db99a705a02f835495ac5d94f2400e7199b578c38a671a8b89d1a"
+    },
+    {
+      "trajectory_id": "glm_snowflake__restaurant__a2d7b5cfd8f8",
+      "group": "glm_snowflake",
+      "task": "restaurant",
+      "source": "data/glm_snowflake/restaurant/result.json",
+      "source_sha256": "a2d7b5cfd8f8128428cfeb1bb4ecc44f7d844abc4a079fc3ed0d513a12285e3a"
+    },
+    {
+      "trajectory_id": "glm_snowflake__retail_complains__43001112c85a",
+      "group": "glm_snowflake",
+      "task": "retail_complains",
+      "source": "data/glm_snowflake/retail_complains/result.json",
+      "source_sha256": "43001112c85a31b21f61516eeb4b47416f1c0d98a3b83d848b1f8742b36d1f08"
+    },
+    {
+      "trajectory_id": "glm_snowflake__retail_world__86792a8ab0d1",
+      "group": "glm_snowflake",
+      "task": "retail_world",
+      "source": "data/glm_snowflake/retail_world/result.json",
+      "source_sha256": "86792a8ab0d12354720c9b144be63e4402367942f4c5040d3462d40e69b3237b"
+    },
+    {
+      "trajectory_id": "glm_snowflake__retails__7b9dcc89aea1",
+      "group": "glm_snowflake",
+      "task": "retails",
+      "source": "data/glm_snowflake/retails/result.json",
+      "source_sha256": "7b9dcc89aea181a52344dc9266a3b841030bf0fecb9346d1897c7109b23348a7"
+    },
+    {
+      "trajectory_id": "glm_snowflake__sales__1be1f0bd6103",
+      "group": "glm_snowflake",
+      "task": "sales",
+      "source": "data/glm_snowflake/sales/result.json",
+      "source_sha256": "1be1f0bd61034ff4135a77fb596d6ed7113dde145e592bcd963f7280cf8b1a29"
+    },
+    {
+      "trajectory_id": "glm_snowflake__sales_in_weather__d5a51fbf5c85",
+      "group": "glm_snowflake",
+      "task": "sales_in_weather",
+      "source": "data/glm_snowflake/sales_in_weather/result.json",
+      "source_sha256": "d5a51fbf5c85516a188a8d270d06579655f11fe8ba93e929f558a80dc37a031a"
+    },
+    {
+      "trajectory_id": "glm_snowflake__shakespeare__53a076fc875c",
+      "group": "glm_snowflake",
+      "task": "shakespeare",
+      "source": "data/glm_snowflake/shakespeare/result.json",
+      "source_sha256": "53a076fc875c26388e20e43b3fa5037e19f0725db7068285875e7e8320f352b7"
+    },
+    {
+      "trajectory_id": "glm_snowflake__shipping__4f00f7fca25e",
+      "group": "glm_snowflake",
+      "task": "shipping",
+      "source": "data/glm_snowflake/shipping/result.json",
+      "source_sha256": "4f00f7fca25ecb273391e7b90c2d9ed9d103c43a6185b55b32063c5353ddfa3e"
+    },
+    {
+      "trajectory_id": "glm_snowflake__simpson_episodes__b13c149aba79",
+      "group": "glm_snowflake",
+      "task": "simpson_episodes",
+      "source": "data/glm_snowflake/simpson_episodes/result.json",
+      "source_sha256": "b13c149aba79bb4c196c0a83634a7e1f2fa2b1d11257fdfb9208cfc9d89986c7"
+    },
+    {
+      "trajectory_id": "glm_snowflake__soccer_2016__8d7385d4a3a8",
+      "group": "glm_snowflake",
+      "task": "soccer_2016",
+      "source": "data/glm_snowflake/soccer_2016/result.json",
+      "source_sha256": "8d7385d4a3a84eb372ec9164498a9e2380aae0cc10f73e290c31d96100274fb6"
+    },
+    {
+      "trajectory_id": "glm_snowflake__social_media__c433ed1706a2",
+      "group": "glm_snowflake",
+      "task": "social_media",
+      "source": "data/glm_snowflake/social_media/result.json",
+      "source_sha256": "c433ed1706a2d141ce206651586d9379a94eb59cf719405c3c964ff4c54bc9b2"
+    },
+    {
+      "trajectory_id": "glm_snowflake__software_company__b881962a7a75",
+      "group": "glm_snowflake",
+      "task": "software_company",
+      "source": "data/glm_snowflake/software_company/result.json",
+      "source_sha256": "b881962a7a7593ae927a533a21d42a7734adab80996e32a0cabef1d911538ba6"
+    },
+    {
+      "trajectory_id": "glm_snowflake__student_club__8d9a67c190be",
+      "group": "glm_snowflake",
+      "task": "student_club",
+      "source": "data/glm_snowflake/student_club/result.json",
+      "source_sha256": "8d9a67c190be7bdf03b8aad4887194bb9fecf54417f11b6ea0ad69f6ec974fd6"
+    },
+    {
+      "trajectory_id": "glm_snowflake__student_loan__0ef1bfebe528",
+      "group": "glm_snowflake",
+      "task": "student_loan",
+      "source": "data/glm_snowflake/student_loan/result.json",
+      "source_sha256": "0ef1bfebe5280d5679c8f23244d32c033b610b45e28d4cdfdb9f8bd33193efef"
+    },
+    {
+      "trajectory_id": "glm_snowflake__superhero__7eef91ca082a",
+      "group": "glm_snowflake",
+      "task": "superhero",
+      "source": "data/glm_snowflake/superhero/result.json",
+      "source_sha256": "7eef91ca082a0e6ae765dd931f0fbe24cd70bf130538b5e040bb2adc39b1294d"
+    },
+    {
+      "trajectory_id": "glm_snowflake__superstore__49e9a4f53167",
+      "group": "glm_snowflake",
+      "task": "superstore",
+      "source": "data/glm_snowflake/superstore/result.json",
+      "source_sha256": "49e9a4f53167994bfbd575a2b3436d7b9002544407de4145fce58d8ab67aa69b"
+    },
+    {
+      "trajectory_id": "glm_snowflake__synthea__43e8a593d748",
+      "group": "glm_snowflake",
+      "task": "synthea",
+      "source": "data/glm_snowflake/synthea/result.json",
+      "source_sha256": "43e8a593d748e3ee95d3e51557d98fa0c87caf82069d217dfaedb1b37bcf3a4e"
+    },
+    {
+      "trajectory_id": "glm_snowflake__talkingdata__be5d36ca8f49",
+      "group": "glm_snowflake",
+      "task": "talkingdata",
+      "source": "data/glm_snowflake/talkingdata/result.json",
+      "source_sha256": "be5d36ca8f49cb08efef6868601b4619024311a07beb2a7e74575e61bf79cee7"
+    },
+    {
+      "trajectory_id": "glm_snowflake__thrombosis_prediction__43064b5b81ea",
+      "group": "glm_snowflake",
+      "task": "thrombosis_prediction",
+      "source": "data/glm_snowflake/thrombosis_prediction/result.json",
+      "source_sha256": "43064b5b81eac9dea8a02e481631403f9ab8c5c912cada2ebad44638597f19d4"
+    },
+    {
+      "trajectory_id": "glm_snowflake__tiktok_ads__985dc8da9159",
+      "group": "glm_snowflake",
+      "task": "tiktok_ads",
+      "source": "data/glm_snowflake/tiktok_ads/result.json",
+      "source_sha256": "985dc8da915922eae0a7196485f9cd74b2d267bc04c309e80865e34e706508b9"
+    },
+    {
+      "trajectory_id": "glm_snowflake__toxicology__695fc5520f42",
+      "group": "glm_snowflake",
+      "task": "toxicology",
+      "source": "data/glm_snowflake/toxicology/result.json",
+      "source_sha256": "695fc5520f42454cbf3f310b279f023a154c2225c1b128b35153ec3195075ed8"
+    },
+    {
+      "trajectory_id": "glm_snowflake__trains__57d357477615",
+      "group": "glm_snowflake",
+      "task": "trains",
+      "source": "data/glm_snowflake/trains/result.json",
+      "source_sha256": "57d3574776150258fc9d0c6c861b6e4e456fe3c377b38fea28faa582d9755f09"
+    },
+    {
+      "trajectory_id": "glm_snowflake__twilio__2c9b120fc510",
+      "group": "glm_snowflake",
+      "task": "twilio",
+      "source": "data/glm_snowflake/twilio/result.json",
+      "source_sha256": "2c9b120fc510adfe475bfca8ee72b616e07c957c7a5e80a0f29acc7b597bae23"
+    },
+    {
+      "trajectory_id": "glm_snowflake__twitter_organic__7faed60e110d",
+      "group": "glm_snowflake",
+      "task": "twitter_organic",
+      "source": "data/glm_snowflake/twitter_organic/result.json",
+      "source_sha256": "7faed60e110d8e8d6442353ce2fffde7941bd2a3c869b51a53cf91aeaf5ce174"
+    },
+    {
+      "trajectory_id": "glm_snowflake__university__e9fa5d3d8624",
+      "group": "glm_snowflake",
+      "task": "university",
+      "source": "data/glm_snowflake/university/result.json",
+      "source_sha256": "e9fa5d3d86246148f8eeeecc5bd71b12d39abf22d20e0f084a1620d1ebfac58f"
+    },
+    {
+      "trajectory_id": "glm_snowflake__video_games__e4236dd169fa",
+      "group": "glm_snowflake",
+      "task": "video_games",
+      "source": "data/glm_snowflake/video_games/result.json",
+      "source_sha256": "e4236dd169fa3cc7c1587c5c3cf89389487432e9ad6a8e74f41295e16af4c6f7"
+    },
+    {
+      "trajectory_id": "glm_snowflake__workday__dcc2d3627183",
+      "group": "glm_snowflake",
+      "task": "workday",
+      "source": "data/glm_snowflake/workday/result.json",
+      "source_sha256": "dcc2d3627183dbd54b0cc351d3b759233d846ea43a67fcc1c63ca8ef5c92f256"
+    },
+    {
+      "trajectory_id": "glm_snowflake__works_cycles__713be776f4b2",
+      "group": "glm_snowflake",
+      "task": "works_cycles",
+      "source": "data/glm_snowflake/works_cycles/result.json",
+      "source_sha256": "713be776f4b2f16fe0bc5386ffcee029be44c215df62e331b1205799937a3104"
+    },
+    {
+      "trajectory_id": "glm_snowflake__world__ee949700854f",
+      "group": "glm_snowflake",
+      "task": "world",
+      "source": "data/glm_snowflake/world/result.json",
+      "source_sha256": "ee949700854f004b4b57c3f310819e3a3eb7403e73963cae005288819837039a"
+    },
+    {
+      "trajectory_id": "glm_snowflake__world_development_indicators__302efd99bada",
+      "group": "glm_snowflake",
+      "task": "world_development_indicators",
+      "source": "data/glm_snowflake/world_development_indicators/result.json",
+      "source_sha256": "302efd99badad23e5df7b454e44a028c51ceb047c9157f43994017c1063d657f"
+    },
+    {
+      "trajectory_id": "glm_snowflake__xero__5f08606fc913",
+      "group": "glm_snowflake",
+      "task": "xero",
+      "source": "data/glm_snowflake/xero/result.json",
+      "source_sha256": "5f08606fc913826c3b882de097a41d5911f7c51ca1b0bc3904e3dbbcf350f1d5"
+    },
+    {
+      "trajectory_id": "glm_snowflake__youtube_analytics__85afdf8f476b",
+      "group": "glm_snowflake",
+      "task": "youtube_analytics",
+      "source": "data/glm_snowflake/youtube_analytics/result.json",
+      "source_sha256": "85afdf8f476bbf146048c092ec750ef633b02ffa0b24858aaad1b0f8a0170f40"
+    },
+    {
+      "trajectory_id": "glm_snowflake__zuora__e296a3c3b7ee",
+      "group": "glm_snowflake",
+      "task": "zuora",
+      "source": "data/glm_snowflake/zuora/result.json",
+      "source_sha256": "e296a3c3b7ee5466107ae2da5a2f406c92df197b8d5d1599b6aa70ece1e0aada"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__address__1ea7910241e1",
+      "group": "kimi_snowflake",
+      "task": "address",
+      "source": "data/kimi_snowflake/address/result.json",
+      "source_sha256": "1ea7910241e13b3e74025ed46aa7f9bbf420c36114cf119f8009abd33390d107"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__airline__2568250d09d1",
+      "group": "kimi_snowflake",
+      "task": "airline",
+      "source": "data/kimi_snowflake/airline/result.json",
+      "source_sha256": "2568250d09d1cb3f3694da650f69205e57bfc32390f21b6379ce0b0adfeeb92f"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__amplitude__9c4056fd22bd",
+      "group": "kimi_snowflake",
+      "task": "amplitude",
+      "source": "data/kimi_snowflake/amplitude/result.json",
+      "source_sha256": "9c4056fd22bdc0e07479cce1ba329042887c9bd70a20448e88d965d389d7e296"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__app_store__257e3c9e58fe",
+      "group": "kimi_snowflake",
+      "task": "app_store",
+      "source": "data/kimi_snowflake/app_store/result.json",
+      "source_sha256": "257e3c9e58fe8333f49b21d2c3dc122784926bcd8bba20f6e9a3c1dea8fc5f44"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__apple_store__7ee541dacfc2",
+      "group": "kimi_snowflake",
+      "task": "apple_store",
+      "source": "data/kimi_snowflake/apple_store/result.json",
+      "source_sha256": "7ee541dacfc2154f3ab4434b20bcb0452bf4175bbe1106df3a5fc153a1b53b43"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__asana__db601867a4a9",
+      "group": "kimi_snowflake",
+      "task": "asana",
+      "source": "data/kimi_snowflake/asana/result.json",
+      "source_sha256": "db601867a4a9a6d0fe3964662f34eee226e9ccf98d7d7d9e2ba0fdbcdbe81119"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__authors__07c889d50f1e",
+      "group": "kimi_snowflake",
+      "task": "authors",
+      "source": "data/kimi_snowflake/authors/result.json",
+      "source_sha256": "07c889d50f1eb6ec0deb72e3a88ae608be51b5373f847090070fda19ea68e372"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__beer_factory__e3a5ce88d45d",
+      "group": "kimi_snowflake",
+      "task": "beer_factory",
+      "source": "data/kimi_snowflake/beer_factory/result.json",
+      "source_sha256": "e3a5ce88d45dff8ff77c9856fc500877daee8708720af6d583f5d25e688e4719"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__bike_share_1__90b89a60cc90",
+      "group": "kimi_snowflake",
+      "task": "bike_share_1",
+      "source": "data/kimi_snowflake/bike_share_1/result.json",
+      "source_sha256": "90b89a60cc90bfeb409d8196b92228a9188212d9ad32f94daddcbfc614eb5b94"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__book_publishing_company__8a1351b76378",
+      "group": "kimi_snowflake",
+      "task": "book_publishing_company",
+      "source": "data/kimi_snowflake/book_publishing_company/result.json",
+      "source_sha256": "8a1351b763786214a232d5c4fdec12776e891bb3f231bf230a1f58a20d64fac3"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__books__3f77d3cc80d9",
+      "group": "kimi_snowflake",
+      "task": "books",
+      "source": "data/kimi_snowflake/books/result.json",
+      "source_sha256": "3f77d3cc80d9507c0f105abfa8d625c0cd40b297b0808efcadc115ac735add69"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__california_schools__0fde943f5f25",
+      "group": "kimi_snowflake",
+      "task": "california_schools",
+      "source": "data/kimi_snowflake/california_schools/result.json",
+      "source_sha256": "0fde943f5f257ae23a6e96db11b3869c1ea90ee4d4c6923f8dd575bed5583c4b"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__car_retails__df997b4fc618",
+      "group": "kimi_snowflake",
+      "task": "car_retails",
+      "source": "data/kimi_snowflake/car_retails/result.json",
+      "source_sha256": "df997b4fc6184e3be76829441bc46f019266b2a2a6e52eaa3ffdd4859f131f2b"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__card_games__45d466be0580",
+      "group": "kimi_snowflake",
+      "task": "card_games",
+      "source": "data/kimi_snowflake/card_games/result.json",
+      "source_sha256": "45d466be0580fc72c07d89fbd270f3b2148355d1898a247b2a4f3080e64226be"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__cars__f62af3fb17d1",
+      "group": "kimi_snowflake",
+      "task": "cars",
+      "source": "data/kimi_snowflake/cars/result.json",
+      "source_sha256": "f62af3fb17d1817b933ef6d059cad0c3f27796136742793f6d2e1d4534bf2c09"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__chicago_crime__9ed8ab88cf28",
+      "group": "kimi_snowflake",
+      "task": "chicago_crime",
+      "source": "data/kimi_snowflake/chicago_crime/result.json",
+      "source_sha256": "9ed8ab88cf2876a1ac9ea0867b145efcd61daa46277b3b1e947016debdf00d92"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__citeseer__a43868570013",
+      "group": "kimi_snowflake",
+      "task": "citeseer",
+      "source": "data/kimi_snowflake/citeseer/result.json",
+      "source_sha256": "a438685700139f1248ab27190ea2836ed80ece033abf252869c6fc8c659c59e2"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__codebase_comments__ca089190dd6d",
+      "group": "kimi_snowflake",
+      "task": "codebase_comments",
+      "source": "data/kimi_snowflake/codebase_comments/result.json",
+      "source_sha256": "ca089190dd6dba8e02ff05ff74d50c6ca6d22d982d7a32467442fb53e018e62c"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__codebase_community__694c5f15f39c",
+      "group": "kimi_snowflake",
+      "task": "codebase_community",
+      "source": "data/kimi_snowflake/codebase_community/result.json",
+      "source_sha256": "694c5f15f39c1d1c10ba99c94908e578ddda127fa8ebde5dd425863eb83ad62c"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__coinmarketcap__96867643494f",
+      "group": "kimi_snowflake",
+      "task": "coinmarketcap",
+      "source": "data/kimi_snowflake/coinmarketcap/result.json",
+      "source_sha256": "96867643494fc9b1ae8732c0d524b0c973b47dbe5670915caa9249b1d3394cb1"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__college_completion__d093d8f5bef7",
+      "group": "kimi_snowflake",
+      "task": "college_completion",
+      "source": "data/kimi_snowflake/college_completion/result.json",
+      "source_sha256": "d093d8f5bef79c50b264306e55c755cb09b79d867d8b891c4ac1637130b786a6"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__computer_student__8707c4a9b014",
+      "group": "kimi_snowflake",
+      "task": "computer_student",
+      "source": "data/kimi_snowflake/computer_student/result.json",
+      "source_sha256": "8707c4a9b014478ba1323af4e0886aca00acacdb1dfa064dc8474fdb7863c2f3"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__cookbook__940f827141dc",
+      "group": "kimi_snowflake",
+      "task": "cookbook",
+      "source": "data/kimi_snowflake/cookbook/result.json",
+      "source_sha256": "940f827141dc2be6a8ff3ae527d6a18e8a3b043d1b3f8699dfc32ac348baa4d2"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__cs_semester__0a274a4eaced",
+      "group": "kimi_snowflake",
+      "task": "cs_semester",
+      "source": "data/kimi_snowflake/cs_semester/result.json",
+      "source_sha256": "0a274a4eacedbd31603459fc41697d0f9f8a715a1464bf89cf72bef11d1e6f82"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__debit_card_specializing__3d304820e3d2",
+      "group": "kimi_snowflake",
+      "task": "debit_card_specializing",
+      "source": "data/kimi_snowflake/debit_card_specializing/result.json",
+      "source_sha256": "3d304820e3d226ced38e2665fb5a92c6b537435e167b2aec24fc466caa2bb9aa"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__disney__b024066473e7",
+      "group": "kimi_snowflake",
+      "task": "disney",
+      "source": "data/kimi_snowflake/disney/result.json",
+      "source_sha256": "b024066473e73b625029e25605b4135be54970f10a152b9f4ea4dd9963f9ca9c"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__donor__6e6c7b43b690",
+      "group": "kimi_snowflake",
+      "task": "donor",
+      "source": "data/kimi_snowflake/donor/result.json",
+      "source_sha256": "6e6c7b43b6909c24d7c2c3931b5ebb916bae049ee3a9dba689837148dc52e3d0"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__european_football_1__79efe23b35c2",
+      "group": "kimi_snowflake",
+      "task": "european_football_1",
+      "source": "data/kimi_snowflake/european_football_1/result.json",
+      "source_sha256": "79efe23b35c2c06283e1f3c286c903d4023be5973434c557ff9a5e62979401d1"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__european_football_2__e6e0a5a0794b",
+      "group": "kimi_snowflake",
+      "task": "european_football_2",
+      "source": "data/kimi_snowflake/european_football_2/result.json",
+      "source_sha256": "e6e0a5a0794bfbfa0b1660de43207ae1c5e210c1ee36604eb95951c36dc89726"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__facebook_ads__58eb707d42ee",
+      "group": "kimi_snowflake",
+      "task": "facebook_ads",
+      "source": "data/kimi_snowflake/facebook_ads/result.json",
+      "source_sha256": "58eb707d42eeaf6373b05823dd2b14418a8e95bbbff198a0ffcb4e41dcde46ce"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__financial__ee46181715f6",
+      "group": "kimi_snowflake",
+      "task": "financial",
+      "source": "data/kimi_snowflake/financial/result.json",
+      "source_sha256": "ee46181715f6db933eabccac55461e147fd820c2dface3f3053bd5074d538222"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__food_inspection_2__66af453c089e",
+      "group": "kimi_snowflake",
+      "task": "food_inspection_2",
+      "source": "data/kimi_snowflake/food_inspection_2/result.json",
+      "source_sha256": "66af453c089ee2ccc6a7eccf4de524a3480b43ed2985024dbfb90753a1346011"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__food_inspection__2af425e74bf8",
+      "group": "kimi_snowflake",
+      "task": "food_inspection",
+      "source": "data/kimi_snowflake/food_inspection/result.json",
+      "source_sha256": "2af425e74bf888d52b23a82444ec8871948acd57692e6eb448122bd0bc91e3ad"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__formula_1__7fac14f60f32",
+      "group": "kimi_snowflake",
+      "task": "formula_1",
+      "source": "data/kimi_snowflake/formula_1/result.json",
+      "source_sha256": "7fac14f60f32fffd46170ffc5830c31a43fb38a087055e6fc8920bd357987e87"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__genes__f3802ab04559",
+      "group": "kimi_snowflake",
+      "task": "genes",
+      "source": "data/kimi_snowflake/genes/result.json",
+      "source_sha256": "f3802ab045596de4cab81ccaec93939963c9d8872737b92647c996f5a218462d"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__github__909d12947f10",
+      "group": "kimi_snowflake",
+      "task": "github",
+      "source": "data/kimi_snowflake/github/result.json",
+      "source_sha256": "909d12947f10d7284e8156416f42755612a506e5281a3d6fbef1b00a9fe7c2ee"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__hockey__f971db42cfdf",
+      "group": "kimi_snowflake",
+      "task": "hockey",
+      "source": "data/kimi_snowflake/hockey/result.json",
+      "source_sha256": "f971db42cfdf835864f30d900146f11b695f354409ee6a63d1a1c232bd0c996c"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__human_resources__6921a3d97e11",
+      "group": "kimi_snowflake",
+      "task": "human_resources",
+      "source": "data/kimi_snowflake/human_resources/result.json",
+      "source_sha256": "6921a3d97e117e85daef999e84bd3efeeb9e8aee1a6a5fe5aadb99fd9672dbb4"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__ice_hockey_draft__f12b24ce01fc",
+      "group": "kimi_snowflake",
+      "task": "ice_hockey_draft",
+      "source": "data/kimi_snowflake/ice_hockey_draft/result.json",
+      "source_sha256": "f12b24ce01fcce99475a1c061bd872860052d9311e30b3ea41632109fb267677"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__image_and_language__0c736128de2b",
+      "group": "kimi_snowflake",
+      "task": "image_and_language",
+      "source": "data/kimi_snowflake/image_and_language/result.json",
+      "source_sha256": "0c736128de2bdd3b5bb515742ed7a5485a669a3f28a8cd8549355272d4b44f8f"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__instagram_business__26a59bf27824",
+      "group": "kimi_snowflake",
+      "task": "instagram_business",
+      "source": "data/kimi_snowflake/instagram_business/result.json",
+      "source_sha256": "26a59bf27824f4e105fb98049a43e05cc8e8d277a7ac5517597ef1909a430e43"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__language_corpus__e90bb0b7bd7a",
+      "group": "kimi_snowflake",
+      "task": "language_corpus",
+      "source": "data/kimi_snowflake/language_corpus/result.json",
+      "source_sha256": "e90bb0b7bd7a80a81a5da57980c1b0089371e68d23719e9f4645039cb7aebbb1"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__law_episode__c8203cdd7cc9",
+      "group": "kimi_snowflake",
+      "task": "law_episode",
+      "source": "data/kimi_snowflake/law_episode/result.json",
+      "source_sha256": "c8203cdd7cc98c118896fc2e754d36e29b9034cd427956b1ed7074bdb4510db6"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__legislator__9ee07c9ce451",
+      "group": "kimi_snowflake",
+      "task": "legislator",
+      "source": "data/kimi_snowflake/legislator/result.json",
+      "source_sha256": "9ee07c9ce4514cf698b05faeb6459a897b98c0ece06d07f9fa3c74c1ca69c4aa"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__lever__7d2582dad8fa",
+      "group": "kimi_snowflake",
+      "task": "lever",
+      "source": "data/kimi_snowflake/lever/result.json",
+      "source_sha256": "7d2582dad8fa9eac596f2221beaabe07a1c7d20f9af323734933afa6a6a287b5"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__linkedin__b7946fd0e70b",
+      "group": "kimi_snowflake",
+      "task": "linkedin",
+      "source": "data/kimi_snowflake/linkedin/result.json",
+      "source_sha256": "b7946fd0e70b76b35651b35c584a25fef4f54a981d7dd63e49c3d8a48094ed7f"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__mailchimp__388533140f67",
+      "group": "kimi_snowflake",
+      "task": "mailchimp",
+      "source": "data/kimi_snowflake/mailchimp/result.json",
+      "source_sha256": "388533140f6770e90083e1eec4a08b6b5df4fe6c733c9a8f84888e70e89fa38f"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__marketo__8165a33c09ce",
+      "group": "kimi_snowflake",
+      "task": "marketo",
+      "source": "data/kimi_snowflake/marketo/result.json",
+      "source_sha256": "8165a33c09cedeb6657dc4426196cec505df6143372e1b2c741cbbae3d6c5bf7"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__mental_health_survey__8295e6f7a539",
+      "group": "kimi_snowflake",
+      "task": "mental_health_survey",
+      "source": "data/kimi_snowflake/mental_health_survey/result.json",
+      "source_sha256": "8295e6f7a53955b71c2bb04e57a0a651a9dcfe5c59d53d9ae7147071bd749b09"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__menu__fefa6875f876",
+      "group": "kimi_snowflake",
+      "task": "menu",
+      "source": "data/kimi_snowflake/menu/result.json",
+      "source_sha256": "fefa6875f876c7f0725016ce298d1a0af512cfa83a91ec3c7723f82d85f23ccc"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__microsoft_ads__ca7621cdd862",
+      "group": "kimi_snowflake",
+      "task": "microsoft_ads",
+      "source": "data/kimi_snowflake/microsoft_ads/result.json",
+      "source_sha256": "ca7621cdd862f004cf81571729d83dfd84e7c6eb25da335aa59056ce41d71eaf"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__mondial_geo__1edea2684343",
+      "group": "kimi_snowflake",
+      "task": "mondial_geo",
+      "source": "data/kimi_snowflake/mondial_geo/result.json",
+      "source_sha256": "1edea2684343f998ac16c7ebe3c44028ecb2a0347212e48d4cf337f3651c1bcf"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__movie_3__e4359098bee8",
+      "group": "kimi_snowflake",
+      "task": "movie_3",
+      "source": "data/kimi_snowflake/movie_3/result.json",
+      "source_sha256": "e4359098bee8b368d5af85bb0ce68b4a4d19b378383f72da01e891c1c7729ba3"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__movie__48aa3c2c3cef",
+      "group": "kimi_snowflake",
+      "task": "movie",
+      "source": "data/kimi_snowflake/movie/result.json",
+      "source_sha256": "48aa3c2c3cef0fe2f949f252e4267920c7c4c6b47afc5d63a8c67706f6e49f9c"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__movie_platform__9df22be56df6",
+      "group": "kimi_snowflake",
+      "task": "movie_platform",
+      "source": "data/kimi_snowflake/movie_platform/result.json",
+      "source_sha256": "9df22be56df60aea402864742c8b10f88c251ca0e8b6db260af7ac205325ca00"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__movielens__90d626095e46",
+      "group": "kimi_snowflake",
+      "task": "movielens",
+      "source": "data/kimi_snowflake/movielens/result.json",
+      "source_sha256": "90d626095e46deea424fc03b262a6f8bec6bd97d17b34fec375311d8744f77eb"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__movies_4__aa382e2ec078",
+      "group": "kimi_snowflake",
+      "task": "movies_4",
+      "source": "data/kimi_snowflake/movies_4/result.json",
+      "source_sha256": "aa382e2ec0781aa80eb25a880de88a657d2572e228411994e61dc9598055c195"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__music_platform_2__66ff8a12436b",
+      "group": "kimi_snowflake",
+      "task": "music_platform_2",
+      "source": "data/kimi_snowflake/music_platform_2/result.json",
+      "source_sha256": "66ff8a12436b86e1a15d9fec7a9e6b0699f7d3b6d331397048e84e80a4a52398"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__music_tracker__02261db4bdf2",
+      "group": "kimi_snowflake",
+      "task": "music_tracker",
+      "source": "data/kimi_snowflake/music_tracker/result.json",
+      "source_sha256": "02261db4bdf2ad4e3e0308183a85988bc3c71a1e9ea39c633e7e845aaf96387d"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__olympics__8718144d61b5",
+      "group": "kimi_snowflake",
+      "task": "olympics",
+      "source": "data/kimi_snowflake/olympics/result.json",
+      "source_sha256": "8718144d61b546a1a7b6005dbc540679c44cda47f1a89c8ccedf466d544cad9e"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__pardot__977a105adcb9",
+      "group": "kimi_snowflake",
+      "task": "pardot",
+      "source": "data/kimi_snowflake/pardot/result.json",
+      "source_sha256": "977a105adcb9910f1069da1df539b90cd452fb7cd12f7cb34d7d588142e2371c"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__pinterest__6e8db017f2e6",
+      "group": "kimi_snowflake",
+      "task": "pinterest",
+      "source": "data/kimi_snowflake/pinterest/result.json",
+      "source_sha256": "6e8db017f2e6516f8a1f5cdf3a85f27ee0591b08f96d0ee24e3ad4d3fa01d4d0"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__professional_basketball__021f7b84dfd2",
+      "group": "kimi_snowflake",
+      "task": "professional_basketball",
+      "source": "data/kimi_snowflake/professional_basketball/result.json",
+      "source_sha256": "021f7b84dfd22f1cab532d2fd7440f2d9a34fa49af260ebe315721c9f799f46e"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__public_review_platform__ab9cf36314de",
+      "group": "kimi_snowflake",
+      "task": "public_review_platform",
+      "source": "data/kimi_snowflake/public_review_platform/result.json",
+      "source_sha256": "ab9cf36314def33ed0bfd6f0fd5dc5271a452ff5e70c12782d6d9629c10d55c9"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__qualtrics__dca7747d8be3",
+      "group": "kimi_snowflake",
+      "task": "qualtrics",
+      "source": "data/kimi_snowflake/qualtrics/result.json",
+      "source_sha256": "dca7747d8be31979a72721d934695f357cc4a4ebbe62424c29189de1d7a92eee"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__recurly__eb62ee2c765a",
+      "group": "kimi_snowflake",
+      "task": "recurly",
+      "source": "data/kimi_snowflake/recurly/result.json",
+      "source_sha256": "eb62ee2c765a2d72785ca44d4fe91c75bc70bb76cc27c522ebc4ec4fefe3c638"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__regional_sales__e1c9ccf79aba",
+      "group": "kimi_snowflake",
+      "task": "regional_sales",
+      "source": "data/kimi_snowflake/regional_sales/result.json",
+      "source_sha256": "e1c9ccf79aba9c24af39f9700a024d52c3b760d0afdd9fb0512e00b74df012ff"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__restaurant__ef199a4f4764",
+      "group": "kimi_snowflake",
+      "task": "restaurant",
+      "source": "data/kimi_snowflake/restaurant/result.json",
+      "source_sha256": "ef199a4f47646ac60064b3024994d2bdac7028d8f1b5076988020090867089c4"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__retail_complains__ded3b0b79ada",
+      "group": "kimi_snowflake",
+      "task": "retail_complains",
+      "source": "data/kimi_snowflake/retail_complains/result.json",
+      "source_sha256": "ded3b0b79ada2d411756e9241e521ce485d7910a315de9af312905477ea164bc"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__retail_world__d20fd9e2f1bc",
+      "group": "kimi_snowflake",
+      "task": "retail_world",
+      "source": "data/kimi_snowflake/retail_world/result.json",
+      "source_sha256": "d20fd9e2f1bcd4c68269adc61a900c0c3176f3d501d30e898e4964359cde7811"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__retails__3584269a4ba7",
+      "group": "kimi_snowflake",
+      "task": "retails",
+      "source": "data/kimi_snowflake/retails/result.json",
+      "source_sha256": "3584269a4ba78df3a7de9aa92a7618a462f5aff1b06404ba4a3720939e31b7f3"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__sales__8bfd930b9bac",
+      "group": "kimi_snowflake",
+      "task": "sales",
+      "source": "data/kimi_snowflake/sales/result.json",
+      "source_sha256": "8bfd930b9bac65ef5288d06b56d1706feec7899ebb445a65601b29e73e88fc63"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__sales_in_weather__089bc3941961",
+      "group": "kimi_snowflake",
+      "task": "sales_in_weather",
+      "source": "data/kimi_snowflake/sales_in_weather/result.json",
+      "source_sha256": "089bc39419612b3f7324c63192998497dfe2fae4bdb13f0d4bcd01b3f986c8e3"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__shakespeare__c79b3b6048cb",
+      "group": "kimi_snowflake",
+      "task": "shakespeare",
+      "source": "data/kimi_snowflake/shakespeare/result.json",
+      "source_sha256": "c79b3b6048cb238f0816e64132a45b6d36ee33e52e203217456264d644763b6a"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__shipping__dd54dcdcb57c",
+      "group": "kimi_snowflake",
+      "task": "shipping",
+      "source": "data/kimi_snowflake/shipping/result.json",
+      "source_sha256": "dd54dcdcb57c57f3427ed18cb95134b32a8bdabf79db347531b589ef7e3842a2"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__simpson_episodes__ff2cbf29ff5f",
+      "group": "kimi_snowflake",
+      "task": "simpson_episodes",
+      "source": "data/kimi_snowflake/simpson_episodes/result.json",
+      "source_sha256": "ff2cbf29ff5fe7bc027d4bd074706406cca821f37873f6afa56e58ea92982d79"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__soccer_2016__7f3a84d50485",
+      "group": "kimi_snowflake",
+      "task": "soccer_2016",
+      "source": "data/kimi_snowflake/soccer_2016/result.json",
+      "source_sha256": "7f3a84d5048509a370ddc9c6d06b16518425f2b52cc79689562a41687949c576"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__social_media__021154afbaef",
+      "group": "kimi_snowflake",
+      "task": "social_media",
+      "source": "data/kimi_snowflake/social_media/result.json",
+      "source_sha256": "021154afbaef1a0b05cc7bd7ca5845f22f62de6d77516f526b8d33827446214f"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__software_company__1903035a2a53",
+      "group": "kimi_snowflake",
+      "task": "software_company",
+      "source": "data/kimi_snowflake/software_company/result.json",
+      "source_sha256": "1903035a2a53a2906c5a2b60045cf3d51df685b7a54d1eccc8971fadb4abf818"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__student_club__9e72e7a93fb1",
+      "group": "kimi_snowflake",
+      "task": "student_club",
+      "source": "data/kimi_snowflake/student_club/result.json",
+      "source_sha256": "9e72e7a93fb11d2fcadaba783244c47a98ea0f06f92c9ae2e96572a7304bc2a5"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__student_loan__55f19103172d",
+      "group": "kimi_snowflake",
+      "task": "student_loan",
+      "source": "data/kimi_snowflake/student_loan/result.json",
+      "source_sha256": "55f19103172dc00a647115bbed57c5df3ad1fa431b06141853805f017c0c7b70"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__superhero__6c62052d9a46",
+      "group": "kimi_snowflake",
+      "task": "superhero",
+      "source": "data/kimi_snowflake/superhero/result.json",
+      "source_sha256": "6c62052d9a46e5806b48da105a531ecaf021c9afe761534ab9d8950fbc793541"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__superstore__317f8f21407b",
+      "group": "kimi_snowflake",
+      "task": "superstore",
+      "source": "data/kimi_snowflake/superstore/result.json",
+      "source_sha256": "317f8f21407ba9a5bd1843f51c87cd506ba257489b6e4a43cc6f270396fcf1d8"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__synthea__a4c3797e42a2",
+      "group": "kimi_snowflake",
+      "task": "synthea",
+      "source": "data/kimi_snowflake/synthea/result.json",
+      "source_sha256": "a4c3797e42a2ac8eb4034ecf1ae3454ff9cbc104da8d3f60e9b661b35a85bf0d"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__talkingdata__1747845223cd",
+      "group": "kimi_snowflake",
+      "task": "talkingdata",
+      "source": "data/kimi_snowflake/talkingdata/result.json",
+      "source_sha256": "1747845223cda3b0e00700b560dea9bbb5c7ddfef4d621ffea1c58d055677eb5"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__thrombosis_prediction__169e1517736c",
+      "group": "kimi_snowflake",
+      "task": "thrombosis_prediction",
+      "source": "data/kimi_snowflake/thrombosis_prediction/result.json",
+      "source_sha256": "169e1517736caded5e5a20f04da25a41622869cc70e220d490f27e38d1d99cf9"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__tiktok_ads__9e9c49a04fc0",
+      "group": "kimi_snowflake",
+      "task": "tiktok_ads",
+      "source": "data/kimi_snowflake/tiktok_ads/result.json",
+      "source_sha256": "9e9c49a04fc0f0a968db3618bcbb7e9b46322ba4c89b914bc4965cb8b7600b1f"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__toxicology__aa3afb0dfd9f",
+      "group": "kimi_snowflake",
+      "task": "toxicology",
+      "source": "data/kimi_snowflake/toxicology/result.json",
+      "source_sha256": "aa3afb0dfd9f7919b5c900fb27434b8d33f139e91448cb5a964e279f08f445a4"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__trains__a9e0ca959543",
+      "group": "kimi_snowflake",
+      "task": "trains",
+      "source": "data/kimi_snowflake/trains/result.json",
+      "source_sha256": "a9e0ca959543a993307d7c6f049ba3108980e6f4a649b7b363ea1d2f140f3ff6"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__twilio__54fbda4fc1a4",
+      "group": "kimi_snowflake",
+      "task": "twilio",
+      "source": "data/kimi_snowflake/twilio/result.json",
+      "source_sha256": "54fbda4fc1a44c83dd31fb25a682c6a345ad423a5cc83c9caf38c9fa627cbb19"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__twitter_organic__5ef095a0fc0b",
+      "group": "kimi_snowflake",
+      "task": "twitter_organic",
+      "source": "data/kimi_snowflake/twitter_organic/result.json",
+      "source_sha256": "5ef095a0fc0be123c5ec484dd6eb25fc11c9cfd4f936f963e420ffda2f2e4052"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__university__8a05409e8c0d",
+      "group": "kimi_snowflake",
+      "task": "university",
+      "source": "data/kimi_snowflake/university/result.json",
+      "source_sha256": "8a05409e8c0dd104f6e329ab4ba79cb636f3b84d32ff20b017f4b15fdbcc7f5a"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__video_games__964ba0ae9f07",
+      "group": "kimi_snowflake",
+      "task": "video_games",
+      "source": "data/kimi_snowflake/video_games/result.json",
+      "source_sha256": "964ba0ae9f07eafb006d7885f98d66c1be2385e629d82ba33b01a1ccd9840f5c"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__workday__b95d02b4fb71",
+      "group": "kimi_snowflake",
+      "task": "workday",
+      "source": "data/kimi_snowflake/workday/result.json",
+      "source_sha256": "b95d02b4fb71e859248db11226a1582226d04ac84f6d2f62e655c1bd1c1be0f2"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__works_cycles__6227b88aa63a",
+      "group": "kimi_snowflake",
+      "task": "works_cycles",
+      "source": "data/kimi_snowflake/works_cycles/result.json",
+      "source_sha256": "6227b88aa63abf5bde167c4bfec7e4da9208e3b1a8691537bbf4a5018c778dce"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__world__cef06183aeab",
+      "group": "kimi_snowflake",
+      "task": "world",
+      "source": "data/kimi_snowflake/world/result.json",
+      "source_sha256": "cef06183aeab36f934c5ce6984c992851a1aa48addc35ecf11dd0c3dad5d7f31"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__world_development_indicators__7918fb8dad2e",
+      "group": "kimi_snowflake",
+      "task": "world_development_indicators",
+      "source": "data/kimi_snowflake/world_development_indicators/result.json",
+      "source_sha256": "7918fb8dad2eb670a5d716bb54ae71e7628e5f3f000b64c242d13f7f280a1f70"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__xero__0c3599647741",
+      "group": "kimi_snowflake",
+      "task": "xero",
+      "source": "data/kimi_snowflake/xero/result.json",
+      "source_sha256": "0c3599647741b486eccb4361492103743ae48c46a92929985b571211758de9b0"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__youtube_analytics__f14978e3f4fd",
+      "group": "kimi_snowflake",
+      "task": "youtube_analytics",
+      "source": "data/kimi_snowflake/youtube_analytics/result.json",
+      "source_sha256": "f14978e3f4fd63cff22816f67db9972b4848641e08eb3196c9a0acabd0af71a0"
+    },
+    {
+      "trajectory_id": "kimi_snowflake__zuora__fa4f2ed2b05e",
+      "group": "kimi_snowflake",
+      "task": "zuora",
+      "source": "data/kimi_snowflake/zuora/result.json",
+      "source_sha256": "fa4f2ed2b05e2ddf801e4f115cd6bebef9ac2ed255c23763230ffdd9a4fdc415"
+    },
+    {
+      "trajectory_id": "opus_databricks__address__42d4caf8083c",
+      "group": "opus_databricks",
+      "task": "address",
+      "source": "data/opus_databricks/address/result.json",
+      "source_sha256": "42d4caf8083c44b178fc177345acec5f327a63a1286b94cb566feec1d9e082c3"
+    },
+    {
+      "trajectory_id": "opus_databricks__airline__51cb4a8e7183",
+      "group": "opus_databricks",
+      "task": "airline",
+      "source": "data/opus_databricks/airline/result.json",
+      "source_sha256": "51cb4a8e7183e52f6131515019c3af7144c58d5259b96fe229683be2442f2665"
+    },
+    {
+      "trajectory_id": "opus_databricks__amplitude__10705ab8e732",
+      "group": "opus_databricks",
+      "task": "amplitude",
+      "source": "data/opus_databricks/amplitude/result.json",
+      "source_sha256": "10705ab8e7321bd78045a36ebf3f79e2afab63fd3b57418df6ba84f77d5b130d"
+    },
+    {
+      "trajectory_id": "opus_databricks__app_store__eb053a9e6e86",
+      "group": "opus_databricks",
+      "task": "app_store",
+      "source": "data/opus_databricks/app_store/result.json",
+      "source_sha256": "eb053a9e6e8698e67a9c082427a5fc0ca6bb680c2c228fe7b94c8ced099e9056"
+    },
+    {
+      "trajectory_id": "opus_databricks__apple_store__84e5c8fe76bf",
+      "group": "opus_databricks",
+      "task": "apple_store",
+      "source": "data/opus_databricks/apple_store/result.json",
+      "source_sha256": "84e5c8fe76bf2fcd823ff10f88ac527da94bfdbc710ace1e8aed59bdf05cbd36"
+    },
+    {
+      "trajectory_id": "opus_databricks__asana__1d866f0132d1",
+      "group": "opus_databricks",
+      "task": "asana",
+      "source": "data/opus_databricks/asana/result.json",
+      "source_sha256": "1d866f0132d12a16fc876e57b41f64c0f0df039ba8690e9f96620a2bbf52ac71"
+    },
+    {
+      "trajectory_id": "opus_databricks__authors__140f31f6fe6c",
+      "group": "opus_databricks",
+      "task": "authors",
+      "source": "data/opus_databricks/authors/result.json",
+      "source_sha256": "140f31f6fe6c6c4aead14e6b5e59787ffc1a035ffeb807737ca4d181712e4bcd"
+    },
+    {
+      "trajectory_id": "opus_databricks__beer_factory__85b80bc36877",
+      "group": "opus_databricks",
+      "task": "beer_factory",
+      "source": "data/opus_databricks/beer_factory/result.json",
+      "source_sha256": "85b80bc36877a61eab80062cc333895b01ebb61540e3aa024c5a4683de2d5483"
+    },
+    {
+      "trajectory_id": "opus_databricks__bike_share_1__3c749f994741",
+      "group": "opus_databricks",
+      "task": "bike_share_1",
+      "source": "data/opus_databricks/bike_share_1/result.json",
+      "source_sha256": "3c749f994741193f04766e5e7c00442e515acbe3c6b9abff816e3c92bde7fbde"
+    },
+    {
+      "trajectory_id": "opus_databricks__book_publishing_company__d182b0c86814",
+      "group": "opus_databricks",
+      "task": "book_publishing_company",
+      "source": "data/opus_databricks/book_publishing_company/result.json",
+      "source_sha256": "d182b0c86814e0f7c5049d225eff421ae6bc89e474409f55012dcd138a6dba66"
+    },
+    {
+      "trajectory_id": "opus_databricks__books__ca7e558f3d40",
+      "group": "opus_databricks",
+      "task": "books",
+      "source": "data/opus_databricks/books/result.json",
+      "source_sha256": "ca7e558f3d4031b8c5920988ce51f7a76539cb0d9c4c4df8363d29d1a176e701"
+    },
+    {
+      "trajectory_id": "opus_databricks__california_schools__bbe753adc2ae",
+      "group": "opus_databricks",
+      "task": "california_schools",
+      "source": "data/opus_databricks/california_schools/result.json",
+      "source_sha256": "bbe753adc2ae0ea7325d47fddabd88d85f7a0a471c6db7157b8b326f522b86d0"
+    },
+    {
+      "trajectory_id": "opus_databricks__car_retails__f7296e315c12",
+      "group": "opus_databricks",
+      "task": "car_retails",
+      "source": "data/opus_databricks/car_retails/result.json",
+      "source_sha256": "f7296e315c12a2f80413c79df70442f184302ca7385556aec76726200cb68321"
+    },
+    {
+      "trajectory_id": "opus_databricks__card_games__bd690c8b69f8",
+      "group": "opus_databricks",
+      "task": "card_games",
+      "source": "data/opus_databricks/card_games/result.json",
+      "source_sha256": "bd690c8b69f8800fb3df716befe027d78072fada717012a6baf08d4c0133f9f8"
+    },
+    {
+      "trajectory_id": "opus_databricks__cars__4f1336ee9e4b",
+      "group": "opus_databricks",
+      "task": "cars",
+      "source": "data/opus_databricks/cars/result.json",
+      "source_sha256": "4f1336ee9e4be65dcb93c006f58ce482845a76b0f147107933250a93b1913727"
+    },
+    {
+      "trajectory_id": "opus_databricks__chicago_crime__fd8d15bbf075",
+      "group": "opus_databricks",
+      "task": "chicago_crime",
+      "source": "data/opus_databricks/chicago_crime/result.json",
+      "source_sha256": "fd8d15bbf0756e1655c8fd825d058e75180b5d7596fe093593ac7dab0f1be856"
+    },
+    {
+      "trajectory_id": "opus_databricks__citeseer__7f3f2fc965e5",
+      "group": "opus_databricks",
+      "task": "citeseer",
+      "source": "data/opus_databricks/citeseer/result.json",
+      "source_sha256": "7f3f2fc965e5f5468fcda3be9bd9e004a8aa661eb9d16bc034872fbd28736a3e"
+    },
+    {
+      "trajectory_id": "opus_databricks__codebase_comments__51979f2cd5d1",
+      "group": "opus_databricks",
+      "task": "codebase_comments",
+      "source": "data/opus_databricks/codebase_comments/result.json",
+      "source_sha256": "51979f2cd5d18d13d0df16153e54413675c626bee68484a7b8f6c3d3b16dc823"
+    },
+    {
+      "trajectory_id": "opus_databricks__codebase_community__5fd6472c5e72",
+      "group": "opus_databricks",
+      "task": "codebase_community",
+      "source": "data/opus_databricks/codebase_community/result.json",
+      "source_sha256": "5fd6472c5e72fcd8a9cc626a1ac7c9eea2a4a0196accf292c3b9627b762e97e8"
+    },
+    {
+      "trajectory_id": "opus_databricks__coinmarketcap__76dea7b29087",
+      "group": "opus_databricks",
+      "task": "coinmarketcap",
+      "source": "data/opus_databricks/coinmarketcap/result.json",
+      "source_sha256": "76dea7b29087090de384d31770078f0f7a1a5c3b552b6b45896860af6bf3e639"
+    },
+    {
+      "trajectory_id": "opus_databricks__college_completion__ec1cab6c39a0",
+      "group": "opus_databricks",
+      "task": "college_completion",
+      "source": "data/opus_databricks/college_completion/result.json",
+      "source_sha256": "ec1cab6c39a061d5c087f440c471ad9f6d7f715c6c9dad071d090a8014b4f19c"
+    },
+    {
+      "trajectory_id": "opus_databricks__computer_student__48bf4f3b9a61",
+      "group": "opus_databricks",
+      "task": "computer_student",
+      "source": "data/opus_databricks/computer_student/result.json",
+      "source_sha256": "48bf4f3b9a61eab62a4b005277fc820eee40285e36a00f3b91ec6d54ce4733f7"
+    },
+    {
+      "trajectory_id": "opus_databricks__cookbook__9397cb0d51e9",
+      "group": "opus_databricks",
+      "task": "cookbook",
+      "source": "data/opus_databricks/cookbook/result.json",
+      "source_sha256": "9397cb0d51e9a8dad861e9ea1129979b07e0ab6597392c6936f8664f82bf423c"
+    },
+    {
+      "trajectory_id": "opus_databricks__cs_semester__7339c352e1b1",
+      "group": "opus_databricks",
+      "task": "cs_semester",
+      "source": "data/opus_databricks/cs_semester/result.json",
+      "source_sha256": "7339c352e1b1a0efde3a7c9a10b6ebeba627cd8e9c80f4b836403ea550df9d0b"
+    },
+    {
+      "trajectory_id": "opus_databricks__debit_card_specializing__b993857e96a9",
+      "group": "opus_databricks",
+      "task": "debit_card_specializing",
+      "source": "data/opus_databricks/debit_card_specializing/result.json",
+      "source_sha256": "b993857e96a95501104340ef1656c8074e9213e5725ddb3b29c908785a67f6e5"
+    },
+    {
+      "trajectory_id": "opus_databricks__disney__405647544760",
+      "group": "opus_databricks",
+      "task": "disney",
+      "source": "data/opus_databricks/disney/result.json",
+      "source_sha256": "40564754476098cdf546ffd0d04425e0ba699f66ba34ae0db5233ded0dead7bd"
+    },
+    {
+      "trajectory_id": "opus_databricks__donor__5bc9b8b0c0ab",
+      "group": "opus_databricks",
+      "task": "donor",
+      "source": "data/opus_databricks/donor/result.json",
+      "source_sha256": "5bc9b8b0c0ab122d4b92481f0d54399eb666e1200a7e24d0fd0665e6eec20f59"
+    },
+    {
+      "trajectory_id": "opus_databricks__european_football_1__3351443ebdb8",
+      "group": "opus_databricks",
+      "task": "european_football_1",
+      "source": "data/opus_databricks/european_football_1/result.json",
+      "source_sha256": "3351443ebdb8e89ae422aeee0de4460256b0023fea2ed9b39e6e2cf8626cae5e"
+    },
+    {
+      "trajectory_id": "opus_databricks__european_football_2__dd2159b5e8e9",
+      "group": "opus_databricks",
+      "task": "european_football_2",
+      "source": "data/opus_databricks/european_football_2/result.json",
+      "source_sha256": "dd2159b5e8e9476ccb1d9fe1d7e13b6060810bfe2c7a653d74d72d912a0f7d84"
+    },
+    {
+      "trajectory_id": "opus_databricks__facebook_ads__11516dc8ce9d",
+      "group": "opus_databricks",
+      "task": "facebook_ads",
+      "source": "data/opus_databricks/facebook_ads/result.json",
+      "source_sha256": "11516dc8ce9d9889b1657c2d7384c1b12cd38320d425e103a78dc10604c34434"
+    },
+    {
+      "trajectory_id": "opus_databricks__financial__ea5a369beaf7",
+      "group": "opus_databricks",
+      "task": "financial",
+      "source": "data/opus_databricks/financial/result.json",
+      "source_sha256": "ea5a369beaf7a9e4ae7975077034550a1885d6bf9b1e2fe1bc679d1507290b12"
+    },
+    {
+      "trajectory_id": "opus_databricks__food_inspection_2__452034172ebb",
+      "group": "opus_databricks",
+      "task": "food_inspection_2",
+      "source": "data/opus_databricks/food_inspection_2/result.json",
+      "source_sha256": "452034172ebb47aa40296b6e9f955a247ea69fdddcad4868036c93d03f6b5df7"
+    },
+    {
+      "trajectory_id": "opus_databricks__food_inspection__3777dafac3a7",
+      "group": "opus_databricks",
+      "task": "food_inspection",
+      "source": "data/opus_databricks/food_inspection/result.json",
+      "source_sha256": "3777dafac3a7c414e6ed8688630c5c498966afaed55badf4f95c5c6c171be83b"
+    },
+    {
+      "trajectory_id": "opus_databricks__formula_1__8dc55e78fdb1",
+      "group": "opus_databricks",
+      "task": "formula_1",
+      "source": "data/opus_databricks/formula_1/result.json",
+      "source_sha256": "8dc55e78fdb178614d1b5872f35bbe797ff655105691ae027b5e9c1020f10a10"
+    },
+    {
+      "trajectory_id": "opus_databricks__genes__88612009229c",
+      "group": "opus_databricks",
+      "task": "genes",
+      "source": "data/opus_databricks/genes/result.json",
+      "source_sha256": "88612009229cdb2555d3812cbd0214e1a170d06e6b2fbece0c594489f9afecd5"
+    },
+    {
+      "trajectory_id": "opus_databricks__github__50fd4a38364c",
+      "group": "opus_databricks",
+      "task": "github",
+      "source": "data/opus_databricks/github/result.json",
+      "source_sha256": "50fd4a38364c19010b33d947bd6d728874b00d90e53e9a4967d317799a19de21"
+    },
+    {
+      "trajectory_id": "opus_databricks__hockey__e99406da4aca",
+      "group": "opus_databricks",
+      "task": "hockey",
+      "source": "data/opus_databricks/hockey/result.json",
+      "source_sha256": "e99406da4aca65168ca2df4b8cc403cdf2967c88e504ebb1d54d943afa13fbd3"
+    },
+    {
+      "trajectory_id": "opus_databricks__human_resources__70f761b4e6b7",
+      "group": "opus_databricks",
+      "task": "human_resources",
+      "source": "data/opus_databricks/human_resources/result.json",
+      "source_sha256": "70f761b4e6b77e7c1d114deb367321a37141192a8714ff99fe80685274f00903"
+    },
+    {
+      "trajectory_id": "opus_databricks__ice_hockey_draft__35071b6c917e",
+      "group": "opus_databricks",
+      "task": "ice_hockey_draft",
+      "source": "data/opus_databricks/ice_hockey_draft/result.json",
+      "source_sha256": "35071b6c917e8427c6fc88fce3fb0d6e17d79ad7d7a2d4f757694c767f6b578a"
+    },
+    {
+      "trajectory_id": "opus_databricks__image_and_language__3136f76451f5",
+      "group": "opus_databricks",
+      "task": "image_and_language",
+      "source": "data/opus_databricks/image_and_language/result.json",
+      "source_sha256": "3136f76451f54d9497a63099ffb613714d5e4ea46d25894e1b01bf17412f9f1e"
+    },
+    {
+      "trajectory_id": "opus_databricks__instagram_business__d9f5b8dd17de",
+      "group": "opus_databricks",
+      "task": "instagram_business",
+      "source": "data/opus_databricks/instagram_business/result.json",
+      "source_sha256": "d9f5b8dd17de7ee069f0d234438dd42b858961a220cda7633ba35714fbab0d95"
+    },
+    {
+      "trajectory_id": "opus_databricks__language_corpus__235a6c0a9020",
+      "group": "opus_databricks",
+      "task": "language_corpus",
+      "source": "data/opus_databricks/language_corpus/result.json",
+      "source_sha256": "235a6c0a902006d6763de935c398168a277b4c5137864e386c3c4e50a6dc90b7"
+    },
+    {
+      "trajectory_id": "opus_databricks__law_episode__640c8806dee5",
+      "group": "opus_databricks",
+      "task": "law_episode",
+      "source": "data/opus_databricks/law_episode/result.json",
+      "source_sha256": "640c8806dee56fbf32f4eab725cf808ff1294b8875611e2240f26778b296c2e7"
+    },
+    {
+      "trajectory_id": "opus_databricks__legislator__2a874f9097e0",
+      "group": "opus_databricks",
+      "task": "legislator",
+      "source": "data/opus_databricks/legislator/result.json",
+      "source_sha256": "2a874f9097e0e648adbd072943a1875eabaab33f65a4a98d1503d0a2e410d1c8"
+    },
+    {
+      "trajectory_id": "opus_databricks__lever__2871da4c06d3",
+      "group": "opus_databricks",
+      "task": "lever",
+      "source": "data/opus_databricks/lever/result.json",
+      "source_sha256": "2871da4c06d3e5c547d693dbbc10af87ecc479034f4a2b1127d6977f79bbdfd7"
+    },
+    {
+      "trajectory_id": "opus_databricks__linkedin__1eea895eed46",
+      "group": "opus_databricks",
+      "task": "linkedin",
+      "source": "data/opus_databricks/linkedin/result.json",
+      "source_sha256": "1eea895eed464e098a13e2a3c308b3bf25bbe7b1b8f6a09772d9a809b65f58e1"
+    },
+    {
+      "trajectory_id": "opus_databricks__mailchimp__f68234078dae",
+      "group": "opus_databricks",
+      "task": "mailchimp",
+      "source": "data/opus_databricks/mailchimp/result.json",
+      "source_sha256": "f68234078dae06811fb647132b6f5db247f7d73a0bc71de39ec7e929ba678362"
+    },
+    {
+      "trajectory_id": "opus_databricks__marketo__35a388df93e1",
+      "group": "opus_databricks",
+      "task": "marketo",
+      "source": "data/opus_databricks/marketo/result.json",
+      "source_sha256": "35a388df93e137bdc85e502cc0beaeaf72cdb0441170a39a658cd8582998159c"
+    },
+    {
+      "trajectory_id": "opus_databricks__mental_health_survey__b5292d2e71df",
+      "group": "opus_databricks",
+      "task": "mental_health_survey",
+      "source": "data/opus_databricks/mental_health_survey/result.json",
+      "source_sha256": "b5292d2e71df85b03c00442eb854ba18b4e6ff35a9aa2eaaef5381331004cbaf"
+    },
+    {
+      "trajectory_id": "opus_databricks__menu__b63048427a98",
+      "group": "opus_databricks",
+      "task": "menu",
+      "source": "data/opus_databricks/menu/result.json",
+      "source_sha256": "b63048427a985feefdda58fd08c700fa00525157d91fda10bd36695495939265"
+    },
+    {
+      "trajectory_id": "opus_databricks__microsoft_ads__9bdf67f4d8b5",
+      "group": "opus_databricks",
+      "task": "microsoft_ads",
+      "source": "data/opus_databricks/microsoft_ads/result.json",
+      "source_sha256": "9bdf67f4d8b5f47ed5186a081c4974bc36e97ac9a32f7f11e549423cf866fd65"
+    },
+    {
+      "trajectory_id": "opus_databricks__mondial_geo__b3be4910971e",
+      "group": "opus_databricks",
+      "task": "mondial_geo",
+      "source": "data/opus_databricks/mondial_geo/result.json",
+      "source_sha256": "b3be4910971e46f232a875d2c5c5e0189796f26ee11336325fa97b7ca3d89e76"
+    },
+    {
+      "trajectory_id": "opus_databricks__movie_3__98a54c6e5a9f",
+      "group": "opus_databricks",
+      "task": "movie_3",
+      "source": "data/opus_databricks/movie_3/result.json",
+      "source_sha256": "98a54c6e5a9f724ba17daf813f4936704ae9c342b117b228a4d4994e1b3fc78f"
+    },
+    {
+      "trajectory_id": "opus_databricks__movie__ed3e72a97454",
+      "group": "opus_databricks",
+      "task": "movie",
+      "source": "data/opus_databricks/movie/result.json",
+      "source_sha256": "ed3e72a97454a7b2474e82778d8a5e7def8c40fd7fd0c90a41d40fbc153e6a2c"
+    },
+    {
+      "trajectory_id": "opus_databricks__movie_platform__ac273080ec38",
+      "group": "opus_databricks",
+      "task": "movie_platform",
+      "source": "data/opus_databricks/movie_platform/result.json",
+      "source_sha256": "ac273080ec381d2efd5fb6782cdb100da76a5c5882ac31cfe4faa4b2eee6fa88"
+    },
+    {
+      "trajectory_id": "opus_databricks__movielens__9b1f9373d5be",
+      "group": "opus_databricks",
+      "task": "movielens",
+      "source": "data/opus_databricks/movielens/result.json",
+      "source_sha256": "9b1f9373d5be4e8d5bfcc10fb15bc20a5df83a845acf734b3780244010983204"
+    },
+    {
+      "trajectory_id": "opus_databricks__movies_4__b72b34a128a1",
+      "group": "opus_databricks",
+      "task": "movies_4",
+      "source": "data/opus_databricks/movies_4/result.json",
+      "source_sha256": "b72b34a128a13ad87eaa83984aef15532134351fe501853379b765767b9f539c"
+    },
+    {
+      "trajectory_id": "opus_databricks__music_platform_2__5419388d0cc5",
+      "group": "opus_databricks",
+      "task": "music_platform_2",
+      "source": "data/opus_databricks/music_platform_2/result.json",
+      "source_sha256": "5419388d0cc595853580d0b18489c9aa96d6a5d2fcf7a34f173abfef4cd1507a"
+    },
+    {
+      "trajectory_id": "opus_databricks__music_tracker__ee6358ff1f69",
+      "group": "opus_databricks",
+      "task": "music_tracker",
+      "source": "data/opus_databricks/music_tracker/result.json",
+      "source_sha256": "ee6358ff1f69f6e3a7e20239e2a701416fb596b51c550c465d72962f4e1cb373"
+    },
+    {
+      "trajectory_id": "opus_databricks__olympics__83e8da95a9ac",
+      "group": "opus_databricks",
+      "task": "olympics",
+      "source": "data/opus_databricks/olympics/result.json",
+      "source_sha256": "83e8da95a9ac552a5e6ef7d44568dabe7a7d7b59b256dd1a89bf963f9ae4c373"
+    },
+    {
+      "trajectory_id": "opus_databricks__pardot__e69c83dc576f",
+      "group": "opus_databricks",
+      "task": "pardot",
+      "source": "data/opus_databricks/pardot/result.json",
+      "source_sha256": "e69c83dc576f4fb49ea22aee5ed799e094b65c961e06bf78b410195d76921722"
+    },
+    {
+      "trajectory_id": "opus_databricks__pinterest__92b5a57bb9c0",
+      "group": "opus_databricks",
+      "task": "pinterest",
+      "source": "data/opus_databricks/pinterest/result.json",
+      "source_sha256": "92b5a57bb9c0ee7636ad86bbc5f5e0ba091a21ce45e95b90b29ffe910c2a3a2d"
+    },
+    {
+      "trajectory_id": "opus_databricks__professional_basketball__f6c4927f8718",
+      "group": "opus_databricks",
+      "task": "professional_basketball",
+      "source": "data/opus_databricks/professional_basketball/result.json",
+      "source_sha256": "f6c4927f87188ee9d27c894a303a35c589aad5e5ce2f3fda167de3d6af8fcf53"
+    },
+    {
+      "trajectory_id": "opus_databricks__public_review_platform__5afb526d8cf4",
+      "group": "opus_databricks",
+      "task": "public_review_platform",
+      "source": "data/opus_databricks/public_review_platform/result.json",
+      "source_sha256": "5afb526d8cf4d29fa254ebd2385d6c5a429b45604f35f85ceff25220fecb4fe7"
+    },
+    {
+      "trajectory_id": "opus_databricks__qualtrics__82d1b4a41e7f",
+      "group": "opus_databricks",
+      "task": "qualtrics",
+      "source": "data/opus_databricks/qualtrics/result.json",
+      "source_sha256": "82d1b4a41e7f65a6713bea0e6f99fbe7a1e43ed53973a5a446278636879a44c2"
+    },
+    {
+      "trajectory_id": "opus_databricks__recurly__e65d78d0cb12",
+      "group": "opus_databricks",
+      "task": "recurly",
+      "source": "data/opus_databricks/recurly/result.json",
+      "source_sha256": "e65d78d0cb12aa053d5311d35d78a32dd606ff15349049bed00566cf9657d288"
+    },
+    {
+      "trajectory_id": "opus_databricks__regional_sales__19afe243ddf9",
+      "group": "opus_databricks",
+      "task": "regional_sales",
+      "source": "data/opus_databricks/regional_sales/result.json",
+      "source_sha256": "19afe243ddf995e243caa53c6cb7e2034e6b1bbcb0d8c638fe15f5006f830c2c"
+    },
+    {
+      "trajectory_id": "opus_databricks__restaurant__3ac4fed62306",
+      "group": "opus_databricks",
+      "task": "restaurant",
+      "source": "data/opus_databricks/restaurant/result.json",
+      "source_sha256": "3ac4fed623067aa84c5c58df1df1c480b7486cb1e28e2609b3f03377985f28ec"
+    },
+    {
+      "trajectory_id": "opus_databricks__retail_complains__d0d5f114a5a9",
+      "group": "opus_databricks",
+      "task": "retail_complains",
+      "source": "data/opus_databricks/retail_complains/result.json",
+      "source_sha256": "d0d5f114a5a9a6092e2a3648259cde7675abd15b091aad92e8371588bf676cdc"
+    },
+    {
+      "trajectory_id": "opus_databricks__retail_world__86765967a12a",
+      "group": "opus_databricks",
+      "task": "retail_world",
+      "source": "data/opus_databricks/retail_world/result.json",
+      "source_sha256": "86765967a12a731ed8922e2e7e5976cd64620d266df2d055767f7e393a13abf8"
+    },
+    {
+      "trajectory_id": "opus_databricks__retails__f284a8178311",
+      "group": "opus_databricks",
+      "task": "retails",
+      "source": "data/opus_databricks/retails/result.json",
+      "source_sha256": "f284a8178311a1a0ee2b8d6d18ee00cc992a689a65efad8e9dbc3cd4285f11d3"
+    },
+    {
+      "trajectory_id": "opus_databricks__sales__75bb99972952",
+      "group": "opus_databricks",
+      "task": "sales",
+      "source": "data/opus_databricks/sales/result.json",
+      "source_sha256": "75bb99972952ce07beb9a49b3bfcf09ca2b04683da276d8ac851185c05c7cd61"
+    },
+    {
+      "trajectory_id": "opus_databricks__sales_in_weather__7c47ca8abe6f",
+      "group": "opus_databricks",
+      "task": "sales_in_weather",
+      "source": "data/opus_databricks/sales_in_weather/result.json",
+      "source_sha256": "7c47ca8abe6fa522a5a435e76cb17c0d7135bae9264f01294f3804c28747047c"
+    },
+    {
+      "trajectory_id": "opus_databricks__shakespeare__1d1dd5b0e774",
+      "group": "opus_databricks",
+      "task": "shakespeare",
+      "source": "data/opus_databricks/shakespeare/result.json",
+      "source_sha256": "1d1dd5b0e7743104b1638f31eaf1474204fdd188069b3210ea6fef23644503f9"
+    },
+    {
+      "trajectory_id": "opus_databricks__shipping__bd714bd94990",
+      "group": "opus_databricks",
+      "task": "shipping",
+      "source": "data/opus_databricks/shipping/result.json",
+      "source_sha256": "bd714bd94990fa3ee0e7dcd89129cd6cc7ee797f5b08d3fbac6f1df8edfc9b70"
+    },
+    {
+      "trajectory_id": "opus_databricks__simpson_episodes__42baeb7495f7",
+      "group": "opus_databricks",
+      "task": "simpson_episodes",
+      "source": "data/opus_databricks/simpson_episodes/result.json",
+      "source_sha256": "42baeb7495f7c9253a9820e575615e193430109179dad694ff133c65221d69b8"
+    },
+    {
+      "trajectory_id": "opus_databricks__soccer_2016__ea1400003f9c",
+      "group": "opus_databricks",
+      "task": "soccer_2016",
+      "source": "data/opus_databricks/soccer_2016/result.json",
+      "source_sha256": "ea1400003f9c62af872e6ec2a268542985c7855a879c7a0af42943b9633c931d"
+    },
+    {
+      "trajectory_id": "opus_databricks__social_media__6fb4e926cc02",
+      "group": "opus_databricks",
+      "task": "social_media",
+      "source": "data/opus_databricks/social_media/result.json",
+      "source_sha256": "6fb4e926cc0222c54991d9425415c894f98fa3c22dad2a0de7e9a15513cb4b97"
+    },
+    {
+      "trajectory_id": "opus_databricks__software_company__1f5f8f242527",
+      "group": "opus_databricks",
+      "task": "software_company",
+      "source": "data/opus_databricks/software_company/result.json",
+      "source_sha256": "1f5f8f2425274cd96639e454b588d308c060da01f7d17a555af02f1a8355f170"
+    },
+    {
+      "trajectory_id": "opus_databricks__student_club__916d467da329",
+      "group": "opus_databricks",
+      "task": "student_club",
+      "source": "data/opus_databricks/student_club/result.json",
+      "source_sha256": "916d467da329344043ef7572fa1205f939d3c1cc89d32e2f5b401b4a13051642"
+    },
+    {
+      "trajectory_id": "opus_databricks__student_loan__173001a96697",
+      "group": "opus_databricks",
+      "task": "student_loan",
+      "source": "data/opus_databricks/student_loan/result.json",
+      "source_sha256": "173001a96697903954d0775da519ac130b821ddad7eca5fdf495930dce93c3e8"
+    },
+    {
+      "trajectory_id": "opus_databricks__superhero__dcd14bfa7067",
+      "group": "opus_databricks",
+      "task": "superhero",
+      "source": "data/opus_databricks/superhero/result.json",
+      "source_sha256": "dcd14bfa7067e2a6ccb4be6940f0e7b2c37735200baa516b2532df732dde9ffd"
+    },
+    {
+      "trajectory_id": "opus_databricks__superstore__d186dbd92a82",
+      "group": "opus_databricks",
+      "task": "superstore",
+      "source": "data/opus_databricks/superstore/result.json",
+      "source_sha256": "d186dbd92a827e70204d532fa246c80e889b67ba7b56812ce2f3a2401d45209b"
+    },
+    {
+      "trajectory_id": "opus_databricks__synthea__41573e3c5a9f",
+      "group": "opus_databricks",
+      "task": "synthea",
+      "source": "data/opus_databricks/synthea/result.json",
+      "source_sha256": "41573e3c5a9f78d66173c841bc180fba4577fc762ba686aa5d34271ccc73faf0"
+    },
+    {
+      "trajectory_id": "opus_databricks__talkingdata__1ccbdfb3b487",
+      "group": "opus_databricks",
+      "task": "talkingdata",
+      "source": "data/opus_databricks/talkingdata/result.json",
+      "source_sha256": "1ccbdfb3b487abde24148dd9a1887db2ec551094479ad116698f9dd5ef12733b"
+    },
+    {
+      "trajectory_id": "opus_databricks__thrombosis_prediction__c36d98df2b44",
+      "group": "opus_databricks",
+      "task": "thrombosis_prediction",
+      "source": "data/opus_databricks/thrombosis_prediction/result.json",
+      "source_sha256": "c36d98df2b4417102e05121a5b33f45aae70d75a9b9912b02ed810b25293a4a4"
+    },
+    {
+      "trajectory_id": "opus_databricks__tiktok_ads__c8d085df957b",
+      "group": "opus_databricks",
+      "task": "tiktok_ads",
+      "source": "data/opus_databricks/tiktok_ads/result.json",
+      "source_sha256": "c8d085df957b297b6ac495758c1e220d070d0982ed11affe8f6f3f0c6c9bffd6"
+    },
+    {
+      "trajectory_id": "opus_databricks__toxicology__43d2d4bbc8c3",
+      "group": "opus_databricks",
+      "task": "toxicology",
+      "source": "data/opus_databricks/toxicology/result.json",
+      "source_sha256": "43d2d4bbc8c316099a5d05518a0637f788e3a75d9462d103271f7a16f38ff732"
+    },
+    {
+      "trajectory_id": "opus_databricks__trains__b0c34fb18469",
+      "group": "opus_databricks",
+      "task": "trains",
+      "source": "data/opus_databricks/trains/result.json",
+      "source_sha256": "b0c34fb18469eb9f2b5b5e569295ee3c0f3370dddddc412df994b4e0610f6c7f"
+    },
+    {
+      "trajectory_id": "opus_databricks__twilio__582a0baf7366",
+      "group": "opus_databricks",
+      "task": "twilio",
+      "source": "data/opus_databricks/twilio/result.json",
+      "source_sha256": "582a0baf73664248fd2f217cf0ec635d441e8d875897cf966170c46488d36785"
+    },
+    {
+      "trajectory_id": "opus_databricks__twitter_organic__d0700530538e",
+      "group": "opus_databricks",
+      "task": "twitter_organic",
+      "source": "data/opus_databricks/twitter_organic/result.json",
+      "source_sha256": "d0700530538eec4844b060c9da6752da081c5bec21efb93a876e65e56e40b4f4"
+    },
+    {
+      "trajectory_id": "opus_databricks__university__a01587369d61",
+      "group": "opus_databricks",
+      "task": "university",
+      "source": "data/opus_databricks/university/result.json",
+      "source_sha256": "a01587369d61a92f1e0ed31518d6cd4e35452a21f60af9fd36ae03fce870f746"
+    },
+    {
+      "trajectory_id": "opus_databricks__video_games__2a87971fe717",
+      "group": "opus_databricks",
+      "task": "video_games",
+      "source": "data/opus_databricks/video_games/result.json",
+      "source_sha256": "2a87971fe717165d6a3561f69a76f606c1e7c4fb7302e637d5f4cf737379f5cf"
+    },
+    {
+      "trajectory_id": "opus_databricks__workday__96c2509de961",
+      "group": "opus_databricks",
+      "task": "workday",
+      "source": "data/opus_databricks/workday/result.json",
+      "source_sha256": "96c2509de961abca222ada59be83e6e000034859692f6381ad528a49c58efdf4"
+    },
+    {
+      "trajectory_id": "opus_databricks__works_cycles__dcd988fdaca7",
+      "group": "opus_databricks",
+      "task": "works_cycles",
+      "source": "data/opus_databricks/works_cycles/result.json",
+      "source_sha256": "dcd988fdaca7da335e0e974e8327ecbbd51c78c3139cae0cee71f981eba674be"
+    },
+    {
+      "trajectory_id": "opus_databricks__world__3da6e4c49f26",
+      "group": "opus_databricks",
+      "task": "world",
+      "source": "data/opus_databricks/world/result.json",
+      "source_sha256": "3da6e4c49f2661b2826a9643e37088996d9a9983eb38dde4767631905543bad5"
+    },
+    {
+      "trajectory_id": "opus_databricks__world_development_indicators__b4584c5da15f",
+      "group": "opus_databricks",
+      "task": "world_development_indicators",
+      "source": "data/opus_databricks/world_development_indicators/result.json",
+      "source_sha256": "b4584c5da15f344e1dcfd6c0e1e582d206c422a319ce071db8944bafa2c32dc5"
+    },
+    {
+      "trajectory_id": "opus_databricks__xero__28c3fa3d5499",
+      "group": "opus_databricks",
+      "task": "xero",
+      "source": "data/opus_databricks/xero/result.json",
+      "source_sha256": "28c3fa3d54996a66445855249c69eee3f16944115d1aa6348691f78245d3df93"
+    },
+    {
+      "trajectory_id": "opus_databricks__youtube_analytics__8bb2c4d7c15a",
+      "group": "opus_databricks",
+      "task": "youtube_analytics",
+      "source": "data/opus_databricks/youtube_analytics/result.json",
+      "source_sha256": "8bb2c4d7c15a457a08d731b2866b53d95fa33f66d5659d327b22d78ed835bd48"
+    },
+    {
+      "trajectory_id": "opus_databricks__zuora__6b81dd351a5a",
+      "group": "opus_databricks",
+      "task": "zuora",
+      "source": "data/opus_databricks/zuora/result.json",
+      "source_sha256": "6b81dd351a5a9443781c372b4d597644c152cd342b0444373995a41c78bcb112"
+    },
+    {
+      "trajectory_id": "opus_redshift__address__d61843abd2d1",
+      "group": "opus_redshift",
+      "task": "address",
+      "source": "data/opus_redshift/address/result.json",
+      "source_sha256": "d61843abd2d18c53f588571caf442f503835064cd551fd46fd2821fe2850d021"
+    },
+    {
+      "trajectory_id": "opus_redshift__airline__94c8bb7ad95c",
+      "group": "opus_redshift",
+      "task": "airline",
+      "source": "data/opus_redshift/airline/result.json",
+      "source_sha256": "94c8bb7ad95c41838a17ed4bdee0fda3fc978ef75c785f5302ee229eb6783142"
+    },
+    {
+      "trajectory_id": "opus_redshift__amplitude__78a2525e8196",
+      "group": "opus_redshift",
+      "task": "amplitude",
+      "source": "data/opus_redshift/amplitude/result.json",
+      "source_sha256": "78a2525e81963976d00a9180af3013a9bf47192353decd1870fb7b187f321a5b"
+    },
+    {
+      "trajectory_id": "opus_redshift__app_store__bddf5f2f3f6c",
+      "group": "opus_redshift",
+      "task": "app_store",
+      "source": "data/opus_redshift/app_store/result.json",
+      "source_sha256": "bddf5f2f3f6c167ca57b64b4dfec9a13876d05c0c77cea69a7ac93588ca7b768"
+    },
+    {
+      "trajectory_id": "opus_redshift__apple_store__3ff1a08edb9b",
+      "group": "opus_redshift",
+      "task": "apple_store",
+      "source": "data/opus_redshift/apple_store/result.json",
+      "source_sha256": "3ff1a08edb9b1107a02690b0c67000ef4b89f8f7711bd6b5fb81e8b97c4b156e"
+    },
+    {
+      "trajectory_id": "opus_redshift__asana__fbd1dab70459",
+      "group": "opus_redshift",
+      "task": "asana",
+      "source": "data/opus_redshift/asana/result.json",
+      "source_sha256": "fbd1dab704597b151ced9875f780caa9d2f0e82f73411895c4de3e8121828c53"
+    },
+    {
+      "trajectory_id": "opus_redshift__authors__1f5e68240de8",
+      "group": "opus_redshift",
+      "task": "authors",
+      "source": "data/opus_redshift/authors/result.json",
+      "source_sha256": "1f5e68240de8f204eef14b33edd45d38ad3cac7d6c47320955ce7fbc2bb1ddcc"
+    },
+    {
+      "trajectory_id": "opus_redshift__beer_factory__2e9dd4300ae1",
+      "group": "opus_redshift",
+      "task": "beer_factory",
+      "source": "data/opus_redshift/beer_factory/result.json",
+      "source_sha256": "2e9dd4300ae1e788940496ea1014fd8aefd86b617c160c3006bb2da2c8fdfb39"
+    },
+    {
+      "trajectory_id": "opus_redshift__bike_share_1__aa99d86974d4",
+      "group": "opus_redshift",
+      "task": "bike_share_1",
+      "source": "data/opus_redshift/bike_share_1/result.json",
+      "source_sha256": "aa99d86974d41fe12fba7365f5906e2d8c3967a6925137d045f5b3bf9d7a1455"
+    },
+    {
+      "trajectory_id": "opus_redshift__book_publishing_company__85dbe0e735bb",
+      "group": "opus_redshift",
+      "task": "book_publishing_company",
+      "source": "data/opus_redshift/book_publishing_company/result.json",
+      "source_sha256": "85dbe0e735bbf11a4d51ee1fb71c0e95d617b3fed8fd488b3b0af482a31b9dc6"
+    },
+    {
+      "trajectory_id": "opus_redshift__books__b656cab2c2f8",
+      "group": "opus_redshift",
+      "task": "books",
+      "source": "data/opus_redshift/books/result.json",
+      "source_sha256": "b656cab2c2f807f64d2daeb5c8559e2e8b2c58f7f02d760433ff05ceae2e3048"
+    },
+    {
+      "trajectory_id": "opus_redshift__california_schools__b19e3c0d8559",
+      "group": "opus_redshift",
+      "task": "california_schools",
+      "source": "data/opus_redshift/california_schools/result.json",
+      "source_sha256": "b19e3c0d85599e8ca127780f6891bc5c341515fca01b977fec59071b5913fea7"
+    },
+    {
+      "trajectory_id": "opus_redshift__car_retails__e0449fd0ba6b",
+      "group": "opus_redshift",
+      "task": "car_retails",
+      "source": "data/opus_redshift/car_retails/result.json",
+      "source_sha256": "e0449fd0ba6b4b4e0710a3493a78144500dff06f37898b7dd3efd8fc46255cd2"
+    },
+    {
+      "trajectory_id": "opus_redshift__card_games__39373f3a5dd8",
+      "group": "opus_redshift",
+      "task": "card_games",
+      "source": "data/opus_redshift/card_games/result.json",
+      "source_sha256": "39373f3a5dd80bfa1c355a11cac1f46f4d7b06a7c1f854c594c242b9e8c1958d"
+    },
+    {
+      "trajectory_id": "opus_redshift__cars__f08594bf06bb",
+      "group": "opus_redshift",
+      "task": "cars",
+      "source": "data/opus_redshift/cars/result.json",
+      "source_sha256": "f08594bf06bb6cba2186fc34ffad74dc8bb5cb49d300847270504dbcfb17925c"
+    },
+    {
+      "trajectory_id": "opus_redshift__chicago_crime__636f234472e8",
+      "group": "opus_redshift",
+      "task": "chicago_crime",
+      "source": "data/opus_redshift/chicago_crime/result.json",
+      "source_sha256": "636f234472e844ecae631ee40ddfca2c949bd1234e7758f55971994698a8fb2e"
+    },
+    {
+      "trajectory_id": "opus_redshift__citeseer__6c902a6f82aa",
+      "group": "opus_redshift",
+      "task": "citeseer",
+      "source": "data/opus_redshift/citeseer/result.json",
+      "source_sha256": "6c902a6f82aaf8b508d8e0f6aaa9dbe2941964ce196a8c6441ca4214faed817d"
+    },
+    {
+      "trajectory_id": "opus_redshift__codebase_comments__5f4d49601e6e",
+      "group": "opus_redshift",
+      "task": "codebase_comments",
+      "source": "data/opus_redshift/codebase_comments/result.json",
+      "source_sha256": "5f4d49601e6ef766e3e6ffa2e8459f9a1f12bdf21db2e78a669831ac5d91ee2e"
+    },
+    {
+      "trajectory_id": "opus_redshift__codebase_community__898287373628",
+      "group": "opus_redshift",
+      "task": "codebase_community",
+      "source": "data/opus_redshift/codebase_community/result.json",
+      "source_sha256": "8982873736286dc1678bbf0d2b244f26c753ef89fdfecfc4ae44715cd7ed766b"
+    },
+    {
+      "trajectory_id": "opus_redshift__coinmarketcap__4f05644161ac",
+      "group": "opus_redshift",
+      "task": "coinmarketcap",
+      "source": "data/opus_redshift/coinmarketcap/result.json",
+      "source_sha256": "4f05644161ace9780a250bf7313b5fd56453b06f5efeda02aa8cc17d387ca493"
+    },
+    {
+      "trajectory_id": "opus_redshift__college_completion__9e66493bf7ec",
+      "group": "opus_redshift",
+      "task": "college_completion",
+      "source": "data/opus_redshift/college_completion/result.json",
+      "source_sha256": "9e66493bf7ec4927f338401661686043025cda01c00854d100f271f1bf8c80b0"
+    },
+    {
+      "trajectory_id": "opus_redshift__computer_student__7c7da830f9b9",
+      "group": "opus_redshift",
+      "task": "computer_student",
+      "source": "data/opus_redshift/computer_student/result.json",
+      "source_sha256": "7c7da830f9b9deaebce23cf9fb300021eb1d60dd2d1c3f522eac0832f3511bb0"
+    },
+    {
+      "trajectory_id": "opus_redshift__cookbook__40d24e276d72",
+      "group": "opus_redshift",
+      "task": "cookbook",
+      "source": "data/opus_redshift/cookbook/result.json",
+      "source_sha256": "40d24e276d72d962107e78443badab9fd942abc95b7c06303ff9a477f260b720"
+    },
+    {
+      "trajectory_id": "opus_redshift__cs_semester__eeb00a193a68",
+      "group": "opus_redshift",
+      "task": "cs_semester",
+      "source": "data/opus_redshift/cs_semester/result.json",
+      "source_sha256": "eeb00a193a680f362d1f8599bd77abfa7f19b2b9d12d237f2f4afcfe10fab49f"
+    },
+    {
+      "trajectory_id": "opus_redshift__debit_card_specializing__bdfb9368dd54",
+      "group": "opus_redshift",
+      "task": "debit_card_specializing",
+      "source": "data/opus_redshift/debit_card_specializing/result.json",
+      "source_sha256": "bdfb9368dd5440d8967bc818f462d5eaa98da36e3ca4d1a9543afb3c4eac7b82"
+    },
+    {
+      "trajectory_id": "opus_redshift__disney__38c8af11c64b",
+      "group": "opus_redshift",
+      "task": "disney",
+      "source": "data/opus_redshift/disney/result.json",
+      "source_sha256": "38c8af11c64beb7a30fe95f21521a462b40f16cb0a002f9ece6d82ba445c6f89"
+    },
+    {
+      "trajectory_id": "opus_redshift__donor__69a664570ad2",
+      "group": "opus_redshift",
+      "task": "donor",
+      "source": "data/opus_redshift/donor/result.json",
+      "source_sha256": "69a664570ad2f081e83a3ab88f895362927cdd3bfff612c9b0cc5172ef07b345"
+    },
+    {
+      "trajectory_id": "opus_redshift__european_football_1__a5dd42a37f1e",
+      "group": "opus_redshift",
+      "task": "european_football_1",
+      "source": "data/opus_redshift/european_football_1/result.json",
+      "source_sha256": "a5dd42a37f1ec76f47788a261633798791b4c4c736767f3cf47b739235a1fd26"
+    },
+    {
+      "trajectory_id": "opus_redshift__european_football_2__9a825be5365c",
+      "group": "opus_redshift",
+      "task": "european_football_2",
+      "source": "data/opus_redshift/european_football_2/result.json",
+      "source_sha256": "9a825be5365cba95cc65d8d125ca2e2768a01be2d4e9e80248c45c86cab67f8f"
+    },
+    {
+      "trajectory_id": "opus_redshift__facebook_ads__7393e458ac44",
+      "group": "opus_redshift",
+      "task": "facebook_ads",
+      "source": "data/opus_redshift/facebook_ads/result.json",
+      "source_sha256": "7393e458ac444596242db663193aca8c3ae572f142176c06c4ef499798bd12a5"
+    },
+    {
+      "trajectory_id": "opus_redshift__financial__103588b4a6e0",
+      "group": "opus_redshift",
+      "task": "financial",
+      "source": "data/opus_redshift/financial/result.json",
+      "source_sha256": "103588b4a6e05984292bbf19731ba3aae83d310a3a856da0ad41183a80fee129"
+    },
+    {
+      "trajectory_id": "opus_redshift__food_inspection_2__1715ee0e3559",
+      "group": "opus_redshift",
+      "task": "food_inspection_2",
+      "source": "data/opus_redshift/food_inspection_2/result.json",
+      "source_sha256": "1715ee0e35590d4c059f58bc71af6fb814d20fdb199cbad26ba0034aefa17a5b"
+    },
+    {
+      "trajectory_id": "opus_redshift__food_inspection__d17db13f76b3",
+      "group": "opus_redshift",
+      "task": "food_inspection",
+      "source": "data/opus_redshift/food_inspection/result.json",
+      "source_sha256": "d17db13f76b381bd8ce9936f053c0f48a3ef5f46a53572410d5a5111e03d9b34"
+    },
+    {
+      "trajectory_id": "opus_redshift__formula_1__c7872721e17e",
+      "group": "opus_redshift",
+      "task": "formula_1",
+      "source": "data/opus_redshift/formula_1/result.json",
+      "source_sha256": "c7872721e17e14e49e752e9f8937be8be7a218bf2787cf7a037ad99c45979807"
+    },
+    {
+      "trajectory_id": "opus_redshift__genes__852848e8753f",
+      "group": "opus_redshift",
+      "task": "genes",
+      "source": "data/opus_redshift/genes/result.json",
+      "source_sha256": "852848e8753f49256b0920dbe362d8059da48d81ee8a301b527d81c548e53148"
+    },
+    {
+      "trajectory_id": "opus_redshift__github__141c8194716f",
+      "group": "opus_redshift",
+      "task": "github",
+      "source": "data/opus_redshift/github/result.json",
+      "source_sha256": "141c8194716f5aafc2f4cfd39a11c03e043510f5fa459ba5429d7d530284b24b"
+    },
+    {
+      "trajectory_id": "opus_redshift__hockey__121be97d10ad",
+      "group": "opus_redshift",
+      "task": "hockey",
+      "source": "data/opus_redshift/hockey/result.json",
+      "source_sha256": "121be97d10adeacd3ed0484880784b2f704e1e6712419c6e578a337ff17ca267"
+    },
+    {
+      "trajectory_id": "opus_redshift__human_resources__38b6153789e7",
+      "group": "opus_redshift",
+      "task": "human_resources",
+      "source": "data/opus_redshift/human_resources/result.json",
+      "source_sha256": "38b6153789e79eb9c35e4739764618198cc5be0b178a376de3c5d59eb0fce5f1"
+    },
+    {
+      "trajectory_id": "opus_redshift__ice_hockey_draft__17580198e897",
+      "group": "opus_redshift",
+      "task": "ice_hockey_draft",
+      "source": "data/opus_redshift/ice_hockey_draft/result.json",
+      "source_sha256": "17580198e8973f0bb6673b4104b9bc6216ae091df2e5ddc4cb6eb2346f2ef3c8"
+    },
+    {
+      "trajectory_id": "opus_redshift__image_and_language__85a18cd3a7b2",
+      "group": "opus_redshift",
+      "task": "image_and_language",
+      "source": "data/opus_redshift/image_and_language/result.json",
+      "source_sha256": "85a18cd3a7b2adc268e6f3bf0e5933ba9e65d5a8156d1d56a4bf9098504c9a41"
+    },
+    {
+      "trajectory_id": "opus_redshift__instagram_business__220aedabd6f2",
+      "group": "opus_redshift",
+      "task": "instagram_business",
+      "source": "data/opus_redshift/instagram_business/result.json",
+      "source_sha256": "220aedabd6f2cef3f5ae11fd090f3bcd4dae19d9a22673b8f59c7250797163a0"
+    },
+    {
+      "trajectory_id": "opus_redshift__language_corpus__c4abd6055b4e",
+      "group": "opus_redshift",
+      "task": "language_corpus",
+      "source": "data/opus_redshift/language_corpus/result.json",
+      "source_sha256": "c4abd6055b4e63ba2bbedbe3bcc451f74da40900fc7eda2592563a19c3a7275a"
+    },
+    {
+      "trajectory_id": "opus_redshift__law_episode__8435096aa56a",
+      "group": "opus_redshift",
+      "task": "law_episode",
+      "source": "data/opus_redshift/law_episode/result.json",
+      "source_sha256": "8435096aa56addb5eadac4429a93eef6949b123c8f7c91e219d5f92fe3d0d715"
+    },
+    {
+      "trajectory_id": "opus_redshift__legislator__91085a307717",
+      "group": "opus_redshift",
+      "task": "legislator",
+      "source": "data/opus_redshift/legislator/result.json",
+      "source_sha256": "91085a307717d9fd294c40b4bddb311d6cc158c6064c29c5da297c6e3c6347f8"
+    },
+    {
+      "trajectory_id": "opus_redshift__lever__9245a1122adb",
+      "group": "opus_redshift",
+      "task": "lever",
+      "source": "data/opus_redshift/lever/result.json",
+      "source_sha256": "9245a1122adbcfdda22de6296ef14cefccdf61ab578984082d18ca6c8f728f7a"
+    },
+    {
+      "trajectory_id": "opus_redshift__linkedin__03ca2de8ce80",
+      "group": "opus_redshift",
+      "task": "linkedin",
+      "source": "data/opus_redshift/linkedin/result.json",
+      "source_sha256": "03ca2de8ce805621468115b1d2c9a1820891c4c8575303737d7fc4d364334f29"
+    },
+    {
+      "trajectory_id": "opus_redshift__mailchimp__e1e07aadf81c",
+      "group": "opus_redshift",
+      "task": "mailchimp",
+      "source": "data/opus_redshift/mailchimp/result.json",
+      "source_sha256": "e1e07aadf81cd465676550ada7667820ce40ea8fc0501864c75e5bafe5d7ae67"
+    },
+    {
+      "trajectory_id": "opus_redshift__marketo__26e2af47e6b2",
+      "group": "opus_redshift",
+      "task": "marketo",
+      "source": "data/opus_redshift/marketo/result.json",
+      "source_sha256": "26e2af47e6b28a5eff5cb5072c344abc6fb05591abaf2bc9d56a0209942716fb"
+    },
+    {
+      "trajectory_id": "opus_redshift__mental_health_survey__2a62bc5e83fc",
+      "group": "opus_redshift",
+      "task": "mental_health_survey",
+      "source": "data/opus_redshift/mental_health_survey/result.json",
+      "source_sha256": "2a62bc5e83fc5beb8bdf3373d03d8e011c01042ae6974aa1a682b00cc5e035c2"
+    },
+    {
+      "trajectory_id": "opus_redshift__menu__4cdb7d54ef59",
+      "group": "opus_redshift",
+      "task": "menu",
+      "source": "data/opus_redshift/menu/result.json",
+      "source_sha256": "4cdb7d54ef59aec4731c8bdbd7cc72a178145ffbe65614cc62cb0e881b94b1b4"
+    },
+    {
+      "trajectory_id": "opus_redshift__microsoft_ads__c90c7a39f9ea",
+      "group": "opus_redshift",
+      "task": "microsoft_ads",
+      "source": "data/opus_redshift/microsoft_ads/result.json",
+      "source_sha256": "c90c7a39f9ea224fd0c22d43f6eed85d39b1f8e51b07a36c7cbf5af41dd20988"
+    },
+    {
+      "trajectory_id": "opus_redshift__mondial_geo__73f8d6a936a3",
+      "group": "opus_redshift",
+      "task": "mondial_geo",
+      "source": "data/opus_redshift/mondial_geo/result.json",
+      "source_sha256": "73f8d6a936a36b0b87a7022c0bae6283b2427629674402664cd8d2d5f5830dc3"
+    },
+    {
+      "trajectory_id": "opus_redshift__movie_3__fdf15565ba51",
+      "group": "opus_redshift",
+      "task": "movie_3",
+      "source": "data/opus_redshift/movie_3/result.json",
+      "source_sha256": "fdf15565ba512d062dbfe3ac4b9ecd7f26120b79d6a2323de19314e3f8efd749"
+    },
+    {
+      "trajectory_id": "opus_redshift__movie__4ebbe9c69648",
+      "group": "opus_redshift",
+      "task": "movie",
+      "source": "data/opus_redshift/movie/result.json",
+      "source_sha256": "4ebbe9c696487322a6cc8125a6804c73686291cb5a1f16dcdbf3f3ed894fabf5"
+    },
+    {
+      "trajectory_id": "opus_redshift__movie_platform__284c24cf25f0",
+      "group": "opus_redshift",
+      "task": "movie_platform",
+      "source": "data/opus_redshift/movie_platform/result.json",
+      "source_sha256": "284c24cf25f048d4b18018eb5a30b04b63032e8cfe36316540c75f2d663f2304"
+    },
+    {
+      "trajectory_id": "opus_redshift__movielens__ee92460b433e",
+      "group": "opus_redshift",
+      "task": "movielens",
+      "source": "data/opus_redshift/movielens/result.json",
+      "source_sha256": "ee92460b433e22827abbbd8232c375d6680ec949777646842cae915965b0c067"
+    },
+    {
+      "trajectory_id": "opus_redshift__movies_4__26c8e3047f0f",
+      "group": "opus_redshift",
+      "task": "movies_4",
+      "source": "data/opus_redshift/movies_4/result.json",
+      "source_sha256": "26c8e3047f0fc89a4936a98fccfb4f31fb940bd0f2b9e601193291840e0d0eea"
+    },
+    {
+      "trajectory_id": "opus_redshift__music_platform_2__daf18f5ec30f",
+      "group": "opus_redshift",
+      "task": "music_platform_2",
+      "source": "data/opus_redshift/music_platform_2/result.json",
+      "source_sha256": "daf18f5ec30f8bbc7d9671291c8083d36467869e5135a15a166bfa7c9a76a30c"
+    },
+    {
+      "trajectory_id": "opus_redshift__music_tracker__a562f7acbfc9",
+      "group": "opus_redshift",
+      "task": "music_tracker",
+      "source": "data/opus_redshift/music_tracker/result.json",
+      "source_sha256": "a562f7acbfc94c1e0d561e5760d51e9072e68ece9bab94a34b0f74b2433f572b"
+    },
+    {
+      "trajectory_id": "opus_redshift__olympics__eb932223e7fd",
+      "group": "opus_redshift",
+      "task": "olympics",
+      "source": "data/opus_redshift/olympics/result.json",
+      "source_sha256": "eb932223e7fd620c8885f4378f6eb6accf6c5eb931c75c2652a65da5890bd5f5"
+    },
+    {
+      "trajectory_id": "opus_redshift__pardot__e65c640065b8",
+      "group": "opus_redshift",
+      "task": "pardot",
+      "source": "data/opus_redshift/pardot/result.json",
+      "source_sha256": "e65c640065b81f29ecc7a65a8e9aec17bef9ab948f75d9ac95297ab93f1aba54"
+    },
+    {
+      "trajectory_id": "opus_redshift__pinterest__fb1024d9cf34",
+      "group": "opus_redshift",
+      "task": "pinterest",
+      "source": "data/opus_redshift/pinterest/result.json",
+      "source_sha256": "fb1024d9cf34abdc8f6bebd291be68bb573210e201b109b413f2a8bd68100cb6"
+    },
+    {
+      "trajectory_id": "opus_redshift__professional_basketball__4db60d20e298",
+      "group": "opus_redshift",
+      "task": "professional_basketball",
+      "source": "data/opus_redshift/professional_basketball/result.json",
+      "source_sha256": "4db60d20e2987a3b6f83a97314c0d24a64edbfef46b874ef46b9fba77ac6021a"
+    },
+    {
+      "trajectory_id": "opus_redshift__public_review_platform__24bfb5780efb",
+      "group": "opus_redshift",
+      "task": "public_review_platform",
+      "source": "data/opus_redshift/public_review_platform/result.json",
+      "source_sha256": "24bfb5780efbdec047e9ca2d0775fdbccd9e3df847992a7ea79cba574595be79"
+    },
+    {
+      "trajectory_id": "opus_redshift__qualtrics__d4c4f4081dac",
+      "group": "opus_redshift",
+      "task": "qualtrics",
+      "source": "data/opus_redshift/qualtrics/result.json",
+      "source_sha256": "d4c4f4081dac80ca19c216c88af83b269054f217422e42dca307d1dec8c04622"
+    },
+    {
+      "trajectory_id": "opus_redshift__recurly__0d1353ece077",
+      "group": "opus_redshift",
+      "task": "recurly",
+      "source": "data/opus_redshift/recurly/result.json",
+      "source_sha256": "0d1353ece0778edea1783ed7b1d01ad42896c7273867c1e4b29725b45fd4e949"
+    },
+    {
+      "trajectory_id": "opus_redshift__regional_sales__5ff34acbdb52",
+      "group": "opus_redshift",
+      "task": "regional_sales",
+      "source": "data/opus_redshift/regional_sales/result.json",
+      "source_sha256": "5ff34acbdb5208f89666c3f486a1403e29f602c941a5a494f6f01f336e2cc050"
+    },
+    {
+      "trajectory_id": "opus_redshift__restaurant__f73b41854713",
+      "group": "opus_redshift",
+      "task": "restaurant",
+      "source": "data/opus_redshift/restaurant/result.json",
+      "source_sha256": "f73b4185471327ce82fb6351990e3ad20e8698d06b7904de2e42a3d3aab381a1"
+    },
+    {
+      "trajectory_id": "opus_redshift__retail_complains__a3518cf603ef",
+      "group": "opus_redshift",
+      "task": "retail_complains",
+      "source": "data/opus_redshift/retail_complains/result.json",
+      "source_sha256": "a3518cf603efcbe6017db134db82e67b8ef31393920df01c090dd4a2d317deaf"
+    },
+    {
+      "trajectory_id": "opus_redshift__retail_world__c2f3448b1749",
+      "group": "opus_redshift",
+      "task": "retail_world",
+      "source": "data/opus_redshift/retail_world/result.json",
+      "source_sha256": "c2f3448b1749d80e54f4a932944f31a706b739752ba7d60e6184ee464ace221a"
+    },
+    {
+      "trajectory_id": "opus_redshift__retails__a89e9b20bdb1",
+      "group": "opus_redshift",
+      "task": "retails",
+      "source": "data/opus_redshift/retails/result.json",
+      "source_sha256": "a89e9b20bdb143732d7026c9d5b51853363c0896ad626c1c1f8a69a9476e2f67"
+    },
+    {
+      "trajectory_id": "opus_redshift__sales__24599cbc6503",
+      "group": "opus_redshift",
+      "task": "sales",
+      "source": "data/opus_redshift/sales/result.json",
+      "source_sha256": "24599cbc65037cc5d2652200e2bf92de3a7dddf25b80870a253e3cc3b98e57a2"
+    },
+    {
+      "trajectory_id": "opus_redshift__sales_in_weather__f21d24352b70",
+      "group": "opus_redshift",
+      "task": "sales_in_weather",
+      "source": "data/opus_redshift/sales_in_weather/result.json",
+      "source_sha256": "f21d24352b7093338802d4b0a126fe637120ecdc4fd1976d0c706fe19835bdc2"
+    },
+    {
+      "trajectory_id": "opus_redshift__shakespeare__427690d6f8db",
+      "group": "opus_redshift",
+      "task": "shakespeare",
+      "source": "data/opus_redshift/shakespeare/result.json",
+      "source_sha256": "427690d6f8dbd3ec94b75337cd5531f782c7e232e5fe86ee0df4617ec74fae78"
+    },
+    {
+      "trajectory_id": "opus_redshift__shipping__75b8a9c4a43b",
+      "group": "opus_redshift",
+      "task": "shipping",
+      "source": "data/opus_redshift/shipping/result.json",
+      "source_sha256": "75b8a9c4a43b1cb7b70f99b4ea1aa4002c38352e161288e9fea2451109541bab"
+    },
+    {
+      "trajectory_id": "opus_redshift__simpson_episodes__8678855598ee",
+      "group": "opus_redshift",
+      "task": "simpson_episodes",
+      "source": "data/opus_redshift/simpson_episodes/result.json",
+      "source_sha256": "8678855598ee9c16629725afdd05802aed363a29d933f3b7b3a25965addd5ccd"
+    },
+    {
+      "trajectory_id": "opus_redshift__soccer_2016__84ef94d2d1a1",
+      "group": "opus_redshift",
+      "task": "soccer_2016",
+      "source": "data/opus_redshift/soccer_2016/result.json",
+      "source_sha256": "84ef94d2d1a1c5f122a510688c5a9cac3cdb29cc98c5b0a46f44babda2817bf7"
+    },
+    {
+      "trajectory_id": "opus_redshift__social_media__308dd8aa5012",
+      "group": "opus_redshift",
+      "task": "social_media",
+      "source": "data/opus_redshift/social_media/result.json",
+      "source_sha256": "308dd8aa5012705728d896388183d24c0d74b41cc5afced02052b5a056c355a1"
+    },
+    {
+      "trajectory_id": "opus_redshift__software_company__4571d52766f8",
+      "group": "opus_redshift",
+      "task": "software_company",
+      "source": "data/opus_redshift/software_company/result.json",
+      "source_sha256": "4571d52766f8483232fbedf4df6fd7c58f83f11a5c9ba77430ad13f3aabed84a"
+    },
+    {
+      "trajectory_id": "opus_redshift__student_club__d59aa9ba7540",
+      "group": "opus_redshift",
+      "task": "student_club",
+      "source": "data/opus_redshift/student_club/result.json",
+      "source_sha256": "d59aa9ba7540e94d40d01fd4ced75e9395b392c969976f6d3cc7568736024386"
+    },
+    {
+      "trajectory_id": "opus_redshift__student_loan__87a58c882cae",
+      "group": "opus_redshift",
+      "task": "student_loan",
+      "source": "data/opus_redshift/student_loan/result.json",
+      "source_sha256": "87a58c882cae873f4f04a164fcff6105841dc146419b2f075952be1ea3328c2e"
+    },
+    {
+      "trajectory_id": "opus_redshift__superhero__4200fb5eaafd",
+      "group": "opus_redshift",
+      "task": "superhero",
+      "source": "data/opus_redshift/superhero/result.json",
+      "source_sha256": "4200fb5eaafdf2e18f3bd6cb0307eda131e3e9b63b75058a1a37ea0c1ccd289d"
+    },
+    {
+      "trajectory_id": "opus_redshift__superstore__108faf921e20",
+      "group": "opus_redshift",
+      "task": "superstore",
+      "source": "data/opus_redshift/superstore/result.json",
+      "source_sha256": "108faf921e20c54f425c0c233998489a9872c1bfffdb32d11579f7fa347e1287"
+    },
+    {
+      "trajectory_id": "opus_redshift__synthea__800acd5c98a4",
+      "group": "opus_redshift",
+      "task": "synthea",
+      "source": "data/opus_redshift/synthea/result.json",
+      "source_sha256": "800acd5c98a4b5773086f74ac344dbe63834bfd4d062574eb54e5b3de1bd44ce"
+    },
+    {
+      "trajectory_id": "opus_redshift__talkingdata__ff64a3a235a8",
+      "group": "opus_redshift",
+      "task": "talkingdata",
+      "source": "data/opus_redshift/talkingdata/result.json",
+      "source_sha256": "ff64a3a235a825300c30b9068cd8a52e273622259b08bc1ee3b7ce412b436d20"
+    },
+    {
+      "trajectory_id": "opus_redshift__thrombosis_prediction__9e82d75cfce9",
+      "group": "opus_redshift",
+      "task": "thrombosis_prediction",
+      "source": "data/opus_redshift/thrombosis_prediction/result.json",
+      "source_sha256": "9e82d75cfce9f650cb3fd7fcd862a9a9cde2dc6f871fe687b7d2dcb0167ff256"
+    },
+    {
+      "trajectory_id": "opus_redshift__tiktok_ads__7790d7e17c76",
+      "group": "opus_redshift",
+      "task": "tiktok_ads",
+      "source": "data/opus_redshift/tiktok_ads/result.json",
+      "source_sha256": "7790d7e17c76ee705e7ca1d6121e96b09870f9b36bfa5aedb2ce8abd646d4689"
+    },
+    {
+      "trajectory_id": "opus_redshift__toxicology__1e160e63daf3",
+      "group": "opus_redshift",
+      "task": "toxicology",
+      "source": "data/opus_redshift/toxicology/result.json",
+      "source_sha256": "1e160e63daf3c0450cf1258a11af43166b91da5bf70e2f98366d83f5d40082f6"
+    },
+    {
+      "trajectory_id": "opus_redshift__trains__0258ec1e5d8e",
+      "group": "opus_redshift",
+      "task": "trains",
+      "source": "data/opus_redshift/trains/result.json",
+      "source_sha256": "0258ec1e5d8e7a46b2e2d3ba36d7502bfc7f66b95c6014f6cb8d899c5a309b77"
+    },
+    {
+      "trajectory_id": "opus_redshift__twilio__f6f6b5332387",
+      "group": "opus_redshift",
+      "task": "twilio",
+      "source": "data/opus_redshift/twilio/result.json",
+      "source_sha256": "f6f6b5332387fad3a5657c12e17e561cac4ac2ab2451e605bb716ae4326ba581"
+    },
+    {
+      "trajectory_id": "opus_redshift__twitter_organic__8a49560aa168",
+      "group": "opus_redshift",
+      "task": "twitter_organic",
+      "source": "data/opus_redshift/twitter_organic/result.json",
+      "source_sha256": "8a49560aa168c01633bf3f1a1b7a1092f52aeaaebe00a5809577522c8f319e7d"
+    },
+    {
+      "trajectory_id": "opus_redshift__university__ffe1202325f3",
+      "group": "opus_redshift",
+      "task": "university",
+      "source": "data/opus_redshift/university/result.json",
+      "source_sha256": "ffe1202325f3257e9053a4ecbbd7b88d8e1af539439e2047c807af7238efdae3"
+    },
+    {
+      "trajectory_id": "opus_redshift__video_games__8a191679d6da",
+      "group": "opus_redshift",
+      "task": "video_games",
+      "source": "data/opus_redshift/video_games/result.json",
+      "source_sha256": "8a191679d6da0ae335ee353c3c639bed5380a7ce7463b22168b39e1bd908040a"
+    },
+    {
+      "trajectory_id": "opus_redshift__workday__341498d412a7",
+      "group": "opus_redshift",
+      "task": "workday",
+      "source": "data/opus_redshift/workday/result.json",
+      "source_sha256": "341498d412a7461e7d314717bc924ec28a0d9f25355ba35686489ac2e9671061"
+    },
+    {
+      "trajectory_id": "opus_redshift__works_cycles__f9008ba85261",
+      "group": "opus_redshift",
+      "task": "works_cycles",
+      "source": "data/opus_redshift/works_cycles/result.json",
+      "source_sha256": "f9008ba85261cc5aa1f16e86fe56e3cb1a4d14966993a405fee8ad3ed64ddcf7"
+    },
+    {
+      "trajectory_id": "opus_redshift__world__1581cc96da01",
+      "group": "opus_redshift",
+      "task": "world",
+      "source": "data/opus_redshift/world/result.json",
+      "source_sha256": "1581cc96da01ff9c85bf0fe7b1fc886ffd7f452e69e688cb292cb823164521b5"
+    },
+    {
+      "trajectory_id": "opus_redshift__world_development_indicators__bc31becee666",
+      "group": "opus_redshift",
+      "task": "world_development_indicators",
+      "source": "data/opus_redshift/world_development_indicators/result.json",
+      "source_sha256": "bc31becee6660645982dd78de2b87c15e2f086747a327a2714713fb6c29bb4a5"
+    },
+    {
+      "trajectory_id": "opus_redshift__xero__e99f9fffc73a",
+      "group": "opus_redshift",
+      "task": "xero",
+      "source": "data/opus_redshift/xero/result.json",
+      "source_sha256": "e99f9fffc73adc36b1ab50181f46ff0aad6818aced687ffe3e8a03a99c8017b7"
+    },
+    {
+      "trajectory_id": "opus_redshift__youtube_analytics__12b41104960f",
+      "group": "opus_redshift",
+      "task": "youtube_analytics",
+      "source": "data/opus_redshift/youtube_analytics/result.json",
+      "source_sha256": "12b41104960f2b75f78f1ac9dbfbbbada01b88bd1c2b7e64dc208dd11131efdd"
+    },
+    {
+      "trajectory_id": "opus_redshift__zuora__0522b4502482",
+      "group": "opus_redshift",
+      "task": "zuora",
+      "source": "data/opus_redshift/zuora/result.json",
+      "source_sha256": "0522b4502482c7a49edbb1ebf9ad03edb704a58469a9d7164a22c050b1c14868"
+    },
+    {
+      "trajectory_id": "opus_snowflake__address__a411d9834985",
+      "group": "opus_snowflake",
+      "task": "address",
+      "source": "data/opus_snowflake/address/result.json",
+      "source_sha256": "a411d9834985a8a248b3f5d265e8f260eee1d83805707948f45acd983bae8f70"
+    },
+    {
+      "trajectory_id": "opus_snowflake__airline__89c91d45671c",
+      "group": "opus_snowflake",
+      "task": "airline",
+      "source": "data/opus_snowflake/airline/result.json",
+      "source_sha256": "89c91d45671cffe87a87571caaa04fa36fd3a8a9babbf97d848d9efb44f145be"
+    },
+    {
+      "trajectory_id": "opus_snowflake__amplitude__0bb6c2a3b1dd",
+      "group": "opus_snowflake",
+      "task": "amplitude",
+      "source": "data/opus_snowflake/amplitude/result.json",
+      "source_sha256": "0bb6c2a3b1ddf19db0a322de46c5985d1c6986baf72b6df8306d13ee59461362"
+    },
+    {
+      "trajectory_id": "opus_snowflake__app_store__59e1024d5d8c",
+      "group": "opus_snowflake",
+      "task": "app_store",
+      "source": "data/opus_snowflake/app_store/result.json",
+      "source_sha256": "59e1024d5d8c428b0e3a92652074ecc2c66b3e4983a47d7b84ff7219daebec00"
+    },
+    {
+      "trajectory_id": "opus_snowflake__apple_store__e8837c6049ef",
+      "group": "opus_snowflake",
+      "task": "apple_store",
+      "source": "data/opus_snowflake/apple_store/result.json",
+      "source_sha256": "e8837c6049ef23c222d3dc93eca28bf7f4047d069c91ce7c3c179509a3a83222"
+    },
+    {
+      "trajectory_id": "opus_snowflake__asana__5e9773bc860c",
+      "group": "opus_snowflake",
+      "task": "asana",
+      "source": "data/opus_snowflake/asana/result.json",
+      "source_sha256": "5e9773bc860c5c0fe8ad101c606fc961261dca93581ae10581bef3af61af3037"
+    },
+    {
+      "trajectory_id": "opus_snowflake__authors__777e672baf4f",
+      "group": "opus_snowflake",
+      "task": "authors",
+      "source": "data/opus_snowflake/authors/result.json",
+      "source_sha256": "777e672baf4fff895be074f679222f7f6d9bdbdf2500c39e4a8ad33ce5239127"
+    },
+    {
+      "trajectory_id": "opus_snowflake__beer_factory__7dfd75eb086f",
+      "group": "opus_snowflake",
+      "task": "beer_factory",
+      "source": "data/opus_snowflake/beer_factory/result.json",
+      "source_sha256": "7dfd75eb086fda7bf136cfabd5e0839367fe4d4ae85bd9f7926ece49400e0ebe"
+    },
+    {
+      "trajectory_id": "opus_snowflake__bike_share_1__4a8c291cabb9",
+      "group": "opus_snowflake",
+      "task": "bike_share_1",
+      "source": "data/opus_snowflake/bike_share_1/result.json",
+      "source_sha256": "4a8c291cabb9f34c994c23ac21b3e12304e17bfaa1c6804ba15642e016f5ae00"
+    },
+    {
+      "trajectory_id": "opus_snowflake__book_publishing_company__439c21df57c8",
+      "group": "opus_snowflake",
+      "task": "book_publishing_company",
+      "source": "data/opus_snowflake/book_publishing_company/result.json",
+      "source_sha256": "439c21df57c8d6fb9f700cd05c5abbf68d1f746221e2ca8b40398a09dd5ed0eb"
+    },
+    {
+      "trajectory_id": "opus_snowflake__books__c8706bfbaf6e",
+      "group": "opus_snowflake",
+      "task": "books",
+      "source": "data/opus_snowflake/books/result.json",
+      "source_sha256": "c8706bfbaf6ed8a005fb649dc51488d73c2e3dd9e93adaed0da8666beefbdc88"
+    },
+    {
+      "trajectory_id": "opus_snowflake__california_schools__8bc1645b06be",
+      "group": "opus_snowflake",
+      "task": "california_schools",
+      "source": "data/opus_snowflake/california_schools/result.json",
+      "source_sha256": "8bc1645b06bef0f6307be1489889cf3a4f40646ea85798a8ae205d5af211f491"
+    },
+    {
+      "trajectory_id": "opus_snowflake__car_retails__48d4dab05dd5",
+      "group": "opus_snowflake",
+      "task": "car_retails",
+      "source": "data/opus_snowflake/car_retails/result.json",
+      "source_sha256": "48d4dab05dd5a600355bd6292c9a697f2bc257629dab21b9a0f6f845829148b8"
+    },
+    {
+      "trajectory_id": "opus_snowflake__card_games__fe9c18d0fe70",
+      "group": "opus_snowflake",
+      "task": "card_games",
+      "source": "data/opus_snowflake/card_games/result.json",
+      "source_sha256": "fe9c18d0fe704ed443ef89b7aea203a3a84cfe455dbc1c6aea0ca11643226a6c"
+    },
+    {
+      "trajectory_id": "opus_snowflake__cars__dbed5c158023",
+      "group": "opus_snowflake",
+      "task": "cars",
+      "source": "data/opus_snowflake/cars/result.json",
+      "source_sha256": "dbed5c158023565c04364042a2352b2802c84269338465b97068701c9344168e"
+    },
+    {
+      "trajectory_id": "opus_snowflake__chicago_crime__6b58b173e2e1",
+      "group": "opus_snowflake",
+      "task": "chicago_crime",
+      "source": "data/opus_snowflake/chicago_crime/result.json",
+      "source_sha256": "6b58b173e2e13eaaa89fba0c427b932d29729a9625ce962bb2dc0dedf05cd7d7"
+    },
+    {
+      "trajectory_id": "opus_snowflake__citeseer__77cc4589a6df",
+      "group": "opus_snowflake",
+      "task": "citeseer",
+      "source": "data/opus_snowflake/citeseer/result.json",
+      "source_sha256": "77cc4589a6df60215b4669d121ea1bd6f1ff642e59d07a8710bfb2ab904b94e7"
+    },
+    {
+      "trajectory_id": "opus_snowflake__codebase_comments__e88a4243c51a",
+      "group": "opus_snowflake",
+      "task": "codebase_comments",
+      "source": "data/opus_snowflake/codebase_comments/result.json",
+      "source_sha256": "e88a4243c51a2ff53e3b756dfb923c842fe2c5dd22a2126f0f4668c388d636e7"
+    },
+    {
+      "trajectory_id": "opus_snowflake__codebase_community__32e666d0a8dd",
+      "group": "opus_snowflake",
+      "task": "codebase_community",
+      "source": "data/opus_snowflake/codebase_community/result.json",
+      "source_sha256": "32e666d0a8dd5ac633cedcb25fd0b361d7683534f44d33e2f8c0a1932ec54e15"
+    },
+    {
+      "trajectory_id": "opus_snowflake__coinmarketcap__39ea3dbc7770",
+      "group": "opus_snowflake",
+      "task": "coinmarketcap",
+      "source": "data/opus_snowflake/coinmarketcap/result.json",
+      "source_sha256": "39ea3dbc777012f7df7dc3a2123999158035ff2bbed4bb728e4fe09a4d6df761"
+    },
+    {
+      "trajectory_id": "opus_snowflake__college_completion__48b2c16fa3aa",
+      "group": "opus_snowflake",
+      "task": "college_completion",
+      "source": "data/opus_snowflake/college_completion/result.json",
+      "source_sha256": "48b2c16fa3aade7b25dc0ab37ac338aeb75fefa55a8f354803d97931d5a53913"
+    },
+    {
+      "trajectory_id": "opus_snowflake__computer_student__3c27b89b200f",
+      "group": "opus_snowflake",
+      "task": "computer_student",
+      "source": "data/opus_snowflake/computer_student/result.json",
+      "source_sha256": "3c27b89b200f475977d0d360ffb6638f2a3a4f6c6c05ecfcdf4db78d8526956f"
+    },
+    {
+      "trajectory_id": "opus_snowflake__cookbook__23dfd3838604",
+      "group": "opus_snowflake",
+      "task": "cookbook",
+      "source": "data/opus_snowflake/cookbook/result.json",
+      "source_sha256": "23dfd38386047da14b1e809b815f0f6a225c82ea4b28ccfc9aedaf7cc68ddad2"
+    },
+    {
+      "trajectory_id": "opus_snowflake__cs_semester__d486927eb0c5",
+      "group": "opus_snowflake",
+      "task": "cs_semester",
+      "source": "data/opus_snowflake/cs_semester/result.json",
+      "source_sha256": "d486927eb0c5a6a91f8414d63f7437050491fd7b82d74337e1129ffd3a4de305"
+    },
+    {
+      "trajectory_id": "opus_snowflake__debit_card_specializing__f50bef621879",
+      "group": "opus_snowflake",
+      "task": "debit_card_specializing",
+      "source": "data/opus_snowflake/debit_card_specializing/result.json",
+      "source_sha256": "f50bef6218790ac08c49728b93913fde99b2b58899ac60ec209237dbf37e091e"
+    },
+    {
+      "trajectory_id": "opus_snowflake__disney__37f977a5c5ab",
+      "group": "opus_snowflake",
+      "task": "disney",
+      "source": "data/opus_snowflake/disney/result.json",
+      "source_sha256": "37f977a5c5abfe0d42462f1c418f4e28503d6d6460280ece49281061ab545131"
+    },
+    {
+      "trajectory_id": "opus_snowflake__donor__440d739db139",
+      "group": "opus_snowflake",
+      "task": "donor",
+      "source": "data/opus_snowflake/donor/result.json",
+      "source_sha256": "440d739db139867e6229920d62a9470631cf537934683acb4b119d1f37e62f80"
+    },
+    {
+      "trajectory_id": "opus_snowflake__european_football_1__29dda4c9137e",
+      "group": "opus_snowflake",
+      "task": "european_football_1",
+      "source": "data/opus_snowflake/european_football_1/result.json",
+      "source_sha256": "29dda4c9137e8dff5a6da3f7b22bd5bda40de3858d139a5a5ad2c584f82df9cf"
+    },
+    {
+      "trajectory_id": "opus_snowflake__european_football_2__cc2ddaaa8dd8",
+      "group": "opus_snowflake",
+      "task": "european_football_2",
+      "source": "data/opus_snowflake/european_football_2/result.json",
+      "source_sha256": "cc2ddaaa8dd82c8efbd00be3996ef88bfd377b0acbc920fa7cd7520a79f7e9f0"
+    },
+    {
+      "trajectory_id": "opus_snowflake__facebook_ads__2301c40ccf2d",
+      "group": "opus_snowflake",
+      "task": "facebook_ads",
+      "source": "data/opus_snowflake/facebook_ads/result.json",
+      "source_sha256": "2301c40ccf2d8e30f41ea1b14511db4176ff8d680305a752364effa0242b7c8d"
+    },
+    {
+      "trajectory_id": "opus_snowflake__financial__22586192e15a",
+      "group": "opus_snowflake",
+      "task": "financial",
+      "source": "data/opus_snowflake/financial/result.json",
+      "source_sha256": "22586192e15aaec9b0c9fd89ab48cb2b30601345edaebd2f06eb98e777148dfe"
+    },
+    {
+      "trajectory_id": "opus_snowflake__food_inspection_2__6fd834e4a0ba",
+      "group": "opus_snowflake",
+      "task": "food_inspection_2",
+      "source": "data/opus_snowflake/food_inspection_2/result.json",
+      "source_sha256": "6fd834e4a0babd10f8c1e02d20f579184bb38e77d05f4264bd2f3f75c2f0acd5"
+    },
+    {
+      "trajectory_id": "opus_snowflake__food_inspection__1531e7c147d9",
+      "group": "opus_snowflake",
+      "task": "food_inspection",
+      "source": "data/opus_snowflake/food_inspection/result.json",
+      "source_sha256": "1531e7c147d9ba623e5bbd8bc771bb0d252a7072a02c3f5e717fbd87a7a4e1b6"
+    },
+    {
+      "trajectory_id": "opus_snowflake__formula_1__2593b1d99754",
+      "group": "opus_snowflake",
+      "task": "formula_1",
+      "source": "data/opus_snowflake/formula_1/result.json",
+      "source_sha256": "2593b1d997548415a273742e403786325b9f65b06a66433055a1b04ea1f2747c"
+    },
+    {
+      "trajectory_id": "opus_snowflake__genes__1c9f9fb7c8c9",
+      "group": "opus_snowflake",
+      "task": "genes",
+      "source": "data/opus_snowflake/genes/result.json",
+      "source_sha256": "1c9f9fb7c8c928cd818f189684f4cf432d06eeed30f8d84ddb32f18674ffef07"
+    },
+    {
+      "trajectory_id": "opus_snowflake__github__d440bf373a52",
+      "group": "opus_snowflake",
+      "task": "github",
+      "source": "data/opus_snowflake/github/result.json",
+      "source_sha256": "d440bf373a52e6e01df109d3687d2ad78d9773073714699db049800b0c41bca5"
+    },
+    {
+      "trajectory_id": "opus_snowflake__hockey__4b37ce9ca039",
+      "group": "opus_snowflake",
+      "task": "hockey",
+      "source": "data/opus_snowflake/hockey/result.json",
+      "source_sha256": "4b37ce9ca039a449b96c7e9f693815620588fd7b341e6380f71e615c21a065d0"
+    },
+    {
+      "trajectory_id": "opus_snowflake__human_resources__15a152ba3738",
+      "group": "opus_snowflake",
+      "task": "human_resources",
+      "source": "data/opus_snowflake/human_resources/result.json",
+      "source_sha256": "15a152ba3738b03da890d92cea0c00ae14383caa8a71ddd3cad4e353adcd5077"
+    },
+    {
+      "trajectory_id": "opus_snowflake__ice_hockey_draft__12e265312446",
+      "group": "opus_snowflake",
+      "task": "ice_hockey_draft",
+      "source": "data/opus_snowflake/ice_hockey_draft/result.json",
+      "source_sha256": "12e2653124463caf05f1094a8965a1cbe897ce9770b2a8ebee4913f8d43b3149"
+    },
+    {
+      "trajectory_id": "opus_snowflake__image_and_language__27d10ca41d56",
+      "group": "opus_snowflake",
+      "task": "image_and_language",
+      "source": "data/opus_snowflake/image_and_language/result.json",
+      "source_sha256": "27d10ca41d561ac4f7c7a632b748801dd1612ba7bf78106c719ad7565dcd8a07"
+    },
+    {
+      "trajectory_id": "opus_snowflake__instagram_business__f06153b89064",
+      "group": "opus_snowflake",
+      "task": "instagram_business",
+      "source": "data/opus_snowflake/instagram_business/result.json",
+      "source_sha256": "f06153b89064293c436c7c489dc01f98bcd5f8cc6507a9ffc060f41b8a049f79"
+    },
+    {
+      "trajectory_id": "opus_snowflake__language_corpus__56c960569925",
+      "group": "opus_snowflake",
+      "task": "language_corpus",
+      "source": "data/opus_snowflake/language_corpus/result.json",
+      "source_sha256": "56c960569925cdc3d8deaad1db7943d49b8d5469f226d5431bbcffb48c0ffa83"
+    },
+    {
+      "trajectory_id": "opus_snowflake__law_episode__c514f48a8244",
+      "group": "opus_snowflake",
+      "task": "law_episode",
+      "source": "data/opus_snowflake/law_episode/result.json",
+      "source_sha256": "c514f48a824427348f471776d63b5a978ff806aa459aa86f7a7bdee93dbcd2e1"
+    },
+    {
+      "trajectory_id": "opus_snowflake__legislator__ace08336cebf",
+      "group": "opus_snowflake",
+      "task": "legislator",
+      "source": "data/opus_snowflake/legislator/result.json",
+      "source_sha256": "ace08336cebf8a80817122742d0a437b827091c9551c153259aec3cab6b1e5c4"
+    },
+    {
+      "trajectory_id": "opus_snowflake__lever__9bae264a9ebf",
+      "group": "opus_snowflake",
+      "task": "lever",
+      "source": "data/opus_snowflake/lever/result.json",
+      "source_sha256": "9bae264a9ebf11963fbfd44b45bd65dd53875ae788a36606f9cad442537497d8"
+    },
+    {
+      "trajectory_id": "opus_snowflake__linkedin__cc32be1b74d3",
+      "group": "opus_snowflake",
+      "task": "linkedin",
+      "source": "data/opus_snowflake/linkedin/result.json",
+      "source_sha256": "cc32be1b74d3d01e0aa4ec74a9dc9e5fb6c773346997df6da3273990b1547b9a"
+    },
+    {
+      "trajectory_id": "opus_snowflake__mailchimp__40269a779fbe",
+      "group": "opus_snowflake",
+      "task": "mailchimp",
+      "source": "data/opus_snowflake/mailchimp/result.json",
+      "source_sha256": "40269a779fbe75a6b90c39bf65806cef0939e64ee183cf1605e004699fe7246b"
+    },
+    {
+      "trajectory_id": "opus_snowflake__marketo__da8c2b4ef6a5",
+      "group": "opus_snowflake",
+      "task": "marketo",
+      "source": "data/opus_snowflake/marketo/result.json",
+      "source_sha256": "da8c2b4ef6a51394562b94671e8d4b47b0af7fdc20f280ddaa0368c2c54a982e"
+    },
+    {
+      "trajectory_id": "opus_snowflake__mental_health_survey__ca1306a4b075",
+      "group": "opus_snowflake",
+      "task": "mental_health_survey",
+      "source": "data/opus_snowflake/mental_health_survey/result.json",
+      "source_sha256": "ca1306a4b07518b124a43514ca2e06641143621b02827287d13a0191546496af"
+    },
+    {
+      "trajectory_id": "opus_snowflake__menu__3e52d3fe1897",
+      "group": "opus_snowflake",
+      "task": "menu",
+      "source": "data/opus_snowflake/menu/result.json",
+      "source_sha256": "3e52d3fe18977744322a884170037b1f7f724d74c808b62c8387d2a5aef1f2ec"
+    },
+    {
+      "trajectory_id": "opus_snowflake__microsoft_ads__159e6c0dfe1d",
+      "group": "opus_snowflake",
+      "task": "microsoft_ads",
+      "source": "data/opus_snowflake/microsoft_ads/result.json",
+      "source_sha256": "159e6c0dfe1d70e4344eed06ac61b88f8bdbd4a5b289955f308bac52ffa91f22"
+    },
+    {
+      "trajectory_id": "opus_snowflake__mondial_geo__9aaa93a7071d",
+      "group": "opus_snowflake",
+      "task": "mondial_geo",
+      "source": "data/opus_snowflake/mondial_geo/result.json",
+      "source_sha256": "9aaa93a7071d51706d168d413f28a7bee556ca3acad46604bbde557eff227b57"
+    },
+    {
+      "trajectory_id": "opus_snowflake__movie_3__de7177f29501",
+      "group": "opus_snowflake",
+      "task": "movie_3",
+      "source": "data/opus_snowflake/movie_3/result.json",
+      "source_sha256": "de7177f29501f8e2dd81a2a862b0c56a9581e1f2fb4d4cfb55514fed0bd3f0ae"
+    },
+    {
+      "trajectory_id": "opus_snowflake__movie__902053bacfdb",
+      "group": "opus_snowflake",
+      "task": "movie",
+      "source": "data/opus_snowflake/movie/result.json",
+      "source_sha256": "902053bacfdbbec709a019afc201067046596f721f23ad642ddae9603542aaf8"
+    },
+    {
+      "trajectory_id": "opus_snowflake__movie_platform__1b83ac705cac",
+      "group": "opus_snowflake",
+      "task": "movie_platform",
+      "source": "data/opus_snowflake/movie_platform/result.json",
+      "source_sha256": "1b83ac705cac31b1287e9e7d924c5765018045fbb45b331755708cf59183b16b"
+    },
+    {
+      "trajectory_id": "opus_snowflake__movielens__7ed6d6b9b62b",
+      "group": "opus_snowflake",
+      "task": "movielens",
+      "source": "data/opus_snowflake/movielens/result.json",
+      "source_sha256": "7ed6d6b9b62be094088d7309255e330c09e352ec4893f85aae8d8b75c16549cb"
+    },
+    {
+      "trajectory_id": "opus_snowflake__movies_4__42ae77e42e8f",
+      "group": "opus_snowflake",
+      "task": "movies_4",
+      "source": "data/opus_snowflake/movies_4/result.json",
+      "source_sha256": "42ae77e42e8f36d2ea315b4d33c90a700dcb545068fe83f9dc9d97360290d9c6"
+    },
+    {
+      "trajectory_id": "opus_snowflake__music_platform_2__7570fde56b88",
+      "group": "opus_snowflake",
+      "task": "music_platform_2",
+      "source": "data/opus_snowflake/music_platform_2/result.json",
+      "source_sha256": "7570fde56b88b2adb1f81f452c074a9b6df6622c5564fb17588b5caa8f45fbca"
+    },
+    {
+      "trajectory_id": "opus_snowflake__music_tracker__3d4796eb7ca2",
+      "group": "opus_snowflake",
+      "task": "music_tracker",
+      "source": "data/opus_snowflake/music_tracker/result.json",
+      "source_sha256": "3d4796eb7ca26a60556177d0d4342c9441a84c29947ac5eda10757beaac5043e"
+    },
+    {
+      "trajectory_id": "opus_snowflake__olympics__b7d488396c26",
+      "group": "opus_snowflake",
+      "task": "olympics",
+      "source": "data/opus_snowflake/olympics/result.json",
+      "source_sha256": "b7d488396c26d7556bb373f1969839535092741b77f37623b3ff41284c4a386e"
+    },
+    {
+      "trajectory_id": "opus_snowflake__pardot__383fe611d73b",
+      "group": "opus_snowflake",
+      "task": "pardot",
+      "source": "data/opus_snowflake/pardot/result.json",
+      "source_sha256": "383fe611d73b41074d745be35c5676eab2d04244914ea4de82f24f535a43d8cf"
+    },
+    {
+      "trajectory_id": "opus_snowflake__pinterest__b82bc316cb1d",
+      "group": "opus_snowflake",
+      "task": "pinterest",
+      "source": "data/opus_snowflake/pinterest/result.json",
+      "source_sha256": "b82bc316cb1d6a038aa2b0da08f66770b3be41eb2c240d0910d982734df3d527"
+    },
+    {
+      "trajectory_id": "opus_snowflake__professional_basketball__a2ee0952cf9b",
+      "group": "opus_snowflake",
+      "task": "professional_basketball",
+      "source": "data/opus_snowflake/professional_basketball/result.json",
+      "source_sha256": "a2ee0952cf9bf724e6d279bf245d0fa34b269fc1cb0b983888c65949527f51c6"
+    },
+    {
+      "trajectory_id": "opus_snowflake__public_review_platform__501a896e0b4c",
+      "group": "opus_snowflake",
+      "task": "public_review_platform",
+      "source": "data/opus_snowflake/public_review_platform/result.json",
+      "source_sha256": "501a896e0b4c3c19ca660430858ffbbb4dcaf53fb3d92ccd33a319c1aae89a41"
+    },
+    {
+      "trajectory_id": "opus_snowflake__qualtrics__a3d311aed881",
+      "group": "opus_snowflake",
+      "task": "qualtrics",
+      "source": "data/opus_snowflake/qualtrics/result.json",
+      "source_sha256": "a3d311aed8815f149fa48c76979722fddb249d4c775970a3a373fb9aa44d2e9f"
+    },
+    {
+      "trajectory_id": "opus_snowflake__recurly__562ea0186da4",
+      "group": "opus_snowflake",
+      "task": "recurly",
+      "source": "data/opus_snowflake/recurly/result.json",
+      "source_sha256": "562ea0186da4c5e1b13d9c4a059d00f1de69649ecd0f70fa35c61bfc68e4f139"
+    },
+    {
+      "trajectory_id": "opus_snowflake__regional_sales__e41688c93e2a",
+      "group": "opus_snowflake",
+      "task": "regional_sales",
+      "source": "data/opus_snowflake/regional_sales/result.json",
+      "source_sha256": "e41688c93e2a0f46c4c9e5a202a69a118f979f6c78e6eb62dd0c71b441fd55a0"
+    },
+    {
+      "trajectory_id": "opus_snowflake__restaurant__51d638969842",
+      "group": "opus_snowflake",
+      "task": "restaurant",
+      "source": "data/opus_snowflake/restaurant/result.json",
+      "source_sha256": "51d638969842eeae839a81bd2ddbf873a777c8f7280f87bfa7442be8aa822b23"
+    },
+    {
+      "trajectory_id": "opus_snowflake__retail_complains__c7a2080ab13b",
+      "group": "opus_snowflake",
+      "task": "retail_complains",
+      "source": "data/opus_snowflake/retail_complains/result.json",
+      "source_sha256": "c7a2080ab13b1b24e2b3c32764d990a9e256a64e082d1cd9088d06a26803027e"
+    },
+    {
+      "trajectory_id": "opus_snowflake__retail_world__1e263ecd1c68",
+      "group": "opus_snowflake",
+      "task": "retail_world",
+      "source": "data/opus_snowflake/retail_world/result.json",
+      "source_sha256": "1e263ecd1c68136bc6bb894c85fe81dced5f69a305d410b56eef7fedbd93dca7"
+    },
+    {
+      "trajectory_id": "opus_snowflake__retails__0f6156812e87",
+      "group": "opus_snowflake",
+      "task": "retails",
+      "source": "data/opus_snowflake/retails/result.json",
+      "source_sha256": "0f6156812e873dd96a9d12a20e437a7ecd1561b4c03ffd24fc24882f116e14b3"
+    },
+    {
+      "trajectory_id": "opus_snowflake__sales__b72eee295063",
+      "group": "opus_snowflake",
+      "task": "sales",
+      "source": "data/opus_snowflake/sales/result.json",
+      "source_sha256": "b72eee295063dbe2a45fd48b14749d8e554c28f0c713465a78c760457381401a"
+    },
+    {
+      "trajectory_id": "opus_snowflake__sales_in_weather__7afa08a69e9f",
+      "group": "opus_snowflake",
+      "task": "sales_in_weather",
+      "source": "data/opus_snowflake/sales_in_weather/result.json",
+      "source_sha256": "7afa08a69e9f7d75e4aa12d8bd874c1c32c249496a68958e0eca39918720f686"
+    },
+    {
+      "trajectory_id": "opus_snowflake__shakespeare__e289bf8053b3",
+      "group": "opus_snowflake",
+      "task": "shakespeare",
+      "source": "data/opus_snowflake/shakespeare/result.json",
+      "source_sha256": "e289bf8053b36afb5342b6ba0c86b204b4f19f52c0874b50eadd91c3f0339a04"
+    },
+    {
+      "trajectory_id": "opus_snowflake__shipping__9a0df15353f9",
+      "group": "opus_snowflake",
+      "task": "shipping",
+      "source": "data/opus_snowflake/shipping/result.json",
+      "source_sha256": "9a0df15353f93f7e08e52ba726e161054ab9dbd6f62b3332f59e0a3b12e680f4"
+    },
+    {
+      "trajectory_id": "opus_snowflake__simpson_episodes__e0bea7b669d5",
+      "group": "opus_snowflake",
+      "task": "simpson_episodes",
+      "source": "data/opus_snowflake/simpson_episodes/result.json",
+      "source_sha256": "e0bea7b669d55107278a3a730ca3f77a891eeb1276ff16bbbfcb4221032dc075"
+    },
+    {
+      "trajectory_id": "opus_snowflake__soccer_2016__6c8d810dcb7f",
+      "group": "opus_snowflake",
+      "task": "soccer_2016",
+      "source": "data/opus_snowflake/soccer_2016/result.json",
+      "source_sha256": "6c8d810dcb7f18da03f74ddd6f58e104bbf5c036f25a559dde55d29203d3b6e5"
+    },
+    {
+      "trajectory_id": "opus_snowflake__social_media__e9c1176d2cdc",
+      "group": "opus_snowflake",
+      "task": "social_media",
+      "source": "data/opus_snowflake/social_media/result.json",
+      "source_sha256": "e9c1176d2cdcbb61b1ec74c5905ab3453d67b0a5bb86dd3c0432a0c7b35ba753"
+    },
+    {
+      "trajectory_id": "opus_snowflake__software_company__39993100e1e0",
+      "group": "opus_snowflake",
+      "task": "software_company",
+      "source": "data/opus_snowflake/software_company/result.json",
+      "source_sha256": "39993100e1e0f790d2302b30b0f390e3f6e846fcc7fa46e50bd087113b73f317"
+    },
+    {
+      "trajectory_id": "opus_snowflake__student_club__2da36ef3210d",
+      "group": "opus_snowflake",
+      "task": "student_club",
+      "source": "data/opus_snowflake/student_club/result.json",
+      "source_sha256": "2da36ef3210d27a8f60908f452cde54cdeeec368dbbe23b4e856ef86385f577d"
+    },
+    {
+      "trajectory_id": "opus_snowflake__student_loan__6d7ebb83c9f7",
+      "group": "opus_snowflake",
+      "task": "student_loan",
+      "source": "data/opus_snowflake/student_loan/result.json",
+      "source_sha256": "6d7ebb83c9f7c0f5468b7254dbc05f23d4485e1c14d8423045c02d93bf21f0da"
+    },
+    {
+      "trajectory_id": "opus_snowflake__superhero__0b9aabf81a27",
+      "group": "opus_snowflake",
+      "task": "superhero",
+      "source": "data/opus_snowflake/superhero/result.json",
+      "source_sha256": "0b9aabf81a270e83302ad00c21e5ba2b9d8460348d37ff8204e58fe28263a66a"
+    },
+    {
+      "trajectory_id": "opus_snowflake__superstore__719828b86bc7",
+      "group": "opus_snowflake",
+      "task": "superstore",
+      "source": "data/opus_snowflake/superstore/result.json",
+      "source_sha256": "719828b86bc76e70832011f309fc360d1223e12f7e4d25ca32aa1a158e47fcd0"
+    },
+    {
+      "trajectory_id": "opus_snowflake__synthea__167c74dd9d08",
+      "group": "opus_snowflake",
+      "task": "synthea",
+      "source": "data/opus_snowflake/synthea/result.json",
+      "source_sha256": "167c74dd9d081c358c79c8032bb97930ee020244b9f9d71e0da375b7ec0e545b"
+    },
+    {
+      "trajectory_id": "opus_snowflake__talkingdata__8616d03b7811",
+      "group": "opus_snowflake",
+      "task": "talkingdata",
+      "source": "data/opus_snowflake/talkingdata/result.json",
+      "source_sha256": "8616d03b7811bcd2945069bc11e45f62a81de104239e91d7e2e4f09157bdd860"
+    },
+    {
+      "trajectory_id": "opus_snowflake__thrombosis_prediction__3d36ce60d690",
+      "group": "opus_snowflake",
+      "task": "thrombosis_prediction",
+      "source": "data/opus_snowflake/thrombosis_prediction/result.json",
+      "source_sha256": "3d36ce60d690da700df1c70cd2623790873e68660614bcb0ee54c1aa998b50df"
+    },
+    {
+      "trajectory_id": "opus_snowflake__tiktok_ads__c9c7d5f4a2a9",
+      "group": "opus_snowflake",
+      "task": "tiktok_ads",
+      "source": "data/opus_snowflake/tiktok_ads/result.json",
+      "source_sha256": "c9c7d5f4a2a94eb1605e496438cad94d173d3c79fe647da0c68c068b05aa6d67"
+    },
+    {
+      "trajectory_id": "opus_snowflake__toxicology__94879b8c3d87",
+      "group": "opus_snowflake",
+      "task": "toxicology",
+      "source": "data/opus_snowflake/toxicology/result.json",
+      "source_sha256": "94879b8c3d87eeacd1278266e351d4b4bc247f70a2485b87c5d94408c802d4cd"
+    },
+    {
+      "trajectory_id": "opus_snowflake__trains__6ee87c0bbda2",
+      "group": "opus_snowflake",
+      "task": "trains",
+      "source": "data/opus_snowflake/trains/result.json",
+      "source_sha256": "6ee87c0bbda28597b520691ee2cf53011446404331d5eb17d5dae866fe23d1ae"
+    },
+    {
+      "trajectory_id": "opus_snowflake__twilio__543994b94cdb",
+      "group": "opus_snowflake",
+      "task": "twilio",
+      "source": "data/opus_snowflake/twilio/result.json",
+      "source_sha256": "543994b94cdb8394dc7b9cf24592ee7396c878bf8186b8c82430964d073c5f09"
+    },
+    {
+      "trajectory_id": "opus_snowflake__twitter_organic__4b9aa305c0fe",
+      "group": "opus_snowflake",
+      "task": "twitter_organic",
+      "source": "data/opus_snowflake/twitter_organic/result.json",
+      "source_sha256": "4b9aa305c0fed242749fbf67cb6903e69cd5d8f9b156188c0ec2b06b3d89feec"
+    },
+    {
+      "trajectory_id": "opus_snowflake__university__34122ff41a61",
+      "group": "opus_snowflake",
+      "task": "university",
+      "source": "data/opus_snowflake/university/result.json",
+      "source_sha256": "34122ff41a61c95b2cf7ad4169b9a08124d8d0dd90b30c42e7baed7761f98045"
+    },
+    {
+      "trajectory_id": "opus_snowflake__video_games__cef00015e54e",
+      "group": "opus_snowflake",
+      "task": "video_games",
+      "source": "data/opus_snowflake/video_games/result.json",
+      "source_sha256": "cef00015e54e26bb35b700d1dedd53a0ebad5c773699a4b35bc463dcba3bd4b0"
+    },
+    {
+      "trajectory_id": "opus_snowflake__workday__f951bcd3483f",
+      "group": "opus_snowflake",
+      "task": "workday",
+      "source": "data/opus_snowflake/workday/result.json",
+      "source_sha256": "f951bcd3483f27f5f5324d29a70a70e33dabbe0ce8a413e409ef737feb19931b"
+    },
+    {
+      "trajectory_id": "opus_snowflake__works_cycles__628d383dc7ee",
+      "group": "opus_snowflake",
+      "task": "works_cycles",
+      "source": "data/opus_snowflake/works_cycles/result.json",
+      "source_sha256": "628d383dc7ee1b462a936e56bcecc6cbbaece595f3d205ba2bdca2ef7f09b858"
+    },
+    {
+      "trajectory_id": "opus_snowflake__world__b513a45b29f6",
+      "group": "opus_snowflake",
+      "task": "world",
+      "source": "data/opus_snowflake/world/result.json",
+      "source_sha256": "b513a45b29f6463a3c17e8722b2930f25ee9c29e73bae83afe7c7964e77612bf"
+    },
+    {
+      "trajectory_id": "opus_snowflake__world_development_indicators__7a83089b061a",
+      "group": "opus_snowflake",
+      "task": "world_development_indicators",
+      "source": "data/opus_snowflake/world_development_indicators/result.json",
+      "source_sha256": "7a83089b061a76721fcc2f884fd050f574bee5705e8eb2adeee20615e3d70d98"
+    },
+    {
+      "trajectory_id": "opus_snowflake__xero__da975a87ee49",
+      "group": "opus_snowflake",
+      "task": "xero",
+      "source": "data/opus_snowflake/xero/result.json",
+      "source_sha256": "da975a87ee49092e378b1a7d08385c40f3ea7c10fee4b2313c6086d89ab54a8e"
+    },
+    {
+      "trajectory_id": "opus_snowflake__youtube_analytics__fa19adff60ea",
+      "group": "opus_snowflake",
+      "task": "youtube_analytics",
+      "source": "data/opus_snowflake/youtube_analytics/result.json",
+      "source_sha256": "fa19adff60eae9732b7e9e0272b3a5a341fa84ed60b78df62aa5eb984fae590a"
+    },
+    {
+      "trajectory_id": "opus_snowflake__zuora__d33a9123ca0b",
+      "group": "opus_snowflake",
+      "task": "zuora",
+      "source": "data/opus_snowflake/zuora/result.json",
+      "source_sha256": "d33a9123ca0ba2deaf1977bb782f8ffa2a045e33595aaf81079a99daeb57f82a"
+    }
+  ]
+}
