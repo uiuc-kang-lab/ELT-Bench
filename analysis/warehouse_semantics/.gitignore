@@ -1,8 +1,0 @@
-# Inputs, model runs and reports are local experiment data
-/prepared/
-/runs/
-/reports/
-/references/
-
-__pycache__/
-*.py[cod]

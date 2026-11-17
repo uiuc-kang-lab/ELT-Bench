@@ -23,8 +23,14 @@ agents/*/run.sh
 ground_truth/
 elt-bench/snowflake2/
 
-# Vendored library for mutation testing (see evaluation/mutation_testing/run.py)
+# Local sqlglot copy for the mutation operators
 evaluation/mutation_testing/.pylib/
 
 # Credential backups
 setup/airbyte/airbyte_credential.json.*
+
+# Inputs, runs and reports of the analysis programs
+analysis/*/data/
+analysis/*/prepared/
+analysis/*/runs/
+analysis/*/reports/
