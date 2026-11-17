@@ -3,6 +3,14 @@ The first comprehensive, end-to-end benchmark designed to evaluate AI agents in 
 ![ELT](https://anonymous.4open.science/r/ELT-Bench-B51C/materials/elt.svg)
 
 [![License](https://img.shields.io/badge/License-CC%20BY%20SA%204.0-orange.svg)](https://creativecommons.org/licenses/by-sa/4.0/deed.en)
+
+## Reproducing the paper
+
+[REPRODUCE.md](REPRODUCE.md) gives the commands and settings for the
+experiments in the ELT-Bench++ paper: running each agent, evaluating a run,
+computing the tables, the transformation-only study, the mutation operators
+and the analysis programs.
+
 ## Environment Setup
 
 ### Install Docker and Conda 
