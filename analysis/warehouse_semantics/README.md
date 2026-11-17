@@ -115,9 +115,6 @@ python prepare_input.py --all \
   --max-payload-characters 2097152
 ```
 
-The default values of the three `--*-root` options point to the authors'
-machine, so always pass all three.
-
 The audit archive's `scoring_inventory.json` defines the tasks and models.
 Each task's payload holds the evidence from all three warehouses:
 

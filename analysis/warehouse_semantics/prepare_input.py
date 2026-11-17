@@ -19,9 +19,6 @@ from protocol import (ANALYSIS_MODE, atomic_json, content_sha256, redact,
                       sha256, target_id_for, validate_payload)
 
 HERE = Path(__file__).resolve().parent
-DEFAULT_AUDIT = Path('/mydata/elt/ELT-Bench/evaluation/agent_results/_error_analysis/audit_xwh_silent_20261025')
-DEFAULT_TRAJECTORIES = Path('/mydata/elt/campus_downloads/claude_opus47_sql_logs_revised_20261021')
-DEFAULT_INPUTS = Path('/mydata/elt/ELT-Bench')
 WAREHOUSES = {'sf': 'snowflake', 'db': 'databricks', 'rs': 'redshift'}
 SHORT = {v: k for k, v in WAREHOUSES.items()}
 INPUT_DIRS = {'snowflake': 'inputs', 'databricks': 'inputs_databricks', 'redshift': 'inputs_redshift'}
@@ -669,14 +666,14 @@ def prepare_task(task, rows, replays, probes, args):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--audit-root', type=Path, default=DEFAULT_AUDIT)
+    parser.add_argument('--audit-root', type=Path, required=True)
     selection = parser.add_mutually_exclusive_group(required=True)
     selection.add_argument('--task', action='append', help='Repeat for multiple task IDs')
     selection.add_argument('--all', action='store_true', help='All task IDs in scoring_inventory.json')
     parser.add_argument('--warehouses', nargs='+', choices=list(WAREHOUSES.values()), default=list(WAREHOUSES.values()))
     parser.add_argument('--output-dir', type=Path, required=True)
-    parser.add_argument('--trajectory-root', type=Path, default=DEFAULT_TRAJECTORIES)
-    parser.add_argument('--inputs-root', type=Path, default=DEFAULT_INPUTS)
+    parser.add_argument('--trajectory-root', type=Path, required=True)
+    parser.add_argument('--inputs-root', type=Path, required=True)
     parser.add_argument('--max-payload-characters', type=int, default=1048576)
     parser.add_argument('--trace-evidence-characters', type=int, default=100000)
     parser.add_argument('--task-spec-characters', type=int, default=150000)

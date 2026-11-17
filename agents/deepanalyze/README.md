@@ -73,7 +73,7 @@ The task container is the shared `elt-swe` image (see `agents/README.md`). No
 other image is needed.
 
 ```bash
-/mydata/miniconda/envs/codex_eltbench/bin/python agents/run.py deepanalyze \
+python agents/run.py deepanalyze \
     --database deepanalyze_8b --only address
 ```
 
