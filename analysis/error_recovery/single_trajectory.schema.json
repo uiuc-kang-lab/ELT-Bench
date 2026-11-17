@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "urn:elt-bench:autonomous-recovery:flat8:single-trajectory:20261028",
-  "title": "ELT-Bench single-trajectory recovery annotation: eight peer categories",
+  "title": "ELT-Bench single-trajectory recovery annotation: seven peer categories",
   "type": "object",
   "additionalProperties": false,
   "required": ["metadata", "coverage", "episodes", "excluded_observations", "dbt_usage_inventory_status", "dbt_usage", "workflow_notes", "audit_notes"],
@@ -93,7 +93,7 @@
       "required": ["episode_id", "category", "subtype", "stage", "goal", "success_criterion", "failure_calls", "repair_calls", "verification_calls", "first_failure_tool_seq", "failure_decision_turn", "recovery_tool_seq", "recovery_decision_turn", "repair_turns", "outcome", "recovery_method", "feedback_recovery_eligible", "parent_episode_id", "related_episode_ids", "shared_evidence_reason", "secondary_failures", "cause_attribution", "evidence", "notes"],
       "properties": {
         "episode_id": {"type": "string", "minLength": 1},
-        "category": {"enum": ["airbyte_config_deploy", "sync_control_execution", "dbt_setup_usage", "warehouse_connection", "model_sql", "data_correctness", "delivery_contract", "sql_exploration_validation"]},
+        "category": {"enum": ["airbyte_config_deploy", "sync_control_execution", "dbt_setup_usage", "model_sql", "data_correctness", "delivery_contract", "sql_exploration_validation"]},
         "subtype": {"$ref": "#/$defs/nullableString"},
         "stage": {"enum": ["extraction_loading", "transformation", "cross_stage", "unknown"]},
         "goal": {"type": "string", "minLength": 1},

@@ -1,5 +1,5 @@
 {
-  "title": "ELT-Bench single-trajectory recovery annotation: eight peer categories",
+  "title": "ELT-Bench single-trajectory recovery annotation: seven peer categories",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -278,7 +278,6 @@
             "airbyte_config_deploy",
             "sync_control_execution",
             "dbt_setup_usage",
-            "warehouse_connection",
             "model_sql",
             "data_correctness",
             "delivery_contract",
