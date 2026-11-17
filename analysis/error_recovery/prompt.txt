@@ -1,6 +1,6 @@
 You are evaluating autonomous error recovery in an ELT agent trajectory.
 
-Analyze exactly ONE supplied trajectory. Identify observable ELT failure episodes, assign each to one of the eight categories below, and determine whether and when the agent recovered. Use the supplied JSON Schema for your response.
+Analyze exactly ONE supplied trajectory. Identify observable ELT failure episodes, assign each to one of the seven categories below, and determine whether and when the agent recovered. Use the supplied JSON Schema for your response.
 
 1. REVIEW SCOPE
 
@@ -24,7 +24,7 @@ Exclude generic filesystem, sandbox, editor, shell, Python/import, optional-clie
 
 Exclude a prewritten fallback that succeeds before the agent receives failure feedback and makes another decision. If the fallback also fails and the agent subsequently reacts, the continuing failure can be included.
 
-3. EIGHT FAILURE CATEGORIES
+3. SEVEN FAILURE CATEGORIES
 
 All categories are peers. Assign exactly one category ID per episode.
 
@@ -37,19 +37,16 @@ Failures to start, monitor, inspect, list, or cancel current sync jobs, includin
 C. dbt_setup_usage — dbt project configuration and command usage
 Project-level configuration, profiles, variables, dependencies, global duplicate macros, CLI arguments, missing or incorrectly invoked diagnostic macros, and dbt show preview misuse. This includes conflicts caused by an existing LIMIT, trailing semicolon, or non-SELECT statement when dbt show wraps/appends LIMIT. Native dbt interface errors stay here even when the goal is exploration.
 
-D. warehouse_connection — Warehouse connectivity and access configuration
-Explicit client connection-parameter, account, endpoint, authentication, authorization, or network failures blocking warehouse access. Missing optional clients, missing model objects, or an ambiguous "does not exist or not authorized" message alone do not establish a connection/access failure.
-
-E. model_sql — Model-SQL compilation or execution failures
+D. model_sql — Model-SQL compilation or execution failures
 Failures in formal transformation models: SQL syntax, identifiers, dialects, functions, types, aggregation, runtime conversion, division by zero, model-specific Jinja, source/ref declarations, or dependency cycles. Exclude rejected dbt CLI arguments and failed temporary diagnostic queries.
 
-F. data_correctness — Data correctness observable in trajectories
+E. data_correctness — Data correctness observable in trajectories
 Successful execution produces values or rows violating an explicit requirement or checkable invariant: duplicate grain, join fanout, missing values, parse loss, precision, filters, aggregation, business conditions, or formatting. State the invariant and supporting evidence. Unusual values, NULLs, zero rows, or comparisons across different populations are insufficient by themselves. Recovery requires rechecking the affected values or invariant; an edit or dbt PASS alone is insufficient.
 
-G. delivery_contract — Output location and delivery requirements
+F. delivery_contract — Output location and delivery requirements
 Wrong required database/schema/table location, table-versus-view mismatch, missing required columns, or explicitly incorrect column types. Successful output in a concatenated schema belongs here, even when the repair changes dbt configuration. A successful rebuild in the required location can verify placement recovery.
 
-H. sql_exploration_validation — Data exploration and validation SQL
+G. sql_exploration_validation — Data exploration and validation SQL
 Failures in temporary SQL for source inspection, diagnosis, or output validation, caused by the query's identifiers, syntax, functions, types, dialect, or aggregation. If the query succeeds and exposes incorrect values, use data_correctness; if it exposes a delivery mismatch, use delivery_contract. If the dbt interface itself fails, use dbt_setup_usage.
 
 4. RECOVERY AND TURNS
@@ -147,7 +144,7 @@ Use the structure below. It is a template, not a finding: category, stage, outco
 }
 
 Episode requirements:
-- Use the eight exact category IDs defined above. stage is extraction_loading, transformation, cross_stage, or unknown. Use unique episode IDs, ordered by first failure where possible.
+- Use the seven exact category IDs defined above. stage is extraction_loading, transformation, cross_stage, or unknown. Use unique episode IDs, ordered by first failure where possible.
 - Populate failure_calls, repair_calls, and verification_calls with actual supplied tool sequence numbers. Populate first_failure_tool_seq and failure_decision_turn from the first failure and the supplied mapping. Null placeholders in this template do not permit omitting available evidence.
 - outcome is recovered, unverified, unrecovered, or abandoned. For recovered episodes, include verification evidence, the earliest sufficient recovery call/turn, and repair_turns calculated as specified above. recovery_method is same_path_correction, alternative_path, retry_without_change, or mixed. For other outcomes, all recovery fields and recovery_method are null.
 - Keep feedback_recovery_eligible=true only for included episodes. Put excluded candidates in excluded_observations.

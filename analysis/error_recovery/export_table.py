@@ -21,7 +21,6 @@ CATEGORIES = {
     'airbyte_config_deploy': 'Airbyte/Terraform configuration and deployment',
     'sync_control_execution': 'Synchronization control and execution',
     'dbt_setup_usage': 'dbt project configuration and command usage',
-    'warehouse_connection': 'Warehouse connectivity and access configuration',
     'model_sql': 'Model-SQL compilation or execution failures',
     'data_correctness': 'Data correctness (observable in trajectories)',
     'delivery_contract': 'Output location and delivery requirements',
@@ -65,7 +64,7 @@ def validate_table(table):
     require(type(table.get('validated_trajectories')) is int and table['validated_trajectories'] == 500,
             'Export requires exactly 500 validated trajectories')
     rows = table.get('rows')
-    require(isinstance(rows, list) and len(rows) == len(GROUPS) * len(CATEGORIES), 'Expected exactly 40 group/category cells')
+    require(isinstance(rows, list) and len(rows) == len(GROUPS) * len(CATEGORIES), f'Expected exactly {len(GROUPS) * len(CATEGORIES)} group/category cells')
     cells = {}
     for row in rows:
         require(isinstance(row, dict), 'Malformed aggregate cell')

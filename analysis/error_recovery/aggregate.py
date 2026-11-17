@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate and aggregate independent flat-eight trajectory annotations offline.
+"""Validate and aggregate independent flat-seven trajectory annotations offline.
 
 The default requires all 500 selected trajectories. --allow-partial explicitly
 produces a provisional table using only complete, validated annotations.
@@ -23,7 +23,6 @@ CATEGORIES = {
     'airbyte_config_deploy': 'Airbyte/Terraform configuration and deployment',
     'sync_control_execution': 'Synchronization control and execution',
     'dbt_setup_usage': 'dbt project configuration and command usage',
-    'warehouse_connection': 'Warehouse connectivity and access configuration',
     'model_sql': 'Model-SQL compilation or execution failures',
     'data_correctness': 'Data correctness (observable in trajectories)',
     'delivery_contract': 'Output location and delivery requirements',

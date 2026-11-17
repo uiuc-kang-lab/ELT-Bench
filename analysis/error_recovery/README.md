@@ -14,9 +14,8 @@ English prompt in [prompt.txt](prompt.txt) and a structured JSON output schema.
 - **Annotation model.** `gpt-6-astra` with reasoning effort `high` and
   provider `openai`. The runner's default effort is `ultra`, so pass
   `--effort high` as in the commands below.
-- **Categories.** The schema has eight failure categories. Table 10 reports
-  seven of them. It omits *Warehouse connectivity and access configuration*,
-  which had two episodes in the 500 trajectories.
+- **Categories.** The recovery prompt ([prompt.txt](prompt.txt)) defines the
+  seven failure categories reported in Table 10.
 
 **Isolation.** Each trajectory uses a separate ephemeral session. Memories,
 tools and multi-agent execution are disabled. The runner treats recorded ELT

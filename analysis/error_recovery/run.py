@@ -22,7 +22,7 @@ import uuid
 from runtime_utils import HERE, atomic_json, redact, sha256, load_manifest
 
 CATEGORIES = {'airbyte_config_deploy', 'sync_control_execution', 'dbt_setup_usage',
-              'warehouse_connection', 'model_sql', 'data_correctness',
+              'model_sql', 'data_correctness',
               'delivery_contract', 'sql_exploration_validation'}
 
 
