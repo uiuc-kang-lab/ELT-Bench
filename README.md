@@ -124,7 +124,7 @@ Set up whichever destination you plan to evaluate against.
 
 ## Evaluation
 
-### Download the v5 ground truth
+### Download the ground truth
 
 The warehouse-specific ground-truth CSV files are publicly available in the
 [ELT-Bench dataset on Hugging Face](https://huggingface.co/datasets/tttjjj/elt_bench).

@@ -298,14 +298,9 @@ pip install -r evaluation/requirements.txt
 
 ### 3.1 Ground truth
 
-Download the ground truth as described under "Download the v5 ground truth" in
+Download the ground truth as described under "Download the ground truth" in
 the top-level [README](README.md). This gives `ground_truth/gt_snowflake`,
 `ground_truth/gt_databricks` and `ground_truth/gt_redshift`.
-
-<!-- TODO before release: the Hugging Face copy (last updated 2026-08-04)
-predates the audit fixes. 59 Snowflake CSVs and 61 Databricks and Redshift CSVs
-differ from the ground truth used in the paper. Upload the revised ground truth
-first. -->
 
 ### 3.2 Commands
 
@@ -436,9 +431,29 @@ version to the next keeps the output from the previous version.
   for Stage 2 and 80 for Stage 5. ΔSR_DT is SR_DT after the repair minus SR_DT
   before it, both computed over that subset.
 
-<!-- TODO: the per-version definitions, schemas and ground truth are not in
-this repository. Release them, or say here that only the final version can be
-rerun. -->
+**Running an earlier version.** The Hugging Face dataset holds every version
+under `versions/`: `original` and `after_stage1` to `after_stage5`. Each has
+`definitions/`, `schemas/` and `gt/`. To run one, give the runner a copy of the
+Snowflake inputs with that version's definitions and schemas, and evaluate
+against that version's ground truth:
+
+```bash
+V=after_stage2
+hf download tttjjj/elt_bench --repo-type dataset --include "versions/$V/**" --local-dir .
+
+cp -r inputs inputs_$V
+for task in $(ls inputs_$V); do
+  cp versions/$V/definitions/$task/data_model.yaml inputs_$V/$task/
+  rm -r inputs_$V/$task/schemas
+  cp -r versions/$V/schemas/$task inputs_$V/$task/schemas
+done
+
+python agents/run.py openhands --destination snowflake --database openhands_gpt54_$V \
+  --source_database <db> --suffix eltbench-tonly-$V --test_path "$PWD/inputs_$V"
+
+python evaluation/eva.py --folder openhands_gpt54_$V --db-type snowflake \
+  --database openhands_gpt54_$V --gt-folder "$PWD/versions/$V/gt"
+```
 
 ## 6. Mutation testing of the Stage 2 verifier (Table 1)
 
