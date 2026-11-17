@@ -30,7 +30,7 @@ models:
       - name: most_popular_movie
         description: The most popular movie by the production company, with ties broken by the ascending order of the movie title.
       - name: number_of_movies_released
-        description: The number of movies released by the production company, replace NULL values with 0.
+        description: The number of movies in the movie catalog released by the production company, replace NULL values with 0.
       - name: highest_revenue_movie
         description: The movie title made the highest revenue among the production company's movies, with ties broken by the descending order of the movie title
       - name: category_running_time_per_movie_2016

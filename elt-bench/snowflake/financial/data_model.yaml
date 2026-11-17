@@ -34,5 +34,5 @@ models:
       - name: avg_loan_amount
         description: The average loan amount the client has taken. Loan the client has taken refers to disp.type = 'OWNER'
       - name: total_pay_for_all_transactions_1998
-        description: The total amount the client paid for all of the transactions in 1998, replace NULL values with 0.
+        description: The total amount of all of the client's transactions in 1998, counting both credits and withdrawals; replace NULL values with 0.
       

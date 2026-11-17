@@ -15,4 +15,4 @@ models:
       - name: number_of_users_not_active_when_2_happened
         description: The number of users belong to the label category who were not active when event no.2 happened, replace NULL values with 0.
       - name: start_with_the_word_game
-        description: Set to 1 if the label category name starts with the word "game", 0 otherwise.
+        description: Set to 1 if the label category name starts with "game" (case-insensitive), 0 otherwise.

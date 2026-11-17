@@ -1,0 +1,12 @@
+# Kimi K3 variant of elt-swe-openhands: identical image plus one change.
+# K3 is trained in preserved-thinking mode and needs each assistant turn sent
+# back with its reasoning_content (Together's Kimi K3 quickstart). OpenHands
+# 1.19.1 only does that for models named in SEND_REASONING_CONTENT_MODELS
+# (kimi-k2.5/k2.6/...), so add "kimi-k3" there. Derived from the existing
+# image instead of rebuilding it, so nothing else changes.
+#   docker build -t elt-swe-openhands:kimi-k3 -f elt-swe-openhands/Dockerfile.kimi-k3 elt-swe-openhands
+FROM elt-swe-openhands:latest
+
+RUN F=$(python -c "import openhands.sdk.llm.utils.model_features as m; print(m.__file__)") \
+    && sed -i 's/^SEND_REASONING_CONTENT_MODELS: list\[str\] = \[$/&\n    "kimi-k3",  # preserved thinking (ELT-Bench patch)/' "$F" \
+    && OPENHANDS_SUPPRESS_BANNER=1 python -W ignore -c "from openhands.sdk.llm.utils.model_features import get_features as g; assert g('together_ai/moonshotai/Kimi-K3').send_reasoning_content; assert not g('together_ai/zai-org/GLM-5.3').send_reasoning_content; print('kimi-k3 sends reasoning_content')"

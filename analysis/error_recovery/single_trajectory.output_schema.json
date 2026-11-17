@@ -1,0 +1,462 @@
+{
+  "title": "ELT-Bench single-trajectory recovery annotation: eight peer categories",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "metadata",
+    "coverage",
+    "episodes",
+    "excluded_observations",
+    "dbt_usage_inventory_status",
+    "dbt_usage",
+    "workflow_notes",
+    "audit_notes"
+  ],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "trajectory_id",
+        "task",
+        "agent",
+        "warehouse",
+        "run_id",
+        "source_path",
+        "source_sha256"
+      ],
+      "properties": {
+        "trajectory_id": {
+          "type": "string"
+        },
+        "task": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "agent": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "warehouse": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "run_id": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "source_path": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "source_sha256": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "review_status",
+        "extraction_loading",
+        "transformation",
+        "turn_mapping_method",
+        "limitations"
+      ],
+      "properties": {
+        "review_status": {
+          "enum": [
+            "complete",
+            "partial",
+            "unreadable"
+          ]
+        },
+        "extraction_loading": {
+          "$ref": "#/$defs/stageCoverage"
+        },
+        "transformation": {
+          "$ref": "#/$defs/stageCoverage"
+        },
+        "turn_mapping_method": {
+          "enum": [
+            "provided_index",
+            "openhands_response_id",
+            "claude_feedback_boundary",
+            "unavailable"
+          ]
+        },
+        "limitations": {
+          "$ref": "#/$defs/stringArray"
+        }
+      }
+    },
+    "episodes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/episode"
+      }
+    },
+    "excluded_observations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/excludedObservation"
+      }
+    },
+    "dbt_usage_inventory_status": {
+      "enum": [
+        "complete",
+        "partial",
+        "unavailable"
+      ]
+    },
+    "dbt_usage": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/dbtInvocation"
+      }
+    },
+    "workflow_notes": {
+      "$ref": "#/$defs/stringArray"
+    },
+    "audit_notes": {
+      "$ref": "#/$defs/stringArray"
+    }
+  },
+  "$defs": {
+    "nullableString": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "nullableIndex": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "stringArray": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "callArray": {
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "stageCoverage": {
+      "enum": [
+        "reviewed_complete",
+        "partial",
+        "not_reached",
+        "unknown"
+      ]
+    },
+    "pointer": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "source_path": {
+              "$ref": "#/$defs/nullableString"
+            },
+            "tool_seq": {
+              "$ref": "#/$defs/nullableIndex"
+            },
+            "call_id": {
+              "$ref": "#/$defs/nullableString"
+            },
+            "trajectory_entry": {
+              "$ref": "#/$defs/nullableIndex"
+            },
+            "response_entry": {
+              "$ref": "#/$defs/nullableIndex"
+            },
+            "decision_turn": {
+              "$ref": "#/$defs/nullableIndex"
+            },
+            "json_pointer": {
+              "$ref": "#/$defs/nullableString"
+            },
+            "locator": {
+              "$ref": "#/$defs/nullableString"
+            }
+          },
+          "required": [
+            "source_path",
+            "tool_seq",
+            "call_id",
+            "trajectory_entry",
+            "response_entry",
+            "decision_turn",
+            "json_pointer",
+            "locator"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "role",
+        "pointer",
+        "redacted_excerpt",
+        "explanation"
+      ],
+      "properties": {
+        "role": {
+          "enum": [
+            "failure",
+            "repair",
+            "verification",
+            "context"
+          ]
+        },
+        "pointer": {
+          "$ref": "#/$defs/pointer"
+        },
+        "redacted_excerpt": {
+          "type": "string"
+        },
+        "explanation": {
+          "type": "string"
+        }
+      }
+    },
+    "episode": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "episode_id",
+        "category",
+        "subtype",
+        "stage",
+        "goal",
+        "success_criterion",
+        "failure_calls",
+        "repair_calls",
+        "verification_calls",
+        "first_failure_tool_seq",
+        "failure_decision_turn",
+        "recovery_tool_seq",
+        "recovery_decision_turn",
+        "repair_turns",
+        "outcome",
+        "recovery_method",
+        "feedback_recovery_eligible",
+        "parent_episode_id",
+        "related_episode_ids",
+        "shared_evidence_reason",
+        "secondary_failures",
+        "cause_attribution",
+        "evidence",
+        "notes"
+      ],
+      "properties": {
+        "episode_id": {
+          "type": "string"
+        },
+        "category": {
+          "enum": [
+            "airbyte_config_deploy",
+            "sync_control_execution",
+            "dbt_setup_usage",
+            "warehouse_connection",
+            "model_sql",
+            "data_correctness",
+            "delivery_contract",
+            "sql_exploration_validation"
+          ]
+        },
+        "subtype": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "stage": {
+          "enum": [
+            "extraction_loading",
+            "transformation",
+            "cross_stage",
+            "unknown"
+          ]
+        },
+        "goal": {
+          "type": "string"
+        },
+        "success_criterion": {
+          "type": "string"
+        },
+        "failure_calls": {
+          "$ref": "#/$defs/callArray"
+        },
+        "repair_calls": {
+          "$ref": "#/$defs/callArray"
+        },
+        "verification_calls": {
+          "$ref": "#/$defs/callArray"
+        },
+        "first_failure_tool_seq": {
+          "$ref": "#/$defs/nullableIndex"
+        },
+        "failure_decision_turn": {
+          "$ref": "#/$defs/nullableIndex"
+        },
+        "recovery_tool_seq": {
+          "$ref": "#/$defs/nullableIndex"
+        },
+        "recovery_decision_turn": {
+          "$ref": "#/$defs/nullableIndex"
+        },
+        "repair_turns": {
+          "$ref": "#/$defs/nullableIndex"
+        },
+        "outcome": {
+          "enum": [
+            "recovered",
+            "unverified",
+            "unrecovered",
+            "abandoned"
+          ]
+        },
+        "recovery_method": {
+          "enum": [
+            "same_path_correction",
+            "alternative_path",
+            "retry_without_change",
+            "mixed",
+            null
+          ]
+        },
+        "feedback_recovery_eligible": {
+          "enum": [
+            true
+          ]
+        },
+        "parent_episode_id": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "related_episode_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "shared_evidence_reason": {
+          "$ref": "#/$defs/nullableString"
+        },
+        "secondary_failures": {
+          "$ref": "#/$defs/stringArray"
+        },
+        "cause_attribution": {
+          "enum": [
+            "agent_action",
+            "external_service_dependency",
+            "mixed",
+            "unknown"
+          ]
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence"
+          }
+        },
+        "notes": {
+          "$ref": "#/$defs/stringArray"
+        }
+      }
+    },
+    "excludedObservation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pointer",
+        "description",
+        "reason"
+      ],
+      "properties": {
+        "pointer": {
+          "$ref": "#/$defs/pointer"
+        },
+        "description": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string"
+        }
+      }
+    },
+    "dbtInvocation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "invocation_id",
+        "tool_seq",
+        "decision_turn",
+        "invocation_index",
+        "subcommand",
+        "purpose",
+        "execution_status",
+        "result",
+        "evidence"
+      ],
+      "properties": {
+        "invocation_id": {
+          "type": "string"
+        },
+        "tool_seq": {
+          "$ref": "#/$defs/nullableIndex"
+        },
+        "decision_turn": {
+          "$ref": "#/$defs/nullableIndex"
+        },
+        "invocation_index": {
+          "type": "integer"
+        },
+        "subcommand": {
+          "type": "string"
+        },
+        "purpose": {
+          "type": "string"
+        },
+        "execution_status": {
+          "enum": [
+            "issued_confirmed",
+            "issued_unconfirmed",
+            "not_executed",
+            "information_only"
+          ]
+        },
+        "result": {
+          "enum": [
+            "success",
+            "failure",
+            "unknown"
+          ]
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence"
+          }
+        }
+      }
+    }
+  }
+}

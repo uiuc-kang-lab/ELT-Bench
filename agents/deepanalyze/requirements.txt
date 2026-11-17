@@ -1,0 +1,3 @@
+# Runner only (the model runs on a vLLM server). Same pins as agents/codex_agent.
+PyYAML==6.0.3
+snowflake-connector-python==4.8.0

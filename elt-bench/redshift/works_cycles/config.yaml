@@ -95,7 +95,7 @@ flat_files:
 mongodb:
   config:
     connection_string: mongodb://elt-mongodb:27017/?directConnection=true
-    database: work_cycles
+    database: works_cycles
     sync_mode: full_refresh_append
     tables:
     - Address
@@ -117,7 +117,7 @@ mongodb:
     - SalesPerson
 postgres:
   config:
-    database: work_cycles
+    database: works_cycles
     host: elt-postgres
     password: testelt
     port: 5432
@@ -146,7 +146,7 @@ redshift:
     database: <redshift_db>
     username: <redshift_username>
     password: <redshift_pwd>
-    schema: work_cycles
+    schema: works_cycles
     s3_bucket_name: <redshift_s3_bucket>
     s3_bucket_region: <redshift_s3_region>
     access_key_id: <redshift_s3_access_key>

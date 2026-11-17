@@ -22,6 +22,22 @@ columns to numeric before comparing and uses `np.isclose` with both relative
 and absolute tolerance. It also correctly rejects NaN-vs-value rows, which
 the original silently treated as matches (`NaN > x` is always False).
 
+Type-aware numeric comparison (default)
+---------------------------------------
+A single relative tolerance (1%) also accepts real errors: a count or sum
+that is slightly off (a few rows double-counted by a join), money cast to
+whole units, or a 16-digit id whose last digit changed. The default rule
+("typed") therefore decides per gold column:
+  * integer column (every gold value is a whole number): values must be
+    equal, allowing float noise only (|gold - out| <= 1e-9 + 1e-9 |out| and
+    < 0.5); beyond 2**53 two integer literals are compared digit by digit;
+  * fractional column: within the 1% relative tolerance AND within one unit
+    of the last decimal place the two columns share (at least one decimal),
+    so an output rounded to fewer decimals passes, nothing else does.
+Text columns and the numeric/text decision are unchanged. `--rule rtol`
+restores the previous comparison (1% relative tolerance on every numeric
+column).
+
 Usage
 -----
     python eva_stage2_new.py --folder <name> --db_type databricks \
@@ -32,6 +48,8 @@ Usage
 import argparse
 import json
 import os
+import re
+from decimal import Decimal, InvalidOperation
 
 import numpy as np
 import pandas as pd
@@ -160,9 +178,79 @@ def _vectors_match(v1: pd.Series, v2: pd.Series, rtol: float = 1e-2,
     return True
 
 
-def check_corretness(df_gt: pd.DataFrame, df: pd.DataFrame) -> dict:
+# --------------------------------------------------------------------------
+# Type-aware column comparator (default rule, see the module docstring)
+# --------------------------------------------------------------------------
+_INT_LITERAL = re.compile(r"[-+]?\d+(\.0*)?")
+
+
+def _decimals(v: str) -> int:
+    """Decimal places of one value once trailing zeros are dropped."""
+    try:
+        e = Decimal(v.strip()).normalize().as_tuple().exponent
+    except (InvalidOperation, ValueError):
+        return 0
+    return max(0, -e) if isinstance(e, int) else 0
+
+
+def _column_decimals(s: pd.Series) -> int:
+    """Most decimal places any value of the column carries (0 = integer column)."""
+    s = s.dropna().astype(str).str.strip()
+    if s.empty:
+        return 0
+    plain = s.str.fullmatch(r"[-+]?\d*\.?\d*")
+    frac = s[plain].str.split(".", n=1).str[1].fillna("").str.rstrip("0").str.len()
+    m = int(frac.max()) if len(frac) else 0
+    for v in s[~plain].unique():  # scientific notation, 'inf', ...
+        m = max(m, _decimals(v))
+    return m
+
+
+def _vectors_match_typed(gold: pd.Series, out: pd.Series, rtol: float = 1e-2,
+                         atol: float = 1e-9, noise: float = 1e-9,
+                         min_decimals: int = 1) -> bool:
+    if len(gold) != len(out):
+        return False
+    gold = gold.reset_index(drop=True)
+    out = out.reset_index(drop=True)
+    n1, n2 = _to_numeric_if_possible(gold), _to_numeric_if_possible(out)
+    if not (pd.api.types.is_numeric_dtype(n1) and pd.api.types.is_numeric_dtype(n2)):
+        return _vectors_match(gold, out, rtol, atol)  # text: unchanged
+
+    a, b = n1.to_numpy(dtype=float), n2.to_numpy(dtype=float)
+    nan_a, nan_b = np.isnan(a), np.isnan(b)
+    if np.any(nan_a != nan_b):
+        return False
+    keep = ~nan_a
+    a, b = a[keep], b[keep]
+    if not np.all(np.isclose(a, b, rtol=rtol, atol=atol)):
+        return False
+    diff = np.abs(a - b)
+
+    gold_decimals = _column_decimals(gold)
+    if gold_decimals == 0:
+        ok = (diff <= atol + noise * np.abs(b)) & (diff < 0.5)
+        gs = gold[keep].astype(str).str.strip().to_numpy()
+        os_ = out[keep].astype(str).str.strip().to_numpy()
+        for i in np.where((np.abs(a) >= 2 ** 53) | (np.abs(b) >= 2 ** 53))[0]:
+            if _INT_LITERAL.fullmatch(gs[i]) and _INT_LITERAL.fullmatch(os_[i]):
+                ok[i] = Decimal(gs[i]) == Decimal(os_[i])
+            elif _INT_LITERAL.fullmatch(gs[i]):
+                # exact gold, output written as a double: must be the nearest double
+                ok[i] = a[i] == b[i]
+            else:
+                # the gold value is itself a double: float noise only
+                ok[i] = diff[i] <= atol + noise * abs(b[i])
+        return bool(np.all(ok))
+
+    places = max(min(gold_decimals, _column_decimals(out)), min_decimals)
+    return bool(np.all(diff <= 10.0 ** -places * 1.000001 + atol + noise * np.abs(b)))
+
+
+def check_corretness(df_gt: pd.DataFrame, df: pd.DataFrame, rule: str = "typed") -> dict:
     """Compare each gold column against its (case-insensitively matched)
-    actual column. Returns a structured result dict:
+    actual column with the given rule ("typed", the default, or "rtol" for
+    the previous 1% relative tolerance). Returns a structured result dict:
 
         {
           "status": "ok",
@@ -170,8 +258,12 @@ def check_corretness(df_gt: pd.DataFrame, df: pd.DataFrame) -> dict:
           "matched": [...],
           "unmatched": [...],
           "missed": [...],
+          "rule": "typed" | "rtol",
         }
     """
+    if rule not in ("typed", "rtol"):
+        raise ValueError(f"unknown comparison rule: {rule}")
+    vectors_match = _vectors_match_typed if rule == "typed" else _vectors_match
     matched_cols, unmatched_cols, missed_cols = [], [], []
     df_cols_lower = {c.lower(): c for c in df.columns}
 
@@ -180,7 +272,7 @@ def check_corretness(df_gt: pd.DataFrame, df: pd.DataFrame) -> dict:
         if actual_col is None:
             missed_cols.append(gold_col)
             continue
-        if _vectors_match(df_gt[gold_col], df[actual_col]):
+        if vectors_match(df_gt[gold_col], df[actual_col]):
             matched_cols.append(gold_col)
         else:
             unmatched_cols.append(gold_col)
@@ -191,13 +283,14 @@ def check_corretness(df_gt: pd.DataFrame, df: pd.DataFrame) -> dict:
         "matched": matched_cols,
         "unmatched": unmatched_cols,
         "missed": missed_cols,
+        "rule": rule,
     }
 
 
 # --------------------------------------------------------------------------
 # Driver (from eva_stage2_sf.py)
 # --------------------------------------------------------------------------
-def evaluate_stage2(folder, connector, database="elt", gt_folder="gt_snowflake"):
+def evaluate_stage2(folder, connector, database="elt", gt_folder="gt_snowflake", rule="typed"):
     """`connector` is a db_connectors.BaseConnector (snowflake / databricks /
     redshift); all warehouse access goes through it. Schemas that stage 1
     marked 'Skipped:' or 'Error:' are not evaluated (Success lines only)."""
@@ -269,7 +362,7 @@ def evaluate_stage2(folder, connector, database="elt", gt_folder="gt_snowflake")
                 keys = table_keys(schema, table)
                 df_gt = sort_by_keys(df_gt, keys)
                 df = sort_by_keys(df, keys)
-                res = check_corretness(df_gt, df)
+                res = check_corretness(df_gt, df, rule)
                 res['sort_keys'] = keys
                 results[schema][table] = res
             except Exception as e:
@@ -294,11 +387,14 @@ if __name__ == "__main__":
                              "(default: gt_snowflake)")
     parser.add_argument("--credential", default="./snowflake_credential.json",
                         help="Path to JSON credential for the chosen db_type")
+    parser.add_argument("--rule", default="typed", choices=["typed", "rtol"],
+                        help="numeric comparison: type-aware (default) or the "
+                             "previous 1%% relative tolerance")
     args = parser.parse_args()
 
     from db_connectors import get_connector
     connector = get_connector(args.db_type, read_json(args.credential))
     try:
-        evaluate_stage2(args.folder, connector, args.database, args.gt_folder)
+        evaluate_stage2(args.folder, connector, args.database, args.gt_folder, args.rule)
     finally:
         connector.close()

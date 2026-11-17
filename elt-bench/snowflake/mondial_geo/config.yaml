@@ -56,8 +56,8 @@ flat_files:
   path: https://drive.google.com/uc?export=download&id=1yM--6W5iTYcfe315YXkoi5qchy5sP9pn
   sync_mode: full_refresh_append
   table: continent
-- format: csv
-  path: https://drive.google.com/uc?export=download&id=1ySLbg190xwnaxuyBpUpSkHJp1ICds7qk
+- format: jsonl
+  path: https://drive.google.com/uc?export=download&id=1NtQV62dt3wWH7GasTcoO_aRaw0j96pH-
   sync_mode: full_refresh_append
   table: encompasses
 mongodb:

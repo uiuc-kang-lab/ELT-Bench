@@ -3,3 +3,4 @@ gdown
 pymongo
 snowflake
 pandas
+PyYAML

@@ -1,5 +1,12 @@
 column_name,column_description
 course_id,the id of courses
 student_id,the id of students
-grade,the grades that the students acquire in this course
+grade,"the grades that the students acquire in this course
+commonsense evidence:
+• A: excellent -- 4
+• B: good -- 3
+• C: fair -- 2
+• D: poorly pass -- 1
+• null or empty: this student fails to pass this course
+• gpa of students for this semester = sum (credits x grade) / sum (credits)"
 sat,student satisfaction with the course

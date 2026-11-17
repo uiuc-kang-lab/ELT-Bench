@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "metadata": {
+    "task_id": "<copy input.metadata.task_id>",
+    "agent": "<copy input.metadata.agent>",
+    "snapshot_id": "<copy input.metadata.snapshot_id>",
+    "warehouses": [
+      "snowflake",
+      "databricks",
+      "redshift"
+    ],
+    "target_id": "<copy input.metadata.target_id>"
+  },
+  "review_status": "incomplete",
+  "sites": [
+    {
+      "site_id": "<unique site ID within this task>",
+      "warehouse": "snowflake",
+      "model_id": "<model_id from the input inventory>",
+      "category": "numeric_identifier",
+      "expression": "<literal original SQL expression>",
+      "sql_evidence": {
+        "artifact_id": "<supplied final_sql or compiled_sql artifact ID>",
+        "line_start": 1,
+        "line_end": 1,
+        "quote": "<literal original SQL expression>"
+      },
+      "handling": "unhandled",
+      "inclusion": "uncertain",
+      "native_correct": null,
+      "trigger_status": "not_verified",
+      "trigger_evidence": [],
+      "supporting_evidence": [],
+      "replay": {
+        "kind": "none",
+        "corrected_sql": null,
+        "result_evidence": [],
+        "baseline_reproduced": null,
+        "fixed_columns": [],
+        "model_pass_after": null,
+        "single_site": null
+      },
+      "affected_models": [],
+      "failure_attributed": false,
+      "reason": "<evidence-based explanation and any unresolved gap>"
+    }
+  ],
+  "propagated_failures": [],
+  "coverage": {
+    "reviewed_models": [
+      {
+        "warehouse": "snowflake",
+        "model_id": "<model_id actually reviewed>"
+      }
+    ],
+    "reviewed_artifact_ids": [
+      "<supplied artifact ID actually reviewed>"
+    ],
+    "scope_note": "<scope of the supplied evidence actually reviewed>"
+  },
+  "limitations": [],
+  "exclusions": []
+}

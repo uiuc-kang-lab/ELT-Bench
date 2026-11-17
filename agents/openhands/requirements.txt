@@ -1,5 +1,7 @@
 openhands-sdk==1.19.1
 openhands-tools==1.19.1
+# openhands-sdk 1.19.1 needs an lmnr observe() that accepts rollout_entrypoint (removed in 0.7.53)
+lmnr==0.7.52
 pydantic
 snowflake-connector-python>=3.0
 databricks-sql-connector

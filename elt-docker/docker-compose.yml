@@ -36,7 +36,8 @@ services:
       - "mongodb_config:/data/configdb"
 
   localstack:
-    image: localstack/localstack:latest
+    # Pin the Community release; newer images require an auth token.
+    image: localstack/localstack:4.14.0
     container_name: elt-localstack
     environment:
       - SERVICES=s3,lambda,dynamodb,cloudwatch

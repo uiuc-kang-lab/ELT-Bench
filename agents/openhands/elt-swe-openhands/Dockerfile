@@ -1,4 +1,4 @@
-FROM python:3.12
+FROM python:3.12-bookworm
 
 # Update and install dependencies
 RUN apt-get update && apt-get install -y \
@@ -36,10 +36,14 @@ RUN pip install \
 
 # OpenHands agent stack — runs the agent and its tools (file_editor / terminal /
 # grep / glob) inside this container, sandboxed to /workspace by the bind-mount.
+# lmnr is pinned because openhands-sdk 1.19.1 only requires lmnr>=0.7.47 but
+# passes `rollout_entrypoint` to lmnr's observe(), which lmnr removed in 0.7.53
+# (importing the SDK then fails with a TypeError).
 RUN pip install --no-cache-dir \
         openhands-sdk==1.19.1 \
         openhands-tools==1.19.1 \
-        openhands-agent-server==1.19.1
+        openhands-agent-server==1.19.1 \
+        lmnr==0.7.52
 
 RUN apt-get update && apt-get install -y \
     gnupg \

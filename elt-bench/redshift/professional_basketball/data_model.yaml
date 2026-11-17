@@ -35,7 +35,7 @@ models:
       - name: player_id
         description: The unique identifier of the player.
       - name: name
-        description: The name of the player. Concatenate the first name and last name with a space in between.
+        description: The name of the player. Concatenate the first name and last name with a space in between. NULL if the first name is missing.
       - name: birthcountry
         description: The country where the player was born.
       - name: num_MVPs

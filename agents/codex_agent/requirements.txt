@@ -1,7 +1,11 @@
-openai-agents>=0.0.10
-openai>=1.50
-snowflake-connector-python>=3.0
-databricks-sql-connector
-databricks-sdk
-redshift-connector
-PyYAML
+# Exact versions: run.py uses ShellTool / ApplyPatchTool / apply_diff, which
+# only exist in recent openai-agents releases (0.0.x cannot run it), and
+# unpinned upgrades can break the SDK API. litellm is only used for pricing.
+openai-agents==0.23.1
+openai==3.24.0
+litellm==1.83.0
+snowflake-connector-python==4.8.0
+databricks-sql-connector==4.6.0
+databricks-sdk==0.146.0
+redshift-connector==2.1.17
+PyYAML==6.0.3

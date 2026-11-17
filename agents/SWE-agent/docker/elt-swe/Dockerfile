@@ -1,4 +1,4 @@
-FROM python:3.11
+FROM python:3.11-bookworm
 
 # Update and install dependencies
 RUN apt-get update && apt-get install -y \

@@ -3,6 +3,14 @@ The first comprehensive, end-to-end benchmark designed to evaluate AI agents in 
 ![ELT](https://anonymous.4open.science/r/ELT-Bench-B51C/materials/elt.svg)
 
 [![License](https://img.shields.io/badge/License-CC%20BY%20SA%204.0-orange.svg)](https://creativecommons.org/licenses/by-sa/4.0/deed.en)
+
+## Reproducing the paper
+
+[REPRODUCE.md](REPRODUCE.md) gives the commands and settings for the
+experiments in the ELT-Bench++ paper: running each agent, evaluating a run,
+computing the tables, the transformation-only study, the mutation operators
+and the analysis programs.
+
 ## Environment Setup
 
 ### Install Docker and Conda 
@@ -19,22 +27,33 @@ The first comprehensive, end-to-end benchmark designed to evaluate AI agents in 
   (sudo) abctl local credentials
   ```
 
-- In the Airbyte UI, go to Builder > Import a YAML. Upload the manifest matching
-  your destination:
+For the default Snowflake setup, `setup/elt_setup.sh` now imports and publishes
+`setup/elt_snowflake.yaml`, creates an **Elt Snowflake** Source, and writes
+`setup/airbyte/airbyte_credential.json` before generating benchmark configs.
+To run only the Airbyte steps from the repository root:
 
-  | Destination | Manifest |
-  | --- | --- |
-  | Snowflake | `./setup/elt_snowflake.yaml` |
-  | Databricks | `./setup/elt_databricks.yaml` |
-  | Redshift | `./setup/elt_redshift.yaml` |
+```bash
+python setup/setup_airbyte.py
+```
 
-Click on the Publish button, type ignore warnings, and publish it to your workspace.
+Install `setup/requirements.txt` in your active Python environment first. Airbyte
+and the ELT API service must already be running. The helper uses credentials from
+`airbyte_credential.json` or `AIRBYTE_USERNAME` / `AIRBYTE_PASSWORD`. When credentials
+are missing, it reads the local abctl cluster using Docker (non-interactive sudo
+is required for non-root users). It does not print passwords.
 
-- In the Airbyte UI, go to **Sources > Custom > ELT Bench**. Retrieve the Workspace ID and Definition ID from the URL:
-  ```
-  http://localhost:8012/workspaces/<workspace_id>/source/new-source/<api_definition_id>
-  ```
-  Update the file `./setup/airbyte/airbyte_credentials.json` by filling in the following information: username, password, workspace ID, and API definition ID.
+`AIRBYTE_URL` defaults to `http://localhost:8000`. Use `AIRBYTE_WORKSPACE_ID` to
+select a workspace when there is more than one. Existing projects and Sources
+are reused by name; a different published manifest causes setup to stop rather
+than overwrite a release. The YAML CDK version must be supported by the installed
+Airbyte runtime. The current Snowflake manifest uses CDK `4.3.0` for Airbyte 1.5.1.
+Source creation does not run a connection test or start a sync.
+
+Other destinations can use `--manifest setup/elt_databricks.yaml --name "Elt Databricks"`
+or `--manifest setup/elt_redshift.yaml --name "Elt Redshift"`; confirm their CDK
+versions are supported before publishing. For manual setup, import the manifest
+in Builder, publish it, and fill `setup/airbyte/airbyte_credential.json` with the
+username, password, workspace ID, and connector Definition ID (not Source ID).
 
 
 ### Install psql
@@ -113,7 +132,7 @@ Set up whichever destination you plan to evaluate against.
 
 ## Evaluation
 
-### Download the v5 ground truth
+### Download the ground truth
 
 The warehouse-specific ground-truth CSV files are publicly available in the
 [ELT-Bench dataset on Hugging Face](https://huggingface.co/datasets/tttjjj/elt_bench).

@@ -9,7 +9,7 @@ models:
       - name: user_cover_image_url
         description: User profile cover image URL on Mubi
       - name: latest_rated_movie
-        description: The latest movie the user rated, with ties broken by the ascending order of the movie title
+        description: The latest movie in the movie catalog the user rated, with ties broken by the ascending order of the movie title
       - name: list_title_most_followers
         description: The title of the list with the most followers created by the user, with ties broken by the ascending order of the list title
       - name: description_list_most_followers

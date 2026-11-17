@@ -7,7 +7,7 @@ models:
       - name: body
         description: The text body of the issue's main description
       - name: closed_at
-        description: The timestamp for when an issue was last closed.  "null" for issues that are open
+        description: The timestamp for when an issue was last closed.
         format: YYYY-MM-DD HH:MM:SS
       - name: created_at
         description: The timestamp for when an issue was created
@@ -52,7 +52,7 @@ models:
       - name: body
         description: the text body of the description of the pull request
       - name: closed_at
-        description: Timestamp of when the pull request was closed.  NULL for pull requests that are still open
+        description: Timestamp of when the pull request was closed.
         format: YYYY-MM-DD HH:MM:SS
       - name: created_at
         description: Timestamp of when the pull request was created
@@ -92,7 +92,7 @@ models:
         description: Timestamp of when the pull request was merged
         format: YYYY-MM-DD HH:MM:SS
       - name: reviewers
-        description: Aggregate of the distinct users who reviewed the pull request, formed by concatenating reviewer names in ascending alphabetical order, separated by a comma and space.
+        description: Aggregate of the distinct users who reviewed the pull request, formed by concatenating reviewer login names in ascending alphabetical order, separated by a comma and space.
       - name: number_of_reviews
         description: Number of times a pull request was reviewed
 

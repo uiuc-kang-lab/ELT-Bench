@@ -13,7 +13,7 @@ models:
       - name: name_of_the_product_that_was_ordered_recently
         description: The name of the product that was ordered most recently by the customer, with ties broken by the ascending order of the product name.
       - name: item_ordered_with_the_highest_quantity_in_the_East_region
-        description: The item ordered with the highest quantity in the East region by the customer, with ties broken by the descending order of the product name.
+        description: The item with the highest total quantity ordered by the customer in the East region, with ties broken by the descending order of the product name.
       - name: number_of_orders_in_2016_from_the_east_superstore
         description: The number of orders in 2016 from the East region superstore by the customer, replace NULL values with 0.
       - name: number_of_orders_with_more_than_3_kinds_of_products_ordered

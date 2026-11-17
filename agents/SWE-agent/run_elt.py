@@ -20,6 +20,7 @@ if str(AGENTS_DIR) not in sys.path:
 
 from common import (  # noqa: E402
     adapt_prompt,
+    default_database,
     destination_choices,
     prepare_destination,
     resolve_benchmark_path,
@@ -53,6 +54,17 @@ def copy_task_input(source: Path, destination: Path) -> None:
     )
 
 
+def set_task_namespace(config_path: Path, destination: str, task: str, database: str) -> None:
+    """Place the task in schema `task` of the shared `database`, as the other runners do."""
+    with config_path.open(encoding="utf-8") as f:
+        config = yaml.safe_load(f)
+    dest_config = config[destination]["config"]
+    dest_config["database"] = database
+    dest_config["schema"] = task
+    with config_path.open("w", encoding="utf-8") as f:
+        yaml.safe_dump(config, f, sort_keys=False)
+
+
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--destination", choices=destination_choices(), default="snowflake")
@@ -63,6 +75,24 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--elt_bench")
     parser.add_argument("--output_dir", default=str(AGENTS_DIR / "output"))
     parser.add_argument("--credential", help="Host-side credential JSON override.")
+    parser.add_argument(
+        "--database",
+        help="Database/catalog holding one schema per task (default: 'elt' for "
+        "snowflake; one database (redshift) or catalog (databricks) per run, named "
+        "after the experiment).",
+    )
+    parser.add_argument(
+        "--completion-kwargs",
+        help="JSON passed to litellm.completion via --agent.model.completion_kwargs, e.g. "
+        '\'{"_skip_responses_api_bridge": true}\' for GPT-5.4 (newer litellm bridges it to the '
+        "Responses API and drops tool calls that come with text).",
+    )
+    parser.add_argument(
+        "--execution-timeout",
+        type=int,
+        help="Per-command timeout in seconds (SWE-agent default 30). Values above 300 run "
+        "sweagent through sweagent_long_commands.py, which lifts aiohttp's 300 s client limit.",
+    )
     parser.add_argument("--only", default="", help="Comma-separated task names.")
     parser.add_argument("--limit", type=int, default=100)
     parser.add_argument("--overwrite", action="store_true")
@@ -96,6 +126,10 @@ def main(argv: list[str] | None = None) -> int:
         tasks = tasks[: args.limit]
 
     experiment = f"swe-{args.model.split('/')[-1]}-{args.suffix}-{args.destination}"
+    # Same layout as the other runners: one schema per task inside a database
+    # (Redshift) / catalog (Databricks) per run, or the shared Snowflake "elt".
+    database = args.database or default_database(args.destination, experiment)
+    print(f"Destination namespace: database {database}, one schema per task")
     output_root = Path(args.output_dir).expanduser().resolve() / experiment
     failures = 0
 
@@ -113,8 +147,13 @@ def main(argv: list[str] | None = None) -> int:
             with tempfile.TemporaryDirectory(prefix=f"elt-bench-{task}-") as workspace_tmp:
                 workspace = Path(workspace_tmp) / "workspace"
                 copy_task_input(task_input, workspace)
+                if database:
+                    set_task_namespace(workspace / "config.yaml", args.destination, task, database)
+                launcher = ["sweagent"]
+                if args.execution_timeout and args.execution_timeout > 300:
+                    launcher = [sys.executable, str(SWE_ROOT / "sweagent_long_commands.py")]
                 command = [
-                    "sweagent",
+                    *launcher,
                     "run",
                     f"--env.repo.path={workspace}",
                     "--config",
@@ -125,14 +164,23 @@ def main(argv: list[str] | None = None) -> int:
                     "--agent.model.name",
                     args.model,
                 ]
-                print(f"RUN {task}: {' '.join(command)}")
+                if args.completion_kwargs:
+                    command += ["--agent.model.completion_kwargs", args.completion_kwargs]
+                if args.execution_timeout:
+                    command += ["--agent.tools.execution_timeout", str(args.execution_timeout)]
+                print(f"RUN {task}: {' '.join(command)}", flush=True)
                 if args.dry_run:
                     continue
 
                 if not args.skip_prepare:
                     try:
+                        credential = args.credential
+                        if credential is None:
+                            generated = task_input / f"{args.destination}_credential.json"
+                            credential = str(generated) if generated.is_file() else None
+                        # The workspace copy carries the (possibly rewritten) namespace.
                         namespace = prepare_destination(
-                            args.destination, task_input, args.credential
+                            args.destination, workspace, credential
                         )
                         print(f"Prepared {namespace}")
                     except Exception as exc:

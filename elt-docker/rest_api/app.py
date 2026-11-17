@@ -1,3 +1,5 @@
+from functools import lru_cache
+
 from flask import Flask, jsonify, request
 import pandas as pd
 import numpy as np
@@ -7,12 +9,33 @@ app = Flask(__name__)
 # Sample data
 
 
-def load_csv(file_path):
-  # Replace 'data.csv' with your actual CSV file path
-  data = pd.read_csv(file_path)
+@lru_cache(maxsize=8)
+def _records(file_path):
+  # Parsed once per file: paged syncs request the same table hundreds of
+  # times, and re-reading a large CSV per page dominates sync time.
+  # low_memory=False: infer each column's type from the whole file. The
+  # chunked default read california_schools.schools.CharterNum as text in the
+  # first chunks and as numbers in the last one, dropping leading zeros there.
+  if '/mondial_geo/' in file_path or '/works_cycles/' in file_path:
+    # 'NA' is a country code (Netherlands Antilles in mondial_geo, Namibia in
+    # works_cycles), not a missing value; only empty fields are NULL.
+    data = pd.read_csv(file_path, keep_default_na=False, na_values=[''], low_memory=False)
+  else:
+    data = pd.read_csv(file_path, low_memory=False)
   data = data.replace({np.nan: None})
-  data = data.to_dict(orient="records")
-  return data
+  return tuple(data.to_dict(orient="records"))
+
+
+def load_csv(file_path):
+  data = _records(file_path)
+  # The Airbyte connector pages with ?limit=&offset= (OffsetIncrement) and
+  # stops on a short page; ignoring these params makes syncs loop forever.
+  offset = request.args.get("offset", type=int)
+  limit = request.args.get("limit", type=int)
+  if offset is not None or limit is not None:
+    start = offset or 0
+    data = data[start:start + limit] if limit is not None else data[start:]
+  return list(data)
 
 
 @app.route('/address/alias', methods=['GET'])

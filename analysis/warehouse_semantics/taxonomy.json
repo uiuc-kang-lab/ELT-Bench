@@ -1,0 +1,50 @@
+{
+  "version": 2,
+  "unit": "One logical leaf expression or one ordered key within a final evaluated model. Same projection repeated in SELECT/GROUP BY is one position. Shared upstream position counted once; downstream affected models listed separately.",
+  "categories": [
+    {
+      "id": "numeric_identifier",
+      "name": "Numeric identifier text and comparison",
+      "definition": "Warehouse/loading-type-sensitive representation or comparison of integral identifiers in JOIN, serialization, list aggregation or hash inputs. Treat distinct cast leaves separately; keep common hash parent context. Do not count all numbers as identifiers."
+    },
+    {
+      "id": "null_ordering",
+      "name": "Default NULL ordering, including effective prevention",
+      "definition": "An actual evaluated sort-input key with competing NULL and non-NULL values in a group sharing the partition and every preceding order key, or an explicitly prevented opportunity verified by removing protection. Count the verified data-triggered ordering opportunity even when its effect on the final selected rank is not established. Native-correct unhandled opportunities are included. Selected-output change and whole-column repair are separate failure-attribution questions, not conditions for counting this category."
+    },
+    {
+      "id": "integer_avg",
+      "name": "Integer AVG including zero-scale casts",
+      "definition": "Integer or zero-fractional-scale inputs whose AVG loses required fractional precision. Distinguish casting before AVG from casting afterward. Native fractional DECIMAL AVG is outside this publication category."
+    },
+    {
+      "id": "division_precision",
+      "name": "Division truncation and precision loss, material to evaluation",
+      "definition": "Intermediate integer/DECIMAL division loses required digits, despite superficially floating-looking literals. Include unhandled/insufficient only when repair corrects a value outside evaluator tolerance; include correct handling only when removing protection damages a previously accepted value. Exclude accepted last-bit differences; preserve uncertain cases."
+    },
+    {
+      "id": "time_units",
+      "name": "Time-difference units",
+      "definition": "Calendar boundary counts versus full elapsed units, established from actual task requirements, timestamps and engine-specific expression. Record historical timezone uncertainty. A date_trunc audit repair is not proof of historical GT SQL."
+    },
+    {
+      "id": "trailing_spaces",
+      "name": "Trailing-space comparison",
+      "definition": "Actual stored text-column comparison changes because of warehouse handling of trailing spaces, or an effective explicitly verified normalization. Literal-only equality probes cannot establish the behavior of real VARCHAR columns."
+    }
+  ],
+  "handling": {
+    "correct": "Explicit effective handling verified on actual data or a protection-removal counterfactual.",
+    "insufficient": "Explicit handling attempted but material wrong values remain for this mechanism.",
+    "unhandled": "No explicit handling. May still be natively correct; do not equate with failed output."
+  },
+  "failed_model_definition": "Baseline replays the actual evaluated CSV; same-mechanism correction makes at least one entire originally failed column pass the disclosed evaluator. Partial-cell improvements do not suffice. Deduplicate by category,warehouse,task,model.",
+  "exclusions": [
+    "Timestamp-to-text representation category",
+    "UTC-suffix auto-parser category",
+    "Native fractional DECIMAL AVG category",
+    "Generic business logic errors without warehouse-dependent semantics",
+    "dbt namespace and command syntax problems",
+    "A result mismatch with no evidence identifying the mechanism"
+  ]
+}

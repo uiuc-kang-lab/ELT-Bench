@@ -2,7 +2,7 @@ column_name,column_description
 date,The date of the report and respective recorded metric(s); follows the format `YYYY-MM-DD`.
 app_id,Application ID.
 source_type,"A source is counted when a customer follows a link to your App Store product page. 
-There are 8 types of sources: App Store Browse, App Store Search, App Referrers, Web Referrers, App Clips, Unavailable, Institutional Purchases, and Null. Null is the default value for data that does not provide source types, including: crashes, subscription events and subscription summary.
+There are 7 types of sources: App Store Browse, App Store Search, App Referrers, Web Referrers, App Clips, Unavailable, and Institutional Purchases. Source type is NULL for data that does not provide source types, including: crashes, subscription events and subscription summary.
 More information can be found in the Apple App Store developer [docs](https://developer.apple.com/help/app-store-connect/view-app-analytics/view-acquisition-sources/)."
 device,Device type associated with the respective metric(s).
 impressions,"The number of times your app was viewed in the App Store for more than one second. This includes search results, Featured, Explore, Top Charts and App Product Page views. (Source: [BusinessofApps](https://www.businessofapps.com/insights/understanding-the-app-store-metrics/#:~:text=Impressions%20%E2%80%93%20%E2%80%9CThe%20number%20of%20times,was%20clicked%20on%20and%20viewed.))"

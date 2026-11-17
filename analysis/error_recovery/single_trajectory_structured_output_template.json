@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "trajectory_id": "<copy supplied trajectory_id>",
+    "task": null,
+    "agent": null,
+    "warehouse": null,
+    "run_id": null,
+    "source_path": null,
+    "source_sha256": null
+  },
+  "coverage": {
+    "review_status": "complete",
+    "extraction_loading": "reviewed_complete",
+    "transformation": "reviewed_complete",
+    "turn_mapping_method": "provided_index",
+    "limitations": []
+  },
+  "episodes": [
+    {
+      "episode_id": "episode_001",
+      "category": "sync_control_execution",
+      "subtype": "<specific failure subtype>",
+      "stage": "extraction_loading",
+      "goal": "<one unresolved operational goal>",
+      "success_criterion": "<observable condition that verifies this goal>",
+      "failure_calls": [],
+      "repair_calls": [],
+      "verification_calls": [],
+      "first_failure_tool_seq": null,
+      "failure_decision_turn": null,
+      "recovery_tool_seq": null,
+      "recovery_decision_turn": null,
+      "repair_turns": null,
+      "outcome": "unverified",
+      "recovery_method": null,
+      "feedback_recovery_eligible": true,
+      "parent_episode_id": null,
+      "related_episode_ids": [],
+      "shared_evidence_reason": null,
+      "secondary_failures": [],
+      "cause_attribution": "unknown",
+      "evidence": [
+        {
+          "role": "failure",
+          "pointer": {
+            "source_path": null,
+            "tool_seq": null,
+            "call_id": null,
+            "trajectory_entry": null,
+            "response_entry": null,
+            "decision_turn": null,
+            "json_pointer": null,
+            "locator": null
+          },
+          "redacted_excerpt": "<short redacted excerpt from the actual feedback>",
+          "explanation": "<why this feedback establishes the episode failure>"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "excluded_observations": [],
+  "dbt_usage_inventory_status": "unavailable",
+  "dbt_usage": [],
+  "workflow_notes": [
+    "dbt usage inventory intentionally out of scope"
+  ],
+  "audit_notes": []
+}
